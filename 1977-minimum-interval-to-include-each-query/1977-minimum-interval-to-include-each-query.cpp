@@ -63,7 +63,6 @@ public:
                 result[sortQs[i][1]] = -1;
                 continue;
             }
-            cout<<"query at index "<<sortQs[i][1]<<": "<<q<<". The min size is "<<pq.top()[0]<<endl;
             
             result[sortQs[i][1]] = pq.top()[0];
         }
