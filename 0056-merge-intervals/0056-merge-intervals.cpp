@@ -3,7 +3,9 @@ class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
         //sort into ascending order
-        std::sort(intervals.begin(), intervals.end());
+        std::sort(intervals.begin(), intervals.end(), [](vector<int>& x, vector<int>& y) {
+            return x[0] < y[0];
+        });
         
         vector<vector<int>> result;
         result.push_back(intervals[0]);
@@ -19,7 +21,7 @@ public:
             } else {
                 result.push_back(intervals[i]);
             }
-        }   
+        }
         return result;
     }
 };
