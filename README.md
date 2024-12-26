@@ -36,4 +36,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
+## Hash Table
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/jonahlewis4/leetcode/tree/master/0202-happy-number) |
+## Math
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/jonahlewis4/leetcode/tree/master/0202-happy-number) |
+## Two Pointers
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/jonahlewis4/leetcode/tree/master/0202-happy-number) |
 <!---LeetCode Topics End-->
