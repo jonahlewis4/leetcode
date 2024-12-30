@@ -2,9 +2,9 @@
  * @param {number} n
  * @return {Function} counter
  */
-var createCounter = function(n) {
+var createCounter = n => {
     let c = n
-    return function() {
+    return () => {
         c++
         return c - 1
     };
