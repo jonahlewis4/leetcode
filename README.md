@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/jonahlewis4/leetcode/tree/master/0048-rotate-image) |
+| [0054-spiral-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0054-spiral-matrix) |
 | [0056-merge-intervals](https://github.com/jonahlewis4/leetcode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/jonahlewis4/leetcode/tree/master/0057-insert-interval) |
 | [0066-plus-one](https://github.com/jonahlewis4/leetcode/tree/master/0066-plus-one) |
@@ -56,4 +57,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0048-rotate-image](https://github.com/jonahlewis4/leetcode/tree/master/0048-rotate-image) |
+| [0054-spiral-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0054-spiral-matrix) |
+## Simulation
+|  |
+| ------- |
+| [0054-spiral-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0054-spiral-matrix) |
 <!---LeetCode Topics End-->
