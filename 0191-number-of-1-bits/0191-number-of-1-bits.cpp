@@ -6,10 +6,8 @@ public:
 
         int num1s = 0;
         while(n > 0){
-            if ((n & 1) == 1){
-                num1s++;
-            }
-            n = n >> 1;
+            n = n & (n - 1);
+            num1s++;
         }
         return num1s;
     }
