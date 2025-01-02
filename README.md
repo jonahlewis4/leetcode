@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/jonahlewis4/leetcode/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/jonahlewis4/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
+| [0036-valid-sudoku](https://github.com/jonahlewis4/leetcode/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/jonahlewis4/leetcode/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/jonahlewis4/leetcode/tree/master/0049-group-anagrams) |
 | [0054-spiral-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0054-spiral-matrix) |
@@ -65,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/jonahlewis4/leetcode/tree/master/0001-two-sum) |
+| [0036-valid-sudoku](https://github.com/jonahlewis4/leetcode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/jonahlewis4/leetcode/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/jonahlewis4/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0202-happy-number](https://github.com/jonahlewis4/leetcode/tree/master/0202-happy-number) |
@@ -90,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/jonahlewis4/leetcode/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/jonahlewis4/leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/jonahlewis4/leetcode/tree/master/0073-set-matrix-zeroes) |
