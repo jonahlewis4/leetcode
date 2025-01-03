@@ -1,47 +1,36 @@
 class Codec {
+    #define delim '$'
 public:
 
     string encode(vector<string>& strs) {
         string res = "";
         for(const auto & str : strs){
-            for(const auto & c : str){
-                res += encode(c);
-            }
-            res += "#.";
-
+            res += to_string(str.size());
+            res += delim;
+            res += str;
         }
         return res;
     }
 
     vector<string> decode(string s) {
-        cout<<s<<endl;
-        vector<string> res;
-        string cur = "";
+        vector<string> ans;
         for(int i = 0; i < s.size(); i++){
-            char c = s[i];
-            if(c != '#'){
-                cur += c;
-            } else if(i + 1 < s.size()){
-                if(s[i + 1] == '.'){
-                    res.push_back(cur);
-                    cur = "";
-                    i++;
-                } else if(s[i + 1] == '#'){
-                    cur += c;
-                    i++;
-                }
-            }
-        }
-        return res;
-    }
+            string newString = "";
 
-    string encode(char c){
-        if(c != '#'){
-            string res;
-            res += c;
-            return res;
+            int j = i;
+            string len = "";
+            while(s[j] != delim){
+                len += s[j];
+                j++;
+            }
+            int length = stoi(len);
+            for(int k = j + 1; k < (j + 1) + length; k++){
+                newString += s[k];
+            }
+            ans.push_back(newString);
+            i = j + 1 + length - 1;
         }
-        return "##";
+        return ans;
     }
 };
 
