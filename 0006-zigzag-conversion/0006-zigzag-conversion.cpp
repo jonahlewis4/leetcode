@@ -15,10 +15,7 @@ public:
         while(i < s.size())
         {
             while(i < s.size() && r < numRows && c < colSize){ 
-                cout<<"i: "<<i<<endl;
-                cout<<"r: "<<r<<endl;
-                cout<<"c: "<<c<<endl;
-                cout<<endl;
+                
                 grid[r][c] = s[i];
                 r++;
                 i++;
@@ -26,17 +23,13 @@ public:
             r -= 2;
             c++;
             while(i < s.size() && r > 0 && c < colSize){
-                cout<<"i: "<<i<<endl;
-                cout<<"r: "<<r<<endl;
-                cout<<"c: "<<c<<endl;
-                cout<<endl;
+        
                 grid[r][c] = s[i];
                 r--;
                 c++;
                 i++;
             }
         }
-        cout<<"built grid"<<endl;
         string res = "";
         for(int    r = 0; r < numRows; r++){
             for(int c = 0; c < grid[r].size(); c++){
