@@ -20,7 +20,7 @@ public:
             dfs(lCount + 1, rCount, stackCount + 1, res, cand, pairs);
             cand.pop_back();
         }
-        if(rCount + 1 <= pairs && stackCount > 0){
+        if(stackCount > 0){
             cand.push_back(')');
             dfs(lCount, rCount + 1, stackCount - 1, res, cand, pairs);
             cand.pop_back();
