@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0066-plus-one](https://github.com/jonahlewis4/leetcode/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/jonahlewis4/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0088-merge-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0088-merge-sorted-array) |
+| [0118-pascals-triangle](https://github.com/jonahlewis4/leetcode/tree/master/0118-pascals-triangle) |
 | [0128-longest-consecutive-sequence](https://github.com/jonahlewis4/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0136-single-number](https://github.com/jonahlewis4/leetcode/tree/master/0136-single-number) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
@@ -51,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/jonahlewis4/leetcode/tree/master/0042-trapping-rain-water) |
+| [0118-pascals-triangle](https://github.com/jonahlewis4/leetcode/tree/master/0118-pascals-triangle) |
 | [0338-counting-bits](https://github.com/jonahlewis4/leetcode/tree/master/0338-counting-bits) |
 | [0435-non-overlapping-intervals](https://github.com/jonahlewis4/leetcode/tree/master/0435-non-overlapping-intervals) |
 ## Greedy
