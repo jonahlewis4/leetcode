@@ -21,7 +21,6 @@ public:
                 sign = 1;
             } else if (c == ')'){
                 total += currentNumber * sign;
-                sign = 1;
                 currentNumber = 0;
                 total *= stk.top();
                 stk.pop();
