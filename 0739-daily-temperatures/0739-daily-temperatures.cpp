@@ -1,22 +1,24 @@
 class Solution {
 private:
-    struct temperature{
-        int temp;
-        int index;
-    };
 public:
     vector<int> dailyTemperatures(vector<int>& temperatures) {
-        std::stack<temperature> stack;
         std::vector<int> res(temperatures.size(), 0);
-        int i = 0;
-        for(const auto & temp : temperatures){
-            while(!stack.empty() && stack.top().temp < temp){
-                res[stack.top().index] = i - stack.top().index;
-                stack.pop();
+        int largest = temperatures[temperatures.size() - 1];
+
+        for(int i = temperatures.size() - 2; i >= 0; i--){
+            if(temperatures[i] >= largest){
+                largest = temperatures[i];
+                res[i] = 0;
+            } else {
+                int j = i + 1;
+                while(temperatures[j] <= temperatures[i]){
+                    j += res[j];
+                }
+                res[i] = j - i;
             }
-            stack.push({temp, i});
-            i++;
         }
-        return res; 
+        return res;
+
+
     }
 };
