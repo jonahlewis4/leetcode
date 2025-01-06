@@ -6,18 +6,16 @@ public:
         int l = 0;
         int r = 0;
 
-        count[s[0]] = 1;
-        int maxCount = 1;
+        int maxCount = 0;
         while(r < s.size()){
+            count[s[r]]++;
+            maxCount = max(maxCount, count[s[r]]);
             int len = r - l + 1;
             if(len - maxCount > k){
                 count[s[l]]--;
                 l++;
-            } else {
-                r++;
-                count[s[r]]++;
-                maxCount = max(maxCount, count[s[r]]);
             }
+            r++;
         }
         return std::min(maxCount + k, (int)s.size());
     }
