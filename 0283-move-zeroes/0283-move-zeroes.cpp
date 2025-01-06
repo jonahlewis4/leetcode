@@ -20,7 +20,6 @@ public:
                 break;
             }
             std::swap(nums[l], nums[r]);
-            cout<<"swap"<<endl;
         }
     }
 };
