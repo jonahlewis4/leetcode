@@ -28,8 +28,10 @@ public:
 
                 cout<<"newL: "<<newL<<endl;
                 while(l < newL){
-                    if(l < newL  - 1)
-                    map.erase(map[s[l]]);
+                    if(l < newL  - 1){
+                        map.erase(map[s[l]]);
+
+                    }
                     l++;
                 }
                 map[s[r]] = r;
