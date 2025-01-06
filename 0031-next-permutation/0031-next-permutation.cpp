@@ -16,10 +16,6 @@ public:
         while(j >= 0 && nums[j] <= replaced){
             j--;
         }
-
-        if(j < 0){
-
-        }
         int firstLarger = nums[j];
 
         nums[i] = firstLarger;
