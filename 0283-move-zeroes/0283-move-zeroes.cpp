@@ -1,24 +1,10 @@
 class Solution {
 public:
-    void moveZeroes(vector<int>& nums) {
-        int l = 0;
-        int r = 0;
-        
-
-     
-        while(true){
-            
-            while(l < nums.size() && nums[l] != 0){
-                l++;
-            }
-            r = l;
-            while(r < nums.size() && nums[r] == 0){
-                r++;
-            }
-            if(r >= nums.size() || l >= nums.size() || l > r){
-                break;
-            }
-            std::swap(nums[l], nums[r]);
-        }
-    }
+  void moveZeroes(vector<int>& nums) {
+      for (int lastNonZeroFoundAt = 0, cur = 0; cur < nums.size(); cur++) {
+          if (nums[cur] != 0) {
+              swap(nums[lastNonZeroFoundAt++], nums[cur]);
+          }
+      }
+  }
 };
