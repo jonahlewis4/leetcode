@@ -12,15 +12,14 @@
 class Solution {
 public:
     void flatten(TreeNode* root) {
-        if(root == nullptr){
-            return;
+        while(root != nullptr){
+            if(root->left != nullptr){
+                rightMost(root->left)->right = root->right;
+                root->right = root->left;
+                root->left = nullptr;
+            }
+            root = root->right;
         }
-        if(root->left != nullptr){
-            rightMost(root->left)->right = root->right;
-            root->right = root->left;
-            root->left = nullptr;
-        }
-        flatten(root->right);
     }
     TreeNode* rightMost(TreeNode* root){
         while(root->right != nullptr){
