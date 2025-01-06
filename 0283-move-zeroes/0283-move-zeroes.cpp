@@ -4,7 +4,6 @@ public:
         int l = 0;
         int r = 0;
         
-        int numZeroes = 0;
 
      
         while(true){
@@ -13,7 +12,7 @@ public:
                 l++;
             }
             r = l;
-            while(r < nums.size() - numZeroes && nums[r] == 0){
+            while(r < nums.size() && nums[r] == 0){
                 r++;
             }
             if(r >= nums.size() || l >= nums.size() || l > r){
