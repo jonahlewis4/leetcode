@@ -107,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/jonahlewis4/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0359-logger-rate-limiter](https://github.com/jonahlewis4/leetcode/tree/master/0359-logger-rate-limiter) |
+| [0424-longest-repeating-character-replacement](https://github.com/jonahlewis4/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 ## Math
@@ -167,6 +168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0224-basic-calculator](https://github.com/jonahlewis4/leetcode/tree/master/0224-basic-calculator) |
 | [0242-valid-anagram](https://github.com/jonahlewis4/leetcode/tree/master/0242-valid-anagram) |
 | [0271-encode-and-decode-strings](https://github.com/jonahlewis4/leetcode/tree/master/0271-encode-and-decode-strings) |
+| [0424-longest-repeating-character-replacement](https://github.com/jonahlewis4/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [1894-merge-strings-alternately](https://github.com/jonahlewis4/leetcode/tree/master/1894-merge-strings-alternately) |
 ## Bit Manipulation
 |  |
@@ -282,4 +284,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jonahlewis4/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0424-longest-repeating-character-replacement](https://github.com/jonahlewis4/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 <!---LeetCode Topics End-->
