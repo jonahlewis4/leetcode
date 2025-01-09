@@ -101,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0036-valid-sudoku](https://github.com/jonahlewis4/leetcode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/jonahlewis4/leetcode/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/jonahlewis4/leetcode/tree/master/0073-set-matrix-zeroes) |
+| [0076-minimum-window-substring](https://github.com/jonahlewis4/leetcode/tree/master/0076-minimum-window-substring) |
 | [0128-longest-consecutive-sequence](https://github.com/jonahlewis4/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0202-happy-number](https://github.com/jonahlewis4/leetcode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/jonahlewis4/leetcode/tree/master/0205-isomorphic-strings) |
@@ -168,6 +169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/0022-generate-parentheses) |
 | [0043-multiply-strings](https://github.com/jonahlewis4/leetcode/tree/master/0043-multiply-strings) |
 | [0049-group-anagrams](https://github.com/jonahlewis4/leetcode/tree/master/0049-group-anagrams) |
+| [0076-minimum-window-substring](https://github.com/jonahlewis4/leetcode/tree/master/0076-minimum-window-substring) |
 | [0125-valid-palindrome](https://github.com/jonahlewis4/leetcode/tree/master/0125-valid-palindrome) |
 | [0205-isomorphic-strings](https://github.com/jonahlewis4/leetcode/tree/master/0205-isomorphic-strings) |
 | [0224-basic-calculator](https://github.com/jonahlewis4/leetcode/tree/master/0224-basic-calculator) |
@@ -291,6 +293,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jonahlewis4/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0076-minimum-window-substring](https://github.com/jonahlewis4/leetcode/tree/master/0076-minimum-window-substring) |
 | [0424-longest-repeating-character-replacement](https://github.com/jonahlewis4/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
 <!---LeetCode Topics End-->
