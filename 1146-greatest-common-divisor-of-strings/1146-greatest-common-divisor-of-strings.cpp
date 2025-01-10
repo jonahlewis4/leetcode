@@ -1,7 +1,9 @@
 class Solution {
 public:
     string gcdOfStrings(string str1, string str2) {
-
+        if(str1.size() < str2.size()){
+            std::swap(str1, str2);
+        }
         std::unordered_set<string> divs;
         for(int i = 0; i < str2.size(); i++){
             int k = 0;
