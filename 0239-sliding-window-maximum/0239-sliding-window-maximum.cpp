@@ -15,7 +15,7 @@ public:
         }
 
         for(int i = 0; i < res.size(); i++){
-            while(!dq.empty() && dq.front() < l){
+            while(dq.front() < l){
                 dq.pop_front();
             }
             res[i] = nums[dq.front()];
