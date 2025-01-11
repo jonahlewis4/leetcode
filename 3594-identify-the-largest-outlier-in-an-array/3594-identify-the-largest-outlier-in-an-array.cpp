@@ -14,10 +14,8 @@ public:
         for(int i = 0; i < nums.size(); i++){
             int twiceGoal = sum - nums[i];
             if(twiceGoal % 2 == 0 && set.find(twiceGoal / 2) != set.end()){
-                for(const int num : set[twiceGoal / 2]){
-                    if(num != i){
-                        maxOutlier = max(maxOutlier, nums[i]);
-                    }
+                if((twiceGoal / 2 == nums[i] && set[twiceGoal / 2].size() > 1) || twiceGoal / 2 != nums[i]){
+                    maxOutlier = max(maxOutlier, nums[i]);
                 }
             }
         }
