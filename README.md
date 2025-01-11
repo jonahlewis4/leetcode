@@ -44,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 | [1085-the-earliest-moment-when-everyone-become-friends](https://github.com/jonahlewis4/leetcode/tree/master/1085-the-earliest-moment-when-everyone-become-friends) |
+| [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [3639-zero-array-transformation-i](https://github.com/jonahlewis4/leetcode/tree/master/3639-zero-array-transformation-i) |
 ## Sorting
@@ -63,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 | [1085-the-earliest-moment-when-everyone-become-friends](https://github.com/jonahlewis4/leetcode/tree/master/1085-the-earliest-moment-when-everyone-become-friends) |
+| [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 ## Dynamic Programming
 |  |
@@ -85,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
+| [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 ## Line Sweep
 |  |
@@ -118,6 +121,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
+| [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 ## Math
 |  |
 | ------- |
@@ -148,6 +152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0202-happy-number](https://github.com/jonahlewis4/leetcode/tree/master/0202-happy-number) |
 | [0283-move-zeroes](https://github.com/jonahlewis4/leetcode/tree/master/0283-move-zeroes) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
+| [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1894-merge-strings-alternately](https://github.com/jonahlewis4/leetcode/tree/master/1894-merge-strings-alternately) |
 ## Matrix
 |  |
