@@ -13,9 +13,6 @@ public:
             maxChar = max(maxChar, counts[s[r]]);
             if(maxChar + k < r - l + 1){
                 counts[s[l]]--;
-                if(counts[s[l]] == maxChar - 1){
-                    maxChar--;
-                }
                 l++;
             }
             maxLen = max(maxLen, r - l + 1);
