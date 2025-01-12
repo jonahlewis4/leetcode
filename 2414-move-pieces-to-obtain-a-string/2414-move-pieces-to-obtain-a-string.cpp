@@ -1,47 +1,37 @@
 class Solution {
 public:
     bool canChange(string start, string target) {
-        std::queue<pair<char, int>> startQ;
-        std::queue<pair<char, int>> targetQ;
+        int startIdx = 0;
+        int targetIdx = 0;
 
-        for(int i = 0; i < start.size(); i++){
-            if(start[i] != '_'){
-                startQ.push({start[i], i}) ;
+        while(startIdx < start.size() || targetIdx < target.size()){
+            while(startIdx < start.size() && start[startIdx] == '_'){
+                startIdx++;
             }
-            if(target[i] != '_'){
-                targetQ.push({target[i], i});
+            while(targetIdx < target.size() && target[targetIdx] == '_'){
+                targetIdx++;
             }
-        }
 
 
-        if(targetQ.size() != startQ.size()){
-            return false;
-        }
-
-        while(!targetQ.empty()){
+            if(startIdx == start.size() && targetIdx != target.size()){
+                return false;
+            }
+            if(targetIdx == start.size() && startIdx != target.size()){
+                return false;
+            }
             
-
-            char targetC = targetQ.front().first;
-            int targetIdx = targetQ.front().second;
-            targetQ.pop();
-            char startC = startQ.front().first;
-            int startIdx = startQ.front().second;
-            startQ.pop();
-
-            
-            if(targetC != startC){
-                return false;
+            if(startIdx == start.size() && targetIdx == target.size()){
+                return true;
             }
 
-            if(targetC == 'R' && startIdx > targetIdx){
+            if(target[targetIdx] != start[startIdx]
+                || (start[startIdx] == 'L' && targetIdx > startIdx)
+                || (start[startIdx] == 'R' && targetIdx < startIdx)
+            ){
                 return false;
             }
-
-            if(targetC == 'L' && startIdx < targetIdx){
-                return false;
-            }
-
-
+            targetIdx++;
+            startIdx++;
         }
 
         return true;
