@@ -6,9 +6,9 @@ public:
         while(l <= r){
             int m = (l + r) / 2;
 
-            int leftElem = get(nums, m - 1);
-            int rightElem = get(nums, m + 1);
-            int midElem = get(nums, m);
+            long leftElem = get(nums, m - 1);
+            long rightElem = get(nums, m + 1);
+            long midElem = get(nums, m);
 
             if(leftElem < midElem && rightElem < midElem){
                 return m;
@@ -20,12 +20,12 @@ public:
         }
         return 0;
     }
-    int get(vector<int> &nums, int i){
+    long get(vector<int> &nums, int i){
         if(i < 0){
-            return INT_MIN;
+            return (long)INT_MIN - 1;
         }
         if(i >= nums.size()){
-            return INT_MIN;
+            return (long)INT_MIN - 1;
         }
         return nums[i];
     }
