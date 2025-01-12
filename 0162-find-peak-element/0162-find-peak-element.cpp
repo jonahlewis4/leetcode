@@ -18,7 +18,7 @@ public:
                 r = m - 1;
             }
         }
-        return 0;
+        return 123;
     }
     long get(vector<int> &nums, int i){
         if(i < 0){
