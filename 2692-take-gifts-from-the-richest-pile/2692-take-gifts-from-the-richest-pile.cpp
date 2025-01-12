@@ -1,10 +1,8 @@
 class Solution {
 public:
     long long pickGifts(vector<int>& gifts, int k) {
-        std::priority_queue<int> pq;
-        for(const int gift : gifts){
-            pq.push(gift);
-        }
+        std::priority_queue<int> pq(gifts.begin(), gifts.end());
+
 
         for(int i = 0; i < k; i++){
             int biggestGift = pq.top();
