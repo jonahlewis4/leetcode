@@ -1,30 +1,37 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        vector<string> splitStrings = split(s, " ");
-        reverse(splitStrings.begin(), splitStrings.end());
-        string res = "";
-        for(const string & str : splitStrings){
-            if(str != ""){
-                res += str + " ";
+        int l = 0;
+        int r = 0;
+        int i = 0;
+        while(r < s.size()){
+            while(l < s.size() && s[l] == ' '){
+                l++;
             }
+            r = l;
+            while(r < s.size() && s[r] != ' '){
+                s[i] = s[r];
+                i++;
+                r++;
+            }
+
+            if(i < s.size()) {
+                s[i] = ' ';
+            }
+            reverse(s.begin() + i - (r - l), s.begin() + i);
+            i++;
+
+
+            l = r + 1;
         }
-        res.pop_back();
-        return res;
-    }
-    std::vector<string> split(const string &s, const string &delim){
-        std::vector<string> tokens;
-        int start = 0;
-        int end = s.find(delim);
-
-        while(end < s.size()){
-            tokens.push_back(s.substr(start, end - start));
-            start = end + 1;
-            end = s.find(delim, start);
+        while(s.size() > i || (!s.empty() && s.back() == ' ')){
+            s.pop_back();
         }
+        reverse(s.begin(), s.end());
 
-        tokens.push_back(s.substr(start, end - start));
-
-        return tokens;
+        return s;
     }
+    
+
+    
 };
