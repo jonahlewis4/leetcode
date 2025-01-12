@@ -1,48 +1,50 @@
 class Solution {
 public:
     string minWindow(string s, string t) {
-        std::unordered_map<char, int> tCount;
+        std::unordered_map<char, int> smallCount;
+
         for(const char c : t){
-            tCount[c]++;
+            smallCount[c]++;
         }
 
-        std::unordered_map<char, int> sCount;
-        
 
+        std::unordered_map<char, int> bigCount;
+        int matchGoal = smallCount.size();
+        int matches = 0;
         int l = 0;
         int r = 0;
-        int optimalL = l;
-        int minLen = INT_MAX;
-        int matches = 0;
-        int matchGoal = tCount.size();
-        while(r < s.size()){
-            //move right until all match.
-            while(r < s.size() && matches < matchGoal){
-                sCount[s[r]]++;
-                if(sCount[s[r]] == tCount[s[r]] && tCount[s[r]] != 0){
-                    matches++;
-                }
-                r++;
+        int sLen = s.size();
+        int minWindow = INT_MAX;
+        int minL = -1;
+        while(r < sLen){
+            bigCount[s[r]]++;
+            if(bigCount[s[r]] == smallCount[s[r]]){
+                matches++;
             }
+
             
-           //move left until no longer match, record length. 
-            while(l < s.size() && matches == matchGoal){
-                sCount[s[l]]--;
-                if(sCount[s[l]] == tCount[s[l]] - 1){
+
+            while(matches == matchGoal){
+                if(matches == matchGoal){
+                    int len = r - l + 1;
+                    if(len < minWindow){
+                        minWindow = len;
+                        minL = l;
+                    }
+                }
+                bigCount[s[l]]--;
+                if(bigCount[s[l]] ==  smallCount[s[l]] - 1){
                     matches--;
-                }
 
-                int length = r - l;
-                if(length < minLen){
-                    minLen = length;
-                    optimalL = l;
                 }
-
                 l++;
             }
+            r++;
         }
-        return minLen == INT_MAX ? "" : s.substr(optimalL, minLen);
       
-
+        if(minWindow == INT_MAX){
+            return "";
+        }
+        return s.substr(minL, minWindow);
     }
 };
