@@ -1,41 +1,32 @@
 class Solution {
-private: 
-    long long timeToEat(int speed, vector<int> & piles){
+private:
+    vector<int> *piles;
+    long long timeToEat(int eatingSpeed){
         long long time = 0;
-        for(const auto & pile : piles){
-            time += ceil((double)pile / speed);
+        for(const int i : *(this->piles)){
+            time += ceil((double(i)) / eatingSpeed);
         }
         return time;
     }
+
 public:
     int minEatingSpeed(vector<int>& piles, int h) {
-        int smallestPile = INT_MAX;
-        int largestPile = INT_MIN;
-        for(const int pile : piles){
-            smallestPile = min(smallestPile, pile);
-            largestPile = max(largestPile, pile);
-        }
+        this->piles = &piles;
 
-        int r = largestPile;
-        int l = 1 ;
+        int l = 1;
+        int r = *std::max_element(piles.begin(), piles.end()) ;
 
-        int minSpeed = largestPile;
-
+        int minEatingSpeed = INT_MAX;
         while(l <= r){
-            int mid = (l + r) / 2;
-            long long time = timeToEat(mid, piles);
-
-            if(time <= h){
-                minSpeed = min(mid, minSpeed);
-            } 
-            if(time > h){
-                l = mid + 1;
+            int eatingSpeed = (l + r) / 2;
+            long long timeToEat = this->timeToEat(eatingSpeed);
+            if(timeToEat > h){
+                l = eatingSpeed + 1;
             } else {
-                r = mid - 1;
-            }
-        }
-        return minSpeed;     
-
+                minEatingSpeed = min(minEatingSpeed, eatingSpeed);
+                r = eatingSpeed - 1;
+            }   
+        }   
+        return minEatingSpeed;
     }
-
 };
