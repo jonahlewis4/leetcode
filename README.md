@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/jonahlewis4/leetcode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/jonahlewis4/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/jonahlewis4/leetcode/tree/master/0239-sliding-window-maximum) |
+| [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0271-encode-and-decode-strings](https://github.com/jonahlewis4/leetcode/tree/master/0271-encode-and-decode-strings) |
 | [0283-move-zeroes](https://github.com/jonahlewis4/leetcode/tree/master/0283-move-zeroes) |
@@ -69,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/jonahlewis4/leetcode/tree/master/0179-largest-number) |
 | [0217-contains-duplicate](https://github.com/jonahlewis4/leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/jonahlewis4/leetcode/tree/master/0242-valid-anagram) |
+| [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/jonahlewis4/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0435-non-overlapping-intervals](https://github.com/jonahlewis4/leetcode/tree/master/0435-non-overlapping-intervals) |
@@ -94,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/jonahlewis4/leetcode/tree/master/0011-container-with-most-water) |
 | [0179-largest-number](https://github.com/jonahlewis4/leetcode/tree/master/0179-largest-number) |
+| [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0435-non-overlapping-intervals](https://github.com/jonahlewis4/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
 | [0780-max-chunks-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0780-max-chunks-to-make-sorted) |
@@ -122,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/jonahlewis4/leetcode/tree/master/0239-sliding-window-maximum) |
+| [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0347-top-k-frequent-elements](https://github.com/jonahlewis4/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
@@ -185,6 +189,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0202-happy-number](https://github.com/jonahlewis4/leetcode/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0234-palindrome-linked-list) |
+| [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0283-move-zeroes](https://github.com/jonahlewis4/leetcode/tree/master/0283-move-zeroes) |
 | [0443-string-compression](https://github.com/jonahlewis4/leetcode/tree/master/0443-string-compression) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
@@ -293,6 +298,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/jonahlewis4/leetcode/tree/master/0238-product-of-array-except-self) |
+| [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [3639-zero-array-transformation-i](https://github.com/jonahlewis4/leetcode/tree/master/3639-zero-array-transformation-i) |
 ## Union Find
