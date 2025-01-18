@@ -10,13 +10,13 @@ public:
             }
 
             if(nums[0] <= nums[m]){
-                if(target < nums[0] || target > nums[m]){
+                if(target < nums[0] || target >= nums[m]){
                     l = m + 1;
                 } else {
                     r = m  - 1;
                 }
             } else{
-                if(target < nums[m] || target >= nums[0]){
+                if(target <= nums[m] || target >= nums[0]){
                     r = m - 1;
                 } else {
                     l = m + 1;
