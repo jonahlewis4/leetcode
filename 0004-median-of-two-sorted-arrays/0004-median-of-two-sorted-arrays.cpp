@@ -1,38 +1,38 @@
 class Solution {
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
-        if(nums2.size() > nums1.size()){
+        int len = (nums1.size() + nums2.size());
+        int halfLen = len / 2;
+
+        if(nums1.size() > nums2.size()){
             std::swap(nums1, nums2);
         }
-        int halfLen = (nums1.size() + nums2.size()) / 2;
-
+        //nums1 is the smaller of the two lists.
         int l = 0;
-        int r = nums2.size();
+        int r = nums1.size();
         while(l <= r){
-            int m = (l + r) / 2;
-            int l2 = m - 1 >= 0 ? nums2[m - 1] : INT_MIN;
-            int r2 = m < nums2.size() ? nums2[m] : INT_MAX;
-            int m1 = halfLen - m;
-            int l1 = m1 - 1 >= 0 ? nums1[m1 - 1] : INT_MIN;
-            int r1 = m1 < nums1.size() ? nums1[m1] : INT_MAX;
+            int sM = (l + r) / 2;
+            int lM = halfLen - sM;
 
-            if(l1 <= r2 && l2 <= r1){
-                //return ans;
-                if((nums1.size() + nums2.size()) % 2 == 0){
-                    return ((double)max(l1, l2) + min(r2, r1))/2;
-                } else {
-                    return min(r1, r2);
-                }
+            int sL = sM - 1 < 0 ? INT_MIN : nums1[sM - 1];
+            int lL = lM - 1 < 0 ? INT_MIN : nums2[lM - 1];
+
+            int sR = sM >= nums1.size() ? INT_MAX : nums1[sM];
+            int lR = lM >= nums2.size() ? INT_MAX : nums2[lM];
+
+            if(lL > sR){
+                l = sM + 1;
+            } else if (sL > lR){
+                r = sM - 1;
             } else {
-                if(l2 > r1){
-                    r = m - 1;
+                if(len % 2 == 0){
+                    return (std::max(sL, lL) + std::min(sR, lR)) / 2.0;
                 } else {
-                    l = m + 1;
+                    return std::min(sR, lR);
                 }
             }
-
-
         }
         return -1;
+        
     }
 };
