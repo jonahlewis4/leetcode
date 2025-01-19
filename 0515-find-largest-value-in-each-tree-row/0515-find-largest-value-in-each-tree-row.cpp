@@ -16,19 +16,19 @@ public:
         if(root == nullptr){
             return ans;
         }
-        deque<TreeNode*> dq;
-        dq.push_front(root);
+        queue<TreeNode*> dq;
+        dq.push(root);
         while(!dq.empty()){
             int n = dq.size();
             int largest = INT_MIN;
             for(int i = 0; i < n; i++){
                 TreeNode* cur = dq.front();
-                dq.pop_front();
+                dq.pop();
                 if(cur->left != nullptr){
-                    dq.push_back(cur->left);
+                    dq.push(cur->left);
                 }
                 if(cur->right != nullptr){
-                    dq.push_back(cur->right);
+                    dq.push(cur->right);
                 }
 
                 largest = max(largest, cur->val);
