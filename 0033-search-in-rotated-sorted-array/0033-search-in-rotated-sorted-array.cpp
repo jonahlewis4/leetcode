@@ -7,19 +7,17 @@ public:
             int m = (l + r) / 2;
             if(nums[m] == target){
                 return m;
-            }
-
-            if(nums[0] <= nums[m]){
-                if(target < nums[0] || target >= nums[m]){
-                    l = m + 1;
-                } else {
-                    r = m  - 1;
-                }
-            } else{
-                if(target <= nums[m] || target >= nums[0]){
+            } else if (nums[m] >= nums[0]){
+                if (nums[0] <= target && target < nums[m]){
                     r = m - 1;
                 } else {
                     l = m + 1;
+                }
+            } else {
+                if (nums[m] < target && target < nums[0]){
+                    l = m + 1;
+                } else {
+                    r = m - 1;
                 }
             }
         }
