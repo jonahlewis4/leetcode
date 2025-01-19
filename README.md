@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0354-russian-doll-envelopes](https://github.com/jonahlewis4/leetcode/tree/master/0354-russian-doll-envelopes) |
 | [0435-non-overlapping-intervals](https://github.com/jonahlewis4/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0485-max-consecutive-ones](https://github.com/jonahlewis4/leetcode/tree/master/0485-max-consecutive-ones) |
+| [0540-single-element-in-a-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0739-daily-temperatures](https://github.com/jonahlewis4/leetcode/tree/master/0739-daily-temperatures) |
 | [0780-max-chunks-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0780-max-chunks-to-make-sorted) |
@@ -117,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0354-russian-doll-envelopes](https://github.com/jonahlewis4/leetcode/tree/master/0354-russian-doll-envelopes) |
+| [0540-single-element-in-a-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0792-binary-search](https://github.com/jonahlewis4/leetcode/tree/master/0792-binary-search) |
 | [0907-koko-eating-bananas](https://github.com/jonahlewis4/leetcode/tree/master/0907-koko-eating-bananas) |
 | [1023-time-based-key-value-store](https://github.com/jonahlewis4/leetcode/tree/master/1023-time-based-key-value-store) |
