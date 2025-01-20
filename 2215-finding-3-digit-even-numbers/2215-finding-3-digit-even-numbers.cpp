@@ -6,8 +6,9 @@ public:
             digCount[i]++;
         }
         vector<int> res;
+        unordered_map<int, int> used;
+
         for(int i = 100; i <= 998; i+=2){
-            unordered_map<int, int> used;
             int candidate = i;
             while(candidate > 0){
                 used[candidate % 10]++;
@@ -24,6 +25,7 @@ public:
             if(gucci){
                 res.push_back(i);
             }
+            used.clear();
         }
         return res;
     }
