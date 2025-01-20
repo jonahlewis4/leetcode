@@ -365,18 +365,21 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0226-invert-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/jonahlewis4/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0226-invert-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/jonahlewis4/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 ## Binary Tree
 |  |
 | ------- |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
+| [0226-invert-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/jonahlewis4/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 ## Linked List
@@ -408,6 +411,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Breadth-First Search
 |  |
 | ------- |
+| [0226-invert-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0226-invert-binary-tree) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/jonahlewis4/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 ## Interactive
 |  |
