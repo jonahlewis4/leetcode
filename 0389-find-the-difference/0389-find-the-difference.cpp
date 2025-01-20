@@ -1,17 +1,11 @@
 class Solution {
 public:
     char findTheDifference(string s, string t) {
-        unordered_map<char, int> sCount;
-        unordered_map<char, int> tCount;
-        for(const char c : s){
-            sCount[c]++;
+        char res = 0;
+        for(int i = 0; i < s.size(); i++){
+            res ^= s[i];
+            res ^= t[i];
         }
-        for(const char c : t){
-            tCount[c]++;
-            if(tCount[c] > sCount[c]){
-                return c;
-            }
-        }
-        return '!';
+        return res ^ t[t.size() - 1];
     }
 };
