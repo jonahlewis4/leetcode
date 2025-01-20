@@ -9,20 +9,21 @@ public:
         for(int i = 100; i <= 998; i+=2){
             unordered_map<int, int> used;
             int candidate = i;
-            if(digCount[candidate % 10] <= used[candidate % 10]){
-                continue;
+            while(candidate > 0){
+                used[candidate % 10]++;
+                candidate /= 10;
             }
-            used[candidate % 10]++;
-            candidate /= 10;
-            if(digCount[candidate % 10] <= used[candidate % 10]){
-                continue;
+
+            bool gucci = true;
+            for(const auto p : used){
+                if(p.second > digCount[p.first]){
+                    gucci = false;
+                    break;
+                }
             }
-            used[candidate % 10]++;
-            candidate /= 10;
-            if(digCount[candidate % 10] <= used[candidate % 10]){
-                continue;
+            if(gucci){
+                res.push_back(i);
             }
-            res.push_back(i);
         }
         return res;
     }
