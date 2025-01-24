@@ -2,7 +2,6 @@ class Solution {
 private:
 public:
     int maxProfit(vector<int>& prices) {
-        //maximum = 0;
         int prevBuy = 0;
         int prevSell = 0;
 
