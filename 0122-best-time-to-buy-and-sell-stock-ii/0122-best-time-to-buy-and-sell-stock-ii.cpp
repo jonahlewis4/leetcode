@@ -2,15 +2,19 @@ class Solution {
 private:
 public:
     int maxProfit(vector<int>& prices) {
-        int prevBuy = 0;
-        int prevSell = 0;
-
-        for(int i = prices.size() - 1; i >= 0; i--){
-            int buy = max(prevBuy, prevSell - prices[i]);
-            int sell = max(prevSell, prevBuy + prices[i]);
-            prevBuy = buy;
-            prevSell = sell;
+        int total = 0;
+        int localMin = prices[0];
+        int localMax = prices[0];
+        for(int i = 0; i < prices.size(); i++){
+            if(prices[i] < localMax){
+                total += localMax - localMin;
+                localMax = prices[i];
+                localMin = prices[i];
+            } else {
+                localMax = prices[i];
+            }
         }
-        return prevBuy;
+        total += localMax - localMin;
+        return total;
     }
 };
