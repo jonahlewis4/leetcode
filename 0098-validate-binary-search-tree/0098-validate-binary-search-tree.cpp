@@ -15,24 +15,21 @@ public:
         if(root == nullptr){
             return true;
         }
-        if(root->val <= max(root->left)){
+        return dfs(root -> left, (long long)INT_MIN - 1, root->val) && dfs(root->right, root->val, (long long)INT_MAX + 1);
+    }
+    bool dfs(TreeNode* root, long long min, long long max){
+        if(root == nullptr){
+            return true;
+        }
+        if(root -> val <= min){
             return false;
         }
-        if(root->val >= min(root->right)){
+        if(root -> val >= max) {
             return false;
         }
-        return isValidBST(root->left) && isValidBST(root->right);
+        return dfs(root -> left,  min, root->val) && dfs(root->right, root->val, max);
+
     }
-    long long max(TreeNode* root){
-        if(root == nullptr){
-            return (long long)INT_MIN - 1;
-        }
-        return std::max({(long long)root->val, max(root->left), max(root->right)});
-    }
-    long long min(TreeNode* root){
-        if(root == nullptr){
-            return (long long)INT_MAX + 1;
-        }
-        return std::min({(long long)root->val, min(root->left), min(root->right)});
-    }
+
+    
 };
