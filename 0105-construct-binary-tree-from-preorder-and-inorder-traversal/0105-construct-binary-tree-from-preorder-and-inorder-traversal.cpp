@@ -12,34 +12,32 @@
 class Solution {
 private: 
     unordered_map<int, int> inorderIdx;
+    vector<int> preorder;
+    vector<int> inorder;
 public:
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+        this->preorder = preorder;
+        this->inorder = inorder;
         for(int i = 0; i < inorder.size(); i++){
-            this->inorderIdx[inorder[i]] = i;
+            inorderIdx[inorder[i]] = i;
         }
 
         TreeNode* root = new TreeNode(preorder[0]);
-        for(int i = 1; i < preorder.size(); i++){
-            TreeNode* cur = root;
-            while(true){
-                if(inorderIdx[preorder[i]] < inorderIdx[cur->val]){
-                    if(cur->left == nullptr){
-                        cur->left = new TreeNode(preorder[i]);
-                        break;
-                    } else {
-                        cur = cur -> left;
-                    }
-                } else {
-                    if(cur->right == nullptr){
-                        cur->right = new TreeNode(preorder[i]);
-                        break;
-                    } else {
-                        cur = cur -> right;
-                    }
-                }
-            }   
-            
+        int i = 0;
+        i++;
+        root->left = build(i, 0, inorderIdx[root->val] - 1);
+        root->right = build(i, inorderIdx[root->val] + 1, inorder.size() - 1);
+        return root;
+    }
+    TreeNode* build(int &i, int l, int r){
+        if(i >= preorder.size() || inorderIdx[preorder[i]] < l || inorderIdx[preorder[i]] > r){
+            return nullptr;
         }
+
+        TreeNode* root = new TreeNode(preorder[i]);
+        i++;
+        root->left = build(i, l, inorderIdx[preorder[i - 1]] - 1);
+        root->right = build(i, inorderIdx[preorder[i - 1]] + 1, r);
         return root;
     }
 };
