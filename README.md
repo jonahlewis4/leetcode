@@ -217,6 +217,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0412-fizz-buzz](https://github.com/jonahlewis4/leetcode/tree/master/0412-fizz-buzz) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/jonahlewis4/leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
+| [1585-the-kth-factor-of-n](https://github.com/jonahlewis4/leetcode/tree/master/1585-the-kth-factor-of-n) |
 | [2383-add-two-integers](https://github.com/jonahlewis4/leetcode/tree/master/2383-add-two-integers) |
 ## Two Pointers
 |  |
@@ -538,4 +539,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/jonahlewis4/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
+## Number Theory
+|  |
+| ------- |
+| [1585-the-kth-factor-of-n](https://github.com/jonahlewis4/leetcode/tree/master/1585-the-kth-factor-of-n) |
 <!---LeetCode Topics End-->
