@@ -18,24 +18,29 @@ public:
         return ans;
 
     }
-    int dfs(TreeNode* root, TreeNode* p, TreeNode* q){
+    void dfs(TreeNode* root, TreeNode* p, TreeNode* q){
         if(root == nullptr){
-            return 0;
+            return;
         }
         
-        int mid = 0;
-        if(root->val == p->val || root->val == q->val){
-            mid = 1;
-        }
-        int left = dfs(root->left, p, q);
-        int right = dfs(root->right, p, q);
-        if(mid + left + right == 2){
+        //if p on left and q on right
+        if(p->val <= root->val && q->val >= root->val){
             ans = root;
+            return;
         }
-        if(mid + left + right == 1){
-            return 1;
+        //if p on right and q on left
+        if(p->val >= root->val && q->val <= root->val){
+            ans = root;
+            return;
         }
-        return 0;
+
+
+        if(p->val < root->val && q-> val < root->val){
+            dfs(root->left, p, q);
+        } else {
+            dfs(root->right, p, q);
+        }
+
 
     }
 };
