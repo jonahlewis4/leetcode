@@ -9,36 +9,33 @@
  */
 
 class Solution {
+private:
+    TreeNode* ans;
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        auto [ans, _, _] = dfs(root, p, q);
+        ans = nullptr;
+        dfs(root, p, q);
         return ans;
+
     }
-    std::tuple<TreeNode*, bool, bool> dfs(TreeNode* root, TreeNode* p, TreeNode* q){
+    int dfs(TreeNode* root, TreeNode* p, TreeNode* q){
         if(root == nullptr){
-            return {nullptr, false, false};
+            return 0;
         }
-        bool pIsRoot = root == p;
-        bool qIsRoot = root == q;
-
-        if(qIsRoot && pIsRoot){
-            return {root, true, true};
+        
+        int mid = 0;
+        if(root->val == p->val || root->val == q->val){
+            mid = 1;
         }
-
-        auto [lAns, lpFound, lqFound] = dfs(root -> left, p, q);
-        if(lAns != nullptr){
-            return {lAns, true, true};
+        int left = dfs(root->left, p, q);
+        int right = dfs(root->right, p, q);
+        if(mid + left + right == 2){
+            ans = root;
         }
-        auto [rAns, rpFound, rqFound] = dfs(root->right, p, q);
-        if(rAns != nullptr){
-            return {rAns, true, true};
+        if(mid + left + right == 1){
+            return 1;
         }
-
-        if((pIsRoot || lpFound || rpFound) && (qIsRoot || lqFound || rqFound)){
-            return {root, true, true};
-        }
-
-        return {nullptr, pIsRoot || lpFound || rpFound, qIsRoot || lqFound || rqFound};
+        return 0;
 
     }
 };
