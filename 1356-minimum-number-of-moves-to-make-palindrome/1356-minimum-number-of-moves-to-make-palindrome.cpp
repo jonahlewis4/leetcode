@@ -5,7 +5,6 @@ public:
         int l = 0;
         int r = s.size() - 1;
         int swaps = 0;
-        int center = -1;
         while(l < r){
             if(s[l] != s[r]){
                 int k = l + 1;
@@ -16,7 +15,7 @@ public:
                     k++;
                 }
                 if(k == r){
-                    center = r;
+                    swaps += r - s.size() / 2;
                     r--;
                     continue;
                 }
@@ -30,9 +29,7 @@ public:
             l++;
             r--;
         }
-        if(center != -1) {
-            swaps += center - s.size() / 2;
-        }
+        
         return swaps;
     }
     
