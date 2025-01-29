@@ -10,34 +10,30 @@
  * };
  */
 class Solution {
-private: 
+    private: 
     unordered_map<int, int> inorderIdx;
     vector<int> preorder;
     vector<int> inorder;
+
 public:
     TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
         this->preorder = preorder;
         this->inorder = inorder;
-        for(int i = 0; i < inorder.size(); i++){
-            inorderIdx[inorder[i]] = i;
-        }
-
-        TreeNode* root = new TreeNode(preorder[0]);
+        for(int i = 0; i < this->inorder.size(); i++){
+            inorderIdx[this->inorder[i]] = i;
+        }   
         int i = 0;
-        i++;
-        root->left = build(i, 0, inorderIdx[root->val] - 1);
-        root->right = build(i, inorderIdx[root->val] + 1, inorder.size() - 1);
-        return root;
+        return build(0, inorder.size() - 1, i);
+
     }
-    TreeNode* build(int &i, int l, int r){
-        if(i >= preorder.size() || inorderIdx[preorder[i]] < l || inorderIdx[preorder[i]] > r){
+    TreeNode* build(const int l, const int r, int & i){
+        if(i >= preorder.size() || inorderIdx[preorder[i]] < l || inorderIdx[preorder[i]] > r ){
             return nullptr;
         }
-
-        TreeNode* root = new TreeNode(preorder[i]);
+        TreeNode* newNode = new TreeNode(preorder[i]);
         i++;
-        root->left = build(i, l, inorderIdx[preorder[i - 1]] - 1);
-        root->right = build(i, inorderIdx[preorder[i - 1]] + 1, r);
-        return root;
-    }
+        newNode->left = build(l, inorderIdx[newNode->val] - 1, i);
+        newNode->right = build(inorderIdx[newNode->val] + 1, r, i);
+        return newNode;
+    }   
 };
