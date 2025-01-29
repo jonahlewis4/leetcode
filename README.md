@@ -488,6 +488,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0114-flatten-binary-tree-to-linked-list) |
 | [0160-intersection-of-two-linked-lists](https://github.com/jonahlewis4/leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0234-palindrome-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0234-palindrome-linked-list) |
+| [0328-odd-even-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0328-odd-even-linked-list) |
 ## Sliding Window
 |  |
 | ------- |
