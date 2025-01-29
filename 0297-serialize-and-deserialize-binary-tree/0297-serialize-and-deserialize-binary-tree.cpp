@@ -12,87 +12,68 @@ public:
 
     // Encodes a tree to a single string.
     string serialize(TreeNode* root) {
-        if(root == nullptr){
-            return "null";
-        }
         string res = "";
-        std::stack<TreeNode*> stack;
-        stack.push(root);
-        while(!stack.empty()){
-            TreeNode* cur = stack.top();
-            stack.pop();
-            if(cur == nullptr){
-                res += "null";
-            } else {
-                res += to_string(cur->val);
-                stack.push(cur->right);
-                stack.push(cur->left);
-            }
-            res += ",";
-        }
-        if(!res.empty() && res.back() == ','){
+        serializeDfs(root, res);
+        if(res.size() > 0 && res.back() == ','){
             res.pop_back();
         }
         return res;
-        
     }
-    
+    void serializeDfs(TreeNode* root, string &res){
+        if(root == nullptr){
+            res += "null,";
+            return;
+        }
+        res += to_string(root->val);
+        res += ',';
+        serializeDfs(root->left, res);
+        serializeDfs(root->right, res);
+    }
 
     // Decodes your encoded data to tree.
     TreeNode* deserialize(string data) {
-        if(data == "null"){
+        auto nodes = split(data, ',');
+        
+        if(nodes.size() == 0 || nodes[0] == "null"){
             return nullptr;
         }
-        vector<string> nodes = split(data, ',');
         int i = 0;
-        stack<pair<TreeNode*, bool>> stack;
-        TreeNode* root = ston(nodes[i]);
-        i++;
-        stack.push({root, true});
-        stack.push({root, false});
+        TreeNode* head = deserialize(nodes, i);
+        return head;
 
-        while(!stack.empty()){
-            auto [parent, isRightChild] = stack.top();
-            stack.pop();
-
-            TreeNode* child = ston(nodes[i]);
-            i++;
-            if(isRightChild){
-                parent->right = child;
-            } else {
-                parent->left = child;
-            }
-
-            if(child != nullptr){
-                stack.push({child, true});
-                stack.push({child, false});
-            }
-        }
-
-        return root;
     }
-    TreeNode* ston(string s){
-        if(s == "null"){
+
+    TreeNode* deserialize(vector<string> & nodes, int & i){
+        if(i >= nodes.size() || nodes[i] == "null"){
+            i++;
             return nullptr;
         }
-        return new TreeNode(stoi(s));
+
+        TreeNode* root = new TreeNode(stoi(nodes[i]));
+        i++;
+
+        root->left = deserialize(nodes, i);
+        root->right = deserialize(nodes, i);
+        return root;
+        
     }
 
-    vector<string> split(string s, char delim){
-         int l = 0; 
-         int r = 0;
-         vector<string> res;
-         while(r < s.size() + 1){
-            if(s[r] == delim || r == s.size()) {
-                string sub = s.substr(l, r - l);
-                if(sub != ""){
-                  res.push_back(sub);
-                }
+    vector<string> split(string data, char delim){
+        vector<string> res;
+        int l = 0;
+        int r = 0;
+        string newStr = "";
+        while(r < data.size()){
+            if(data[r] == delim && newStr != ""){
+                res.push_back(newStr);
                 l = r + 1;
+                newStr = "";
+            } else {
+                newStr += data[r];
             }
             r++;
-         }
-         return res;
+        }
+        return res;
     }
 };
 
