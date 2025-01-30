@@ -5,20 +5,19 @@ private:
 public:
     int mincostTickets(vector<int>& days, vector<int>& costs) {
         this->days = days;
-        unordered_map<int, unordered_map<int, int>> cache;
-
+        unordered_map<int, int> cache;
         this->costs = costs;
         return dfs(0, 0, cache);
     }
-    int dfs(int ticketUntil, int dayIdx, unordered_map<int, unordered_map<int, int>>& cache){
+    int dfs(int ticketUntil, int dayIdx, unordered_map<int, int>& cache){
         if(dayIdx >= days.size()){
             return 0;
         }
         if(days[dayIdx] < ticketUntil){
             return dfs(ticketUntil, dayIdx + 1, cache);
         }
-        if(cache.find(ticketUntil) != cache.end() && cache[ticketUntil].find(dayIdx) != cache[ticketUntil].end()){
-            return cache[ticketUntil][dayIdx];
+        if(cache.find(dayIdx) != cache.end()){
+            return cache[dayIdx];
         }
         int i = dayIdx;
         int option1 = dfs(days[dayIdx] + 1, i + 1, cache) + costs[0];
@@ -26,7 +25,7 @@ public:
         int option3 = dfs(days[dayIdx] + 30, i + 1, cache) + costs[2];
 
 
-        cache[ticketUntil][dayIdx] = min({option1, option2, option3});
+        cache[dayIdx] = min({option1, option2, option3});
         return min({option1, option2, option3});    
     }
 };
