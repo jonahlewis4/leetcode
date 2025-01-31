@@ -16,31 +16,23 @@ public:
         ans = nullptr;
         dfs(root, p, q);
         return ans;
-
     }
     void dfs(TreeNode* root, TreeNode* p, TreeNode* q){
         if(root == nullptr){
             return;
-        }
-        
-        //if p on left and q on right
-        if(p->val <= root->val && q->val >= root->val){
-            ans = root;
-            return;
-        }
-        //if p on right and q on left
-        if(p->val >= root->val && q->val <= root->val){
-            ans = root;
-            return;
-        }
+        } 
+        int mid = p->val == root->val || q->val == root->val;
 
+        int left = (root->val > p->val || root->val > q->val);
+        int right = (root->val < p->val || root->val < q->val);
 
-        if(p->val < root->val && q-> val < root->val){
+        if(mid + left + right == 2){
+            ans = root;
+        } else if (root->val > p->val && root->val > q->val){
             dfs(root->left, p, q);
         } else {
             dfs(root->right, p, q);
         }
-
 
     }
 };
