@@ -4,8 +4,6 @@ public:
         // 0 0 2 2 4 4 4 5 5 5
         int l = 1;
         int r = 1;
-        int curNum = nums[0];
-        int curNumCount = 0;
         int count = 1;
         while(r < nums.size()){
             if(nums[r] == nums[r - 1]){
