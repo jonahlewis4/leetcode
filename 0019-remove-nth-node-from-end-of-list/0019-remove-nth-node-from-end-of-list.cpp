@@ -24,16 +24,10 @@ public:
             }
             i++;
         }
-        ListNode* to_delete = notFar->next;
-        notFar->next = to_delete->next;
-        if(notFar == negPos){
-            head = head->next;
-        }
-        //delete to_delete;
+        notFar->next = notFar->next->next;
+        ListNode* retVal = negPos->next;
         delete negPos;
-
-        return head;
-        
+        return retVal;
 
     }
 };
