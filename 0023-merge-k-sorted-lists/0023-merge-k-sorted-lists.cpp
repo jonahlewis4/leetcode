@@ -11,51 +11,39 @@
 class Solution {
 public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
+        auto cmp = [](const ListNode* a, const ListNode* b){
+            if(a == nullptr){
+                return false;
+            } else if (b == nullptr){
+                return true;
+            }
+            return a->val > b -> val;
+        };
+        priority_queue<ListNode*, vector<ListNode*>, decltype(cmp)> pq;
 
+        for(const auto & list : lists){
+            ListNode* c = list;
+            while(c != nullptr){
+                pq.push(c);
+                c = c->next;
+            }
+        }
 
-        removeNullLists(lists);
-        if(lists.size() == 0){
+        if(pq.empty()){
             return nullptr;
         }
 
-
-
-        ListNode* head = min(lists);
+        ListNode* head = pq.top();
+        pq.pop();
         ListNode* cur = head;
-
-        while(!lists.empty()){
-            cur->next = min(lists);
+        while(!pq.empty()){
+            cur->next = pq.top();
+            pq.pop();
             cur = cur->next;
         }
         cur->next = nullptr;
         return head;
-    }
 
-
-    void removeNullLists(vector<ListNode*>& lists){
-        vector<ListNode*> ans;
-        for(const auto & list : lists){
-            if(list != nullptr){
-                ans.push_back(list);
-            }
-        }
-        lists = ans;
-    }
-
-    ListNode* min(vector<ListNode*>& lists){
-        ListNode** min = &(lists[0]);
-        for (auto & list : lists){
-            if(list->val < (*min)->val){
-                min = &list;
-            }
-        }
-        ListNode* ans = *min;
-        (*min) = (*min)->next;
-        if((*min) == nullptr){
-            swap(*min, lists[lists.size() - 1]);
-            lists.pop_back();
-        }
-        return ans;
     }
 
 };
