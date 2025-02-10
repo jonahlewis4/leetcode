@@ -1,21 +1,38 @@
 class Solution {
 public:
     int longestValidParentheses(string s) {
-        int maxans = 0;
-        stack<int> stack;
-        stack.push(-1);
+        int open = 0;
+        int close = 0;
+        int maximum = 0;
         for(int i = 0; i < s.size(); i++){
             if(s[i] == '('){
-                stack.push(i);
+                open++;
             } else {
-                stack.pop();
-                if(stack.empty()){
-                    stack.push(i);
-                } else {
-                    maxans = max(maxans, i - stack.top());
-                }
+                close++;
+            }
+            if(open == close){
+                maximum = std::max(maximum, open + close);
+            } else if(close > open){
+                open = 0;
+                close = 0;
             }
         }
-        return maxans;
+
+        open = 0;
+        close = 0;
+        for(int i = s.size() - 1; i >= 0; i--){
+            if(s[i] == ')'){
+                open++;
+            } else {
+                close++;
+            }
+            if(open == close){
+                maximum = std::max(maximum, open + close);
+            } else if(close > open){
+                open = 0;
+                close = 0;
+            }
+        }
+        return maximum;
     }
 };
