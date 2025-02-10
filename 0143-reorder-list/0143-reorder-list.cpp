@@ -11,48 +11,39 @@
 class Solution {
 public:
     void reorderList(ListNode* head) {
-        ListNode* fast = head;
         ListNode* slow = head;
-        ListNode* mid = slow;
-
+        ListNode* fast = head;
+        fast = fast->next;
         while(fast != nullptr){
-            mid = slow;
             slow = slow->next;
             fast = fast->next;
-            if(fast != nullptr){
-                fast = fast->next;
+            if(fast == nullptr){
+                continue;
             }
+            fast = fast->next;
         }
 
-        ListNode* rCur = llReverse(mid);
-        
-        ListNode* cur = head;
-        while(cur != nullptr && cur->next != nullptr && cur != rCur){
-            ListNode* temp = cur->next;
-            ListNode* temp2 = rCur->next;
-            cur->next = rCur;
-            rCur->next = temp;
-            cur = temp;
-            rCur = temp2;
-        }
-
-        if(cur != nullptr){
-            cur->next = rCur;
-        }
-        if(rCur != nullptr){
-            rCur->next = nullptr;
-        }
-        return;
-    }
-    ListNode* llReverse(ListNode* head){
         ListNode* prev = nullptr;
-        ListNode* cur = head;
-        while(cur != nullptr){
-            ListNode* temp = cur->next;
-            cur->next = prev;
-            prev = cur;
-            cur = temp;
+        ListNode* rev = slow;
+        while(rev != nullptr){
+            ListNode* temp = rev->next;
+            rev->next = prev;
+            prev = rev;
+            rev = temp;
         }
-        return prev;
+        rev = prev;
+        ListNode* cur = head;
+        while(cur != nullptr && rev != nullptr){
+            ListNode* curNext = cur->next;
+            ListNode* revNext = rev->next;
+            cur->next = rev;
+            if(curNext == slow){
+                
+            } else {
+                rev->next = curNext;
+            }
+            rev = revNext;
+            cur = curNext;
+        }
     }
 };
