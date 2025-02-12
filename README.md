@@ -71,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1108-analyze-user-website-visit-pattern](https://github.com/jonahlewis4/leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
+| [2165-plates-between-candles](https://github.com/jonahlewis4/leetcode/tree/master/2165-plates-between-candles) |
 | [2215-finding-3-digit-even-numbers](https://github.com/jonahlewis4/leetcode/tree/master/2215-finding-3-digit-even-numbers) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/jonahlewis4/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2465-shifting-letters-ii](https://github.com/jonahlewis4/leetcode/tree/master/2465-shifting-letters-ii) |
@@ -157,6 +158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1023-time-based-key-value-store](https://github.com/jonahlewis4/leetcode/tree/master/1023-time-based-key-value-store) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
+| [2165-plates-between-candles](https://github.com/jonahlewis4/leetcode/tree/master/2165-plates-between-candles) |
 | [3410-find-longest-self-contained-substring](https://github.com/jonahlewis4/leetcode/tree/master/3410-find-longest-self-contained-substring) |
 ## Line Sweep
 |  |
@@ -325,6 +327,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1146-greatest-common-divisor-of-strings](https://github.com/jonahlewis4/leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
 | [1356-minimum-number-of-moves-to-make-palindrome](https://github.com/jonahlewis4/leetcode/tree/master/1356-minimum-number-of-moves-to-make-palindrome) |
 | [1894-merge-strings-alternately](https://github.com/jonahlewis4/leetcode/tree/master/1894-merge-strings-alternately) |
+| [2165-plates-between-candles](https://github.com/jonahlewis4/leetcode/tree/master/2165-plates-between-candles) |
 | [2300-construct-string-with-repeat-limit](https://github.com/jonahlewis4/leetcode/tree/master/2300-construct-string-with-repeat-limit) |
 | [2414-move-pieces-to-obtain-a-string](https://github.com/jonahlewis4/leetcode/tree/master/2414-move-pieces-to-obtain-a-string) |
 | [2465-shifting-letters-ii](https://github.com/jonahlewis4/leetcode/tree/master/2465-shifting-letters-ii) |
@@ -393,6 +396,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0238-product-of-array-except-self](https://github.com/jonahlewis4/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
+| [2165-plates-between-candles](https://github.com/jonahlewis4/leetcode/tree/master/2165-plates-between-candles) |
 | [2465-shifting-letters-ii](https://github.com/jonahlewis4/leetcode/tree/master/2465-shifting-letters-ii) |
 | [3410-find-longest-self-contained-substring](https://github.com/jonahlewis4/leetcode/tree/master/3410-find-longest-self-contained-substring) |
 | [3639-zero-array-transformation-i](https://github.com/jonahlewis4/leetcode/tree/master/3639-zero-array-transformation-i) |
