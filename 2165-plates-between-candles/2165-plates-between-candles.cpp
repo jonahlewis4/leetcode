@@ -1,8 +1,8 @@
 class Solution {
 public:
     vector<int> platesBetweenCandles(string s, vector<vector<int>>& queries) {
-        std::unordered_map<int, int> before;
-        std::unordered_map<int, int> after;
+        std::vector<int> before(s.size());
+        std::vector<int> after(s.size());
 
         int furthestPipe = -1;
         for(int i = 0; i < s.size(); i++){
