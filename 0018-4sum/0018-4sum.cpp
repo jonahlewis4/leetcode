@@ -1,21 +1,17 @@
 class Solution {
-private:
-    string hash(vector<int> & v) {
-        string res = "";
-        for(const auto & i : v){
-            res += to_string(i) + ",";
-        }
-        return res;
-    }
 public:
     vector<vector<int>> fourSum(vector<int>& nums, int target) {
         sort(nums.begin(), nums.end());
         vector<vector<int>> res;
 
-        unordered_set<string> set;
-
         for(int i = 0; i < nums.size(); i++){
+            if(i > 0 && nums[i] == nums[i - 1]){
+                continue;
+            }
             for(int j = i + 1; j < nums.size(); j++){
+                if(j > i + 1 && nums[j - 1] == nums[j]){
+                    continue;
+                }
                 int l = j + 1;
                 int r = nums.size() - 1;
 
@@ -27,10 +23,7 @@ public:
                         l++;
                     } else {
                         vector<int> match = {nums[i], nums[j], nums[l], nums[r]};
-                        if(set.find(hash(match)) == set.end()){
-                            set.insert(hash(match));
-                            res.push_back({nums[i], nums[j], nums[l], nums[r]});
-                        }
+                        res.push_back({nums[i], nums[j], nums[l], nums[r]});
                         while(l + 1 < r && nums[l] == nums[l + 1]){
                             l++;
                         }
