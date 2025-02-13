@@ -11,14 +11,12 @@ public:
                 break;
             }
         }
+
         int slow2 = 0;
-        while(true){
+        while(slow2 != slow){
             slow = nums[slow];
             slow2 = nums[slow2];
-            if(slow2 == slow){
-                return slow;
-            }
         }
-        return -1;
+        return slow;
     }
 };
