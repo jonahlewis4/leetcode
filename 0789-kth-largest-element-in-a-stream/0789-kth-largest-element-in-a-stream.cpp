@@ -17,17 +17,13 @@ public:
     }
     
     int add(int val) {
-        cout<<"adding "<<val<<endl;        
         if(pq.size() < capacity){
             pq.push(val);
-            cout<<"pushing 1"<<endl;
         } else if(val > pq.top()){
             int oldTop = pq.top();
             pq.pop();
             pq.push(val);
-            cout<<"replacing "<<oldTop<<" with "<<val<<endl;
         }
-        cout<<"returning smallest: "<<pq.top()<<endl;
         return pq.top();
     }
 };
