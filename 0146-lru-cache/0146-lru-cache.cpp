@@ -1,62 +1,56 @@
 class LRUCache {
 private:
-    struct node {
+    struct node{
         node* next;
         node* prev;
         int val;
         int key;
     };
+    unordered_map<int, node*> map;
+    int capacity;
     node* head;
     node* tail;
 
-    unordered_map<int, node*> map;
-    int capacity;
-
-
+    void deleteTail(){
+        if(tail == nullptr){
+            return;
+        } else if (tail->prev == nullptr){
+            delete tail;
+            tail = nullptr;
+            head = nullptr;
+        } else {
+            tail = tail->prev;
+            delete tail->next;
+            tail->next = nullptr;
+        }
+    }
     void insertHead(node* n){
         if(head == nullptr){
             head = n;
             tail = n;
             n->next = nullptr;
             n->prev = nullptr;
-        
         } else {
-            head -> prev = n;
-            n -> next = head;
+            head->prev = n;
+            n->next = head;
             n->prev = nullptr;
             head = n;
         }
     }
-    void deleteTail(){
-        if(tail == nullptr){
+    void moveHead(node* n){
+        if(n == head){
             return;
-        } else if (tail->prev != nullptr){
+        } else if (n == tail){
             tail = tail->prev;
-            delete(tail->next);
             tail->next = nullptr;
-        } else {
-            delete tail;
-            head = nullptr;
-            tail = nullptr;
-        }
-        
-    }
-    void moveToFront(node* n){
-        if(head == nullptr){
-            insertHead(n);
-        } else if (n == head){
-            return;
-        } else if (n -> next == nullptr){
-            tail = n -> prev;
-            n -> prev -> next = nullptr;
             insertHead(n);
         } else {
-            n->prev -> next = n -> next;
-            n -> next -> prev = n -> prev;
+            n->prev->next = n->next;
+            n->next->prev = n->prev;
             insertHead(n);
         }
-        
     }
+
 
 public:
     LRUCache(int capacity) {
@@ -69,25 +63,31 @@ public:
         if(map.find(key) == map.end()){
             return -1;
         } else {
-            node* n = map[key];
-            moveToFront(n);
-            return n->val;
+            moveHead(map[key]);
+            return map[key]->val;
         }
     }
     
     void put(int key, int value) {
-        if(get(key) == -1){
-            if(map.size() + 1 > capacity){
+        if(map.find(key) == map.end()){
+            node* newNode = new node{
+                .next = nullptr,
+                .prev = nullptr,
+                .val = value,
+                .key = key,
+            };
+            if(map.size() == capacity){
                 map.erase(tail->key);
                 deleteTail();
-            } 
-            node* newNode = new node();
-            newNode->val = value;
-            newNode->key = key;
-            insertHead(newNode);
+                insertHead(newNode);
+            } else {
+                insertHead(newNode);
+            
+            }
             map[key] = newNode;
         } else {
-            head->val = value;
+            map[key]->val = value;
+            moveHead(map[key]);
         }
     }
 };
