@@ -22,10 +22,10 @@ public:
         priority_queue<ListNode*, vector<ListNode*>, decltype(cmp)> pq;
 
         for(const auto & list : lists){
-            ListNode* c = list;
-            while(c != nullptr){
-                pq.push(c);
-                c = c->next;
+            ListNode* cur = list;
+            while(cur != nullptr){
+                pq.push(cur);
+                cur = cur->next;
             }
         }
 
