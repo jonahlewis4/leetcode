@@ -11,45 +11,44 @@
 class Solution {
 public:
     ListNode* reverseKGroup(ListNode* head, int k) {
-        ListNode* right = head;
-        ListNode* left = head;
-        int rC = 1;
-
-        bool first = true;
-        ListNode* prev = nullptr;
-        ListNode* connection = nullptr;
-        while(right != nullptr){
-            if(rC % k == 0){
-                ListNode* next = right->next;
-                right = next;
-
-                ListNode* firstLeft = left;
-
-                prev = nullptr;
-                for(int i = 0; i < k; i++){
-                    ListNode* temp = left->next;
-                    left->next = prev;
-                    prev = left;
-                    left = temp;
+        ListNode* l = head;
+        ListNode* r = head;
+        ListNode* link = nullptr;
+        ListNode* newHead;
+        while(r != nullptr){
+            int i = 0;
+            while (i < k) {
+                if(r == nullptr){
+                    break;
                 }
-                
-                if(first){
-                    head = prev;
-                    first = false;
-                } else {
-                    connection->next = prev;
-                }
-                connection = firstLeft;
-                
-            } else {
-                prev = right;
-                right = right->next;
+                r = r->next;
+                i++;
             }
-            rC++;
+            if(i < k){
+                break;
+            }
+
+            ListNode* prev = nullptr;
+            ListNode* oldLeft = l;
+
+            for(int j = 0; j < k; j++){
+                auto next = l -> next;
+                l->next = prev;
+                prev = l;
+                l = next;
+            }
+
+            if(link){
+                link->next = prev;
+            } else {
+                newHead = prev;
+            }
+            link = oldLeft;
         }
-        if(connection) {
-            connection->next = left;
+        if(link){
+            link->next = l;
         }
-        return head;
+        return newHead;
+
     }
 };
