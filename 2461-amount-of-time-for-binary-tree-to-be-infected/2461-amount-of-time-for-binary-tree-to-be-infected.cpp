@@ -27,7 +27,6 @@ public:
             maxDistance = max(maxDistance, distance);
             depth = min(leftDepth, rightDepth) - 1;
         }
-
         return depth;
     }
 };
