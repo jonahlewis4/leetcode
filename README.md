@@ -71,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1063-best-sightseeing-pair](https://github.com/jonahlewis4/leetcode/tree/master/1063-best-sightseeing-pair) |
 | [1085-the-earliest-moment-when-everyone-become-friends](https://github.com/jonahlewis4/leetcode/tree/master/1085-the-earliest-moment-when-everyone-become-friends) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/jonahlewis4/leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
+| [1127-last-stone-weight](https://github.com/jonahlewis4/leetcode/tree/master/1127-last-stone-weight) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [2165-plates-between-candles](https://github.com/jonahlewis4/leetcode/tree/master/2165-plates-between-candles) |
@@ -181,6 +182,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jonahlewis4/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
+| [1127-last-stone-weight](https://github.com/jonahlewis4/leetcode/tree/master/1127-last-stone-weight) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [2300-construct-string-with-repeat-limit](https://github.com/jonahlewis4/leetcode/tree/master/2300-construct-string-with-repeat-limit) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/jonahlewis4/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
