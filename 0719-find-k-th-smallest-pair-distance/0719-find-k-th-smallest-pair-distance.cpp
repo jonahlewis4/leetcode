@@ -5,7 +5,7 @@ public:
         std::sort(nums.begin(), nums.end());
         //binary search based on the distance
         int l = 0;
-        int r = *std::max_element(nums.begin(), nums.end()) - *std::min_element(nums.begin(), nums.end());
+        int r = nums[nums.size() - 1] - nums[0];
         while(l < r){
             int m = (l + r) / 2;
             int pairs = numPairs(nums, m);
