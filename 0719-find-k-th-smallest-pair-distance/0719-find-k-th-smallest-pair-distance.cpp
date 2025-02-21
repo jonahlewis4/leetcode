@@ -1,80 +1,48 @@
 class Solution {
 public:
     int smallestDistancePair(vector<int>& nums, int k) {
-        sort(nums.begin(), nums.end());
-        int arraySize = nums.size();
-
-        // Largest element in the sorted array
-        int maxElement = nums[arraySize - 1];
-
-        // Maximum possible distance
-        int maxPossibleDistance = maxElement * 2;
-
-        // Initialize arrays for prefix counts and value counts
-        vector<int> prefixCount(maxPossibleDistance, 0);
-        unordered_map<int, int> valueCount;
-
-        // Populate the prefixCount array
-        int index = 0;
-        for (int value = 0; value < maxPossibleDistance; ++value) {
-            while (index < arraySize && nums[index] <= value) {
-                ++index;
-            }
-            prefixCount[value] = index;
-        }
-
-        // Populate the valueCount map
-        for (int i = 0; i < arraySize; ++i) {
-            ++valueCount[nums[i]];
-        }
-
-        // Binary search for the k-th smallest distance
-        int low = 0, high = maxElement;
-        while (low < high) {
-            int mid = (low + high) / 2;
-
-            // Count pairs with distance <= mid
-            int count = countPairs(nums, prefixCount, valueCount, mid);
-
-            // Adjust binary search bounds based on count
-            if (count < k) {
-                low = mid + 1;
-            } else {
-                high = mid;
+        //sort every element.
+        std::sort(nums.begin(), nums.end());
+        //binary search based on the distance
+        int l = 0;
+        int r = *std::max_element(nums.begin(), nums.end()) - *std::min_element(nums.begin(), nums.end());
+        while(l < r){
+            int m = (l + r) / 2;
+            int pairs = numPairs(nums, m);
+            //if the number of pairs < k, l = m + 1
+            if (pairs < k){
+                l = m + 1;
+            } 
+            //if the number of pairs > k, r = m. Don't set to m - 1 because it could represent the upper bound.
+            //imagine something like  1,2,3,3,3,3,3,3,3, as the distances, and k is 4. There are 9 pairs where the distance is 3 or less, but k could still be equal to 3, so if we calculate that the number of pairs is greater than k, we set r to m and if none of the smaller values end up reaching it we will exit when l reaches r at 3.
+            else {
+                r = m;
             }
         }
-        return low;
+        return l;
     }
 
-private:
-    // Count number of pairs with distance <= m
-    int countPairs(vector<int>& nums, vector<int>& prefixCount,
-                   unordered_map<int, int>& valueCount, int maxDistance) {
-        int count = 0;
-        int arraySize = nums.size();
-        int index = 0;
+    //numPairs calculates the number of pairs with distance less than or equal to distance.
+    //nums must be already sorted.
+    int numPairs(const std::vector<int> & nums, int distance){
+        //sliding window:
 
-        while (index < arraySize) {
-            int currentValue = nums[index];
-            int valueCountForCurrent = valueCount.at(currentValue);
-
-            // Calculate pairs involving current value with distance <=
-            // maxDistance
-            int pairsWithLargerValues =
-                prefixCount[currentValue + maxDistance] -
-                prefixCount[currentValue];
-            int pairsWithSameValues =
-                valueCountForCurrent * (valueCountForCurrent - 1) / 2;
-
-            count += pairsWithLargerValues * valueCountForCurrent +
-                     pairsWithSameValues;
-
-            // Skip duplicate values
-            while (index + 1 < arraySize && nums[index] == nums[index + 1]) {
-                ++index;
+        //if rVal - lVal is less than or equal distance, every value between rVal and lVal is added. Then increase r
+        //otherwise increase l to try to decrease rVal - lVal
+        int l = 0;
+        int r = 0;
+        int pairs = 0;
+        while(r < nums.size()){
+            int rVal = nums[r];
+            int lVal = nums[l];
+            if(rVal - lVal <= distance){
+                pairs += r - l;
+                r++;
+            } else {
+                l++;
             }
-            ++index;
         }
-        return count;
+        return pairs;
+    
     }
 };
