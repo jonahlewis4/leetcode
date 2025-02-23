@@ -1,39 +1,38 @@
 class Solution {
 public:
     int leastInterval(vector<char>& tasks, int n) {
-        vector<int> count(26, 0);
-        for (char task : tasks) {
-            count[task - 'A']++;
+        std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>, std::less<std::pair<int, int>>> pq;
+
+        unordered_map<int, int> taskCount;
+        for(int task : tasks){
+            taskCount[task]++;
         }
-        
-        priority_queue<int> maxHeap;
-        for (int cnt : count) {
-            if (cnt > 0) {
-                maxHeap.push(cnt);
-            }
+        for(const auto & p : taskCount){
+            pq.push({p.second, -n - 1});
         }
-        
-        int time = 0;
-        queue<pair<int, int>> q;
-        while (!maxHeap.empty() || !q.empty()) {
-            time++;
-            
-            if (maxHeap.empty()) {
-                time = q.front().second;
-            } else {
-                int cnt = maxHeap.top() - 1;
-                maxHeap.pop();
-                if (cnt > 0) {
-                    q.push({cnt, time + n});
+
+        std::queue<pair<int, int>> q;
+
+        int intervals = 0;
+
+        while(!pq.empty() || !q.empty()){
+            if(!q.empty() && q.front().second + n < intervals){
+                if(q.front().first > 0){
+                    pq.push({q.front().first, intervals});
                 }
+                q.pop();
+            } else if (!pq.empty()){
+                auto p = pq.top();
+                pq.pop();
+                if(p.first - 1 > 0){
+                    q.push({p.first - 1, intervals});
+                }
+                intervals++;
+            } else {
+                intervals++;
             }
             
-            if (!q.empty() && q.front().second == time) {
-                maxHeap.push(q.front().first);
-                q.pop();
-            }
         }
-        
-        return time;
+        return intervals;
     }
 };
