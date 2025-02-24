@@ -22,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0054-spiral-matrix) |
 | [0056-merge-intervals](https://github.com/jonahlewis4/leetcode/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/jonahlewis4/leetcode/tree/master/0057-insert-interval) |
+| [0063-unique-paths-ii](https://github.com/jonahlewis4/leetcode/tree/master/0063-unique-paths-ii) |
 | [0066-plus-one](https://github.com/jonahlewis4/leetcode/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/jonahlewis4/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0074-search-a-2d-matrix) |
@@ -124,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/jonahlewis4/leetcode/tree/master/0042-trapping-rain-water) |
+| [0063-unique-paths-ii](https://github.com/jonahlewis4/leetcode/tree/master/0063-unique-paths-ii) |
 | [0118-pascals-triangle](https://github.com/jonahlewis4/leetcode/tree/master/0118-pascals-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/jonahlewis4/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/jonahlewis4/leetcode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
@@ -300,6 +302,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0036-valid-sudoku](https://github.com/jonahlewis4/leetcode/tree/master/0036-valid-sudoku) |
 | [0048-rotate-image](https://github.com/jonahlewis4/leetcode/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0054-spiral-matrix) |
+| [0063-unique-paths-ii](https://github.com/jonahlewis4/leetcode/tree/master/0063-unique-paths-ii) |
 | [0073-set-matrix-zeroes](https://github.com/jonahlewis4/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0074-search-a-2d-matrix) |
 ## Simulation
