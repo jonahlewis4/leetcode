@@ -4,12 +4,12 @@ private:
 public:
     int trapRainWater(vector<vector<int>>& heightMap) {
         const auto cmp = [](const auto & a, const auto & b){
-            return a[0] > b[0];
+            return get<0>(a) > get<0>(b);
         };
-        priority_queue<vector<int>, vector<vector<int>>, decltype(cmp)> pq;
+        priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, decltype(cmp)> pq;
         int rc = heightMap.size();
         int cc = heightMap[0].size();
-        vector<vector<int>> visited(rc, vector<int>(cc, 0));
+        vector<vector<bool>> visited(rc, vector<bool>(cc, 0));
 
         for(int col = 0; col < cc; col++){
             pq.push({heightMap[0][col], 0, col});
@@ -29,14 +29,13 @@ public:
         
         int water = 0;
         while(!pq.empty()){
-            const auto top = pq.top();
+            
+            const auto [ height, row, col ] = pq.top();
             pq.pop();
-            maxHeight = max(maxHeight, top[0]);
-            int depth = maxHeight - top[0];
+            maxHeight = max(maxHeight, height);
+            int depth = maxHeight - height;
             water += depth;
 
-            int row = top[1];
-            int col = top[2];
 
             
             if(row - 1 >= 0 && !visited[row - 1][col]){
