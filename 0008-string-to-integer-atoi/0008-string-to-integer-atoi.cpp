@@ -12,19 +12,26 @@ public:
         if(negative || s[i] == '+'){
             i++;
         }
-        long long sum = 0;
+        int sum = 0;
         while(i < s.size() && isdigit(s[i])){
-            sum *= 10;
-            if(negative){
-                sum -= int(s[i] - '0');
-            } else {
-                sum += int(s[i] - '0');
+            int digit = int(s[i] - '0');
+            if(sum > INT_MAX / 10 || sum == INT_MAX / 10 && digit > INT_MAX % 10){
+                if(negative){
+                    return INT_MIN;
+                } else {
+                    return INT_MAX;
+                }
+
             }
-            sum = max((long long)INT_MIN, sum);
-            sum = min((long long)INT_MAX, sum);
+            sum *= 10;
+        
+            sum += digit;
             i++;
         }
 
+        if(negative){
+            sum *= -1;
+        }
         return sum;
     }
 };
