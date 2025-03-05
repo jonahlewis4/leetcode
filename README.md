@@ -278,6 +278,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/jonahlewis4/leetcode/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/jonahlewis4/leetcode/tree/master/0202-happy-number) |
 | [0224-basic-calculator](https://github.com/jonahlewis4/leetcode/tree/master/0224-basic-calculator) |
+| [0227-basic-calculator-ii](https://github.com/jonahlewis4/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0371-sum-of-two-integers](https://github.com/jonahlewis4/leetcode/tree/master/0371-sum-of-two-integers) |
 | [0380-insert-delete-getrandom-o1](https://github.com/jonahlewis4/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -377,6 +378,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/jonahlewis4/leetcode/tree/master/0179-largest-number) |
 | [0205-isomorphic-strings](https://github.com/jonahlewis4/leetcode/tree/master/0205-isomorphic-strings) |
 | [0224-basic-calculator](https://github.com/jonahlewis4/leetcode/tree/master/0224-basic-calculator) |
+| [0227-basic-calculator-ii](https://github.com/jonahlewis4/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/jonahlewis4/leetcode/tree/master/0242-valid-anagram) |
 | [0271-encode-and-decode-strings](https://github.com/jonahlewis4/leetcode/tree/master/0271-encode-and-decode-strings) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
@@ -515,6 +517,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/jonahlewis4/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/jonahlewis4/leetcode/tree/master/0155-min-stack) |
 | [0224-basic-calculator](https://github.com/jonahlewis4/leetcode/tree/master/0224-basic-calculator) |
+| [0227-basic-calculator-ii](https://github.com/jonahlewis4/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0234-palindrome-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/jonahlewis4/leetcode/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/jonahlewis4/leetcode/tree/master/0402-remove-k-digits) |
