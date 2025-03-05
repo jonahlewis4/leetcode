@@ -8,23 +8,13 @@ public:
     }
 
     void calc(vector<string>& cur, vector<vector<string>>& res, const string& s, int l, int r){
-        if(isPal(s, l, r)){
-            cur.push_back(s.substr(l, r - l + 1));
-            if(r == s.size() - 1){
-                res.push_back(cur);
-            } else {
-                calc(cur, res, s, l + 1, r + 1);
-            }
-            cur.pop_back();
-        } 
-        r++;
         while(r < s.size()){
             if (isPal(s, l, r)){
                 cur.push_back(s.substr(l, r - l + 1));
                 if(r == s.size() - 1){
                     res.push_back(cur);
                 } else {
-                    calc(cur, res, s, r + 1, r + 1);
+                    calc(cur, res, s, r +1, r + 1);
                 }
                 cur.pop_back();
             }
