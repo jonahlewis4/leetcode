@@ -1,7 +1,11 @@
 class Solution {
+private:
+vector<vector<int>> pals;
 public:
     vector<vector<string>> partition(string s) {
         vector<vector<string>> res;
+
+        pals = vector<vector<int>>(s.size(), vector<int>(s.size(), -1));
         vector<string> cur;
         calc(cur, res, s, 0, 0);  
         return res;  
@@ -28,13 +32,19 @@ public:
     bool isPal(const string&s, int l, int r){
         int ogL = l;
         int ogR = r;
+        if(pals[l][r] != -1){
+            return pals[l][r];
+        }
+     
         while(l <= r){
             if(s[l] != s[r]){
+                pals[ogL][ogR] = false;
                 return false;
             }
             l++;
             r--;
         }
+        pals[ogL][ogR] = true;
         return true;
     }
 
