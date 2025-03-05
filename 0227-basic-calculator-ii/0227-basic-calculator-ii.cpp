@@ -1,33 +1,27 @@
 class Solution {
 public:
     int calculate(string s) {
-        stack<int> stk;
         int i = 0;
         skipWhite(i, s);
         int num = getNum(i, s);
-        stk.push(num);
+        int sum = 0;
+        int prev = num;
         while(i < s.size()){
             char op = getOp(i, s);
             int num = getNum(i ,s);
             if(op == '-' ){
-                stk.push(-num);
+                sum += prev;
+                prev = -num;
             } else if (op == '+'){
-                stk.push(num);
+                sum += prev;
+                prev = num;
             } else if(op == '*'){
-                int top = stk.top();
-                stk.pop();
-                stk.push(top * num);
+                prev = prev * num;
             } else {
-                int top = stk.top();
-                stk.pop();
-                stk.push(top / num);
+                prev = prev / num;
             }
         }
-        int sum = 0;
-        while(!stk.empty()){
-            sum += stk.top();
-            stk.pop();
-        }
+        sum += prev;
         return sum;
     }
     void skipWhite(int &i, const string& s){
