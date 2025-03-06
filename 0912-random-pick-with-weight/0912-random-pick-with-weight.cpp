@@ -5,7 +5,7 @@ int sum;
 public:
     Solution(vector<int>& w) {
         int sum = 0;
-        sums.push_back(w[0]);
+        sums.push_back(w[0] - 1);
         sum += w[0];
         for(int i = 1; i < w.size(); i++){
             sums.push_back(w[i]);
@@ -27,7 +27,7 @@ public:
         int r = sums.size() - 1;
         while(l <= r){
             int m = (l + r) / 2;
-            if(sums[m] <= randomNumber){
+            if(sums[m] < randomNumber){
                 l = m + 1;
             } else {
                 ans = m;
