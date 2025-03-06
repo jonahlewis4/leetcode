@@ -4,9 +4,8 @@ vector<int> sums;
 int sum;
 public:
     Solution(vector<int>& w) {
-        sums = w;
         int sum = 0;
-        sums[0] = w[0];
+        sums.push_back(w[0]);
         sum += w[0];
         for(int i = 1; i < w.size(); i++){
             sums.push_back(w[i]);
@@ -22,8 +21,23 @@ public:
         int randomNumber = std::rand() % (sum);
         //cout<<"Random number: "<<randomNumber<<endl;
         //find entry where previous is less or equal current is greater. Return index of the greater one.
+        
+        int ans = -1;
+        int l = 0; 
+        int r = sums.size() - 1;
+        while(l <= r){
+            int m = (l + r) / 2;
+            if(sums[m] > randomNumber){
+                l = m + 1;
+            } else {
+                ans = m;
+                r = m - 1;
+            }
+        }
 
-        return lower_bound(sums.begin(), sums.end(), randomNumber + 1) - sums.begin();
+
+        int lb = lower_bound(sums.begin(), sums.end(), randomNumber + 1) - sums.begin();
+        return lb;
     }
 };
 
