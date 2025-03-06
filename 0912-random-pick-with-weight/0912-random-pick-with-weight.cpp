@@ -1,32 +1,26 @@
 class Solution {
 private:
 vector<int> sums;
-int sum;
 public:
     Solution(vector<int>& w) {
-        sums = w;
-        int sum = 0;
-        sums[0] = w[0];
-        sum += w[0];
-        for(int i = 1; i < w.size(); i++){
-            sums.push_back(w[i]);
-            sums[i] += sums[i - 1];
-            //cout<<sums[i]<<endl;
-            sum += w[i];
+        // sums.push_back(w[0]);
+        // for(int i = 1; i < w.size(); i++){
+        //     sums.push_back(w[i]);
+        //     sums[i] += sums[i - 1];
+        //     //cout<<sums[i]<<endl;
+        // }
+        for(auto n : w){
+            sums.push_back(n + (sums.empty() ? 0 : sums.back()));
         }
-        //cout<<"sum: "<<sum<<endl;
-        this->sum = sum;
     }
     
     int pickIndex() {
-        int randomNumber = std::rand() % (sum);
+        float random = (float) rand() / RAND_MAX; 
+        int randomNumber = random * sums.back();
         //cout<<"Random number: "<<randomNumber<<endl;
-        for(int i = 0; i < sums.size(); i++){
-            if(sums[i] > randomNumber){
-                return i;
-            }
-        }
-        return -1;
+        //find entry where previous is less or equal current is greater. Return index of the greater one.
+
+        return lower_bound(begin(sums), end(sums), randomNumber + 1) - begin(sums);
     }
 };
 
