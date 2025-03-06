@@ -27,17 +27,14 @@ public:
         int r = sums.size() - 1;
         while(l <= r){
             int m = (l + r) / 2;
-            if(sums[m] > randomNumber){
+            if(sums[m] <= randomNumber){
                 l = m + 1;
             } else {
                 ans = m;
                 r = m - 1;
             }
         }
-
-
-        int lb = lower_bound(sums.begin(), sums.end(), randomNumber + 1) - sums.begin();
-        return lb;
+        return ans;
     }
 };
 
