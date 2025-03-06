@@ -1,28 +1,26 @@
 class Solution {
 public:
     vector<vector<string>> solveNQueens(int n) {
-        vector<bool> colIsTaken(n);
-        vector<bool> rowIsTaken(n);
         string blankCol(n, '.');
         vector<string> cur(n, blankCol);
         vector<vector<string>> res;
         vector<tuple<int, int>> queens;
-        calc(colIsTaken, rowIsTaken, cur, res, 0, queens);
+        calc(cur, res, 0, queens);
         return res;
     }
-    void calc (vector<bool> & colIsTaken, vector<bool> &rowIsTaken, vector<string>& cur, 
+    void calc (vector<string>& cur, 
     vector<vector<string>> &res, int i, vector<tuple<int, int>> &queens){
-            int n = colIsTaken.size();
+            int n = cur.size();
             if(i >= n){
                 res.push_back(cur);
                 return;
             }
 
-            for(int row = 0; row < rowIsTaken.size(); row++){
+            for(int row = 0; row < n; row++){
                 if(noConflicts(row, i, queens)){
                     queens.push_back({row, i});
                     cur[row][i] = 'Q';
-                    calc(colIsTaken, rowIsTaken, cur, res, i + 1, queens);
+                    calc(cur, res, i + 1, queens);
                     cur[row][i] = '.';
                     queens.pop_back();
                 }
