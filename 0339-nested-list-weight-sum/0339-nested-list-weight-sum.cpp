@@ -30,7 +30,7 @@
 
 class Solution {
 private:
-    int nestSum(NestedInteger nested, int depth) const{
+    int nestSum(const NestedInteger& nested, int depth) const{
     if(nested.isInteger()){
         return nested.getInteger() * depth;
     } else {
