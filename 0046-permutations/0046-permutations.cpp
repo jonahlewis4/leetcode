@@ -3,29 +3,27 @@ public:
     vector<vector<int>> permute(vector<int>& nums) {
         vector<vector<int>> res;
         vector<int> cur;
-        unordered_set<int> notUsed;
-        for(const int num : nums){
-            notUsed.insert(num);
-        }
-        calc(res, cur, notUsed, nums);
+        calc(res, cur, nums);
         return res;
-
-        
     }
-    void calc(vector<vector<int>>& res, vector<int>& cur, unordered_set<int>& notUsed, const vector<int>& nums){
-        vector<int> avail;
-        for(const int i : nums){
-            if(notUsed.find(i) == notUsed.end()){
-                continue;
+    void calc(vector<vector<int>>& res, vector<int>& cur, const vector<int>& nums){
+        if(cur.size() == nums.size()){
+            res.push_back(cur);
+            return;
+        }
+        for(int i = 0; i < nums.size(); i++){
+            bool found = false;
+            for(int j = 0; j < cur.size(); j++){
+                if(cur[j] == nums[i]){
+                    found = true;
+                    break;
+                }
             }
-            cur.push_back(i);
-            if(cur.size() == nums.size()){
-                res.push_back(cur);
+            if(!found){
+                cur.push_back(nums[i]);
+                calc(res, cur, nums);
+                cur.pop_back();
             }
-            notUsed.erase(i);
-            calc(res, cur, notUsed, nums);
-            cur.pop_back();
-            notUsed.insert(i);
         }
     }
 };
