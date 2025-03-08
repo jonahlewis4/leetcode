@@ -1,47 +1,33 @@
 class Solution {
-private:
 public:
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
         vector<vector<int>> res;
-        vector<int> cand;
+        vector<int> cur;
         sort(candidates.begin(), candidates.end());
-        
-
-        calc(0, cand, res, candidates, target);
+        calc(0, target, candidates, res, cur);
         return res;
+        
     }
-    
-    void calc(int i, vector<int>& cand, vector<vector<int>>& res, const vector<int>& candidates, const int target){
+    void calc(int i, int target, const vector<int>& candidates, vector<vector<int>>& results, vector<int> &cur){
         if(target == 0){
-            res.push_back(cand);
-            return;
-        } else if (target < 0){
+            results.push_back(cur);
             return;
         }
         if(i >= candidates.size()){
             return;
         }
-        
-        cand.push_back(candidates[i]);
-        calc(i + 1, cand, res, candidates, target - candidates[i]);
-        cand.pop_back();
+        if(target < 0){
+            return;
+        }
+        cur.push_back(candidates[i]);
+        calc(i + 1, target - cur.back(), candidates, results, cur);
+        cur.pop_back();
 
-        i++;
-        while(i < candidates.size() && candidates[i] == candidates[i - 1]){
+        int skip = candidates[i];
+        while(i < candidates.size() && candidates[i] == skip){
             i++;
         }
-        calc(i, cand, res, candidates, target);
-    }   
-    
-    
-    
-    
-    string hash(vector<int>& key){
-        string res = "";
-        for(const char c : key){
-            res += c;
-            res += '.';
-        }
-        return res;
+        calc(i, target, candidates, results, cur);
+        
     }
 };
