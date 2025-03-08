@@ -12,20 +12,32 @@ public:
 class Solution {
 public:
     Node* lowestCommonAncestor(Node* p, Node * q) {
-        std::unordered_set<Node*> pSet;
-        std::unordered_set<Node*> qSet;
-        while(true){
-            pSet.insert(p);
-            if(pSet.find(q) != pSet.end()){
-                return q;
-            }
-            qSet.insert(q);
-            if(qSet.find(p) != qSet.end()){
-                return p;
-            }
-            q = !q ? q : q->parent;
-            p = !p ? p : p->parent;
+        int pDist = 0;
+        int qDist = 0;
+        Node* tempP = p;
+        while(tempP != nullptr){
+            tempP = tempP->parent;
+            pDist++;
         }
-        return nullptr;
+        Node*tempQ = q;
+        while(tempQ != nullptr){
+            tempQ = tempQ->parent;
+            qDist++;
+        }
+        int offset = abs(qDist - pDist);
+        if(qDist > pDist){
+            swap(p, q);
+        }
+
+        for(int i = 0; i < offset; i++){
+            p = p->parent;
+        }
+
+        while(p != q){
+            p = p->parent;
+            q = q->parent;
+        }
+        return p;
+
     }
 };
