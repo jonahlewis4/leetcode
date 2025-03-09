@@ -1,19 +1,14 @@
 class Solution {
 private:
-    vector<vector<string>> res;
-    string s;
-    vector<string> cur;
-    vector<vector<bool>> pals;
 public:
     vector<vector<string>> partition(const string& s) {
-        res = {};
-        this->s = s;
-        pals = vector<vector<bool>>(this->s.size(), vector<bool>(this->s.size(), false));
-        cur = {};
-        calc(0);
+        vector<vector<string>> res;
+        vector<vector<bool>> pals = vector<vector<bool>>(s.size(), vector<bool>(s.size(), false));
+        vector<string> cur = {};
+        calc(0, res, pals, cur, s);
         return res;
     }
-    void calc(int i){
+    void calc(int i, vector<vector<string>>& res, vector<vector<bool>>& pals, vector<string>& cur, const string& s){
         if(i >= s.size()){
             res.push_back(cur);
             return;
@@ -27,7 +22,7 @@ public:
             if(singleLetter || (edgesMatch && (doubleLetter || (pals[i + 1][j - 1]) ) ) ){
                 cur.push_back(newPal);
                 pals[i][j] = true;
-                calc(j + 1);
+                calc(j + 1, res, pals, cur, s);
                 cur.pop_back();
             }
         }
