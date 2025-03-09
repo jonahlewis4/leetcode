@@ -7,9 +7,9 @@ private:
 
         const int regularDiff = abs(time1 - time2);
         const int rolloverDiff = abs(time2 + maxTime - time1);
-        const int rolloverDiff2 = abs(time1 + maxTime - time2);
+        // const int rolloverDiff2 = abs(time1 + maxTime - time2);
 
-        return min({regularDiff, rolloverDiff, rolloverDiff2});
+        return min({regularDiff, rolloverDiff});
     }
     int numerize(const string& a) const {
         int hours = stoi(a.substr(0, 2));
