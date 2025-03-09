@@ -2,11 +2,9 @@ class Solution {
 private:
     const int maxTime = 1440;
     int diff(const int a, const int b) const {
-        const int time1 = a;
-        const int time2 = b;
 
-        const int regularDiff = abs(time1 - time2);
-        const int rolloverDiff = abs(time2 + maxTime - time1);
+        const int regularDiff = abs(a - b);
+        const int rolloverDiff = abs(b + maxTime - a);
         // const int rolloverDiff2 = abs(time1 + maxTime - time2);
 
         return min({regularDiff, rolloverDiff});
