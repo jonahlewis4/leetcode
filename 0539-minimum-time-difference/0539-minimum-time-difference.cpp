@@ -12,8 +12,8 @@ private:
         return min({regularDiff, rolloverDiff});
     }
     int numerize(const string& a) const {
-        int hours = a[0] * 10 + a[1];
-        int minutes = a[3] * 10 + a[4];
+        int hours = (a[0] - '0') * 10 + (a[1] - '0');
+        int minutes = (a[3] - '0') * 10 + (a[4] - '0');
         return hours * 60 + minutes;
     }
 public:
