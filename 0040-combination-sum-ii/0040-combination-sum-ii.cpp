@@ -4,30 +4,31 @@ public:
         vector<vector<int>> res;
         vector<int> cur;
         sort(candidates.begin(), candidates.end());
-        calc(0, target, candidates, res, cur);
+        calc(0, res, cur, target, candidates);
         return res;
-        
     }
-    void calc(int i, int target, const vector<int>& candidates, vector<vector<int>>& results, vector<int> &cur){
+    void calc(int i, vector<vector<int>> &res, vector<int> &cur, int target, vector<int> &candidates){
         if(target == 0){
-            results.push_back(cur);
-            return;
-        }
-        if(i >= candidates.size()){
+            res.push_back(cur);
             return;
         }
         if(target < 0){
             return;
         }
+        if(i >= candidates.size()){
+            return;
+        }
+
+        //use and move to next one or don't use
+
         cur.push_back(candidates[i]);
-        calc(i + 1, target - cur.back(), candidates, results, cur);
+        calc(i + 1, res, cur, target - cur.back(), candidates);
         cur.pop_back();
 
         int skip = candidates[i];
-        while(i < candidates.size() && candidates[i] == skip){
+        while(i < candidates.size() && candidates[i] == skip ){
             i++;
         }
-        calc(i, target, candidates, results, cur);
-        
+        calc(i, res, cur, target, candidates);
     }
 };
