@@ -17,11 +17,20 @@ public:
     // Return the dotProduct of two sparse vectors
     int dotProduct(SparseVector& vec) {
         int sum = 0;
-        for(const auto &[index, value] : valAtIndex){
-            if(vec[index] != 0){
-                sum += vec[index] * value;
+        if(valAtIndex.size() < vec.size()){
+            for(const auto &[index, value] : valAtIndex){
+                if(vec[index] != 0){
+                    sum += vec[index] * value;
+                }
+            }
+        } else {
+            for(const auto &[index, value] : vec.valAtIndex){
+                if((*this)[index] != 0){
+                    sum += (*this)[index] * value;
+                }
             }
         }
+        
 
         return sum;
     }
