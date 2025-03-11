@@ -7,6 +7,9 @@ public:
     SparseVector(vector<int> &nums) {
         length = nums.size();
         for(int i = 0; i < nums.size(); i++){
+            if(nums[i] == 0){
+                continue;
+            }
             valAtIndex[i] = nums[i];
         }    
     }
@@ -14,11 +17,12 @@ public:
     // Return the dotProduct of two sparse vectors
     int dotProduct(SparseVector& vec) {
         int sum = 0;
-        for(int i = 0; i < vec.size(); i++){
-            int val1 = vec[i];
-            int val2 = (*this)[i];
-            sum += val1 * val2;
+        for(const auto &[index, value] : valAtIndex){
+            if(vec[index] != 0){
+                sum += vec[index] * value;
+            }
         }
+
         return sum;
     }
     int operator[](const int i){
@@ -28,6 +32,7 @@ public:
         return valAtIndex[i];
     }
     int size() const {
+        cout<<"size: "<<valAtIndex.size()<<endl;
         return valAtIndex.size();
     }
 
