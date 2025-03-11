@@ -16,12 +16,15 @@ public:
         int sum = 0;
         for(int i = 0; i < vec.size(); i++){
             int val1 = vec[i];
-            int val2 = this->valAtIndex[i];
+            int val2 = (*this)[i];
             sum += val1 * val2;
         }
         return sum;
     }
-    int& operator[](const int i){
+    int operator[](const int i){
+        if(valAtIndex.find(i) == valAtIndex.end()){
+            return 0;
+        }
         return valAtIndex[i];
     }
     int size() const {
