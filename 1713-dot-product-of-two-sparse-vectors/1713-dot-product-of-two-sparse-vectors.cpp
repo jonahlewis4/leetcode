@@ -28,7 +28,7 @@ public:
         return valAtIndex[i];
     }
     int size() const {
-        return length;
+        return valAtIndex.size();
     }
 
 };
