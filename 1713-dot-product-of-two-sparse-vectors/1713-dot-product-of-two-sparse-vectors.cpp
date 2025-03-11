@@ -16,7 +16,7 @@ public:
         int sum = 0;
         for(int i = 0; i < vec.size(); i++){
             int val1 = vec[i];
-            int val2 = (*this)[i];
+            int val2 = this->valAtIndex[i];
             sum += val1 * val2;
         }
         return sum;
