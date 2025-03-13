@@ -1,29 +1,35 @@
 class Solution {
 private:
+    vector<vector<string>> res;
+    vector<string> cur;
+    vector<vector<bool>> pals;
+    string s;
 public:
-    vector<vector<string>> partition(const string& s) {
-        vector<vector<string>> res;
-        vector<vector<bool>> pals = vector<vector<bool>>(s.size(), vector<bool>(s.size(), false));
-        vector<string> cur = {};
-        calc(0, res, pals, cur, s);
+    vector<vector<string>> partition(string s) {
+        res = {};
+        cur = {};
+        pals = vector<vector<bool>>(s.size(), vector<bool>(s.size(), false));
+        this->s = s;
+        calc(0);
         return res;
     }
-    void calc(int i, vector<vector<string>>& res, vector<vector<bool>>& pals, vector<string>& cur, const string& s){
+
+    void calc(int i){
+        //check if exceeded
         if(i >= s.size()){
             res.push_back(cur);
             return;
         }
-        string newPal = "";
+        string candidate = "";
         for(int j = i; j < s.size(); j++){
-            newPal.push_back(s[j]);
-            bool singleLetter = newPal.size() == 1;
-            bool edgesMatch = newPal[0] == newPal[newPal.size() - 1];
-            bool doubleLetter = newPal.size() == 2;
-            if(singleLetter || (edgesMatch && (doubleLetter || (pals[i + 1][j - 1]) ) ) ){
-                cur.push_back(newPal);
-                pals[i][j] = true;
-                calc(j + 1, res, pals, cur, s);
-                cur.pop_back();
+            candidate.push_back(s[j]);
+            if(s[i] == s[j]){
+                if(j - i == 0 || j - i == 1 || pals[i + 1][j - 1]){
+                    pals[i][j] = true;
+                    cur.push_back(candidate);
+                    calc(j + 1);
+                    cur.pop_back();
+                }
             }
         }
     }
