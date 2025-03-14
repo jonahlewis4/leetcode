@@ -18,7 +18,6 @@ public:
                 res ^= digit;
                 ones--;
             }
-            cout<<bitset<32>(digit)<<endl;
             digit >>= 1;
             num1copy <<= 1;
         }
