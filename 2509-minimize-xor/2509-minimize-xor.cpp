@@ -35,7 +35,14 @@ public:
 
     }
     unsigned int num1s(unsigned int num) const {
-        return __builtin_popcount(num);
+        unsigned int count = 0;
+        while(num > 0){
+            if((num & 1) == 1){
+                count++;
+            }
+            num >>= 1; 
+        }
+        return count;
     }
 };
 int Solution::leftMostBit = 0b10000000000000000000000000000000;
