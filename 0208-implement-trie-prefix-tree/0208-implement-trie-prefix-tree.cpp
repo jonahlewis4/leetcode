@@ -1,12 +1,8 @@
 class Trie {
 private:
     struct node {
-        bool isEnd;
-        vector<unique_ptr<node>> children;
-        node(){
-            isEnd = false;
-            children = vector<unique_ptr<node>>(26);
-        }
+        bool isEnd = false;
+        array<unique_ptr<node>, 26> children;
     };
     unique_ptr<node> root;
 public:
