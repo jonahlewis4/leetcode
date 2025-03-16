@@ -1,93 +1,86 @@
-class Solution {
-    class Trie{
-        bool isEnd = false;
-        array<unique_ptr<Trie>, 26> children;
-        
-        public:
-        void insert(const string& word){
-            Trie* cur = this;
-            for(int i = 0; i < word.size(); i++){
-                int idx = word[i] - 'a';
-                if(cur->children[idx] == nullptr){
-                    cur->children[idx] = make_unique<Trie>();
-                }
-                cur = cur->children[idx].get();
-            }
-            cur->isEnd = true;
-        }
-        bool find(const string& word){
-            Trie* cur = this;
-            for(int i = 0; i < word.size(); i++){
-                int idx = word[i] - 'a';
-                if(cur->children[idx] == nullptr){
-                    return false;
-                }
-                cur = cur->children[idx].get();
-            }
-            return cur->isEnd;
-        }
-        Trie* get(const char c) const {
-            return children[c - 'a'].get();
-        }
-        bool isWord() const {
-            return isEnd;
-        }
-        void unset() {
-            isEnd = false;
-        }
-    };
-
-    Trie trie;
-    vector<vector<char>>* board;
-    vector<string> res;
-    string curWord = "";
-    vector<vector<bool>> visited;
-    unordered_set<string> inRes;
+class TrieNode {
 public:
-    vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {
-        for(const string& word : words){
-            trie.insert(word);
-        }
-        this->board = &board;
-        visited = vector<vector<bool>>(board.size(), vector<bool>(board[0].size(), false));
-        for(int row = 0; row < board.size(); row++){
-            for(int col = 0; col < board[row].size(); col++){
-                calc(&trie, row, col);
-            }
-        }
-        return res;
-    }
-    void calc(Trie* cur, int row, int col){
-        if(cur == nullptr){
-            return;
-        }
-        if(row < 0 || row >= board->size() || col < 0 || col >= (*board)[row].size()){
-            return;
-        }
-        if(visited[row][col]){
-            return;
-        }
-        char c = (*board)[row][col];
-        Trie* next = cur->get(c);
-        if(!next){
-            return;
-        } else {
-            curWord.push_back(c);
-            visited[row][col] = true;
-            if(next->isWord()){
-                if(inRes.find(curWord) == inRes.end()){
-                    res.push_back(curWord);
-                    next->unset();
+    unordered_map<char, TrieNode*> children;
+    string word;
+
+    TrieNode() : word("") {}
+};
+
+class Solution {
+private:
+    vector<vector<char>> _board;
+    vector<string> _result;
+
+public:
+    vector<string> findWords(vector<vector<char>>& board,
+                             vector<string>& words) {
+        // Step 1). Construct the Trie
+        TrieNode* root = new TrieNode();
+        for (string& word : words) {
+            TrieNode* node = root;
+            for (char letter : word) {
+                if (node->children.find(letter) != node->children.end()) {
+                    node = node->children[letter];
+                } else {
+                    TrieNode* newNode = new TrieNode();
+                    node->children[letter] = newNode;
+                    node = newNode;
                 }
-                
             }
-            calc(next, row + 1, col);
-            calc(next, row - 1, col);
-            calc(next, row, col + 1);
-            calc(next, row, col - 1);
-            curWord.pop_back();
-            visited[row][col] = false;
+            node->word = word;  // store words in Trie
         }
 
+        this->_board = board;
+        // Step 2). Backtracking starting for each cell in the board
+        for (int row = 0; row < board.size(); ++row) {
+            for (int col = 0; col < board[row].size(); ++col) {
+                if (root->children.find(board[row][col]) !=
+                    root->children.end()) {
+                    backtracking(row, col, root);
+                }
+            }
+        }
+
+        return this->_result;
+    }
+
+private:
+    void backtracking(int row, int col, TrieNode* parent) {
+        char letter = this->_board[row][col];
+        TrieNode* currNode = parent->children[letter];
+
+        // check if there is any match
+        if (currNode->word != "") {
+            this->_result.push_back(currNode->word);
+            currNode->word = "";  // prevent duplicate entries
+        }
+
+        // mark the current letter before the EXPLORATION
+        this->_board[row][col] = '#';
+
+        // explore neighbor cells in around-clock directions: up, right, down,
+        // left
+        int rowOffset[] = {-1, 0, 1, 0};
+        int colOffset[] = {0, 1, 0, -1};
+        for (int i = 0; i < 4; ++i) {
+            int newRow = row + rowOffset[i];
+            int newCol = col + colOffset[i];
+            if (newRow < 0 || newRow >= this->_board.size() || newCol < 0 ||
+                newCol >= this->_board[0].size()) {
+                continue;
+            }
+            if (currNode->children.find(this->_board[newRow][newCol]) !=
+                currNode->children.end()) {
+                backtracking(newRow, newCol, currNode);
+            }
+        }
+
+        // End of EXPLORATION, restore the original letter in the board.
+        this->_board[row][col] = letter;
+
+        // Optimization: incrementally remove the leaf nodes
+        if (currNode->children.empty()) {
+            parent->children.erase(letter);
+        }
     }
 };
