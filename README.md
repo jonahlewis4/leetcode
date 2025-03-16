@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/jonahlewis4/leetcode/tree/master/0189-rotate-array) |
 | [0200-number-of-islands](https://github.com/jonahlewis4/leetcode/tree/master/0200-number-of-islands) |
 | [0209-minimum-size-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/master/0209-minimum-size-subarray-sum) |
+| [0212-word-search-ii](https://github.com/jonahlewis4/leetcode/tree/master/0212-word-search-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/jonahlewis4/leetcode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/jonahlewis4/leetcode/tree/master/0238-product-of-array-except-self) |
@@ -356,6 +357,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/jonahlewis4/leetcode/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/jonahlewis4/leetcode/tree/master/0200-number-of-islands) |
+| [0212-word-search-ii](https://github.com/jonahlewis4/leetcode/tree/master/0212-word-search-ii) |
 | [0407-trapping-rain-water-ii](https://github.com/jonahlewis4/leetcode/tree/master/0407-trapping-rain-water-ii) |
 ## Simulation
 |  |
@@ -402,6 +404,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0205-isomorphic-strings](https://github.com/jonahlewis4/leetcode/tree/master/0205-isomorphic-strings) |
 | [0208-implement-trie-prefix-tree](https://github.com/jonahlewis4/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/jonahlewis4/leetcode/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0212-word-search-ii](https://github.com/jonahlewis4/leetcode/tree/master/0212-word-search-ii) |
 | [0224-basic-calculator](https://github.com/jonahlewis4/leetcode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/jonahlewis4/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/jonahlewis4/leetcode/tree/master/0242-valid-anagram) |
@@ -591,6 +594,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/jonahlewis4/leetcode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/jonahlewis4/leetcode/tree/master/0090-subsets-ii) |
 | [0131-palindrome-partitioning](https://github.com/jonahlewis4/leetcode/tree/master/0131-palindrome-partitioning) |
+| [0212-word-search-ii](https://github.com/jonahlewis4/leetcode/tree/master/0212-word-search-ii) |
 ## Tree
 |  |
 | ------- |
@@ -774,4 +778,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/jonahlewis4/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/jonahlewis4/leetcode/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0212-word-search-ii](https://github.com/jonahlewis4/leetcode/tree/master/0212-word-search-ii) |
 <!---LeetCode Topics End-->
