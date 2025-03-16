@@ -1,6 +1,7 @@
 class Solution {
     class Trie{
         bool isEnd = false;
+        int childCount = 0;
         array<unique_ptr<Trie>, 26> children;
         
         public:
@@ -10,6 +11,7 @@ class Solution {
                 int idx = word[i] - 'a';
                 if(cur->children[idx] == nullptr){
                     cur->children[idx] = make_unique<Trie>();
+                    cur->childCount++;
                 }
                 cur = cur->children[idx].get();
             }
@@ -32,8 +34,15 @@ class Solution {
         bool isWord() const {
             return isEnd;
         }
+        void unWord() {
+            isEnd = false;
+        }
         void unset(const char c) {
-            children[c - 'a']->isEnd = false;
+            children[c - 'a'] = nullptr;
+            childCount--;
+        }
+        int count() const {
+            return childCount;
         }
     };
 
@@ -81,7 +90,10 @@ public:
             if(next->isWord()){
                 if(inRes.find(curWord) == inRes.end()){
                     res.push_back(curWord);
-                    cur->unset(c);
+                    next->unWord();
+                    if(next->count() == 0){
+                        cur->unset(c);
+                    }
                 }   
             }
             curWord.pop_back();
