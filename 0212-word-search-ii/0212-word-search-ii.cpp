@@ -32,6 +32,9 @@ class Solution {
         bool isWord() const {
             return isEnd;
         }
+        void unset() {
+            isEnd = false;
+        }
     };
 
     Trie trie;
@@ -74,8 +77,7 @@ public:
             if(next->isWord()){
                 if(inRes.find(curWord) == inRes.end()){
                     res.push_back(curWord);
-                    inRes.insert(curWord);
-
+                    next->unset();
                 }
                 
             }
