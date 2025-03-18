@@ -27,7 +27,7 @@ public:
         
     }
     
-    void insert(string word) {
+    void insert(const string& word) {
         auto cur = &root;
         for(int i = 0; i < word.size(); i++){
             char c = word[i];
@@ -39,7 +39,7 @@ public:
         cur->setEnd();
     }
     
-    bool search(string word) {
+    bool search(const string& word) {
         auto cur = &root;
         for(int i = 0; i < word.size(); i++){
             char c = word[i];
@@ -51,7 +51,7 @@ public:
         return cur->isWord();
     }
     
-    bool startsWith(string word) {
+    bool startsWith(const string& word) {
         auto cur = &root;
         for(int i = 0; i < word.size(); i++){
             char c = word[i];
