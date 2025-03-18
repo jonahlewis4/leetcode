@@ -1,46 +1,64 @@
 class Trie {
 private:
-    struct node {
+    class Node {
+    private:
         bool isEnd = false;
-        array<unique_ptr<node>, 26> children;
+        array<unique_ptr<Node>, 26> children;
+    public:
+        bool isWord() const {
+            return isEnd;
+        }
+        Node* get(char c){
+            return children[c - 'a'].get();
+        }
+        void put(char c){
+            children[c - 'a'] = make_unique<Node>();
+        }
+        void setEnd(){
+            isEnd = true;
+        }
+
     };
-    unique_ptr<node> root;
+
+    Node root;
+        
 public:
     Trie() {
-        root = make_unique<node>();
+        
     }
     
     void insert(string word) {
-        node* cur = root.get();
+        auto cur = &root;
         for(int i = 0; i < word.size(); i++){
-            if(cur->children[word[i] - 'a'] == nullptr){
-                cur->children[word[i] - 'a'] = make_unique<node>();
+            char c = word[i];
+            if(cur->get(c) == nullptr){
+                cur->put(c);
             }
-            cur = cur->children[word[i] - 'a'].get();
+            cur = cur->get(c);
         }
-        cur->isEnd = true;
+        cur->setEnd();
     }
     
-    bool search(const string &word) {
-        node* cur = root.get();
+    bool search(string word) {
+        auto cur = &root;
         for(int i = 0; i < word.size(); i++){
-            int idx = word[i] - 'a';
-            if(cur->children[idx] == nullptr){
+            char c = word[i];
+            if(cur->get(c) == nullptr){
                 return false;
             }
-            cur = cur->children[idx].get();
+            cur = cur->get(c);
         }
-        return cur->isEnd;
+        return cur->isWord();
     }
     
-    bool startsWith(const string &prefix) {
-        node* cur = root.get();
-        for(int i = 0; i < prefix.size(); i++){
-            int idx = prefix[i] - 'a';
-            if(cur->children[idx] == nullptr){
+    bool startsWith(string word) {
+        auto cur = &root;
+        for(int i = 0; i < word.size(); i++){
+            char c = word[i];
+            if(cur->get(c) == nullptr){
                 return false;
             }
-            cur = cur->children[idx].get();
+            cur = cur->get(c);
         }
         return true;
     }
