@@ -16,7 +16,7 @@ private:
                     const char c = s[i];
                     if(cur->get(c) == nullptr){
                         cur->children[c - 'a'] = make_unique<Trie>();
-                        _count++;
+                        cur->_count++;
                     }
                     cur = cur->get(c);
                 }
@@ -30,6 +30,13 @@ private:
             }
             void unWord() {
                 _isWord = false;
+            }
+            int count() const {
+                return _count;
+            }
+            void unset(const char c ) {
+                children[c - 'a'] = nullptr;
+                _count--;
             }
     };
     vector<string> res;
@@ -53,14 +60,6 @@ public:
     }
     
     void calc(Trie* cur, int row, int col){
-        if(cur == nullptr){
-            return;
-        }
-
-        if(cur->isWord()){
-            cur->unWord();
-            res.push_back(curWord);
-        }
         if(row < 0 || col < 0 || row >= board.size() || col >= board[row].size()){
             return;
         }
@@ -70,13 +69,25 @@ public:
         }
 
         int c = board[row][col];
+       
+        Trie* next = cur->get(c);
+        if(next == nullptr){
+            return;
+        }
         curWord.push_back(c);
         board[row][col] -= 'a';
-        Trie* next = cur->get(c);
         calc(next, row + 1, col);
         calc(next, row - 1, col);
         calc(next, row, col + 1);
         calc(next, row, col - 1);
+       
+        if(next->isWord()){
+            next->unWord();
+            if(next->count() == 0){
+                cur->unset(c);
+            }
+            res.push_back(curWord);
+        }
         board[row][col] += 'a';
         curWord.pop_back();
 
