@@ -1,31 +1,32 @@
 class Solution {
 private:
-    vector<vector<char>> *grid;
+    vector<vector<char>> _grid;
 public:
     int numIslands(vector<vector<char>>& grid) {
-        this->grid = &grid;
-        int sum = 0;
-        for(int i = 0; i < grid.size(); i++){
-            for(int j = 0; j < grid[i].size(); j++){
-                if((*this->grid)[i][j] == '1'){
-                    dfs(i, j);
-                    sum++;
-                }   
+        _grid = grid;
+        int count = 0;
+        for(int row = 0; row < grid.size(); row++){
+            for(int col = 0; col < grid[row].size(); col++){
+                if(_grid[row][col] == '1'){
+                    count++;
+                    setAllTo0(row, col);
+                }
             }
         }
-        return sum;
+        return count;
     }
-    void dfs(int i, int j){
-        if(i < 0 || i >= grid->size() || j < 0 || j >= (*grid)[i].size()){
-            return;
-        }
-        if((*grid)[i][j] == '1'){
-            (*grid)[i][j] = '0';
-            dfs(i + 1, j);
-            dfs(i, j + 1);
-            dfs(i - 1, j);
-            dfs(i, j - 1);
-        }
-        return;
+    void setAllTo0(const int row, const int col){
+            if(row < 0 || col < 0 || row >= _grid.size() || col >= _grid[row].size()){
+                return;
+            }
+            if(_grid[row][col] == '0'){
+                return;
+            }
+            _grid[row][col] = '0';
+            setAllTo0(row + 1, col);
+            setAllTo0(row - 1, col);
+            setAllTo0(row, col + 1);
+            setAllTo0(row, col - 1);
+
     }
 };
