@@ -1,41 +1,55 @@
 class Solution {
 public:
     int minSubarray(vector<int>& nums, int p) {
-        int n = nums.size();
-        int totalSum = 0;
-
-        // Step 1: Calculate total sum and target remainder
-        for (int num : nums) {
-            totalSum = (totalSum + num) % p;
+        //calculate target
+        int target = 0;
+        for(const int num : nums){
+            target += num;
+            target %= p;
+        }
+        if(target == 0){
+            return 0;
         }
 
-        int target = totalSum % p;
-        if (target == 0) return 0;  // The array is already divisible by p
+        //find a subarray where the mod is target. This is what we'll delete.
 
-        // Step 2: Use a hash map to track prefix sum mod p
-        unordered_map<int, int> modMap;
-        modMap[0] =
-            -1;  // To handle the case where the whole prefix is the answer
-        int currentSum = 0, minLen = n;
+        //7 2 5 2     ::   target = 7. p = 9
+        //7 0 5 7
 
-        // Step 3: Iterate over the array
-        for (int i = 0; i < n; ++i) {
-            currentSum = (currentSum + nums[i]) % p;
 
-            // Calculate what we need to remove
-            int needed = (currentSum - target + p) % p;
+        //1 3 3 1     ::   target = 8 % 3 = 2
+        //1 1 1 2
 
-            // If we have seen the needed remainder, we can consider this
-            // subarray
-            if (modMap.find(needed) != modMap.end()) {
-                minLen = min(minLen, i - modMap[needed]);
+
+        //6 3 5 2     ::        target = 16 % 9 = 7 
+        //6 0 5 7.    ::
+        
+        unordered_map<int, int> rightmost;
+        int min = nums.size();
+        
+        int curMod = 0;
+        for(int i = 0; i < nums.size(); i++){
+            int num = nums[i];
+            curMod += num;
+            curMod %= p;
+            
+            rightmost[curMod] = i;
+
+            //we want to find a prev such that (cur - prev) % p == target 
+            if(curMod == target){
+                min = std::min(min, i + 1);
             }
-
-            // Store the current remainder and index
-            modMap[currentSum] = i;
+            int prevMod = (curMod - target + p) % p;
+            if(rightmost.find(prevMod) != rightmost.end()){
+                int prevIdx = rightmost[prevMod];
+                min = std::min(i - prevIdx, min);
+            }
         }
 
-        // Step 4: Return result
-        return minLen == n ? -1 : minLen;
+        if(min == nums.size()){
+            return -1;
+        }
+        return min;
+
     }
 };
