@@ -104,7 +104,7 @@ public:
         points = vector<vector<Point>>(heights.size(), vector<Point>(heights[0].size()));
         initPoints(heights);
         calcPacific();
-        printPacific();
+        //printPacific();
         calcAtlantic();
         return calcReachable();
     }
