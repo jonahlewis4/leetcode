@@ -52,7 +52,6 @@ public:
         } else {
             increase(key);
         }
-        auto lst = &list;
 
     }
     void decrease(const string& key){
@@ -95,7 +94,6 @@ public:
         } else {
             decrease(key);
         }
-        auto lst = &list;
         
     }
     
@@ -103,7 +101,6 @@ public:
         if(list.size() == 0){
             return "";
         }
-        auto lst = &list;
         auto back = list.back();
         return *back.set.begin();
     }
