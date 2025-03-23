@@ -88,7 +88,7 @@ public:
     }
     void dec(const string &key) {
         if(map.find(key) == map.end()){
-            throw "cannot decrement non existant key";
+            //throw "cannot decrement non existant key";
         } else if (map[key]->count == 1){
             erase(key);
         } else {
