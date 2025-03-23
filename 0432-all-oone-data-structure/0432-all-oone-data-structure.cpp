@@ -101,8 +101,7 @@ public:
         if(list.size() == 0){
             return "";
         }
-        auto back = &list.back();
-        return *back->set.begin();
+        return *list.back().set.begin();
     }
     
     string getMinKey() {
