@@ -3,13 +3,13 @@ public:
     long long minimumSteps(const string &s) {
         
 
-        int num0 = 0;
+        int num1 = 0;
         long long sum = 0;
-        for(int i = s.size() - 1; i >= 0; i--){
-            if(s[i] == '0'){
-                num0++;
+        for(int i = 0; i  < s.size(); i++){
+            if(s[i] == '1'){
+                num1++;
             } else {
-                sum += num0;
+                sum += num1;
             }
         }
         return sum;
