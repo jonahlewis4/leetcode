@@ -43,7 +43,7 @@ public:
         while(true){
             bool allEmpty = true;
             bool allDependent = true;
-            auto nonIterNodes = nodes;
+            vector<int> toRemove;
             for(auto & p : nodes){
                 int nodeNum = p.first;
                 node& node = p.second;
@@ -52,22 +52,24 @@ public:
                 if(node._requires->size() == 0){
                     allDependent = false;
                     for(int dependentNum : *(node._isRequiredBy)){
-                        nonIterNodes[dependentNum]._requires->erase(nodeNum);
                         nodes[dependentNum]._requires->erase(nodeNum);
                     }
-                    nonIterNodes.erase(nodeNum);
+                    toRemove.push_back(nodeNum);
                 } else {
                     allEmpty = false;
                 }
 
             }
-            if(allEmpty || nonIterNodes.empty()){
+
+            for(const int i : toRemove){
+                nodes.erase(i);
+            }
+            if(allEmpty || nodes.empty()){
                 return true;
             }
             if(allDependent){
                 return false;
             }
-            nodes = nonIterNodes;    
             
 
             
