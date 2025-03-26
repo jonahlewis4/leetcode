@@ -1,66 +1,43 @@
 class Solution {
-private:
-struct node{
-    unordered_set<int> _requires;
-    unordered_set<int> _isRequiredBy;
-};
-    
+    // Map each course to its prerequisites
+    unordered_map<int, vector<int>> preMap;
+    // Store all courses along the current DFS path
+    unordered_set<int> visiting;
+
 public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-        
-
-        //loop through each course. 
-        //if the outDegree is 0, take remove all edges going into it
-
-        //if all complete, return true
-
-        //if none are completed in a gothrough, return false because there is a cycle.  
-
-
-        unordered_map<int, node> nodes;
-        for(const auto & prereq : prerequisites){
-            int dependent = prereq[0];
-            int required = prereq[1];
-            nodes[dependent]._requires.insert(required);
-            nodes[required]._isRequiredBy.insert(dependent);
+        for (int i = 0; i < numCourses; i++) {
+            preMap[i] = {};
+        }
+        for (const auto& prereq : prerequisites) {
+            preMap[prereq[0]].push_back(prereq[1]);
         }
 
-        int completed = 0;
-        while(true){
-            bool allEmpty = true;
-            bool allDependent = true;
-            vector<int> toRemove;
-            for(auto & p : nodes){
-                int nodeNum = p.first;
-                node& node = p.second;
-
-                //if the node doesn't require any others, then all nodes requiring it don't require this one
-                if(node._requires.size() == 0){
-                    allDependent = false;
-                    for(int dependentNum : node._isRequiredBy){
-                        nodes[dependentNum]._requires.erase(nodeNum);
-                    }
-                    toRemove.push_back(nodeNum);
-                } else {
-                    allEmpty = false;
-                }
-
-            }
-
-            for(const int i : toRemove){
-                nodes.erase(i);
-            }
-            if(allEmpty || nodes.empty()){
-                return true;
-            }
-            if(allDependent){
+        for (int c = 0; c < numCourses; c++) {
+            if (!dfs(c)) {
                 return false;
             }
-            
-
-            
         }
         return true;
+    }
 
+    bool dfs(int crs) {
+        if (visiting.count(crs)) {
+            // Cycle detected
+            return false;
+        }
+        if (preMap[crs].empty()) {
+            return true;
+        }
+
+        visiting.insert(crs);
+        for (int pre : preMap[crs]) {
+            if (!dfs(pre)) {
+                return false;
+            }
+        }
+        visiting.erase(crs);
+        preMap[crs].clear();
+        return true;
     }
 };
