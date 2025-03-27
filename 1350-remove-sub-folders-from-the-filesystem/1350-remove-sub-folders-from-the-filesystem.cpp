@@ -17,7 +17,9 @@ private:
             for(int i = 0; i < s.size(); i++){
                 char c = s[i];
                 int idx = hash(c);
-
+                if(c == '/' && cur -> isEnd){
+                    return;
+                }
                 if(cur->children[idx] == nullptr){
                     cur->children[idx] = make_unique<Trie>();
                 }
@@ -29,6 +31,9 @@ private:
         bool isSub(const string & s){
             Trie* cur = this;
             for(int i = 0; i < s.size(); i++){
+                // if(cur == nullptr){
+                //     return true;
+                // }
                 char c = s[i];
                 if(c == '/' && cur->isEnd){
                     return true;
@@ -53,19 +58,6 @@ public:
                 continue;
             }
             res.push_back(str);
-        }
-        return res;
-    }
-    vector<string> split(const string& s, char delilm) const {
-        string cur = "";
-        vector<string> res;
-        for(int i = 0; i < s.size(); i++){
-            if(s[i] == '/'){
-                res.push_back(cur);
-                cur = "";
-            } else {
-                cur = "";
-            }
         }
         return res;
     }
