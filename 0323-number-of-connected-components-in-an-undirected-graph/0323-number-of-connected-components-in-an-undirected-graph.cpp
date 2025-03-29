@@ -3,7 +3,7 @@ private:
     class UnionFind{
         private:
             vector<int> nodes;
-            vector<int> rank;
+            vector<int> sizes;
             int size;
         public:
             UnionFind(int n ){
@@ -11,7 +11,7 @@ private:
                 for(int i = 0; i < n; i++){
                     nodes[i] = i;
                 }
-                rank = vector<int>(n, 1);
+                sizes = vector<int>(n, 1);
                 size = n;
             }
 
@@ -34,13 +34,12 @@ private:
 
 
                 //add the smaller rank to the larger rank
-                if(rank[base1] > rank[base2]){
+                if(sizes[base1] > sizes[base2]){
                     nodes[base2] = base1;
-                } else if (rank[base2] > rank[base1]){
-                    nodes[base1] = base2;
+                    sizes[base1] += sizes[base2];
                 } else {
                     nodes[base1] = base2;
-                    rank[base2]++;
+                    sizes[base2] += sizes[base1]; 
                 }
                 size--;
 
