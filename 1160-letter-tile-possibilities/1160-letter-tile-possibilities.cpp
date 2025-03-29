@@ -1,29 +1,41 @@
 class Solution {
+private:
+int possibilities = 0;
+unordered_set<string> set;
+string cur = "";
+string tiles;
+unordered_map<char, int> maxCount;
+unordered_map<char, int> curCount;
 public:
     int numTilePossibilities(string tiles) {
-        unordered_set<string> sequences;
-        vector<bool> used(tiles.length(), false);
-
-        // Generate all possible sequences including empty string
-        generateSequences(tiles, "", used, sequences);
-
-        // Subtract 1 to exclude empty string from count
-        return sequences.size() - 1;
+        this->tiles = tiles;
+        for(char c : tiles){
+            maxCount[c]++;
+        }
+        dfs();
+        return possibilities - 1;
     }
+    void dfs() {
+        if(set.find(cur) != set.end()){
+            return;
+        }
+        if(!cur.empty() && (curCount[cur.back()] > maxCount[cur.back()])){
+            return;
+        }
+        set.insert(cur);
+        possibilities++;
+        if(cur.size() == tiles.size()){
+            return;
+        }
 
-private:
-    void generateSequences(string& tiles, string current, vector<bool>& used,
-                           unordered_set<string>& sequences) {
-        // Add current sequence to set
-        sequences.insert(current);
-
-        // Try adding each unused character to current sequence
-        for (int pos = 0; pos < tiles.length(); ++pos) {
-            if (!used[pos]) {
-                used[pos] = true;
-                generateSequences(tiles, current + tiles[pos], used, sequences);
-                used[pos] = false;
-            }
+        for(char c : tiles){
+            cur.push_back(c);
+            curCount[c]++;
+            dfs();
+            curCount[c]--;
+            cur.pop_back();
         }
     }
+
+
 };
