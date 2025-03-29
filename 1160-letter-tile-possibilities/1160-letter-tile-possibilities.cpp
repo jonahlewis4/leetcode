@@ -1,40 +1,25 @@
 class Solution {
 private:
 int possibilities = 0;
-unordered_set<string> set;
-string cur = "";
-string tiles;
-vector<bool> used;
-
+unordered_map<char, int> avail;
 public:
     int numTilePossibilities(const string &tiles) {
-        this->tiles = tiles;
-        used.resize(tiles.size(), false);
+        for(char c : tiles){
+            avail[c]++;
+        }
         dfs();
-        return possibilities - 1;
+        return possibilities;
     }   
     void dfs() {
-        if(set.find(cur) != set.end()){
-            return;
-        }
-       
-       
-        set.insert(cur);
-        possibilities++;
-        if(cur.size() == tiles.size()){
-            return;
-        }
-
-        for(int i = 0; i < tiles.size(); i++){
-            if(used[i]){
+        for(auto & tup : avail){
+            auto & [key, count] = tup;
+            if(count == 0){
                 continue;
             }
-            char c = tiles[i];
-            cur.push_back(c);
-            used[i] = true;
+            possibilities++;
+            count--;
             dfs();
-            used[i] = false;
-            cur.pop_back();
+            count++;
         }
     }
 
