@@ -4,35 +4,36 @@ int possibilities = 0;
 unordered_set<string> set;
 string cur = "";
 string tiles;
-unordered_map<char, int> maxCount;
-unordered_map<char, int> curCount;
+vector<bool> used;
+
 public:
-    int numTilePossibilities(string tiles) {
+    int numTilePossibilities(const string &tiles) {
         this->tiles = tiles;
-        for(char c : tiles){
-            maxCount[c]++;
-        }
+        used.resize(tiles.size(), false);
         dfs();
         return possibilities - 1;
-    }
+    }   
     void dfs() {
         if(set.find(cur) != set.end()){
             return;
         }
-        if(!cur.empty() && (curCount[cur.back()] > maxCount[cur.back()])){
-            return;
-        }
+       
+       
         set.insert(cur);
         possibilities++;
         if(cur.size() == tiles.size()){
             return;
         }
 
-        for(char c : tiles){
+        for(int i = 0; i < tiles.size(); i++){
+            if(used[i]){
+                continue;
+            }
+            char c = tiles[i];
             cur.push_back(c);
-            curCount[c]++;
+            used[i] = true;
             dfs();
-            curCount[c]--;
+            used[i] = false;
             cur.pop_back();
         }
     }
