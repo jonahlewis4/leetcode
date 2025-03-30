@@ -18,7 +18,7 @@ public:
         return res;
     }
 
-    string rangeString(int lVal, int rVal){
+    inline string rangeString(int lVal, int rVal){
         if(lVal == rVal){
             return to_string(lVal);
         }
