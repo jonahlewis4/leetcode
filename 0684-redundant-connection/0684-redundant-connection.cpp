@@ -58,9 +58,9 @@ public:
             present.insert(edge[1]);
         }
 
-        DJU dju(present.size() + 1);
+        DJU dju(present.size());
         for(const auto & edge : edges){
-            if(dju.Union(edge[0], edge[1])){
+            if(dju.Union(edge[0] - 1, edge[1] - 1)){
                 return edge;
             }
         }
