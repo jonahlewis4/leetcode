@@ -19,17 +19,17 @@ class Solution {
             }
         }
 
-        int Find(int i) {
+        item& Find(int i) {
             if(items[i].root == i){
-                return i;
+                return items[i];
             }
-            items[i].root = Find(items[i].root);
-            return items[i].root;
+            items[i].root = Find(items[i].root).root;
+            return items[items[i].root];
         }
 
         bool Union(int i1, int i2) {
-            item &root1 = items[Find(i1)];
-            item &root2 = items[Find(i2)];
+            item &root1 = Find(i1);
+            item &root2 = Find(i2);
 
             if(root1.root == root2.root){
                 return true;
