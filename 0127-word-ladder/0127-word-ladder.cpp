@@ -1,64 +1,76 @@
 class Solution {
 public:
-    map<string, vector<string>> allComboDict;
-    int L = 0;
-    int visitWordNode(queue<pair<string, int>>& Q, map<string, int>& Visited,
-                      map<string, int>& othersVisited) {
-        for (size_t j = Q.size(); j > 0; j--) {
-            pair<string, int> node = Q.front();
-            Q.pop();
-            string word = node.first;
-            int level = node.second;
-            for (int i = 0; i < this->L; i++) {
-                string newWord =
-                    word.substr(0, i) + '*' + word.substr(i + 1, L);
-                for (string adjacentWord : this->allComboDict[newWord]) {
-                    if (othersVisited.find(adjacentWord) !=
-                        othersVisited.end()) {
-                        return level + othersVisited[adjacentWord];
+    int ladderLength(string &beginWord, const string &endWord, vector<string>& wordList) {
+        unordered_map<string, int> words;
+
+
+        int targetI = -1;
+        for(int i = 0; i < wordList.size(); i++){
+            string & word = wordList[i];
+            if(word == endWord){
+                targetI = i;
+            }
+            words[word] = i;
+        }
+        if(targetI == -1){
+            return 0;
+        }
+        vector<vector<int>> adjList(wordList.size());
+        for(int i = 0; i < wordList.size(); i++){
+            for(int j = 0; j < wordList[i].size(); j++){
+                for(char c = 'a'; c <= 'z'; c++){
+                    if(c == wordList[i][j]){
+                        continue;
                     }
-                    if (Visited.find(adjacentWord) == Visited.end()) {
-                        Visited[adjacentWord] = level + 1;
-                        Q.push(make_pair(adjacentWord, level + 1));
+                    char oldC = wordList[i][j];
+                    wordList[i][j] = c;
+                    if(words.find(wordList[i]) != words.end()){
+                        adjList[i].push_back(words[wordList[i]]);
+                    }
+                    wordList[i][j] = oldC;
+                }
+            }
+        }        
+
+        queue<int> q;
+        for(int j = 0; j < beginWord.size(); j++){
+            for(char c = 'a'; c <= 'z'; c++){
+                if(c == beginWord[j]){
+                    continue;
+                }
+                char oldC = beginWord[j];
+                beginWord[j] = c;
+                if(words.find(beginWord) != words.end()){
+                    q.push(words[beginWord]);
+                }
+                beginWord[j] = oldC;
+            }
+        } 
+        int dst = 1;
+
+        vector<bool> visited(wordList.size(), false);
+        while(!q.empty()){
+            int n = q.size();
+            dst++;
+
+            for(int i = 0; i < n; i++){
+                int node = q.front();
+                q.pop();
+                
+                visited[node] = true;
+                if(node == targetI){
+                    return dst;
+                }
+                for(int neigh : adjList[node]){
+                    if(!visited[neigh]){
+                        q.push(neigh);
                     }
                 }
             }
         }
-        return -1;
-    }
-    int ladderLength(string beginWord, string endWord,
-                     vector<string>& wordList) {
-        if (find(wordList.begin(), wordList.end(), endWord) == wordList.end()) {
-            return 0;
-        }
-        L = beginWord.size();
-        for (string& word : wordList) {
-            for (int i = 0; i < L; i++) {
-                string newWord =
-                    word.substr(0, i) + '*' + word.substr(i + 1, L);
-                vector<string>& transformations = this->allComboDict[newWord];
-                transformations.push_back(word);
-            }
-        }
-        queue<pair<string, int>> q_beg;
-        q_beg.push(make_pair(beginWord, 1));
-        queue<pair<string, int>> q_end;
-        q_end.push(make_pair(endWord, 1));
-        map<string, int> visited_beg;
-        visited_beg[beginWord] = 1;
-        map<string, int> visited_end;
-        visited_end[endWord] = 1;
-        int ans = -1;
-        while (!q_beg.empty() && !q_end.empty()) {
-            if (q_beg.size() <= q_end.size()) {
-                ans = visitWordNode(q_beg, visited_beg, visited_end);
-            } else {
-                ans = visitWordNode(q_end, visited_end, visited_beg);
-            }
-            if (ans > -1) {
-                return ans;
-            }
-        }
+
+
         return 0;
+
     }
 };
