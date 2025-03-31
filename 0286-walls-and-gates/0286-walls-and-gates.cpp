@@ -1,34 +1,45 @@
 class Solution {
 private:
-    const int INF = 2147483647;
+    vector<tuple<int, int>> dirs = {
+        {0,1},
+        {0,-1},
+        {1,0},
+        {-1,0}
+    };
 public:
     void wallsAndGates(vector<vector<int>>& rooms) {
-        std::queue<tuple<int, int, int>> gates;
-        for(int row = 0; row < rooms.size(); row++){
-            for(int col = 0; col < rooms[row].size(); col++){
-                if(rooms[row][col] == 0){
-                    gates.push({row + 1, col, 0});
-                    gates.push({row - 1, col, 0});
-                    gates.push({row, col + 1, 0});
-                    gates.push({row, col - 1, 0});
+        queue<tuple<int, int, int>> q;
+        
+        for(int r = 0; r < rooms.size(); r++){
+            for(int c = 0; c < rooms[r].size(); c++){
+                if(rooms[r][c] == 0){
+                    q.push({r, c, 0});
                 }
             }
         }
 
-        while(!gates.empty()){
-            int n = gates.size();
+        while(!q.empty()){
+            int n = q.size();
             for(int i = 0; i < n; i++){
-                auto [x,y, dist] = gates.front();
-                gates.pop();
-                if(x < 0 || y < 0 || x >= rooms.size() || y >= rooms[x].size()){
-                    continue;
-                }
-                if(rooms[x][y] == INF){
-                    rooms[x][y] = dist + 1;
-                    gates.push({x + 1, y, dist + 1});
-                    gates.push({x - 1, y, dist + 1});
-                    gates.push({x, y + 1, dist + 1});
-                    gates.push({x, y - 1, dist + 1});
+                auto [r, c, dst] = q.front();
+                q.pop();
+
+
+                for(const auto & dir : dirs){
+                    auto [xOffset, yOffset] = dir;
+                    int newR = r + xOffset;
+                    int newC = c + yOffset;
+
+                    if(newR < 0 || newC < 0 || newR >= rooms.size() || newC >= rooms[newR].size()){
+                        continue;
+                    }
+                    if(rooms[newR][newC] == 0 || rooms[newR][newC] == -1 || rooms[newR][newC] < INT_MAX){
+                        continue;
+                    }
+
+
+                    rooms[newR][newC] = dst + 1;
+                    q.push({newR, newC, dst + 1});
                 }
             }
         }
