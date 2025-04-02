@@ -59,6 +59,9 @@ class Solution {
 
 public:
     vector<string> invalidTransactions(const vector<string>& _transactions) {
+        //a more efficient solution is to map first the time, then name, then cities, and loop from -60 to 60 on the time and see for all names if at any given time someone purchased in a different city
+        
+        
         vector<Transaction> transactions(_transactions.size());
         for(int i = 0; i < _transactions.size(); i++){
             transactions[i] = Transaction(_transactions[i]);
