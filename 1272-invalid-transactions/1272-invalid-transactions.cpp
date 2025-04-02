@@ -69,12 +69,6 @@ public:
             map[transaction.name].push_back(transaction);
         }
 
-        // for(auto & p : map){
-        //     auto & transactionList = p.second;
-        //     sort(transactionList.begin(), transactionList.end(), [](const auto & a, const auto & b){
-        //         return a.time < b.time;
-        //     });
-        // } 
 
         for(auto & vecPair : map){
             for(auto & transaction : vecPair.second){
