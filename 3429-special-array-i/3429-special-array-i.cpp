@@ -10,6 +10,6 @@ public:
     }
 
     bool parity(int n){
-        return (n & 1) == 1;
+        return n & 1;
     }
 };
