@@ -1,43 +1,41 @@
 class Solution {
-    // Map each course to its prerequisites
-    unordered_map<int, vector<int>> preMap;
-    // Store all courses along the current DFS path
-    unordered_set<int> visiting;
-
 public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-        for (int i = 0; i < numCourses; i++) {
-            preMap[i] = {};
-        }
-        for (const auto& prereq : prerequisites) {
-            preMap[prereq[0]].push_back(prereq[1]);
+        //topological sort.
+        vector<vector<int>> adjList(numCourses);
+        vector<int> indegree(numCourses, 0);
+        for(const auto & prereq : prerequisites){
+            adjList[prereq[1]].push_back(prereq[0]);
+            indegree[prereq[0]]++;
         }
 
-        for (int c = 0; c < numCourses; c++) {
-            if (!dfs(c)) {
-                return false;
+        int coursesVisited = 0;
+
+        std::queue<int> q;
+        for(int i = 0; i < indegree.size(); i++){
+            if(indegree[i] == 0){
+                q.push(i);
             }
         }
-        return true;
-    }
 
-    bool dfs(int crs) {
-        if (visiting.count(crs)) {
-            // Cycle detected
-            return false;
+        while(!q.empty()){
+            int n = q.size();
+            for(int i = 0; i < n; i++){
+                int course = q.front();
+                q.pop();
+                coursesVisited++;
+                for(int neigh : adjList[course]){
+                    indegree[neigh]--;
+                    if(indegree[neigh] == 0){
+                        q.push(neigh);
+                    }
+                }
+            }
         }
-        if (preMap[crs].empty()) {
+
+        if(coursesVisited == numCourses){
             return true;
         }
-
-        visiting.insert(crs);
-        for (int pre : preMap[crs]) {
-            if (!dfs(pre)) {
-                return false;
-            }
-        }
-        visiting.erase(crs);
-        preMap[crs].clear();
-        return true;
+        return false;
     }
 };
