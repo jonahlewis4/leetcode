@@ -1,62 +1,64 @@
 class Solution {
 private:
-    class UnionFind{
-        private:
-            vector<int> nodes;
-            vector<int> sizes;
-            int size;
-        public:
-            UnionFind(int n ){
-                nodes = vector<int>(n);
-                for(int i = 0; i < n; i++){
-                    nodes[i] = i;
-                }
-                sizes = vector<int>(n, 1);
-                size = n;
+    class Dsu{
+        struct Node{
+            int parentId;
+            int size = 1;
+        };
+
+        int connections;
+        vector<Node> nodes;
+    public:
+        Dsu(int n){
+            nodes.resize(n);
+            for(int i = 0; i < nodes.size(); i++){
+                nodes[i].parentId = i;
+            }
+            connections = n;
+        }
+
+        int Find(int i){
+            if(nodes[i].parentId == i){
+                return i;
+            }
+            nodes[i].parentId = Find(nodes[i].parentId);
+            return nodes[i].parentId;
+
+        }
+
+        void Union(int a, int b) {
+            int rootIdA = Find(a);
+            int rootIdB = Find(b);
+
+            if(rootIdA == rootIdB){
+                return;
             }
 
-            int Find(int n) {
-                if(nodes[n] == n){
-                    return n;
-                } else {
-                    nodes[n] = Find(nodes[n]);
-                }
-                return nodes[n];
+            Node &nodeA = nodes[rootIdA];
+            Node &nodeB = nodes[rootIdB];
+            connections--;
+
+            if(nodeA.size < nodeB.size){
+                nodeB.size += nodeA.size;
+                nodeA.parentId = nodeB.parentId;
+            } else {
+                nodeA.size += nodeB.size;
+                nodeB.parentId = nodeA.parentId;
             }
+        }
 
-            void Union(int n1, int n2){
-                int base1 = Find(n1);
-                int base2 = Find(n2);
-
-                if(base1 == base2){
-                    return;
-                } 
-
-
-                //add the smaller rank to the larger rank
-                if(sizes[base1] > sizes[base2]){
-                    nodes[base2] = base1;
-                    sizes[base1] += sizes[base2];
-                } else {
-                    nodes[base1] = base2;
-                    sizes[base2] += sizes[base1]; 
-                }
-                size--;
-
-            }
-
-            int Size() const {
-                return size;
-            }
+        int Size() const {
+            return connections;
+        }
 
     };
-
 public:
     int countComponents(int n, vector<vector<int>>& edges) {
-        UnionFind u(n);
+        Dsu dsu(n);
         for(const auto & edge : edges){
-            u.Union(edge[0], edge[1]);
+            dsu.Union(edge[0], edge[1]);
         }
-        return u.Size();
+        return dsu.Size();
+
     }
 };
