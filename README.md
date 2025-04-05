@@ -617,6 +617,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0224-basic-calculator](https://github.com/jonahlewis4/leetcode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/jonahlewis4/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0234-palindrome-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0234-palindrome-linked-list) |
+| [0364-nested-list-weight-sum-ii](https://github.com/jonahlewis4/leetcode/tree/master/0364-nested-list-weight-sum-ii) |
 | [0394-decode-string](https://github.com/jonahlewis4/leetcode/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/jonahlewis4/leetcode/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/jonahlewis4/leetcode/tree/master/0496-next-greater-element-i) |
@@ -713,6 +714,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0314-binary-tree-vertical-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/jonahlewis4/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0339-nested-list-weight-sum](https://github.com/jonahlewis4/leetcode/tree/master/0339-nested-list-weight-sum) |
+| [0364-nested-list-weight-sum-ii](https://github.com/jonahlewis4/leetcode/tree/master/0364-nested-list-weight-sum-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/jonahlewis4/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/jonahlewis4/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0543-diameter-of-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0543-diameter-of-binary-tree) |
@@ -816,6 +818,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0314-binary-tree-vertical-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/jonahlewis4/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0339-nested-list-weight-sum](https://github.com/jonahlewis4/leetcode/tree/master/0339-nested-list-weight-sum) |
+| [0364-nested-list-weight-sum-ii](https://github.com/jonahlewis4/leetcode/tree/master/0364-nested-list-weight-sum-ii) |
 | [0407-trapping-rain-water-ii](https://github.com/jonahlewis4/leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [0417-pacific-atlantic-water-flow](https://github.com/jonahlewis4/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/jonahlewis4/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
