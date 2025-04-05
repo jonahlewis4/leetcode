@@ -1,57 +1,62 @@
 class Solution {
 private:
-vector<vector<int>> adjList;
-vector<bool> visited;
-int visitCount = 0;
+    struct Dsu{
+        struct node{
+            int parentId;
+            int size;
+        };
+        vector<node> nodes;
+        Dsu(int n){
+            nodes.resize(n, {0, 1});
+            for(int i = 0; i < n; i++){
+                nodes[i].parentId = i;
+            }
+        }
 
+        int find(int i){
+            if(nodes[i].parentId == i){
+                return i;
+            }
+            nodes[i].parentId = find(nodes[i].parentId);
+            return nodes[i].parentId;
+        }
+
+        bool Union(int a, int b){
+            int rootA = find(a);
+            int rootB = find(b);
+
+            if(rootA == rootB){
+                return true;
+            }
+
+            node & nodeA = nodes[rootA];
+            node & nodeB = nodes[rootB];
+
+            if(nodeA.size < nodeB.size){
+                nodeB.size += nodeA.size;
+                nodeA.parentId = nodeB.parentId;
+            } else {
+                nodeA.size += nodeB.size;
+                nodeB.parentId = nodeA.parentId;
+            }
+
+            return false;
+        }
+    };
 public:
     bool validTree(int n, vector<vector<int>>& edges) {
-        //is there a cycle in this undirected graph.
-
-        //simple dfs with visited array.
-
-        //if at the end we haven't visited every node, return false.
-
+        //check that number of edges = n - 1
         if(edges.size() != n - 1){
             return false;
         }
 
-
-        adjList = vector<vector<int>>(n);
+        Dsu dsu(n);
         for(const auto & edge : edges){
-            int node1 = edge[0];
-            int node2 = edge[1];
-            // if(node1 > node2){
-            //     swap(node1, node2);
-            // }
-            adjList[node1].push_back(node2);
-            adjList[node2].push_back(node1);
+            if(dsu.Union(edge[0], edge[1])){
+                return false;
+            }
         }
-        
-        visited = vector<bool>(n, false);
-        int i = 0;
-        auto visitedCount = &visitCount;
-        dfs(0);
-        if(visitCount != n){
-            return false;
-        }
+
         return true;
-        
-
-        
-
     }
-    void dfs(int nodeIdx){
-        if(visited[nodeIdx]){
-            return;
-        }
-        visitCount++;
-        visited[nodeIdx] = true;
-        for(const int neigh : adjList[nodeIdx]){
-            dfs(neigh);
-        }
-
-
-    }
-        
 };
