@@ -27,8 +27,8 @@ public:
         vector<vector<int>> res;
 
         while(!pqA.empty() && !pqB.empty()){
-            auto & endsFirst = pqA.top()[1] <= pqB.top()[1] ? pqA : pqB;
-            auto & startsSecond = pqA.top()[0] >= pqB.top()[0] ? pqA : pqB;
+            auto & endsFirst = pqA.top()[1] < pqB.top()[1] ? pqA : pqB;
+            auto & startsSecond = pqA.top()[0] > pqB.top()[0] ? pqA : pqB;
 
             if(endsFirst.top()[1] - startsSecond.top()[0] >= 0){
                 res.push_back({startsSecond.top()[0], endsFirst.top()[1]});
