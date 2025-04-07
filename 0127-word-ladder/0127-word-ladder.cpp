@@ -1,76 +1,50 @@
 class Solution {
 public:
-    int ladderLength(string &beginWord, const string &endWord, vector<string>& wordList) {
-        unordered_map<string, int> words;
+    int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
+        unordered_map<string, int> dict;
+        wordList.push_back(beginWord);
 
-
-        int targetI = -1;
         for(int i = 0; i < wordList.size(); i++){
-            string & word = wordList[i];
-            if(word == endWord){
-                targetI = i;
-            }
-            words[word] = i;
+            dict[wordList[i]] = i;
         }
-        if(targetI == -1){
+        if(dict.find(endWord) == dict.end()){
             return 0;
         }
-        vector<vector<int>> adjList(wordList.size());
-        for(int i = 0; i < wordList.size(); i++){
-            for(int j = 0; j < wordList[i].size(); j++){
-                for(char c = 'a'; c <= 'z'; c++){
-                    if(c == wordList[i][j]){
-                        continue;
-                    }
-                    char oldC = wordList[i][j];
-                    wordList[i][j] = c;
-                    if(words.find(wordList[i]) != words.end()){
-                        adjList[i].push_back(words[wordList[i]]);
-                    }
-                    wordList[i][j] = oldC;
-                }
-            }
-        }        
-
+        int i = 1;
+        int goalI = dict[endWord];
         queue<int> q;
-        for(int j = 0; j < beginWord.size(); j++){
-            for(char c = 'a'; c <= 'z'; c++){
-                if(c == beginWord[j]){
-                    continue;
-                }
-                char oldC = beginWord[j];
-                beginWord[j] = c;
-                if(words.find(beginWord) != words.end()){
-                    q.push(words[beginWord]);
-                }
-                beginWord[j] = oldC;
-            }
-        } 
-        int dst = 1;
+        q.push(dict[beginWord]);
 
-        vector<bool> visited(wordList.size(), false);
+        int length = 1;
+
         while(!q.empty()){
-            int n = q.size();
-            dst++;
-
+            int n = q.size(); 
             for(int i = 0; i < n; i++){
-                int node = q.front();
+                int idx = q.front();
                 q.pop();
-                
-                visited[node] = true;
-                if(node == targetI){
-                    return dst;
+                if(idx == goalI){
+                    return length;
                 }
-                for(int neigh : adjList[node]){
-                    if(!visited[neigh]){
-                        q.push(neigh);
+
+                string s = wordList[idx];
+                for(int i = 0; i < s.size(); i++){
+                    for(char c = 'a'; c <= 'z'; c++){
+                        char old = s[i];
+                        s[i] = c;
+                        if(dict.find(s) == dict.end() || dict[s] == -1){
+                            s[i] = old;
+                            continue;
+                        }
+                        q.push(dict[s]);
+                        dict[s] = -1;
+                        s[i] = old;
                     }
                 }
             }
+            length++;
         }
 
-
         return 0;
-
+        
     }
 };
