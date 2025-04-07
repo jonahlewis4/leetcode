@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int ladderLength(string beginWord, string endWord, vector<string>& wordList) {
+    int ladderLength(const string &beginWord, const string &endWord, vector<string>& wordList) {
         unordered_map<string, int> dict;
         wordList.push_back(beginWord);
 
