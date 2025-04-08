@@ -24,6 +24,7 @@ public:
         int count = 0;
 
         for(char c = 'a'; c <= 'z'; c++){
+            //don't get confused by between. All it does it count the UNIQUE elements between leftMost and rightMost.
             unordered_set<char> between;
             if(poles.find(c) == poles.end() || poles[c].leftMost == poles[c].rightMost){
                 continue;
