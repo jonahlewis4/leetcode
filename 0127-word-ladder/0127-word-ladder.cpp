@@ -22,7 +22,7 @@ public:
                 if(idx == targetIdx){
                     return length;
                 }
-                string s = wordList[idx];
+                string &s = wordList[idx];
                 dict[s] = -1;
                 for(int i = 0; i < s.size(); i++){
                     for(char c = 'a'; c <= 'z'; c++){
