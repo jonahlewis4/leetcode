@@ -22,16 +22,17 @@ public:
                 if(idx == targetIdx){
                     return length;
                 }
-                string &s = wordList[idx];
+                string s = wordList[idx];
                 for(int i = 0; i < s.size(); i++){
                     for(char c = 'a'; c <= 'z'; c++){
                         char oldC = s[i];
                         s[i] = c;
                         if(dict.find(s) != dict.end() && dict[s] != -1){
                             q.push(dict[s]);
+                            dict[s] = -1;
+
                         }
                         s[i] = oldC;
-                        dict[s] = -1;
 
                     }
                 }
