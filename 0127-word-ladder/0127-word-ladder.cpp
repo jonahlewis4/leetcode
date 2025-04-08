@@ -23,7 +23,6 @@ public:
                     return length;
                 }
                 string &s = wordList[idx];
-                dict[s] = -1;
                 for(int i = 0; i < s.size(); i++){
                     for(char c = 'a'; c <= 'z'; c++){
                         char oldC = s[i];
@@ -32,6 +31,8 @@ public:
                             q.push(dict[s]);
                         }
                         s[i] = oldC;
+                        dict[s] = -1;
+
                     }
                 }
             }
