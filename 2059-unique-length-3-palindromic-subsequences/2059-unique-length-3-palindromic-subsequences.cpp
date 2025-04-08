@@ -17,31 +17,26 @@ public:
             poles[c].leftMost = i;
         }
 
-        //set of the palindromes? map of chars to set where the set contains the surrounding ones. 
-
-        unordered_map<char, unordered_set<char>> pals;
 
 
 
-        //at each letter check to see if it is surrounded by a pair.
-        // if for a given letter the leftMost is < i and rightMost > i, we have a palindrome
+
         int count = 0;
-        for(int i = 0; i < s.size(); i++){
-            for(char c = 'a'; c <= 'z'; c++){
-                if(poles.find(c) == poles.end()){
-                    continue;
-                }
-                const auto & border = poles[c];
-                if(border.leftMost < i && border.rightMost > i){
-                    if(pals[s[i]].find(c) == pals[s[i]].end()){
-                        pals[s[i]].insert(c);
-                        count++;
-                    }
-                }
+
+        for(char c = 'a'; c <= 'z'; c++){
+            unordered_set<char> between;
+            if(poles.find(c) == poles.end() || poles[c].leftMost == poles[c].rightMost){
+                continue;
             }
+            const auto & boundaries = poles[c];
+            int leftMost = boundaries.leftMost;
+            int rightMost = boundaries.rightMost;
+            for(int i = leftMost + 1; i < rightMost; i++){
+                between.insert(s[i]);
+            }
+            count += between.size();
         }
 
-        //result is the number of sets in map. 
         return count;
 
 
