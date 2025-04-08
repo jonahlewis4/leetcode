@@ -28,6 +28,9 @@ public:
         int count = 0;
         for(int i = 0; i < s.size(); i++){
             for(char c = 'a'; c <= 'z'; c++){
+                if(poles.find(c) == poles.end()){
+                    continue;
+                }
                 const auto & border = poles[c];
                 if(border.leftMost < i && border.rightMost > i){
                     if(pals[s[i]].find(c) == pals[s[i]].end()){
