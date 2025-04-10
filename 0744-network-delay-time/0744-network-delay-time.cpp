@@ -18,7 +18,7 @@ public:
         }  
 
         auto cmp = [](const auto & a, const auto & b){
-            return a.weight < b.weight;
+            return a.weight > b.weight;
         };
         priority_queue<edgeDest, vector<edgeDest>, decltype(cmp)> pq;
 
@@ -28,14 +28,17 @@ public:
             .node = k,
             .weight = 0
         });
-
-        while(!pq.empty()){
+        vector<bool> visited(n + 1, false);
+        int vc = 0;
+        while(!pq.empty() && vc < n){
             edgeDest e = pq.top();
             pq.pop();
 
-            if(e.weight > dist[e.node]){
+            if(visited[e.node]){
                 continue;
             }
+            vc++;
+            visited[e.node] = true;
 
             for(auto const & neigh : adjList[e.node]){
                 int newWeight = neigh.weight + e.weight;
