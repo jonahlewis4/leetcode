@@ -18,35 +18,31 @@ public:
         }  
 
         auto cmp = [](const auto & a, const auto & b){
-            if(a.weight < b.weight){
-                return true;
-            }
-            return a.node < b.node;
+            return a.weight < b.weight;
         };
-        set<edgeDest, decltype(cmp)> set;
+        priority_queue<edgeDest, vector<edgeDest>, decltype(cmp)> pq;
 
         vector<int> dist(n + 1, INT_MAX);
         dist[k] = 0;
-        set.insert({
+        pq.push({
             .node = k,
             .weight = 0
         });
-        while(!set.empty()){
-            auto begin = set.begin();
-            edgeDest e = *begin;
-            set.erase(begin);
+        while(!pq.empty()){
+            edgeDest e = pq.top();
+            pq.pop();
 
+            if(e.weight > dist[e.node]){
+                continue;
+            }
 
 
             for(auto const & neigh : adjList[e.node]){
                 int newWeight = neigh.weight + e.weight;
 
                 if(newWeight < dist[neigh.node]){
-                    if(dist[neigh.node] != INT_MAX){
-                        set.erase({neigh.node, dist[neigh.node]});
-                    }
                     dist[neigh.node] = newWeight;
-                    set.insert({
+                    pq.push({
                         .node = neigh.node,
                         .weight = newWeight
                     });
