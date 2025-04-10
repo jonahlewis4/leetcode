@@ -18,7 +18,7 @@ public:
         }  
 
         auto cmp = [](const auto & a, const auto & b){
-            if(a.weight < b.weight){
+            if(a.weight >= b.weight){
                 return true;
             }
             return a.node > b.node;
