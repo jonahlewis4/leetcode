@@ -28,17 +28,15 @@ public:
             .node = k,
             .weight = 0
         });
-        vector<bool> visited(n + 1, false);
-        int vc = 0;
-        while(!pq.empty() && vc < n){
+        
+        while(!pq.empty()){
             edgeDest e = pq.top();
             pq.pop();
 
-            if(visited[e.node]){
+            if(e.weight > dist[e.node]){
                 continue;
             }
-            vc++;
-            visited[e.node] = true;
+
 
             for(auto const & neigh : adjList[e.node]){
                 int newWeight = neigh.weight + e.weight;
