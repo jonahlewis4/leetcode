@@ -42,7 +42,9 @@ public:
                 int newWeight = neigh.weight + e.weight;
 
                 if(newWeight < dist[neigh.node]){
-                    set.erase({neigh.node, dist[neigh.node]});
+                    if(dist[neigh.node] != INT_MAX){
+                        set.erase({neigh.node, dist[neigh.node]});
+                    }
                     dist[neigh.node] = newWeight;
                     set.insert({
                         .node = neigh.node,
