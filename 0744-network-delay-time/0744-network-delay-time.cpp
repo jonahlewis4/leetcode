@@ -28,6 +28,7 @@ public:
             .node = k,
             .weight = 0
         });
+
         while(!pq.empty()){
             edgeDest e = pq.top();
             pq.pop();
@@ -35,7 +36,6 @@ public:
             if(e.weight > dist[e.node]){
                 continue;
             }
-
 
             for(auto const & neigh : adjList[e.node]){
                 int newWeight = neigh.weight + e.weight;
