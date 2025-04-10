@@ -41,17 +41,20 @@ public:
         //push all unvisited neighboors to the priority queue.
 
         vector<bool> visited(n, false);
-        int visitCount = 1;
-        visited[0] = true;
+        int visitCount = 0;
 
         priority_queue<closest, vector<closest>, compareClosest> pq;
         
-        for(int i = 1; i < points.size(); i++){
-            pq.push({
-                .node = i,
-                .weight = points[0].dist(points[i])
-            });
-        }
+        // for(int i = 1; i < points.size(); i++){
+        //     pq.push({
+        //         .node = i,
+        //         .weight = points[0].dist(points[i])
+        //     });
+        // }
+        pq.push({
+            .node = 0,
+            .weight = 0
+        });
 
         int cost = 0;
         while(!pq.empty() && visitCount < n){
