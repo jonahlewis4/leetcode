@@ -21,7 +21,7 @@ public:
             if(a.weight < b.weight){
                 return true;
             }
-            return a.node < b.node;
+            return a.node > b.node;
         };
         set<edgeDest, decltype(cmp)> set;
 
