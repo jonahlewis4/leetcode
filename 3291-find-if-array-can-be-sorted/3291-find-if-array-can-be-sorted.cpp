@@ -1,8 +1,8 @@
 class Solution {
 public:
     bool canSortArray(vector<int>& nums) {
-        //bubble sort but we also need to check if swaps are allowed
-
+        // x bubble sort but we also need to check if swaps are allowed
+        // better: check that each in a run of swappables is allways larger than the max of all previous runs.
 
         //______ __________ ________
 
