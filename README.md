@@ -120,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2465-shifting-letters-ii](https://github.com/jonahlewis4/leetcode/tree/master/2465-shifting-letters-ii) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/jonahlewis4/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [3227-find-missing-and-repeated-values](https://github.com/jonahlewis4/leetcode/tree/master/3227-find-missing-and-repeated-values) |
+| [3291-find-if-array-can-be-sorted](https://github.com/jonahlewis4/leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 | [3429-special-array-i](https://github.com/jonahlewis4/leetcode/tree/master/3429-special-array-i) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 | [3639-zero-array-transformation-i](https://github.com/jonahlewis4/leetcode/tree/master/3639-zero-array-transformation-i) |
@@ -162,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [2215-finding-3-digit-even-numbers](https://github.com/jonahlewis4/leetcode/tree/master/2215-finding-3-digit-even-numbers) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/jonahlewis4/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
+| [3291-find-if-array-can-be-sorted](https://github.com/jonahlewis4/leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -516,6 +518,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/jonahlewis4/leetcode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/jonahlewis4/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2509-minimize-xor](https://github.com/jonahlewis4/leetcode/tree/master/2509-minimize-xor) |
+| [3291-find-if-array-can-be-sorted](https://github.com/jonahlewis4/leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 ## Divide and Conquer
 |  |
 | ------- |
