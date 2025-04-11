@@ -42,14 +42,18 @@ private:
             auto &n = nodes[i];
             if(ll == changed && lr == changed){
                 n.sum = newVal;
-            } else if (changed > lr || changed < ll){
                 return;
-            } else {
-                int m = (ll + lr) / 2;
+            } 
+            
+            int m = (ll + lr) / 2;
+            
+            if (changed <= m){
                 update(i * 2 + 1, changed, newVal, ll, m);
+            } else {
                 update(i * 2 + 2, changed, newVal, m + 1, lr);
-                n.sum = nodes[i * 2 + 1].sum + nodes[i * 2 + 2].sum;
             }
+            n.sum = nodes[i * 2 + 1].sum + nodes[i * 2 + 2].sum;
+
         }
 
 
