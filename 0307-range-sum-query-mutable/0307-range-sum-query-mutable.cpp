@@ -67,13 +67,13 @@ private:
             nodes.resize(n * 4);
             build(0, 0, n -1, nums);
         }
-        int Query(int l, int r){
+        inline int Query(int l, int r){
             return query(0, l, r, 0, n - 1);
         }
-        void Update(int i, int newVal){
+        inline void Update(int i, int newVal){
             update(0, i, newVal, 0, n - 1);
         }
-        void Update(int l, int r, int delta){
+        inline void Update(int l, int r, int delta){
             return;
         }
 
