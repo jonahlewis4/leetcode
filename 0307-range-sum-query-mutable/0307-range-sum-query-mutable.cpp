@@ -4,8 +4,8 @@ private:
     private:
         struct Node {
             int sum = 0;
-            int left = -1;
-            int right = -1;
+            // int left = -1;
+            // int right = -1;
             //int lazy = 0;
 
             Node(){};
@@ -13,8 +13,8 @@ private:
 
         void build(int i, int l, int r, const vector<int> & nums){
             auto & n = nodes[i];
-            n.left = l;
-            n.right = r;
+            // n.left = l;
+            // n.right = r;
             if(l == r){
                 n.sum = nums[l]; 
             } else {
@@ -25,27 +25,29 @@ private:
             }
         }
 
-        int query(int i, int l, int r){
+        int query(int i, int l, int r, int ll, int lr){
             auto &n = nodes[i];
-            if(l <= n.left && r >= n.right){
+            if(l <= ll && r >= lr){
                 return n.sum;
-            } else if (l > n.right || r < n.left) {
+            } else if (l > lr || r < ll) {
                 return 0;
             } else {
-                int lSum = query(i * 2 + 1, l, r);
-                int rSum = query(i * 2 + 2, l, r);
+                int m = (ll + lr) / 2;
+                int lSum = query(i * 2 + 1, l, r, ll, m);
+                int rSum = query(i * 2 + 2, l, r, m + 1, lr);
                 return lSum + rSum;
             }
         }
-        void update(int i, int changed, int newVal){
+        void update(int i, int changed, int newVal, int ll, int lr){
             auto &n = nodes[i];
-            if(n.left == changed && n.right == changed){
+            if(ll == changed && lr == changed){
                 n.sum = newVal;
-            } else if (changed > n.right || changed < n.left){
+            } else if (changed > lr || changed < ll){
                 return;
             } else {
-                update(i * 2 + 1, changed, newVal);
-                update(i * 2 + 2, changed, newVal);
+                int m = (ll + lr) / 2;
+                update(i * 2 + 1, changed, newVal, ll, m);
+                update(i * 2 + 2, changed, newVal, m + 1, lr);
                 n.sum = nodes[i * 2 + 1].sum + nodes[i * 2 + 2].sum;
             }
         }
@@ -62,10 +64,10 @@ private:
             build(0, 0, n -1, nums);
         }
         int Query(int l, int r){
-            return query(0, l, r);
+            return query(0, l, r, 0, n - 1);
         }
         void Update(int i, int newVal){
-            update(0, i, newVal);
+            update(0, i, newVal, 0, n - 1);
         }
         void Update(int l, int r, int delta){
             return;
