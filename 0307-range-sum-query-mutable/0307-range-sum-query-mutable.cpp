@@ -6,7 +6,7 @@ private:
             int sum = 0;
             int left = -1;
             int right = -1;
-            int lazy = 0;
+            //int lazy = 0;
 
             Node(){};
         };
