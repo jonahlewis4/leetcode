@@ -73,24 +73,19 @@ private:
 
     };
 
-    SegmentTree *tree;
+    SegmentTree tree;
 public:
-    NumArray(vector<int>& nums) {
-        auto theTree = new SegmentTree(nums);
-        tree = theTree;
-    }
+    NumArray(vector<int>& nums) : tree(nums) {    }
     
     void update(int index, int val) {
-        tree->Update(index, val);    
+        tree.Update(index, val);    
     }
     
     int sumRange(int left, int right) {
-        return tree->Query(left, right);
+        return tree.Query(left, right);
     }
 
-    ~NumArray() {
-        delete tree;
-    }
+    
 };
 
 /**
