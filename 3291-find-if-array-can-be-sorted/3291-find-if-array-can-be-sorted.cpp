@@ -2,15 +2,22 @@ class Solution {
 public:
     bool canSortArray(vector<int>& nums) {
         //bubble sort but we also need to check if swaps are allowed
+
+
+        //______ __________ ________
+
+        int maximum = INT_MIN;
+        int localMax = nums[0];
         for(int i = 1; i < nums.size(); i++){
-            for(int j = i - 1; j >= 0; j--){
-                if(nums[j] > nums[j + 1]){
-                    if(cannotSwap(nums[j], nums[j + 1])){
-                        return false;
-                    }
-                    swap(nums[j], nums[j + 1]);
-                }
+            if(cannotSwap(nums[i], nums[i - 1])){
+                maximum = localMax;
+                localMax = nums[i];
             }
+            if(nums[i] < maximum){
+                return false;
+            }
+            localMax = max(localMax, nums[i]);
+            
         }
         return true;
     }
