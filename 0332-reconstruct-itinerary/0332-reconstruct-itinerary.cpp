@@ -4,8 +4,7 @@ private:
     vector<string> res;
 public:
     vector<string> findItinerary(vector<vector<string>>& tickets) {
-        //push lowest in lexi order of given node to stack. 
-        //if top of stack has none in lexi order, pop from stack and put in answer.
+        //recursive version
 
         for(auto const & t : tickets){
             const string & from = t[0];
