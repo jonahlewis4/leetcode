@@ -128,7 +128,7 @@ public:
         // before the cutoff.
         //If the distance from THAT obstacle to the cutoff is >= size, it is also valid.
 
-        auto afterItr = obstacles.lower_bound(cutoff);
+        auto afterItr = obstacles.upper_bound(cutoff);
         auto before = *(prev(afterItr));
 
         int alternateSize = cutoff - before;
