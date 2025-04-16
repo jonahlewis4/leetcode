@@ -16,7 +16,7 @@ public:
         return comp;
     }
 
-    void compress(string &comp, int prefixLength, char prefixChar) const {
+    inline void compress(string &comp, int prefixLength, char prefixChar) const {
         if(prefixLength == 0){
             return;
         }
