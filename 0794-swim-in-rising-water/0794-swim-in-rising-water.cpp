@@ -27,7 +27,9 @@ public:
             qItem item = q.top();
             q.pop();
             
-            t = item.depth;
+            if(item.depth > t){
+                t = item.depth;
+            } 
             if(grid[item.r][item.c] < 0){
                 continue;
             }  
