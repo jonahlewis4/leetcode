@@ -14,7 +14,9 @@ public:
     int swimInWater(vector<vector<int>>& grid) {
         //bfs with visited. 
         //if water is not high enough push it and deal with it later.
-        queue<qItem> q;
+        priority_queue<qItem, vector<qItem>, decltype([](const auto & a, const auto & b){
+            return a.depth > b.depth;
+        })> q;
         q.push({
             .r = 0,
             .c = 0,
@@ -22,43 +24,36 @@ public:
         });
         int t = 0;
         while(!q.empty()){
-            int n = q.size();
-            int reached = 0;
-            for(int i = 0; i < n; i++){
-                qItem item = q.front();
-                q.pop();
-                
-                if(item.depth > t){
-                    q.push(item);
-                    continue;
-                } 
-                reached++;
+            qItem item = q.top();
+            q.pop();
+            
+            if(item.depth > t){
+                t = item.depth;
+            } 
+            if(grid[item.r][item.c] < 0){
+                continue;
+            }  
 
-                if(grid[item.r][item.c] < 0){
-                    continue;
-                }  
-
-                if(item.r == grid.size() - 1 && item.c == grid[0].size() - 1){
-                    return t;
-                }
-                grid[item.r][item.c] = -1;
-
-                for(const auto & dir : dirs){
-                    auto [rOff, cOff] = dir;
-                    int newR = item.r + rOff;
-                    int newC = item.c + cOff;
-                    if(newR < 0 || newC < 0 || newR >= grid.size() || newC >= grid[newR].size()){
-                        continue;
-                    }
-                    q.push({
-                        .r = newR,
-                        .c = newC,
-                        .depth = grid[newR][newC]
-                    });
-                }
+            if(item.r == grid.size() - 1 && item.c == grid[0].size() - 1){
+                return t;
             }
-            if(reached == 0){
-                t++;
+            grid[item.r][item.c] = -1;
+
+            for(const auto & dir : dirs){
+                auto [rOff, cOff] = dir;
+                int newR = item.r + rOff;
+                int newC = item.c + cOff;
+                if(newR < 0 || newC < 0 || newR >= grid.size() || newC >= grid[newR].size()){
+                    continue;
+                }
+                if(grid[newR][newC] < 0){
+                    continue;
+                }
+                q.push({
+                    .r = newR,
+                    .c = newC,
+                    .depth = grid[newR][newC]
+                });
             }
         }
 
