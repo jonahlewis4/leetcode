@@ -15,7 +15,7 @@ public:
         //bfs with visited. 
         //if water is not high enough push it and deal with it later.
         priority_queue<qItem, vector<qItem>, decltype([](const auto & a, const auto & b){
-            return a.depth > b.depth;
+            return a.depth >= b.depth;
         })> q;
         q.push({
             .r = 0,
@@ -27,15 +27,13 @@ public:
             qItem item = q.top();
             q.pop();
             
-            if(item.depth > t){
-                t = item.depth;
-            } 
+            t = item.depth;
             if(grid[item.r][item.c] < 0){
                 continue;
             }  
 
             if(item.r == grid.size() - 1 && item.c == grid[0].size() - 1){
-                return t;
+                return item.depth;
             }
             grid[item.r][item.c] = -1;
 
@@ -52,7 +50,7 @@ public:
                 q.push({
                     .r = newR,
                     .c = newC,
-                    .depth = grid[newR][newC]
+                    .depth = max(grid[newR][newC], t)
                 });
             }
         }
