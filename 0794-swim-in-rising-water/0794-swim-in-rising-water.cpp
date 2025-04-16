@@ -35,7 +35,7 @@ public:
             }  
 
             if(item.r == grid.size() - 1 && item.c == grid[0].size() - 1){
-                return item.depth;
+                return t;
             }
             grid[item.r][item.c] = -1;
 
@@ -52,7 +52,7 @@ public:
                 q.push({
                     .r = newR,
                     .c = newC,
-                    .depth = max(grid[newR][newC], t)
+                    .depth = grid[newR][newC]
                 });
             }
         }
