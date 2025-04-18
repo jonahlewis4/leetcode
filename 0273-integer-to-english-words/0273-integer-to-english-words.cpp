@@ -154,8 +154,7 @@ public:
                   
             }
         }
-        // we need to pop back twice because the final label is "" followed by a space
-        // the preceeding word also had a space, so the final label adds a space after that space.
+       
         res.pop_back();
         return res;
     }
