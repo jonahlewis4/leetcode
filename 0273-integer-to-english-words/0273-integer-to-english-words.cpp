@@ -102,7 +102,7 @@ public:
                 return labelIdx;
             };
             
-            const auto addLabel = [i, &word, this, &res, labelIndex]() {
+            const auto addLabel = [i, &word, this, &res, &labelIndex]() {
                 string newLabel = labels[labelIndex()];
                 if(newLabel != ""){
                     res += labels[labelIndex()];
