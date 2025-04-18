@@ -158,4 +158,4 @@ public:
         res.pop_back();
         return res;
     }
-};// we need to pop back twice because the final label is "" followed by a space
+};
