@@ -66,7 +66,7 @@ public:
             });
         }
         for(int i = 0; i < points.size(); i++){
-            for(int j = 1 ; j < points.size(); j++){
+            for(int j = i + 1 ; j < points.size(); j++){
                 distances.push_back({
                     .point1 = i,
                     .point2 = j,
