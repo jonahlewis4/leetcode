@@ -1,92 +1,94 @@
 class Solution {
-    struct point{
+private:
+    class DSU {
+        vector<int> root;
+        vector<int> size;
+    public:
+        DSU(int n){
+            root.resize(n);
+            for(int i = 0; i < n; i++){
+                root[i] = i;
+            }
+            size.resize(n, 1);
+        }
+
+        int find(int i) {
+            if(root[i] == i){
+                return i;
+            }
+            root[i] = find(root[i]);
+            return root[i];
+        }
+
+        bool Union(int a, int b){
+            int aRoot = find(a);
+            int bRoot = find(b);
+            if(aRoot == bRoot){
+                return false;
+            }
+
+            if(size[aRoot] < size[bRoot]){
+                size[bRoot] += size[aRoot];
+                root[aRoot] = bRoot;
+            } else {
+                size[aRoot] += size[bRoot];
+                root[bRoot] = aRoot;
+            }
+
+            return true;
+        }
+    };
+private:
+    struct point {
         int x;
         int y;
-        int dist(const point& p2){
-            return abs(x - p2.x) + abs(y - p2.y);
+        int dist(point p2){
+            return abs(p2.x - x) + abs(p2.y - y);
         }
     };
-
-    struct closest{
-        int node;
-        int weight;
+    struct distance {
+        int point1;
+        int point2;
+        int distance;
     };
-
-    struct compareClosest {
-        bool operator() (const closest & a, const closest & b){
-            return a.weight > b.weight; //return true if a has LOWER priority than b
-        }
-    };
-    
 public:
     int minCostConnectPoints(vector<vector<int>>& _points) {
-        int n = _points.size();
-        vector<point> points(n);
-        for(int i = 0; i < n; i++){
-            points[i] = {
-                .x = _points[i][0],
-                .y = _points[i][1]
-            };
+        //MInimum spanning tree -
+        //kruskal's
+        vector<point> points;
+        vector<distance> distances;
+        for(const auto & point : _points) {
+            int x = point[0];
+            int y = point[1];
+            points.push_back({
+                .x = x,
+                .y = y
+            });
         }
-
-        //all nodes are connected so we will calculate the distance while finding neighboors. This saves us from doing a few calculations.          
-        
-        //prim's algorithm.
-
-        //take top of prioirty queue (the closest node)
-        //if already visited, continue
-        
-        //makr as visited
-
-        //push all unvisited neighboors to the priority queue.
-
-        vector<bool> visited(n, false);
-        int visitCount = 0;
-
-        priority_queue<closest, vector<closest>, compareClosest> pq;
-        
-        // for(int i = 1; i < points.size(); i++){
-        //     pq.push({
-        //         .node = i,
-        //         .weight = points[0].dist(points[i])
-        //     });
-        // }
-        pq.push({
-            .node = 0,
-            .weight = 0
-        });
-
-        int cost = 0;
-        while(!pq.empty() && visitCount < n){
-            auto closest = pq.top();
-            pq.pop();
-
-            if(visited[closest.node]){
-                continue;
-            }
-            visited[closest.node] = true;
-            visitCount++;
-
-            cost += closest.weight;
-
-            //push all unvisited neighboors
-            point &pt = points[closest.node];
-            for(int i = 0; i < n; i++){
-                if(i == closest.node){
-                    continue;
-                }
-                if(visited[i]){
-                    continue;
-                }
-                pq.push({
-                    .node = i,
-                    .weight = pt.dist(points[i])
+        for(int i = 0; i < points.size(); i++){
+            for(int j = 1 ; j < points.size(); j++){
+                distances.push_back({
+                    .point1 = i,
+                    .point2 = j,
+                    .distance = points[i].dist(points[j])
                 });
             }
-
         }
-        return cost;
 
+        sort(distances.begin(), distances.end(), [](const auto & a, const auto & b){
+            return a.distance < b.distance;
+        });
+
+        DSU dsu(points.size());
+
+        int total = 0;
+        for(const auto & distance : distances){
+            if(dsu.Union(distance.point1, distance.point2)){
+                total += distance.distance;
+            }
+        }
+
+        return total;
+        
     }
-
 };
