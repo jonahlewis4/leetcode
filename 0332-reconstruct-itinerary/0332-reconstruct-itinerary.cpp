@@ -1,31 +1,39 @@
 class Solution {
-private:
-    unordered_map<string, multiset<string>> list;
-    vector<string> res;
 public:
     vector<string> findItinerary(vector<vector<string>>& tickets) {
-        //recursive version
-
-        for(auto const & t : tickets){
-            const string & from = t[0];
-            const string & to = t[1];
-            list[from].insert(to);
+        //multiset: is ordered and such. 
+        unordered_map<string, multiset<string>> adjList;
+        for(const auto & ticket : tickets) {
+            string src = ticket[0];
+            string dest = ticket[1];
+            adjList[src].insert(dest);
         }
 
-        dfs("JFK");
+        //when we reach a node with no neighboors, push to stack
+        stack<string> stack;
+        stack.push("JFK");
+        vector<string> res;
+        while(!stack.empty()){
+            string cur = stack.top();
+            if(adjList[cur].empty()){
+                res.push_back(cur);
+                stack.pop();
+                continue;
+            }
+            auto begin = adjList[cur].begin();
+            stack.push(*begin);
+            adjList[cur].erase(begin);
 
+        }
+
+
+
+
+
+        //reverse the result and return. 
         reverse(res.begin(), res.end());
         return res;
-    }
 
-    void dfs(const string & city){
-        while(!list[city].empty()){
-            auto firstNeighItr = list[city].begin();
-            string next = *firstNeighItr;
-            list[city].erase(firstNeighItr);
-            dfs(next);
-        }
-        res.push_back(city);
-        return;
+
     }
 };
