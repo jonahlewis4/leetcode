@@ -1,60 +1,61 @@
 class Solution {
-    struct edge{
-        int dest;
-        int weight;
-    };
+struct edge {
+    int dest;
+    int weight;
+};
+class cmpByWeight{
+public:
+    bool operator()(const auto & a, const auto & b){
+        //return true if a has lower priority
+        return a.weight > b.weight;
+    }
+};
 public:
     int networkDelayTime(vector<vector<int>>& times, int n, int k) {
-        //MST.
-
-        //djiksta's ant return the max.
-        //if one of them is INT_MAX return -1;
+        vector<vector<edge>> adjList(n + 1);
+        for(auto const & time : times){
+            int src = time[0];
+            int dest = time[1];
+            int weight = time[2];
+            adjList[src].push_back({
+                .dest = dest,
+                .weight = weight
+            });
+        }
 
         vector<int> dist(n + 1, INT_MAX);
-        dist[k] = 0;
-
-        priority_queue<edge, vector<edge>, decltype([](const auto & a, const auto & b){
-            return a.weight > b.weight;
-        })> pq; 
-
+        priority_queue<edge, vector<edge>, cmpByWeight> pq;
         pq.push({
             .dest = k,
             .weight = 0
         });
 
-        vector<vector<edge>> adjList(n + 1);
-        for(const auto & time : times){
-            adjList[time[0]].push_back({
-                .dest = time[1],
-                .weight = time[2],
-            });
-        }
-
         while(!pq.empty()){
             edge e = pq.top();
             pq.pop();
-            if(e.weight > dist[e.dest]){
+            if(e.weight >= dist[e.dest]){
                 continue;
             }
-            for(const auto & neigh : adjList[e.dest]){
-                int newWeight = neigh.weight + e.weight;
-                if(newWeight < dist[neigh.dest]){
-                    dist[neigh.dest] = newWeight;
+            dist[e.dest] = e.weight;
+            for(auto const & n : adjList[e.dest]){
+                int newWeight = e.weight + n.weight;
+                if(newWeight < dist[n.dest]){
                     pq.push({
-                        .dest = neigh.dest,
+                        .dest = n.dest,
                         .weight = newWeight
                     });
                 }
             }
         }
 
-        int maxi = INT_MIN;
+        //get the max from the distances.
+        int maxDistance = -1;
         for(int i = 1; i < dist.size(); i++){
-            if(dist[i] == INT_MAX){
-                return -1;
-            } 
-            maxi = max(maxi, dist[i]);
+            maxDistance = max(dist[i], maxDistance);
         }
-        return maxi;
+
+        //return -1 if one of the nodes has not been visited (if it is INT_MAX)
+        return maxDistance == INT_MAX ? -1 : maxDistance;
     }
+
 };
