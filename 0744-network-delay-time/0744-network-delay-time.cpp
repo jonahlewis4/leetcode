@@ -29,17 +29,21 @@ public:
             .dest = k,
             .weight = 0
         });
+        vector<bool> visited(n + 1, false);
+        int visitCount = 0;
 
-        while(!pq.empty()){
+        while(!pq.empty() && visitCount < n){
             edge e = pq.top();
             pq.pop();
-            if(e.weight >= dist[e.dest]){
+            if(visited[e.dest]){
                 continue;
             }
+            visited[e.dest] = true;
+            visitCount++;
             dist[e.dest] = e.weight;
             for(auto const & n : adjList[e.dest]){
                 int newWeight = e.weight + n.weight;
-                if(newWeight < dist[n.dest]){
+                if(newWeight < dist[n.dest] && !visited[n.dest]){
                     pq.push({
                         .dest = n.dest,
                         .weight = newWeight
