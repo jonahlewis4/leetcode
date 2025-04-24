@@ -9,9 +9,7 @@ public:
     DSU(int n){
         size.resize(n, 1);
         root.resize(n, -1);
-        for(int i = 0; i < root.size(); i++){
-            root[i] = i;
-        }
+        iota(root.begin(), root.end(), 0);
     }
     int Find(int i){
         if(root[i] == i){
