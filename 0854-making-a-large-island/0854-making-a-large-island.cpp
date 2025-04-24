@@ -59,9 +59,6 @@ public:
         //backtracking to get largest island.
         n = grid.size();
         m = grid[0].size();
-        if(n == 1 && grid[0][0] == 1){
-            return 1;
-        }
         this->grid = grid;
         int largestIslandSize = 0;
         
