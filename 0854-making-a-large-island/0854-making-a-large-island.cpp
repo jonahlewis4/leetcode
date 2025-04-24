@@ -118,7 +118,7 @@ public:
     int determineIslandSize(int r, int  c){
         
         //unordred map of unions to size.
-        unordered_map<int, int> unions;
+        unordered_set<int> unions;
 
         //if left root not in unions add it to unions and its size
         //if above root  not in unions add it to unions  and its size
@@ -134,7 +134,7 @@ public:
             int i = flatten(newR, newC);
             int root = dsu.Find(i);
             if(unions.find(root) == unions.end()){
-                unions[root] = dsu.Size(root);
+                unions.insert(root);
             }
         }
 
@@ -142,7 +142,7 @@ public:
         int sum = 0;
         //add up the sum of all the unions
         for(const auto & itr : unions){
-            sum += itr.second;
+            sum += dsu.Size(itr);
         }
 
         //if current is 1, don't add 1,
