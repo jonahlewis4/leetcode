@@ -32,7 +32,6 @@ public:
         dist[vertexI] = 0;
         vector<bool> visited(points.size(), false);
         int visitCount = 1;
-        visited[vertexI] = true;
         int res = 0;
         while(visitCount < visited.size()){
             visited[vertexI] = true;
