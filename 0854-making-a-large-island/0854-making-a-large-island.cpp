@@ -104,7 +104,7 @@ public:
     }
     //dsu is a one dimensional object. Flatten transforms row, col indexing to single index
     // (it assumes row major)
-    int flatten(int r, int c) const{
+    inline int flatten(int r, int c) const{
         return r * m + c;
     }
 
