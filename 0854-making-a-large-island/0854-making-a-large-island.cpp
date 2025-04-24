@@ -68,11 +68,18 @@ public:
         int largestIslandSize = 0;
         
         unionize();
+        bool all1s = true;
         for(int r = 0; r < grid.size(); r++){
             for(int c = 0; c < grid[r].size(); c++){
-                int islandSize = determineIslandSize(r, c);
-                largestIslandSize = max(islandSize, largestIslandSize);
+                if(grid[r][c] == 0){
+                    all1s = false;
+                    int islandSize = determineIslandSize(r, c);
+                    largestIslandSize = max(islandSize, largestIslandSize);
+                } 
             }
+        }
+        if(all1s){
+            return n * m;
         }
         return largestIslandSize;
     }   
