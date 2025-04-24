@@ -31,14 +31,12 @@ public:
         vector<int> dist(points.size(), INT_MAX);
         dist[vertexI] = 0;
         vector<bool> visited(points.size(), false);
-        int visitCount = 0;
+        int visitCount = 1;
+        visited[vertexI] = true;
         int res = 0;
-        while(true){
+        while(visitCount < visited.size()){
             visited[vertexI] = true;
             visitCount++;
-            if(visitCount == points.size()){
-                break;
-            }
             int nextVertexI = -1;
             for(int i = 0; i < points.size(); i++){
                 if(visited[i]){
