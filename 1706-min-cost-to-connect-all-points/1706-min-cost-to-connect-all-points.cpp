@@ -33,9 +33,12 @@ public:
         vector<bool> visited(points.size(), false);
         int visitCount = 0;
         int res = 0;
-        while(visitCount < points.size() - 1){
+        while(true){
             visited[vertexI] = true;
             visitCount++;
+            if(visitCount == points.size()){
+                break;
+            }
             int nextVertexI = -1;
             for(int i = 0; i < points.size(); i++){
                 if(visited[i]){
