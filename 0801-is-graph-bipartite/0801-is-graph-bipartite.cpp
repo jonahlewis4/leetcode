@@ -1,0 +1,62 @@
+class Solution {
+
+public:
+    bool isBipartite(vector<vector<int>>& graph) {
+        int n = graph.size();
+        vector<bool> visited(n, false);
+
+        queue<int> q;
+
+        unordered_set<int> odd;
+        unordered_set<int> even;
+        int i = 0;
+        for(int p = 0; p < n; p++){
+        
+            if(visited[p]){
+                continue;
+            }
+            if(q.empty()){
+                i = 0;
+                q.push(p);
+            }
+            int k = q.size();
+            for(int j = 0; j < k; j++){
+                unordered_set<int>* forbidden;
+                unordered_set<int>* aggregator;
+                if(i % 2 == 0){
+                    forbidden = &odd;
+                    aggregator = &even;
+                } else {
+                    forbidden = &even;
+                    aggregator = &odd;
+                }
+
+                int node = q.front();
+                q.pop();
+                if(forbidden->find(node) != forbidden->end()){
+                    return false;
+                }
+                if(visited[node]){
+                    continue;
+                }
+
+                aggregator->insert(node);
+                visited[node] = true;
+                for(auto const & nei : graph[node]){
+                    if(aggregator->find(nei) != aggregator->end()){
+                        return false;
+                    }
+                    if(visited[nei]){
+                        continue;
+                    }
+
+                    q.push(nei);
+
+                }
+            }
+            i++;
+        }   
+
+        return true;
+    }
+};
