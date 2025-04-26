@@ -69,7 +69,7 @@ public:
 
         for(int r = 0; r < n; r++){
             for(int c = 0; c < n; c++){
-                points[flatten(r,c)] = {
+                points[grid[r][c]] = {
                     .r = r,
                     .c = c,
                     .weight = grid[r][c],
@@ -78,7 +78,6 @@ public:
         }
 
         //we can use counting sort??!?? (if I get it to work we gonna run this back with it)
-        sort(points.begin(), points.end(), compareWeight());
 
         DSU dsu(n * n);
         for(auto const & point : points){
