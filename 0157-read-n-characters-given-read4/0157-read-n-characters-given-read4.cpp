@@ -11,20 +11,24 @@ public:
      * @return    The number of actual characters read
      */
     int read(char *buf, int n) {
-        int numRead = 0;
-        bool eOF = false;
-        char* bufStart = buf;
-        while(!eOF && numRead < n){
-            int incoming = read4(buf);
-            if(incoming < 4){
-                eOF = true;
+        int totalRead = 0;
+        char readBuffer[4];
+        bool isEOF = false;
+        while(totalRead < n && !isEOF){
+            int amountRead = read4(readBuffer);
+            if(amountRead < 4){
+                isEOF = true;
             }
-            numRead += incoming;
-            buf += incoming;
+
+            for(int i = 0; i < amountRead; i++){
+                if(totalRead == n){
+                    break;
+                }
+                *(buf + totalRead) = *(readBuffer + i);
+                totalRead++;
+            }
         }
-        if(n < numRead){
-            buf[n] = '\0';
-        }
-        return min(numRead, n);
+
+        return totalRead;
     }
 };
