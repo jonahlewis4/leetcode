@@ -24,7 +24,7 @@ public:
                 if(totalRead == n){
                     break;
                 }
-                *(buf + totalRead) = *(readBuffer + i);
+                buf[totalRead] = readBuffer[i];
                 totalRead++;
             }
         }
