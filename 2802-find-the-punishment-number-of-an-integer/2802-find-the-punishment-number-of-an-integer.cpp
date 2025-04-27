@@ -1,5 +1,8 @@
 class Solution {
 private:
+    unordered_map<int, unordered_map<int, bool>> memo;
+    //memo is accesed as [digits][total]
+
 
 public:
     int punishmentNumber(int n) {
@@ -12,7 +15,9 @@ public:
         return res;
     }
     bool selfSumming(int i) {
-       
+        if(i == 61){
+            cout<<61<<endl;
+        }
         return recurse(i * i, i);
     }
 
@@ -25,6 +30,10 @@ public:
         if(total <= 0 || digits <= 0){
             return false;
         }
+        if(memo[digits].find(total) != memo[digits].end()){
+            bool res = memo[digits][total];
+            return res;
+        }
 
         int rightSum = 0;
         int tenPow = 1;
@@ -35,9 +44,11 @@ public:
             digits /= 10;
             
             if(recurse(digits, total - rightSum)){
+                memo[digits][total - rightSum] = true;
                 return true;
             }
         }
+        memo[digits][total] = false;
         return false;
     }
 
