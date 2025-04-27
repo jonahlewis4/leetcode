@@ -15,9 +15,6 @@ public:
         return res;
     }
     bool selfSumming(int i) {
-        if(i == 61){
-            cout<<61<<endl;
-        }
         return recurse(i * i, i);
     }
 
