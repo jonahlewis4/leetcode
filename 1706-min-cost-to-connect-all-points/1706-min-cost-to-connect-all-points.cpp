@@ -65,7 +65,7 @@ public:
 
             connected[e.i] = true;
             connectedCount++;
-            dist[e.i] = min(dist[e.i], e.weight);
+            //dist[e.i] = min(dist[e.i], e.weight);
 
             for(auto const & n : adjList[e.i]) {
                 if(connected[n.i]){
