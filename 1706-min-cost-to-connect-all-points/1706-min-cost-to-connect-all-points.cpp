@@ -30,7 +30,7 @@ public:
 
         //prims with pq : find closest one that isn't already connected.
 
-        int connectedCount = 1;
+        int connectedCount = 0;
         vector<bool> connected(n, false);
         priority_queue<edge, vector<edge>, decltype([](const auto & a, const auto & b){
             return a.weight > b.weight;
@@ -55,6 +55,7 @@ public:
             .weight = 0,
         });
 
+        int sum = 0;
         while(!pq.empty() && connectedCount < n){
             edge e = pq.top();
             pq.pop();
@@ -62,8 +63,10 @@ public:
             if(connected[e.i]){
                 continue;
             }
-
+            sum += e.weight;
             connected[e.i] = true;
+            connectedCount++;
+            //dist[e.i] = min(dist[e.i], e.weight);
 
             for(auto const & n : adjList[e.i]) {
                 if(connected[n.i]){
@@ -74,11 +77,6 @@ public:
                     pq.push(n);
                 }
             }
-        }
-
-        int sum = 0;
-        for(auto const & i : dist){
-            sum += i;
         }
         return sum;
     }
