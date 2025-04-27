@@ -18,8 +18,6 @@ public:
 
         int n = _points.size();
         vector<int> dist(n, INT_MAX);
-        dist[0] = 0;
-
         vector<point> points;
         for(auto const & p : _points){
             points.push_back({
@@ -31,53 +29,34 @@ public:
         //prims with pq : find closest one that isn't already connected.
 
         int connectedCount = 0;
+         //prims with pq : find closest one that isn't already connected.
+        
+        //without pq : use the closest one as the node in the next iteration because that's
+        //the new info we need to add. The goal is to still find the closest one that isn't
+        //already connected.
         vector<bool> connected(n, false);
-        priority_queue<edge, vector<edge>, decltype([](const auto & a, const auto & b){
-            return a.weight > b.weight;
-        }) > pq;
-
-        vector<vector<edge>> adjList(n);
-        for(int i = 0; i < points.size(); i++){
-            for(int j = i + 1; j < points.size(); j++){
-                adjList[i].push_back({
-                    .i = j,
-                    .weight = points[i].manhat(points[j]),
-                });
-                adjList[j].push_back({
-                    .i = i,
-                    .weight = points[j].manhat(points[i]),
-                });
-            }
-        }
-
-        pq.push({
-            .i = 0,
-            .weight = 0,
-        });
 
         int sum = 0;
-        while(!pq.empty() && connectedCount < n){
-            edge e = pq.top();
-            pq.pop();
-
-            if(connected[e.i]){
-                continue;
-            }
-            sum += e.weight;
-            connected[e.i] = true;
+        int newestNode = 0;
+        while(connectedCount < n - 1){
+            connected[newestNode] = true;
             connectedCount++;
-            //dist[e.i] = min(dist[e.i], e.weight);
-
-            for(auto const & n : adjList[e.i]) {
-                if(connected[n.i]){
+            int closestNode = -1;
+            for(int i = 0; i < n; i++){
+                if(connected[i]){
                     continue;
                 }
-                if(n.weight < dist[n.i]){
-                    dist[n.i] = n.weight;
-                    pq.push(n);
+                int newDistance = points[newestNode].manhat(points[i]);
+                dist[i] = min(dist[i], newDistance);
+                if(closestNode == -1 || dist[closestNode] > dist[i]){
+                    closestNode = i;
                 }
             }
+            sum += dist[closestNode];
+            newestNode = closestNode;
+            
         }
+        
         return sum;
     }
 };
