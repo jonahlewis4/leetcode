@@ -2,56 +2,86 @@ class Solution {
     struct point{
         int x;
         int y;
-        int distanceFrom(const point &p2){
-            return abs(x - p2.x) + abs(y - p2.y);
+        int manhat(const point & p2) const{
+            return abs(p2.x - x) + abs(p2.y - y);
         }
+    };
+    struct edge{
+        int i;
+        int weight;
     };
 public:
     int minCostConnectPoints(vector<vector<int>>& _points) {
-        //kurskal's or prim's.
-    
-        //use prim's based on vertices because there are many edges.
-        //this means the graph is dense.
-        //prim's based on vertices is best for dense graphs.
+        //prim's algorithm (vertices edition)
 
+        //the graph is dense so we do the V^2 variation instead of the (E + V) log V
 
-        //convert points to list of points.
-        vector<point> points(_points.size());
-        for(int i = 0; i < _points.size(); i++){
-            int x = _points[i][0];
-            int y = _points[i][1];
-            points[i] = {
-                .x = x,
-                .y = y
-            };
+        int n = _points.size();
+        vector<int> dist(n, INT_MAX);
+        dist[0] = 0;
+
+        vector<point> points;
+        for(auto const & p : _points){
+            points.push_back({
+                .x = p[0],
+                .y = p[1],
+            });
         }
-        //start with a vertex.
-        //use the verison without a priority queue because it is a dense graph.
-        int vertexI = 0;
-        vector<int> dist(points.size(), INT_MAX);
-        dist[vertexI] = 0;
-        vector<bool> visited(points.size(), false);
-        int visitCount = 1;
-        int res = 0;
-        while(visitCount < visited.size()){
-            visited[vertexI] = true;
-            visitCount++;
-            int nextVertexI = -1;
-            for(int i = 0; i < points.size(); i++){
-                if(visited[i]){
+
+        //prims with pq : find closest one that isn't already connected.
+
+        int connectedCount = 1;
+        vector<bool> connected(n, false);
+        priority_queue<edge, vector<edge>, decltype([](const auto & a, const auto & b){
+            return a.weight > b.weight;
+        }) > pq;
+
+        vector<vector<edge>> adjList(n);
+        for(int i = 0; i < points.size(); i++){
+            for(int j = i + 1; j < points.size(); j++){
+                adjList[i].push_back({
+                    .i = j,
+                    .weight = points[i].manhat(points[j]),
+                });
+                adjList[j].push_back({
+                    .i = i,
+                    .weight = points[j].manhat(points[i]),
+                });
+            }
+        }
+
+        pq.push({
+            .i = 0,
+            .weight = 0,
+        });
+
+        while(!pq.empty() && connectedCount < n){
+            edge e = pq.top();
+            pq.pop();
+
+            if(connected[e.i]){
+                continue;
+            }
+
+            connected[e.i] = true;
+            connectedCount++;
+            dist[e.i] = min(dist[e.i], e.weight);
+
+            for(auto const & n : adjList[e.i]) {
+                if(connected[n.i]){
                     continue;
                 }
-                int newDistance = points[i].distanceFrom(points[vertexI]);
-                dist[i] = min(dist[i], newDistance);
-                if(nextVertexI == -1 || dist[i] < dist[nextVertexI]){
-                    nextVertexI = i;
+                if(n.weight < dist[n.i]){
+                    dist[n.i] = n.weight;
+                    pq.push(n);
                 }
             }
-            vertexI = nextVertexI;
-            res += dist[vertexI];
         }
 
-        return res;
-        
+        int sum = 0;
+        for(auto const & i : dist){
+            sum += i;
+        }
+        return sum;
     }
 };
