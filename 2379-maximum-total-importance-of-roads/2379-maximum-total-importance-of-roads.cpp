@@ -6,18 +6,14 @@ class Solution {
     };
 public:
     long long maximumImportance(int n, vector<vector<int>>& roads) {
-        unordered_map<int, int> edges;
-        for(auto const & road : roads){
-            edges[road[0]]++;
-            edges[road[1]]++;
-        }
-
         vector<node> nodes(n);
-        for(auto const & p : edges){
-            nodes[p.first] = {
-                .id = p.first,
-                .indegree = p.second,
-            };
+        for(auto const & road : roads){
+            int src = road[0];
+            int dest = road[1];
+            nodes[src].id = src;
+            nodes[src].indegree++;
+            nodes[dest].id = dest;
+            nodes[dest].indegree++;
         }
         auto oldNodes = nodes;
         sort(nodes.begin(), nodes.end(), [](auto const & a, auto const & b){
