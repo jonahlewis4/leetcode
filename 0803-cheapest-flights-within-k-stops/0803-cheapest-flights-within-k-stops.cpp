@@ -12,8 +12,8 @@ public:
         this->dst = dst;
         this->k = k;
         //return djikstras();
-        return bellmanFord();
-        // return bfs();
+        //return bellmanFord();
+        return bfs();
 
     }
     struct dNode{
@@ -27,7 +27,8 @@ public:
     };
     int djikstras(){
         //djikstras : 
-        //find the closest edge that isn't connected and relax it. 
+        //find the closest vertex that isn't connected and relax it. 
+        //either use a pq or loop through every vertex. Exit when we reach the source. If visited skip 
 
         priority_queue<dNode, vector<dNode>, decltype([](auto const & a, auto const & b){
             return a.weight > b.weight;
@@ -132,7 +133,57 @@ public:
 
     }
     int bfs(){
-        return -1;
+        //adjacencly list and visited array.
+
+        //also a distance array of the smallest we've found. 
+
+        //bfs k + 1 times.
+
+        vector<vector<edge>> adjList(n);
+        for(auto const & flight : flights){
+            int src = flight[0];
+            int dest = flight[1];
+            int weight = flight[2];
+            adjList[src].push_back({
+                .dest = dest,
+                .weight = weight,
+            });
+        }
+
+        vector<int> dist(n, INT_MAX);
+        
+        queue<edge> q;
+        q.push({
+            .dest = src,
+            .weight = 0,
+        });
+
+        for(int i = 0; i < k + 1 && !q.empty(); i++){
+            int n = q.size();
+            for(int TwT = 0; TwT < n; TwT++){
+                edge e = q.front();
+                q.pop();
+
+                // if(e.weight > dist[e.dest]){
+                //     continue;
+                // }
+
+                //dist[e.dest] = e.weight;
+
+                for(auto const & neigh : adjList[e.dest]){
+                    int newWeight = neigh.weight + e.weight;
+                    if(newWeight < dist[neigh.dest]){
+                        dist[neigh.dest] = newWeight;
+                        q.push({
+                            .dest = neigh.dest,
+                            .weight = newWeight,
+                        });
+                    }
+                }
+            }
+        }
+         
+        return dist[dst] == INT_MAX ? -1 : dist[dst];
     }
 
 };
