@@ -1,60 +1,99 @@
 class Solution {
-    struct edge{
-        int dest;
-        int weight;  
-    };
+    int n;
+    vector<vector<int>> flights;
+    int src;
+    int dst;
+    int k;
 public:
     int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
-        //bfs of edges. 
-        //check if we've reached this dst in less time. Since we're going time by time
-        //we can guarantee each change will only be beneficial. 
+        this->n = n;
+        this->flights = flights;
+        this->src = src;
+        this->dst = dst;
+        this->k = k;
+        return djikstras();
+        // return bellmanFord();
+        // return bfs();
+
+    }
+    struct dNode{
+        int dest;
+        int weight;
+        int stops;
+    };
+    struct edge {
+        int dest;
+        int weight;
+    };
+    int djikstras(){
+        //djikstras : 
+        //find the closest edge that isn't connected and relax it. 
+
+        priority_queue<dNode, vector<dNode>, decltype([](auto const & a, auto const & b){
+            return a.weight > b.weight;
+        }) > pq;
 
         vector<vector<edge>> adjList(n);
-        for(const auto & flight : flights) {
-            int from = flight[0];
-            int to = flight[1];
-            int price = flight[2];
-            adjList[from].push_back({
-                .dest = to,
-                .weight = price
+
+        for(auto const & flight : flights){
+            int src = flight[0];
+            int dest = flight[1];
+            int weight = flight[2];
+            adjList[src].push_back({
+                .dest = dest,
+                .weight = weight,
             });
         }
-
-        queue<edge> q;
-        q.push({
+        
+        pq.push({
             .dest = src,
-            .weight = 0
+            .weight = 0,
+            .stops = 0,
         });
+        vector<vector<int>> dist(n, vector<int>(k + 2, INT_MAX));
+        while(!pq.empty()){
+            dNode node = pq.top();
+            pq.pop();
 
-        vector<int> distance(n, INT_MAX);
-        distance[src] = 0;
-
-        int stops = 0;
-        while(!q.empty()){
-            if(stops > k){
-                break;
+            if(node.dest == dst){
+                return node.weight;
             }
-            int n = q.size();
-            for(int i  = 0; i < n; i++){
-                edge e = q.front();
-                q.pop();
+
+            if(node.stops >= k + 1){
+                continue;
+            }
+
+            if(node.weight > dist[node.dest][node.stops]){
+                continue;
+            }
+
+            dist[node.dest][node.stops] = node.weight;
+
+            for(auto const & neigh : adjList[node.dest]){
                 
-                for(const auto & n : adjList[e.dest]){
-                    int newWeight = n.weight + e.weight;
-                    if(newWeight < distance[n.dest]){
-                        distance[n.dest] = newWeight;
-                        q.push({
-                            .dest = n.dest,
-                            .weight = newWeight
-                        });
-                    }
-                    
+                
+                if(neigh.weight + node.weight >= dist[neigh.dest][node.stops + 1]){
+                    continue;
                 }
+                dist[neigh.dest][node.stops + 1] = neigh.weight + node.weight;
+                pq.push({
+                    .dest = neigh.dest,
+                    .weight = neigh.weight + node.weight,
+                    .stops = node.stops + 1,
+                });
             }
-        
-            stops++;
+
         }
-        
-        return distance[dst] == INT_MAX ? -1 : distance[dst];
+
+        return -1;
+
+
     }
+    int bellmanFord(){
+        return -1;
+    }
+    int bfs(){
+        return -1;
+    }
+
 };
