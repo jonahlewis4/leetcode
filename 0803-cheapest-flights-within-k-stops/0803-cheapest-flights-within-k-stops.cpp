@@ -158,21 +158,22 @@ public:
             .weight = 0,
         });
 
-        for(int i = 0; i <= k + 1 && !q.empty(); i++){
+        for(int i = 0; i < k + 1 && !q.empty(); i++){
             int n = q.size();
             for(int TwT = 0; TwT < n; TwT++){
                 edge e = q.front();
                 q.pop();
 
-                if(e.weight > dist[e.dest]){
-                    continue;
-                }
+                // if(e.weight > dist[e.dest]){
+                //     continue;
+                // }
 
-                dist[e.dest] = e.weight;
+                //dist[e.dest] = e.weight;
 
                 for(auto const & neigh : adjList[e.dest]){
                     int newWeight = neigh.weight + e.weight;
                     if(newWeight < dist[neigh.dest]){
+                        dist[neigh.dest] = newWeight;
                         q.push({
                             .dest = neigh.dest,
                             .weight = newWeight,
