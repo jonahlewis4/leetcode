@@ -151,6 +151,7 @@ public:
         }
 
         vector<int> dist(n, INT_MAX);
+    
         
         queue<edge> q;
         q.push({
@@ -160,14 +161,20 @@ public:
 
         for(int i = 0; i < k + 1 && !q.empty(); i++){
             int n = q.size();
+            vector<int> newDist = dist;
             for(int TwT = 0; TwT < n; TwT++){
                 edge e = q.front();
                 q.pop();
-                
+
+                if(e.weight > dist[e.dest]){
+                    continue;
+                }
+
+
                 for(auto const & neigh : adjList[e.dest]){
                     int newWeight = neigh.weight + e.weight;
-                    if(newWeight < dist[neigh.dest]){
-                        dist[neigh.dest] = newWeight;
+                    if(newWeight < newDist[neigh.dest]){
+                        newDist[neigh.dest] = newWeight;
                         q.push({
                             .dest = neigh.dest,
                             .weight = newWeight,
@@ -175,6 +182,7 @@ public:
                     }
                 }
             }
+            dist = newDist;
         }
          
         return dist[dst] == INT_MAX ? -1 : dist[dst];
