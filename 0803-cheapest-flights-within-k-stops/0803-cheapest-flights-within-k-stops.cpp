@@ -11,8 +11,8 @@ public:
         this->src = src;
         this->dst = dst;
         this->k = k;
-        return djikstras();
-        // return bellmanFord();
+        //return djikstras();
+        return bellmanFord();
         // return bfs();
 
     }
@@ -86,11 +86,50 @@ public:
         }
 
         return -1;
-
-
     }
     int bellmanFord(){
-        return -1;
+        //bellman ford:
+        //relax every vertex. 
+        vector<vector<edge>> adjList(n);
+
+        for(auto const & flight : flights){
+            int src = flight[0];
+            int dest = flight[1];
+            int weight = flight[2];
+            adjList[src].push_back({
+                .dest = dest,
+                .weight = weight,
+            });
+        }
+
+        vector<int> dist(n, INT_MAX);
+        dist[src] = 0;
+
+        int stops = 0;
+        while(true){
+            if(stops >= k + 1){
+                break;
+            }
+            
+            vector<int> newDist = dist;
+            for(int i = 0; i < adjList.size(); i++){
+                auto const & list = adjList[i];
+                for(auto const & edge : list){
+                    if(dist[i] == INT_MAX){
+                        continue;
+                    }
+                    if(dist[i] + edge.weight < newDist[edge.dest]){
+                        newDist[edge.dest] = dist[i] + edge.weight;
+                    }
+                }
+            }
+            dist = newDist;
+            stops++;
+        }
+
+
+        return dist[dst] == INT_MAX ? -1 : dist[dst];
+
     }
     int bfs(){
         return -1;
