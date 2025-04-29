@@ -166,10 +166,6 @@ public:
                 edge e = q.front();
                 q.pop();
 
-                if(e.weight > dist[e.dest]){
-                    continue;
-                }
-
 
                 for(auto const & neigh : adjList[e.dest]){
                     int newWeight = neigh.weight + e.weight;
