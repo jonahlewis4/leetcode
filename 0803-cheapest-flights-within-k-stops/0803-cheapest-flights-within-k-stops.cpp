@@ -161,7 +161,6 @@ public:
 
         for(int i = 0; i < k + 1 && !q.empty(); i++){
             int n = q.size();
-            vector<int> newDist = dist;
             for(int TwT = 0; TwT < n; TwT++){
                 edge e = q.front();
                 q.pop();
@@ -169,8 +168,8 @@ public:
 
                 for(auto const & neigh : adjList[e.dest]){
                     int newWeight = neigh.weight + e.weight;
-                    if(newWeight < newDist[neigh.dest]){
-                        newDist[neigh.dest] = newWeight;
+                    if(newWeight < dist[neigh.dest]){
+                        dist[neigh.dest] = newWeight;
                         q.push({
                             .dest = neigh.dest,
                             .weight = newWeight,
@@ -178,7 +177,6 @@ public:
                     }
                 }
             }
-            dist = newDist;
         }
          
         return dist[dst] == INT_MAX ? -1 : dist[dst];
