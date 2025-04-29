@@ -163,11 +163,7 @@ public:
             for(int TwT = 0; TwT < n; TwT++){
                 edge e = q.front();
                 q.pop();
-
-               
-
-                dist[e.dest] = min(dist[e.dest], e.weight);
-
+                
                 for(auto const & neigh : adjList[e.dest]){
                     int newWeight = neigh.weight + e.weight;
                     if(newWeight < dist[neigh.dest]){
