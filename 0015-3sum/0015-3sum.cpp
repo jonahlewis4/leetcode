@@ -15,16 +15,14 @@ public:
                         nums[l],
                         nums[r],
                     });
-                }
-                if(sum > goal){
-                    while(r - 1 > l && nums[r] == nums[r - 1]){
-                        r--;
-                    }
-                    r--;
-                }  else {
-                    while(l + 1 < r && nums[l+ 1] == nums[l]){
+                    while(l + 1 < r && nums[l] == nums[l + 1]){
                         l++;
                     }
+                    l++;
+                }
+                else if(sum > goal){
+                    r--;
+                }  else { 
                     l++;
                 }
             }
