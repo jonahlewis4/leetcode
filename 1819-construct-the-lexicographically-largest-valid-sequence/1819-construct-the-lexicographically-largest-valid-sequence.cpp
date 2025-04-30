@@ -19,7 +19,6 @@ public:
     }   
 
     void calc(vector<int> &sequence, int nextOpen) {
-        auto _is = inSequence;
         if(placed == inSequence.size() - 1){
             res = sequence;
             return;
