@@ -115,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1694-make-sum-divisible-by-p](https://github.com/jonahlewis4/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1706-min-cost-to-connect-all-points](https://github.com/jonahlewis4/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/jonahlewis4/leetcode/tree/master/1713-dot-product-of-two-sparse-vectors) |
+| [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/jonahlewis4/leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1909-buildings-with-an-ocean-view](https://github.com/jonahlewis4/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [2165-plates-between-candles](https://github.com/jonahlewis4/leetcode/tree/master/2165-plates-between-candles) |
@@ -728,6 +729,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0212-word-search-ii](https://github.com/jonahlewis4/leetcode/tree/master/0212-word-search-ii) |
 | [0257-binary-tree-paths](https://github.com/jonahlewis4/leetcode/tree/master/0257-binary-tree-paths) |
 | [1160-letter-tile-possibilities](https://github.com/jonahlewis4/leetcode/tree/master/1160-letter-tile-possibilities) |
+| [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/jonahlewis4/leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/jonahlewis4/leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 ## Tree
 |  |
