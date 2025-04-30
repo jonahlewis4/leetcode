@@ -1,73 +1,64 @@
 class Solution {
-public:
-    vector<int> constructDistancedSequence(int targetNumber) {
-        // Initialize the result sequence with size 2*n - 1 filled with 0s
-        vector<int> resultSequence(targetNumber * 2 - 1, 0);
-
-        // Keep track of which numbers are already placed in the sequence
-        vector<bool> isNumberUsed(targetNumber + 1, false);
-
-        // Start recursive backtracking to construct the sequence
-        findLexicographicallyLargestSequence(0, resultSequence, isNumberUsed,
-                                             targetNumber);
-
-        return resultSequence;
-    }
-
 private:
-    // Recursive function to generate the desired sequence
-    bool findLexicographicallyLargestSequence(int currentIndex,
-                                              vector<int>& resultSequence,
-                                              vector<bool>& isNumberUsed,
-                                              int targetNumber) {
-        // If we have filled all positions, return true indicating success
-        if (currentIndex == resultSequence.size()) {
-            return true;
+    vector<int> res = {};
+    vector<bool> inSequence;
+    int placed = 0;
+    int n;
+public:
+    vector<int> constructDistancedSequence(int n) {
+        // 5 as input :     0 1 2 3 4 5 6 7 8
+        // lexic smallest : 1 2 2 3 3 4 4 5 5
+        // lexic largest :  5         5
+        //                  4       4
+
+        this->n = n;
+        inSequence.resize(n + 1, false);
+        vector<int> sequence(n * 2 - 1, -1);
+        calc(sequence, 0);
+        return res;
+    }   
+
+    void calc(vector<int> &sequence, int nextOpen) {
+        if(placed == inSequence.size() - 1){
+            res = sequence;
+            return;
         }
-
-        // If the current position is already filled, move to the next index
-        if (resultSequence[currentIndex] != 0) {
-            return findLexicographicallyLargestSequence(
-                currentIndex + 1, resultSequence, isNumberUsed, targetNumber);
-        }
-
-        // Attempt to place numbers from targetNumber to 1 for a
-        // lexicographically largest result
-        for (int numberToPlace = targetNumber; numberToPlace >= 1;
-             numberToPlace--) {
-            if (isNumberUsed[numberToPlace]) continue;
-
-            isNumberUsed[numberToPlace] = true;
-            resultSequence[currentIndex] = numberToPlace;
-
-            // If placing number 1, move to the next index directly
-            if (numberToPlace == 1) {
-                if (findLexicographicallyLargestSequence(
-                        currentIndex + 1, resultSequence, isNumberUsed,
-                        targetNumber)) {
-                    return true;
-                }
+        
+        for(int digit = n; digit >= 1; digit--){
+            int nextOpen2 = nextOpen;
+            if(inSequence[digit]){
+                continue;
             }
-            // Place larger numbers at two positions if valid
-            else if (currentIndex + numberToPlace < resultSequence.size() &&
-                     resultSequence[currentIndex + numberToPlace] == 0) {
-                resultSequence[currentIndex + numberToPlace] = numberToPlace;
-
-                if (findLexicographicallyLargestSequence(
-                        currentIndex + 1, resultSequence, isNumberUsed,
-                        targetNumber)) {
-                    return true;
-                }
-
-                // Undo the placement for backtracking
-                resultSequence[currentIndex + numberToPlace] = 0;
+            int pairIndex = nextOpen2 + digit;
+            if(digit == 1){
+                pairIndex = nextOpen2;
             }
-
-            // Undo current placement and mark the number as unused
-            resultSequence[currentIndex] = 0;
-            isNumberUsed[numberToPlace] = false;
+            if(pairIndex >= sequence.size()){
+                continue;
+            }
+            if(sequence[pairIndex] != -1){
+                continue;
+            }
+    
+            sequence[nextOpen] = digit;
+            sequence[pairIndex] = digit;
+            inSequence[digit] = true;
+            nextOpen2++;
+            while(nextOpen2 < sequence.size() && sequence[nextOpen2] != -1){
+                nextOpen2++;
+            }
+            placed++;
+            calc(sequence, nextOpen2);
+            inSequence[digit] = false;
+            sequence[nextOpen] = -1;
+            sequence[pairIndex] = -1;
+            placed--;
+            if(!res.empty()){
+                return;
+            }
         }
-
-        return false;
+        
     }
+
+
 };
