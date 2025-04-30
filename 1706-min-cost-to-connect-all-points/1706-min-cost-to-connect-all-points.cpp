@@ -1,62 +1,108 @@
 class Solution {
-    struct point{
+
+    class Kruskals {
+    private:
+        class DSU{
+            vector<int> root;
+            vector<int> size;
+        public:
+            DSU(int n){
+                size.resize(n, 1);
+                root.resize(n, -1);
+                iota(root.begin(), root.end(), 0);
+            }
+            int Find(int i) {
+                if(root[i] == i){
+                    return i;
+                }
+                root[i] = Find(root[i]); //path compression
+                return root[i];
+            }
+            void Union(int a, int b) {
+                int aRoot = Find(a);
+                int bRoot = Find(b);
+                if(aRoot == bRoot){
+                    return;
+                }
+
+                //set aRoot to be the larger of the two and merge bRoot into aRoot
+                if(size[aRoot] < size[bRoot]){
+                    swap(aRoot, bRoot);
+                }
+
+                size[aRoot] += size[bRoot];
+                root[bRoot] = aRoot;
+            }
+
+            bool Connected(int a, int b) {
+                return Find(a) == Find(b);
+            }
+        };
+    struct edge {
+        int src;
+        int dest;
+        int weight;
+        bool operator<(const edge &other) const {
+            return this->weight < other.weight;
+        }
+    };
+    struct point {
         int x;
         int y;
-        int manhat(const point & p2) const{
-            return abs(p2.x - x) + abs(p2.y - y);
+        int operator-(const point &other) const {
+            return abs(other.x - x) + abs(other.y - y);
         }
     };
-    struct edge{
-        int i;
-        int weight;
-    };
-public:
-    int minCostConnectPoints(vector<vector<int>>& _points) {
-        //prim's algorithm (vertices edition)
+    const vector<vector<int>>& points;
 
-        //the graph is dense so we do the V^2 variation instead of the (E + V) log V
+    public:
+        Kruskals(const vector<vector<int>>& points) : points(points) {};
+        int compute(){
+            DSU dsu(points.size());
 
-        int n = _points.size();
-        vector<int> dist(n, INT_MAX);
-        vector<point> points;
-        for(auto const & p : _points){
-            points.push_back({
-                .x = p[0],
-                .y = p[1],
-            });
-        }
+            vector<point> _points(points.size());
+            for(int i = 0; i < points.size(); i++){
+                auto const &point = points[i];
+                int x = point[0];
+                int y = point[1];
+                _points[i] = {
+                    .x = x,
+                    .y = y,
+                };
+            }
 
-        //prims with pq : find closest one that isn't already connected.
-
-        int connectedCount = 0;
-         //prims with pq : find closest one that isn't already connected.
-        
-        //without pq : use the closest one as the node in the next iteration because that's
-        //the new info we need to add. The goal is to still find the closest one that isn't
-        //already connected.
-        vector<bool> connected(n, false);
-
-        int sum = 0;
-        int newestNode = 0;
-        while(connectedCount < n - 1){
-            connected[newestNode] = true;
-            connectedCount++;
-            int closestNode = -1;
-            for(int i = 0; i < n; i++){
-                if(connected[i]){
-                    continue;
-                }
-                int newDistance = points[newestNode].manhat(points[i]);
-                dist[i] = min(dist[i], newDistance);
-                if(closestNode == -1 || dist[closestNode] > dist[i]){
-                    closestNode = i;
+            vector<edge> edges;
+            for(int i = 0; i < _points.size(); i++){
+                point const &p1 = _points[i];
+                for(int j = i + 1; j < _points.size(); j++){
+                    point const&p2 = _points[j];
+                    int weight = p1 - p2;
+                    edges.push_back({
+                        .src = i,
+                        .dest = j,
+                        .weight = weight,
+                    });
                 }
             }
-            sum += dist[closestNode];
-            newestNode = closestNode;
-            
+
+            sort(edges.begin(), edges.end());
+
+
+            int total = 0;
+            for(auto const & edge : edges){
+                if(dsu.Connected(edge.src, edge.dest)){
+                    continue;
+                }
+                total += edge.weight;
+                dsu.Union(edge.src, edge.dest);
+
+            }
+            return total;
         }
-        
-        return sum;
+    };
+
+public:
+    int minCostConnectPoints(vector<vector<int>>& points) {
+        return Kruskals(points).compute();
     }
 };
