@@ -39,17 +39,19 @@ public:
             if(sequence[pairIndex] != -1){
                 continue;
             }
-            vector<int> newSequence = sequence;
-            newSequence[nextOpen] = digit;
-            newSequence[pairIndex] = digit;
+    
+            sequence[nextOpen] = digit;
+            sequence[pairIndex] = digit;
             inSequence[digit] = true;
             nextOpen2++;
-            while(nextOpen2 < newSequence.size() && newSequence[nextOpen2] != -1){
+            while(nextOpen2 < sequence.size() && sequence[nextOpen2] != -1){
                 nextOpen2++;
             }
             placed++;
-            calc(newSequence, nextOpen2);
+            calc(sequence, nextOpen2);
             inSequence[digit] = false;
+            sequence[nextOpen] = -1;
+            sequence[pairIndex] = -1;
             placed--;
             if(!res.empty()){
                 return;
