@@ -14,9 +14,6 @@ public:
     }
 
     string rle(const string &s) const {
-        if(s == ""){
-            return "";
-        }
         string res = "";
         char lastChar = '.';
         int streakCount = 0;
