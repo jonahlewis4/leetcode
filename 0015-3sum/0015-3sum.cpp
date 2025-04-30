@@ -1,39 +1,36 @@
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
-        std::sort(nums.begin(), nums.end());
+        sort(nums.begin(), nums.end());
         vector<vector<int>> res;
-
-        auto twoSum = [&res, nums](int l, int r, int target, int &i) {
+        for(int i = 0; i < nums.size(); i++){
+            int l = i + 1;
+            int r = nums.size() - 1;
             while(l < r){
+                int goal = 0 - nums[i];
                 int sum = nums[l] + nums[r];
-                if(sum < target){
-                    l++;
+                if(sum == goal){
+                    res.push_back({
+                        nums[i],
+                        nums[l],
+                        nums[r],
+                    });
                 }
-                else if (sum > target){
+                if(sum > goal){
+                    while(r - 1 > l && nums[r] == nums[r - 1]){
+                        r--;
+                    }
                     r--;
-                }
-                else {
-                    res.push_back({nums[i], nums[l], nums[r]});
-                    l++;
-                    while(l < r && nums[l] == nums[l - 1]){
+                }  else {
+                    while(l + 1 < r && nums[l+ 1] == nums[l]){
                         l++;
                     }
+                    l++;
                 }
             }
-            while(i + 1 < nums.size() - 2 && nums[i] == nums[i + 1]){
+            while(i + 1 < nums.size() && nums[i + 1] == nums[i]){
                 i++;
             }
-        };
-
-        int n = nums.size();
-
-        for(int i = 0; i < n - 2; i++){
-            int l = i + 1;
-            int r = n - 1;
-            int target = 0 - nums[i];
-            twoSum(l, r, target, i);
-
         }
         return res;
     }
