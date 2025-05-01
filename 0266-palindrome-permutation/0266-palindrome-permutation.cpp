@@ -1,14 +1,14 @@
 class Solution {
 public:
     bool canPermutePalindrome(string s) {
-        unordered_map<int, int> letters;
+        array<int, 26> letters;
         for(const auto & c : s){
-            letters[c]++;
+            letters[c - 'a']++;
         }
 
         bool parachute = true;
-        for(const auto & p : letters){
-            if(p.second % 2 == 1){
+        for(const auto & count : letters){
+            if(count % 2 == 1){
                 if(parachute){
                     parachute = false;
                 } else {
