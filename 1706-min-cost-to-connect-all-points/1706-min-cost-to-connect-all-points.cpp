@@ -107,6 +107,8 @@ private:
     const vector<vector<int>> & _points;
 public:
     //prims works by finding the nearest unconnect point from any given point in the graph.
+    // N^2 version is better for dense graphs
+    // Priority queue version is better for sparse graphs.
     Prims(const vector<vector<int>> &points) : _points(points) {}
     int SolutionPQ() {
         //takeway: use MEANINGFUL variable names. DO NOT use i. Use neigh
@@ -147,7 +149,7 @@ public:
         int visitCount = 0;
         vector<bool> visited(points.size(), 0);
         int total = 0;
-        while(visitCount < points.size()){
+        while(!pq.empty() && visitCount < points.size()){
             Edge e = pq.top();
             pq.pop();
             if(visited[e.dest]){
