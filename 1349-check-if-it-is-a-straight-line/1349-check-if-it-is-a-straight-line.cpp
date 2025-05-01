@@ -8,7 +8,7 @@ public:
                 if(x - p2.x == 0){
                     return numeric_limits<float>::infinity();
                 }
-                return float((y - p2.y)) / (x - p2.x);
+                return float((y - p2.y)) * (x - p2.x);
             }
         };
         vector<point> points;
