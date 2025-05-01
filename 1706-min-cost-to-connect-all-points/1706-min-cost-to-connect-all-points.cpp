@@ -109,6 +109,8 @@ public:
     //prims works by finding the nearest unconnect point from any given point in the graph.
     Prims(const vector<vector<int>> &points) : _points(points) {}
     int SolutionPQ() {
+        //takeway: use MEANINGFUL variable names. DO NOT use i. Use neigh
+        //exit when visitCount is the number of points when we know we can visit everything.
         struct Edge{
             int dest;
             int weight;
@@ -145,7 +147,7 @@ public:
         int visitCount = 0;
         vector<bool> visited(points.size(), 0);
         int total = 0;
-        while(visitCount < points.size()){
+        while(!pq.empty() && visitCount < points.size()){
             Edge e = pq.top();
             pq.pop();
             if(visited[e.dest]){
