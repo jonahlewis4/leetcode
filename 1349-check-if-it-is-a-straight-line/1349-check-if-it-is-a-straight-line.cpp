@@ -4,12 +4,6 @@ public:
         struct point{
             int x;
             int y;
-            float slope(const point &p2) const {
-                if(x - p2.x == 0){
-                    return numeric_limits<float>::infinity();
-                }
-                return float((y - p2.y)) / (x - p2.x);
-            }
         };
         vector<point> points;
         for(const auto & coord : coordinates){
@@ -21,10 +15,29 @@ public:
             });
         }
 
-        float firstSlope = points[0].slope(points[1]); 
+        int x0 = points[0].x;
+        int y0 = points[0].y;
+
+        int x1 = points[1].x;
+        int y1 = points[1].y;
+
+        //make sure all incoming ones match this equation.
+
+        int deltaX1 = x1 - x0;
+        int deltaY1 = y1 - y0; 
+
 
         for(int i = 2; i < points.size(); i++){
-            if(points[i].slope(points[i - 1]) != firstSlope){
+            //if delta y1 / delta x1 = delta y2 / delta x2 its ok
+            //same as deltax1 * deltay2 = deltay1 * dletax2
+
+            int x2 = points[i].x;
+            int y2 = points[i].y;
+
+            int deltaX2 = x2 - x0;
+            int deltaY2 = y2 - y0;
+
+            if(deltaX1 * deltaY2 != deltaY1 * deltaX2){
                 return false;
             }
         }
