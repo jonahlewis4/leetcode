@@ -147,7 +147,7 @@ public:
         int visitCount = 0;
         vector<bool> visited(points.size(), 0);
         int total = 0;
-        while(!pq.empty() && visitCount < points.size()){
+        while(visitCount < points.size()){
             Edge e = pq.top();
             pq.pop();
             if(visited[e.dest]){
