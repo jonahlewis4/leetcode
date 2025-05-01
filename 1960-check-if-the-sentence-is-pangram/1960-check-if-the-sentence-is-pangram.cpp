@@ -1,10 +1,15 @@
 class Solution {
 public:
     bool checkIfPangram(string sentence) {
-        unordered_set<char> letters;
+        std::array<bool, 26> letters;
         for(const auto & c : sentence){
-            letters.insert(c);
+            letters[c - 'a'] = true;
         }
-        return letters.size() == 26;
+        for(const auto & found : letters){
+            if(!found){
+                return false;
+            }
+        }
+        return true;
     }
 };
