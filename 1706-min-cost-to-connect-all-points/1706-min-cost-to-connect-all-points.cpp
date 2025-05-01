@@ -134,7 +134,8 @@ public:
                 .y = y,
             };
         }
-        //vector<int> dist(points.size(), INT_MAX);
+        vector<int> dist(points.size(), INT_MAX);
+        dist[0] = 0;
         priority_queue<Edge> pq;
         pq.push({
             .dest = 0,
@@ -144,21 +145,31 @@ public:
         int visitCount = 0;
         vector<bool> visited(points.size(), 0);
         int total = 0;
-        while(!pq.empty() && visitCount < points.size()){
+        while(visitCount < points.size()){
             Edge e = pq.top();
             pq.pop();
             if(visited[e.dest]){
                 continue;
             }
+            if(e.weight > dist[e.dest]){
+                continue;
+            }
             visited[e.dest] = true;
+            dist[e.dest] = e.weight;
             total += e.weight;
+            visitCount++;
             for(int i = 0; i < points.size(); i++){
                 if(visited[i]){
                     continue;
                 }
+                int newWeight = points[i] - points[e.dest];
+                if(newWeight >= dist[i]){
+                    continue;
+                }
+                dist[i] = newWeight;
                 pq.push({
                     .dest = i,
-                    .weight = points[i] - points[e.dest],
+                    .weight = newWeight,
                 });
             }
         }
