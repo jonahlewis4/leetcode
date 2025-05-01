@@ -1,6 +1,7 @@
 class Solution {
 
-    class Kruskals {
+class Kruskals {
+
     private:
         class DSU{
             vector<int> root;
@@ -38,22 +39,22 @@ class Solution {
                 return Find(a) == Find(b);
             }
         };
-    struct edge {
-        int src;
-        int dest;
-        int weight;
-        bool operator<(const edge &other) const {
-            return this->weight < other.weight;
-        }
-    };
-    struct point {
-        int x;
-        int y;
-        int operator-(const point &other) const {
-            return abs(other.x - x) + abs(other.y - y);
-        }
-    };
-    const vector<vector<int>>& points;
+        struct edge {
+            int src;
+            int dest;
+            int weight;
+            bool operator<(const edge &other) const {
+                return this->weight < other.weight;
+            }
+        };
+        struct point {
+            int x;
+            int y;
+            int operator-(const point &other) const {
+                return abs(other.x - x) + abs(other.y - y);
+            }
+        };
+        const vector<vector<int>>& points;
 
     public:
         Kruskals(const vector<vector<int>>& points) : points(points) {};
@@ -101,8 +102,73 @@ class Solution {
         }
     };
 
+class Prims{
+private: 
+    const vector<vector<int>> & _points;
+public:
+    //prims works by finding the nearest unconnect point from any given point in the graph.
+    Prims(const vector<vector<int>> &points) : _points(points) {}
+    int SolutionPQ() {
+        struct Edge{
+            int dest;
+            int weight;
+            bool operator<(const Edge& other) const {
+                //return true if first one has lower priority.
+                return weight > other.weight;
+            }
+        };
+        struct Point{
+            int x;
+            int y;
+            int operator-(const Point& other) const {
+                return abs(other.x - x) + abs(other.y - y);
+            }
+        };
+        vector<Point> points(_points.size());
+        for(int i = 0; i < points.size(); i++){
+            const auto & point = _points[i];
+            int x = point[0];
+            int y = point[1];
+            points[i] = {
+                .x = x,
+                .y = y,
+            };
+        }
+        //vector<int> dist(points.size(), INT_MAX);
+        priority_queue<Edge> pq;
+        pq.push({
+            .dest = 0,
+            .weight = 0,
+        });
+
+        int visitCount = 0;
+        vector<bool> visited(points.size(), 0);
+        int total = 0;
+        while(!pq.empty() && visitCount < points.size()){
+            Edge e = pq.top();
+            pq.pop();
+            if(visited[e.dest]){
+                continue;
+            }
+            visited[e.dest] = true;
+            total += e.weight;
+            for(int i = 0; i < points.size(); i++){
+                if(visited[i]){
+                    continue;
+                }
+                pq.push({
+                    .dest = i,
+                    .weight = points[i] - points[e.dest],
+                });
+            }
+        }
+
+        return total;
+    }
+};
 public:
     int minCostConnectPoints(vector<vector<int>>& points) {
-        return Kruskals(points).compute();
+        //return Kruskals(points).compute();
+        return Prims(points).SolutionPQ();
     }
 };
