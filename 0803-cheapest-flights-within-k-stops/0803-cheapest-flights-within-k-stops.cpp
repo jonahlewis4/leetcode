@@ -60,6 +60,84 @@ private:
 
             }
     };
+    class Djikstras{
+    private:
+        const Args &args;
+        struct Stop{
+            int dest;
+            int weight;
+            int stops;
+
+            //return true if this has smaller priority than other
+            bool operator<(const Stop &other) const {
+                return weight > other.weight;
+            }
+        };
+        struct Edge {
+            int dest;
+            int weight;
+        };
+    public:
+        Djikstras(const Args &_args) : args(_args){}
+        //find the nearest unvisited node
+        //if its the end return it
+        //if it is within k stops stick with it
+        //and check all its neighboors with appropriate distance from it.
+        int Solution(){
+            vector<vector<int>> dist(args.n, vector<int>(args.k + 2, INT_MAX));
+            
+            vector<bool> visited(args.n, false);
+
+            //construct adjacency list.
+            vector<vector<Edge>> adjList(args.n);
+            for(const auto & flight : args.flights){
+                int src = flight[0];
+                int dest = flight[1];
+                int weight = flight[2];
+                adjList[src].push_back({
+                    .dest = dest,
+                    .weight = weight,
+                });
+            }
+
+
+            priority_queue<Stop> pq;
+            pq.push({
+                .dest = args.src,
+                .weight = 0,
+                .stops = 0,
+            });
+
+            //if k is 1 stop can be 0 or 1 and it's acceptable.
+            while(!pq.empty()){
+                Stop stop = pq.top();
+                pq.pop();
+                if(stop.dest == args.dst){
+                    return stop.weight;
+                }
+                if(stop.stops > args.k || stop.weight > dist[stop.dest][stop.stops]){
+                    continue;
+                }
+                for(const auto & neigh : adjList[stop.dest]){
+                    int newWeight = neigh.weight + stop.weight;
+                    int newStops = stop.stops + 1;
+
+                    if(newWeight < dist[neigh.dest][newStops]){
+                        dist[neigh.dest][newStops] = newWeight;
+                        pq.push({
+                            .dest = neigh.dest,
+                            .weight = newWeight,
+                            .stops = newStops,
+                        });
+                    }
+                }
+
+            } 
+            return -1;
+        }
+        
+
+    };
 
 public:
     int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
@@ -69,6 +147,7 @@ public:
         args.src = src;
         args.dst = dst;
         args.k = k;
-        return BellmanFord(args).Solution();
+        //return BellmanFord(args).Solution();
+        return Djikstras(args).Solution();
     }
 };
