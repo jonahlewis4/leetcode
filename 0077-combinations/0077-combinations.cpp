@@ -2,7 +2,7 @@ class Solution {
 vector<vector<int>> res;
 int k;
 int n;
-unordered_set<int> allowed;
+set<int> allowed;
 vector<int> cur;
 public:
     vector<vector<int>> combine(int n, int k) {
