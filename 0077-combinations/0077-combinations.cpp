@@ -1,48 +1,36 @@
 class Solution {
 vector<vector<int>> res;
-int k;
-int n;
-set<int> allowed;
 vector<int> cur;
+int n;
+int k;
 public:
     vector<vector<int>> combine(int n, int k) {
         this->n = n;
         this->k = k;
-        for(int i = 1; i <= n; i++){
-            allowed.insert(i);
-        }
-        dfs()  ;
-        return res;
+        dfs(1);
+        return res;  
     }
-    void dfs() {
+    void dfs(int newDigit) {
         
-        
+        auto _cur = &cur;
         if(cur.size() == k){
             res.push_back(cur);
             return;
         }
         
-        if(cur.size() + allowed.size() < k){
+        int remaining = n - newDigit + 1;
+        if(cur.size() + remaining < k){
             return;
         }
-        
-        //use the current one.
-        auto begin = allowed.begin();
 
-        //recurse with the number in the combination and not allowed.
-        //find all combinations that include that number.
-        cur.push_back(*begin);
-        int num = *begin;
-        allowed.erase(begin);
-        dfs();
+        //find all combinations with this digit in it;
 
-        //recurse with the numnber not in the combination and not allowed.
-        //(find all combinations that do not include that number) 
-        cur.pop_back();
-        dfs();
+        for(int secondDigit = newDigit; secondDigit <= n; secondDigit++){
+            cur.push_back(secondDigit);
+            dfs(secondDigit + 1);
+            cur.pop_back();
+        }
 
 
-        
-        allowed.insert(num);
     }
 };
