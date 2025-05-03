@@ -180,10 +180,65 @@ public:
 
         return total;
     }
+    
+    int SolutionNSquared(){
+        
+        struct Point {
+            int x;
+            int y;
+            int operator-(const Point & other) const {
+                return abs(x - other.x) + abs(y - other.y);
+            }
+        };
+
+        //find the nearest point from any point in the graph, as long as that nearest point is not already connected. 
+        //when we find that new point we add its info to the graph by relaxing all edges.
+
+        vector<Point> points(_points.size());
+        for(int i = 0; i < _points.size(); i++){
+            const auto & point = _points[i];
+            int x = point[0];
+            int y = point[1];
+            points[i] = {
+                .x = x,
+                .y = y,
+            };
+        }
+
+
+        //add first point to the graph.
+
+        vector<int> dist(points.size(), INT_MAX);
+        vector<bool> visited(points.size(), false);
+
+        int sum = 0;
+        int pointIndex = 0;
+
+        for(int i = 0; i < points.size() - 1; i++){
+            int closestPointIndex = -1;
+            visited[pointIndex] = true;
+            const auto & point = points[pointIndex]; 
+            for(int neighIndex = 1; neighIndex < points.size(); neighIndex++){
+                if(visited[neighIndex]){
+                    continue;
+                }
+                const auto & neigh = points[neighIndex];
+                int distance = neigh - point;
+                dist[neighIndex] = min(dist[neighIndex], distance);
+                if(closestPointIndex == -1 || dist[neighIndex] < dist[closestPointIndex]){
+                    closestPointIndex = neighIndex;
+                }
+            }
+
+            sum += dist[closestPointIndex];
+            pointIndex = closestPointIndex;
+        }
+        return sum;
+    }
 };
 public:
     int minCostConnectPoints(vector<vector<int>>& points) {
         //return Kruskals(points).compute();
-        return Prims(points).SolutionPQ();
+        return Prims(points).SolutionNSquared();
     }
 };
