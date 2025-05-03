@@ -24,11 +24,10 @@ public:
 
         //find all combinations with this digit in it;
 
-        for(int secondDigit = newDigit; secondDigit <= n; secondDigit++){
-            cur.push_back(secondDigit);
-            dfs(secondDigit + 1);
+            cur.push_back(newDigit);
+            dfs(newDigit + 1);
             cur.pop_back();
-        }
+            dfs(newDigit + 1);
 
 
     }
