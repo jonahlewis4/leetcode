@@ -86,8 +86,6 @@ private:
         int Solution(){
             vector<vector<int>> dist(args.n, vector<int>(args.k + 2, INT_MAX));
             
-            vector<bool> visited(args.n, false);
-
             //construct adjacency list.
             vector<vector<Edge>> adjList(args.n);
             for(const auto & flight : args.flights){
@@ -135,8 +133,6 @@ private:
             } 
             return -1;
         }
-        
-
     };
 
 public:
