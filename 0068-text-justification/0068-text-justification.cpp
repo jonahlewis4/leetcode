@@ -41,7 +41,7 @@ public:
         saveLeft(curLine, res, maxWidth);
         return res;
     }
-    void saveLeft(const vector<string> &line, vector<string> &res, int maxWidth) const {
+    inline void saveLeft(const vector<string> &line, vector<string> &res, int maxWidth) const {
         string finalString = "";
         for(const auto & s : line){
             finalString += s;
@@ -51,7 +51,7 @@ public:
         }
         res.push_back(finalString);
     }
-    void save(int curLineLength, int maxWidth, vector<string> &line, vector<string> &res) const {
+    inline void save(int curLineLength, int maxWidth, vector<string> &line, vector<string> &res) const {
         //determine the number of spaces we need to add. 
         //the answer to this will be the curLineLength minus the maxWidth
 
