@@ -18,9 +18,9 @@ public:
         }
         
         int remaining = n - newDigit + 1;
-        if(cur.size() + remaining < k){
-            return;
-        }
+        // if(cur.size() + remaining < k){
+        //     return;
+        // }
 
         //find all combinations with this digit in it;
 
