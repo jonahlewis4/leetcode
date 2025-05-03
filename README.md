@@ -29,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0057-insert-interval](https://github.com/jonahlewis4/leetcode/tree/master/0057-insert-interval) |
 | [0063-unique-paths-ii](https://github.com/jonahlewis4/leetcode/tree/master/0063-unique-paths-ii) |
 | [0066-plus-one](https://github.com/jonahlewis4/leetcode/tree/master/0066-plus-one) |
+| [0068-text-justification](https://github.com/jonahlewis4/leetcode/tree/master/0068-text-justification) |
 | [0073-set-matrix-zeroes](https://github.com/jonahlewis4/leetcode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/jonahlewis4/leetcode/tree/master/0075-sort-colors) |
@@ -448,6 +449,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0043-multiply-strings](https://github.com/jonahlewis4/leetcode/tree/master/0043-multiply-strings) |
 | [0054-spiral-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0054-spiral-matrix) |
 | [0067-add-binary](https://github.com/jonahlewis4/leetcode/tree/master/0067-add-binary) |
+| [0068-text-justification](https://github.com/jonahlewis4/leetcode/tree/master/0068-text-justification) |
 | [0157-read-n-characters-given-read4](https://github.com/jonahlewis4/leetcode/tree/master/0157-read-n-characters-given-read4) |
 | [0412-fizz-buzz](https://github.com/jonahlewis4/leetcode/tree/master/0412-fizz-buzz) |
 | [0735-asteroid-collision](https://github.com/jonahlewis4/leetcode/tree/master/0735-asteroid-collision) |
@@ -484,6 +486,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0043-multiply-strings](https://github.com/jonahlewis4/leetcode/tree/master/0043-multiply-strings) |
 | [0049-group-anagrams](https://github.com/jonahlewis4/leetcode/tree/master/0049-group-anagrams) |
 | [0067-add-binary](https://github.com/jonahlewis4/leetcode/tree/master/0067-add-binary) |
+| [0068-text-justification](https://github.com/jonahlewis4/leetcode/tree/master/0068-text-justification) |
 | [0071-simplify-path](https://github.com/jonahlewis4/leetcode/tree/master/0071-simplify-path) |
 | [0076-minimum-window-substring](https://github.com/jonahlewis4/leetcode/tree/master/0076-minimum-window-substring) |
 | [0079-word-search](https://github.com/jonahlewis4/leetcode/tree/master/0079-word-search) |
