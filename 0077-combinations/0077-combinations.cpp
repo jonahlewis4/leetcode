@@ -16,14 +16,6 @@ public:
             res.push_back(cur);
             return;
         }
-        
-        int remaining = n - newDigit + 1;
-        if(cur.size() + remaining < k){
-            return;
-        }
-
-        //find all combinations with this digit in it;
-
         for(int secondDigit = newDigit; secondDigit <= n; secondDigit++){
             cur.push_back(secondDigit);
             dfs(secondDigit + 1);
