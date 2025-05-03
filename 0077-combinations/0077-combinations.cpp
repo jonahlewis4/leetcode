@@ -12,7 +12,6 @@ public:
     }
     void dfs(int newDigit) {
         
-        auto _cur = &cur;
         if(cur.size() == k){
             res.push_back(cur);
             return;
