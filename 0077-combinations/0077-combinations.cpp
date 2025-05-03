@@ -15,9 +15,7 @@ public:
         return res;
     }
     void dfs() {
-        auto _cur = &cur;
-        auto _allowed = &allowed;
-        auto _res = &res;
+        
         
         if(cur.size() == k){
             res.push_back(cur);
