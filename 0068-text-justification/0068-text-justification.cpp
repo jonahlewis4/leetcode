@@ -3,12 +3,11 @@ public:
     vector<string> fullJustify(vector<string>& words, int maxWidth) {
         vector<vector<string>> lines;
         int curLineLength = 0;
+        vector<string> curLine = {};
         vector<string> res;
-        lines.push_back({});
         for(const auto & word : words){
             //add the current word to the line if it fits.
             
-            auto &curLine = lines.back();
             int curWordLength = word.size();
             if(curLine.size() == 0){
                 curLineLength += curWordLength;
@@ -30,8 +29,8 @@ public:
 
                     //start a new line
                     curLineLength = 0;
-                    lines.push_back({});
-                    auto &nextLine = lines.back();
+                    curLine = {};
+                    auto &nextLine = curLine;
                     curLineLength += curWordLength;
                     nextLine.push_back(word);
                 }
@@ -39,7 +38,7 @@ public:
         }
         
         //save final line
-        saveLeft(lines.back(), res, maxWidth);
+        saveLeft(curLine, res, maxWidth);
         return res;
     }
     void saveLeft(const vector<string> &line, vector<string> &res, int maxWidth) const {
