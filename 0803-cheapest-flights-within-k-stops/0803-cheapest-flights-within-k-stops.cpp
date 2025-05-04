@@ -134,7 +134,63 @@ private:
             return -1;
         }
     };
+    class BFS {
+    private:
+        const Args &args;
+    public:
+        BFS(const Args &_args) : args(_args) {}
+        int Solution() const{
+            struct Edge{
+                int dest;
+                int weight;
+            };
 
+            vector<vector<Edge>> adjList(args.n);
+            for(const auto & flight : args.flights){
+                int src = flight[0];
+                int dest = flight[1];
+                int weight = flight[2];
+
+                adjList[src].push_back({
+                    .dest = dest,
+                    .weight = weight,
+                });
+            }
+
+            queue<Edge> q;
+            q.push({
+                .dest = args.src,
+                .weight = 0,
+            });
+            auto &_args = args;
+            vector<int> dist(args.n, INT_MAX);
+            for(int stops = 0; stops < args.k + 1; stops++){
+                if(q.empty()){
+                    break;
+                }
+                int n = q.size();
+                for(int i = 0; i < n; i++){
+                    Edge e = q.front();
+                    q.pop();
+
+
+                    for(const auto & neigh : adjList[e.dest]){
+                        int newWeight = neigh.weight + e.weight;
+                        if(newWeight >= dist[neigh.dest]){
+                            continue;
+                        }
+                        dist[neigh.dest] = newWeight;
+                        q.push({
+                            .dest = neigh.dest,
+                            .weight = newWeight,
+                        });
+                    }
+                }
+            }
+            return dist[args.dst] == INT_MAX ? -1 : dist[args.dst];
+        }
+
+    };
 public:
     int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {
         Args args;
@@ -144,6 +200,6 @@ public:
         args.dst = dst;
         args.k = k;
         //return BellmanFord(args).Solution();
-        return Djikstras(args).Solution();
+        return BFS(args).Solution();
     }
 };
