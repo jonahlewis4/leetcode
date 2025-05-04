@@ -162,7 +162,6 @@ private:
                 .dest = args.src,
                 .weight = 0,
             });
-            auto &_args = args;
             vector<int> dist(args.n, INT_MAX);
             for(int stops = 0; stops < args.k + 1; stops++){
                 if(q.empty()){
