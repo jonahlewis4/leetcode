@@ -39,7 +39,7 @@ public:
             for(int i  = 0; i < n; i++){
                 edge e = q.front();
                 q.pop();
-                if(e.weight < distance[e.dest]){
+                if(e.weight > distance[e.dest]){
                     continue;
                 }
                 
