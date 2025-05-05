@@ -62,7 +62,7 @@ public:
     }
 
     bool _isBipartite(int n, const vector<vector<int>> &adjList){
-        vector<int> colors(n, -1);
+        vector<int8_t> colors(n, -1);
         for(int node = 1; node < n; node++){
             if(colors[node] != -1){
                 continue;
