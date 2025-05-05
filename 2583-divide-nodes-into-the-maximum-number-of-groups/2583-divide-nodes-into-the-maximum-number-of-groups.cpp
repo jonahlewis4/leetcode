@@ -2,12 +2,14 @@ class Solution {
     class DSU{
         vector<int> root;
         vector<int> size;
+
+        int _size;
     public:
         DSU(int n) {
             root.resize(n, -1);
             size.resize(n, 1);
             iota(root.begin(), root.end(), 0);
-        
+            _size = n;
         }
         DSU(){
 
@@ -29,7 +31,7 @@ class Solution {
             if(aRoot == bRoot){
                 return;
             }
-
+            _size--;
             //make sure aRoot is the larger one and merge bRoot into aRoot
             if(size[aRoot] < size[bRoot]){
                 swap(aRoot, bRoot);
@@ -37,6 +39,34 @@ class Solution {
 
             size[aRoot] += size[bRoot];
             root[bRoot] = aRoot;
+        }
+
+        void Reduce(){
+            for(int i = 0; i < root.size(); i++){
+                root[i] = Find(i);
+            }
+        }
+
+        vector<int> Roots(){
+            Reduce();
+            vector<int> res;
+            for(int i = 0; i < root.size(); i++){
+                if(root[i] == i){
+                    res.push_back(i);
+                }
+            }
+            return res;
+        }
+
+        vector<int> Nodes() const {
+            return root;
+        }
+        vector<int> Sizes() const {
+            return size;
+        }
+
+        int Size() const {
+            return _size;
         }
     };
 
@@ -58,6 +88,15 @@ public:
 
         dsu = DSU(n + 1);
         unordered_map<int, int> largestOfGroup;
+
+        vector<int8_t> colors(n + 1, -1);
+        for(int i = 1; i <= n; i++){
+            if(!isBipartite(i, adjList, colors)){
+                return -1;
+            }
+        }
+
+
         for(int i = 1; i <= n; i++){
             // if(largestOfGroup.find(dsu.Find(i)) != largestOfGroup.end()){
             //     continue;
@@ -73,12 +112,19 @@ public:
         for(const auto & p : largestOfGroup){
             sum += p.second;
         }
+
+        // cout<<"DSU size: "<<dsu.Size()<<endl;
+        // auto roots = dsu.Roots();
+        // auto nodes = dsu.Nodes();
+        // auto sizes = dsu.Sizes();
         return sum;
         
     }
 
-    int possibleGroups(int node, const vector<vector<int>> &adjList){
-        vector<int8_t> colors(adjList.size(), -1);
+    bool isBipartite(int node, const vector<vector<int>> &adjList, vector<int8_t> &colors){
+        if(colors[node] != -1){
+            return true;
+        }
         queue<int> q;
         q.push(node);
 
@@ -91,17 +137,20 @@ public:
             for(int i = 0; i < n; i++){
 
                 int currentNode = q.front();
-                edgeNode = currentNode;
 
                 q.pop();
-                if(colors[currentNode] != color){
-                    return -1;
-                } 
                 dsu.Union(currentNode, node);
+
+                if(colors[currentNode] != color){
+                    return false;
+                } 
+
+                edgeNode = currentNode;
+
                 colors[currentNode] = color;
                 for(int neigh : adjList[currentNode]){
                     if(colors[neigh] != -1 && colors[neigh] == colors[currentNode]){
-                        return -1;
+                        return false;
                     } else if (colors[neigh] != -1){
                         continue;
                     }
@@ -113,28 +162,57 @@ public:
             color = !color;
         }
 
+        return true;
+    }
 
-        //we already know the graph is bipartate so now just do a surface level bfs from the edgeNode to anothe redge to get the total number of nodes. 
-        q = queue<int>();
-        q.push(edgeNode);
+    int possibleGroups(int node, const vector<vector<int>> &adjList){
+        return diameter(node, adjList);
+    }
+
+    int diameter (int any, const vector<vector<int>> &adjList){
+        queue<int> q;
+        q.push(any);
         vector<bool> visited(adjList.size(), false);
-        visited[edgeNode] = true;
+        visited[any] = true;
+        int edge = any;
+        while(!q.empty()){
+            int n = q.size();
+            for(int i = 0; i < n; i++){
+                int cur = q.front();
+                edge = cur;
+                q.pop();
+                for(const auto &neigh : adjList[cur]){
+                    if(visited[neigh]){
+                        continue;
+                    }
+                    visited[neigh] = true;
+                    q.push(neigh);
+                }
+
+            }
+        }
+
+        q = queue<int>();
+        q.push(edge);
+        visited = vector<bool>(adjList.size(), false);
+        visited[edge] = true;
         int len = 0;
         while(!q.empty()){
             len++;
             int n = q.size();
             for(int i = 0; i < n; i++){
-                int curNode = q.front();
+                int cur = q.front();
+                edge = cur;
                 q.pop();
-                for(const auto & neigh : adjList[curNode]){
-                    if(!visited[neigh]){
-                        visited[neigh] = true;
-                        q.push(neigh);
+                for(const auto &neigh : adjList[cur]){
+                    if(visited[neigh]){
+                        continue;
                     }
+                    visited[neigh] = true;
+                    q.push(neigh);
                 }
             }
         }
-        
         return len;
     }
 
