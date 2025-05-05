@@ -29,9 +29,34 @@ class Solution {
             return cache[n];
         }
     };
+
+    class DP{
+    public:
+        int Solution(int n){
+            if(n == 0){
+                return 0;
+            }
+            if(n == 1){
+                return 1;
+            }
+            if(n == 2){
+                return 2;
+            }
+            int oneAgo = 2;
+            int twoAgo = 1;
+            int cur;
+            for(int i = 3; i <= n; i++){
+                cur = twoAgo + oneAgo;
+                twoAgo = oneAgo;
+                oneAgo = cur;
+            }
+            return cur;
+        }
+
+    };
 public:
     int climbStairs(int n) {
-        return Memo().Solution(n);
+        return DP().Solution(n);
     }
     
 
