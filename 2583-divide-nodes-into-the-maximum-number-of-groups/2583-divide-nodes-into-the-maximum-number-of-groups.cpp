@@ -98,9 +98,6 @@ public:
 
 
         for(int i = 1; i <= n; i++){
-            // if(largestOfGroup.find(dsu.Find(i)) != largestOfGroup.end()){
-            //     continue;
-            // }
             int length = possibleGroups(i, adjList);
             if(length == -1){
                 return -1;
@@ -198,7 +195,6 @@ public:
         visited[edge] = true;
         int len = 0;
         while(!q.empty()){
-            len++;
             int n = q.size();
             for(int i = 0; i < n; i++){
                 int cur = q.front();
@@ -212,6 +208,8 @@ public:
                     q.push(neigh);
                 }
             }
+            len++;
+
         }
         return len;
     }
