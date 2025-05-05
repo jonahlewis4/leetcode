@@ -140,38 +140,51 @@ private:
     public:
         BFS(const Args &_args) : args(_args) {}
         int Solution() const{
-        int n = args.n;
-        int src = args.src;
-        int dst = args.dst;
-        const auto & flights = args.flights;
-        int k = args.k;
-            vector<int> prices(n, INT_MAX);
-        prices[src] = 0;
-        vector<vector<pair<int, int>>> adj(n);
-        for (const auto& flight : flights) {
-            adj[flight[0]].emplace_back(flight[1], flight[2]);
-        }
+            struct Edge{
+                int dest;
+                int weight;
+            };
 
-        queue<tuple<int, int, int>> q;
-        q.push({0, src, 0});
+            vector<vector<Edge>> adjList(args.n);
+            for(const auto & flight : args.flights){
+                int src = flight[0];
+                int dest = flight[1];
+                int weight = flight[2];
 
-        while (!q.empty()) {
-            auto [cst, node, stops] = q.front();
-            q.pop();
-            if (stops > k) continue;
+                adjList[src].push_back({
+                    .dest = dest,
+                    .weight = weight,
+                });
+            }
 
-            for (const auto& neighbor : adj[node]) {
-                int nei = neighbor.first, w = neighbor.second;
-                int nextCost = cst + w;
-                if (nextCost < prices[nei]) {
-                    prices[nei] = nextCost;
-                    q.push({nextCost, nei, stops + 1});
+            queue<Edge> q;
+            q.push({
+                .dest = args.src,
+                .weight = 0,
+            });
+            vector<int> dist(args.n, INT_MAX);
+            for(int stops = 0; stops < args.k + 1; stops++){
+                int n = q.size();
+                for(int i = 0; i < n; i++){
+                    Edge e = q.front();
+                    q.pop();
+
+
+                    for(const auto & neigh : adjList[e.dest]){
+                        int newWeight = neigh.weight + e.weight;
+                        if(newWeight >= dist[neigh.dest]){
+                            continue;
+                        }
+                        dist[neigh.dest] = newWeight;
+                        q.push({
+                            .dest = neigh.dest,
+                            .weight = newWeight,
+                        });
+                    }
                 }
             }
+            return dist[args.dst] == INT_MAX ? -1 : dist[args.dst];
         }
-        return prices[dst] == INT_MAX ? -1 : prices[dst];
-    }
-        
 
     };
 public:
