@@ -662,6 +662,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0854-making-a-large-island](https://github.com/jonahlewis4/leetcode/tree/master/0854-making-a-large-island) |
 | [1085-the-earliest-moment-when-everyone-become-friends](https://github.com/jonahlewis4/leetcode/tree/master/1085-the-earliest-moment-when-everyone-become-friends) |
 | [1706-min-cost-to-connect-all-points](https://github.com/jonahlewis4/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
+| [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/jonahlewis4/leetcode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
 ## Database
 |  |
 | ------- |
@@ -835,6 +836,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1432-check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1432-check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jonahlewis4/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
+| [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/jonahlewis4/leetcode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
 ## Binary Tree
 |  |
 | ------- |
@@ -961,6 +963,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1432-check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1432-check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jonahlewis4/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
+| [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/jonahlewis4/leetcode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
 ## Interactive
 |  |
 | ------- |
@@ -1032,6 +1035,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0803-cheapest-flights-within-k-stops](https://github.com/jonahlewis4/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [1706-min-cost-to-connect-all-points](https://github.com/jonahlewis4/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 | [2379-maximum-total-importance-of-roads](https://github.com/jonahlewis4/leetcode/tree/master/2379-maximum-total-importance-of-roads) |
+| [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/jonahlewis4/leetcode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
 ## Topological Sort
 |  |
 | ------- |
