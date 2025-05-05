@@ -45,6 +45,7 @@ class Solution {
 public:
     int magnificentSets(int n, vector<vector<int>>& _edges) {
         //find if there is a cascade of nodes distance d, d - 1, d - 2, .. 1 from any given node.
+        dsu = DSU(n + 1);
 
         vector<vector<int>> adjList(n + 1);
         for(int i = 0; i < _edges.size(); i++){
@@ -53,10 +54,10 @@ public:
             int v2 = edge[1];
             adjList[v1].push_back(v2);
             adjList[v2].push_back(v1);
+            dsu.Union(v1, v2);
         }
 
 
-        dsu = DSU(n + 1);
         unordered_map<int, int> largestOfGroup;
         for(int i = 1; i <= n; i++){
             
@@ -94,7 +95,6 @@ public:
                 } else if (colors[currentNode] != -1){
                     continue;
                 }
-                dsu.Union(currentNode, node);
                 colors[currentNode] = color;
                 for(int neigh : adjList[currentNode]){
                     if(colors[neigh] != -1 && colors[neigh] == colors[currentNode]){
