@@ -59,7 +59,9 @@ public:
         dsu = DSU(n + 1);
         unordered_map<int, int> largestOfGroup;
         for(int i = 1; i <= n; i++){
-            
+            // if(largestOfGroup.find(dsu.Find(i)) != largestOfGroup.end()){
+            //     continue;
+            // }
             int length = possibleGroups(i, adjList);
             if(length == -1){
                 return -1;
@@ -81,19 +83,20 @@ public:
         q.push(node);
 
         int color = false;
-        int groups = 0;
+
+        int edgeNode;
+        colors[node] = color;
         while(!q.empty()){
-            groups++;
             int n = q.size();
             for(int i = 0; i < n; i++){
+
                 int currentNode = q.front();
+                edgeNode = currentNode;
 
                 q.pop();
-                if(colors[currentNode] != -1 && colors[currentNode] != color){
+                if(colors[currentNode] != color){
                     return -1;
-                } else if (colors[currentNode] != -1){
-                    continue;
-                }
+                } 
                 dsu.Union(currentNode, node);
                 colors[currentNode] = color;
                 for(int neigh : adjList[currentNode]){
@@ -102,12 +105,37 @@ public:
                     } else if (colors[neigh] != -1){
                         continue;
                     }
+                    colors[neigh] = !color;
+
                     q.push(neigh);
                 }
             }
             color = !color;
         }
-        return groups;
+
+
+        //we already know the graph is bipartate so now just do a surface level bfs from the edgeNode to anothe redge to get the total number of nodes. 
+        q = queue<int>();
+        q.push(edgeNode);
+        vector<bool> visited(adjList.size(), false);
+        visited[edgeNode] = true;
+        int len = 0;
+        while(!q.empty()){
+            len++;
+            int n = q.size();
+            for(int i = 0; i < n; i++){
+                int curNode = q.front();
+                q.pop();
+                for(const auto & neigh : adjList[curNode]){
+                    if(!visited[neigh]){
+                        visited[neigh] = true;
+                        q.push(neigh);
+                    }
+                }
+            }
+        }
+        
+        return len;
     }
 
         
