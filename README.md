@@ -185,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0032-longest-valid-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/jonahlewis4/leetcode/tree/master/0042-trapping-rain-water) |
 | [0063-unique-paths-ii](https://github.com/jonahlewis4/leetcode/tree/master/0063-unique-paths-ii) |
+| [0070-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0070-climbing-stairs) |
 | [0118-pascals-triangle](https://github.com/jonahlewis4/leetcode/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/jonahlewis4/leetcode/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/jonahlewis4/leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -356,6 +357,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/jonahlewis4/leetcode/tree/master/0050-powx-n) |
 | [0066-plus-one](https://github.com/jonahlewis4/leetcode/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/jonahlewis4/leetcode/tree/master/0067-add-binary) |
+| [0070-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0070-climbing-stairs) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jonahlewis4/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0189-rotate-array](https://github.com/jonahlewis4/leetcode/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/jonahlewis4/leetcode/tree/master/0202-happy-number) |
@@ -1013,6 +1015,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Memoization
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0070-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/jonahlewis4/leetcode/tree/master/1013-fibonacci-number) |
 ## Trie
 |  |
