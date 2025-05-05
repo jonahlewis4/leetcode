@@ -1,94 +1,114 @@
 class Solution {
+    class DSU{
+        vector<int> root;
+        vector<int> size;
+    public:
+        DSU(int n) {
+            root.resize(n, -1);
+            size.resize(n, 1);
+            iota(root.begin(), root.end(), 0);
+        
+        }
+        DSU(){
+
+        }
+
+        int Find(int i){
+            if(root[i] == i){
+                return i;
+            }
+            root[i] = Find(root[i]);
+            return root[i];
+        }
+
+        void Union(int a, int b){
+            auto & root = this->root;
+            int aRoot = Find(a);
+            int bRoot = Find(b);
+
+            if(aRoot == bRoot){
+                return;
+            }
+
+            //make sure aRoot is the larger one and merge bRoot into aRoot
+            if(size[aRoot] < size[bRoot]){
+                swap(aRoot, bRoot);
+            }
+
+            size[aRoot] += size[bRoot];
+            root[bRoot] = aRoot;
+        }
+    };
+
+    DSU dsu;
+    
 public:
-    // Main function to calculate the maximum number of groups for the entire
-    // graph
-    int magnificentSets(int n, vector<vector<int>> &edges) {
-        vector<vector<int>> adjList(n);
-        vector<int> parent(n, -1);
-        vector<int> depth(n, 0);
+    int magnificentSets(int n, vector<vector<int>>& _edges) {
+        //find if there is a cascade of nodes distance d, d - 1, d - 2, .. 1 from any given node.
+        dsu = DSU(n + 1);
 
-        // Build the adjacency list and apply Union-Find for each edge
-        for (auto edge : edges) {
-            adjList[edge[0] - 1].push_back(edge[1] - 1);
-            adjList[edge[1] - 1].push_back(edge[0] - 1);
-            Union(edge[0] - 1, edge[1] - 1, parent, depth);
+        vector<vector<int>> adjList(n + 1);
+        for(int i = 0; i < _edges.size(); i++){
+            const auto & edge = _edges[i];
+            int v1 = edge[0];
+            int v2 = edge[1];
+            adjList[v1].push_back(v2);
+            adjList[v2].push_back(v1);
+            dsu.Union(v1, v2);
         }
 
-        unordered_map<int, int> numOfGroupsForComponent;
 
-        // For each node, calculate the maximum number of groups for its
-        // component
-        for (int node = 0; node < n; node++) {
-            int numberOfGroups = getNumberOfGroups(adjList, node, n);
-            if (numberOfGroups == -1) return -1;  // If invalid split, return -1
-            int rootNode = find(node, parent);
-            numOfGroupsForComponent[rootNode] =
-                max(numOfGroupsForComponent[rootNode], numberOfGroups);
+        unordered_map<int, int> largestOfGroup;
+        for(int i = 1; i <= n; i++){
+            
+            int length = possibleGroups(i, adjList);
+            if(length == -1){
+                return -1;
+            }
+            largestOfGroup[dsu.Find(i)] = max(largestOfGroup[dsu.Find(i)], length);
         }
 
-        // Calculate the total number of groups across all components
-        int totalNumberOfGroups = 0;
-        for (auto [rootNode, numberOfGroups] : numOfGroupsForComponent) {
-            totalNumberOfGroups += numberOfGroups;
+        int sum = 0;
+        for(const auto & p : largestOfGroup){
+            sum += p.second;
         }
-        return totalNumberOfGroups;
+        return sum;
+        
     }
 
-private:
-    // Find the root of the given node in the Union-Find structure
-    int find(int node, vector<int> &parent) {
-        while (parent[node] != -1) node = parent[node];
-        return node;
-    }
+    int possibleGroups(int node, const vector<vector<int>> &adjList){
+        vector<int8_t> colors(adjList.size(), -1);
+        queue<int> q;
+        q.push(node);
 
-    // Union operation to merge two sets
-    void Union(int node1, int node2, vector<int> &parent, vector<int> &depth) {
-        node1 = find(node1, parent);
-        node2 = find(node2, parent);
+        int color = false;
+        int groups = 0;
+        while(!q.empty()){
+            groups++;
+            int n = q.size();
+            for(int i = 0; i < n; i++){
+                int currentNode = q.front();
 
-        // If both nodes already belong to the same set, no action needed
-        if (node1 == node2) return;
-
-        // Union by rank (depth) to keep the tree balanced
-        if (depth[node1] < depth[node2]) swap(node1, node2);
-        parent[node2] = node1;
-
-        // If the depths are equal, increment the depth of the new root
-        if (depth[node1] == depth[node2]) depth[node1]++;
-    }
-
-    // Function to calculate the number of groups for a given component starting
-    // from srcNode
-    int getNumberOfGroups(vector<vector<int>> &adjList, int srcNode, int n) {
-        queue<int> nodesQueue;
-        vector<int> layerSeen(n, -1);
-        nodesQueue.push(srcNode);
-        layerSeen[srcNode] = 0;
-        int deepestLayer = 0;
-
-        // Perform BFS to calculate the number of layers (groups)
-        while (!nodesQueue.empty()) {
-            int numOfNodesInLayer = nodesQueue.size();
-            for (int i = 0; i < numOfNodesInLayer; i++) {
-                int currentNode = nodesQueue.front();
-                nodesQueue.pop();
-                for (int neighbor : adjList[currentNode]) {
-                    // If neighbor hasn't been visited, assign it to the next
-                    // layer
-                    if (layerSeen[neighbor] == -1) {
-                        layerSeen[neighbor] = deepestLayer + 1;
-                        nodesQueue.push(neighbor);
-                    } else {
-                        // If the neighbor is already in the same layer, return
-                        // -1 (invalid partition)
-                        if (layerSeen[neighbor] == deepestLayer) {
-                            return -1;
-                        }
+                q.pop();
+                if(colors[currentNode] != -1 && colors[currentNode] != color){
+                    return -1;
+                } else if (colors[currentNode] != -1){
+                    continue;
+                }
+                colors[currentNode] = color;
+                for(int neigh : adjList[currentNode]){
+                    if(colors[neigh] != -1 && colors[neigh] == colors[currentNode]){
+                        return -1;
+                    } else if (colors[neigh] != -1){
+                        continue;
                     }
+                    q.push(neigh);
                 }
             }
-            deepestLayer++;
+            color = !color;
         }
-        return deepestLayer;
+        return groups;
     }
+
+        
 };
