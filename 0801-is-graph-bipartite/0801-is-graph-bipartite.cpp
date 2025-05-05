@@ -62,14 +62,15 @@ public:
     }
 
     inline bool _isBipartite(int n, const vector<vector<int>> &adjList){
-        vector<int8_t> colors(n, -1);
+        //vector<int8_t> colors(n, -1);
         for(int node = 1; node < n; node++){
-            if(colors[node] != -1){
-                continue;
-            }
+            // if(colors[node] != -1){
+            //     continue;
+            // }
+            vector<int8_t> colors(n, -1);
             queue<int> q;
             q.push(node);
-
+            
             int color = false;
             while(!q.empty()){
                 int n = q.size();
