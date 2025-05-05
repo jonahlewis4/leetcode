@@ -87,7 +87,6 @@ public:
             int n = q.size();
             for(int i = 0; i < n; i++){
                 int currentNode = q.front();
-                dsu.Union(currentNode, node);
 
                 q.pop();
                 if(colors[currentNode] != -1 && colors[currentNode] != color){
@@ -95,6 +94,7 @@ public:
                 } else if (colors[currentNode] != -1){
                     continue;
                 }
+                dsu.Union(currentNode, node);
                 colors[currentNode] = color;
                 for(int neigh : adjList[currentNode]){
                     if(colors[neigh] != -1 && colors[neigh] == colors[currentNode]){
