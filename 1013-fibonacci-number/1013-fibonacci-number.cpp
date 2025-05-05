@@ -1,19 +1,26 @@
 class Solution {
 private:
-    static vector<int> dp;
-
 
 public:
     int fib(int n) {
         
-        while(n > dp.size() - 1){
-            int i = dp.size();
-            dp.push_back(dp[i - 1] + dp[i - 2]);
+        if(n == 0){
+            return 0;
+        }
+        if(n == 1){
+            return 1;
         }
 
-        return dp[n];
+        int twoAgo = 0;
+        int oneAgo = 1;
+        int cur;
+        for(int i = 2; i <= n; i++){
+            cur = twoAgo+oneAgo;
+            twoAgo = oneAgo;
+            oneAgo = cur;
+        }
+        return cur;
 
     }
 };
 
-vector<int> Solution::dp = {0, 1};
