@@ -69,9 +69,30 @@ class Solution {
         }
     };
 
+    class DP_Space_Optimized {
+    private:
+        const vector<int> &nums;
+    public:
+        DP_Space_Optimized(const vector<int> &_nums) : nums(_nums) {
+
+        }
+        int Solution(){
+            int twoAgo = 0;
+            int oneAgo = 0;
+            for(int i = nums.size() - 1; i >= 0; i--){
+                int skip = oneAgo;
+                int rob = nums[i] + twoAgo;
+                int best = max(skip, rob);
+                twoAgo = oneAgo;
+                oneAgo = best;
+            }
+            return oneAgo;
+        }
+    };
+
 public:
     int rob(vector<int>& nums) {
-        return DP(nums).Solution();
+        return DP_Space_Optimized(nums).Solution();
     }
     
 };
