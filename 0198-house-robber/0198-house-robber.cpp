@@ -46,9 +46,32 @@ class Solution {
         }
     };
 
+    class DP {
+    private:
+        const vector<int> &nums;
+        vector<int> dp;
+    public:
+        DP(const vector<int> &_nums) : nums(_nums){
+            dp.resize(_nums.size() + 2, -1);
+            dp[_nums.size()] = 0;
+            dp[_nums.size() + 1] = 0;
+        }
+        int Solution() {
+             for(int i = nums.size() - 1; i >= 0; i--){
+                int skip = dp[i + 1];
+                int use = nums[i] + dp[i + 2];
+                int best = max(skip, use);
+                
+                dp[i] = best;
+            }
+
+            return dp[0];
+        }
+    };
+
 public:
     int rob(vector<int>& nums) {
-        return Memo(nums).Solution();
+        return DP(nums).Solution();
     }
     
 };
