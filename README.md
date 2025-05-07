@@ -52,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0157-read-n-characters-given-read4](https://github.com/jonahlewis4/leetcode/tree/master/0157-read-n-characters-given-read4) |
 | [0162-find-peak-element](https://github.com/jonahlewis4/leetcode/tree/master/0162-find-peak-element) |
+| [0163-missing-ranges](https://github.com/jonahlewis4/leetcode/tree/master/0163-missing-ranges) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0179-largest-number](https://github.com/jonahlewis4/leetcode/tree/master/0179-largest-number) |
 | [0189-rotate-array](https://github.com/jonahlewis4/leetcode/tree/master/0189-rotate-array) |
