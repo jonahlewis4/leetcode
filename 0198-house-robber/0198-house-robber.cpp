@@ -76,7 +76,7 @@ class Solution {
         DP_Space_Optimized(const vector<int> &_nums) : nums(_nums) {
 
         }
-        int Solution(){
+        inline int Solution(){
             int twoAgo = 0;
             int oneAgo = 0;
             for(int i = nums.size() - 1; i >= 0; i--){
