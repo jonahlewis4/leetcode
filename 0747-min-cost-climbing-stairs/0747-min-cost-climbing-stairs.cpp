@@ -62,8 +62,28 @@ class Solution {
         }
 
     };
+
+    class dp{
+        public:
+        const vector<int> &cost ;
+        dp(const vector<int> & cost) : cost(cost) {
+
+        }
+        int Solution(){
+            int twoAgo = cost[0];
+            int oneAgo = cost[1];
+            int cur;
+            for(int i = 2; i <= cost.size(); i++){
+                int curCost = i < cost.size() ? cost[i] : 0;
+                cur = min(twoAgo, oneAgo) + curCost;
+                twoAgo = oneAgo;
+                oneAgo = cur;
+            }
+            return cur;
+        }
+    };
 public:
     int minCostClimbingStairs(vector<int>& cost) {
-        return memo(cost).Solution();
+        return dp(cost).Solution();
     }
 };
