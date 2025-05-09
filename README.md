@@ -54,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0162-find-peak-element](https://github.com/jonahlewis4/leetcode/tree/master/0162-find-peak-element) |
 | [0163-missing-ranges](https://github.com/jonahlewis4/leetcode/tree/master/0163-missing-ranges) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0170-two-sum-iii-data-structure-design](https://github.com/jonahlewis4/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0179-largest-number](https://github.com/jonahlewis4/leetcode/tree/master/0179-largest-number) |
 | [0189-rotate-array](https://github.com/jonahlewis4/leetcode/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/jonahlewis4/leetcode/tree/master/0198-house-robber) |
@@ -314,6 +315,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0141-linked-list-cycle](https://github.com/jonahlewis4/leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/jonahlewis4/leetcode/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/jonahlewis4/leetcode/tree/master/0160-intersection-of-two-linked-lists) |
+| [0170-two-sum-iii-data-structure-design](https://github.com/jonahlewis4/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0202-happy-number](https://github.com/jonahlewis4/leetcode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/jonahlewis4/leetcode/tree/master/0205-isomorphic-strings) |
 | [0208-implement-trie-prefix-tree](https://github.com/jonahlewis4/leetcode/tree/master/0208-implement-trie-prefix-tree) |
@@ -414,6 +416,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0151-reverse-words-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/0151-reverse-words-in-a-string) |
 | [0160-intersection-of-two-linked-lists](https://github.com/jonahlewis4/leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0170-two-sum-iii-data-structure-design](https://github.com/jonahlewis4/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0189-rotate-array](https://github.com/jonahlewis4/leetcode/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/jonahlewis4/leetcode/tree/master/0202-happy-number) |
 | [0234-palindrome-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0234-palindrome-linked-list) |
@@ -631,6 +634,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0146-lru-cache](https://github.com/jonahlewis4/leetcode/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/jonahlewis4/leetcode/tree/master/0155-min-stack) |
+| [0170-two-sum-iii-data-structure-design](https://github.com/jonahlewis4/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0208-implement-trie-prefix-tree](https://github.com/jonahlewis4/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/jonahlewis4/leetcode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0271-encode-and-decode-strings](https://github.com/jonahlewis4/leetcode/tree/master/0271-encode-and-decode-strings) |
@@ -696,6 +700,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Data Stream
 |  |
 | ------- |
+| [0170-two-sum-iii-data-structure-design](https://github.com/jonahlewis4/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0295-find-median-from-data-stream](https://github.com/jonahlewis4/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0359-logger-rate-limiter](https://github.com/jonahlewis4/leetcode/tree/master/0359-logger-rate-limiter) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jonahlewis4/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
