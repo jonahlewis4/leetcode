@@ -2,7 +2,8 @@ class Solution {
 public:
     string longestPalindrome(const string &s) {
         vector<vector<bool>> dp(s.size(), vector<bool>(s.size(), false));
-        string longest = "";
+        int optimalL = 0;
+        int optimalR = 0;
         for(int k = 0; k < dp.size(); k++){
             for(int l = 0; l < dp.size() - k; l++){
                 int r = l + k;
@@ -15,13 +16,14 @@ public:
                     dp[l][r] = dp[l + 1][r - 1] && s[l] == s[r];
                 }
 
-                if (dp[l][r] && substringLength > longest.size()){
-                    longest = s.substr(l, substringLength);
+                if (dp[l][r] && substringLength > optimalR - optimalL + 1){
+                    optimalL = l;
+                    optimalR = r;
                 }
 
             }
         }
-        return longest;
+        return s.substr(optimalL, optimalR - optimalL + 1);
 
 
     }
