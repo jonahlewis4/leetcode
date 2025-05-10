@@ -4,13 +4,12 @@ public:
         //count all palindromes originating with 1 center 
         //add with all palindromes originating with 2 center.
 
-        int total = 0;
+        int total = 1;
 
         for(int i = 0; i + 1 < s.size(); i++){
             total += originatingFrom(i, i, s);
             total += originatingFrom(i, i + 1, s);
         }
-        total += originatingFrom(s.size() - 1, s.size() - 1, s);
         return total;
     }   
 
