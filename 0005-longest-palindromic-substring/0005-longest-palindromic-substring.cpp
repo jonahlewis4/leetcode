@@ -1,30 +1,43 @@
 class Solution {
 public:
     string longestPalindrome(const string &s) {
-        vector<vector<bool>> dp(s.size(), vector<bool>(s.size(), false));
-        int optimalL = 0;
-        int optimalR = 0;
-        for(int k = 0; k < dp.size(); k++){
-            for(int l = 0; l < dp.size() - k; l++){
-                int r = l + k;
-                int substringLength = r - l + 1;
-                if(substringLength == 1){
-                    dp[l][r] = true;
-                } else if(substringLength == 2){
-                    dp[l][r] = s[l] == s[r];
-                } else {
-                    dp[l][r] = dp[l + 1][r - 1] && s[l] == s[r];
-                }
+        int oL = 0;
+        int oR = 0;
 
-                if (dp[l][r] && substringLength > optimalR - optimalL + 1){
-                    optimalL = l;
-                    optimalR = r;
-                }
+        for(int i = 0; i < s.size(); i++){
+            const auto [l, r] = calc(i, i, s);
 
+            int len = r - l + 1;
+            if(len > oR - oL + 1){
+                oR = r;
+                oL = l;
+            } 
+        }
+
+        for(int i = 0; i + 1 < s.size(); i++){
+            const auto [l, r] = calc(i, i + 1, s);
+            int len = r - l + 1;
+            if(len > oR - oL + 1){
+                oR = r;
+                oL = l;
             }
         }
-        return s.substr(optimalL, optimalR - optimalL + 1);
 
+        return s.substr(oL, oR - oL + 1);
+    }
+    tuple<int, int> calc(int l, int r, const string &s) const {
+        int oldL = 0;
+        int oldR = 0;
+        while(l >= 0 && r < s.size()){
+            if(s[l] != s[r]){
+                return {oldL, oldR};
+            }
+            oldL = l;
+            oldR = r;
 
+            l--;
+            r++;
+        }
+        return {oldL, oldR};
     }
 };
