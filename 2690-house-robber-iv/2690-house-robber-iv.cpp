@@ -21,7 +21,7 @@ public:
         return res;
     }
 
-    bool canBeFormed(int capability, const vector<int> &nums, int k){
+    inline bool canBeFormed(int capability, const vector<int> &nums, int k){
         int i = 0;
         int nonAdjacent = 0;
         while(i < nums.size()){
