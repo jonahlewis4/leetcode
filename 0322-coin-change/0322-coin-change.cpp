@@ -1,10 +1,6 @@
 class Solution {
 public:
-    int coinChange(vector<int>& coins, int amount) {
-        // if(amount == 0){
-        //     return 0;
-        // }
-        
+    int coinChange(vector<int>& coins, int amount) {        
         int smallestCoin = *min_element(coins.begin(), coins.end());
 
         int maxCoinsNeeded = amount / smallestCoin + 1;
