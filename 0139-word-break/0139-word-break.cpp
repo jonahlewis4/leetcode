@@ -162,6 +162,7 @@ class Solution {
                         }
                         if(set.find(sub) != set.end()){
                             dp[r + 1] = true;
+                            break;
                         }
 
                     }
