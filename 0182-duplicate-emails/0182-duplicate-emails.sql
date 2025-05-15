@@ -3,4 +3,4 @@
     SELECT email as Email
     FROM Person
     group by email 
-    HAVING count(*) > 1
+    HAVING count(1) > 1
