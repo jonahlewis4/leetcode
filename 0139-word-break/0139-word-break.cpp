@@ -55,7 +55,6 @@ class Solution {
             return calc(s, set, 0, builder);
         }
         bool calc(const string &s, unordered_set<string> &set, int i, string &built) {
-            auto &_stretch = stretch;
             if(i == s.size() && set.find(built) != set.end()){
                 return true;
             }
