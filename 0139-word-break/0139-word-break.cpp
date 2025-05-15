@@ -85,15 +85,62 @@ class Solution {
                 if(split){
                     stretch[stretchStart] = true;
                     return true;
-                }       
+                }
+
+                
+
             }
             stretch[stretchStart] = false;
             return false;
 
         }
     };
+    class DP{
+    public:
+
+        bool wordBreak(const string &s, vector<string> &wordDict){
+            unordered_set<string> set;
+            for(auto & s : wordDict){
+                reverse(s.begin(), s.end());
+                set.insert(s);
+            }
+            vector<bool> dp(s.size(), false);
+            dp.back() = ( set.find(s.substr(s.size() - 1, 1)) != set.end() );
+
+            string cur = {s.back()};
+            for(int i = dp.size() - 2; i >= 0; i--){
+                cur += s[i];
+                //if current build in dict dp[i] = true;
+                if(set.find(cur) != set.end()){
+                    dp[i] = true;
+                    continue;
+                }
+
+                //if it isn't a word, check if  it can be split into two differnt words from any of the true ones to the right.
+
+                string curFromSplit = cur;
+                string split = "";
+                for(int r = dp.size() - 1; r > i; r--){
+                    split += s[r];
+                    curFromSplit.erase(curFromSplit.begin());
+                    if(!dp[r]){
+                        continue;
+                    }
+
+
+                    if(set.find(curFromSplit) != set.end()){
+                        dp[i] = true;
+                    }
+                }
+
+            }
+
+
+            return dp[0];
+        }
+    };
 public:
     bool wordBreak(string s, vector<string>& wordDict) {
-        return Memo().wordBreak(s, wordDict);
+        return DP().wordBreak(s, wordDict);
     }    
 };
