@@ -130,6 +130,7 @@ class Solution {
 
                     if(set.find(curFromSplit) != set.end()){
                         dp[i] = true;
+                        continue;
                     }
                 }
 
@@ -138,6 +139,24 @@ class Solution {
 
             return dp[0];
         }
+
+        class OptimalDP{
+        public:
+            bool wordBreak(string s, vector<string> &wordDict) const {
+                unordered_set<string> set(wordDict.begin(), wordDict.end());
+
+                vector<bool> dp(s.size() + 1, false);
+
+                //loop through all possible endings of the string. 
+                    //check all possibel beginnings for that string. 
+                    //if the area before that start is set to true
+                    //and if the substring from the start to the end is in the dict
+                    //set the end to 
+
+
+                return dp[s.size()];
+            }
+        };
     };
 public:
     bool wordBreak(string s, vector<string>& wordDict) {
