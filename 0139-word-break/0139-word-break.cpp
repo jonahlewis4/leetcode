@@ -140,26 +140,38 @@ class Solution {
             return dp[0];
         }
 
-        class OptimalDP{
+        
+    };
+    class OptimalDP{
         public:
             bool wordBreak(string s, vector<string> &wordDict) const {
                 unordered_set<string> set(wordDict.begin(), wordDict.end());
 
                 vector<bool> dp(s.size() + 1, false);
-
+                dp[0] = true;
                 //loop through all possible endings of the string. 
                     //check all possibel beginnings for that string. 
                     //if the area before that start is set to true
                     //and if the substring from the start to the end is in the dict
-                    //set the end to 
+                    //set the end to to true.
+                for(int r = 0; r < s.size(); r++){
+                    for(int l = 0; l <= r; l++){
+                        string sub = s.substr(l, r - l + 1);
+                        if(!dp[l]){
+                            continue;
+                        }
+                        if(set.find(sub) != set.end()){
+                            dp[r + 1] = true;
+                        }
 
+                    }
+                }
 
                 return dp[s.size()];
             }
         };
-    };
 public:
     bool wordBreak(string s, vector<string>& wordDict) {
-        return DP().wordBreak(s, wordDict);
+        return OptimalDP().wordBreak(s, wordDict);
     }    
 };
