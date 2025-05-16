@@ -115,6 +115,6 @@ public:
 class Solution {
     public:
     int lengthOfLIS(vector<int>& nums) {
-        return Memo().lengthOfLIS(nums);
+        return LowerBound().lengthOfLIS(nums);
     }
 };
