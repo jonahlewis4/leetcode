@@ -8,7 +8,7 @@ public:
         for(int i = 1; i < nums.size(); i++){
             int num = nums[i];
             //find first number >= num.
-            auto lb = lower_bound(sub.begin(), sub.end(), num);
+            auto lb = low_bound(sub.begin(), sub.end(), num);
 
             //if at the end push it back
             if(lb == sub.end()){
@@ -22,7 +22,8 @@ public:
         return sub.size();
     }
 
-    vector<int>::iterator lower_bound(const vector<int>::iterator begin, const vector<int>::iterator end, int target) const{
+    template <typename T>
+    vector<T>::iterator low_bound(const vector<T>::iterator begin, const vector<T>::iterator end, T target) const{
         int l = begin - begin;
         int r = end - 1 - begin;
 
@@ -30,7 +31,7 @@ public:
         while(l <= r) {
             int m = (l + r) / 2;
             auto midItr = begin + m;
-            int midElement = *midItr;
+            T midElement = *midItr;
 
             if(midElement >= target){
                 if (smallest == end){
