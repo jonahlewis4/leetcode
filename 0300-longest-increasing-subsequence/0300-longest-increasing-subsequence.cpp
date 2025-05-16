@@ -1,4 +1,4 @@
-class Solution {
+class LowerBound{
 public:
     int lengthOfLIS(vector<int>& nums) {
         vector<int> sub;
@@ -47,4 +47,11 @@ public:
         return smallest;
     }
     
+};
+
+class Solution {
+    public:
+    int lengthOfLIS(vector<int>& nums) {
+        return LowerBound().lengthOfLIS(nums);
+    }
 };
