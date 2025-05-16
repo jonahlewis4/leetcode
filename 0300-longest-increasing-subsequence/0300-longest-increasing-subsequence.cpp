@@ -20,7 +20,30 @@ public:
         }
 
         return sub.size();
-
-        
     }
+
+    vector<int>::iterator lower_bound(const vector<int>::iterator begin, const vector<int>::iterator end, int target) const{
+        int l = begin - begin;
+        int r = end - 1 - begin;
+
+        auto smallest = end;
+        while(l <= r) {
+            int m = (l + r) / 2;
+            auto midItr = begin + m;
+            int midElement = *midItr;
+
+            if(midElement >= target){
+                if (smallest == end){
+                    smallest = midItr;
+                } else if(midElement < *smallest){
+                    smallest = midItr;
+                }
+                r = m - 1;
+            } else /*if midElement is smaller than the target, we need to visit larger value*/ {
+                l = m + 1;
+            }
+        }
+        return smallest;
+    }
+    
 };
