@@ -50,19 +50,24 @@ public:
 
         int curFits = -1;
         int baseDivisor = divisor;
+
+
+        auto const aggregate = [&quotient, &curFits, &dividend, &divisor, baseDivisor]() {
+            quotient += curFits;
+            curFits = -1;
+            dividend -= divisor;
+            divisor = baseDivisor;
+        };
+
+
         while(dividend <= divisor){
             if(divisor < (INT_MIN >> 1)){
-                quotient += curFits;
-                curFits = -1;
-                dividend -= divisor;
-                divisor = baseDivisor;
+                aggregate();
                 continue;
             }
             int nextDivisor = divisor + divisor;
             if(nextDivisor < dividend){       
-                quotient += curFits;
-                curFits = -1;
-                dividend -= divisor; 
+                aggregate();
                 divisor = baseDivisor;
             } else {
                 curFits += curFits;
