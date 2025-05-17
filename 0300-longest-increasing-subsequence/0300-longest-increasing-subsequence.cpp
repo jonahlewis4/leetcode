@@ -128,9 +128,123 @@ class BottomUp {
     }
 };
 
+class SegmentTreeSolution {
+private:
+    class SegmentTree{
+    private:
+        vector<int> nodes;
+        int maxR;
+        int _query(int qL, int qR, int tL, int tR, int treeIndex) const {
+            //if tree within query return value
+
+            if(tL >= qL && tR <= qR) {
+                return nodes[treeIndex];
+            }
+
+            //if tree fully seperate reutrn int_min
+            if((tL < qL && tR < qL) || (tL > qR && tR > qR)){
+                return INT_MIN;
+            }
+            
+            //if disjoint return max children
+
+            int m = (tL + tR) / 2;
+            int leftChild = _query(qL, qR, tL, m, treeIndex * 2 + 1);
+            int rightChild = _query(qL, qR, m + 1, tR, treeIndex * 2 + 2);
+
+            return max(leftChild, rightChild);
+        }
+
+        void _update(int matchI, int tL, int tR, int treeIndex, int newValue) {
+            //if l == r and matchI, set and return;
+            if(matchI == tL && matchI == tR){
+                nodes[treeIndex] = newValue;
+                return;
+            }
+
+            //move to the side that countains the matchI
+
+            int m = (tL + tR) / 2;
+
+            if(m >= matchI) /*if middle of tree parts is >= answer is on the left*/ {
+                _update(matchI, tL, m, treeIndex * 2 + 1, newValue);
+                nodes[treeIndex] = max(nodes[treeIndex], nodes[treeIndex * 2 + 1]);
+            } else {
+                _update(matchI, m + 1, tR, treeIndex * 2 + 2, newValue);
+                nodes[treeIndex] = max(nodes[treeIndex], nodes[treeIndex * 2 + 2]);
+            }
+        }
+    public:
+        SegmentTree(int n){
+            nodes.resize(n * 4, 0);
+            maxR = n - 1;
+        }
+        int query(int l, int r) const {
+            if(l > r){
+                return 0;
+            }
+
+            return _query(l, r, 0, maxR, 0);
+        }
+        void update(int treeI, int newValue){
+            _update(treeI, 0, maxR, 0, newValue); 
+        }
+    };
+    class Ranker {
+    private:
+        unordered_map<int, int> ranks;
+        const vector<int> &nums;
+    public:
+        Ranker(const vector<int> &nums) : nums(nums) {
+            vector<int> values = nums;
+            sort(values.begin(), values.end());
+
+
+            int curRank = 0;
+            ranks[values[0]] = curRank;
+            curRank++;
+
+            for(int i = 1; i < values.size(); i++){
+                if(values[i] != values[i - 1]){
+                    ranks[values[i]] = curRank;
+                    curRank++;
+                }
+            }
+        }
+
+        int operator[](int i) const {
+            return ranks.at(nums[i]);
+        }
+
+        int size() const {
+            return ranks.size();
+        }
+    };
+
+    
+
+
+
+public:
+    int lengthOfLIS(vector<int> &nums) {
+        //create mapping of each index in nums to an index specifying it's rank
+        Ranker treeI = Ranker(nums);
+        SegmentTree tree(treeI.size());
+        for(int i = 0; i < nums.size(); i++){
+            //query to get the max in segment tree before treeI
+            int maxPreceeding = tree.query(0, treeI[i] - 1);
+            tree.update(treeI[i], maxPreceeding + 1);
+        }
+
+        return tree.query(0, treeI.size() - 1);
+
+        
+    }
+};
+
 class Solution {
     public:
     int lengthOfLIS(vector<int>& nums) {
-        return LowerBound().lengthOfLIS(nums);
+        return SegmentTreeSolution().lengthOfLIS(nums);
     }
 };
