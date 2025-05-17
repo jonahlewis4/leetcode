@@ -27,13 +27,11 @@ public:
         sum[0] = true;
 
         for(const auto & num : nums){
-            vector<bool> newSum = sum;
-            for(int i = 0; i < sum.size(); i++){
-                if(sum[i] && i + num < newSum.size()){
-                    newSum[i + num] = true;
+            for(int i = sum.size() - 1; i >= 0; i--){
+                if(sum[i] && i + num < sum.size()){
+                    sum[i + num] = true;
                 }
             }            
-            sum = newSum;
         } 
 
         return sum.back();
