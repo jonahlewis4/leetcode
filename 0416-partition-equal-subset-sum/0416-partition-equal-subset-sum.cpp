@@ -25,7 +25,8 @@ public:
         dp[0] = 1;
 
         for (int num : nums) {
-            dp |= dp << num;
+            bitset<10001> orSet = dp << num;
+            dp |= orSet;
         }
 
         return dp[target];
