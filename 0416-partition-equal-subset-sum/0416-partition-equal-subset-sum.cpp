@@ -19,7 +19,7 @@ public:
         return subsetSum(nums, total);
     }
 
-    bool subsetSum(const vector<int>& nums, int target) const {
+    inline bool subsetSum(const vector<int>& nums, int target) const {
 
         bitset<10001> dp; 
         dp[0] = 1;
