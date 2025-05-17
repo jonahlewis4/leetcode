@@ -19,25 +19,17 @@ public:
         return subsetSum(nums, total);
     }
 
-    bool subsetSum(const vector<int>& nums, int total) const {
-        //start with all true.
-        //have next be the old ones + each num in nums.
+    bool subsetSum(const vector<int>& nums, int target) const {
 
-        vector<bool> sum(total + 1);
-        sum[0] = true;
+        bitset<10001> dp; 
+        dp[0] = 1;
 
-        for(const auto & num : nums){
-            for(int i = sum.size() - 1; i >= 0; i--){
-                if(sum[i] && i + num < sum.size()){
-                    sum[i + num] = true;
-                    if((i + num) == total){
-                        return true;
-                    }
-                }
-            }            
-        } 
+        for (int num : nums) {
+            dp |= dp << num;
+        }
 
-        return false;
-        
+        return dp[target];
     }
 };
+        
+    
