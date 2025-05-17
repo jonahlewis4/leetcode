@@ -27,12 +27,10 @@ public:
         sum[0] = true;
 
         for(const auto & num : nums){
-            for(int i = sum.size() - 1; i >= 0; i--){
-                if(sum[i] && i + num < sum.size()){
-                    sum[i + num] = true;
-                    if((i + num) == total){
-                        return true;
-                    }
+            for(int i = sum.size() - 1; i >= num; i--){
+                sum[i] = sum[i] || sum[i - num];
+                if(sum.back()){
+                    return true;
                 }
             }            
         } 
