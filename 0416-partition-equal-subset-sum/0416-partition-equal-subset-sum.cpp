@@ -30,11 +30,14 @@ public:
             for(int i = sum.size() - 1; i >= 0; i--){
                 if(sum[i] && i + num < sum.size()){
                     sum[i + num] = true;
+                    if((i + num) == total){
+                        return true;
+                    }
                 }
             }            
         } 
 
-        return sum.back();
+        return false;
         
     }
 };
