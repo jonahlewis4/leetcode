@@ -81,6 +81,19 @@ class Solution {
     class Monotonic {
     private:
         const vector<int>& nums;
+
+        void accept (long long &total, int &r, int &l, int rValue, deque<int> &smallest, deque<int> &largest, const vector<int> &nums) const{
+            total += r - l + 1;
+            while(!smallest.empty() && nums[smallest.back()] >= rValue){
+                smallest.pop_back();
+            }
+            smallest.push_back(r);
+            while(!largest.empty() && nums[largest.back()] <= rValue) {
+                largest.pop_back();
+            }
+            largest.push_back(r);
+            r++;
+        }
     public:
         Monotonic(const vector<int>& nums) : nums(nums){}
         long long solution() const {
@@ -98,21 +111,10 @@ class Solution {
                 int lValue = nums[l];
                 int rValue = nums[r];
 
-                auto accept = [&total, &r, &l, rValue, &smallest, &largest, this](){
-                    total += r - l + 1;
-                    while(!smallest.empty() && nums[smallest.back()] >= rValue){
-                        smallest.pop_back();
-                    }
-                    smallest.push_back(r);
-                    while(!largest.empty() && nums[largest.back()] <= rValue) {
-                        largest.pop_back();
-                    }
-                    largest.push_back(r);
-                    r++;
-                };
+                
                 
                 if(smallest.empty() || largest.empty()){
-                    accept();
+                    accept(total, r, l, rValue, smallest, largest, nums);
                     continue;
                 }
                 
@@ -120,7 +122,7 @@ class Solution {
                 int largestVal = nums[largest.front()];
 
                 if(dist(rValue, smallestVal) <= 2 && dist(rValue, largestVal) <= 2){
-                    accept();
+                    accept(total, r, l, rValue, smallest, largest, nums);
                     continue;
                 }
 
