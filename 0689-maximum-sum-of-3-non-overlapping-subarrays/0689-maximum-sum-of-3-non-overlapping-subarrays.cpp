@@ -19,7 +19,7 @@ public:
 
 
         function<int(int, int)> maxSumFrom;
-        maxSumFrom = [sizes, nums, k, &maxSumFrom, &dp](int start, int splitNumber) -> int {
+        maxSumFrom = [&sizes, &nums, k, &maxSumFrom, &dp](int start, int splitNumber) -> int {
             if(start + k > nums.size() || splitNumber >= 3){
                 return 0;
             }
