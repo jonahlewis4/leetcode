@@ -1,25 +1,10 @@
 class Solution {
-public:
-    vector<int> maxSumOfThreeSubarrays(vector<int>& nums, int k) {
-
-      
-
-        int kSum = 0;
-        vector<int> sizes(nums.size() - k + 1);
-
-        for(int i = 0; i < nums.size(); i++){
-            kSum += nums[i];
-            if(i + 1 - k >= 0){
-                sizes[i + 1 - k] = kSum;
-                kSum -= nums[i + 1 - k];
-            }
-        }
-
-        vector<vector<int>> dp(nums.size() - k + 1, vector<int>(3, -1));
-
-
-        function<int(int, int)> maxSumFrom;
-        maxSumFrom = [&sizes, &nums, k, &maxSumFrom, &dp](int start, int splitNumber) -> int {
+private:
+    vector<int> sizes;
+    vector<int> nums;
+    int k;
+    vector<vector<int>> dp;
+    int maxSumFrom(int start, int splitNumber){
             if(start + k > nums.size() || splitNumber >= 3){
                 return 0;
             }
@@ -33,7 +18,27 @@ public:
             int skip = maxSumFrom(start + 1, splitNumber);
             dp[start][splitNumber] = max(use, skip);
             return max(use, skip);
-        };
+        }
+public:
+    vector<int> maxSumOfThreeSubarrays(vector<int>& nums, int k) {
+        this->nums = nums;
+        this->k = k;
+      
+
+        int kSum = 0;
+        sizes.resize(nums.size() - k + 1);
+
+        for(int i = 0; i < nums.size(); i++){
+            kSum += nums[i];
+            if(i + 1 - k >= 0){
+                sizes[i + 1 - k] = kSum;
+                kSum -= nums[i + 1 - k];
+            }
+        }
+
+        dp.resize(nums.size() - k + 1, vector<int>(3, -1));
+
+
 
 
         vector<int> starts;
