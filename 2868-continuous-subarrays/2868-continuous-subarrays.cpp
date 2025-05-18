@@ -145,8 +145,61 @@ class Solution {
         }
 
     };
+
+    class TwoPointer {
+    private:
+        const vector<int> &nums;
+
+        inline void accept(long long &total, int &r, int l, int &smallest, int& greatest) const{
+            total += r - l + 1;
+            smallest = min(smallest, nums[r]);
+            greatest = max(greatest, nums[r]);
+            r++;
+        }
+
+        int dist(int a, int b) const {
+            return abs(a - b);
+        }
+    public:
+        TwoPointer(const vector<int>& num) : nums(num) {}
+
+        long long solution() const{
+            int l = 0;
+            int r = 0;
+
+            int smallest = INT_MAX;
+            int greatest = INT_MIN;
+            long long total = 0;
+            while(r < nums.size()){
+                if(smallest == INT_MAX || greatest == INT_MIN){
+                    accept(total, r, l, smallest, greatest);
+                    continue;
+                }
+
+
+                if(dist(nums[r], smallest) > 2 || dist(nums[r], greatest) > 2){
+                    int newL = r;
+                    int newGreatest = nums[newL];
+                    int newSmallest = nums[newL];
+                    
+                    while(newL - 1 >= l && dist(nums[newL - 1] ,nums[r]) <= 2){
+                        newL--;
+                        newGreatest = max(newGreatest, nums[newL]);
+                        newSmallest = min(newSmallest, nums[newL]);
+                    }
+
+                    l = newL;
+                    smallest = newSmallest;
+                    greatest = newGreatest;
+                }
+                accept(total, r, l, smallest, greatest);
+            }
+
+            return total;
+        }
+    };
 public:
-    long long continuousSubarrays(vector<int>& nums) {
-        return Monotonic(nums).solution();
+    long long continuousSubarrays(const vector<int>& nums) {
+        return TwoPointer(nums).solution();
     }
 };
