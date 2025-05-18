@@ -4,7 +4,7 @@ private:
     vector<int> nums;
     int k;
     vector<vector<int>> dp;
-    int maxSumFrom(int start, int splitNumber){
+    int maxSumFrom(int start, int splitNumber) {
             if(start + k > nums.size() || splitNumber >= 3){
                 return 0;
             }
