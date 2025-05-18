@@ -1,4 +1,4 @@
-class Solution {
+class Memo {
 private:
     vector<int> sizes;
     vector<int> nums;
@@ -60,4 +60,59 @@ public:
         return starts;
 
     }
+};
+
+class BottomUp{
+public:
+    vector<int> maxSumOfThreeSubarrays(vector<int>& nums, int k) {
+
+        vector<int> sizes(nums.size() - k + 1);
+        int kSum = 0;
+        for(int i = 0; i < nums.size(); i++){
+            kSum += nums[i];
+            if(i + 1 - k >= 0){
+                sizes[i + 1 - k] = kSum;
+                kSum -= nums[i + 1 - k];
+            }
+        }
+
+        vector<vector<int>> dp(4, vector<int>(nums.size() + k, 0));
+        
+        for(int r = 2; r >= 0; r--){
+            for(int c = nums.size() - k; c >= 0; c--){
+                int use = sizes[c] + dp[r + 1][c + k];
+                int skip = dp[r][c + 1];
+                dp[r][c] = max(use, skip);
+            }
+        }
+
+        vector<int> starts;
+        int i = 0; 
+        while(i <= nums.size() - k && starts.size() < 3){
+            int use = sizes[i] + dp[starts.size() + 1][i + k];
+            int skip = dp[starts.size()][i + 1];
+
+            if(use >= skip) {
+                starts.push_back(i);
+                i += k;
+            } else {
+                i++;
+            }
+
+
+        }        
+        
+        return starts;
+    }
+
+
+};
+
+class Solution{
+public:
+
+    vector<int> maxSumOfThreeSubarrays(vector<int>& nums, int k) {
+        return BottomUp().maxSumOfThreeSubarrays(nums, k);
+    }
+
 };
