@@ -1,24 +1,23 @@
 class Solution {
 public:
-    int coinChange(vector<int>& coins, int amount) {        
-        int smallestCoin = *min_element(coins.begin(), coins.end());
+    int coinChange(vector<int>& coins, int amount) {
+        unordered_map<int, int> minCoinsToReach;
+        minCoinsToReach[0] = 0;
+        for(int i = 1; i <= amount; i++){
+            for(const auto & coin : coins){
+                if(minCoinsToReach.find(i - coin) != minCoinsToReach.end()){
+                    if(minCoinsToReach.find(i) == minCoinsToReach.end()){
+                        minCoinsToReach[i] = amount;
+                    }
 
-        int maxCoinsNeeded = amount / smallestCoin + 1;
-
-        vector<int> dp(amount + 1, maxCoinsNeeded);
-        dp[0] = 0;
-
-        for(int i = 0; i < dp.size(); i++){
-            for(const auto &coin : coins){
-                int oldIndex = i - coin;
-                if(oldIndex < 0) {
-                    continue;
+                    minCoinsToReach[i] = min(minCoinsToReach[i], minCoinsToReach[i - coin] + 1);
                 }
-                dp[i] = min(dp[i], dp[oldIndex] + 1);
             }
         }
 
-
-        return dp.back() == maxCoinsNeeded ? -1 : dp.back();
+        if(minCoinsToReach.find(amount) == minCoinsToReach.end()){
+            return -1;
+        }
+        return minCoinsToReach[amount];
     }
 };
