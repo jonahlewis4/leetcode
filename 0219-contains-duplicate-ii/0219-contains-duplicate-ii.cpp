@@ -1,17 +1,17 @@
-#include <unordered_map>
 #include <cmath>
 class Solution {
 public:
     bool containsNearbyDuplicate(vector<int>& nums, int k) {
-        std::unordered_map<int, int> lastSeenIOf;
+        std::unordered_set<int> _set;
         for(int i = 0; i < nums.size(); i++){
-            const auto &num = nums[i];
-            if(lastSeenIOf.find(num) != lastSeenIOf.end()){
-                if(std::abs(lastSeenIOf[num] - i) <= k){
-                    return true;
-                }
+            int num = nums[i];
+            if(_set.count(num)){
+                return true;
             }
-            lastSeenIOf[num] = i;
+            _set.insert(num);
+            if(i - k >= 0){
+                _set.erase(nums[i - k]);
+            }
         }
         return false;
     }
