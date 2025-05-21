@@ -40,9 +40,7 @@ public:
         }
 
         if(zeroRow){
-            for(int c = 0; c < matrix[0].size(); c++){
-                matrix[0][c] = 0;
-            }
+            fill(matrix[0].begin(), matrix[0].end(), 0);
         }
 
         if(zeroCol){
