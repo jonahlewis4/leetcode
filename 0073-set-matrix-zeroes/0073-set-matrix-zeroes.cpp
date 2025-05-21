@@ -9,11 +9,9 @@ public:
             for(int c = 0; c < matrix[r].size(); c++){
                 if(matrix[r][c] == 0){
 
-                    if(c == 0){
-                        zeroCol = true;
-                    } else {
-                        matrix[0][c] = 0;
-                    }
+                    
+                    matrix[0][c] = 0;
+                
 
                     if(r == 0){
                         zeroRow = true;
@@ -31,7 +29,7 @@ public:
             }
         }
 
-        for(int c = 1; c < matrix[0].size(); c++){
+        for(int c = 0; c < matrix[0].size(); c++){
             if(matrix[0][c] == 0){
                 for(int r = 0; r < matrix.size(); r++){
                     matrix[r][c] = 0;
@@ -43,10 +41,10 @@ public:
             fill(matrix[0].begin(), matrix[0].end(), 0);
         }
 
-        if(zeroCol){
-            for(int r = 0; r < matrix.size(); r++){
-                matrix[r][0] = 0;
-            }
-        }
+        // if(zeroCol){
+        //     for(int r = 0; r < matrix.size(); r++){
+        //         matrix[r][0] = 0;
+        //     }
+        // }
     }
 };
