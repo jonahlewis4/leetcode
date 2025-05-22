@@ -1,9 +1,33 @@
 class Solution {
 public:
-    int maxRemoval(vector<int>& nums, vector<vector<int>>& queries) {
+    int maxRemoval(vector<int>& nums, vector<vector<int>>& _queries) {
+        struct Query {
+            int l;
+            int r;
+            bool operator<(const Query & other) const {
+                if(l < other.l){
+                    return true;
+                }
+                if(l > other.l){
+                    return false;
+                }
 
+                if(r < other.r){
+                    return true;
+                }
+                return false;
+            }
+        };
         
-        
+
+
+        vector<Query> queries;
+        for(const auto & q : _queries){
+            queries.push_back({
+                .l = q[0],
+                .r = q[1],
+            });
+        }
 
         sort(queries.begin(), queries.end());
         
@@ -21,8 +45,8 @@ public:
                 chosen.pop();
             }   
 
-            while(queryI < queries.size() && queries[queryI][0] == i){
-                candidates.push(queries[queryI][1]);
+            while(queryI < queries.size() && queries[queryI].l == i){
+                candidates.push(queries[queryI].r);
                 queryI++;
             }
 
