@@ -33,46 +33,32 @@ public:
         
 
         priority_queue<int> candidates;
-        priority_queue<int, vector<int>, greater<int>> chosen;
+        
+        vector<int> queriesEndingBeforeHere(nums.size() + 1, 0);
 
-        int queryI = 0;
-        int i = 0;
+        int queryIndex = 0;
+        int activeQueries = 0;
+        for(int i = 0; i < nums.size(); i++){
+            activeQueries -= queriesEndingBeforeHere[i];
 
-        int migrations = 0;
-
-        while(i < nums.size()){
-            while(!chosen.empty() && chosen.top() < i){
-                chosen.pop();
-            }   
-
-            while(queryI < queries.size() && queries[queryI].l == i){
-                candidates.push(queries[queryI].r);
-                queryI++;
+            while(queryIndex < queries.size() && queries[queryIndex].l == i){
+                candidates.push(queries[queryIndex].r);
+                queryIndex++;
             }
 
-
-            nums[i] -= chosen.size();
-            
-            while(nums[i] > 0 && !candidates.empty()){
-                if(candidates.top() < i){
-                    candidates.pop();
-                    continue;
-                }
-                migrations++;
-                chosen.push(candidates.top());
-                nums[i]--;
+            while(!candidates.empty() && activeQueries < nums[i] && candidates.top() >= i){
+                int top = candidates.top();
                 candidates.pop();
+                activeQueries++;
+                queriesEndingBeforeHere[top + 1]++;
             }
-            
 
-            if(nums[i] > 0) {
+            if(activeQueries < nums[i]){
                 return -1;
             }
-            i++;
-        } 
+        }
 
-        return queries.size() - migrations;
-
+        return candidates.size();
 
     }
 };
