@@ -1,65 +1,50 @@
 class Solution {
 private:
     //T is a random access iterator
-    template <typename T>
-    void mergesort(T begin, T end){
-        
-        if(next(begin) == end){
+    void mergesort(int l, int r, vector<int>& nums){
+        if(l == r){
             return;
-        }
+        }  
 
+        int m = (l + r) / 2;
+        mergesort(l, m, nums);
+        mergesort(m + 1, r, nums);
 
-        T back = prev(end);
-        int n = end - begin;
-        T m = begin + (end - begin) / 2;
-        int mOffset = end - m;
-        mergesort(begin, m);
-        mergesort(m, end);
+        vector<int> merged(r - l + 1);
+        int mergeI = 0;
 
-        //aggregate 
-        T l = end - n;
-        T lEnd = end - mOffset;
-        T r = lEnd;
-        T rEnd = end;
+        int rightI = m + 1;
+        int leftI = l;
 
-        //iterator_traits<T>::value_type returns the type that the given iterator points to. 
-        using ValueType = iterator_traits<T>::value_type;
-        vector<ValueType> merged(end - begin);
-        
-        T mergeItr = merged.begin();
-
-        while(l != lEnd || r != rEnd) {
-            if(l == lEnd){
-                *mergeItr = *r;
-                r = next(r);
-            } else if(r == rEnd){
-                *mergeItr = *l;
-                l = next(l);
-            } else if (*l < *r){
-                *mergeItr = *l;
-                l = next(l);
+        while(leftI <= m || rightI <= r){
+            if(leftI > m){
+                merged[mergeI] = nums[rightI];
+                rightI++;
+            } else if(rightI > r){
+                merged[mergeI] = nums[leftI];
+                leftI++;
+            } else if (nums[leftI] <= nums[rightI]){
+                merged[mergeI] = nums[leftI];
+                leftI++;
             } else {
-                *mergeItr = *r;
-                r = next(r);
+                merged[mergeI] = nums[rightI];
+                rightI++;
             }
-            mergeItr = next(mergeItr);
+            mergeI++;
         }
 
-        //update original array to match the merged array;
-        T mergeBegin = merged.begin();
-        T destBegin = end - n;
-
-        while(mergeBegin != merged.end()){
-            *destBegin = *mergeBegin;
-            mergeBegin = next(mergeBegin);
-            destBegin = next(destBegin);
+        int ogI = l;
+        for(int i = 0; i < merged.size(); i++){
+            nums[ogI] = merged[i];
+            ogI++;
         }
 
-        
+
+
     }
 public:
     vector<int> sortArray(vector<int>& nums) {
-        mergesort(nums.begin(), nums.end());
+        mergesort(0, nums.size() - 1, nums);
         return nums;
     }
 };
