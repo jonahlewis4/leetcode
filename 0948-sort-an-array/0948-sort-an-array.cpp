@@ -44,7 +44,7 @@ private:
     }
 public:
     vector<int> sortArray(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
+        mergesort(0, nums.size() - 1, nums);
         return nums;
     }
 };
