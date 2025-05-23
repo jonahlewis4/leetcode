@@ -8,7 +8,7 @@ private:
         }
         return false;
     }
-    bool occursOnce(int value) {
+    bool occursOnce(int value) const {
         if(map.find(value)->second != unique.end()){
             return true;
         }
@@ -22,7 +22,7 @@ public:
     }
     
     int showFirstUnique() {
-        if(unique.begin() == unique.end()){
+        if(unique.empty()){
             return -1;
         }
         return *unique.begin();
