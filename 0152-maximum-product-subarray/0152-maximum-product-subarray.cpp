@@ -1,23 +1,27 @@
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
-        int neg = 1;
-        int pos = 1;
+        if(nums.size() == 1){
+            return nums[0];
+        }
+        
+        int smallestNeg = 1;
+        int largestPos = 1;
 
         int res = INT_MIN;
 
-        for(int i = 0; i < nums.size(); i++){
+        for(const auto & num : nums){
+            int oldLargest = largestPos;
+            largestPos = max({smallestNeg * num, largestPos * num});
+            smallestNeg = min({smallestNeg * num, oldLargest * num});
+            res = max(largestPos, res);
 
-
-            int oldPos = pos;
-            int val = nums[i];
-
-
-            pos = max({pos * val, neg * val, val});
-            neg = min({oldPos * val, neg * val, val});
-            res = max({res, pos, neg});
+            largestPos = max(largestPos, 1);
+            smallestNeg = min(smallestNeg, 1);
         }
 
         return res;
+
+
     }
 };
