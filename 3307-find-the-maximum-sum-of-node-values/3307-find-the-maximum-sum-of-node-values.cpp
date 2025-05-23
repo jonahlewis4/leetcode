@@ -5,10 +5,8 @@ public:
 
         int flips = 0;
         long long total = 0;
-        vector<int> flippy;
         for(const auto & num : nums) {
             int flipped = num ^ k;
-            flippy.push_back(flipped);
             if(flipped >= num){
                 flips++;
                 total += flipped;
