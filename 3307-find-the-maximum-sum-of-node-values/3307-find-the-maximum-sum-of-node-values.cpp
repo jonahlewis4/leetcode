@@ -1,32 +1,37 @@
 class Solution {
 public:
     long long maximumValueSum(vector<int>& nums, int k, vector<vector<int>>& edges) {
-        vector<int> deltas(nums.size());
-        for(int i = 0; i < nums.size(); i++){
-            deltas[i] = (nums[i] ^ k) - nums[i];
-        }
+        int weakestDelta = INT_MAX;
 
-        sort(deltas.begin(), deltas.end());
+        int flips = 0;
+        long long total = 0;
+        vector<int> flippy;
+        for(const auto & num : nums) {
+            int flipped = num ^ k;
+            flippy.push_back(flipped);
+            if(flipped >= num){
+                flips++;
+                total += flipped;
+                
+                int delta = flipped - num;
 
-        reverse(deltas.begin(), deltas.end());
 
-        long long improvements = 0;
+                if(delta < weakestDelta) {
+                    weakestDelta = delta;
+                }
 
-        for(int i = 0; i < nums.size(); i+=2){
-            if(i + 1 >= nums.size()){
-                break;
+            
+            } else {
+                total += num;
+                int delta = num - flipped;
+                if(delta < weakestDelta) {
+                    weakestDelta = delta;
+                }
             }
-
-            if(deltas[i] + deltas[i + 1] > 0){
-                improvements += deltas[i] + deltas[i + 1];
-            }
-        }   
-
-        long long sum = 0;
-        for(const auto & num : nums){
-            sum += num;
         }
-
-        return improvements + sum; 
+        if(flips %2 == 0){
+            return total;
+        } 
+        return total - weakestDelta;
     }
 };
