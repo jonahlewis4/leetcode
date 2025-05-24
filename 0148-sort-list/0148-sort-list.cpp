@@ -19,41 +19,13 @@ private:
         return count;
     }
     ListNode* add(ListNode* begin, int amt) const {
-        while(amt > 0){
+        while(amt > 0 && begin != nullptr){
             begin = begin->next;
             amt--;
         }
         return begin;
     }
-    ListNode* back(ListNode* begin) const {
-        while(begin->next != nullptr){
-            begin = begin->next;
-        }
-        return begin;
-    }
-    ListNode* mergeSort(ListNode* begin, ListNode* end) const{
-        if(begin->next == end){
-            return begin;
-        }
-
-        int n = dist(begin, end);
-        int half = n / 2;
-        ListNode* leftBegin = begin;
-        ListNode* leftEnd = add(begin, half);
-        ListNode* rightBegin = leftEnd;
-        ListNode* rightEnd = end;
-
-        ListNode* l = mergeSort(leftBegin, leftEnd);
-        ListNode* r = mergeSort(rightBegin, rightEnd);
-
-        //aggregate
-
-        ListNode* lEnd = add(l, half);
-        ListNode* rEnd = end;
-
-        ListNode* merged = merge(l, lEnd, r, rEnd);
-        return merged;
-    }
+    
 
     ListNode* merge(ListNode* l, ListNode* lEnd, ListNode* r, ListNode* rEnd) const {
         ListNode start = ListNode(INT_MIN);
@@ -86,26 +58,40 @@ private:
 
 public:
     ListNode* sortList(ListNode* head) {
-
-        
-
-
-
-
-
-
-        ListNode* end = head;
         if(head == nullptr || head->next == nullptr){
             return head;
         }
         
-        while(end != nullptr){
-            end = end->next;
+        ListNode* back = head;
+        while(back -> next != nullptr){
+            back = back->next;
         }
 
+        int n = dist(head, back) + 1;
 
-        
-        return mergeSort(head, end);
+        for(int size = 1; size < n; size *= 2){
+            ListNode* sub1 = head;
+            ListNode* sub2 = add(head, size);
 
+            ListNode* sub1End = add(head, size);
+            ListNode* sub2End = add(sub2, size);
+            ListNode* prev = nullptr;
+            while(sub1 != nullptr) {
+                ListNode* base = merge(sub1, sub1End, sub2, sub2End);
+                if(sub1 == head) {
+                    head = base;
+                } else {
+                    prev->next = base;
+                }
+                prev = add(base, size * 2 - 1);
+                sub1 = add(base, size * 2);
+                sub1End = add(sub1, size);
+                sub2 = sub1End;
+                sub2End = add(sub2, size);
+            }
+
+        }
+
+        return head;
     }
 };
