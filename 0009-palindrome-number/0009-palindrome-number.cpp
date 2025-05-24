@@ -14,23 +14,14 @@ public:
 
 
         while(leftPower > rightPower) {
-            int rightMod = (rightPower * 10);
-
-            int rightDigit = (x % rightMod) / rightPower;
-            
-            int leftDigit;
-            if(leftPower == 1e9) {
-                leftDigit = x / leftPower;
-            } else {
-                int leftMod = leftPower * 10;
-                int leftModResult = (x % leftMod);
-                leftDigit = leftModResult / leftPower;
-            }
+            int leftDigit = x / leftPower % 10;
+            int rightDigit = x / rightPower % 10;
 
 
             if(leftDigit != rightDigit){
                 return false;
             }
+
 
             leftPower /= 10;
             rightPower *= 10;
