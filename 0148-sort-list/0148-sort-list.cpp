@@ -1,0 +1,111 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+private:
+    int dist(ListNode* begin, ListNode* end) const {
+        int count = 0;
+        while(begin != end){
+            begin = begin->next;
+            count++;
+        }
+        return count;
+    }
+    ListNode* add(ListNode* begin, int amt) const {
+        while(amt > 0){
+            begin = begin->next;
+            amt--;
+        }
+        return begin;
+    }
+    ListNode* back(ListNode* begin) const {
+        while(begin->next != nullptr){
+            begin = begin->next;
+        }
+        return begin;
+    }
+    ListNode* mergeSort(ListNode* begin, ListNode* end) const{
+        if(begin->next == end){
+            return begin;
+        }
+
+        int n = dist(begin, end);
+        int half = n / 2;
+        ListNode* leftBegin = begin;
+        ListNode* leftEnd = add(begin, half);
+        ListNode* rightBegin = leftEnd;
+        ListNode* rightEnd = end;
+
+        ListNode* l = mergeSort(leftBegin, leftEnd);
+        ListNode* r = mergeSort(rightBegin, rightEnd);
+
+        //aggregate
+
+        ListNode* lEnd = add(l, half);
+        ListNode* rEnd = end;
+
+        ListNode* merged = merge(l, lEnd, r, rEnd);
+        return merged;
+    }
+
+    ListNode* merge(ListNode* l, ListNode* lEnd, ListNode* r, ListNode* rEnd) const {
+        ListNode start = ListNode(INT_MIN);
+        ListNode *merged = &start;
+
+        while(l != lEnd || r != rEnd) {
+            if(l == lEnd){
+                merged->next = r;
+                r = r->next;
+                merged = merged->next;
+            } else if(r == rEnd) {
+                merged->next = l;
+                l = l->next;
+                merged = merged->next;
+            } else if (l->val < r->val) {
+                merged->next = l;
+                l = l->next;
+                merged = merged->next;
+
+            } else {
+                merged->next = r;
+                r = r->next;
+                merged = merged->next;
+            }
+        }
+
+        merged->next = r;
+        return start.next;
+    }
+
+public:
+    ListNode* sortList(ListNode* head) {
+
+        
+
+
+
+
+
+
+        ListNode* end = head;
+        if(head == nullptr || head->next == nullptr){
+            return head;
+        }
+        
+        while(end != nullptr){
+            end = end->next;
+        }
+
+
+        
+        return mergeSort(head, end);
+
+    }
+};
