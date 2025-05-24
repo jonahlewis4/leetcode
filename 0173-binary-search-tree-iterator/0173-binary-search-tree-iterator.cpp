@@ -10,32 +10,46 @@
  * };
  */
 class BSTIterator {
-    std::vector<int> list;
+    struct recursionSimulator{
+        TreeNode* node;
+        bool hasLeftBeenSearched;
+    };
+    std::stack<recursionSimulator> stack;
 public:
     BSTIterator(TreeNode* root) {
-        dfs(root);
-    }
-
-    void dfs(TreeNode* root){
-        if(root == nullptr){
+        if(root == nullptr) {
             return;
         }
-        dfs(root->left);
-        list.push_back(root->val);
-        dfs(root->right);
+        stack.push({
+            .node = root,
+            .hasLeftBeenSearched = false,
+        });
     }
-    
     int next() {
-        int begin = *list.begin();
-        list.erase(list.begin());
-        return begin;
-    }
-    
-    bool hasNext() {
-        if(list.size() == 0){
-            return false;
+        auto &_stack = stack;
+        while(!stack.top().hasLeftBeenSearched){
+            stack.top().hasLeftBeenSearched = true;
+            if(stack.top().node->left != nullptr){
+                stack.push({
+                    .node = stack.top().node->left,
+                    .hasLeftBeenSearched = false,
+                });
+            }
         }
-        return true;
+
+        recursionSimulator top = stack.top();
+        stack.pop();
+        if(top.node->right != nullptr){
+            stack.push({
+                .node = top.node->right,
+                .hasLeftBeenSearched = false,
+            });
+        }
+
+        return top.node->val;
+    }
+    bool hasNext() {
+        return !stack.empty();
     }
 };
 
