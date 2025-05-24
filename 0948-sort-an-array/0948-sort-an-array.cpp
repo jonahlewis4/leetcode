@@ -56,7 +56,8 @@ private:
         }
     }
 public:
-    vector<int> sortArray(vector<int>& nums) {
+    template<typename T>
+    vector<T> sortArray(vector<T>& nums) {
         mergesort(nums.begin(), nums.end());
         return nums;
     }
