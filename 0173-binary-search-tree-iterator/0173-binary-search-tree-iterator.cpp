@@ -10,7 +10,7 @@
  * };
  */
 class BSTIterator {
-    std::list<int> list;
+    std::vector<int> list;
 public:
     BSTIterator(TreeNode* root) {
         dfs(root);
