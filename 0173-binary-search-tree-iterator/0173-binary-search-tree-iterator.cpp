@@ -13,7 +13,7 @@ class BSTIterator {
     stack<TreeNode*> stack;
 public:
     BSTIterator(TreeNode* root) {
-        while(root != nullptr){
+        while(root){
             stack.push(root);
             root = root->left;
         }
@@ -22,9 +22,9 @@ public:
     int next() {
         TreeNode* top = stack.top();
         stack.pop();
-        if(top->right != nullptr){
+        if(top->right){
             TreeNode* root = top->right;
-            while(root != nullptr){
+            while(root){
                 stack.push(root);
                 root = root->left;
             }
