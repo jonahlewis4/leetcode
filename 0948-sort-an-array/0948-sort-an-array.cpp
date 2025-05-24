@@ -3,7 +3,7 @@ private:
     template <typename T>
     void mergesort(T begin, T end) const {
         int n = end - begin;
-        for(int size = 1; size <= n; size *= 2){
+        for(int size = 1; size < n; size *= 2){
             int sub1 = 0;
             int sub2 = sub1 + size;
 
@@ -20,7 +20,9 @@ private:
                 }
                 int sub1Size = sub1End - sub1 + 1;
                 int sub2Size = max(0, sub2End - sub2 + 1);
-                vector<int> merged(sub1Size + sub2Size);
+                
+                auto firstElem = *begin;
+                vector<decltype(firstElem)> merged(sub1Size + sub2Size);
 
                 int mergeI = 0;
                 int l = sub1;
