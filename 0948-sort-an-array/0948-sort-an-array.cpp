@@ -22,7 +22,10 @@ private:
                 int sub2Size = max(0, sub2End - sub2 + 1);
                 
                 auto firstElem = *begin;
-                vector<decltype(firstElem)> merged(sub1Size + sub2Size);
+                
+                using underlyingType = decltype(firstElem);
+                
+                vector<underlyingType> merged(sub1Size + sub2Size);
 
                 int mergeI = 0;
                 int l = sub1;
