@@ -1,9 +1,9 @@
 class Solution {
 private:
-    
-public:
-    vector<int> sortArray(vector<int>& nums) {
-        for(int size = 1; size <= nums.size(); size *= 2){
+    template <typename T>
+    void mergesort(T begin, T end) const {
+        int n = end - begin;
+        for(int size = 1; size <= n; size *= 2){
             int sub1 = 0;
             int sub2 = sub1 + size;
 
@@ -11,12 +11,12 @@ public:
             int sub2End = sub2 + size - 1;
 
 
-            while(sub1 < nums.size()){
-                if(sub1End >= nums.size()){
-                    sub1End = nums.size() - 1;
+            while(sub1 < n){
+                if(sub1End >= n){
+                    sub1End = n - 1;
                 }
-                if(sub2End >= nums.size()){
-                    sub2End = nums.size() - 1;
+                if(sub2End >= n){
+                    sub2End = n - 1;
                 }
                 int sub1Size = sub1End - sub1 + 1;
                 int sub2Size = max(0, sub2End - sub2 + 1);
@@ -27,23 +27,23 @@ public:
                 int r = sub2;
                 while(l <= sub1End || r <= sub2End) {
                     if(l > sub1End){
-                        merged[mergeI] = nums[r];
+                        merged[mergeI] = *(begin + r);
                         r++;
                     } else if (r > sub2End) {
-                        merged[mergeI] = nums[l];
+                        merged[mergeI] = *(begin + l);
                         l++;
-                    } else if (nums[l] < nums[r]){
-                        merged[mergeI] = nums[l];
+                    } else if (*(begin + l) < *(begin + r)){
+                        merged[mergeI] = *(begin + l);
                         l++;
                     } else {
-                        merged[mergeI] = nums[r];
+                        merged[mergeI] = *(begin + r);
                         r++;
                     }
                     mergeI++;
                 }
 
                 for(int i = 0; i < merged.size(); i++){
-                    nums[sub1 + i] = merged[i];
+                    *(begin + sub1 + i) = merged[i];
                 }
 
                 sub1 += size * 2;
@@ -52,6 +52,10 @@ public:
                 sub2End += size * 2;
             }
         }
+    }
+public:
+    vector<int> sortArray(vector<int>& nums) {
+        mergesort(nums.begin(), nums.end());
         return nums;
     }
 };
