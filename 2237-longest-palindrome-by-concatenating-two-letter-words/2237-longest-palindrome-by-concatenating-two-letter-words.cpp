@@ -15,7 +15,7 @@ public:
 
         for(const auto & word : words){
             string pair = word;
-            reverse(pair.begin(), pair.end());
+            swap(pair[0], pair[1]);
 
             if(map.find(pair) != map.end()){
                 map[pair]--;
@@ -36,7 +36,7 @@ public:
 
         for(auto [key, _] : map) {
             string reversed = key;
-            reverse(reversed.begin(), reversed.end());
+            swap(reversed[0], reversed[1]);
             if(key == reversed){
                 longest += 2;
                 break;
