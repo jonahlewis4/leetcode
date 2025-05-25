@@ -16,11 +16,8 @@ public:
         for(const auto & word : words){
             string pair = {word[1], word[0]};
 
-            if(map.find(pair) != map.end()){
+            if(map[pair] > 0){
                 map[pair]--;
-                if(map[pair] == 0){
-                    map.erase(pair);
-                }
                 longest += 4;
             } else {
                 map[word]++;
@@ -33,8 +30,10 @@ public:
         //final loop through and see if any of the words which have NOT been used yet are palindromes. If there is one,
         //it can go at the center of the result and so we increase longest by 2. 
 
-        for(auto [key, _] : map) {
-            
+        for(auto [key, count] : map) {
+            if(count <= 0){
+                continue;
+            }
             if(key[0] == key[1]){
                 longest += 2;
                 break;
