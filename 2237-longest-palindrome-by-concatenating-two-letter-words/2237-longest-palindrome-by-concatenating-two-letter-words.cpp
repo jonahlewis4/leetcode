@@ -14,8 +14,7 @@ public:
         // otherwise increase count of the current word.
 
         for(const auto & word : words){
-            string pair = word;
-            swap(pair[0], pair[1]);
+            string pair = {word[1], word[0]};
 
             if(map.find(pair) != map.end()){
                 map[pair]--;
@@ -35,9 +34,8 @@ public:
         //it can go at the center of the result and so we increase longest by 2. 
 
         for(auto [key, _] : map) {
-            string reversed = key;
-            swap(reversed[0], reversed[1]);
-            if(key == reversed){
+            
+            if(key[0] == key[1]){
                 longest += 2;
                 break;
             }
