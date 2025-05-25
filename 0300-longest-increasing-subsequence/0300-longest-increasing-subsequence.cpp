@@ -8,9 +8,7 @@ public:
             if(pos == sub.end()){
                 sub.push_back(nums[i]);
             } else {
-                if (nums[i] < *pos){
-                    *pos = nums[i];
-                }
+                *pos = nums[i];
             }
         }
         return sub.size();
