@@ -1,36 +1,36 @@
 class Solution {
 public:
     bool canPartition(vector<int>& nums) {
-        //subset sum for half the list.
-
-        int total = 0;
+        int sum = 0;
         for(const auto & num : nums){
-            total += num;
+            sum += num;
         }
 
-
-        if(total % 2 == 1){
+        if(sum % 2 == 1){
             return false;
         }
 
-        total >>= 1;
+        int target = sum / 2;
 
-
-        return subsetSum(nums, total);
+        return subsetSum(nums, target);
     }
 
-    inline bool subsetSum(const vector<int>& nums, int target) const {
+    bool subsetSum(vector<int>& nums, int target) {
+        vector<bool> dp(target + 1, 0);
+        dp[0] = true;
+        for(const auto & num : nums){
+            for(int i = dp.size() - 1; i >= 0; i--){
+                int prev = i - num;
+                if(prev < 0){
+                    continue;
+                } 
 
-        bitset<10001> dp; 
-        dp[0] = 1;
-
-        for (int num : nums) {
-            bitset<10001> orSet = dp << num;
-            dp |= orSet;
+                if(dp[prev]){
+                    dp[i] = true;
+                }
+            }
         }
-
         return dp[target];
+
     }
 };
-        
-    
