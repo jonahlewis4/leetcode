@@ -1,9 +1,6 @@
 class Solution {
 private:
     int bfs(vector<vector<int>>& adjList, int start, int maxDepth) const {
-        if(maxDepth < 0){
-            return 0;
-        }
         deque<int> q;
         //we can use up to and including maxDepth.
         q.push_front(start);
