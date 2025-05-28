@@ -12,13 +12,15 @@ public:
         for(int i = 0; i < diff.size(); i++){
             int d = diff[i];
 
+            if(d > 0){
+                pairs += diff.size() - i - 1;
+                continue;
+            }
+
             int target = 0 - d; 
             auto it = upper_bound(diff.begin(), diff.end(), target);
             
-            auto curItr = diff.begin() + i;
-            if(curItr >= it){
-                it = next(curItr);
-            }
+            
             int dist = diff.end() - it;
 
             pairs += dist;
