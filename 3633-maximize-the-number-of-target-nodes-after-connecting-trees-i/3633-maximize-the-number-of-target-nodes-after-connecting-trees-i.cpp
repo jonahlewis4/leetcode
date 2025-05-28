@@ -1,32 +1,25 @@
 class Solution {
 private:
-    int bfs(vector<vector<int>>& adjList, int start, int maxDepth) const {
+    int dfs(vector<vector<int>>& adjList, int start, int maxDepth) const {
         deque<int> q;
         //we can use up to and including maxDepth.
-        q.push_front(start);
-        int count = 0;
         vector<bool> visited(adjList.size(), false);
-        for(int i = 0; i <= maxDepth; i++){
-            if(q.empty()){
-                return count; 
-            }
+        return _dfs(adjList, start, 0, maxDepth, visited);
+    }
 
-            int n = q.size();
-            for(int j = 0; j < n; j++){
-                int node = q.front();
-                q.pop_front();
-                if(visited[node]){
-                    continue;
-                }
-                visited[node] = true;
-                count++;
+    int _dfs(vector<vector<int>>& adjList, int start, int depth, int maxDepth, vector<bool>& visited) const {
+        if(visited[start]){
+            return 0;
+        }
+        if(depth > maxDepth) {
+            return 0;
+        }
 
-                for(const auto & neigh : adjList[node]){
-                    if(!visited[neigh]){
-                        q.push_back(neigh);
-                    }
-                }
-            }
+        visited[start] = true;
+
+        int count = 1;
+        for(const auto & neigh : adjList[start]){
+            count += _dfs(adjList, neigh, depth + 1, maxDepth, visited);
         }
         return count;
     }
@@ -57,13 +50,13 @@ public:
 
         int bestTree2Count = 0;
         for(int i = 0; i < m; i++){
-            int neigh = bfs(adjList2, i, k - 1);
+            int neigh = dfs(adjList2, i, k - 1);
             bestTree2Count = max(bestTree2Count, neigh);
         }
 
         vector<int> res(n);
         for(int i = 0; i < n; i++){
-            int neigh = bfs(adjList1, i, k);
+            int neigh = dfs(adjList1, i, k);
             res[i] = neigh + bestTree2Count;
         }
 
