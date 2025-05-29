@@ -27,8 +27,8 @@ private:
 
                 group.insert(node);
                 for(const auto & neigh : adjList[node]){
-                    if(!firstNonAdjacent.count(node) && !secondNonAdjacent.count(node)){
-                        continue;
+                    if (firstNonAdjacent.count(neigh) || secondNonAdjacent.count(neigh)) {
+                        continue;  
                     }
                     q.push_back(neigh);
                 }
