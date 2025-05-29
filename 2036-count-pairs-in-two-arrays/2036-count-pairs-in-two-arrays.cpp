@@ -9,24 +9,17 @@ public:
         }
 
         sort(diff.begin(), diff.end());
-        for(int i = 0; i < diff.size(); i++){
-            int d = diff[i];
-
-            if(d > 0){
-                pairs += diff.size() - i - 1;
-                continue;
+        int l = 0;
+        int r = diff.size() - 1;
+        while(l < r) {
+            int sum = diff[l] + diff[r];
+            if(sum > 0) {
+                pairs += r - l;
+                r--;
+            } else {
+                l++;
             }
-
-            int target = 0 - d; 
-            auto it = upper_bound(diff.begin(), diff.end(), target);
-            
-            
-            int dist = diff.end() - it;
-
-            pairs += dist;
         }
-
-        
         return pairs;
     }
 };
