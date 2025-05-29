@@ -11,47 +11,27 @@ private:
 
         
 
-        deque<int> q;
-        q.push_back(0);
-
         bool first = true;
         vector<color> colors(adjList.size(), NOT_YET_COLORED);
-        while(!q.empty()){
-            int n = q.size();            
-            color color = first ? BLACK : WHITE;
-            for(int i = 0; i < n; i++){
-                int node = q.front();
-                q.pop_front();
-
-                
-
-                if(colors[node] != NOT_YET_COLORED){
-                    continue;
-                }
-
-                colors[node] = color;
-                for(const auto & neigh : adjList[node]){
-                    if (colors[neigh] != NOT_YET_COLORED) {
-                        continue;  
-                    }
-                    q.push_back(neigh);
-                }
-            }
-            first = !first;
-
-        }
-        int whiteCount = 0;
         int blackCount = 0;
-        for(const auto & color : colors ){
-            if(color == BLACK){
-                blackCount++;
-            } else {
-                whiteCount++;
-            }
-        }
+        int whiteCount = 0;
+        dfs(adjList, true, colors, 0, blackCount, whiteCount);
         return {colors, blackCount, whiteCount};
     }
+    void dfs(const vector<vector<int>>&adjList, bool black, vector<color>& colors, int node, int& blackCount, int& whiteCount) const {
+        if(colors[node] != NOT_YET_COLORED){
+            return;
+        }
 
+        color color = black ? BLACK : WHITE;
+        blackCount = black ? blackCount + 1 : blackCount;
+        whiteCount = !black ? whiteCount + 1 : whiteCount;
+        colors[node] = color;
+        
+        for(const auto & neigh : adjList[node]){
+            dfs(adjList, !black, colors, neigh, blackCount, whiteCount);
+        }
+    }
     vector<vector<int>> getAdjList(vector<vector<int>>& edges) const {
         int n = edges.size() + 1;
         vector<vector<int>> adjList(n);
