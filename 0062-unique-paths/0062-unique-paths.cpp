@@ -1,24 +1,29 @@
 class Solution {
 public:
     int uniquePaths(int m, int n) {
-        vector<tuple<int, int>> dirs {
-            {0, 1},
-            {1, 0},
-        };
+        int h = n - 1;
+        int v = m - 1;
 
-        vector<int> dp(n, 0);
-
-        dp[0] = 1;
-
-        for(int r = 0; r < m; r++){
-            for(int c = 0; c < n; c++){
-                if(c + 1 < n){
-                    dp[c + 1] += dp[c];
-                }
+        int limiter = max(h, v);
+        int nonLimiter = min(h, v);
+        long long res = 1;
+        int top = h + v;
+        int right = 1;
+        while(top > limiter) {
+            res *= top;
+            top--;
+            if(right <= nonLimiter){
+                res /= right;
             }
+            right++;
+            
         }
 
-        return dp.back();
+        return res;
+
+        
 
     }
+
+    
 };
