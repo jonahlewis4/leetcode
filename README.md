@@ -214,6 +214,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0022-generate-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/jonahlewis4/leetcode/tree/master/0042-trapping-rain-water) |
+| [0062-unique-paths](https://github.com/jonahlewis4/leetcode/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/jonahlewis4/leetcode/tree/master/0063-unique-paths-ii) |
 | [0070-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0070-climbing-stairs) |
 | [0091-decode-ways](https://github.com/jonahlewis4/leetcode/tree/master/0091-decode-ways) |
@@ -417,6 +418,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0043-multiply-strings](https://github.com/jonahlewis4/leetcode/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/jonahlewis4/leetcode/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/jonahlewis4/leetcode/tree/master/0050-powx-n) |
+| [0062-unique-paths](https://github.com/jonahlewis4/leetcode/tree/master/0062-unique-paths) |
 | [0066-plus-one](https://github.com/jonahlewis4/leetcode/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/jonahlewis4/leetcode/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0070-climbing-stairs) |
@@ -1207,4 +1209,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0173-binary-search-tree-iterator) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/jonahlewis4/leetcode/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
