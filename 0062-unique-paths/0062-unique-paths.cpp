@@ -6,25 +6,19 @@ public:
             {1, 0},
         };
 
-        vector<vector<int>> dp(m, vector<int>(n, 0));
+        vector<int> dp(n, 0);
 
-        dp[0][0] = 1;
+        dp[0] = 1;
 
         for(int r = 0; r < m; r++){
             for(int c = 0; c < n; c++){
-                for(const auto & dir : dirs) {
-                    auto [xOffset, yOffset] = dir;
-                    int newR = r + xOffset;
-                    int newC = c + yOffset;
-
-                    if(newR >= m || newC >= n){
-                        continue;
-                    }
-                    dp[newR][newC] += dp[r][c] ;
+                if(c + 1 < n){
+                    dp[c + 1] += dp[c];
                 }
             }
         }
 
-        return dp[m - 1][n - 1];
+        return dp.back();
+
     }
 };
