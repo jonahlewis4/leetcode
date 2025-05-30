@@ -10,8 +10,8 @@ public:
             adjList[i].push_back(edges[i]);
         }
 
-        priority_queue<int, vector<int>, greater<int>> q1;
-        priority_queue<int, vector<int>, greater<int>> q2;
+        queue<int> q1;
+        queue<int> q2;
         vector<bool> visit1(edges.size(), false);
         vector<bool> visit2(edges.size(), false);
         q1.push(node1);
@@ -22,7 +22,7 @@ public:
 
             while(!q1.empty() || !q2.empty()){
                 if(!q1.empty()){
-                    int top = q1.top();
+                    int top = q1.back();
                     q1.pop();
                     //might not need this check
                     if(visit1[top]){
@@ -30,7 +30,7 @@ public:
                     }
                     if(visit2[top]){
                         if(!q2.empty()){
-                            int top2 = q2.top();
+                            int top2 = q2.back();
                             if(visit1[top2]){
                                 if(top2 < top){
                                     return top2;
@@ -50,7 +50,7 @@ public:
 
 
                 if(!q2.empty()){
-                    int top = q2.top();
+                    int top = q2.back();
                     q2.pop();
 
                     if(visit2[top]){
