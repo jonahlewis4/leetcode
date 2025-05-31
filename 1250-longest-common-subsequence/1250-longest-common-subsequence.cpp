@@ -65,11 +65,34 @@ class Solution {
         }
     };
 
+    class Tabulation{
+        const string& text1;
+        const string& text2;
+
+        vector<vector<int>> dp;
+    public:
+        Tabulation(const string& text1, const string& text2) : text1(text1), text2(text2) {
+            dp.resize(text1.size() + 1, vector<int>(text2.size() + 1, 0));
+        }
+
+        int Solution() {
+            for(int r = text1.size() - 1; r >= 0; r--){
+                for(int c = text2.size() - 1; c >= 0; c--) {
+                    if(text1[r] == text2[c]){
+                        dp[r][c] = 1 + dp[r + 1][c + 1];
+                        continue;
+                    }
+
+                    dp[r][c] = max(dp[r + 1][c], dp[r][c + 1]);
+                }
+            }
+
+            return dp[0][0];
+        }
+    };
+
 public:
     int longestCommonSubsequence(string text1, string text2) {
-        return Memo(text1, text2).Solution();
+        return Tabulation(text1, text2).Solution();
     }
-
-
-
 };
