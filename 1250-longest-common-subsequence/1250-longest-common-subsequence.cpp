@@ -69,25 +69,32 @@ class Solution {
         const string& text1;
         const string& text2;
 
-        vector<vector<int>> dp;
+        vector<int> dp;
     public:
         Tabulation(const string& text1, const string& text2) : text1(text1), text2(text2) {
-            dp.resize(text1.size() + 1, vector<int>(text2.size() + 1, 0));
+            dp.resize(text2.size() + 1, 0);
         }
 
         int Solution() {
             for(int r = text1.size() - 1; r >= 0; r--){
+                int right = 0;
+                int bottomRight = 0;
                 for(int c = text2.size() - 1; c >= 0; c--) {
+                    int bottom = dp[c];
                     if(text1[r] == text2[c]){
-                        dp[r][c] = 1 + dp[r + 1][c + 1];
+                        dp[c] = bottomRight + 1;
+                        bottomRight = bottom;
+                        right = dp[c];
                         continue;
                     }
+                    
+                    bottomRight = bottom;
+                    dp[c] = max(right, bottom);
 
-                    dp[r][c] = max(dp[r + 1][c], dp[r][c + 1]);
                 }
             }
 
-            return dp[0][0];
+            return dp[0];
         }
     };
 
