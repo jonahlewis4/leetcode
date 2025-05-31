@@ -18,20 +18,15 @@ public:
                     end2 = nums.size();
                 }
 
-                //forEach in right window, binary search to find all of the ones in the left that are > 2 * right value
+                //forEach in right window, search to find number less than num to Beat
 
-                for(int i = start2; i < end2; i++){
-                    long long rightVal = nums[i];
-                    long long numToBeat = 2 * rightVal;
-
-                    
-                    auto start1Itr = nums.begin() + start1;
-                    auto end1Itr = nums.begin() + end1;
-
-                    //count number of elements in left which are greater than numToBeat
-                    auto firstNumGreaterItr = upper_bound(start1Itr, end1Itr, numToBeat);
-                    int amountGreater = end1Itr - firstNumGreaterItr;
-                    pairs += amountGreater;    
+                int j = start2;
+                for(int i = start1; i < end1; i++){
+                    while(j < end2 && nums[i] > (long long)nums[j] * 2){
+                        // pairs++;
+                        j++;
+                    }
+                    pairs += j - start2;
                 }
 
                 //merge left and right subarrays
