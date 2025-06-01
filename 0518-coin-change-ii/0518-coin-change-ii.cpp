@@ -1,9 +1,7 @@
 class Solution {
-public:
-    int change(int amount, vector<int>& coins) {
-        vector<vector<long long>> dp(amount + 1, vector<long long>(coins.size(), 0));
-        
-        const auto & compute = [amount, &coins, &dp](int curAmount, int coinI) -> long long {
+    private:
+
+    long long calc(int amount,const vector<int> &coins, const vector<vector<long long>> &dp, int curAmount, int coinI) const {
             if(amount == curAmount){
                 return 1;
             }
@@ -15,19 +13,13 @@ public:
             }
             return dp[curAmount][coinI];
         };
-
-        const auto & skip = [amount, &coins, &dp, &compute](int amountI, int coinI){
-            return compute(amountI, coinI + 1);
-        };
-
-        const auto & use = [amount, &coins, &dp, &compute](int amountI, int coinI){
-            return compute(amountI + coins[coinI], coinI);
-        };
-
+public:
+    int change(int amount, vector<int>& coins) {
+        vector<vector<long long>> dp(amount + 1, vector<long long>(coins.size(), 0));
         for(int amountI = dp.size() - 1; amountI >= 0; amountI--){
             for(int coinI = dp[0].size() - 1; coinI >= 0; coinI--){
-                int useCoin = use(amountI, coinI);
-                int skipCoin = skip(amountI, coinI);
+                int useCoin = calc(amount, coins, dp, amountI + coins[coinI], coinI);
+                int skipCoin = calc(amount, coins, dp, amountI, coinI + 1);
                 dp[amountI][coinI] = (long long)(useCoin) + skipCoin;
             }
         }
