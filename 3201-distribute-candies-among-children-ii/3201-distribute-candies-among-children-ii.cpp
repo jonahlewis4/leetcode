@@ -1,20 +1,17 @@
 class Solution {
 public:
     long long distributeCandies(int n, int limit) {
-        long long ans = 0;
-        for(int i = 0; i <= min(limit, n); i++){
-            int m = n - i;
-
-            //if m > limit * 2 continue because it cannot be split
-            if(m > limit * 2) {
-                continue;
+        auto const & combinate = [](int x) -> long long {
+            if(x <= 0) {
+                return 0;
             }
+            return (long long)x * (x - 1) / 2;
 
-            int atMost = min(limit, m);
-            int atLeast = max(0, m - limit);
-            ans += atMost - atLeast  + 1;
-            
-        }
-        return ans;
+        };
+
+
+        return combinate(n + 2) - 3 * combinate(n - (limit + 1) + 2) +  
+        3 * combinate(n - 2 * (limit + 1) + 2) - combinate (n - 3 * (limit + 1) + 2);
+
     }
 };
