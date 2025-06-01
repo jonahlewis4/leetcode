@@ -5,25 +5,14 @@ public:
         for(int i = 0; i <= min(limit, n); i++){
             int m = n - i;
 
-            if(m <= limit) {
-                ans += m + 1;
+            //if m > limit * 2 continue because it cannot be split
+            if(m > limit * 2) {
                 continue;
             }
 
-            int upperRemoved = m - limit;
-            int lowerRemoved = m - limit;
-            if(upperRemoved > (m + 1) / 2) {
-                upperRemoved = (m + 1) / 2;
-            }
-            if(lowerRemoved > (m + 1) / 2){
-                if((m + 1) % 2 == 1){
-                    lowerRemoved = (m + 1) / 2 + 1;
-                } else {
-                    lowerRemoved = (m + 1) / 2;
-                }
-            }
-            int additions = m + 1 - lowerRemoved - upperRemoved;
-            ans += additions;
+            int atMost = min(limit, m);
+            int atLeast = max(0, m - limit);
+            ans += atMost - atLeast  + 1;
             
         }
         return ans;
