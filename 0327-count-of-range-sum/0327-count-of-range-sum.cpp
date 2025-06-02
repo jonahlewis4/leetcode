@@ -1,6 +1,6 @@
 class Solution {
     template <typename T>
-    void merge(vector<T> &arr, int start1, int start2, int end1, int end2) const {
+    inline void merge(vector<T> &arr, int start1, int start2, int end1, int end2) const {
         vector<T> merged(end2 - start1);
         int mergeI = 0;
 
