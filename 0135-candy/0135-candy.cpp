@@ -1,23 +1,31 @@
 class Solution {
 public:
     int candy(vector<int>& ratings) {
-        vector<int> candies(ratings.size(), 1);
-        for(int i = 1; i < candies.size(); i++){
+        int up = 0;
+        int down = 0;
+        int lastUp = 0;
+
+        int total = 1;
+        for(int i = 1; i < ratings.size(); i++){
             if(ratings[i] > ratings[i - 1]){
-                candies[i] = candies[i - 1] + 1;
+                up++;
+                down = 0;
+                lastUp = up + 1;
+                total += up + 1;
+            } else if (ratings[i] < ratings[i - 1]){
+                down++;
+                up = 0;
+                if(down >= lastUp) {
+                    total++;
+                }
+                total += down;
+            } else {
+                up = 0;
+                down = 0;
+                lastUp = 0;
+                total++;
             }
-        }
-
-        for(int i = candies.size() - 2; i >= 0; i--){
-            if(ratings[i] > ratings[i + 1]){
-                candies[i] = max(candies[i + 1] + 1, candies[i]);
-            }
-        }
-
-        int sum = 0;
-        for(const auto & candy : candies){
-            sum += candy;
-        }
-        return sum;
+        } 
+        return total;
     }
 };
