@@ -1,15 +1,9 @@
 class Solution {
 private:
-    vector<int> nums;
-    int target;
-    vector<int> dp;
-    int offset;
     
 public:
-    int findTargetSumWays(const vector<int>& _nums, int target) {
+    int findTargetSumWays(const vector<int>& nums, int target) {
         
-        this->target = target;
-        nums = _nums;
         
         int sum = 0;
         for(const auto & num : nums){
@@ -20,8 +14,7 @@ public:
             return 0;
         }
 
-        offset = sum;
-        dp.resize(2 * sum + 1, 0);
+        vector<int> dp(2 * sum + 1, 0);
 
 
 
