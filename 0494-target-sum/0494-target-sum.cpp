@@ -35,9 +35,38 @@ public:
         for(const auto & num : nums){
             sum += num;
         }
-        offset = sum;
-        dp.resize(2 * sum + 1, vector<int>(nums.size(), INT_MAX));
+        
+        if(abs(target) > sum) {
+            return 0;
+        }
 
-        return recurse(0, 0);
+        offset = sum;
+        dp.resize(nums.size() + 1, vector<int>(2 * sum + 1, 0));
+
+
+
+        dp[nums.size()][target + sum] = 1;
+        auto &_dp = dp;
+        for(int r = nums.size(); r >= 1; r--){
+            for(int c = -sum; c <= sum; c++){
+                if(dp[r][c + sum] > 0){
+                    int num = nums[r - 1];
+
+                    int left = c - num;
+                    int right = c + num;
+
+                    if(left >= -sum && left <= sum){
+                        dp[r - 1][left + sum] = dp[r][c + sum] + dp[r - 1][left + sum];
+                    }
+
+                    if(right >= -sum && right <= sum){
+                        dp[r - 1][right + sum] = dp[r][c + sum] + dp[r - 1][right + sum];
+                    }
+                }
+            }
+        }
+
+
+        return dp[0][sum];
     }
 };
