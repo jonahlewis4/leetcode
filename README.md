@@ -133,6 +133,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1364-tuple-with-same-product](https://github.com/jonahlewis4/leetcode/tree/master/1364-tuple-with-same-product) |
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/jonahlewis4/leetcode/tree/master/1421-find-numbers-with-even-number-of-digits) |
+| [1424-maximum-candies-you-can-get-from-boxes](https://github.com/jonahlewis4/leetcode/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1477-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/jonahlewis4/leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
@@ -1112,6 +1113,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1036-rotting-oranges](https://github.com/jonahlewis4/leetcode/tree/master/1036-rotting-oranges) |
 | [1177-tree-diameter](https://github.com/jonahlewis4/leetcode/tree/master/1177-tree-diameter) |
+| [1424-maximum-candies-you-can-get-from-boxes](https://github.com/jonahlewis4/leetcode/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1432-check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1432-check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jonahlewis4/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
@@ -1196,6 +1198,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0801-is-graph-bipartite](https://github.com/jonahlewis4/leetcode/tree/master/0801-is-graph-bipartite) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/jonahlewis4/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [1177-tree-diameter](https://github.com/jonahlewis4/leetcode/tree/master/1177-tree-diameter) |
+| [1424-maximum-candies-you-can-get-from-boxes](https://github.com/jonahlewis4/leetcode/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1706-min-cost-to-connect-all-points](https://github.com/jonahlewis4/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 | [2379-maximum-total-importance-of-roads](https://github.com/jonahlewis4/leetcode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2438-find-closest-node-to-given-two-nodes](https://github.com/jonahlewis4/leetcode/tree/master/2438-find-closest-node-to-given-two-nodes) |
