@@ -516,6 +516,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2036-count-pairs-in-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/2036-count-pairs-in-two-arrays) |
 | [2414-move-pieces-to-obtain-a-string](https://github.com/jonahlewis4/leetcode/tree/master/2414-move-pieces-to-obtain-a-string) |
 | [3195-separate-black-and-white-balls](https://github.com/jonahlewis4/leetcode/tree/master/3195-separate-black-and-white-balls) |
+| [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/jonahlewis4/leetcode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 ## Matrix
 |  |
 | ------- |
@@ -653,6 +654,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3195-separate-black-and-white-balls](https://github.com/jonahlewis4/leetcode/tree/master/3195-separate-black-and-white-balls) |
 | [3410-find-longest-self-contained-substring](https://github.com/jonahlewis4/leetcode/tree/master/3410-find-longest-self-contained-substring) |
 | [3451-string-compression-iii](https://github.com/jonahlewis4/leetcode/tree/master/3451-string-compression-iii) |
+| [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/jonahlewis4/leetcode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -1075,6 +1077,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2215-finding-3-digit-even-numbers](https://github.com/jonahlewis4/leetcode/tree/master/2215-finding-3-digit-even-numbers) |
 | [3201-distribute-candies-among-children-ii](https://github.com/jonahlewis4/leetcode/tree/master/3201-distribute-candies-among-children-ii) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
+| [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/jonahlewis4/leetcode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 ## Breadth-First Search
 |  |
 | ------- |
