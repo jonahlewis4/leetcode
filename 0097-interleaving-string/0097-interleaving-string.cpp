@@ -32,7 +32,7 @@ public:
 
                 int below = dp[c];
 
-                bool cMatch = c < s2.size() && s2[c] == s3[k];
+                bool cMatch = s2[c] == s3[k];
                 bool rMatch = r < s1.size() && s1[r] == s3[k];
 
                 if(cMatch && right) {
