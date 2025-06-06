@@ -285,6 +285,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2379-maximum-total-importance-of-roads](https://github.com/jonahlewis4/leetcode/tree/master/2379-maximum-total-importance-of-roads) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/jonahlewis4/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2509-minimize-xor](https://github.com/jonahlewis4/leetcode/tree/master/2509-minimize-xor) |
+| [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/jonahlewis4/leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [3195-separate-black-and-white-balls](https://github.com/jonahlewis4/leetcode/tree/master/3195-separate-black-and-white-balls) |
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/jonahlewis4/leetcode/tree/master/3307-find-the-maximum-sum-of-node-values) |
 | [3647-zero-array-transformation-iii](https://github.com/jonahlewis4/leetcode/tree/master/3647-zero-array-transformation-iii) |
@@ -421,6 +422,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2300-construct-string-with-repeat-limit](https://github.com/jonahlewis4/leetcode/tree/master/2300-construct-string-with-repeat-limit) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/jonahlewis4/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jonahlewis4/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
+| [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/jonahlewis4/leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [3227-find-missing-and-repeated-values](https://github.com/jonahlewis4/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3410-find-longest-self-contained-substring](https://github.com/jonahlewis4/leetcode/tree/master/3410-find-longest-self-contained-substring) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
@@ -654,6 +656,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2300-construct-string-with-repeat-limit](https://github.com/jonahlewis4/leetcode/tree/master/2300-construct-string-with-repeat-limit) |
 | [2414-move-pieces-to-obtain-a-string](https://github.com/jonahlewis4/leetcode/tree/master/2414-move-pieces-to-obtain-a-string) |
 | [2465-shifting-letters-ii](https://github.com/jonahlewis4/leetcode/tree/master/2465-shifting-letters-ii) |
+| [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/jonahlewis4/leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [3174-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/jonahlewis4/leetcode/tree/master/3174-minimum-number-of-changes-to-make-binary-string-beautiful) |
 | [3194-find-words-containing-character](https://github.com/jonahlewis4/leetcode/tree/master/3194-find-words-containing-character) |
 | [3195-separate-black-and-white-balls](https://github.com/jonahlewis4/leetcode/tree/master/3195-separate-black-and-white-balls) |
@@ -857,6 +860,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/jonahlewis4/leetcode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1909-buildings-with-an-ocean-view](https://github.com/jonahlewis4/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
+| [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/jonahlewis4/leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 ## Monotonic Stack
 |  |
 | ------- |
