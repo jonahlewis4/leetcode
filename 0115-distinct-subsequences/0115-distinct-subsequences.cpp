@@ -5,17 +5,17 @@ public:
             return 0;
         }
 
-        vector<int> dp(t.size(), 0);
+        vector<unsigned int> dp(t.size(), 0);
         int cc = t.size();
         int rc = s.size();
 
         for(int r = rc - 1; r >= 0; r--){
-            int c = cc - 1;
-            int bottomRight = 1;
+            unsigned int c = cc - 1;
+            unsigned int bottomRight = 1;
             for(int i = 0; i < min(cc, rc - r); i++){
                 int bottom = dp[c];
 
-                long long ways = bottom;
+                unsigned int ways = bottom;
                 if(s[r] == t[c]){
                     ways += bottomRight;
                 }
