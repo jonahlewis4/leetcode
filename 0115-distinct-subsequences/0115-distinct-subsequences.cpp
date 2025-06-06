@@ -12,7 +12,7 @@ public:
         for(int r = rc - 1; r >= 0; r--){
             int c = cc - 1;
             int bottomRight = 1;
-            for(int i = 0; i < cc; i++){
+            for(int i = 0; i < min(cc, rc - r); i++){
                 int bottom = dp[c];
 
                 long long ways = bottom;
