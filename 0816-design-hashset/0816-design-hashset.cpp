@@ -1,20 +1,43 @@
 class MyHashSet {
-    vector<bool> oset = vector<bool>(1e6 + 1, false);
+    vector<list<int>> oset = vector<list<int>>(200);
+
+    int hash(int key) const {
+        return key % 200;
+    } 
+
+
 public:
     MyHashSet() {
         
     }
     
     void add(int key) {
-        oset[key] = true;
+        if(contains(key)){
+            return;
+        }
+        oset[hash(key)].push_back(key);
     }
     
     void remove(int key) {
-        oset[key] = false;
+        auto itr = oset[hash(key)].begin();
+        while(itr != oset[hash(key)].end()){
+            if(*itr == key){
+                oset[hash(key)].erase(itr);
+                break;
+            }
+            itr = next(itr);
+        }
     }
     
     bool contains(int key) {
-        return oset[key];
+        auto itr = oset[hash(key)].begin();
+        while(itr != oset[hash(key)].end()){
+            if(*itr == key){
+                return true;
+            }
+            itr = next(itr);
+        }
+        return false;
     }
 };
 
