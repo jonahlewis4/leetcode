@@ -1,5 +1,5 @@
 class MyHashSet {
-    vector<list<int>> oset = vector<list<int>>(1000);
+    vector<set<int>> oset = vector<set<int>>(1000);
 
     int hash(int key) const {
         return key % 1000;
@@ -12,32 +12,15 @@ public:
     }
     
     void add(int key) {
-        if(contains(key)){
-            return;
-        }
-        oset[hash(key)].push_back(key);
+        oset[hash(key)].insert(key);
     }
     
     void remove(int key) {
-        auto itr = oset[hash(key)].begin();
-        while(itr != oset[hash(key)].end()){
-            if(*itr == key){
-                oset[hash(key)].erase(itr);
-                break;
-            }
-            itr = next(itr);
-        }
+        oset[hash(key)].erase(key);
     }
     
     bool contains(int key) {
-        auto itr = oset[hash(key)].begin();
-        while(itr != oset[hash(key)].end()){
-            if(*itr == key){
-                return true;
-            }
-            itr = next(itr);
-        }
-        return false;
+        return oset[hash(key)].count(key);
     }
 };
 
