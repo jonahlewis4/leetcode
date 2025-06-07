@@ -9,11 +9,30 @@ public:
 
         int bestLen = word.size() - numFriends + 1;
 
-        for(int i = 0; i < word.size(); i++){
-            int remainingLength = min(bestLen, int(word.size()) - i);
-            string sub = word.substr(i, remainingLength);
-            ans = max(sub, ans);
+        int bestSuffixStart = bestPrefixStart(word);
+
+        //either goes to end, or grab the bestLen;
+
+        return word.substr(bestSuffixStart, min(bestLen, int(word.size()) - bestSuffixStart));
+       
+    }
+
+    int bestPrefixStart(const string& word) const {
+        int l = 0;
+        int r = 1;
+        int k = 0;
+        while(r + k < word.size()){
+            if(word[l + k] == word[r + k]){
+                k++;
+            } else if (word[l + k] < word[r + k]){
+                l = max(l + k + 1, r);
+                r = l + 1;
+                k = 0;
+            } else {
+                r++;
+                k = 0;
+            }
         }
-        return ans;
+        return l;
     }
 };
