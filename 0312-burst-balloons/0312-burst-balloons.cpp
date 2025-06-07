@@ -1,36 +1,32 @@
 class Solution {
-    vector<vector<int>> dp;
-    vector<int> nums;
-
-    int compute(int l, int r) {
-        if (dp[l][r] != -1){
-            return dp[l][r];
-        }
-        int best = 0;
-        for(int i = l + 1; i < r; i++){
-            int left = compute(l, i);
-            int right = compute(i, r);
-            int valIfLast = left + right + nums[l] * nums[i] * nums[r];
-            best = max(best, valIfLast);
-        }
-        dp[l][r] = best;
-        return best;
-    }
-
-public:
-    int maxCoins(vector<int>& nums) {
-        int n = nums.size();
-        int k = n + 2;
-
-        nums.resize(k);
+    template <typename T>
+    void wrap1s(vector<T>& nums) const {
+        nums.resize(nums.size() + 2);
         for(int i = nums.size() - 2; i >= 1; i--){
             nums[i] = nums[i - 1];
         }
-        nums.back() = 1;
         nums[0] = 1;
-        this->nums = nums;
-        dp.resize(k, vector<int>(k, -1));
+        nums.back() = 1;
+    }
+public:
 
-        return compute(0, dp.size() - 1);
+    int maxCoins(vector<int>& nums) {
+        wrap1s(nums);
+        vector<vector<int>> dp(nums.size() - 1, vector<int>(nums.size(), 0));
+
+        for(int r = dp.size() - 2; r >= 0; r--){
+            for(int c = dp[r].size() - (dp.size() - r) + 1; c < dp[r].size(); c++){
+                int best = 0;
+                for(int k = r + 1; k < c; k++){
+                    int left = dp[r][k];
+                    int right = dp[k][c];
+                    int local = left + right + nums[r] * nums[k] * nums[c];
+                    best = max(best, local);
+                }
+                dp[r][c] = best;
+            }
+        }
+
+        return dp[0].back();
     }
 };
