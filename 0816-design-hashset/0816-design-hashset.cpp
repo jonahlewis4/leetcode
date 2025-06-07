@@ -1,8 +1,8 @@
 class MyHashSet {
-    vector<set<int>> oset = vector<set<int>>(100);
+    vector<set<int>> oset = vector<set<int>>(10);
 
     int hash(int key) const {
-        return key % 100;
+        return key % 10;
     } 
 
 
