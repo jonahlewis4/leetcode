@@ -1,5 +1,5 @@
 class MyHashMap {
-    static constexpr unsigned int hashSize = 1000;
+    static constexpr unsigned int hashSize = 2069;
     vector<list<pair<int, int>>> lookup = vector<list<pair<int, int>>>(hashSize);
     int hash(int key) const {
         return key % hashSize;
