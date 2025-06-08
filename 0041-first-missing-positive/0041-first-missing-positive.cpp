@@ -1,21 +1,29 @@
 class Solution {
 public:
     int firstMissingPositive(vector<int>& nums) {
-        
-        for(int i = 0; i < nums.size(); i++){
-            long long nextIdx = (long long)nums[i] - 1;
-            while(nextIdx >= 0 && nextIdx < nums.size() && nums[nextIdx] != nextIdx + 1){
-                long long oldNext = (long long)nums[nextIdx] - 1;
-                nums[nextIdx] = nextIdx + 1;
-                nextIdx = oldNext;
+        int n = nums.size();
+
+        // Use cycle sort to place positive elements smaller than n
+        // at the correct index
+        int i = 0;
+        while (i < n) {
+            if (nums[i] > 0 && nums[i] <= n && nums[i] != nums[nums[i] - 1]) {
+                swap(nums[i], nums[nums[i] - 1]);
+            } else {
+                i++;
             }
         }
 
-        for(int i = 0; i < nums.size(); i++){
-            if(nums[i] != i + 1){
+        // Iterate through nums
+        // return smallest missing positive integer
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != i + 1) {
                 return i + 1;
             }
         }
-        return nums.size() + 1;
+
+        // If all elements are at the correct index
+        // the smallest missing positive number is n + 1
+        return n + 1;
     }
 };
