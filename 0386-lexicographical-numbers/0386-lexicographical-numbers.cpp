@@ -3,7 +3,6 @@ public:
     vector<int> lexicalOrder(int n) {
         vector<int> ans;
         ans.push_back(1);
-
         for(int i = 0; i < n - 1; i++) {
             int tenX = ans.back() * 10;
             if(tenX <= n) {
