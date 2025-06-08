@@ -993,6 +993,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0332-reconstruct-itinerary](https://github.com/jonahlewis4/leetcode/tree/master/0332-reconstruct-itinerary) |
 | [0339-nested-list-weight-sum](https://github.com/jonahlewis4/leetcode/tree/master/0339-nested-list-weight-sum) |
 | [0364-nested-list-weight-sum-ii](https://github.com/jonahlewis4/leetcode/tree/master/0364-nested-list-weight-sum-ii) |
+| [0386-lexicographical-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0386-lexicographical-numbers) |
 | [0417-pacific-atlantic-water-flow](https://github.com/jonahlewis4/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/jonahlewis4/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0543-diameter-of-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0543-diameter-of-binary-tree) |
@@ -1223,6 +1224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/jonahlewis4/leetcode/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/jonahlewis4/leetcode/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/jonahlewis4/leetcode/tree/master/0212-word-search-ii) |
+| [0386-lexicographical-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0386-lexicographical-numbers) |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/jonahlewis4/leetcode/tree/master/0440-k-th-smallest-in-lexicographical-order) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/jonahlewis4/leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 ## Graph
