@@ -15,22 +15,6 @@ class Solution {
     bool match(int sI, int pI) const {
         return s[sI] == p[pI] || p[pI] == '.';
     }
-
-    void update(
-        int res,
-        int& botRight,
-        int& twoRight,
-        int& right,
-        std::vector<bool>& dp,
-        int below,
-        int c
-    ) {
-        twoRight = right;
-        botRight = below;
-        right = res;
-        dp[c] = res;
-    }
-
 public:
     bool isMatch(string s, string p) {
         this->s = s;
@@ -51,8 +35,8 @@ public:
 
         for(int r = s.size() - 1; r >= 0; r--) {
             int botRight = dp.back();
-            int twoRight = false;
             dp.back() = false;
+            int twoRight = false;
             int right = dp.back();
 
             
@@ -60,13 +44,17 @@ public:
             for(int c = p.size() - 1; c >= 0; c--) {
                 int below = dp[c];
 
+                const auto & update = [&botRight, &twoRight, &right, &dp, &below, &c](int res) {
+                    twoRight = right;
+                    botRight = below;
+                    right = res;
+                    dp[c] = res;
+                };
+
                 if(p[c] == '*'){
-                    update(false, botRight, twoRight, right, dp, below, c);
+                    update(false);
                     continue;
                 }
-
-
-                
 
 
                 if(starAfter(c)) {
@@ -76,17 +64,15 @@ public:
                     }
                     res |= twoRight;
 
-                    update(res, botRight, twoRight, right, dp, below, c);
+                    update(res);
                     continue;
                 } else {
                     if (match(r, c)) {
                         bool res = botRight;
-                        update(res, botRight, twoRight, right, dp, below, c);
-                        continue;
+                        update(res);
+                    } else {
+                        update(false);
                     }
-                    update(false, botRight, twoRight, right, dp, below, c);
-
-
                 }
             }
 
