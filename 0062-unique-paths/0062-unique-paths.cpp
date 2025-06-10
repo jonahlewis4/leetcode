@@ -1,21 +1,15 @@
 class Solution {
 public:
     int uniquePaths(int m, int n) {
-        if(m < n) {
-            swap(m, n);
+        int denom = min(m, n) - 1;
+        int numerator = (m + n) - 2;
+        int mulEnd = numerator - denom;
+        long long res = 1;
+        for(int i = numerator; i > mulEnd; i--){
+            res *= i;
+            res /= (numerator - i + 1);
         }
-
-        vector<int> dp(n + 1, 0);
-        dp.back() = 1;
-
-        for(int r = m - 1; r >= 0; r--){
-            for(int c = n - 1; c >= 0; c--){
-                dp[c] = dp[c] + dp[c + 1];   
-            }
-            dp.back() = 0;
-        }
-        return dp[0];
-
-
+        
+        return res;
     }
 };
