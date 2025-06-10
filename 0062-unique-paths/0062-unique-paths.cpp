@@ -1,29 +1,21 @@
 class Solution {
 public:
     int uniquePaths(int m, int n) {
-        int h = n - 1;
-        int v = m - 1;
-
-        int limiter = max(h, v);
-        int nonLimiter = min(h, v);
-        long long res = 1;
-        int top = h + v;
-        int right = 1;
-        while(top > limiter) {
-            res *= top;
-            top--;
-            if(right <= nonLimiter){
-                res /= right;
-            }
-            right++;
-            
+        if(m < n) {
+            swap(m, n);
         }
 
-        return res;
+        vector<int> dp(n + 1, 0);
+        dp.back() = 1;
 
-        
+        for(int r = m - 1; r >= 0; r--){
+            for(int c = n - 1; c >= 0; c--){
+                dp[c] = dp[c] + dp[c + 1];   
+            }
+            dp.back() = 0;
+        }
+        return dp[0];
+
 
     }
-
-    
 };
