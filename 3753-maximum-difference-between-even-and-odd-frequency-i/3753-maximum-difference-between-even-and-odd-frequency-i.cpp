@@ -11,7 +11,7 @@ public:
 
         for(const auto & p : freq) {
             int count = p.second;
-            if(count % 2 == 0){
+            if((count & 1) == 0){
                 smallestEven = min(count, smallestEven);
             } else {
                 largestOdd = max(count, largestOdd);
