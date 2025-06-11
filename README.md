@@ -698,6 +698,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3451-string-compression-iii](https://github.com/jonahlewis4/leetcode/tree/master/3451-string-compression-iii) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/jonahlewis4/leetcode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/jonahlewis4/leetcode/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
+| [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/jonahlewis4/leetcode/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -828,6 +829,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3410-find-longest-self-contained-substring](https://github.com/jonahlewis4/leetcode/tree/master/3410-find-longest-self-contained-substring) |
 | [3639-zero-array-transformation-i](https://github.com/jonahlewis4/leetcode/tree/master/3639-zero-array-transformation-i) |
 | [3647-zero-array-transformation-iii](https://github.com/jonahlewis4/leetcode/tree/master/3647-zero-array-transformation-iii) |
+| [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/jonahlewis4/leetcode/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 ## Union Find
 |  |
 | ------- |
@@ -1118,6 +1120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2868-continuous-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/2868-continuous-subarrays) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/jonahlewis4/leetcode/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3381-shortest-subarray-with-or-at-least-k-i](https://github.com/jonahlewis4/leetcode/tree/master/3381-shortest-subarray-with-or-at-least-k-i) |
+| [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/jonahlewis4/leetcode/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 ## Queue
 |  |
 | ------- |
@@ -1136,6 +1139,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3201-distribute-candies-among-children-ii](https://github.com/jonahlewis4/leetcode/tree/master/3201-distribute-candies-among-children-ii) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/jonahlewis4/leetcode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
+| [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/jonahlewis4/leetcode/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 ## Breadth-First Search
 |  |
 | ------- |
