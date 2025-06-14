@@ -1,18 +1,15 @@
 class Solution {
 public:
     bool isInterleave(string s1, string s2, string s3) {
-        
-        if(s1.size() < s2.size()){
-            swap(s1, s2);
-        }    
-
+    
         if (s2.size() + s1.size() != s3.size()){
             return false;
         }
 
-        // if(s2.empty()){
-        //     return s1 == s3;
-        // }
+        if(s1.size() < s2.size()){
+            swap(s1, s2);
+        }    
+
 
         vector<bool> dp(s2.size() + 1, false);
         dp.back() = true;
