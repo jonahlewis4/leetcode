@@ -25,9 +25,9 @@ public:
 
         for(int r = s1.size() - 1; r>=0; r--){
             dp.back() = s3[s2.size() + r] == s1[r] && dp.back();
-            bool right = dp.back();
             for(int c = s2.size() - 1; c>=0; c--){
                 bool res = false;
+                bool right = dp[c + 1];
                 bool below = dp[c];
 
                 if(s3[r + c] == s1[r] && below) {
