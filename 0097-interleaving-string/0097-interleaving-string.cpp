@@ -1,51 +1,48 @@
 class Solution {
 public:
     bool isInterleave(string s1, string s2, string s3) {
-        if(s1.size() + s2.size() != s3.size()){
+        
+        if(s1.size() < s2.size()){
+            swap(s1, s2);
+        }    
+
+        if (s2.size() + s1.size() != s3.size()){
             return false;
         }
 
-        if(s1.size() < s2.size()){
-            swap(s1, s2);
-        }
-
-        //s1 is row;
-        //s2 is col;
-        //col is the smaller of the two. Space has been minimized.
-
-        if(s2.size() == 0){
+        if(s2.empty()){
             return s1 == s3;
         }
 
         vector<bool> dp(s2.size() + 1, false);
         dp.back() = true;
 
-        for(int r = s1.size(); r >= 0; r--){
-            int right = 0;
-            for(int c = s2.size(); c >= 0; c--){
-                //k is the index in string3
-                int k = r + c;
-                if(k >= s3.size()){
-                    right = dp[c];
-                    continue;
-                }
-
-                int below = dp[c];
-
-                bool cMatch = s2[c] == s3[k];
-                bool rMatch = r < s1.size() && s1[r] == s3[k];
-
-                if(cMatch && right) {
-                    dp[c] = true;
-                } else if (rMatch && below) {
-                    dp[c] = true;
-                } else {
-                    dp[c] = false;
-                }
-                right = dp[c];
+        for(int c = dp.size() - 1; c >= 0; c--){
+            if(s3[s1.size() + c] == s2[c] && dp[c + 1]){
+                dp[c] = true;
             }
         }
 
-        return dp[0];
+        for(int r = s1.size() - 1; r>=0; r--){
+            bool right = s3[s2.size() + r] == s1[r] && dp.back();
+            dp.back() = right;
+            for(int c = s2.size() - 1; c>=0; c--){
+                bool res = false;
+                bool below = dp[c];
+
+                if(s3[r + c] == s1[r] && below) {
+                    res = true;
+                } else if (s3[r + c] == s2[c] && right) {
+                    res = true;
+                }
+
+                right = res;
+                dp[c] = res;
+
+            }
+        }
+        return dp.front();
+
+        
     }
 };
