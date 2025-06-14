@@ -57,7 +57,7 @@ private:
             int bCount = bPrefix[r + 1];
             Parity parity = countsToParity(aCount, bCount);
             int comp = compliment(parity);
-            {
+            
                 int oldIndex = idxSmallestOfParity[comp];
                 if(oldIndex != INT_MIN) {
                     //ensure b count has changed (i.e, not 0)
@@ -71,10 +71,10 @@ private:
                         best = max(best, diff);
                     }
                 }
-            }
+            
 
             //update indices of idxSmallestOfParity.
-            {
+            
                 
 
                 //look at result after moving left over 1.
@@ -102,7 +102,7 @@ private:
                 }
                 
 
-            }
+            
             
         }
 
