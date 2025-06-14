@@ -24,8 +24,8 @@ public:
         }
 
         for(int r = s1.size() - 1; r>=0; r--){
-            bool right = s3[s2.size() + r] == s1[r] && dp.back();
-            dp.back() = right;
+            dp.back() = s3[s2.size() + r] == s1[r] && dp.back();
+            bool right = dp.back();
             for(int c = s2.size() - 1; c>=0; c--){
                 bool res = false;
                 bool below = dp[c];
