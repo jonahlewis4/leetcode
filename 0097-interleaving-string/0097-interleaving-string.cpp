@@ -10,9 +10,9 @@ public:
             return false;
         }
 
-        if(s2.empty()){
-            return s1 == s3;
-        }
+        // if(s2.empty()){
+        //     return s1 == s3;
+        // }
 
         vector<bool> dp(s2.size() + 1, false);
         dp.back() = true;
@@ -42,7 +42,5 @@ public:
             }
         }
         return dp.front();
-
-        
     }
 };
