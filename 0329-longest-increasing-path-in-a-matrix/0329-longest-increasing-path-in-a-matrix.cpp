@@ -1,52 +1,53 @@
 class Solution {
-    vector<vector<int>> matrix;
-    int longest = 1;
-    vector<vector<int>> dp;
-
-    vector<tuple<int, int>> dirs = {
+    vector<vector<int>> dirs = {
         {0, 1},
         {1, 0},
-        {0, -1},
-        {-1, 0}
+        {-1, 0},
+        {0, -1}
     };
-    int search(int r, int c) {
+public:
+    int longestIncreasingPath(vector<vector<int>>& matrix) {
+        vector<vector<int>> dp(matrix.size(), vector<int>(matrix[0].size(), -1));
+
+        int maxAns = 0;
+        for(int r = dp.size() - 1; r >= 0; r--) {
+            for(int c = dp[0].size() - 1; c >= 0; c--) {
+                int longestFromHere = dfs(r, c, dp, matrix);
+                maxAns = max(maxAns, longestFromHere);
+            }
+        }
+        return maxAns;
+    }
+
+    int dfs(int r, int c, vector<vector<int>>& dp, const vector<vector<int>>& matrix) {
+    
 
         if(dp[r][c] != -1){
             return dp[r][c];
         }
 
-        int largestNeigh = 0;
+        int val = 1;
+
+
         for(const auto & dir : dirs) {
-            const auto & [rOff, cOff] = dir;
-            int newR = r + rOff;
-            int newC = c + cOff;
+            int rOffset = dir[0];
+            int cOffset = dir[1];
+            int newR = r + rOffset;
+            int newC = c + cOffset;
 
-            if(newR < 0 || newC < 0 || newR >= matrix.size() || newC >= matrix[r].size()){
-               continue;
+            if(newR < 0 || newC < 0 || newR >= matrix.size() || newC >= matrix[newR].size()){
+                continue;
             }
-
             if(matrix[newR][newC] <= matrix[r][c]){
                 continue;
             }
 
-            largestNeigh = max(largestNeigh, search(newR, newC));
+            val = max(val, 1 + dfs(newR , newC, dp, matrix));
         }
 
-        longest = max(longest, largestNeigh + 1);
-        dp[r][c] = largestNeigh + 1;
-        return largestNeigh + 1;
-    }
-public:
-    int longestIncreasingPath(vector<vector<int>>& _matrix) {
-        matrix = _matrix;
+        dp[r][c] = val;
+        return val;
 
-        dp.resize(matrix.size(), vector<int>(matrix[0].size(), -1)); 
-        for(int r = 0; r < matrix.size(); r++){
-            for(int c = 0; c < matrix[r].size(); c++){
-                search(r, c);
-            }
-        }
-
-        return longest;
+        
     }
 };
