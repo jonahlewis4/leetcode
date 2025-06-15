@@ -2,7 +2,7 @@ class Solution {
 private:
     string s;
     int k;
-
+    vector<vector<int>> sums;
     enum Parity {
         EVEN_EVEN,
         EVEN_ODD,
@@ -45,8 +45,8 @@ private:
     }
 
     int bestForAB(char a, char b) const {
-        vector<int> aPrefix = prefixArray(a);
-        vector<int> bPrefix = prefixArray(b);
+        const vector<int>& aPrefix = sums[a - '0'];
+        const vector<int>& bPrefix = sums[b - '0'];
         
         vector<int> idxSmallestOfParity(4, INT_MIN);
         idxSmallestOfParity[EVEN_EVEN] = -1;
@@ -114,6 +114,12 @@ public:
         int best = INT_MIN;
         this->s = s;
         this->k = k;
+        sums.resize('4' - '0' + 1);
+        const auto & _sums = sums;
+        for(char c = '0'; c <= '4'; c++){
+            sums[c - '0'] = prefixArray(c);
+        }
+
         for(char a = '0'; a <= '4'; a++){
             for(char b = '0'; b <= '4'; b++){
                 if(a == b){
