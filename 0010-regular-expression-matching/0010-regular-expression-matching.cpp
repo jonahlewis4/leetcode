@@ -1,85 +1,82 @@
 class Solution {
-    string s;
-    string p;
-
-    vector<vector<int>> dp;
-    bool starAfter(int pI) const {
-        if(pI + 1 >= p.size()){
+    class Parser{
+        const string& s;
+        const string& p;
+        public:
+        Parser(const string& s, const string& p): s(s), p(p) {}
+        bool starAfter(int pI) const {
+            if(pI + 1 < p.size() && p[pI + 1] == '*') {
+                return true;
+            }
             return false;
         }
-        if(p[pI + 1] == '*'){
-            return true;
+        bool match(int sI, int pI) const {
+            if(p[pI] == '.' || s[sI] == p[pI]){
+                return true;
+            }
+            return false;
         }
-        return false;
-    }
-    bool match(int sI, int pI) const {
-        return s[sI] == p[pI] || p[pI] == '.';
-    }
+    };
+
+    class Memo{
+    const string& s;
+    const string& p;
+    Parser parser;
+    vector<vector<int>> dp;
+    public:
+        Memo(const string& s, const string& p): s(s), p(p), parser(Parser(s, p)),
+            dp(vector<vector<int>>(s.size() + 1, vector<int>(p.size(), -1)))
+        {
+            
+        }
+        bool solve()  {
+            return recurse(0, 0);
+        }
+        bool recurse(int sI, int pI)  {
+            if(sI >= s.size() && pI >= p.size()) {
+                return true;
+            }
+            if(pI >= p.size()) {
+                return false;
+            }
+
+            //memoize
+            if(dp[sI][pI] != -1){
+                return dp[sI][pI];
+            }
+
+            if(sI >= s.size()){
+                if(parser.starAfter(pI)){
+                    bool skip = recurse(sI, pI + 2);
+                    dp[sI][pI] = skip;
+                    return skip;
+                }
+                dp[sI][pI] = false;
+                return false;
+            }
+
+            if(parser.starAfter(pI)) {
+                bool res = false;
+                if(parser.match(sI, pI)) {
+                    bool use = recurse(sI + 1, pI);
+                    res |= use;
+                }
+                bool skip = recurse(sI, pI + 2);
+                res |= skip;
+                dp[sI][pI] = res;
+                return res;
+            } else if (parser.match(sI, pI)) {
+                bool use = recurse(sI + 1, pI + 1);
+                dp[sI][pI] = use;
+                return use;
+            }
+
+            dp[sI][pI] = false;
+            return false;
+        }
+    } ;
 public:
     bool isMatch(string s, string p) {
-        this->s = s;
-        this->p = p;
-        vector<bool> dp(p.size() + 1, false);
-        //need to track below, right two, bottom right
-        dp.back() = true;
-
-        for(int c = dp.size() - 2; c >= 0; c--){
-            if(p[c] == '*'){
-                continue;
-            }
-
-            if(starAfter(c)){
-                dp[c] = dp[c + 2];
-            }
-        }
-
-        for(int r = s.size() - 1; r >= 0; r--) {
-            int botRight = dp.back();
-            dp.back() = false;
-            int twoRight = false;
-            int right = dp.back();
-
-            
-
-            for(int c = p.size() - 1; c >= 0; c--) {
-                int below = dp[c];
-
-                const auto & update = [&botRight, &twoRight, &right, &dp, &below, &c](int res) {
-                    twoRight = right;
-                    botRight = below;
-                    right = res;
-                    dp[c] = res;
-                };
-
-                if(p[c] == '*'){
-                    update(false);
-                    continue;
-                }
-
-
-                if(starAfter(c)) {
-                    bool res = false;
-                    if(match(r, c)){
-                        res |= below;
-                    }
-                    res |= twoRight;
-
-                    update(res);
-                    continue;
-                } else {
-                    if (match(r, c)) {
-                        bool res = botRight;
-                        update(res);
-                    } else {
-                        update(false);
-                    }
-                }
-            }
-
-        }
-
-
-        return dp[0];
-
+        return Memo(s, p).solve();
     }
 };
