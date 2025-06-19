@@ -13,7 +13,7 @@ public:
         vector<int> nums = wrapped(_nums);
         vector<vector<int>> dp(nums.size() - 1, vector<int> (nums.size(), 0));
 
-        for(int r = dp.size() - 1; r >= 0; r--) {
+        for(int r = dp.size() - 2; r >= 0; r--) {
             for(int c = r + 2; c < dp[r].size(); c++){
                 int best = 0;
                 for(int m = r + 1; m <= c - 1; m++){
