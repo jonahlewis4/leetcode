@@ -2,15 +2,16 @@ class Solution {
 public:
     int partitionArray(vector<int>& nums, int k) {
         sort(nums.begin(), nums.end());
-        vector<vector<int>> ans;
-        ans.push_back({nums[0]});
+        int front = nums[0];
+        int size = 1;
         for(const auto & num : nums) {
-            if(num - ans.back().front() > k){
-                ans.push_back({num});
+            if(num - front > k){
+                front = num;
+                size++;
             }
         }
 
 
-        return ans.size();
+        return size;
     }
 };
