@@ -75,8 +75,66 @@ class Solution {
             return false;
         }
     } ;
+
+    class Tabulation {
+        const string& s;
+        const string& p;
+        Parser parser;
+        vector<bool> dp;
+        public:
+        Tabulation(const string& s, const string& p): s(s), p(p), parser(Parser(s, p)),
+            dp(p.size() + 2, false)
+        {
+            dp[dp.size() - 2] = true;
+            for(int i = dp.size() - 4; i >= 0; i--){
+                if(!parser.starAfter(i)) {
+                    dp[i] = false;
+                } else {
+                    bool skip = dp[i + 2];
+                    dp[i] = skip;
+                }
+            }
+        }
+
+        bool solve() {
+            const auto & _dp = dp;
+            for(int r = s.size() - 1; r >= 0; r--){
+                bool bottomRight = dp[dp.size() - 2];
+                dp[dp.size() - 2] = false;
+                for(int c = p.size() - 1; c >= 0; c--){
+                    int below = dp[c];
+                    int right2 = dp[c + 2];
+
+                    if(parser.starAfter(c)){
+                        bool res = false;
+                        bool skip = right2;
+                        res |= skip;
+                        if(parser.match(r,c)){
+                            bool use = below;
+                            res |= use;
+                        }
+                        dp[c] = res;
+                    } else if (parser.match(r,c)){
+                        bool use = bottomRight;
+                        dp[c] = use;
+                    } else {
+                        dp[c] = false;
+                    }
+
+
+
+
+                    bottomRight = below;
+                }
+            }
+
+
+
+            return dp.front();
+        }
+    };
 public:
     bool isMatch(string s, string p) {
-        return Memo(s, p).solve();
+        return Tabulation(s, p).solve();
     }
 };
