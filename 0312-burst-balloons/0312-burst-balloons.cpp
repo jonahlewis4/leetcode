@@ -1,32 +1,29 @@
 class Solution {
-    template <typename T>
-    void wrap1s(vector<T>& nums) const {
-        nums.resize(nums.size() + 2);
-        for(int i = nums.size() - 2; i >= 1; i--){
-            nums[i] = nums[i - 1];
+    vector<int> wrapped(const vector<int>& nums) {
+        vector<int> res(nums.size() + 2);
+        res[0] = 1;
+        res.back() = 1;
+        for(int i = 0; i < nums.size(); i++){
+            res[i + 1] = nums[i];
         }
-        nums[0] = 1;
-        nums.back() = 1;
+        return res;
     }
 public:
+    int maxCoins(vector<int>& _nums) {
+        vector<int> nums = wrapped(_nums);
+        vector<vector<int>> dp(nums.size() - 1, vector<int> (nums.size(), 0));
 
-    int maxCoins(vector<int>& nums) {
-        wrap1s(nums);
-        vector<vector<int>> dp(nums.size() - 1, vector<int>(nums.size(), 0));
-
-        for(int r = dp.size() - 2; r >= 0; r--){
-            for(int c = dp[r].size() - (dp.size() - r) + 1; c < dp[r].size(); c++){
+        for(int r = dp.size() - 1; r >= 0; r--) {
+            for(int c = r + 2; c < dp[r].size(); c++){
                 int best = 0;
-                for(int k = r + 1; k < c; k++){
-                    int left = dp[r][k];
-                    int right = dp[k][c];
-                    int local = left + right + nums[r] * nums[k] * nums[c];
-                    best = max(best, local);
+                for(int m = r + 1; m <= c - 1; m++){
+                    int coins = nums[m] * nums[r] * nums[c];
+                    int local = coins + dp[r][m] + dp[m][c];
+                    best = max(local, best);
                 }
                 dp[r][c] = best;
             }
         }
-
         return dp[0].back();
     }
 };
