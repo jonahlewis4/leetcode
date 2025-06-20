@@ -1,15 +1,23 @@
 class Solution {
 public:
-    int uniquePaths(int m, int n) {
-        int denom = min(m, n) - 1;
-        int numerator = (m + n) - 2;
-        int mulEnd = numerator - denom;
-        long long res = 1;
-        for(int i = numerator; i > mulEnd; i--){
-            res *= i;
-            res /= (numerator - i + 1);
-        }
-        
-        return res;
+    static int uniquePaths(int m, int n) {
+        m--;
+        n--;
+        int sum = m + n;
+        int choose = n;
+        return comb(sum, choose);
     }
+
+    static int comb(unsigned int total, unsigned int choose) {
+        unsigned long ans = 1;
+        choose = max(total - choose, choose);
+        unsigned int bot = 1;
+        for(unsigned int i = choose + 1; i <= total; i++){
+            ans *= i;
+            ans /= bot;
+            bot++;
+        }
+        return ans;
+    }
+
 };
