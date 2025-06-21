@@ -1,9 +1,6 @@
 class Solution {
 public:
     int minimumDeletions(string word, int k) {
-        //count and sort
-        //find largest window where they're k apart.
-        //find distance of all not in window and add together.
         unordered_map<char, int> freq;
         for(const auto & c : word){
             freq[c]++;
