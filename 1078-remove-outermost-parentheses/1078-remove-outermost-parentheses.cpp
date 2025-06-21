@@ -3,20 +3,18 @@ public:
     string removeOuterParentheses(string s) {
         string res = "";
         int open = 0;
-        string cur = "";
         for(const auto & c : s) {
-            cur += c;
             switch(c) {
                 case '(':
+                    if(open != 0){
+                        res += c;
+                    }
                     open++;
                     break;
                 case ')':
                     open--;
-                    if(open == 0){
-                        cur = cur.substr(1, cur.size() - 2);
-                        res += cur;
-                        cur = "";
-                    
+                    if(open != 0){
+                        res += c;
                     }
                     break;
             }
