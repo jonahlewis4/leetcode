@@ -3,16 +3,16 @@ public:
    int minimumDeletions(string word, int k) {
     vector<int> freq(26, 0);
     int deleted = 0, ans = word.size();
-    for(auto c: word) freq[c-'a']++;             // find frequency of each chars
-    sort(freq.begin(), freq.end());              // sort the freq array
-    for(int i = 0; i < freq.size(); ++i){        // Iterate over freq 
-        int res = deleted, minFreq = freq[i];    // consider the current freq as the min freq after deletion. Also add the already deleted freq to temporary result
-        for(int j = freq.size() - 1; j >= 0; --j){  // iterate over freq array to evaluate the chars to be deleted from the higher freq side of the freq array
-            if(freq[j] - minFreq <= k) break;    // Once condition is satisfied then exit from the loop
-            res += freq[j] - minFreq - k;        // accumulate on the result - number of items to be deleted
+    for(auto c: word) freq[c-'a']++;             
+    sort(freq.begin(), freq.end());              
+    for(int i = 0; i < freq.size(); ++i){        
+        int res = deleted, minFreq = freq[i];    
+        for(int j = i + 1; j < freq.size(); j++){  
+            if(freq[j] - minFreq <= k) continue;    
+            res += freq[j] - minFreq - k;        
         }
-        ans = min(ans, res);                     // keep tracking the min possible value
-        deleted += freq[i];                      // update the deleted freq with current freq
+        ans = min(ans, res);                     
+        deleted += freq[i];                      
     }
     return ans;
 }
