@@ -43,6 +43,17 @@ class Solution {
             cache[i][sum] = (use + skip) % MOD;
             return cache[i][sum];
         }
+        int Tabulate() {
+            vector<int> dp(target + 1, 0);
+            dp.back() = 1;
+            for(int r = nums.size() - 1; r >= 0; r--){
+                int num = nums[r];
+                for(int c = 0; c <= target - num; c++){
+                    dp[c] += dp[c + num];
+                }
+            }
+            return dp[0];
+        }
     };
 public:
     int findTargetSumWays(vector<int>& nums, int target) {  
@@ -60,6 +71,6 @@ public:
 
         int newSum = (sum + target) / 2; 
 
-        return SubsetSumCount(nums, newSum).Memo();
+        return SubsetSumCount(nums, newSum).Tabulate();
     }
 };
