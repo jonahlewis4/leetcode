@@ -46,13 +46,13 @@ class Solution {
         int Tabulate() {
             vector<int> dp(target + 1, 0);
             dp.back() = 1;
-            for(int r = nums.size() - 1; r >= 0; r--){
+            for(int r = nums.size() - 1; r >= 1; r--){
                 int num = nums[r];
-                for(int c = 0; c <= target - num; c++){
+                for(int c = 0; c + num <= target; c++){
                     dp[c] += dp[c + num];
                 }
             }
-            return dp[0];
+            return dp[0] + (nums[0] < dp.size() ? dp[nums[0]] : 0);
         }
     };
 public:
