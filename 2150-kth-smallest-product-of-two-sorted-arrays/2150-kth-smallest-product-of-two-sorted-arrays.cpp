@@ -1,6 +1,9 @@
 class Solution {
 public:
     long long kthSmallestProduct(vector<int>& nums1, vector<int>& nums2, long long k) {
+        if(nums1.size() > nums2.size()){
+            swap(nums1, nums2);
+        }
         long long left = -1e10, right = 1e10;
         while (left < right) {
             long long mid = left + (right - left) / 2;
