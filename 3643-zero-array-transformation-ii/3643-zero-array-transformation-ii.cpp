@@ -1,50 +1,61 @@
 class Solution {
 
 private:
-    int canBecomeZero(const vector<int>& nums, const vector<vector<int>>& queries, int k){
-        vector<int> differences(nums.size() + 1, 0);
-        for(int i = 0; i < k; i++) {
-            int qBegin = queries[i][0];
-            int qEnd = queries[i][1];
-            int qDecrease = queries[i][2];
-
-            differences[qBegin] += qDecrease;
-            differences[qEnd + 1] -= qDecrease;
-        }
-
-        //calculate prefix sum of differences.
-        //if any are less than num we cannot 0 out
-
-        int sum = 0;
-        for(int i = 0; i < nums.size(); i++) {
-            sum += differences[i];
-            if(sum < nums[i]) {
-                return false;
-            }
-        }
-        return true;
-    }
+    
 public:
     int minZeroArray(vector<int>& nums, vector<vector<int>>& queries) {
-        int l = 0;
-        int r = queries.size();
-        int smallest = INT_MAX;
+        vector<int> events(nums.size() + 1);
+        int sum = 0;
+        int qI = 0;
+        for(int i = 0; i < nums.size() ; i++) {
+            //if sum is smaller than nums[i] 
+            //we must increase sum until it is.
+            sum += events[i];
 
-        while(l <= r) {
-            int m = (l + r) / 2;
+            while(qI < queries.size() && sum < nums[i]){
+                int qBegin = queries[qI][0];
+                int qEnd = queries[qI][1];
+                int qDecrease = queries[qI][2];
 
-            bool canUse = canBecomeZero(nums, queries, m);
-            if(canUse) {
-                smallest = min(smallest, m);
-                r = m - 1;
-            } else {
-                l = m + 1;
+                if(qBegin > i){
+                    events[qBegin] += qDecrease;
+                    events[qEnd + 1] -= qDecrease;
+                } else {
+                    //if the start of the query is
+                    //before or equal to the 
+                    //current index we need to 
+                    //handle its change
+
+                    //if it ends before current index
+                    //the query isn't in effect 
+                    //on this sum, do nothing.
+
+                    //this means we only 
+                    //do something if it ends
+                    //at or after current index
+
+                    if(qEnd >= i) {
+                        //if we get to this point
+                        //the query starts
+                        //before here
+                        //and it is included
+                        //which means we need
+                        //to increase current
+                        //sum by the query 
+                        //decrease amount
+                        sum += qDecrease;
+                        events[qEnd + 1] -= qDecrease;
+                    }
+                }
+                
+                qI++;
+            }
+
+            if(qI >= queries.size() && sum < nums[i]){
+                return -1;
             }
         }
 
-        if(smallest == INT_MAX) {
-            return -1;
-        }
-        return smallest;
+        return qI;
     }
 };
