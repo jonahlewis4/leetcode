@@ -1,115 +1,50 @@
 class Solution {
+
 private:
-    class SegmentTree {
-    private:
-        vector<int> vals;
-        vector<int> initial;
-        vector<int> lazy;
-        int n;
-    int query(int segI, int queryL, int queryR, int segL, int segR) {
-        //if fully disjoint return INT_MIN
-        if(queryR < segL || segR < queryL) {
-            return INT_MIN;
-        }
-        
-        
-        propogate(segI, segL, segR);
-        //if query fully covers segment tree, return that value
-        if(queryL <= segL && segR <= queryR){
-            return vals[segI];
-        }
-        
+    int canBecomeZero(const vector<int>& nums, const vector<vector<int>>& queries, int k){
+        vector<int> differences(nums.size() + 1, 0);
+        for(int i = 0; i < k; i++) {
+            int qBegin = queries[i][0];
+            int qEnd = queries[i][1];
+            int qDecrease = queries[i][2];
 
-        //else return result of left and right
-        int m = (segL + segR) / 2;
-        int res = INT_MIN;
-        res = max(res, query(segI * 2 + 1, queryL, queryR, segL, m));
-        res = max(res, query(segI * 2 + 2, queryL, queryR, m + 1, segR));
-        return res;
-    }
+            differences[qBegin] += qDecrease;
+            differences[qEnd + 1] -= qDecrease;
+        }
 
-    void propogate(int segI, int segL, int segR){
-        if(lazy[segI] != 0){
-            vals[segI] += lazy[segI];
-            if(segL != segR) {
-                lazy[segI * 2 + 1] += lazy[segI];
-                lazy[segI * 2 + 2] += lazy[segI];
+        //calculate prefix sum of differences.
+        //if any are less than num we cannot 0 out
+
+        int sum = 0;
+        for(int i = 0; i < nums.size(); i++) {
+            sum += differences[i];
+            if(sum < nums[i]) {
+                return false;
             }
-            lazy[segI] = 0;
         }
+        return true;
     }
-
-    void RangeDecrease(int segI, int queryL, int queryR, int segL, int segR, int decreaseAmount){
-        //if fully disjoint return immediately
-        propogate(segI, segL, segR);
-
-        auto& _lazy = lazy;
-        auto& values = vals;
-        if(queryR < segL || segR < queryL) {
-            return; 
-        }
-
-
-        if(queryL <= segL && segR <= queryR) {
-            lazy[segI] -= decreaseAmount;
-            propogate(segI, segL, segR);
-            return;
-        }
-
-        int m = (segL + segR) / 2;
-        RangeDecrease(segI * 2 + 1, queryL, queryR, segL, m, decreaseAmount);
-        RangeDecrease(segI * 2 + 2, queryL, queryR, m + 1, segR, decreaseAmount);
-        vals[segI] = max(vals[2 * segI + 1], vals[2 * segI + 2]);
-
-
-    }
-    
-    public:
-        SegmentTree (const vector<int>& initial){
-            n = initial.size();
-            this->initial = initial;
-            vals.resize(n * 4, 0);
-            lazy.resize(n * 4, 0);
-            fill(0, 0, n - 1);
-        }    
-
-        void fill(int segI, int queryL, int queryR) {
-            if(queryL == queryR) {
-                vals[segI] = initial[queryL];
-                return;
-            }
-            int m = (queryL + queryR) / 2;
-            fill(segI * 2 + 1, queryL, m);
-            fill(segI * 2 + 2, m + 1, queryR);
-            vals[segI] = max(vals[segI * 2 + 1], vals[segI * 2 + 2]);
-        }
-
-        int Query(int queryL, int queryR) {
-            return query(0, queryL, queryR, 0, n - 1);
-        }
-
-        void RangeDecrease(int queryL, int queryR, int decreaseAmount){
-            RangeDecrease(0, queryL, queryR, 0, n - 1, decreaseAmount);
-        }
-        
-    };
 public:
     int minZeroArray(vector<int>& nums, vector<vector<int>>& queries) {
-        SegmentTree tree(nums);
-        int k = 0;
-        while(true) {
-            int q = tree.Query(0, nums.size() - 1);
-            if(q <= 0){
-                return k;
+        int l = 0;
+        int r = queries.size();
+        int smallest = INT_MAX;
+
+        while(l <= r) {
+            int m = (l + r) / 2;
+
+            bool canUse = canBecomeZero(nums, queries, m);
+            if(canUse) {
+                smallest = min(smallest, m);
+                r = m - 1;
+            } else {
+                l = m + 1;
             }
-            if(k >= queries.size()){
-                return -1;
-            }
-            tree.RangeDecrease(queries[k][0], queries[k][1], queries[k][2]);
-            k++;
         }
 
-        return k;
+        if(smallest == INT_MAX) {
+            return -1;
+        }
+        return smallest;
     }
-
 };
