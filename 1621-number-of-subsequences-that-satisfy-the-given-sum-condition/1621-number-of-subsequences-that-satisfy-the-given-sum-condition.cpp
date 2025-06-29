@@ -2,7 +2,6 @@ class Solution {
 public:
     int numSubseq(vector<int>& nums, int target) {
         sort(nums.begin(), nums.end());
-        int ans = 0;
         int MOD = 1e9 + 7;
 
         vector<int> powers(nums.size(), 0);
@@ -12,19 +11,21 @@ public:
         }
 
 
-        for(int i = 0; i < nums.size(); i++){
-            int num = nums[i];
-            int comp = target - num;
-            auto endItr = upper_bound(nums.begin(), nums.end(), comp);
-            int endI = endItr - nums.begin();
-            
-            int maxLen = endI - i;
-            if(maxLen < 1) {
-                continue;
+        int l = 0;
+        int r =  nums.size() - 1;
+        int ans = 0;
+        while(l <= r) {
+            int sum = nums[l] + nums[r];
+            if(sum <= target) {
+                int dist = r - l;
+                ans += powers[dist];
+                ans %= MOD;
+                l++;
+            } else {
+                r--;
             }
-            ans += powers[maxLen - 1];
-            ans %= MOD;
         }
+
         return ans;
     }
 };
