@@ -498,6 +498,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0066-plus-one](https://github.com/jonahlewis4/leetcode/tree/master/0066-plus-one) |
 | [0067-add-binary](https://github.com/jonahlewis4/leetcode/tree/master/0067-add-binary) |
 | [0070-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0070-climbing-stairs) |
+| [0089-gray-code](https://github.com/jonahlewis4/leetcode/tree/master/0089-gray-code) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/jonahlewis4/leetcode/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0168-excel-sheet-column-title](https://github.com/jonahlewis4/leetcode/tree/master/0168-excel-sheet-column-title) |
 | [0171-excel-sheet-column-number](https://github.com/jonahlewis4/leetcode/tree/master/0171-excel-sheet-column-number) |
@@ -756,6 +757,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0029-divide-two-integers](https://github.com/jonahlewis4/leetcode/tree/master/0029-divide-two-integers) |
 | [0067-add-binary](https://github.com/jonahlewis4/leetcode/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/jonahlewis4/leetcode/tree/master/0078-subsets) |
+| [0089-gray-code](https://github.com/jonahlewis4/leetcode/tree/master/0089-gray-code) |
 | [0090-subsets-ii](https://github.com/jonahlewis4/leetcode/tree/master/0090-subsets-ii) |
 | [0136-single-number](https://github.com/jonahlewis4/leetcode/tree/master/0136-single-number) |
 | [0190-reverse-bits](https://github.com/jonahlewis4/leetcode/tree/master/0190-reverse-bits) |
@@ -992,6 +994,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0077-combinations](https://github.com/jonahlewis4/leetcode/tree/master/0077-combinations) |
 | [0078-subsets](https://github.com/jonahlewis4/leetcode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/jonahlewis4/leetcode/tree/master/0079-word-search) |
+| [0089-gray-code](https://github.com/jonahlewis4/leetcode/tree/master/0089-gray-code) |
 | [0090-subsets-ii](https://github.com/jonahlewis4/leetcode/tree/master/0090-subsets-ii) |
 | [0131-palindrome-partitioning](https://github.com/jonahlewis4/leetcode/tree/master/0131-palindrome-partitioning) |
 | [0212-word-search-ii](https://github.com/jonahlewis4/leetcode/tree/master/0212-word-search-ii) |
