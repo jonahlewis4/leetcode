@@ -5,10 +5,10 @@ public:
         vector<int> nums(n, -1);
         int i = 0;
         int last = 0;
-        unordered_set<int> visited;
+        vector<bool> visited(n, false);
         while(i < n - 1) {
             nums[i] = last;
-            visited.insert(last);
+            visited[last] = true;
 
             int copy = last;
             
@@ -22,7 +22,7 @@ public:
                 } else {
                     modified = last ^ power;
                 }
-                if(visited.count(modified) == 0) {
+                if(visited[modified] == false) {
                     last = modified;
                     break;
                 }
