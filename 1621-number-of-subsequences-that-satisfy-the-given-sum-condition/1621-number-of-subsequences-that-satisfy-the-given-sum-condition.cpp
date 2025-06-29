@@ -15,7 +15,7 @@ public:
         for(int i = 0; i < nums.size(); i++){
             int num = nums[i];
             int comp = target - num;
-            auto endItr = lower_bound(nums.begin(), nums.end(), comp + 1);
+            auto endItr = upper_bound(nums.begin(), nums.end(), comp);
             int endI = endItr - nums.begin();
             
             int maxLen = endI - i;
