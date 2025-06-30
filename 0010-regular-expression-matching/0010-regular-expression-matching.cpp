@@ -1,140 +1,60 @@
 class Solution {
-    class Parser{
+    class Regex{
+    private:
         const string& s;
         const string& p;
-        public:
-        Parser(const string& s, const string& p): s(s), p(p) {}
-        bool starAfter(int pI) const {
-            if(pI + 1 < p.size() && p[pI + 1] == '*') {
-                return true;
-            }
-            return false;
-        }
-        bool match(int sI, int pI) const {
-            if(p[pI] == '.' || s[sI] == p[pI]){
-                return true;
-            }
-            return false;
-        }
-    };
-
-    class Memo{
-    const string& s;
-    const string& p;
-    Parser parser;
-    vector<vector<int>> dp;
     public:
-        Memo(const string& s, const string& p): s(s), p(p), parser(Parser(s, p)),
-            dp(vector<vector<int>>(s.size() + 1, vector<int>(p.size(), -1)))
-        {
-            
-        }
-        bool solve()  {
-            return recurse(0, 0);
-        }
-        bool recurse(int sI, int pI)  {
-            if(sI >= s.size() && pI >= p.size()) {
+        Regex(const string& s, const string& p) : s(s), p(p) {}
+        bool match(int sI, int pI) const {
+            if(p[pI] == '.' || s[sI] == p[pI]) {
                 return true;
             }
-            if(pI >= p.size()) {
-                return false;
-            }
-
-            //memoize
-            if(dp[sI][pI] != -1){
-                return dp[sI][pI];
-            }
-
-            if(sI >= s.size()){
-                if(parser.starAfter(pI)){
-                    bool skip = recurse(sI, pI + 2);
-                    dp[sI][pI] = skip;
-                    return skip;
-                }
-                dp[sI][pI] = false;
-                return false;
-            }
-
-            if(parser.starAfter(pI)) {
-                bool res = false;
-                if(parser.match(sI, pI)) {
-                    bool use = recurse(sI + 1, pI);
-                    res |= use;
-                }
-                bool skip = recurse(sI, pI + 2);
-                res |= skip;
-                dp[sI][pI] = res;
-                return res;
-            } else if (parser.match(sI, pI)) {
-                bool use = recurse(sI + 1, pI + 1);
-                dp[sI][pI] = use;
-                return use;
-            }
-
-            dp[sI][pI] = false;
             return false;
         }
-    } ;
 
-    class Tabulation {
-        const string& s;
-        const string& p;
-        Parser parser;
-        vector<bool> dp;
-        public:
-        Tabulation(const string& s, const string& p): s(s), p(p), parser(Parser(s, p)),
-            dp(p.size() + 2, false)
-        {
-            dp[dp.size() - 2] = true;
-            for(int i = dp.size() - 4; i >= 0; i--){
-                if(!parser.starAfter(i)) {
-                    dp[i] = false;
-                } else {
-                    bool skip = dp[i + 2];
-                    dp[i] = skip;
-                }
+        bool starAfter(int pI) const {
+            if(pI + 1 < p.size() && p[pI + 1] == '*'){
+                return true;
             }
-        }
-
-        bool solve() {
-            const auto & _dp = dp;
-            for(int r = s.size() - 1; r >= 0; r--){
-                bool bottomRight = dp[dp.size() - 2];
-                dp[dp.size() - 2] = false;
-                for(int c = p.size() - 1; c >= 0; c--){
-                    int below = dp[c];
-                    int right2 = dp[c + 2];
-
-                    if(parser.starAfter(c)){
-                        bool res = false;
-                        bool skip = right2;
-                        res |= skip;
-                        if(parser.match(r,c)){
-                            bool use = below;
-                            res |= use;
-                        }
-                        dp[c] = res;
-                    } else if (parser.match(r,c)){
-                        bool use = bottomRight;
-                        dp[c] = use;
-                    } else {
-                        dp[c] = false;
-                    }
-
-
-
-
-                    bottomRight = below;
-                }
-            }
-
-
-
-            return dp.front();
+            return false;
         }
     };
 public:
     bool isMatch(string s, string p) {
-        return Tabulation(s, p).solve();
+        vector<bool> dp(p.size() + 1, false);
+        dp.back() = true;
+        
+        Regex reg(s, p);
+        //initialize final row
+        //this represents if we've completed the s string.
+        //if the s string is completed that means the only successful patterns
+        //would be stars, which can be empty (ie ones that don't have s)
+
+        for(int i = dp.size() - 3; i >= 0; i--) {
+            dp[i] = reg.starAfter(i) && dp[i + 2];
+        }
+
+        for(int sI = s.size() - 1; sI >= 0; sI--) {
+            bool bottomRight = dp.back();
+            dp.back() = false;
+
+            for(int pI = p.size() - 1; pI >= 0; pI--) {
+                bool res = false;
+                bool below = dp[pI];
+                if(reg.starAfter(pI)) {
+                    if(reg.match(sI, pI)){ 
+                        res |= below;
+                    }
+                    res |= dp[pI + 2];
+                } else if (reg.match(sI, pI)) {
+                    res = bottomRight;
+                } else {
+                    res = false;
+                }
+                dp[pI] = res;
+                bottomRight = below;
+            }
+        }
+        return dp.front();
     }
 };
