@@ -7,16 +7,13 @@ public:
         }
 
         int longestLength = 0;
-        for(const auto & num : nums) {
-            int thisIsTheBigger = freq[num] + freq[num - 1];
-            if(thisIsTheBigger == freq[num]){
-                thisIsTheBigger = 0;
+        for(const auto & [num, _] : freq) {
+            if(freq.find(num - 1) != freq.end()){
+                longestLength = max(longestLength, freq[num] + freq[num - 1]);
             }
-            int thisIsTheSmaller = freq[num] + freq[num + 1];
-            if(thisIsTheSmaller == freq[num]) {
-                thisIsTheSmaller = 0;
+            if(freq.find(num + 1) != freq.end()){
+                longestLength = max(longestLength, freq[num] + freq[num + 1]);
             }
-            longestLength = max({longestLength, thisIsTheBigger, thisIsTheSmaller});
         }
         return longestLength;
     }
