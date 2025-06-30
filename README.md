@@ -160,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1909-buildings-with-an-ocean-view](https://github.com/jonahlewis4/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [2036-count-pairs-in-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/2036-count-pairs-in-two-arrays) |
+| [2102-find-the-middle-index-in-array](https://github.com/jonahlewis4/leetcode/tree/master/2102-find-the-middle-index-in-array) |
 | [2144-maximum-difference-between-increasing-elements](https://github.com/jonahlewis4/leetcode/tree/master/2144-maximum-difference-between-increasing-elements) |
 | [2150-kth-smallest-product-of-two-sorted-arrays](https://github.com/jonahlewis4/leetcode/tree/master/2150-kth-smallest-product-of-two-sorted-arrays) |
 | [2165-plates-between-candles](https://github.com/jonahlewis4/leetcode/tree/master/2165-plates-between-candles) |
@@ -886,6 +887,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1694-make-sum-divisible-by-p](https://github.com/jonahlewis4/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/jonahlewis4/leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/jonahlewis4/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
+| [2102-find-the-middle-index-in-array](https://github.com/jonahlewis4/leetcode/tree/master/2102-find-the-middle-index-in-array) |
 | [2165-plates-between-candles](https://github.com/jonahlewis4/leetcode/tree/master/2165-plates-between-candles) |
 | [2465-shifting-letters-ii](https://github.com/jonahlewis4/leetcode/tree/master/2465-shifting-letters-ii) |
 | [3410-find-longest-self-contained-substring](https://github.com/jonahlewis4/leetcode/tree/master/3410-find-longest-self-contained-substring) |
