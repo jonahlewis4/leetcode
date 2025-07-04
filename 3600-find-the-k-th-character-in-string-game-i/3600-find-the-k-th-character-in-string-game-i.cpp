@@ -1,19 +1,17 @@
 class Solution {
+private:
+    static int log2KFloor(int k) {
+        return 31 - __builtin_clz(k);
+    }
 public:
     char kthCharacter(int k) {
-        string s = "a";
-        if(k == 1) {
-            return 'a';
+        k--;
+        int ans = 0;
+        while(k > 0) {
+            int operationToGetHere = log2KFloor(k);
+            ans ++;
+            k -= (1 << operationToGetHere);
         }
-        for(int i = 0; i < k; i++) {
-            int n = s.size();
-            for(int j = 0; j < n; j++) {
-                s += s[j] + 1;
-                if(k-1 < s.size()) {
-                    return s[k-1];
-                }
-            }
-        }
-        return ' ';
+        return ans % 26 + 'a';
     }
 };
