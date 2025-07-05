@@ -1,7 +1,7 @@
 class Bank {
     vector<long long>& balance;
     int n;
-    bool inRange(int account) const {
+    inline bool inRange(int account) const {
         return 1 <= account && account <= n;
     }
 public:
