@@ -11,7 +11,7 @@ public:
     
     void add(int index, int val) {
         int num = nums2[index];
-        freq2[num] = max(0, freq2[num] - 1);
+        freq2[num]--;
         int newNum = num + val;
         freq2[newNum]++;
         nums2[index] = newNum;
@@ -24,7 +24,7 @@ public:
         int ans = 0;
         for(const auto & num : nums1) {
             int occur = freq2[tot - num];
-            ans += occur;
+            ans += max(0, occur);
         }
         return ans;
     }
