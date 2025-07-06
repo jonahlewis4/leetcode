@@ -25,10 +25,10 @@ public:
         //optimization: use size of freq1 or freq2 to dettermine which to 
         //iterate over
         int ans = 0;
-        for(const auto & keyValPair : freq2) {
+        for(const auto & keyValPair : freq1) {
             int occur1 = keyValPair.second;
             int num = keyValPair.first;
-            int occur2 = freq1[tot - num];
+            int occur2 = freq2[tot - num];
             ans += occur1 * occur2;
         }
         return ans;
