@@ -23,6 +23,9 @@ public:
         //iterate over
         int ans = 0;
         for(const auto & num : nums1) {
+            if(freq2.find(tot - num) == freq2.end()) {
+                continue;
+            }
             int occur = freq2[tot - num];
             ans += max(0, occur);
         }
