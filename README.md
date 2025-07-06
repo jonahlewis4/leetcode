@@ -160,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/jonahlewis4/leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1909-buildings-with-an-ocean-view](https://github.com/jonahlewis4/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
+| [1995-finding-pairs-with-a-certain-sum](https://github.com/jonahlewis4/leetcode/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2036-count-pairs-in-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/2036-count-pairs-in-two-arrays) |
 | [2102-find-the-middle-index-in-array](https://github.com/jonahlewis4/leetcode/tree/master/2102-find-the-middle-index-in-array) |
 | [2144-maximum-difference-between-increasing-elements](https://github.com/jonahlewis4/leetcode/tree/master/2144-maximum-difference-between-increasing-elements) |
@@ -475,6 +476,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/jonahlewis4/leetcode/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/jonahlewis4/leetcode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/jonahlewis4/leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
+| [1995-finding-pairs-with-a-certain-sum](https://github.com/jonahlewis4/leetcode/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/jonahlewis4/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2169-simple-bank-system](https://github.com/jonahlewis4/leetcode/tree/master/2169-simple-bank-system) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/jonahlewis4/leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
@@ -885,6 +887,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
 | [1477-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/jonahlewis4/leetcode/tree/master/1713-dot-product-of-two-sparse-vectors) |
+| [1995-finding-pairs-with-a-certain-sum](https://github.com/jonahlewis4/leetcode/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2169-simple-bank-system](https://github.com/jonahlewis4/leetcode/tree/master/2169-simple-bank-system) |
 | [2389-design-a-text-editor](https://github.com/jonahlewis4/leetcode/tree/master/2389-design-a-text-editor) |
 ## Prefix Sum
