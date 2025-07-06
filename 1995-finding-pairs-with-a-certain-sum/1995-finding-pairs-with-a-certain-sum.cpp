@@ -27,7 +27,7 @@ public:
                 continue;
             }
             int occur = freq2[tot - num];
-            ans += max(0, occur);
+            ans += occur;
         }
         return ans;
     }
