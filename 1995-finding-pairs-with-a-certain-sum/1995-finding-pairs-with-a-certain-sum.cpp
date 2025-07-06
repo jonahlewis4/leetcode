@@ -1,5 +1,4 @@
 class FindSumPairs {
-    unordered_map<int, int> freq1;
     unordered_map<int, int> freq2;
     vector<int>& nums2;
     vector<int>& nums1;
