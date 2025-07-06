@@ -2,11 +2,9 @@ class FindSumPairs {
     unordered_map<int, int> freq1;
     unordered_map<int, int> freq2;
     vector<int>& nums2;
+    vector<int>& nums1;
 public:
-    FindSumPairs(vector<int>& nums1, vector<int>& nums2) : nums2(nums2) {
-        for(const auto & num : nums1) {
-            freq1[num]++;
-        }
+    FindSumPairs(vector<int>& nums1, vector<int>& nums2) : nums1(nums1), nums2(nums2) {
         for(const auto & num : nums2) {
             freq2[num]++;
         }
@@ -25,11 +23,9 @@ public:
         //optimization: use size of freq1 or freq2 to dettermine which to 
         //iterate over
         int ans = 0;
-        for(const auto & keyValPair : freq1) {
-            int occur1 = keyValPair.second;
-            int num = keyValPair.first;
-            int occur2 = freq2[tot - num];
-            ans += occur1 * occur2;
+        for(const auto & num : nums1) {
+            int occur = freq2[tot - num];
+            ans += occur;
         }
         return ans;
     }
