@@ -11,18 +11,38 @@
  */
 class Solution {
     private:
+    TreeNode* rightMostInLeft(TreeNode* root) {
+        TreeNode* predecessor = root->left;
+        while(predecessor->right != nullptr && predecessor->right != root) {
+            predecessor = predecessor->right;
+        }
+        return predecessor;
+    }
 vector<int> res;
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        dfs(root);
+        TreeNode* current = root;
+        vector<int> res;
+        while(current != nullptr) {
+            if(current->left == nullptr) {
+                res.push_back(current->val);
+                current = current->right;
+                continue;
+            }     
+            TreeNode* predecessor = rightMostInLeft(current);
+
+            if(predecessor->right == nullptr) {
+                predecessor->right = current;
+                current = current->left;
+            } else {
+                predecessor->right = nullptr;
+                res.push_back(current->val);
+                current = current->right;
+                continue;
+            }
+        }
         return res;
     }
-    void dfs(TreeNode* root) {
-        if(root == nullptr){
-            return;
-        }
-        dfs(root->left);
-        res.push_back(root->val);
-        dfs(root->right);
-    }
+    
+    
 };
