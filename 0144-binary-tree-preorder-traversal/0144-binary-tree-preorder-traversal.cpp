@@ -1,28 +1,33 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
 class Solution {
-private:
 vector<int> res;
-public:
-    vector<int> preorderTraversal(TreeNode* root) {
-        dfs(root);
-        return res;
-    }
-    void dfs(TreeNode* root){
-        if(root == nullptr){
-            return;
+TreeNode* rightMostInLeft(TreeNode* root) {
+        TreeNode* predecessor = root->left;
+        while(predecessor->right != nullptr && predecessor->right != root) {
+            predecessor = predecessor->right;
         }
-        res.push_back(root->val);
-        dfs(root->left);
-        dfs(root->right);
+        return predecessor;
+    }
+public:
+
+    vector<int> preorderTraversal(TreeNode* root) {
+        vector<int> res;
+        TreeNode* cur = root;
+        while(cur != nullptr) {
+            if(cur->left == nullptr) {
+                res.push_back(cur->val);
+                cur = cur->right;
+                continue;
+            }
+            TreeNode* predecessor = rightMostInLeft(cur);
+            if(predecessor->right == nullptr) {
+                res.push_back(cur->val);
+                predecessor->right = cur;
+                cur = cur->left;
+            } else {
+                predecessor->right = nullptr;
+                cur = cur->right;
+            }
+        }
+        return res;
     }
 };
