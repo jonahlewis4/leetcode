@@ -6,8 +6,6 @@ public:
         int trainI = 0;
         int matches = 0;
         for(const auto & ability : players) {
-            int capacity = trainers[trainI];
-
             while(trainI < trainers.size() && ability > trainers[trainI]){
                 trainI++;
             }
