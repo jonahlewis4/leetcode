@@ -163,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/jonahlewis4/leetcode/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/jonahlewis4/leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1909-buildings-with-an-ocean-view](https://github.com/jonahlewis4/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
+| [1972-rotating-the-box](https://github.com/jonahlewis4/leetcode/tree/master/1972-rotating-the-box) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/jonahlewis4/leetcode/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2036-count-pairs-in-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/2036-count-pairs-in-two-arrays) |
@@ -620,6 +621,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/jonahlewis4/leetcode/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/jonahlewis4/leetcode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1894-merge-strings-alternately](https://github.com/jonahlewis4/leetcode/tree/master/1894-merge-strings-alternately) |
+| [1972-rotating-the-box](https://github.com/jonahlewis4/leetcode/tree/master/1972-rotating-the-box) |
 | [2036-count-pairs-in-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/2036-count-pairs-in-two-arrays) |
 | [2320-find-all-k-distant-indices-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2320-find-all-k-distant-indices-in-an-array) |
 | [2414-move-pieces-to-obtain-a-string](https://github.com/jonahlewis4/leetcode/tree/master/2414-move-pieces-to-obtain-a-string) |
@@ -650,6 +652,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0854-making-a-large-island](https://github.com/jonahlewis4/leetcode/tree/master/0854-making-a-large-island) |
 | [0945-snakes-and-ladders](https://github.com/jonahlewis4/leetcode/tree/master/0945-snakes-and-ladders) |
 | [1036-rotting-oranges](https://github.com/jonahlewis4/leetcode/tree/master/1036-rotting-oranges) |
+| [1972-rotating-the-box](https://github.com/jonahlewis4/leetcode/tree/master/1972-rotating-the-box) |
 | [2411-spiral-matrix-iv](https://github.com/jonahlewis4/leetcode/tree/master/2411-spiral-matrix-iv) |
 | [3227-find-missing-and-repeated-values](https://github.com/jonahlewis4/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3837-grid-teleportation-traversal](https://github.com/jonahlewis4/leetcode/tree/master/3837-grid-teleportation-traversal) |
