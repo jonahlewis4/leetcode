@@ -123,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0794-swim-in-rising-water](https://github.com/jonahlewis4/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0816-design-hashset](https://github.com/jonahlewis4/leetcode/tree/master/0816-design-hashset) |
 | [0817-design-hashmap](https://github.com/jonahlewis4/leetcode/tree/master/0817-design-hashmap) |
+| [0822-unique-morse-code-words](https://github.com/jonahlewis4/leetcode/tree/master/0822-unique-morse-code-words) |
 | [0854-making-a-large-island](https://github.com/jonahlewis4/leetcode/tree/master/0854-making-a-large-island) |
 | [0883-car-fleet](https://github.com/jonahlewis4/leetcode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/jonahlewis4/leetcode/tree/master/0907-koko-eating-bananas) |
@@ -480,6 +481,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
 | [0816-design-hashset](https://github.com/jonahlewis4/leetcode/tree/master/0816-design-hashset) |
 | [0817-design-hashmap](https://github.com/jonahlewis4/leetcode/tree/master/0817-design-hashmap) |
+| [0822-unique-morse-code-words](https://github.com/jonahlewis4/leetcode/tree/master/0822-unique-morse-code-words) |
 | [0952-word-subsets](https://github.com/jonahlewis4/leetcode/tree/master/0952-word-subsets) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 | [1023-time-based-key-value-store](https://github.com/jonahlewis4/leetcode/tree/master/1023-time-based-key-value-store) |
@@ -750,6 +752,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0647-palindromic-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/jonahlewis4/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
+| [0822-unique-morse-code-words](https://github.com/jonahlewis4/leetcode/tree/master/0822-unique-morse-code-words) |
 | [0952-word-subsets](https://github.com/jonahlewis4/leetcode/tree/master/0952-word-subsets) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/jonahlewis4/leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/jonahlewis4/leetcode/tree/master/0962-flip-string-to-monotone-increasing) |
