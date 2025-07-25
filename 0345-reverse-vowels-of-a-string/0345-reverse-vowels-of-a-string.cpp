@@ -1,17 +1,24 @@
 class Solution {
 public:
     string reverseVowels(string s) {
-        unordered_set<char> vowels = {
-            'a',
-            'e',
-            'i',
-            'o',
-            'u',
-        };
+        
 
-        const auto & isVowel = [&vowels](char c) {
-            char lower = tolower(c);
-            return vowels.find(lower) != vowels.end();
+        const auto & isVowel = [](char c) {
+            switch (c) {
+                case 'a':
+                case 'e':
+                case 'i':
+                case 'o':
+                case 'u':
+                case 'A':
+                case 'E':
+                case 'I':
+                case 'O':
+                case 'U':
+                    return true;
+                default:
+                    return false;
+            }
         };
 
         int l = 0;
