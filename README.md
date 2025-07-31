@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/jonahlewis4/leetcode/tree/master/0229-majority-element-ii) |
 | [0238-product-of-array-except-self](https://github.com/jonahlewis4/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/jonahlewis4/leetcode/tree/master/0239-sliding-window-maximum) |
+| [0243-shortest-word-distance](https://github.com/jonahlewis4/leetcode/tree/master/0243-shortest-word-distance) |
 | [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0269-alien-dictionary](https://github.com/jonahlewis4/leetcode/tree/master/0269-alien-dictionary) |
@@ -749,6 +750,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0224-basic-calculator](https://github.com/jonahlewis4/leetcode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/jonahlewis4/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0242-valid-anagram](https://github.com/jonahlewis4/leetcode/tree/master/0242-valid-anagram) |
+| [0243-shortest-word-distance](https://github.com/jonahlewis4/leetcode/tree/master/0243-shortest-word-distance) |
 | [0257-binary-tree-paths](https://github.com/jonahlewis4/leetcode/tree/master/0257-binary-tree-paths) |
 | [0266-palindrome-permutation](https://github.com/jonahlewis4/leetcode/tree/master/0266-palindrome-permutation) |
 | [0269-alien-dictionary](https://github.com/jonahlewis4/leetcode/tree/master/0269-alien-dictionary) |
