@@ -16,12 +16,18 @@ public:
         sen.next = head;
         ListNode* prev = &sen;
         while(cur != nullptr) {
+            ListNode* toDelete = nullptr;
             if(cur->val == val){
                 prev->next = cur->next;
+                toDelete = cur;
             } else {
                 prev = cur;
             }
+            
             cur = cur->next;
+            if(toDelete) {
+                delete toDelete;
+            }
         }
         return sen.next;
 
