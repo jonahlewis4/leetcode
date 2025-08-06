@@ -1,14 +1,13 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        std::unordered_map<int, int> map;
-        for(int i = 0; i < nums.size(); i++){
-            int num = nums[i];
-            int compliment = target - num;
-            if(map.find(compliment) != map.end()){
-                return {i, map[compliment]};
+        unordered_map<int, int> vals;
+        for(int i = 0; i < nums.size(); i++) {
+            int comp = target - nums[i];
+            if(vals.find(comp) != vals.end()){
+                return {i, vals[comp]};
             }
-            map[num] = i;
+            vals[nums[i]] = i;
         }
         return {};
     }
