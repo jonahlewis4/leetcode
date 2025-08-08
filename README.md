@@ -144,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1108-analyze-user-website-visit-pattern](https://github.com/jonahlewis4/leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1127-last-stone-weight](https://github.com/jonahlewis4/leetcode/tree/master/1127-last-stone-weight) |
 | [1272-invalid-transactions](https://github.com/jonahlewis4/leetcode/tree/master/1272-invalid-transactions) |
+| [1293-three-consecutive-odds](https://github.com/jonahlewis4/leetcode/tree/master/1293-three-consecutive-odds) |
 | [1349-check-if-it-is-a-straight-line](https://github.com/jonahlewis4/leetcode/tree/master/1349-check-if-it-is-a-straight-line) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/jonahlewis4/leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1364-tuple-with-same-product](https://github.com/jonahlewis4/leetcode/tree/master/1364-tuple-with-same-product) |
