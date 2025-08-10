@@ -4,7 +4,7 @@ private:
     static vector<unordered_map<int, int>> calcdigits() {
         vector<unordered_map<int, int>> ans;
         int num = 1;
-        for(int i = 0; i < 32; i++) {
+        for(int i = 0; i < 30; i++) {
             unordered_map<int, int> bset = getBitSet(num);
             num <<= 1;
             ans.push_back(bset);
