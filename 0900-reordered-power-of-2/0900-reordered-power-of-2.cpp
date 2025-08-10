@@ -1,18 +1,18 @@
 class Solution {
 private:
-    static vector<unordered_map<int, int>> digitCounts;
-    static vector<unordered_map<int, int>> calcdigits() {
-        vector<unordered_map<int, int>> ans;
+    static vector<vector<int>> digitCounts;
+    static vector<vector<int>> calcdigits() {
+        vector<vector<int>> ans;
         int num = 1;
         for(int i = 0; i < 30; i++) {
-            unordered_map<int, int> bset = getBitSet(num);
+            vector<int> bset = getBitSet(num);
             num <<= 1;
             ans.push_back(bset);
         }
         return ans;
     }
-    static unordered_map<int, int> getBitSet(int num) {
-        unordered_map<int, int> bset;
+    static vector<int> getBitSet(int num) {
+        vector<int> bset(10, 0);
         int numCopy = num;
         while(numCopy > 0) {
             int digit = numCopy % 10;
@@ -23,7 +23,7 @@ private:
     }
 public:
     bool reorderedPowerOf2(int n) {
-        unordered_map<int, int> nBitSet = getBitSet(n);
+        vector<int> nBitSet = getBitSet(n);
         for(auto & twoPowerBSet : digitCounts) {
             bool match = true;
             for(int i = 0; i <= 9; i++){
@@ -39,4 +39,4 @@ public:
         return false;
     }
 }; 
-vector<unordered_map<int, int>> Solution::digitCounts = Solution::calcdigits();
+vector<vector<int>> Solution::digitCounts = Solution::calcdigits();
