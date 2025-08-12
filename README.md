@@ -162,6 +162,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1694-make-sum-divisible-by-p](https://github.com/jonahlewis4/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1706-min-cost-to-connect-all-points](https://github.com/jonahlewis4/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/jonahlewis4/leetcode/tree/master/1713-dot-product-of-two-sparse-vectors) |
+| [1769-get-maximum-in-generated-array](https://github.com/jonahlewis4/leetcode/tree/master/1769-get-maximum-in-generated-array) |
 | [1813-maximum-erasure-value](https://github.com/jonahlewis4/leetcode/tree/master/1813-maximum-erasure-value) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/jonahlewis4/leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1849-maximum-absolute-sum-of-any-subarray](https://github.com/jonahlewis4/leetcode/tree/master/1849-maximum-absolute-sum-of-any-subarray) |
@@ -695,6 +696,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0415-add-strings](https://github.com/jonahlewis4/leetcode/tree/master/0415-add-strings) |
 | [0657-robot-return-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/0657-robot-return-to-origin) |
 | [0735-asteroid-collision](https://github.com/jonahlewis4/leetcode/tree/master/0735-asteroid-collision) |
+| [1769-get-maximum-in-generated-array](https://github.com/jonahlewis4/leetcode/tree/master/1769-get-maximum-in-generated-array) |
 | [2169-simple-bank-system](https://github.com/jonahlewis4/leetcode/tree/master/2169-simple-bank-system) |
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/jonahlewis4/leetcode/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2389-design-a-text-editor](https://github.com/jonahlewis4/leetcode/tree/master/2389-design-a-text-editor) |
