@@ -28,20 +28,11 @@ private:
             if(inPath(x, y)) {
                 return;
             }
-            if(!exhausted(x, y)) {
-                returnTo((returnFace + 2) % 4);
-                if(_robot.move()){
-                    exhaust(x, y, returnFace);
-                } else {
-                    setExhausted(x, y);
-                }
+            returnTo((returnFace + 2) % 4);
+            if(_robot.move()){
+                exhaust(x, y, returnFace);
             }
-        }
-        bool exhausted(int x, int y) {
-            return squares[x][y];
-        }
-        void setExhausted(int x, int y) {
-            squares[x][y] = true;;
+            
         }
         void returnTo(int returnFace) {
             while(_face != returnFace) {
@@ -70,10 +61,8 @@ private:
             exhaustIfUnexausted(x, y + 1, 0);
             exhaustIfUnexausted(x, y - 1, 2);
 
-            setExhausted(x, y);
             returnTo(returnFace);
             _robot.move();
-            removeFromPath(x, y);
         }
     };
 public:
