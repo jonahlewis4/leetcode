@@ -5,14 +5,17 @@ private:
         if(k == 0) {
             return 1;
         }
-        double res = 1;
+        if(n - k < k) {
+            k = n - k;
+        }
+        unsigned long res = 1;
         int kStart = k;
         while(k > 0) {
-            res =  res * n / (kStart - k + 1);
+            res =  res  * n / (kStart - k + 1);
             n--;
             k--;
         }
-        return res + .5;
+        return res;
     }
 public:
     int uniquePaths(int m, int n) {
