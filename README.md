@@ -1112,6 +1112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0257-binary-tree-paths](https://github.com/jonahlewis4/leetcode/tree/master/0257-binary-tree-paths) |
 | [0401-binary-watch](https://github.com/jonahlewis4/leetcode/tree/master/0401-binary-watch) |
 | [0494-target-sum](https://github.com/jonahlewis4/leetcode/tree/master/0494-target-sum) |
+| [0865-robot-room-cleaner](https://github.com/jonahlewis4/leetcode/tree/master/0865-robot-room-cleaner) |
 | [1160-letter-tile-possibilities](https://github.com/jonahlewis4/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/jonahlewis4/leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/jonahlewis4/leetcode/tree/master/2140-longest-subsequence-repeated-k-times) |
@@ -1388,6 +1389,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0157-read-n-characters-given-read4](https://github.com/jonahlewis4/leetcode/tree/master/0157-read-n-characters-given-read4) |
 | [0278-first-bad-version](https://github.com/jonahlewis4/leetcode/tree/master/0278-first-bad-version) |
+| [0865-robot-room-cleaner](https://github.com/jonahlewis4/leetcode/tree/master/0865-robot-room-cleaner) |
 ## String Matching
 |  |
 | ------- |
