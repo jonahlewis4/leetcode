@@ -593,6 +593,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/jonahlewis4/leetcode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [2202-sum-of-k-mirror-numbers](https://github.com/jonahlewis4/leetcode/tree/master/2202-sum-of-k-mirror-numbers) |
 | [2383-add-two-integers](https://github.com/jonahlewis4/leetcode/tree/master/2383-add-two-integers) |
+| [2649-count-total-number-of-colored-cells](https://github.com/jonahlewis4/leetcode/tree/master/2649-count-total-number-of-colored-cells) |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/jonahlewis4/leetcode/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/jonahlewis4/leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/jonahlewis4/leetcode/tree/master/3172-divisible-and-non-divisible-sums-difference) |
