@@ -1,23 +1,21 @@
+
 class Solution {
-public:
-    static int uniquePaths(int m, int n) {
-        m--;
-        n--;
-        int sum = m + n;
-        int choose = n;
-        return comb(sum, choose);
-    }
-
-    static int comb(unsigned int total, unsigned int choose) {
-        unsigned long ans = 1;
-        choose = max(total - choose, choose);
-        unsigned int bot = 1;
-        for(unsigned int i = choose + 1; i <= total; i++){
-            ans *= i;
-            ans /= bot;
-            bot++;
+private:
+    static int binomial_coefficient(int n, int k){
+        if(k == 0) {
+            return 1;
         }
-        return ans;
+        double res = 1;
+        int kStart = k;
+        while(k > 0) {
+            res =  res * n / (kStart - k + 1);
+            n--;
+            k--;
+        }
+        return res + .5;
     }
-
+public:
+    int uniquePaths(int m, int n) {
+        return binomial_coefficient(m + n - 2, m - 1);
+    }
 };
