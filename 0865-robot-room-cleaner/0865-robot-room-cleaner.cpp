@@ -1,21 +1,7 @@
-/**
- * // This is the robot's control interface.
- * // You should not implement it, or speculate about its implementation
- * class Robot {
- *   public:
- *     // Returns true if the cell in front is open and robot moves into the cell.
- *     // Returns false if the cell in front is blocked and robot stays in the current cell.
- *     bool move();
- *
- *     // Robot will stay in the same cell after calling turnLeft/turnRight.
- *     // Each turn will be 90 degrees.
- *     void turnLeft();
- *     void turnRight();
- *
- *     // Clean the current cell.
- *     void clean();
- * };
- */
+//things that could be improved upon
+//can be improved by using dir vector
+//re-orient at end of function by assuuming if we turn around and move we're back
+//in the proper direction, removing need to track current face. 
 
 class Solution {
 private:    
