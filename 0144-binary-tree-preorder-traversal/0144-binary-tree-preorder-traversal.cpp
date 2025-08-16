@@ -10,8 +10,7 @@
  * };
  */
 class Solution {
-private:
-    static TreeNode* predecessor(TreeNode* root) {
+    TreeNode* pred(TreeNode* root) {
         TreeNode* cur = root->left;
         while(cur->right != nullptr && cur->right != root) {
             cur = cur->right;
@@ -20,24 +19,24 @@ private:
     }
 public:
     vector<int> preorderTraversal(TreeNode* root) {
+        vector<int> ans;
         TreeNode* cur = root;
-        vector<int> res;
-        while(cur != nullptr) {
-            if(cur->left == nullptr) {
-                res.push_back(cur->val);
-                cur = cur->right;
-                continue;
-            }
-            TreeNode* pred = predecessor(cur);
-            if(pred->right == cur) {
-                pred->right = nullptr;
+        while(cur != nullptr) { 
+            if(cur->left == nullptr){
+                ans.push_back(cur->val);
                 cur = cur->right;
             } else {
-                pred->right = cur;
-                res.push_back(cur->val);
-                cur = cur->left;
+                TreeNode* prede = pred(cur);
+                if(prede->right == nullptr) {
+                    ans.push_back(cur->val);
+                    prede->right = cur;
+                    cur = cur->left;
+                } else {
+                    prede->right = nullptr;
+                    cur = cur->right;
+                }
             }
         }
-        return res;
+        return ans;
     }
 };
