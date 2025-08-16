@@ -29,9 +29,6 @@ private:
         void addToPath(int x, int y){
             path[x][y] = true;
         }
-        void removeFromPath(int x, int y) {
-            path[x][y] = false;
-        }
         bool inPath(int x, int y) {
             return path[x][y];
         }
