@@ -23,7 +23,6 @@ private:
         Robot& _robot;
         unordered_map<int, unordered_map<int, bool>> path;
         int _face = 0;
-        unordered_map<int, unordered_map<int, bool>> squares;
         void exhaustIfUnexausted(int x, int y, int returnFace) {
             if(inPath(x, y)) {
                 return;
