@@ -1,21 +1,16 @@
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
-        unordered_map<int, int> numCSum;
-        numCSum[0] = 1;
-        
-        int cSum = 0;
-        int matches = 0;
-        for(int i = 0; i < nums.size(); i++){
-            //see how many times the difference exists
-            cSum += nums[i];
-            matches += numCSum[cSum - k];
-            numCSum[cSum]++;
+        unordered_map<int, int> sumC;
+        sumC[0] = 1;
+        int sum = 0;
+        int res = 0;
+        for(const auto & num : nums) {
+            sum += num;
+            int search = sum - k;
+            res += sumC[search];
+            sumC[sum]++;
         }
-        return matches;
-
+        return res;
     }
-
-    
-    
 };
