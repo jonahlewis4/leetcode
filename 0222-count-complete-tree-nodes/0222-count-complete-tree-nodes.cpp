@@ -10,58 +10,36 @@
  * };
  */
 class Solution {
-    int _height = 0;
-    static int lDist(TreeNode* root) {
-        TreeNode* left = root->left;
-        int dist = 1;
-        while(left != nullptr) {
-            left = left->right;
-            dist++;
-        }
-        return dist;
-    }
-    static int height(TreeNode* root) {
-        int dist = 0;
+    static int lHeight(TreeNode* root) {
+        int h = 0;
         while(root != nullptr) {
             root = root->left;
-            dist++;
+            h++;
         }
-        return dist;
+        return h;
+    }
+    static int rHeight(TreeNode* root) {
+        int h = 0;
+        while(root != nullptr) {
+            root = root->right;
+            h++;
+        }
+        return h;
+    }
+    static int recurse(TreeNode* root) {
+        int left = lHeight(root);
+        int right = rHeight(root);
+
+        if(left == right) {
+            return (1 << left) - 1;
+        } else {
+            return 1 + recurse(root->left) + recurse(root->right);
+        }
     }
 public:
     int countNodes(TreeNode* root) {
-        _height = height(root);
-        if(_height == 0) {
-            return 0;
-        }
-        if(_height == 1) {
-            return 1;
-        }
-        int offset = recurse(root, 0);
-        return (1 << (_height - 1)) + offset;
-
-        
+        return recurse(root);
     }
-    int recurse(TreeNode* root, int depth) {
-        if(depth == _height - 1) {
-            return 0;
-        }
-        if(root->left == nullptr) {
-            return -1;
-        }
-        if(root->right == nullptr) {
-            return 0;
-        }
-    
-        int leftHeight = lDist(root) + depth;
-        if(leftHeight == _height) {
-            int skipped = (1 << (_height - depth - 2));
-            int skippLeft = recurse(root->right, depth + 1);
-            return skipped + skippLeft;
-        } else {
-            return recurse(root->left, depth + 1);
-        }
 
-        return 0;
-    }
+
 };
