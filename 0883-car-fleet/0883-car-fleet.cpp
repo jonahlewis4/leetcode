@@ -17,12 +17,12 @@ public:
             return a.position < b.position;
         });
 
-        stack<car> stk;
+        stack<double> stk;
         for(int i = 0; i < cars.size(); i++) {
-            while(!stk.empty() && stk.top().remainingTime <= cars[i].remainingTime){
+            while(!stk.empty() && stk.top() <= cars[i].remainingTime){
                 stk.pop();
             }
-            stk.push(cars[i]);
+            stk.push(cars[i].remainingTime);
         }
         return stk.size();
     }
