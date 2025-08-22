@@ -1,29 +1,29 @@
 class Solution {
-private:
-    struct car{
-        int start;
-        double time;
-    };
 public:
     int carFleet(int target, vector<int>& position, vector<int>& speed) {
+        struct car {
+            int position;
+            double remainingTime;
+        };
         vector<car> cars(position.size());
-        for(int i = 0; i < position.size(); i++){
-            cars[i] = {position[i], ((double)target - position[i]) / speed[i]};
+        for(int i = 0; i < position.size(); i++) {
+            cars[i] = {
+                .position = position[i],
+                .remainingTime = (double) (target - position[i]) / speed[i]
+            };
         }
 
-        std::sort(cars.begin(), cars.end(), [](car &c1, car &c2){
-            return c1.start < c2.start;
+        sort(cars.begin(), cars.end(), [](car a, car b){
+            return a.position < b.position;
         });
 
-
-        std::stack<car> stack;
-        for(const auto & car : cars){
-            while(!stack.empty() && stack.top().time <= car.time){
-                stack.pop();
+        stack<car> stk;
+        for(int i = 0; i < cars.size(); i++) {
+            while(!stk.empty() && stk.top().remainingTime <= cars[i].remainingTime){
+                stk.pop();
             }
-            stack.push(car);
+            stk.push(cars[i]);
         }
-        
-        return stack.size();
+        return stk.size();
     }
 };
