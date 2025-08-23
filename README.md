@@ -518,6 +518,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/jonahlewis4/leetcode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/1510-find-lucky-integer-in-an-array) |
+| [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/jonahlewis4/leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/jonahlewis4/leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1694-make-sum-divisible-by-p](https://github.com/jonahlewis4/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/jonahlewis4/leetcode/tree/master/1713-dot-product-of-two-sparse-vectors) |
@@ -1167,6 +1168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1177-tree-diameter](https://github.com/jonahlewis4/leetcode/tree/master/1177-tree-diameter) |
 | [1432-check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1432-check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
+| [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/jonahlewis4/leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/jonahlewis4/leetcode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jonahlewis4/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/jonahlewis4/leetcode/tree/master/3307-find-the-maximum-sum-of-node-values) |
@@ -1229,6 +1231,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/jonahlewis4/leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1432-check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1432-check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
+| [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/jonahlewis4/leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [2438-find-closest-node-to-given-two-nodes](https://github.com/jonahlewis4/leetcode/tree/master/2438-find-closest-node-to-given-two-nodes) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jonahlewis4/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/jonahlewis4/leetcode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
@@ -1394,6 +1397,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/jonahlewis4/leetcode/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1432-check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1432-check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
+| [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/jonahlewis4/leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jonahlewis4/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/jonahlewis4/leetcode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/jonahlewis4/leetcode/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
