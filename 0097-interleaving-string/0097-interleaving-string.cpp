@@ -7,9 +7,9 @@ public:
         if(s1.size() > s2.size()) {
             swap(s1, s2);
         }
-        if(s1.size() == 0) {
-            return s2 == s3;
-        }
+        // if(s1.size() == 0) {
+        //     return s2 == s3;
+        // }
         //s1 is the samller of the two.
 
         vector<bool> dp(s1.size() + 1, 0);
