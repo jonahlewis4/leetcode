@@ -1,35 +1,37 @@
 class Solution {
 public:
     bool isInterleave(string s1, string s2, string s3) {
-        if(s1.size() + s2.size() != s3.size()){
+        if(s1.size() + s2.size() != s3.size()) {
             return false;
         }
-        if(s1.size() < s2.size()){
+        if(s1.size() > s2.size()) {
             swap(s1, s2);
         }
+        if(s1.size() == 0) {
+            return s2 == s3;
+        }
+        //s1 is the samller of the two.
 
-        //if 1 match 
-            //i + 1, j
-        //if 2 match
-            //i, j + 1
-        
-        vector<bool> dp(s2.size() + 1, false);
+        vector<bool> dp(s1.size() + 1, 0);
         dp.back() = true;
-
-        for(int c = dp.size() - 2; c >= 0; c--){
-            dp[c] = s2[c] == s3[s1.size() + c] && dp[c + 1];
+        for(int i = s1.size() - 1; i >= 0; i--) {
+            if(s1[i] == s3[s2.size() + i]){
+                dp[i] = dp[i] | dp[i + 1];
+            }
         }
 
-        for(int r = s1.size() - 1; r >= 0; r--) {
-            dp.back() = dp.back() && s3[s2.size() + r] == s1[r];
-            for(int c = s2.size() - 1; c >= 0; c--){
-                int below = dp[c];
-                int right = dp[c + 1];
-                
-                int res = false;
-                res |= s1[r] == s3[r + c] && below;
-                res |= s2[c] == s3[r + c] && right;
-                dp[c] = res;
+        for(int j = s2.size() - 1; j >= 0; j--) {
+            dp.back() = (s3[s1.size() + j] == s2[j]) && dp.back();
+            for(int i = s1.size() - 1; i >= 0; i--) {
+                char interC = s3[i + j];
+                bool res = false;
+                if(interC == s2[j]) {
+                    res |= dp[i];
+                }
+                if(interC == s1[i]) {
+                    res |= dp[i + 1];
+                }
+                dp[i] = res;
             }
         }
         return dp.front();
