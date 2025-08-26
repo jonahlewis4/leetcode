@@ -1,37 +1,25 @@
 class Solution {
-public:
-    int calculate(string s) {
-        
-        //(1 + (4 + 5 + 2) - 3) - (6 - (-4))
-        //9
-        //- 10
-
-
-        stack<int> stk;
-        int sign = 1;
+private:
+    static tuple<int, int> calculate(const string& s, int i) {
         int total = 0;
         int curVal = 0;
-        stk.push(0);
-        for(const auto & c : s) {
+        int sign = 1;
+        while(i < s.size()) {
+            char c = s[i];
             switch (c) {
                 case ' ':{
                     break;
                 }
                 case '(': {
-                    stk.push(total);
-                    stk.push(sign);
-                    sign = 1;
-                    total = 0;
+                    const auto [localVal, end] = calculate(s, i + 1);
+                    total += sign * localVal;
+                    i = end; 
                     break;
                 }
                     
                 case ')': {
                     total += curVal;
-                    curVal = 0;
-                    int localSign = stk.top();
-                    stk.pop();
-                    total = stk.top() + total * localSign;
-                    stk.pop();
+                    return {total, i};
                     break;
                 }
                 
@@ -55,8 +43,14 @@ public:
                     curVal += val * sign;
                 }
             }
+            i++;
         }
         total += curVal;
+        return {total, s.size()};
+    }
+public:
+    int calculate(string s) {
+        const auto [total, _] = calculate(s, 0);
         return total;
     }
 };
