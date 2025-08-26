@@ -1,17 +1,17 @@
 class HitCounter {
-    deque<int> hits;
+    queue<int> hits;
     public: 
     HitCounter() {
         
     }
     
     void hit(int timestamp) {
-        hits.push_back(timestamp);
+        hits.push(timestamp);
     }
     
     int getHits(int timestamp) {
         while(!hits.empty() && hits.front() <= timestamp - 300) {
-            hits.pop_front();
+            hits.pop();
         }
         return hits.size();
     }
