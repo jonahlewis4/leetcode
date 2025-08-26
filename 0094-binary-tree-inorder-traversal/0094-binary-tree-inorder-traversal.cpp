@@ -10,39 +10,33 @@
  * };
  */
 class Solution {
-    private:
-    TreeNode* rightMostInLeft(TreeNode* root) {
-        TreeNode* predecessor = root->left;
-        while(predecessor->right != nullptr && predecessor->right != root) {
-            predecessor = predecessor->right;
+    TreeNode* pred(TreeNode* root) {
+        TreeNode* cur = root->left;
+        while(cur->right != root && cur->right != nullptr) {
+            cur = cur->right;
         }
-        return predecessor;
+        return cur;
     }
-vector<int> res;
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        TreeNode* current = root;
         vector<int> res;
-        while(current != nullptr) {
-            if(current->left == nullptr) {
-                res.push_back(current->val);
-                current = current->right;
-                continue;
-            }     
-            TreeNode* predecessor = rightMostInLeft(current);
-
-            if(predecessor->right == nullptr) {
-                predecessor->right = current;
-                current = current->left;
+        TreeNode* cur = root;
+        while(cur != nullptr) {
+            if(cur->left == nullptr) {
+                res.push_back(cur->val);
+                cur = cur->right;
             } else {
-                predecessor->right = nullptr;
-                res.push_back(current->val);
-                current = current->right;
-                continue;
+                TreeNode* prede = pred(cur);
+                if(prede->right == nullptr){
+                    prede->right = cur;
+                    cur = cur->left;
+                } else {
+                    res.push_back(cur->val);
+                    prede->right = nullptr;
+                    cur = cur->right;
+                }
             }
         }
         return res;
     }
-    
-    
 };
