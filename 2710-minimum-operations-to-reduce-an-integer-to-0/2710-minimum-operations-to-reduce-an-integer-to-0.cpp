@@ -1,30 +1,25 @@
 class Solution {
 public:
     int minOperations(int n) {
-        auto bset = bitset<17>(n);
         int moves = 0;
-        for(int i = 0; i < bset.size(); i++) {
-            if(bset[i] == 1) {
-                if(i == bset.size() - 1) {
-                    if(bset[i - 1] == 0) {
-                        moves++;
-                        continue;
-                    }
-                    moves += 2;
-                } else if(bset[i + 1] == 0) {
-                    if(i == 0 || bset[i - 1] == 0) {
-                        moves++;
-                        continue;
-                    }
-                    int j = i;
-                    while(j >= 0 && bset[j] == 1) {
-                        bset[j] = 0;
-                        j--;
-                    }
+        int prevDigit = -1;
+        while(n > 0) {
+            int dig = n % 2;
+            n >>= 1;
+            int nextDig = n % 2;
+            
+            if(nextDig == 0 && dig == 1) {
+                if(prevDigit != 1) {
                     moves++;
-                    bset[i + 1] = 1;
+                } else {
+                    moves++;
+                    nextDig = 1;
+                    n += nextDig;
+                    dig = 0;
                 }
             }
+
+            prevDigit = dig;
         }
         return moves;
     }
