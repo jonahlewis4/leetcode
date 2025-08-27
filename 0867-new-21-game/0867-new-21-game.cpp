@@ -3,20 +3,26 @@ class Solution {
     
 public:
     double new21Game(int n, int k, int maxPts) {
-        vector<double> dp(n + 1, 0);
-        dp.back() = 0;
-        double sum = 0;
+        if(k == 0) {
+            return 1;
+        }
+        if(k - 1 + maxPts < n) {
+            return 1;
+        }
+        int numGuaranteedVictory = max(n - k + 1, 0);
+        int numUnsure = n - numGuaranteedVictory;
+        vector<double> dp(numUnsure + 1, 0);
 
-        for(int i = n; i >= 0; i--) {
-            if(i >= k) {
-                dp[i] = 1;
-            } else {
-                dp[i] = sum / maxPts;
-            }
+        double sum = numGuaranteedVictory;
 
+        for(int i = dp.size() - 1; i >= 0; i--) {
+           
+            dp[i] = sum / maxPts;
             sum += dp[i];
-            if(i + maxPts <= n) {
+            if(i + maxPts < k) {
                 sum -= dp[i + maxPts];
+            } else if (i + maxPts <= n) {
+                sum -= 1;
             }
 
         }
