@@ -10,8 +10,6 @@ public:
         for(int i = n; i >= 0; i--) {
             if(i >= k) {
                 dp[i] = 1;
-            } else if(i + maxPts > n){
-                dp[i] = sum / maxPts;
             } else {
                 dp[i] = sum / maxPts;
             }
