@@ -6,10 +6,10 @@ public:
         if(k == 0) {
             return 1;
         }
-        if(k - 1 + maxPts < n) {
+        int numGuaranteedVictory = max(n - k + 1, 0);
+        if(numGuaranteedVictory >= maxPts) {
             return 1;
         }
-        int numGuaranteedVictory = max(n - k + 1, 0);
         int numUnsure = n - numGuaranteedVictory;
         vector<double> dp(numUnsure + 1, 0);
 
