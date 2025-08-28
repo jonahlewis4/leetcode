@@ -1,8 +1,6 @@
 class Solution {
     static int flip(int i) {
-        bool asBool = (bool)i;
-        bool flipped = !asBool;
-        return (int)flipped;
+        return 1 - i;
     }
     static bool swapNextThree(vector<int>& nums, int i) {
         if(i + 2 >= nums.size()) {
