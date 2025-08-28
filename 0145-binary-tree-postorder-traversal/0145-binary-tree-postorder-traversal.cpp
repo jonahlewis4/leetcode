@@ -10,58 +10,57 @@
  * };
  */
 class Solution {
-    TreeNode* predecessor(TreeNode* root) {
+private:
+    TreeNode* pred(TreeNode* root) {
         TreeNode* cur = root->left;
-        while(cur->right != root && cur->right != nullptr) {
+        while(cur->right != nullptr && cur->right != root) {
             cur = cur->right;
         }
         return cur;
     }
-
     void reverse(TreeNode* begin, TreeNode* end) {
-        return reverse(begin, end, [](TreeNode* cur){});
+        reverse(begin, end, [](TreeNode*){});
     }
-    template <typename Func>
-    void reverse(TreeNode* begin, TreeNode* end, Func onEach){
-        TreeNode* cur = begin;
+    template <typename F>
+    void reverse(TreeNode* begin, TreeNode* end, F onProcess){
+        TreeNode* final = end->right;
         TreeNode* prev = nullptr;
-        while(cur != end) {
-            onEach(cur);
+        TreeNode* cur = begin;
+        while(cur != final) {
             TreeNode* next = cur->right;
             cur->right = prev;
             prev = cur;
+            onProcess(cur);
             cur = next;
         }
-        cur->right = prev;
-        onEach(cur);
     }
 public:
     vector<int> postorderTraversal(TreeNode* root) {
-        unique_ptr<TreeNode> sentinelWrap = make_unique<TreeNode>();
-        TreeNode* sentinel = sentinelWrap.get();
-        sentinel->left = root;
+        TreeNode sen;
+        sen.left = root;
+        TreeNode* senPtr = &sen;
 
-        TreeNode* cur = sentinel;
+        TreeNode* cur = senPtr;
         vector<int> ans;
-
-        while(cur != nullptr){
+        while(cur != nullptr) {
             if(cur->left == nullptr) {
                 cur = cur->right;
-                continue;
-            }
-
-            TreeNode* pred = predecessor(cur);
-            if(pred->right == nullptr) {
-                pred->right = cur;
-                cur = cur->left;
             } else {
-                reverse(cur->left, pred);
-                reverse(pred, cur->left, [&ans](TreeNode* node){
-                    ans.push_back(node->val);
-                });
-                cur = cur->right;
+                TreeNode *predPtr = pred(cur);
+                if(predPtr->right == cur) {
+                    reverse(cur->left, predPtr);
+                    reverse(predPtr, cur->left, [&ans](TreeNode* processed){
+                        ans.push_back(processed->val);
+                    });
+                    predPtr->right = nullptr;
+                    cur = cur->right;
+                } else {
+                    predPtr->right = cur;
+                    cur = cur->left;
+                }
             }
         }
+
         return ans;
     }
 };
