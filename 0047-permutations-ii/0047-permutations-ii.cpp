@@ -3,7 +3,7 @@ class Solution {
     private:
         const vector<int>& _nums;
         vector<vector<int>> _res;
-        unordered_map<int, int> counts;
+        map<int, int> counts;
         vector<int> _cur;
 
         //only call this once in the constructor
