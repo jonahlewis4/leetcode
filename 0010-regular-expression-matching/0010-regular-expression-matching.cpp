@@ -7,7 +7,8 @@ class Solution {
         }
         return _p[pI + 1] == '*';
     }
-    bool match(int sI, int pI) const {
+
+    bool match(int pI, int sI) const {
         return _s[sI] == _p[pI] || _p[pI] == '.';
     }
 public:
@@ -15,28 +16,26 @@ public:
         _s = s;
         _p = p;
 
-        vector<bool> dp(p.size() + 1, false);
+        vector<int> dp(p.size() + 1);
         dp.back() = true;
-
-        for(int pI = _p.size() - 2; pI >= 0; pI--) {
-            if(starAfter(pI)){
-                dp[pI] = dp[pI + 2];
-            }
+        for(int pI = p.size() - 2; pI >= 0; pI--){
+            dp[pI] = starAfter(pI) && dp[pI + 2];
         }
+
         for(int sI = s.size() - 1; sI >= 0; sI--) {
             bool bottomRight = dp.back();
             dp.back() = false;
-            for(int pI = _p.size() - 1; pI >= 0; pI--) {
+            for(int pI = p.size() - 1; pI >= 0; pI--) {
                 bool res = false;
-                if(starAfter(pI)){
-                    if(match(sI, pI)) {
+                if(starAfter(pI)) {
+                    if(match(pI, sI)){
                         res |= dp[pI];
                     }
                     res |= dp[pI + 2];
-                } else if (match(sI, pI)) {
+                } else if(match(pI, sI)) {
                     res |= bottomRight;
-                }   
-                
+                }
+
                 bottomRight = dp[pI];
                 dp[pI] = res;
             }
