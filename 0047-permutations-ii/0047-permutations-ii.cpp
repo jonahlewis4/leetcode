@@ -13,6 +13,7 @@ class Solution {
         void backtrack(int i) {
             if(i == _nums.size()) {
                 _res.push_back(_cur);
+                return;
             }
 
             for(auto & itr : counts) {
