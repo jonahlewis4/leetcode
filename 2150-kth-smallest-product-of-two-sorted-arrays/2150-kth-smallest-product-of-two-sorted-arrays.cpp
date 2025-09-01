@@ -25,7 +25,7 @@ public:
         long long l = minProduct;
         long long r = maxProduct;
 
-        long long best = minProduct;
+        long long best = minProduct - 1;
         
         while(l <= r) {
             long long m = (l + r) / 2;
