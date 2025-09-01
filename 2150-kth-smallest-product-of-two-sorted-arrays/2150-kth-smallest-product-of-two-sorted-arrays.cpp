@@ -2,9 +2,9 @@ class Solution {
 public:
     long long kthSmallestProduct(vector<int>& nums1, vector<int>& nums2, long long k) {
         //find largest product which is rank k or less.
-        if(nums1.size() > nums2.size()) {
-            swap(nums1, nums2);
-        }
+        // if(nums1.size() > nums2.size()) {
+        //     swap(nums1, nums2);
+        // }
         long long front1 = nums1.front();
         long long front2 = nums2.front();
         long long back1 = nums1.back();
