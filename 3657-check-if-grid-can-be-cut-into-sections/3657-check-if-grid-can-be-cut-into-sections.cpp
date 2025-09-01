@@ -19,8 +19,8 @@ class Solution {
             }
         }
 
-        bool Check() const {
-            vector<Interval> startCopy = intervals;
+        bool Check() {
+            vector<Interval>& startCopy = intervals;
             sort(startCopy.begin(), startCopy.end(), [](const Interval& a, const Interval& b){
                 return a.start < b.start;
             });
