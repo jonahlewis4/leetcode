@@ -1,14 +1,37 @@
 class Solution {
 public:
     int jump(vector<int>& nums) {
-        vector<int> dp(nums.size(), 0);
-        for(int i = dp.size() - 2; i >= 0; i--) {
-            int minMoves = dp.size();
-            for(int j = i + 1; j < nums.size() && j <= i + nums[i]; j++){
-                minMoves = min(minMoves, dp[j]);
-            }
-            dp[i] = minMoves + 1;
+        if(nums.size() == 1) {
+            return 0;
         }
-        return dp.front();
+        
+        queue<int> q;
+        vector<bool> enqueued(nums.size() - 1, false);
+
+        q.push(0);
+        enqueued[0] = true;
+        int jumps = 0;
+        while(!q.empty()) {
+            int n = q.size();
+            for(int i = 0; i < n; i++) {
+                int idx = q.front();
+                q.pop();
+
+                for(int j = idx + 1; j <= idx + nums[idx] && j < nums.size(); j++){
+                    if(j == nums.size() - 1){
+                        return jumps + 1;
+                    }
+                    if(enqueued[j]) {
+                        continue;
+                    }
+                    q.push(j);
+                    enqueued[j] = true;
+                }
+            }
+            jumps++;
+        }
+
+        return -1;
+
     }
 };
