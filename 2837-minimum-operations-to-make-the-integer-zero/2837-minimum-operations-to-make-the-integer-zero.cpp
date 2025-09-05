@@ -5,7 +5,7 @@ public:
         while(true) {
             long long x = num1 - ((long long)k * num2);
 
-            if(num2 >= 0) {                
+            if(num2 > 0) {                
                 if(k > x) {
                     return -1;
                 }
