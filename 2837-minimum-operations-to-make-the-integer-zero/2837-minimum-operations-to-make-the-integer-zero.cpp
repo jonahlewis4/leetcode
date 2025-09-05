@@ -4,11 +4,14 @@ public:
         int k = 1;
         while(true) {
             long long x = num1 - ((long long)k * num2);
-            if(x < 0) {
-                return -1;
-            }
-            if(k > x) {
-                return -1;
+
+            if(num2 > 0) {
+                if(x < 0) {
+                    return -1;
+                }
+                if(k > x) {
+                    return -1;
+                }
             }
 
             if(__builtin_popcountll(x) <= k) {
