@@ -138,6 +138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0817-design-hashmap](https://github.com/jonahlewis4/leetcode/tree/master/0817-design-hashmap) |
 | [0822-unique-morse-code-words](https://github.com/jonahlewis4/leetcode/tree/master/0822-unique-morse-code-words) |
 | [0854-making-a-large-island](https://github.com/jonahlewis4/leetcode/tree/master/0854-making-a-large-island) |
+| [0876-hand-of-straights](https://github.com/jonahlewis4/leetcode/tree/master/0876-hand-of-straights) |
 | [0883-car-fleet](https://github.com/jonahlewis4/leetcode/tree/master/0883-car-fleet) |
 | [0907-koko-eating-bananas](https://github.com/jonahlewis4/leetcode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/jonahlewis4/leetcode/tree/master/0912-random-pick-with-weight) |
@@ -270,6 +271,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0719-find-k-th-smallest-pair-distance](https://github.com/jonahlewis4/leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
 | [0780-max-chunks-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0780-max-chunks-to-make-sorted) |
+| [0876-hand-of-straights](https://github.com/jonahlewis4/leetcode/tree/master/0876-hand-of-straights) |
 | [0883-car-fleet](https://github.com/jonahlewis4/leetcode/tree/master/0883-car-fleet) |
 | [0900-reordered-power-of-2](https://github.com/jonahlewis4/leetcode/tree/master/0900-reordered-power-of-2) |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
@@ -380,6 +382,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/jonahlewis4/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
 | [0780-max-chunks-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0780-max-chunks-to-make-sorted) |
+| [0876-hand-of-straights](https://github.com/jonahlewis4/leetcode/tree/master/0876-hand-of-straights) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/jonahlewis4/leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1304-longest-happy-string](https://github.com/jonahlewis4/leetcode/tree/master/1304-longest-happy-string) |
 | [1356-minimum-number-of-moves-to-make-palindrome](https://github.com/jonahlewis4/leetcode/tree/master/1356-minimum-number-of-moves-to-make-palindrome) |
@@ -544,6 +547,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0816-design-hashset](https://github.com/jonahlewis4/leetcode/tree/master/0816-design-hashset) |
 | [0817-design-hashmap](https://github.com/jonahlewis4/leetcode/tree/master/0817-design-hashmap) |
 | [0822-unique-morse-code-words](https://github.com/jonahlewis4/leetcode/tree/master/0822-unique-morse-code-words) |
+| [0876-hand-of-straights](https://github.com/jonahlewis4/leetcode/tree/master/0876-hand-of-straights) |
 | [0900-reordered-power-of-2](https://github.com/jonahlewis4/leetcode/tree/master/0900-reordered-power-of-2) |
 | [0952-word-subsets](https://github.com/jonahlewis4/leetcode/tree/master/0952-word-subsets) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
