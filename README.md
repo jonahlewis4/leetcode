@@ -296,6 +296,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/jonahlewis4/leetcode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/jonahlewis4/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/jonahlewis4/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
+| [2887-sort-vowels-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/2887-sort-vowels-in-a-string) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/jonahlewis4/leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/jonahlewis4/leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3291-find-if-array-can-be-sorted](https://github.com/jonahlewis4/leetcode/tree/master/3291-find-if-array-can-be-sorted) |
@@ -915,6 +916,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2414-move-pieces-to-obtain-a-string](https://github.com/jonahlewis4/leetcode/tree/master/2414-move-pieces-to-obtain-a-string) |
 | [2465-shifting-letters-ii](https://github.com/jonahlewis4/leetcode/tree/master/2465-shifting-letters-ii) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/jonahlewis4/leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+| [2887-sort-vowels-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/2887-sort-vowels-in-a-string) |
 | [3174-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/jonahlewis4/leetcode/tree/master/3174-minimum-number-of-changes-to-make-binary-string-beautiful) |
 | [3194-find-words-containing-character](https://github.com/jonahlewis4/leetcode/tree/master/3194-find-words-containing-character) |
 | [3195-separate-black-and-white-balls](https://github.com/jonahlewis4/leetcode/tree/master/3195-separate-black-and-white-balls) |
