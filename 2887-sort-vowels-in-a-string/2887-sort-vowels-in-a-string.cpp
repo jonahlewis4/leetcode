@@ -8,19 +8,24 @@ class Solution {
     }
 public:
     string sortVowels(string s) {
-        priority_queue<char, vector<char>, greater<char>> vowels;
+        map<char, int> vowels;
+
+        
 
         for(const auto &  c : s) {
             if(isVowel(c)) {
-                vowels.push(c);
+                vowels[c]++;
             }
         }
 
         for(int i = 0; i < s.size(); i++) {
             char c = s[i];
             if(isVowel(c)) {
-                s[i] = vowels.top();
-                vowels.pop();
+                s[i] = vowels.begin()->first;
+                vowels.begin()->second--;
+                if(vowels.begin()->second == 0){
+                    vowels.erase(vowels.begin());
+                }
             }
         }
 
