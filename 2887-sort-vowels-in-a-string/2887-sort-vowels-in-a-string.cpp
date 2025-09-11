@@ -8,8 +8,9 @@ class Solution {
     }
 public:
     string sortVowels(string s) {
-        map<char, int> vowels;
+        unordered_map<char, int> vowels;
 
+        string sortedVowel = "AEIOUaeiou";
         
 
         for(const auto &  c : s) {
@@ -17,15 +18,16 @@ public:
                 vowels[c]++;
             }
         }
-
+        int sortI = 0;
         for(int i = 0; i < s.size(); i++) {
             char c = s[i];
             if(isVowel(c)) {
-                s[i] = vowels.begin()->first;
-                vowels.begin()->second--;
-                if(vowels.begin()->second == 0){
-                    vowels.erase(vowels.begin());
+                while(vowels[sortedVowel[sortI]] == 0) {
+                    sortI++;
                 }
+
+                s[i] = sortedVowel[sortI];
+                vowels[sortedVowel[sortI]]--;
             }
         }
 
