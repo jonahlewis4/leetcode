@@ -13,14 +13,13 @@ class Solution {
 public:
     int maxFreqSum(string s) {
         unordered_map<char, int> cs;
-        unordered_map<char, int> vs;
 
         int maxC = 0;
         int maxV = 0;
 
         for(const char c : s) {
             if(isVowel(c)){
-                maxV = max(maxV, ++vs[c]);
+                maxV = max(maxV, ++cs[c]);
             } else {
                 maxC = max(maxC, ++cs[c]);
             }
