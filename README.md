@@ -567,6 +567,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/jonahlewis4/leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1160-letter-tile-possibilities](https://github.com/jonahlewis4/leetcode/tree/master/1160-letter-tile-possibilities) |
+| [1264-maximum-number-of-words-you-can-type](https://github.com/jonahlewis4/leetcode/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [1272-invalid-transactions](https://github.com/jonahlewis4/leetcode/tree/master/1272-invalid-transactions) |
 | [1364-tuple-with-same-product](https://github.com/jonahlewis4/leetcode/tree/master/1364-tuple-with-same-product) |
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
@@ -896,6 +897,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1160-letter-tile-possibilities](https://github.com/jonahlewis4/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1205-defanging-an-ip-address](https://github.com/jonahlewis4/leetcode/tree/master/1205-defanging-an-ip-address) |
 | [1250-longest-common-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/1250-longest-common-subsequence) |
+| [1264-maximum-number-of-words-you-can-type](https://github.com/jonahlewis4/leetcode/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [1272-invalid-transactions](https://github.com/jonahlewis4/leetcode/tree/master/1272-invalid-transactions) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/jonahlewis4/leetcode/tree/master/1302-delete-characters-to-make-fancy-string) |
 | [1304-longest-happy-string](https://github.com/jonahlewis4/leetcode/tree/master/1304-longest-happy-string) |
