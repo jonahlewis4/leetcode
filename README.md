@@ -147,6 +147,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0952-word-subsets](https://github.com/jonahlewis4/leetcode/tree/master/0952-word-subsets) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 | [1002-maximum-width-ramp](https://github.com/jonahlewis4/leetcode/tree/master/1002-maximum-width-ramp) |
+| [1006-vowel-spellchecker](https://github.com/jonahlewis4/leetcode/tree/master/1006-vowel-spellchecker) |
 | [1014-k-closest-points-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1025-minimum-cost-for-tickets](https://github.com/jonahlewis4/leetcode/tree/master/1025-minimum-cost-for-tickets) |
 | [1028-interval-list-intersections](https://github.com/jonahlewis4/leetcode/tree/master/1028-interval-list-intersections) |
@@ -561,6 +562,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0900-reordered-power-of-2](https://github.com/jonahlewis4/leetcode/tree/master/0900-reordered-power-of-2) |
 | [0952-word-subsets](https://github.com/jonahlewis4/leetcode/tree/master/0952-word-subsets) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
+| [1006-vowel-spellchecker](https://github.com/jonahlewis4/leetcode/tree/master/1006-vowel-spellchecker) |
 | [1023-time-based-key-value-store](https://github.com/jonahlewis4/leetcode/tree/master/1023-time-based-key-value-store) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/jonahlewis4/leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
@@ -885,6 +887,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0952-word-subsets](https://github.com/jonahlewis4/leetcode/tree/master/0952-word-subsets) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/jonahlewis4/leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [0962-flip-string-to-monotone-increasing](https://github.com/jonahlewis4/leetcode/tree/master/0962-flip-string-to-monotone-increasing) |
+| [1006-vowel-spellchecker](https://github.com/jonahlewis4/leetcode/tree/master/1006-vowel-spellchecker) |
 | [1023-time-based-key-value-store](https://github.com/jonahlewis4/leetcode/tree/master/1023-time-based-key-value-store) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/jonahlewis4/leetcode/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1078-remove-outermost-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/1078-remove-outermost-parentheses) |
