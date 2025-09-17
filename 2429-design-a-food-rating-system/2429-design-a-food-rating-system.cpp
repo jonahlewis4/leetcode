@@ -1,6 +1,21 @@
 class FoodRatings {
 private: 
-    unordered_map<string, map<int, set<string>>> ratesOfCuisine;
+    unordered_map<
+        string, 
+            set<
+                pair<int, string>,
+                decltype([](const auto &a, const auto& b) {
+                    if(a.first < b.first) {
+                        return true;
+                    }
+                    if(a.first > b.first) {
+                        return false;
+                    }
+
+                    return a.second > b.second;
+                })
+            >
+    > ratesOfCuisine;
     unordered_map<string, string> cuisineOf;
     unordered_map<string, int> ratingOf;
 public:
@@ -12,7 +27,7 @@ public:
 
             cuisineOf[food] = cuisine;
             ratingOf[food] = rating;
-            ratesOfCuisine[cuisine][rating].insert(food);
+            ratesOfCuisine[cuisine].insert({rating, food});
             
         }
     }
@@ -20,19 +35,15 @@ public:
     void changeRating(string food, int newRating) {
         const string& cuisine = cuisineOf[food];
         const int rating = ratingOf[food];
-        set<string>& ratings = ratesOfCuisine[cuisine][rating];
-        ratings.erase(food);
-        if(ratings.empty()){
-            ratesOfCuisine[cuisine].erase(rating);
-        }
+        auto& ratings = ratesOfCuisine[cuisine];
+        ratings.erase({rating, food});
 
         ratingOf[food] = newRating;
-        ratesOfCuisine[cuisine][newRating].insert(food);
+        ratings.insert({newRating, food});
     }
     
     string highestRated(string cuisine) {
-        const set<string>& highestRatedFoods = ratesOfCuisine[cuisine].rbegin()->second;
-        return *highestRatedFoods.begin();
+        return ratesOfCuisine[cuisine].rbegin()->second;
     }
 };
 
