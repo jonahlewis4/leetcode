@@ -89,6 +89,9 @@ public:
         const Entry* ePtr = &gMap[shop][movie];
         rentSet.insert(ePtr);
         //optional: clear whole thing of shop if empty
+        if(rentDropHandler[shop].empty()){
+            rentDropHandler.erase(shop);
+        }
     }
     
     void drop(int shop, int movie) {
