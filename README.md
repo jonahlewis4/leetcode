@@ -125,6 +125,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/jonahlewis4/leetcode/tree/master/0621-task-scheduler) |
 | [0636-exclusive-time-of-functions](https://github.com/jonahlewis4/leetcode/tree/master/0636-exclusive-time-of-functions) |
 | [0643-maximum-average-subarray-i](https://github.com/jonahlewis4/leetcode/tree/master/0643-maximum-average-subarray-i) |
+| [0674-longest-continuous-increasing-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0674-longest-continuous-increasing-subsequence) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0695-max-area-of-island](https://github.com/jonahlewis4/leetcode/tree/master/0695-max-area-of-island) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/jonahlewis4/leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
