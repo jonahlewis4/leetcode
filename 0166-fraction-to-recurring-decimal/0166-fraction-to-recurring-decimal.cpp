@@ -1,52 +1,8 @@
 class Solution {
-    class DigitExtractor {
-        long long r = 0;
-        int i = 0;
-        int c = 0;
-
-    public:
-        DigitExtractor() { r = 0; }
-        DigitExtractor(long long n) {
-            r = 0;
-            while (n > 0) {
-                r *= 10;
-                r += n % 10;
-                n /= 10;
-                c++;
-            }
-        }
-
-        int getNext() {
-            const auto& _r = r;
-            int res = r % 10;
-            r /= 10;
-            i++;
-            return res;
-        }
-
-        bool digitEnd() const { return i >= c; }
-    };
-    string res = "";
-    DigitExtractor nExtract;
+    
     long long denom;
     long long inside = 0;
-    string GoTillDeci() {
-        string res = "";
-        while (!nExtract.digitEnd()) {
-            inside *= 10;
-            inside += nExtract.getNext();
-
-            int div = inside / denom;
-
-            res.push_back(div + '0');
-            if (res.size() == 1 && res.front() == '0') {
-                res.pop_back();
-            }
-
-            inside = inside % denom;
-        }
-        return res == "" ? "0" : res;
-    }
+   
 
     string GoTillPattern() {
         if (inside == 0) {
@@ -83,7 +39,6 @@ public:
             return "0";
         }
 
-        nExtract = DigitExtractor(labs(numerator));
         denom = labs(denominator);
 
         string sign;
@@ -91,7 +46,10 @@ public:
             sign = "-";
         }
 
-        string before = GoTillDeci();
+        long long num = labs(numerator);
+
+        string before = to_string(num / denom);
+        inside = num % denom;
         string after = GoTillPattern();
         return sign + before + after;
     }
