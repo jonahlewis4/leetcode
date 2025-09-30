@@ -1,27 +1,32 @@
 class Solution {
 public:
     int countStudents(vector<int>& students, vector<int>& sandwiches) {
-        queue<int> q;
+        int zEnjoyers = 0;
+        int oEnjoyers = 0;
         for(const int i : students) {
-            q.push(i);
-        }
-        int j = 0;
-        while(j < sandwiches.size()) {
-            int n = q.size();
-            for(int i = 0; i < n; i++) {
-                if(sandwiches[j] != q.front()){
-                    q.push(q.front());
-                    q.pop();
-                } else {
-                    q.pop();
-                    j++;
-                }
-            }
-            if(q.size() == n) {
-                return q.size();
+            if(i == 0) {
+                zEnjoyers++;
+            } else {
+                oEnjoyers++;
             }
         }
 
-        return 0;
+        for(int i = 0; i < sandwiches.size(); i++) {
+            if(sandwiches[i] == 0 && zEnjoyers == 0) {
+                return oEnjoyers;
+            }
+            if(sandwiches[i] == 1 && oEnjoyers == 0) {
+                return zEnjoyers;
+            }
+
+            if(sandwiches[i] == 0) {
+                zEnjoyers--;
+            }
+            if(sandwiches[i] == 1) {
+                oEnjoyers--;
+            }
+        }
+
+        return zEnjoyers + oEnjoyers;
     }
 };
