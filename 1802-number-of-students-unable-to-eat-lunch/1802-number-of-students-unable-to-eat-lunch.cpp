@@ -5,21 +5,16 @@ public:
         for(const int i : students) {
             q.push(i);
         }
-
-        stack<int> stack;
-        for(int i = sandwiches.size() - 1; i >= 0; i--){
-            stack.push(sandwiches[i]);
-        }
-
-        while(!stack.empty()) {
+        int j = 0;
+        while(j < sandwiches.size()) {
             int n = q.size();
             for(int i = 0; i < n; i++) {
-                if(stack.top() != q.front()){
+                if(sandwiches[j] != q.front()){
                     q.push(q.front());
                     q.pop();
                 } else {
                     q.pop();
-                    stack.pop();
+                    j++;
                 }
             }
             if(q.size() == n) {
