@@ -10,35 +10,20 @@
  * };
  */
 class Solution {
-    vector<int> in;
-    unordered_map<int, int> postIdx;
+    unordered_map<int, int> valToInorderIdx;
+    
+    int postOrderI;
+    vector<int> postOrder;
+    vector<int> inOrder;
 
-    int inorderI(int l, int r, int search) const {
-        for(int i = l; i <= r; i++) {
-            if(in[i] == search) {
-                return i;
-            }
-        }
-        return -1;
-    }
-    int rightMostInPost(int l, int r) {
-        int bestVal = in[l];
-        for(int i = l + 1; i <= r; i++) {
-            int val = in[i];
-            if(postIdx[val] > postIdx[bestVal]){
-                bestVal = val;
-            }
-        }
-        return bestVal;
-    }
 public:
     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
-        in = inorder;
-        for(int i = 0; i < postorder.size(); i++) {
-            postIdx[postorder[i]] = i;
+        inOrder = inorder;
+        postOrder = postorder;
+        for(int i = 0; i < inorder.size(); i++) {
+            valToInorderIdx[inorder[i]] = i;
         }
-
-        int rootI = inorderI(0, inorder.size() - 1, postorder.back());
+        postOrderI = postorder.size() - 1;
         return build(0, inorder.size() - 1);
     }
 
@@ -46,12 +31,16 @@ public:
         if(l > r) {
             return nullptr;
         }
-        int rootVal = rightMostInPost(l, r);
-        int rootI = inorderI(l, r, rootVal);
 
-        TreeNode* root = new TreeNode(rootVal);
-        root->right = build(rootI + 1, r);
-        root->left = build(l, rootI - 1);
-        return root;
+        int rootVal = postOrder[postOrderI];
+        postOrderI--;
+
+        TreeNode* newNode = new TreeNode(rootVal);
+        int rootInorderIdx = valToInorderIdx[rootVal];
+
+        newNode->right = build(rootInorderIdx + 1, r);
+        newNode->left = build(l, rootInorderIdx - 1);
+
+        return newNode;
     }
 };
