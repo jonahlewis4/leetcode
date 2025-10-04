@@ -8,10 +8,9 @@ public:
             int row = nextRow[num];
             nextRow[num]++;
             if(row >= res.size()) {
-                res.push_back({num});
-            } else {
-                res[row].push_back(num);
-            }
+                res.emplace_back();
+            } 
+            res[row].emplace_back(num);
         }
 
         return res;
