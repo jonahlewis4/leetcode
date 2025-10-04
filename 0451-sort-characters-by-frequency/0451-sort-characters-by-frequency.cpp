@@ -7,21 +7,25 @@ public:
             count[c]++;
         }
 
-        vector<pair<int, char>> charCounts;
+        vector<vector<char>> freq(n + 1);
+        
         for(const auto & [c, count] : count) {
-            charCounts.push_back({count, c});
+            freq[count].push_back(c);
         }
-
-        sort(charCounts.begin(), charCounts.end());
 
         int i = 0;
-        for(int j = charCounts.size() - 1; j >= 0; j--) {
-            for(int k = 0; k < charCounts[j].first; k++) {
-                s[i] = charCounts[j].second;
-                i++;
+        for(int j = n; j >= 0; j--) {
+            for(const char c : freq[j]){
+                for(int k = 0; k < j; k++) {
+                    s[i] = c;
+                    i++;
+                }
             }
         }
+        
 
+
+      
         return s;
     }
 };
