@@ -34,7 +34,7 @@ public:
 
                 
             } else {
-                pickedEnd = pickedEnd->next;
+                pickedEnd = picked;
             }
         }
 
