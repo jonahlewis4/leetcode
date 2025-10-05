@@ -51,7 +51,7 @@ private:
         }
     }
 
-    vector<vector<int>> oceanUnion(const vector<vector<bool>> a, const vector<vector<bool>> b) {
+    vector<vector<int>> oceanUnion(const vector<vector<bool>>& a, const vector<vector<bool>>& b) {
         vector<vector<int>> res;
         for(int r = 0; r < a.size(); r++) {
             for(int c = 0; c < a.front().size(); c++) {
