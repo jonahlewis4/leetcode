@@ -1,59 +1,77 @@
 class Solution {
-private: vector<vector<bool>> visit;
+    vector<pair<int, int>> dirs = {
+        {-1, 0},
+        {1, 0},
+        {0, 1},
+        {0, -1},
+    };
+private:
     vector<vector<int>> heights;
-public:
-    vector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {
-        vector<vector<bool>> pacific(heights.size(), vector<bool>(heights[0].size(), false));
-        vector<vector<bool>> atlantic(heights.size(), vector<bool>(heights[0].size(), false));
-        visit = vector<vector<bool>>(heights.size(), vector<bool>(heights[0].size(), false));
-        this->heights = heights;
-
-        for(int c = 0; c < heights[0].size(); c++){
-            dfs(0, c, pacific, 0);
-            dfs(heights.size() - 1, c, atlantic, 0);
+    void dfs(vector<vector<bool>>& ocean, bool isPacific){
+        vector<vector<bool>> visited(ocean.size(), vector<bool>(ocean.front().size(), false));
+        for(int r = 0; r < ocean.size(); r++) {
+            if(isPacific) {
+                dfs(ocean, r, 0, visited);
+            } else {
+                dfs(ocean, r, ocean[r].size() - 1, visited);
+            }
         }
 
-        for(int r = 0; r < heights.size(); r++){
-            dfs(r, 0, pacific, 0);
-            dfs(r, heights[r].size() - 1, atlantic, 0);
-        }        
-        
+        for(int c = 0; c < ocean.front().size(); c++) {
+            if(isPacific) {
+                dfs(ocean, 0, c, visited);
+            } else {
+                dfs(ocean, ocean.size() - 1, c, visited);
+            }
+        }
+    }
+    void dfs(vector<vector<bool>>& ocean, int r, int c, vector<vector<bool>>& visited) {
+        ocean[r][c] = true;
+        visited[r][c] = true;
+
+        for(const auto & [x, y] : dirs) {
+            int newR = r + y;
+            int newC = c + x;
+
+            if(newR < 0 || newC < 0 || newR >= ocean.size() || newC >= ocean[newR].size()) {
+                continue;
+            }
+
+            //dont go to visited ones
+            if(visited[newR][newC]) {
+                continue;
+            }
+
+            //don't go to smaller values
+            if(heights[newR][newC] < heights[r][c]) {
+                continue;
+            }
+
+            dfs(ocean, newR, newC, visited);
+        }
+    }
+
+    vector<vector<int>> oceanUnion(const vector<vector<bool>> a, const vector<vector<bool>> b) {
         vector<vector<int>> res;
-        for(int r = 0; r < heights.size(); r++){
-            for(int c = 0; c < heights[r].size(); c++){
-                if(pacific[r][c] && atlantic[r][c]){
-                    res.push_back({r,c});
+        for(int r = 0; r < a.size(); r++) {
+            for(int c = 0; c < a.front().size(); c++) {
+                if(a[r][c] && b[r][c]){
+                    res.push_back({r, c});
                 }
             }
         }
         return res;
     }
 
-    void dfs(int r, int c, vector<vector<bool>>& ocean, int prev){
-        if(r < 0 || c < 0 || r >= ocean.size() || c >= ocean[r].size()){
-            return;
-        }
-        if(heights[r][c] < prev){
-            return;
-        }
-        if(visit[r][c]){
-            return;
-        }
+public:
+    vector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {
+        this->heights = heights;
+        vector<vector<bool>> pacific(heights.size(), vector<bool>(heights.front().size(), false));
+        vector<vector<bool>> atlantic = pacific;
 
-        //TODO if already set to true, exit
-        if(ocean[r][c] == true){
-            return;
-        }
+        dfs(pacific, true);
+        dfs(atlantic, false);
 
-        ocean[r][c] = true;
-
-        visit[r][c] = true;
-
-        prev = heights[r][c];
-        dfs(r - 1, c, ocean, prev);
-        dfs(r + 1 ,c, ocean, prev);
-        dfs(r, c - 1, ocean, prev);
-        dfs(r, c + 1, ocean, prev);
-        visit[r][c] = false;
+        return oceanUnion(pacific, atlantic);
     }
 };
