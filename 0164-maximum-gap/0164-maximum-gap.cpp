@@ -9,7 +9,7 @@ public:
         int minVal = *min_element(nums.begin(), nums.end());
 
         int bucketSize = ceil((double)(maxVal - minVal) / (n - 1));
-
+        int bucketCount = ceil((double)(maxVal - minVal) / (bucketSize + 1));
         vector<pair<int, int>> buckets(n - 1, {
             INT_MAX,
             INT_MIN
