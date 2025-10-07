@@ -12,7 +12,7 @@ public:
             return 0;
         }
         int bucketSize = ceil((double)(maxVal - minVal) / (n - 1));
-        int bucketCount = ceil((double)(maxVal - minVal) / (bucketSize) + 1);
+        int bucketCount = (double)(maxVal - minVal) / (bucketSize) + 1;
         vector<pair<int, int>> buckets(bucketCount, {
             INT_MAX,
             INT_MIN
