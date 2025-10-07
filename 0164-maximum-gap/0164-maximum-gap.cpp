@@ -28,7 +28,7 @@ public:
         } 
 
         int lastMax = INT_MIN;
-        int largestGap = bucketSize;
+        int largestGap = 0;
         for(auto & [s, l] : buckets) {
             if(lastMax != INT_MIN && s != INT_MAX) {
                 int gap = s - lastMax;
