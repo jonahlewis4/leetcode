@@ -8,16 +8,19 @@ public:
         int maxVal = *max_element(nums.begin(), nums.end());
         int minVal = *min_element(nums.begin(), nums.end());
 
+        if(maxVal - minVal == 0) {
+            return 0;
+        }
         int bucketSize = ceil((double)(maxVal - minVal) / (n - 1));
-        int bucketCount = ceil((double)(maxVal - minVal) / (bucketSize + 1));
-        vector<pair<int, int>> buckets(n - 1, {
+        int bucketCount = ceil((double)(maxVal - minVal) / (bucketSize) + 1);
+        vector<pair<int, int>> buckets(bucketCount, {
             INT_MAX,
             INT_MIN
         });
         for(const int i : nums) {
             int iAdjusted = i - minVal;
 
-            int bucketI = iAdjusted / (bucketSize + 1);
+            int bucketI = iAdjusted / (bucketSize);
             buckets[bucketI] = {
                 min(buckets[bucketI].first, i),
                 max(buckets[bucketI].second, i),
