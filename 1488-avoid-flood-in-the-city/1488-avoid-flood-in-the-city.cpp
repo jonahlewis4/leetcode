@@ -1,47 +1,37 @@
 class Solution {
 public:
     vector<int> avoidFlood(vector<int>& rains) {
-        unordered_map<int, queue<int>> next;
-        for(int i = 0; i < rains.size(); i++) {
-            int rain = rains[i];
-            next[rain].push(i);
-        }
-
-        for(auto & [_, q] : next) {
-            q.pop();
-        }
-
-        unordered_set<int> wet;
-        priority_queue<int, vector<int>, greater<int>> pq;
+        set<int> drainings;
+        unordered_map<int, int> lastRain;
 
         for(int i = 0; i < rains.size(); i++) {
             int lake = rains[i];
             if(lake == 0) {
-                if(pq.empty()) {
-                    rains[i] = 123456789;
-                    continue;
-                }
-                int saved = pq.top();
-                pq.pop();
-                int savedLake = rains[saved];
-                wet.erase(savedLake);
-                rains[i] = savedLake;
+                drainings.insert(i);
                 continue;
             }
 
-            if(wet.contains(lake)) {
+            //see if draining has occured since last rain
+            rains[i] = -1;
+            if(!lastRain.contains(lake)) {
+                lastRain[lake] = i;
+                continue;
+            }
+
+            set<int>::iterator it = drainings.lower_bound(lastRain[lake]);
+            lastRain[lake] = i;
+            if(it == drainings.end()) {
                 return {};
             }
-            rains[i] = -1;
-            if(next[lake].empty()){
-                continue;
-            }
-
-            wet.insert(lake);
-            pq.push(next[lake].front());
-            next[lake].pop();
+            int savingDrainIdx = *it;
+            rains[savingDrainIdx] = lake;
+            drainings.erase(it);
         }
 
+        for(const int idx : drainings) {
+            rains[idx] = 123456789;
+        }
         return rains;
+
     }
 };
