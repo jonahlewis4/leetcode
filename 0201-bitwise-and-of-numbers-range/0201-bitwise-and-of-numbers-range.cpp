@@ -5,7 +5,7 @@ public:
         int res = 0;
         while(start > 0) {
             if((left & start) == (right & start)){
-                res += (left & start) / start * start; 
+                res |= (left & start); 
             } else {
                 return res;
             }
