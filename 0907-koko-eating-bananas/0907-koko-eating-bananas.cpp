@@ -19,7 +19,7 @@ public:
             long long eatingTime = timeToEat(piles, m);
 
             if(eatingTime <= h){
-                minEating = std::min(minEating, m);
+                minEating = m;
                 r = m - 1;
             } else {
                 l = m + 1;
