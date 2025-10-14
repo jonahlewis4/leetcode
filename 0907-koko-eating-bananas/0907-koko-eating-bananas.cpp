@@ -12,6 +12,7 @@ public:
         int l = 1;
         int r = *std::max_element(piles.begin(), piles.end());
 
+        int minSpeed = r;
 
         while(l <= r) {
             int m = (l + r) / 2;
@@ -19,12 +20,13 @@ public:
             long long timeToEat = eatingTime(piles, m);
 
             if(timeToEat <= h) {
+                minSpeed = min(minSpeed, m);
                 r = m - 1;
             } else {
                 l = m + 1;
             }
         }
 
-        return l;
+        return minSpeed;
     }
 };
