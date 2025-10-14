@@ -1,28 +1,32 @@
 class Solution {
 public:
     bool hasIncreasingSubarrays(vector<int>& nums, int k) {
-        if(k == 1) {
-            return true;
-        }
-        int streak = 1;
-        vector<bool> subarrays(nums.size(), false);
-        for(int i = 1; i < nums.size(); i++) {
-            int previous = nums[i - 1];
-            int current = nums[i];
-
+        // if(k == 1){
+        //     return false;
+        // }
+        int lastMessUp = 0;
+        int l = 0;
+        for(int r = 1; r < nums.size(); r++) {
+            int previous = nums[r - 1];
+            int current = nums[r];
             if(previous >= current) {
-                streak = 1;
-            } else {
-                streak++;
+                //if there's already been a mess up, go to the last mess up
+                if(lastMessUp > l) {
+                    l = lastMessUp;
+                }
+                lastMessUp = r;
             }
 
-            if(streak >= k){
-                subarrays[i] = true;
+            //if l is too close to lastMessUp, not a valid subarray
+            if(lastMessUp - l < k){
+                l = lastMessUp;
             }
-        }
 
-        for(int i = k; i < nums.size(); i++) {
-            if(subarrays[i] && subarrays[i - k]){
+            if(lastMessUp - l > k) {
+                l = lastMessUp - k;
+            }
+
+            if(r - l + 1 == 2 * k){
                 return true;
             }
         }
