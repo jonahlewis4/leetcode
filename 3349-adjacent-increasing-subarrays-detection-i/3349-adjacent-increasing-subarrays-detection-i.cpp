@@ -1,35 +1,36 @@
 class Solution {
 public:
     bool hasIncreasingSubarrays(vector<int>& nums, int k) {
-        // if(k == 1){
-        //     return false;
-        // }
-        int lastMessUp = 0;
+        
+
         int l = 0;
+        int m = 0;
+        
         for(int r = 1; r < nums.size(); r++) {
-            int previous = nums[r - 1];
+            int prev = nums[r - 1];
             int current = nums[r];
-            if(previous >= current) {
-                //if there's already been a mess up, go to the last mess up
-                if(lastMessUp > l) {
-                    l = lastMessUp;
+            
+            if(m - l < k) {
+                l = m;
+            }
+
+            if(current <= prev) {
+                //loss of streak
+                if(m <= l){
+                    m = r;
+                } else {
+                    l = m;
+                    m = r;
                 }
-                lastMessUp = r;
             }
 
-            //if l is too close to lastMessUp, not a valid subarray
-            if(lastMessUp - l < k){
-                l = lastMessUp;
-            }
-
-            if(lastMessUp - l > k) {
-                l = lastMessUp - k;
-            }
-
-            if(r - l + 1 == 2 * k){
+            if((m <= l && r - l + 1 == 2 * k) || (m > l && m - l >=k && r - m + 1 >= k)){
                 return true;
             }
         }
+
+
+
         return false;
     }
 };
