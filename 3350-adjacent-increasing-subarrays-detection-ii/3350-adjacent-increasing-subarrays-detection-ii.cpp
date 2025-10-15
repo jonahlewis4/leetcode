@@ -13,7 +13,7 @@ public:
                 r = m - 1;
             }
         }   
-        return r; 
+        return l - 1; 
     }
 
     
