@@ -19,7 +19,7 @@ class Solution {
         int aVal = a[aI];
         int bVal = b[bI];
 
-        if(aVal <= bVal) {
+        if(aVal < bVal) {
             int knownSmaller = aI - aL + 1;
             
             int newK = k - knownSmaller;
