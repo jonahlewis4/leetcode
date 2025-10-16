@@ -1,47 +1,42 @@
 class Solution {
-    int helper(const vector<int>&a, int aL, int aR, const vector<int>& b, int bL, int bR, int k) {
-        int aSize = aR - aL + 1;
-        int bSize = bR - bL + 1;
-
-        if(aSize <= 0) {
-            return b[bL + k - 1];
-        }
-        if(bSize <= 0) {
-            return a[aL + k - 1];
-        }
-        if(k == 1){
-            return min(a[aL], b[bL]);
-        }
-
-        int kHalf = k / 2;
-        int aI = aL + min(aSize, kHalf) - 1;
-        int bI = bL + min(bSize, kHalf) - 1;
-        int aVal = a[aI];
-        int bVal = b[bI];
-
-        if(aVal < bVal) {
-            int knownSmaller = aI - aL + 1;
-            
-            int newK = k - knownSmaller;
-            return helper(a, aI + 1, aR, b, bL, bR, newK);
-        } else {
-            int knownSmaller = bI - bL + 1;
-            int newK = k - knownSmaller;
-
-            return helper(a, aL, aR, b, bI + 1, bR, newK);
-        }
-    }
 public:
     double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        if(nums1.size() > nums2.size()) {
+            swap(nums1, nums2);
+        }
+        
         int n = nums1.size();
         int m = nums2.size();
-        int count = n + m ;
-        if(count % 2 == 1) {
-            return helper(nums1, 0, nums1.size() - 1, nums2, 0, nums2.size() - 1, count / 2 + 1);
-        } else {
-            int first = helper(nums1, 0, nums1.size() - 1, nums2, 0, nums2.size() - 1, count / 2);
-            int second = helper(nums1, 0, nums1.size() - 1, nums2, 0, nums2.size() - 1, count / 2 + 1);
-            return (first + second) / 2.0;
+
+        int totalElem = n + m;
+        int rightCount = totalElem / 2;
+        int leftCount = totalElem - rightCount;
+
+        int l = 0;
+        int r = n;
+        while(l <= r) {
+            //m will be the first element on the right
+            int numLeft1 = (l + r) / 2;
+            int numLeft2 = leftCount - numLeft1;
+            
+            int l1 = numLeft1 - 1 >= 0 ? nums1[numLeft1 - 1] : INT_MIN;
+            int l2 = numLeft2 - 1 >= 0 ? nums2[numLeft2 - 1] : INT_MIN;
+            int r1 = numLeft1 < n ? nums1[numLeft1] : INT_MAX;
+            int r2 = numLeft2 < m ? nums2[numLeft2] : INT_MAX ;
+
+            if(l1 <= r2 && l2 <= r1){
+                if(totalElem % 2 == 1) {
+                    return max(l1, l2);
+                } else {
+                    return (max(l1, l2) + min(r1, r2)) / 2.0;
+                }
+            } else if (l1 > r2) {
+                r = numLeft1 - 1;
+            } else {
+                l = numLeft1 + 1;
+            }
         }
+
+        return -1;
     }
 };
