@@ -5,13 +5,8 @@ public:
         
         int maxVal = nums.front();
         for(const int i : nums) {
-            if(i < 0) {
-                int modded = (value - (-i % value)) % value;   
-                vals[modded]++;
-            } else {
-                int modded = i % value;
-                vals[modded]++;
-            }
+            int modded = ((i % value) + value) % value;
+            vals[modded]++;
             maxVal = max(maxVal, i);
         }
 
