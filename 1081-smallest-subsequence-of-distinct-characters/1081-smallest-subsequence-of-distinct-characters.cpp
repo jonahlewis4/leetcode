@@ -1,24 +1,24 @@
 class Solution {
 public:
     string smallestSubsequence(const string& s) {
-        unordered_map<char, int> last;
+        vector<int> last(26);
         for(int i = 0; i < s.size(); i++){
             char c = s[i];
-            last[c] = i;
+            last[c - 'a'] = i;
         }
         string res = "";
-        unordered_set<char> seen;
+        vector<bool> seen(26, false);
         for(int i = 0; i < s.size(); i++) {
             char c = s[i];
-            if(seen.contains(c)){
+            if(seen[c - 'a']){
                 continue;
             }
-            while(!res.empty() && res.back() >= c && last[res.back()] > i){
-                seen.erase(res.back());
+            while(!res.empty() && res.back() >= c && last[res.back() - 'a'] > i){
+                seen[res.back() - 'a'] = false;
                 res.pop_back();
             }
             res.push_back(c);
-            seen.insert(res.back());
+            seen[res.back() - 'a'] = true;
            
         }
         return res;
