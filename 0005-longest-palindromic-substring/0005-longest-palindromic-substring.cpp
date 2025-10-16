@@ -5,7 +5,7 @@ public:
 
         int bestR = 0;
         int bestL = 0;
-        const auto  find = [&longest, &s, &bestR, &bestL](int l, int r){
+        const auto  find = [&s, &bestR, &bestL](int l, int r){
             while(l >= 0 && r < s.size()){
                 if(s[l] != s[r]){
                     break;
