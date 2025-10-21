@@ -1,23 +1,20 @@
 class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
-        constexpr int NOT_REACHED = INT_MAX;
-        vector<int> minCoinsToReach(amount + 1, NOT_REACHED);
-        minCoinsToReach[0] = 0;
-        for(int i = 1; i <= amount; i++){
-            for(const auto & coin : coins){
-                if(i - coin < 0 ){
+        vector<int> dp(amount + 1, INT_MAX);
+        dp.front() = 0;
+        for(int i = 1; i <= amount; i++) {
+            for(const int coin : coins) {
+                int newIdx = i - coin;
+                if(newIdx < 0) {
                     continue;
                 }
-                if(minCoinsToReach[i - coin] != NOT_REACHED){
-                    minCoinsToReach[i] = min(minCoinsToReach[i], minCoinsToReach[i - coin] + 1);
+                if(dp[newIdx] == INT_MAX) {
+                    continue;
                 }
-            }
+                dp[i] = min(dp[i], dp[newIdx] + 1);
+            } 
         }
-
-        if(minCoinsToReach[amount] == NOT_REACHED){
-            return -1;
-        }
-        return minCoinsToReach[amount];
+        return dp.back() == INT_MAX ? -1 : dp.back();
     }
 };
