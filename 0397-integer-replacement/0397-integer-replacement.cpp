@@ -9,6 +9,17 @@ public:
             return 32;
         }
         q.push(n);
+
+        unordered_set<int> enqueued;
+        enqueued.insert(n);
+        
+        const auto & add = [&enqueued, &q](int next) {
+            if(!enqueued.contains(next)) {
+                enqueued.insert(next);
+                q.push(next);
+            }
+        };
+
         while(!q.empty()) {
             int n = q.size();
             for(int i = 0; i < n; i++) {
@@ -17,12 +28,18 @@ public:
                 if(num == 1) {
                     return ops;
                 }
+                
+            
 
                 if(num % 2 == 0){
-                    q.push(num / 2);
+                    int next = num / 2;
+                    add(next);
                 } else {
-                    q.push(num - 1);
-                    q.push(num + 1);
+                    int down = num - 1;
+                    int up = num + 1;
+                    add(down);
+                    add(up);
+
                 }
             }
             ops++;
