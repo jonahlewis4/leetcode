@@ -1,24 +1,22 @@
 class Solution {
 public:
     int change(int amount, vector<int>& coins) {
-        vector<unsigned int> dp(amount + 1);
-        dp.back() = 1;
-        for(int r = coins.size() - 1; r >= 0; r--){
-            for(int c = amount; c >= 0; c--){
-                int coin = coins[r];
-                unsigned int right = 0;
-                if(c + coin <= amount) {
-                    right = dp[c + coin];
+        vector<long long> dp(amount + 1, 0);
+        dp.front() = 1;
+
+        for(int coinIdx = coins.size() - 1; coinIdx >= 0; coinIdx--) {
+            for(int amt = 1; amt <= amount; amt++){
+                int below = dp[amt];
+                int leftIdx = amt - coins[coinIdx];
+                if(leftIdx < 0) {
+                    dp[amt] = below;
+                } else {
+                    int left = dp[leftIdx];
+                    dp[amt] = (long long)below + left;
                 }
-                unsigned int below = dp[c];
-                unsigned int ans = right + below;
-                if(ans > INT_MAX) {
-                    ans = 0;
-                }
-                dp[c] = ans;
             }
         }
-        return dp[0];
 
+        return dp.back();
     }
 };
