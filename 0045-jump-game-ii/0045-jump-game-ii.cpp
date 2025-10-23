@@ -1,24 +1,22 @@
 class Solution {
 public:
     int jump(vector<int>& nums) {
-        if(nums.size() == 1) {
-            return 0;
-        }
-        int end = 0;
         int jumps = 0;
-
-        int nextEnd = nums.front();
-
-        for(int i = 0; i < nums.size() - 1; i++) {
-
-            int reachable = i + nums[i];
-            nextEnd = max(reachable, nextEnd);
-
-            if(i == end) {
-                end = nextEnd;
+        int endOfThisJumpRange = 0;
+        int nextEnd = 0;
+        for(int i = 0; i < nums.size(); i++) {
+            if(i > endOfThisJumpRange) {
                 jumps++;
+                endOfThisJumpRange = nextEnd;
+            }
+
+            int nextSquare = i + nums[i];
+            if(nextSquare > nextEnd) {
+                nextEnd = nextSquare;
             }
         }
-        return jumps; 
-    }  
+
+
+        return jumps;
+    }
 };
