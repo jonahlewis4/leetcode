@@ -1,32 +1,31 @@
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
-        transpose(matrix);
-        colswap(matrix);
+        int midRow = (matrix.size() - 1) / 2;
+        
+        const auto& swapTillBack = [&matrix](int r, int c) {
+            int topLR = r;
+            int topLC = c;
+            int topRR = c;
+            int topRC = matrix.size() - r - 1;
+            int botRR = matrix.size() - r - 1;
+            int botRC = matrix.size() - c - 1;
+            int botLR = matrix.size() - c - 1;
+            int botLC = r;
 
-    }
-    void transpose(vector<vector<int>> & matrix){
-        for(int i = 0; i < matrix.size(); i++){
-            for(int j = 0; j <= i; j++){
-                std::swap(matrix[i][j], matrix[j][i]);
-            }
-        }
-    }
-    void colswap(vector<vector<int>> & matrix){
-        for(int i = 0; i < matrix.size(); i++){
-            for(int j = 0; j < matrix.size() / 2; j++){
-                std::swap(matrix[i][j], matrix[i][matrix[i].size() - j - 1]);
-            }
-        }
-    }
+            int temp = matrix[topLR][topLC];
+            matrix[topLR][topLC] = matrix[botLR][botLC];
+            matrix[botLR][botLC] = matrix[botRR][botRC];
+            matrix[botRR][botRC] = matrix[topRR][topRC];
+            matrix[topRR][topRC] = temp;
 
-    void printMatrix(vector<vector<int>> & matrix){
-        for(const auto & row : matrix){
-            for (const auto & col : row){
-                cout<<col<<" ";
+        };
+
+        
+        for(int r = 0; r <= midRow; r++){
+            for(int c = r; c < matrix.size() - r - 1; c++){
+                swapTillBack(r, c);
             }
-            cout<<endl;
         }
-        cout<<endl;
     }
 };
