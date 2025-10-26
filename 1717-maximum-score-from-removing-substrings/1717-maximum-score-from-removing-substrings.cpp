@@ -5,47 +5,41 @@ public:
 
         stack<char> stk;
 
-        const auto& maximal = [x, y](char c, char d) {
-            if(x > y && c == 'b' && d == 'a'){
-                return true;
-            }
-            if(y > x && c == 'a' && d == 'b'){
-                return true;
-            }
-
-            return false;
-        };
-
-        for(const char c : s) {
-            if(c != 'a' && c != 'b'){
+        for(const char c : s){
+            if(stk.empty() || c != 'a' && c != 'b' || stk.top() == c || (stk.top() != 'a' && stk.top() != 'b')){
                 stk.push(c);
                 continue;
             }
-            if(!stk.empty() && stk.top() != c && maximal(c, stk.top())){
-                stk.pop();
+
+            if((x >= y && c == 'b') || (y > x && c == 'a')){
                 res += max(x, y);
-            } else {
-                stk.push(c);
+                stk.pop();
+                continue;
             }
+
+            stk.push(c);
         }
+        
+        char desiredRight = x >= y ? 'a' : 'b';
+        char desiredLeft = x >= y ? 'b' : 'a';
 
-        if(!stk.empty()){
-            char prev = stk.top();
-            stk.pop();
-
-            while(!stk.empty()){
-                if(prev != stk.top() && (stk.top() == 'a' || stk.top() == 'b') && (prev == 'a' || prev == 'b')){
-                    res += min(x, y);
-                    stk.pop();
-                    if(!stk.empty()){
-                        char prev = stk.top();
-                        stk.pop();
-                    }
-                } else {
-                    prev = stk.top();
-                    stk.pop();
-                }
+        stack<char> stk2;
+        while(!stk.empty()) {
+            if(stk2.empty()){
+                stk2.push(stk.top());
+                stk.pop();
+                continue;
             }
+
+            if(stk.top() == desiredLeft && stk2.top() == desiredRight) {
+                res += min(x, y);
+                stk.pop();
+                stk2.pop();
+                continue;
+            }
+
+            stk2.push(stk.top());
+            stk.pop();
         }
 
         return res;
