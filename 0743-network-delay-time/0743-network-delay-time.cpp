@@ -30,14 +30,15 @@ public:
             .weight = 0
         });
 
-
-        while(!pq.empty()){
+        int visitCount = 0;
+        while(!pq.empty() && visitCount < n){
             edge e = pq.top();
             pq.pop();
-            if(dist[e.dest] < e.weight){
+            if(dist[e.dest] <= e.weight){
                 continue;
             }
             dist[e.dest] = e.weight;
+            visitCount++;
             for(auto const & n : adjList[e.dest]){
                 int newWeight = e.weight + n.weight;
                 if(newWeight < dist[n.dest]){
