@@ -647,6 +647,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0258-add-digits](https://github.com/jonahlewis4/leetcode/tree/master/0258-add-digits) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0273-integer-to-english-words](https://github.com/jonahlewis4/leetcode/tree/master/0273-integer-to-english-words) |
+| [0319-bulb-switcher](https://github.com/jonahlewis4/leetcode/tree/master/0319-bulb-switcher) |
 | [0342-power-of-four](https://github.com/jonahlewis4/leetcode/tree/master/0342-power-of-four) |
 | [0367-valid-perfect-square](https://github.com/jonahlewis4/leetcode/tree/master/0367-valid-perfect-square) |
 | [0371-sum-of-two-integers](https://github.com/jonahlewis4/leetcode/tree/master/0371-sum-of-two-integers) |
@@ -1702,6 +1703,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Brainteaser
 |  |
 | ------- |
+| [0319-bulb-switcher](https://github.com/jonahlewis4/leetcode/tree/master/0319-bulb-switcher) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/jonahlewis4/leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2837-minimum-operations-to-make-the-integer-zero](https://github.com/jonahlewis4/leetcode/tree/master/2837-minimum-operations-to-make-the-integer-zero) |
 ## Probability and Statistics
