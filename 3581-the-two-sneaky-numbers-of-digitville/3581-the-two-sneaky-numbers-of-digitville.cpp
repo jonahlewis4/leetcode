@@ -1,15 +1,14 @@
 class Solution {
 public:
     vector<int> getSneakyNumbers(vector<int>& nums) {
-        vector<int> res;
-        unordered_set<int> set;
-        for(const auto & num : nums) {
-            if(set.contains(num)){
-                res.push_back(num);
-            } else {
-                set.insert(num);
+        for(int i = 0; i < nums.size(); i++) {
+            while(nums[i] != i && nums[nums[i]] != nums[i]){
+                swap(nums[nums[i]], nums[i]);
             }
         }
-        return res;
+
+
+        return {nums.back(), *(nums.end() - 2)};
     }
+
 };
