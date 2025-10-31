@@ -642,6 +642,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0171-excel-sheet-column-number](https://github.com/jonahlewis4/leetcode/tree/master/0171-excel-sheet-column-number) |
 | [0189-rotate-array](https://github.com/jonahlewis4/leetcode/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/jonahlewis4/leetcode/tree/master/0202-happy-number) |
+| [0223-rectangle-area](https://github.com/jonahlewis4/leetcode/tree/master/0223-rectangle-area) |
 | [0224-basic-calculator](https://github.com/jonahlewis4/leetcode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/jonahlewis4/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0258-add-digits](https://github.com/jonahlewis4/leetcode/tree/master/0258-add-digits) |
@@ -1164,6 +1165,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Geometry
 |  |
 | ------- |
+| [0223-rectangle-area](https://github.com/jonahlewis4/leetcode/tree/master/0223-rectangle-area) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 | [1014-k-closest-points-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1349-check-if-it-is-a-straight-line](https://github.com/jonahlewis4/leetcode/tree/master/1349-check-if-it-is-a-straight-line) |
