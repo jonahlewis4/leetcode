@@ -6,34 +6,24 @@ public:
             const string& key = wordsDict[i];
             positions[key].push_back(i);
         }
-
-        for(auto & [_, posArray] : positions){
-            sort(posArray.begin(), posArray.end());
-        }
     }
     
-    int shortest(string word1, string word2) {
-        if(positions[word1].size() > positions[word2].size()){
-            swap(word1, word2);
-        }
-
+    int shortest(const string& word1, const string& word2) {
         int smallestDistance = INT_MAX;
-        for(const int idx : positions[word1]){
-            //find closest value to idx
-            const vector<int>& pos2 = positions[word2];
+        
+        const vector<int>& pos1 = positions[word1];
+        const vector<int>& pos2 = positions[word2];
 
-            const auto& ub = upper_bound(pos2.begin(), pos2.end(), idx);
+        int i1 = 0;
+        int i2 = 0;
+        while(i1 < pos1.size() && i2 < pos2.size()){
+            int dist = abs(pos1[i1] - pos2[i2]);
+            smallestDistance = min(smallestDistance, dist);
 
-            if(ub != pos2.begin()){
-                const auto & smallerValue = prev(ub);
-                int smallerIdx = *smallerValue;
-                int distance = idx - smallerIdx;
-                smallestDistance = min(smallestDistance, distance);
-            }
-            if(ub != pos2.end()){
-                int largetIdx = *ub;
-                int distance = largetIdx - idx;
-                smallestDistance = min(smallestDistance, distance);
+            if(pos1[i1] > pos2[i2]){
+                i2++;
+            } else {
+                i1++;
             }
         }
 
