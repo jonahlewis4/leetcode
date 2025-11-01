@@ -1,17 +1,21 @@
 class Vector2D {
     int r = 0;
     int c = 0;
+
     const vector<vector<int>>& vec;
+    void crawl(){
+        while(r < vec.size() && c >= vec[r].size()){
+            c = 0;
+            r++;
+        }
+    }
 public:
     Vector2D(const vector<vector<int>>& vec) : vec(vec) {
         
     }
     
     int next() {
-        while(c >= vec[r].size()){
-            c = 0;
-            r++;
-        }
+        crawl();
         int res = vec[r][c];
         c++;
         
@@ -19,12 +23,7 @@ public:
     }
     
     bool hasNext() {
-
-
-        while(r < vec.size() && c >= vec[r].size()){
-            c = 0;
-            r++;
-        }
+        crawl();
         return r < vec.size() && c < vec[r].size();
     }
 };
