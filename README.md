@@ -87,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0243-shortest-word-distance](https://github.com/jonahlewis4/leetcode/tree/master/0243-shortest-word-distance) |
 | [0244-shortest-word-distance-ii](https://github.com/jonahlewis4/leetcode/tree/master/0244-shortest-word-distance-ii) |
 | [0245-shortest-word-distance-iii](https://github.com/jonahlewis4/leetcode/tree/master/0245-shortest-word-distance-iii) |
+| [0249-group-shifted-strings](https://github.com/jonahlewis4/leetcode/tree/master/0249-group-shifted-strings) |
 | [0251-flatten-2d-vector](https://github.com/jonahlewis4/leetcode/tree/master/0251-flatten-2d-vector) |
 | [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0259-3sum-smaller](https://github.com/jonahlewis4/leetcode/tree/master/0259-3sum-smaller) |
@@ -561,6 +562,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0229-majority-element-ii](https://github.com/jonahlewis4/leetcode/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/jonahlewis4/leetcode/tree/master/0242-valid-anagram) |
 | [0244-shortest-word-distance-ii](https://github.com/jonahlewis4/leetcode/tree/master/0244-shortest-word-distance-ii) |
+| [0249-group-shifted-strings](https://github.com/jonahlewis4/leetcode/tree/master/0249-group-shifted-strings) |
 | [0266-palindrome-permutation](https://github.com/jonahlewis4/leetcode/tree/master/0266-palindrome-permutation) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
@@ -902,6 +904,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0243-shortest-word-distance](https://github.com/jonahlewis4/leetcode/tree/master/0243-shortest-word-distance) |
 | [0244-shortest-word-distance-ii](https://github.com/jonahlewis4/leetcode/tree/master/0244-shortest-word-distance-ii) |
 | [0245-shortest-word-distance-iii](https://github.com/jonahlewis4/leetcode/tree/master/0245-shortest-word-distance-iii) |
+| [0249-group-shifted-strings](https://github.com/jonahlewis4/leetcode/tree/master/0249-group-shifted-strings) |
 | [0257-binary-tree-paths](https://github.com/jonahlewis4/leetcode/tree/master/0257-binary-tree-paths) |
 | [0266-palindrome-permutation](https://github.com/jonahlewis4/leetcode/tree/master/0266-palindrome-permutation) |
 | [0269-alien-dictionary](https://github.com/jonahlewis4/leetcode/tree/master/0269-alien-dictionary) |
