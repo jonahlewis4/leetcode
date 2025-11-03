@@ -141,6 +141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/jonahlewis4/leetcode/tree/master/0739-daily-temperatures) |
 | [0747-min-cost-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0762-find-anagram-mappings](https://github.com/jonahlewis4/leetcode/tree/master/0762-find-anagram-mappings) |
+| [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0780-max-chunks-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0792-binary-search](https://github.com/jonahlewis4/leetcode/tree/master/0792-binary-search) |
 | [0794-swim-in-rising-water](https://github.com/jonahlewis4/leetcode/tree/master/0794-swim-in-rising-water) |
@@ -804,6 +805,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0417-pacific-atlantic-water-flow](https://github.com/jonahlewis4/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0498-diagonal-traverse](https://github.com/jonahlewis4/leetcode/tree/master/0498-diagonal-traverse) |
 | [0695-max-area-of-island](https://github.com/jonahlewis4/leetcode/tree/master/0695-max-area-of-island) |
+| [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0794-swim-in-rising-water](https://github.com/jonahlewis4/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0854-making-a-large-island](https://github.com/jonahlewis4/leetcode/tree/master/0854-making-a-large-island) |
 | [0945-snakes-and-ladders](https://github.com/jonahlewis4/leetcode/tree/master/0945-snakes-and-ladders) |
@@ -1052,6 +1054,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0327-count-of-range-sum](https://github.com/jonahlewis4/leetcode/tree/master/0327-count-of-range-sum) |
 | [0347-top-k-frequent-elements](https://github.com/jonahlewis4/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
+| [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
 | [1014-k-closest-points-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/jonahlewis4/leetcode/tree/master/3974-xor-after-range-multiplication-queries-i) |
@@ -1327,6 +1330,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0515-find-largest-value-in-each-tree-row](https://github.com/jonahlewis4/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0543-diameter-of-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/jonahlewis4/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jonahlewis4/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0904-leaf-similar-trees](https://github.com/jonahlewis4/leetcode/tree/master/0904-leaf-similar-trees) |
