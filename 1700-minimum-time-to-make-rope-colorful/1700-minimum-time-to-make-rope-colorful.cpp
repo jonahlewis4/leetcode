@@ -1,13 +1,9 @@
 class Solution {
 public:
     int minCost(string colors, vector<int>& neededTime) {
-        int previousIdx = -1;
+        int previousIdx = 0;
         int total = 0;
-        for(int i = 0; i < colors.size(); i++) {
-            if(previousIdx < 0){
-                previousIdx = i;
-                continue;
-            }
+        for(int i = 1; i < colors.size(); i++) {
 
             int nextColor = colors[i];
             int prevColor = colors[previousIdx];
