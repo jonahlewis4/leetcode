@@ -1,29 +1,28 @@
 class Solution {
 public:
     int minCost(string colors, vector<int>& neededTime) {
-        stack<int> stk;
+        int previousIdx = -1;
         int total = 0;
         for(int i = 0; i < colors.size(); i++) {
-            if(stk.empty()){
-                stk.push(i);
+            if(previousIdx < 0){
+                previousIdx = i;
                 continue;
             }
 
             int nextColor = colors[i];
-            int prevColor = colors[stk.top()];
+            int prevColor = colors[previousIdx];
 
             if(nextColor != prevColor) {
-                stk.push(i);
+                previousIdx = i;
                 continue;
             }
 
             int nextCost = neededTime[i];
-            int prevCost = neededTime[stk.top()];
+            int prevCost = neededTime[previousIdx];
 
             if(nextCost > prevCost) {
                 total += prevCost;
-                stk.pop();
-                stk.push(i);
+                previousIdx = i;
             } else {
                 total += nextCost;
             }
