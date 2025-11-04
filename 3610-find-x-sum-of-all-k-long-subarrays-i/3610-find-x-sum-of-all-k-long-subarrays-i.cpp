@@ -2,10 +2,17 @@ class Solution {
 public:
     vector<int> findXSum(vector<int>& nums, int k, int x) {
         vector<int> res(nums.size() - k + 1);
-        for(int i = 0; i < res.size(); i++) {
-            int end = i + k;
+        unordered_map<int, int> freq;
+        for(int i = 0; i < nums.size(); i++) {
+            int l = i - k;
+            if(l >= 0){
+                freq[nums[l]]--;
+            }
 
-            res[i] = xSum(nums, i, end, x);
+            freq[nums[i]]++;
+            if(l + 1 >= 0){
+                res[l + 1] = xLargestSum(freq, x);
+            }
         }
 
         return res;
