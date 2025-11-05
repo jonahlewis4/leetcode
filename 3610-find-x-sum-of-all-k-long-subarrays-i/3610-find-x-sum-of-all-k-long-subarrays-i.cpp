@@ -3,7 +3,7 @@ class Solution {
 
     class KTree{
         int k;
-        long long _sum = 0;
+        int _sum = 0;
 
         PairSet::iterator kth;
 
@@ -26,7 +26,7 @@ class Solution {
             bool dontHaveK = set.size() < k;
             bool newInK = dontHaveK || newP > *kth;
             if(newInK){
-                _sum += (long long)newP.first * val;
+                _sum += newP.first * val;
             }
 
             pair<int, int> oldP = {newP.first - 1, val};
@@ -34,7 +34,7 @@ class Solution {
             bool oldExists = itr != itFor.end();
             bool oldInK = oldExists && (dontHaveK || oldP >= *kth);
             if(oldInK){
-                _sum -= (long long)oldP.first * val;
+                _sum -= oldP.first * val;
             }
 
             bool oldWasKth = oldInK && (!dontHaveK && *kth == oldP);
@@ -44,7 +44,7 @@ class Solution {
             }
 
             if(newInK && !oldInK && !dontHaveK){
-                _sum -= (long long)kth->first * kth->second;
+                _sum -= kth->first * kth->second;
                 kth = prev(kth);
             }
 
@@ -69,7 +69,7 @@ class Solution {
 
             bool oldLeft = set.size() < k || oldP >= *kth;
             if(oldLeft){
-                _sum -= (long long)oldP.first * val;
+                _sum -= oldP.first * val;
             }
 
             pair<int, int> newP = {oldP.first - 1, val};
@@ -79,7 +79,7 @@ class Solution {
             bool wasKth = set.size() > k && oldP == *kth;
             if(wasKth) {
                 kth = next(kth);
-                _sum += (long long)kth->first * kth->second;
+                _sum += kth->first * kth->second;
             }
 
             set.erase(oldP);
@@ -91,7 +91,7 @@ class Solution {
             }
             bool newLeft = set.size() < k || newP >= *kth;
             if(newLeft && !wasKth){
-                _sum += (long long)newP.first * val;
+                _sum += newP.first * val;
             }
 
             
@@ -99,7 +99,7 @@ class Solution {
             if(set.size() == k) {
                 kth = prev(set.end());
                 if(oldLeft && !newLeft && !wasKth){
-                    _sum += (long long)kth->first * kth->second;
+                    _sum += kth->first * kth->second;
                 }
                 return;
             }
@@ -112,11 +112,11 @@ class Solution {
             //if old was left, but now right, kth is next
             if(oldLeft && !newLeft && !wasKth) {
                 kth = next(kth);
-                _sum += (long long)kth->first * kth->second;
+                _sum += kth->first * kth->second;
             }
         }
 
-        long long sum() const {
+        int sum() const {
             return _sum;
         }
     };
