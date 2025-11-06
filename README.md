@@ -91,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0249-group-shifted-strings](https://github.com/jonahlewis4/leetcode/tree/master/0249-group-shifted-strings) |
 | [0251-flatten-2d-vector](https://github.com/jonahlewis4/leetcode/tree/master/0251-flatten-2d-vector) |
 | [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
+| [0255-verify-preorder-sequence-in-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0255-verify-preorder-sequence-in-binary-search-tree) |
 | [0259-3sum-smaller](https://github.com/jonahlewis4/leetcode/tree/master/0259-3sum-smaller) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0269-alien-dictionary](https://github.com/jonahlewis4/leetcode/tree/master/0269-alien-dictionary) |
@@ -870,6 +871,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0224-basic-calculator](https://github.com/jonahlewis4/leetcode/tree/master/0224-basic-calculator) |
 | [0234-palindrome-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0247-strobogrammatic-number-ii](https://github.com/jonahlewis4/leetcode/tree/master/0247-strobogrammatic-number-ii) |
+| [0255-verify-preorder-sequence-in-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0255-verify-preorder-sequence-in-binary-search-tree) |
 | [0273-integer-to-english-words](https://github.com/jonahlewis4/leetcode/tree/master/0273-integer-to-english-words) |
 | [0342-power-of-four](https://github.com/jonahlewis4/leetcode/tree/master/0342-power-of-four) |
 | [0394-decode-string](https://github.com/jonahlewis4/leetcode/tree/master/0394-decode-string) |
@@ -1245,6 +1247,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0224-basic-calculator](https://github.com/jonahlewis4/leetcode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/jonahlewis4/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0234-palindrome-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0234-palindrome-linked-list) |
+| [0255-verify-preorder-sequence-in-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0255-verify-preorder-sequence-in-binary-search-tree) |
 | [0364-nested-list-weight-sum-ii](https://github.com/jonahlewis4/leetcode/tree/master/0364-nested-list-weight-sum-ii) |
 | [0394-decode-string](https://github.com/jonahlewis4/leetcode/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/jonahlewis4/leetcode/tree/master/0402-remove-k-digits) |
@@ -1271,6 +1274,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0042-trapping-rain-water](https://github.com/jonahlewis4/leetcode/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/jonahlewis4/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
+| [0255-verify-preorder-sequence-in-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0255-verify-preorder-sequence-in-binary-search-tree) |
 | [0402-remove-k-digits](https://github.com/jonahlewis4/leetcode/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/jonahlewis4/leetcode/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/jonahlewis4/leetcode/tree/master/0739-daily-temperatures) |
@@ -1335,6 +1339,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0250-count-univalue-subtrees](https://github.com/jonahlewis4/leetcode/tree/master/0250-count-univalue-subtrees) |
+| [0255-verify-preorder-sequence-in-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0255-verify-preorder-sequence-in-binary-search-tree) |
 | [0257-binary-tree-paths](https://github.com/jonahlewis4/leetcode/tree/master/0257-binary-tree-paths) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
@@ -1453,6 +1458,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0250-count-univalue-subtrees](https://github.com/jonahlewis4/leetcode/tree/master/0250-count-univalue-subtrees) |
+| [0255-verify-preorder-sequence-in-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0255-verify-preorder-sequence-in-binary-search-tree) |
 | [0257-binary-tree-paths](https://github.com/jonahlewis4/leetcode/tree/master/0257-binary-tree-paths) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
@@ -1635,6 +1641,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0173-binary-search-tree-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/jonahlewis4/leetcode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0255-verify-preorder-sequence-in-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0255-verify-preorder-sequence-in-binary-search-tree) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jonahlewis4/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0975-range-sum-of-bst](https://github.com/jonahlewis4/leetcode/tree/master/0975-range-sum-of-bst) |
