@@ -43,12 +43,16 @@ public:
             dsu.Union(con[0] - 1, con[1] - 1);
         }
 
-        vector<set<int>> connectedTo(c);
-
-        for(int i = 0; i < c; i++) {
+        vector<vector<int>> connectedTo(c);
+        vector<unordered_set<int>> exists(c);
+        
+        for(int i = c - 1; i >= 0; i--) {
             int root = dsu.Find(i);
-            connectedTo[root].insert(i);
+            connectedTo[root].push_back(i);
+            exists[root].insert(i);
         }
+
+        
 
         vector<int> res;
 
@@ -58,19 +62,25 @@ public:
                 int station = q[1];
                 int root = dsu.Find(station - 1);
 
-                const set<int>& connections = connectedTo[root];
-                if(connections.contains(station - 1)){
+                vector<int>& connections = connectedTo[root];
+                const unordered_set<int>& exist = exists[root];
+                while(!connections.empty() && !exist.contains(connections.back())){
+                    connections.pop_back();
+                }
+
+
+                if(exist.contains(station - 1)){ 
                     res.push_back(station);
-                } else if (connections.empty()){
+                } else if (connections.empty()){ 
                     res.push_back(-1);
                 } else {
-                    res.push_back(*(connections.begin()) + 1);
+                    res.push_back(connections.back() + 1);
                 }
             } else {
                 int station = q[1];
                 int root = dsu.Find(station - 1);
-                set<int>& connections = connectedTo[root];
-                connections.erase(station - 1);
+                unordered_set<int>& exist = exists[root];
+                exist.erase(station - 1);
             }
         }
 
