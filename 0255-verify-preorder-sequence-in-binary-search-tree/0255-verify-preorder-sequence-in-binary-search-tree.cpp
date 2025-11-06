@@ -1,21 +1,19 @@
 class Solution {
 public:
     bool verifyPreorder(vector<int>& preorder) {
-        stack<int> stk;
-        stk.push(preorder.front());
         int smol = INT_MIN;
+        int stkSize = 1;
         for(int i = 1; i < preorder.size(); i++) {
             if(preorder[i] <= smol){
                 return false;
             }
             
-            while(!stk.empty() && stk.top() < preorder[i]){
-                smol = stk.top();
-                stk.pop();
+            while(stkSize > 0 && preorder[stkSize - 1] < preorder[i]){
+                smol = preorder[stkSize - 1];
+                stkSize--;
             }
-            stk.push(preorder[i]);
-
-            
+            preorder[stkSize] = preorder[i];
+            stkSize++;
         }
         return true;
     }
