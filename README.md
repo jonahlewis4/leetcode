@@ -94,6 +94,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0255-verify-preorder-sequence-in-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0255-verify-preorder-sequence-in-binary-search-tree) |
 | [0256-paint-house](https://github.com/jonahlewis4/leetcode/tree/master/0256-paint-house) |
 | [0259-3sum-smaller](https://github.com/jonahlewis4/leetcode/tree/master/0259-3sum-smaller) |
+| [0260-single-number-iii](https://github.com/jonahlewis4/leetcode/tree/master/0260-single-number-iii) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0269-alien-dictionary](https://github.com/jonahlewis4/leetcode/tree/master/0269-alien-dictionary) |
 | [0271-encode-and-decode-strings](https://github.com/jonahlewis4/leetcode/tree/master/0271-encode-and-decode-strings) |
@@ -1030,6 +1031,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0190-reverse-bits](https://github.com/jonahlewis4/leetcode/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/jonahlewis4/leetcode/tree/master/0191-number-of-1-bits) |
 | [0222-count-complete-tree-nodes](https://github.com/jonahlewis4/leetcode/tree/master/0222-count-complete-tree-nodes) |
+| [0260-single-number-iii](https://github.com/jonahlewis4/leetcode/tree/master/0260-single-number-iii) |
 | [0266-palindrome-permutation](https://github.com/jonahlewis4/leetcode/tree/master/0266-palindrome-permutation) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/jonahlewis4/leetcode/tree/master/0287-find-the-duplicate-number) |
