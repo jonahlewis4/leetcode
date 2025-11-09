@@ -6,14 +6,13 @@ public:
             allXor ^= num;
         }
 
-        int lz = __builtin_clz(allXor);
-        int digNum = 32 - lz;
-        int lMost = 1 << (digNum - 1);
+    
+        int rMost = (allXor) & (-(uint)allXor);
 
         int xor1 = 0;
         int xor2 = 0;
         for(const int num : nums) {
-            if(num & lMost){
+            if(num & rMost){
                 xor1 ^= num;
             } else {
                 xor2 ^= num;
