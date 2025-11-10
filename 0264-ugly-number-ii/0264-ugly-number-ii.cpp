@@ -4,7 +4,7 @@ public:
         struct Number {
             long long total = 0;
             bool operator<(const Number& other) const{
-                return total > other.total;
+                return total < other.total;
             }
 
             Number nextTwo() const {
@@ -25,36 +25,24 @@ public:
             }
         };
 
-        priority_queue<Number> pq;
-        unordered_set<int> enqueued;
-        pq.push({1});
+        set<Number> pq;
+        pq.insert({.total = 1});
        
         for(int i = 1; i < n; i++){
-            Number top = pq.top();
-            pq.pop();
+            Number top = *pq.begin();
+            pq.erase(pq.begin());
             
             Number nextTwo = top.nextTwo();
             Number nextThree = top.nextThree();
             Number nextFive = top.nextFive();
 
-            if(!enqueued.contains(nextTwo.total)){
-                pq.push(nextTwo);
-            }
-
-            if(!enqueued.contains(nextThree.total)){
-                pq.push(nextThree);
-            }
-
-            if(!enqueued.contains(nextFive.total)){
-                pq.push(nextFive);
-            }
 
 
-            enqueued.insert(nextTwo.total);
-            enqueued.insert(nextThree.total);
-            enqueued.insert(nextFive.total);
+            pq.insert(nextTwo);
+            pq.insert(nextThree);
+            pq.insert(nextFive);
         }
 
-        return pq.top().total;
+        return (*pq.begin()).total;
     }
 };
