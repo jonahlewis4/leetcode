@@ -266,6 +266,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3748-sort-matrix-by-diagonals](https://github.com/jonahlewis4/leetcode/tree/master/3748-sort-matrix-by-diagonals) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/jonahlewis4/leetcode/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3790-fruits-into-baskets-ii](https://github.com/jonahlewis4/leetcode/tree/master/3790-fruits-into-baskets-ii) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 | [3837-grid-teleportation-traversal](https://github.com/jonahlewis4/leetcode/tree/master/3837-grid-teleportation-traversal) |
 | [3863-power-grid-maintenance](https://github.com/jonahlewis4/leetcode/tree/master/3863-power-grid-maintenance) |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/jonahlewis4/leetcode/tree/master/3974-xor-after-range-multiplication-queries-i) |
@@ -459,6 +460,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/jonahlewis4/leetcode/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/jonahlewis4/leetcode/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/jonahlewis4/leetcode/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Binary Search
 |  |
 | ------- |
@@ -652,6 +654,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/jonahlewis4/leetcode/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/jonahlewis4/leetcode/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/jonahlewis4/leetcode/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 | [3837-grid-teleportation-traversal](https://github.com/jonahlewis4/leetcode/tree/master/3837-grid-teleportation-traversal) |
 | [3863-power-grid-maintenance](https://github.com/jonahlewis4/leetcode/tree/master/3863-power-grid-maintenance) |
 ## Math
@@ -1277,6 +1280,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2389-design-a-text-editor](https://github.com/jonahlewis4/leetcode/tree/master/2389-design-a-text-editor) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/jonahlewis4/leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/jonahlewis4/leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -1291,6 +1295,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1002-maximum-width-ramp](https://github.com/jonahlewis4/leetcode/tree/master/1002-maximum-width-ramp) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/jonahlewis4/leetcode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1909-buildings-with-an-ocean-view](https://github.com/jonahlewis4/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
+| [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Backtracking
 |  |
 | ------- |
