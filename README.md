@@ -369,6 +369,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0198-house-robber](https://github.com/jonahlewis4/leetcode/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/jonahlewis4/leetcode/tree/master/0213-house-robber-ii) |
 | [0256-paint-house](https://github.com/jonahlewis4/leetcode/tree/master/0256-paint-house) |
+| [0264-ugly-number-ii](https://github.com/jonahlewis4/leetcode/tree/master/0264-ugly-number-ii) |
 | [0300-longest-increasing-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0300-longest-increasing-subsequence) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/jonahlewis4/leetcode/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0312-burst-balloons](https://github.com/jonahlewis4/leetcode/tree/master/0312-burst-balloons) |
@@ -521,6 +522,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/jonahlewis4/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
+| [0264-ugly-number-ii](https://github.com/jonahlewis4/leetcode/tree/master/0264-ugly-number-ii) |
 | [0295-find-median-from-data-stream](https://github.com/jonahlewis4/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0347-top-k-frequent-elements](https://github.com/jonahlewis4/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0355-design-twitter](https://github.com/jonahlewis4/leetcode/tree/master/0355-design-twitter) |
@@ -583,6 +585,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0242-valid-anagram](https://github.com/jonahlewis4/leetcode/tree/master/0242-valid-anagram) |
 | [0244-shortest-word-distance-ii](https://github.com/jonahlewis4/leetcode/tree/master/0244-shortest-word-distance-ii) |
 | [0249-group-shifted-strings](https://github.com/jonahlewis4/leetcode/tree/master/0249-group-shifted-strings) |
+| [0264-ugly-number-ii](https://github.com/jonahlewis4/leetcode/tree/master/0264-ugly-number-ii) |
 | [0266-palindrome-permutation](https://github.com/jonahlewis4/leetcode/tree/master/0266-palindrome-permutation) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
@@ -683,6 +686,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0224-basic-calculator](https://github.com/jonahlewis4/leetcode/tree/master/0224-basic-calculator) |
 | [0227-basic-calculator-ii](https://github.com/jonahlewis4/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0258-add-digits](https://github.com/jonahlewis4/leetcode/tree/master/0258-add-digits) |
+| [0264-ugly-number-ii](https://github.com/jonahlewis4/leetcode/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0273-integer-to-english-words](https://github.com/jonahlewis4/leetcode/tree/master/0273-integer-to-english-words) |
 | [0319-bulb-switcher](https://github.com/jonahlewis4/leetcode/tree/master/0319-bulb-switcher) |
