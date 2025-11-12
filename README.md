@@ -1052,6 +1052,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0401-binary-watch](https://github.com/jonahlewis4/leetcode/tree/master/0401-binary-watch) |
 | [0405-convert-a-number-to-hexadecimal](https://github.com/jonahlewis4/leetcode/tree/master/0405-convert-a-number-to-hexadecimal) |
 | [0461-hamming-distance](https://github.com/jonahlewis4/leetcode/tree/master/0461-hamming-distance) |
+| [0476-number-complement](https://github.com/jonahlewis4/leetcode/tree/master/0476-number-complement) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/jonahlewis4/leetcode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/jonahlewis4/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/jonahlewis4/leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
