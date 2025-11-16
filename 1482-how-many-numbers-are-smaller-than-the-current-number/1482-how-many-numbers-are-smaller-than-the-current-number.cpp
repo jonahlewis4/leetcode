@@ -7,12 +7,15 @@ public:
         }
         sort(nums2.begin(), nums2.end());
         vector<int> res(nums2.size());
+
+        int lt = 0;
         for(int i = 0; i < nums2.size(); i++) {
             int num = nums2[i].first;
 
-            pair<int, int> p = {num, 0};
-            auto itr = lower_bound(nums2.begin(), nums2.end(), p);
-            res[nums2[i].second] = itr - nums2.begin();
+            if(i > 0 && nums2[i - 1].first < nums2[i].first){
+                lt = i;
+            }            
+            res[nums2[i].second] = lt;
         }
 
         return res;
