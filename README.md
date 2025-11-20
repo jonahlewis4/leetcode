@@ -90,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0247-strobogrammatic-number-ii](https://github.com/jonahlewis4/leetcode/tree/master/0247-strobogrammatic-number-ii) |
 | [0249-group-shifted-strings](https://github.com/jonahlewis4/leetcode/tree/master/0249-group-shifted-strings) |
 | [0251-flatten-2d-vector](https://github.com/jonahlewis4/leetcode/tree/master/0251-flatten-2d-vector) |
+| [0252-meeting-rooms](https://github.com/jonahlewis4/leetcode/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0255-verify-preorder-sequence-in-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0255-verify-preorder-sequence-in-binary-search-tree) |
 | [0256-paint-house](https://github.com/jonahlewis4/leetcode/tree/master/0256-paint-house) |
@@ -296,6 +297,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0217-contains-duplicate](https://github.com/jonahlewis4/leetcode/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/jonahlewis4/leetcode/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/jonahlewis4/leetcode/tree/master/0242-valid-anagram) |
+| [0252-meeting-rooms](https://github.com/jonahlewis4/leetcode/tree/master/0252-meeting-rooms) |
 | [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
 | [0259-3sum-smaller](https://github.com/jonahlewis4/leetcode/tree/master/0259-3sum-smaller) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
