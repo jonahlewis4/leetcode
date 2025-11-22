@@ -4,7 +4,7 @@ public:
         int ops = 0;
         for(const int num : nums) {
             int m3 = num % 3;
-            ops += min(m3, 3 - m3);
+            ops += min(m3, 1);
         }
         return ops;
     }
