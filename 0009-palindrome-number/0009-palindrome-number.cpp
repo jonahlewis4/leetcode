@@ -13,7 +13,7 @@ public:
         int rightPower = 1;
 
 
-        while(leftPower > rightPower) {
+        while(leftPower >= rightPower) {
             int leftDigit = x / leftPower % 10;
             int rightDigit = x / rightPower % 10;
 
