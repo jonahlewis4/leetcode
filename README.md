@@ -725,6 +725,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0264-ugly-number-ii](https://github.com/jonahlewis4/leetcode/tree/master/0264-ugly-number-ii) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0273-integer-to-english-words](https://github.com/jonahlewis4/leetcode/tree/master/0273-integer-to-english-words) |
+| [0292-nim-game](https://github.com/jonahlewis4/leetcode/tree/master/0292-nim-game) |
 | [0319-bulb-switcher](https://github.com/jonahlewis4/leetcode/tree/master/0319-bulb-switcher) |
 | [0342-power-of-four](https://github.com/jonahlewis4/leetcode/tree/master/0342-power-of-four) |
 | [0367-valid-perfect-square](https://github.com/jonahlewis4/leetcode/tree/master/0367-valid-perfect-square) |
@@ -1848,6 +1849,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Brainteaser
 |  |
 | ------- |
+| [0292-nim-game](https://github.com/jonahlewis4/leetcode/tree/master/0292-nim-game) |
 | [0319-bulb-switcher](https://github.com/jonahlewis4/leetcode/tree/master/0319-bulb-switcher) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/jonahlewis4/leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2837-minimum-operations-to-make-the-integer-zero](https://github.com/jonahlewis4/leetcode/tree/master/2837-minimum-operations-to-make-the-integer-zero) |
@@ -1855,4 +1857,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0867-new-21-game](https://github.com/jonahlewis4/leetcode/tree/master/0867-new-21-game) |
+## Game Theory
+|  |
+| ------- |
+| [0292-nim-game](https://github.com/jonahlewis4/leetcode/tree/master/0292-nim-game) |
 <!---LeetCode Topics End-->
