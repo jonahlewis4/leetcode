@@ -5,7 +5,7 @@ class Solution {
 public:
     int countTrapezoids(vector<vector<int>>& points) {
         long long numLines = 0;
-        map<int, int> ptsAtY;
+        unordered_map<int, int> ptsAtY;
         for(const vector<int>& point : points) {
             int x = point.front();
             int y = point.back();
