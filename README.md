@@ -996,6 +996,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0271-encode-and-decode-strings](https://github.com/jonahlewis4/leetcode/tree/master/0271-encode-and-decode-strings) |
 | [0273-integer-to-english-words](https://github.com/jonahlewis4/leetcode/tree/master/0273-integer-to-english-words) |
 | [0290-word-pattern](https://github.com/jonahlewis4/leetcode/tree/master/0290-word-pattern) |
+| [0293-flip-game](https://github.com/jonahlewis4/leetcode/tree/master/0293-flip-game) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0344-reverse-string](https://github.com/jonahlewis4/leetcode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/jonahlewis4/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
