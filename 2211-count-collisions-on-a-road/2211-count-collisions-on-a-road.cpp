@@ -1,52 +1,47 @@
 class Solution {
 public:
     int countCollisions(string directions) {
-        stack<char> cars;
         int collisions = 0;
+        int last = 0;
+        constexpr int S = -1;
         for(const char dir : directions) {
             switch (dir) {
                 case 'S': {
-                    while(!cars.empty() && cars.top() == 'R'){
-                        collisions++;
-                        cars.pop();
+                    if(last > 0) {
+                        collisions += last;
+                        last = 0;
                     }
-                    while(!cars.empty()){cars.pop();}
-                    cars.push('S');
+                    last = S;
                     break;
                 }
                 case 'L': {
-                    if(cars.empty()){
+                    if(last == 0){
                         break;
                     }
 
-                    if(cars.top() == 'R'){
-                        collisions += 2;
-                        cars.pop();
-                        while(!cars.empty() && cars.top() == 'R'){
-                            collisions++;
-                            cars.pop();
-                        }
-                        while(!cars.empty()){cars.pop();}
-                        cars.push('S');
+                    if(last > 0){
+                        collisions += last + 1;
+                    
+                        last = S;
                         break;
                     }
 
-                    if(cars.top() == 'S'){
+                    if(last == S){
                         collisions++;
                         break;
                     }
                     break;
                 }
                 default: {
-                    if(cars.empty()) {
-                        cars.push(dir);
+                    if(last == 0) {
+                        last++;
                         break;
                     }
 
-                    if(cars.top() != 'R'){
-                        cars.pop();
+                    if(last < 0){
+                        last = 0;
                     } 
-                    cars.push('R');
+                    last++;
                     break;
                 }
             }
