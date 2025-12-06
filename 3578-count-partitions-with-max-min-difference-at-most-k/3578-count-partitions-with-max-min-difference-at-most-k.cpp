@@ -4,15 +4,10 @@ class Solution {
         deque<int> minVal;
     public:
         int diff() const {
-            const auto& bv = maxVal;
-            const auto& sv = minVal;
-        
             return maxVal.front() - minVal.front();
         }
 
         void add(int i) {
-            const auto& bv = maxVal;
-            const auto& sv = minVal;
             while(!minVal.empty() 
             && minVal.back() > i) {
                 minVal.pop_back();
@@ -30,9 +25,6 @@ class Solution {
         }
 
         void dec(int i) {
-            const auto& bv = maxVal;
-            const auto& sv = minVal;
-        
             if(!minVal.empty() && minVal.front() == i) {
                 minVal.pop_front();
             }
