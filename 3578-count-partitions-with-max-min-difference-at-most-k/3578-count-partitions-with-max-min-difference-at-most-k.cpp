@@ -1,28 +1,48 @@
 class Solution {
     class MinMax {
+        deque<int> maxVal;
+        deque<int> minVal;
     public:
-        multiset<int> set;
         int diff() const {
-            if(set.size() == 1 || set.size() == 0) {
-                return 0;
-            }
-
-            int min = *set.begin();
-            int end = *prev(set.end());
-
-            return end - min;
+            const auto& bv = maxVal;
+            const auto& sv = minVal;
+        
+            return maxVal.front() - minVal.front();
         }
 
         void add(int i) {
-            set.insert(i);
+            const auto& bv = maxVal;
+            const auto& sv = minVal;
+            while(!minVal.empty() 
+            && minVal.back() > i) {
+                minVal.pop_back();
+            }
+
+            minVal.push_back(i);
+
+            while(!maxVal.empty()
+                && maxVal.back() < i
+            ){
+                maxVal.pop_back();
+            }
+
+            maxVal.push_back(i);
         }
 
         void dec(int i) {
-            auto itr = set.find(i);
-            set.erase(itr);
+            const auto& bv = maxVal;
+            const auto& sv = minVal;
+        
+            if(!minVal.empty() && minVal.front() == i) {
+                minVal.pop_front();
+            }
+
+            if(!maxVal.empty() && maxVal.front() == i) {
+                maxVal.pop_front();
+            }
         }
-    };
-public:
+    };                  
+public:                
     int countPartitions(vector<int>& nums, int k) {
         vector<int> sum(nums.size() + 2, 0);
         
