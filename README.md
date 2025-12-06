@@ -523,6 +523,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0354-russian-doll-envelopes](https://github.com/jonahlewis4/leetcode/tree/master/0354-russian-doll-envelopes) |
 | [0362-design-hit-counter](https://github.com/jonahlewis4/leetcode/tree/master/0362-design-hit-counter) |
 | [0367-valid-perfect-square](https://github.com/jonahlewis4/leetcode/tree/master/0367-valid-perfect-square) |
+| [0374-guess-number-higher-or-lower](https://github.com/jonahlewis4/leetcode/tree/master/0374-guess-number-higher-or-lower) |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [0540-single-element-in-a-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/jonahlewis4/leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
@@ -1724,6 +1725,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0157-read-n-characters-given-read4](https://github.com/jonahlewis4/leetcode/tree/master/0157-read-n-characters-given-read4) |
 | [0278-first-bad-version](https://github.com/jonahlewis4/leetcode/tree/master/0278-first-bad-version) |
+| [0374-guess-number-higher-or-lower](https://github.com/jonahlewis4/leetcode/tree/master/0374-guess-number-higher-or-lower) |
 | [0865-robot-room-cleaner](https://github.com/jonahlewis4/leetcode/tree/master/0865-robot-room-cleaner) |
 ## String Matching
 |  |
