@@ -11,8 +11,8 @@ class Solution {
 public:
     int countTriples(int n) {
         int count = 0;
-        for(int a = 1; a <= n; a++) {
-            for(int b = 1; sqrt(b * b + a * a) <= n; b++) {
+        for(int a = 1; a * a <= n * n; a++) {
+            for(int b = 1; b * b + a * a <= n * n; b++) {
                 int cSquared = b * b + a * a;
                 if(isPerfectSquare(cSquared)) {
                     count++;
