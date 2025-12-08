@@ -14,7 +14,9 @@ public:
         for(int a = 1; a <= n; a++) {
             for(int b = 1; b * b + a * a <= n * n; b++) {
                 int cSquared = b * b + a * a;
-                if(isPerfectSquare(cSquared)) {
+                int c = sqrt(cSquared);
+
+                if(c * c == cSquared) {
                     count++;
                 }
             }
