@@ -267,6 +267,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3383-taking-maximum-energy-from-the-mystic-dungeon](https://github.com/jonahlewis4/leetcode/tree/master/3383-taking-maximum-energy-from-the-mystic-dungeon) |
 | [3429-special-array-i](https://github.com/jonahlewis4/leetcode/tree/master/3429-special-array-i) |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/jonahlewis4/leetcode/tree/master/3432-count-partitions-with-even-sum-difference) |
+| [3433-count-mentions-per-user](https://github.com/jonahlewis4/leetcode/tree/master/3433-count-mentions-per-user) |
 | [3435-block-placement-queries](https://github.com/jonahlewis4/leetcode/tree/master/3435-block-placement-queries) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/jonahlewis4/leetcode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/jonahlewis4/leetcode/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
@@ -367,6 +368,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3291-find-if-array-can-be-sorted](https://github.com/jonahlewis4/leetcode/tree/master/3291-find-if-array-can-be-sorted) |
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/jonahlewis4/leetcode/tree/master/3307-find-the-maximum-sum-of-node-values) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/jonahlewis4/leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
+| [3433-count-mentions-per-user](https://github.com/jonahlewis4/leetcode/tree/master/3433-count-mentions-per-user) |
 | [3531-count-covered-buildings](https://github.com/jonahlewis4/leetcode/tree/master/3531-count-covered-buildings) |
 | [3647-zero-array-transformation-iii](https://github.com/jonahlewis4/leetcode/tree/master/3647-zero-array-transformation-iii) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/jonahlewis4/leetcode/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
@@ -795,6 +797,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/jonahlewis4/leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3279-alice-and-bob-playing-flower-game](https://github.com/jonahlewis4/leetcode/tree/master/3279-alice-and-bob-playing-flower-game) |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/jonahlewis4/leetcode/tree/master/3432-count-partitions-with-even-sum-difference) |
+| [3433-count-mentions-per-user](https://github.com/jonahlewis4/leetcode/tree/master/3433-count-mentions-per-user) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/jonahlewis4/leetcode/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/jonahlewis4/leetcode/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/jonahlewis4/leetcode/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
@@ -941,6 +944,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2411-spiral-matrix-iv](https://github.com/jonahlewis4/leetcode/tree/master/2411-spiral-matrix-iv) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/jonahlewis4/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/jonahlewis4/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
+| [3433-count-mentions-per-user](https://github.com/jonahlewis4/leetcode/tree/master/3433-count-mentions-per-user) |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/jonahlewis4/leetcode/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 | [3790-fruits-into-baskets-ii](https://github.com/jonahlewis4/leetcode/tree/master/3790-fruits-into-baskets-ii) |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/jonahlewis4/leetcode/tree/master/3974-xor-after-range-multiplication-queries-i) |
