@@ -22,9 +22,7 @@ public:
         vector<int> res(numberOfUsers, 0);
 
         vector<bool> online(numberOfUsers, true);
-        unordered_map<int, vector<int>> arrivals;
-
-        int arrivalI = 0;
+        queue<pair<int, int>> arrivals;
 
         for(const vector<string>& event : events) {
             
@@ -33,13 +31,12 @@ public:
             const int timestamp = stoi(event[1]);
             const string& data = event[2];
 
-            while(arrivalI <= timestamp){
-                for(const int arrival : arrivals[arrivalI]){
-                    online[arrival] = true;
-                }
+            while(!arrivals.empty() && arrivals.front().first <= timestamp){
+               
+                online[arrivals.front().second] = true;
+                
 
-                arrivals.erase(arrivalI);
-                arrivalI++;
+                arrivals.pop();
             }
 
 
@@ -87,7 +84,7 @@ public:
                     id *= 10;
                     id += data[i] - '0';
                 }
-                arrivals[nextOnline].push_back(id);
+                arrivals.push({nextOnline, id});
                 online[id] = false;
             }
         }
