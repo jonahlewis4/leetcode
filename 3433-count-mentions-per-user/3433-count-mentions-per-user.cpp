@@ -5,8 +5,7 @@ public:
             (const vector<string>& e1, const vector<string>& e2){
                 int stamp1 = stoi(e1[1]);
                 int stamp2 = stoi(e2[1]);
-                string type1 = e1[0];
-                string type2 = e1[1];
+                const string& type1 = e1[0];
 
                 if(stamp1 < stamp2) {
                     return true;
