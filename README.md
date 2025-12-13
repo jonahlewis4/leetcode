@@ -281,6 +281,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3583-count-special-triplets](https://github.com/jonahlewis4/leetcode/tree/master/3583-count-special-triplets) |
 | [3592-find-x-sum-of-all-k-long-subarrays-ii](https://github.com/jonahlewis4/leetcode/tree/master/3592-find-x-sum-of-all-k-long-subarrays-ii) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
+| [3606-coupon-code-validator](https://github.com/jonahlewis4/leetcode/tree/master/3606-coupon-code-validator) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/jonahlewis4/leetcode/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
 | [3623-count-number-of-trapezoids-i](https://github.com/jonahlewis4/leetcode/tree/master/3623-count-number-of-trapezoids-i) |
 | [3639-zero-array-transformation-i](https://github.com/jonahlewis4/leetcode/tree/master/3639-zero-array-transformation-i) |
@@ -372,6 +373,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/jonahlewis4/leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3433-count-mentions-per-user](https://github.com/jonahlewis4/leetcode/tree/master/3433-count-mentions-per-user) |
 | [3531-count-covered-buildings](https://github.com/jonahlewis4/leetcode/tree/master/3531-count-covered-buildings) |
+| [3606-coupon-code-validator](https://github.com/jonahlewis4/leetcode/tree/master/3606-coupon-code-validator) |
 | [3647-zero-array-transformation-iii](https://github.com/jonahlewis4/leetcode/tree/master/3647-zero-array-transformation-iii) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/jonahlewis4/leetcode/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 | [3748-sort-matrix-by-diagonals](https://github.com/jonahlewis4/leetcode/tree/master/3748-sort-matrix-by-diagonals) |
@@ -711,6 +713,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3583-count-special-triplets](https://github.com/jonahlewis4/leetcode/tree/master/3583-count-special-triplets) |
 | [3592-find-x-sum-of-all-k-long-subarrays-ii](https://github.com/jonahlewis4/leetcode/tree/master/3592-find-x-sum-of-all-k-long-subarrays-ii) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
+| [3606-coupon-code-validator](https://github.com/jonahlewis4/leetcode/tree/master/3606-coupon-code-validator) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/jonahlewis4/leetcode/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
 | [3623-count-number-of-trapezoids-i](https://github.com/jonahlewis4/leetcode/tree/master/3623-count-number-of-trapezoids-i) |
 | [3678-design-task-manager](https://github.com/jonahlewis4/leetcode/tree/master/3678-design-task-manager) |
@@ -1109,6 +1112,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3410-find-longest-self-contained-substring](https://github.com/jonahlewis4/leetcode/tree/master/3410-find-longest-self-contained-substring) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/jonahlewis4/leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3451-string-compression-iii](https://github.com/jonahlewis4/leetcode/tree/master/3451-string-compression-iii) |
+| [3606-coupon-code-validator](https://github.com/jonahlewis4/leetcode/tree/master/3606-coupon-code-validator) |
 | [3617-find-the-original-typed-string-i](https://github.com/jonahlewis4/leetcode/tree/master/3617-find-the-original-typed-string-i) |
 | [3618-find-the-original-typed-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/3618-find-the-original-typed-string-ii) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/jonahlewis4/leetcode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
