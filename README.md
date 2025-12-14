@@ -158,6 +158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0780-max-chunks-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0792-binary-search](https://github.com/jonahlewis4/leetcode/tree/master/0792-binary-search) |
 | [0794-swim-in-rising-water](https://github.com/jonahlewis4/leetcode/tree/master/0794-swim-in-rising-water) |
+| [0806-number-of-lines-to-write-string](https://github.com/jonahlewis4/leetcode/tree/master/0806-number-of-lines-to-write-string) |
 | [0816-design-hashset](https://github.com/jonahlewis4/leetcode/tree/master/0816-design-hashset) |
 | [0817-design-hashmap](https://github.com/jonahlewis4/leetcode/tree/master/0817-design-hashmap) |
 | [0822-unique-morse-code-words](https://github.com/jonahlewis4/leetcode/tree/master/0822-unique-morse-code-words) |
@@ -1058,6 +1059,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/jonahlewis4/leetcode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
 | [0782-jewels-and-stones](https://github.com/jonahlewis4/leetcode/tree/master/0782-jewels-and-stones) |
+| [0806-number-of-lines-to-write-string](https://github.com/jonahlewis4/leetcode/tree/master/0806-number-of-lines-to-write-string) |
 | [0822-unique-morse-code-words](https://github.com/jonahlewis4/leetcode/tree/master/0822-unique-morse-code-words) |
 | [0844-backspace-string-compare](https://github.com/jonahlewis4/leetcode/tree/master/0844-backspace-string-compare) |
 | [0868-push-dominoes](https://github.com/jonahlewis4/leetcode/tree/master/0868-push-dominoes) |
