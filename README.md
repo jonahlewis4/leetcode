@@ -139,6 +139,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0561-array-partition](https://github.com/jonahlewis4/leetcode/tree/master/0561-array-partition) |
 | [0594-longest-harmonious-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0594-longest-harmonious-subsequence) |
+| [0604-design-compressed-string-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0604-design-compressed-string-iterator) |
 | [0621-task-scheduler](https://github.com/jonahlewis4/leetcode/tree/master/0621-task-scheduler) |
 | [0636-exclusive-time-of-functions](https://github.com/jonahlewis4/leetcode/tree/master/0636-exclusive-time-of-functions) |
 | [0643-maximum-average-subarray-i](https://github.com/jonahlewis4/leetcode/tree/master/0643-maximum-average-subarray-i) |
@@ -1057,6 +1058,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/jonahlewis4/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
+| [0604-design-compressed-string-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0604-design-compressed-string-iterator) |
 | [0647-palindromic-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0647-palindromic-substrings) |
 | [0657-robot-return-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/0657-robot-return-to-origin) |
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
@@ -1258,6 +1260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0362-design-hit-counter](https://github.com/jonahlewis4/leetcode/tree/master/0362-design-hit-counter) |
 | [0380-insert-delete-getrandom-o1](https://github.com/jonahlewis4/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0432-all-oone-data-structure](https://github.com/jonahlewis4/leetcode/tree/master/0432-all-oone-data-structure) |
+| [0604-design-compressed-string-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0604-design-compressed-string-iterator) |
 | [0716-max-stack](https://github.com/jonahlewis4/leetcode/tree/master/0716-max-stack) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jonahlewis4/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0816-design-hashset](https://github.com/jonahlewis4/leetcode/tree/master/0816-design-hashset) |
@@ -1902,6 +1905,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0173-binary-search-tree-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0251-flatten-2d-vector](https://github.com/jonahlewis4/leetcode/tree/master/0251-flatten-2d-vector) |
+| [0604-design-compressed-string-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0604-design-compressed-string-iterator) |
 ## Combinatorics
 |  |
 | ------- |
