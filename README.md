@@ -257,6 +257,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2692-take-gifts-from-the-richest-pile](https://github.com/jonahlewis4/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/jonahlewis4/leetcode/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
 | [2868-continuous-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/2868-continuous-subarrays) |
+| [3074-apple-redistribution-into-boxes](https://github.com/jonahlewis4/leetcode/tree/master/3074-apple-redistribution-into-boxes) |
 | [3154-maximum-value-of-an-ordered-triplet-i](https://github.com/jonahlewis4/leetcode/tree/master/3154-maximum-value-of-an-ordered-triplet-i) |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/jonahlewis4/leetcode/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3194-find-words-containing-character](https://github.com/jonahlewis4/leetcode/tree/master/3194-find-words-containing-character) |
@@ -371,6 +372,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/jonahlewis4/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/jonahlewis4/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2887-sort-vowels-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/2887-sort-vowels-in-a-string) |
+| [3074-apple-redistribution-into-boxes](https://github.com/jonahlewis4/leetcode/tree/master/3074-apple-redistribution-into-boxes) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/jonahlewis4/leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/jonahlewis4/leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3291-find-if-array-can-be-sorted](https://github.com/jonahlewis4/leetcode/tree/master/3291-find-if-array-can-be-sorted) |
@@ -503,6 +505,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/jonahlewis4/leetcode/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [2710-minimum-operations-to-reduce-an-integer-to-0](https://github.com/jonahlewis4/leetcode/tree/master/2710-minimum-operations-to-reduce-an-integer-to-0) |
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/jonahlewis4/leetcode/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
+| [3074-apple-redistribution-into-boxes](https://github.com/jonahlewis4/leetcode/tree/master/3074-apple-redistribution-into-boxes) |
 | [3195-separate-black-and-white-balls](https://github.com/jonahlewis4/leetcode/tree/master/3195-separate-black-and-white-balls) |
 | [3241-divide-array-into-arrays-with-max-difference](https://github.com/jonahlewis4/leetcode/tree/master/3241-divide-array-into-arrays-with-max-difference) |
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/jonahlewis4/leetcode/tree/master/3307-find-the-maximum-sum-of-node-values) |
