@@ -167,6 +167,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0860-lemonade-change](https://github.com/jonahlewis4/leetcode/tree/master/0860-lemonade-change) |
 | [0876-hand-of-straights](https://github.com/jonahlewis4/leetcode/tree/master/0876-hand-of-straights) |
 | [0883-car-fleet](https://github.com/jonahlewis4/leetcode/tree/master/0883-car-fleet) |
+| [0905-sort-array-by-parity](https://github.com/jonahlewis4/leetcode/tree/master/0905-sort-array-by-parity) |
 | [0907-koko-eating-bananas](https://github.com/jonahlewis4/leetcode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/jonahlewis4/leetcode/tree/master/0912-random-pick-with-weight) |
 | [0944-delete-columns-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0944-delete-columns-to-make-sorted) |
@@ -350,6 +351,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0876-hand-of-straights](https://github.com/jonahlewis4/leetcode/tree/master/0876-hand-of-straights) |
 | [0883-car-fleet](https://github.com/jonahlewis4/leetcode/tree/master/0883-car-fleet) |
 | [0900-reordered-power-of-2](https://github.com/jonahlewis4/leetcode/tree/master/0900-reordered-power-of-2) |
+| [0905-sort-array-by-parity](https://github.com/jonahlewis4/leetcode/tree/master/0905-sort-array-by-parity) |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 | [1014-k-closest-points-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -882,6 +884,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/jonahlewis4/leetcode/tree/master/0768-partition-labels) |
 | [0844-backspace-string-compare](https://github.com/jonahlewis4/leetcode/tree/master/0844-backspace-string-compare) |
 | [0868-push-dominoes](https://github.com/jonahlewis4/leetcode/tree/master/0868-push-dominoes) |
+| [0905-sort-array-by-parity](https://github.com/jonahlewis4/leetcode/tree/master/0905-sort-array-by-parity) |
 | [1002-maximum-width-ramp](https://github.com/jonahlewis4/leetcode/tree/master/1002-maximum-width-ramp) |
 | [1028-interval-list-intersections](https://github.com/jonahlewis4/leetcode/tree/master/1028-interval-list-intersections) |
 | [1133-last-substring-in-lexicographical-order](https://github.com/jonahlewis4/leetcode/tree/master/1133-last-substring-in-lexicographical-order) |
