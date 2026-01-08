@@ -170,6 +170,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0883-car-fleet](https://github.com/jonahlewis4/leetcode/tree/master/0883-car-fleet) |
 | [0905-sort-array-by-parity](https://github.com/jonahlewis4/leetcode/tree/master/0905-sort-array-by-parity) |
 | [0907-koko-eating-bananas](https://github.com/jonahlewis4/leetcode/tree/master/0907-koko-eating-bananas) |
+| [0908-smallest-range-i](https://github.com/jonahlewis4/leetcode/tree/master/0908-smallest-range-i) |
 | [0912-random-pick-with-weight](https://github.com/jonahlewis4/leetcode/tree/master/0912-random-pick-with-weight) |
 | [0944-delete-columns-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0944-delete-columns-to-make-sorted) |
 | [0945-snakes-and-ladders](https://github.com/jonahlewis4/leetcode/tree/master/0945-snakes-and-ladders) |
@@ -788,6 +789,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0728-self-dividing-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0728-self-dividing-numbers) |
 | [0867-new-21-game](https://github.com/jonahlewis4/leetcode/tree/master/0867-new-21-game) |
 | [0900-reordered-power-of-2](https://github.com/jonahlewis4/leetcode/tree/master/0900-reordered-power-of-2) |
+| [0908-smallest-range-i](https://github.com/jonahlewis4/leetcode/tree/master/0908-smallest-range-i) |
 | [0912-random-pick-with-weight](https://github.com/jonahlewis4/leetcode/tree/master/0912-random-pick-with-weight) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 | [1013-fibonacci-number](https://github.com/jonahlewis4/leetcode/tree/master/1013-fibonacci-number) |
