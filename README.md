@@ -488,6 +488,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0876-hand-of-straights](https://github.com/jonahlewis4/leetcode/tree/master/0876-hand-of-straights) |
 | [0955-delete-columns-to-make-sorted-ii](https://github.com/jonahlewis4/leetcode/tree/master/0955-delete-columns-to-make-sorted-ii) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/jonahlewis4/leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+| [1221-split-a-string-in-balanced-strings](https://github.com/jonahlewis4/leetcode/tree/master/1221-split-a-string-in-balanced-strings) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/jonahlewis4/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1304-longest-happy-string](https://github.com/jonahlewis4/leetcode/tree/master/1304-longest-happy-string) |
 | [1356-minimum-number-of-moves-to-make-palindrome](https://github.com/jonahlewis4/leetcode/tree/master/1356-minimum-number-of-moves-to-make-palindrome) |
@@ -1104,6 +1105,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1146-greatest-common-divisor-of-strings](https://github.com/jonahlewis4/leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
 | [1160-letter-tile-possibilities](https://github.com/jonahlewis4/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1205-defanging-an-ip-address](https://github.com/jonahlewis4/leetcode/tree/master/1205-defanging-an-ip-address) |
+| [1221-split-a-string-in-balanced-strings](https://github.com/jonahlewis4/leetcode/tree/master/1221-split-a-string-in-balanced-strings) |
 | [1250-longest-common-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/1250-longest-common-subsequence) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/jonahlewis4/leetcode/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [1272-invalid-transactions](https://github.com/jonahlewis4/leetcode/tree/master/1272-invalid-transactions) |
@@ -1244,6 +1246,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0900-reordered-power-of-2](https://github.com/jonahlewis4/leetcode/tree/master/0900-reordered-power-of-2) |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
 | [1160-letter-tile-possibilities](https://github.com/jonahlewis4/leetcode/tree/master/1160-letter-tile-possibilities) |
+| [1221-split-a-string-in-balanced-strings](https://github.com/jonahlewis4/leetcode/tree/master/1221-split-a-string-in-balanced-strings) |
 | [1364-tuple-with-same-product](https://github.com/jonahlewis4/leetcode/tree/master/1364-tuple-with-same-product) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/jonahlewis4/leetcode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/1510-find-lucky-integer-in-an-array) |
