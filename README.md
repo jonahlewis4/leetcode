@@ -1087,6 +1087,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0768-partition-labels](https://github.com/jonahlewis4/leetcode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
 | [0782-jewels-and-stones](https://github.com/jonahlewis4/leetcode/tree/master/0782-jewels-and-stones) |
+| [0796-rotate-string](https://github.com/jonahlewis4/leetcode/tree/master/0796-rotate-string) |
 | [0806-number-of-lines-to-write-string](https://github.com/jonahlewis4/leetcode/tree/master/0806-number-of-lines-to-write-string) |
 | [0822-unique-morse-code-words](https://github.com/jonahlewis4/leetcode/tree/master/0822-unique-morse-code-words) |
 | [0844-backspace-string-compare](https://github.com/jonahlewis4/leetcode/tree/master/0844-backspace-string-compare) |
@@ -1801,6 +1802,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0572-subtree-of-another-tree](https://github.com/jonahlewis4/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [0796-rotate-string](https://github.com/jonahlewis4/leetcode/tree/master/0796-rotate-string) |
 ## Hash Function
 |  |
 | ------- |
