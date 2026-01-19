@@ -148,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0682-baseball-game](https://github.com/jonahlewis4/leetcode/tree/master/0682-baseball-game) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0695-max-area-of-island](https://github.com/jonahlewis4/leetcode/tree/master/0695-max-area-of-island) |
+| [0697-degree-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0697-degree-of-an-array) |
 | [0717-1-bit-and-2-bit-characters](https://github.com/jonahlewis4/leetcode/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/jonahlewis4/leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0724-find-pivot-index](https://github.com/jonahlewis4/leetcode/tree/master/0724-find-pivot-index) |
@@ -678,6 +679,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0594-longest-harmonious-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0594-longest-harmonious-subsequence) |
 | [0621-task-scheduler](https://github.com/jonahlewis4/leetcode/tree/master/0621-task-scheduler) |
 | [0645-set-mismatch](https://github.com/jonahlewis4/leetcode/tree/master/0645-set-mismatch) |
+| [0697-degree-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0697-degree-of-an-array) |
 | [0762-find-anagram-mappings](https://github.com/jonahlewis4/leetcode/tree/master/0762-find-anagram-mappings) |
 | [0768-partition-labels](https://github.com/jonahlewis4/leetcode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
