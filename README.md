@@ -1978,4 +1978,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0292-nim-game](https://github.com/jonahlewis4/leetcode/tree/master/0292-nim-game) |
+## Graph Theory
+|  |
+| ------- |
+| [1791-find-center-of-star-graph](https://github.com/jonahlewis4/leetcode/tree/master/1791-find-center-of-star-graph) |
 <!---LeetCode Topics End-->
