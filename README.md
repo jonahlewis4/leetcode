@@ -1128,6 +1128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/jonahlewis4/leetcode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/jonahlewis4/leetcode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/jonahlewis4/leetcode/tree/master/1636-number-of-substrings-with-only-1s) |
+| [1678-goal-parser-interpretation](https://github.com/jonahlewis4/leetcode/tree/master/1678-goal-parser-interpretation) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/jonahlewis4/leetcode/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1894-merge-strings-alternately](https://github.com/jonahlewis4/leetcode/tree/master/1894-merge-strings-alternately) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/jonahlewis4/leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
