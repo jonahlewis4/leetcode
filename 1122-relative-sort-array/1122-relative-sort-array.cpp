@@ -21,7 +21,6 @@ public:
         int sortStart = j;
         while(!count.empty()) {
             const auto& [val, c] = *count.begin();
-            cout<<"val: "<<val<<endl<<"c: "<<c<<endl;
             for(int k = 0; k < c; k++) {
                 res[j] = val;
                 j++;
