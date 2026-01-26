@@ -193,6 +193,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1108-analyze-user-website-visit-pattern](https://github.com/jonahlewis4/leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1122-relative-sort-array](https://github.com/jonahlewis4/leetcode/tree/master/1122-relative-sort-array) |
 | [1127-last-stone-weight](https://github.com/jonahlewis4/leetcode/tree/master/1127-last-stone-weight) |
+| [1200-minimum-absolute-difference](https://github.com/jonahlewis4/leetcode/tree/master/1200-minimum-absolute-difference) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/jonahlewis4/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1272-invalid-transactions](https://github.com/jonahlewis4/leetcode/tree/master/1272-invalid-transactions) |
 | [1293-three-consecutive-odds](https://github.com/jonahlewis4/leetcode/tree/master/1293-three-consecutive-odds) |
@@ -367,6 +368,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1085-the-earliest-moment-when-everyone-become-friends](https://github.com/jonahlewis4/leetcode/tree/master/1085-the-earliest-moment-when-everyone-become-friends) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/jonahlewis4/leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1122-relative-sort-array](https://github.com/jonahlewis4/leetcode/tree/master/1122-relative-sort-array) |
+| [1200-minimum-absolute-difference](https://github.com/jonahlewis4/leetcode/tree/master/1200-minimum-absolute-difference) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/jonahlewis4/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1272-invalid-transactions](https://github.com/jonahlewis4/leetcode/tree/master/1272-invalid-transactions) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
