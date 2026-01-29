@@ -721,6 +721,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1694-make-sum-divisible-by-p](https://github.com/jonahlewis4/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/jonahlewis4/leetcode/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/jonahlewis4/leetcode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
+| [1796-second-largest-digit-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/1796-second-largest-digit-in-a-string) |
 | [1813-maximum-erasure-value](https://github.com/jonahlewis4/leetcode/tree/master/1813-maximum-erasure-value) |
 | [1834-minimum-number-of-people-to-teach](https://github.com/jonahlewis4/leetcode/tree/master/1834-minimum-number-of-people-to-teach) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/jonahlewis4/leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
@@ -1138,6 +1139,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1636-number-of-substrings-with-only-1s](https://github.com/jonahlewis4/leetcode/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1678-goal-parser-interpretation](https://github.com/jonahlewis4/leetcode/tree/master/1678-goal-parser-interpretation) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/jonahlewis4/leetcode/tree/master/1700-minimum-time-to-make-rope-colorful) |
+| [1796-second-largest-digit-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/1796-second-largest-digit-in-a-string) |
 | [1816-truncate-sentence](https://github.com/jonahlewis4/leetcode/tree/master/1816-truncate-sentence) |
 | [1894-merge-strings-alternately](https://github.com/jonahlewis4/leetcode/tree/master/1894-merge-strings-alternately) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/jonahlewis4/leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
