@@ -822,6 +822,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/jonahlewis4/leetcode/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [1585-the-kth-factor-of-n](https://github.com/jonahlewis4/leetcode/tree/master/1585-the-kth-factor-of-n) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/jonahlewis4/leetcode/tree/master/1636-number-of-substrings-with-only-1s) |
+| [1812-determine-color-of-a-chessboard-square](https://github.com/jonahlewis4/leetcode/tree/master/1812-determine-color-of-a-chessboard-square) |
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/jonahlewis4/leetcode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [1925-count-square-sum-triples](https://github.com/jonahlewis4/leetcode/tree/master/1925-count-square-sum-triples) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/jonahlewis4/leetcode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
@@ -1140,6 +1141,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1678-goal-parser-interpretation](https://github.com/jonahlewis4/leetcode/tree/master/1678-goal-parser-interpretation) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/jonahlewis4/leetcode/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1796-second-largest-digit-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/1796-second-largest-digit-in-a-string) |
+| [1812-determine-color-of-a-chessboard-square](https://github.com/jonahlewis4/leetcode/tree/master/1812-determine-color-of-a-chessboard-square) |
 | [1816-truncate-sentence](https://github.com/jonahlewis4/leetcode/tree/master/1816-truncate-sentence) |
 | [1894-merge-strings-alternately](https://github.com/jonahlewis4/leetcode/tree/master/1894-merge-strings-alternately) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/jonahlewis4/leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
