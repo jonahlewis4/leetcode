@@ -228,6 +228,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/jonahlewis4/leetcode/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [1748-sum-of-unique-elements](https://github.com/jonahlewis4/leetcode/tree/master/1748-sum-of-unique-elements) |
 | [1769-get-maximum-in-generated-array](https://github.com/jonahlewis4/leetcode/tree/master/1769-get-maximum-in-generated-array) |
+| [1773-count-items-matching-a-rule](https://github.com/jonahlewis4/leetcode/tree/master/1773-count-items-matching-a-rule) |
 | [1802-number-of-students-unable-to-eat-lunch](https://github.com/jonahlewis4/leetcode/tree/master/1802-number-of-students-unable-to-eat-lunch) |
 | [1813-maximum-erasure-value](https://github.com/jonahlewis4/leetcode/tree/master/1813-maximum-erasure-value) |
 | [1816-truncate-sentence](https://github.com/jonahlewis4/leetcode/tree/master/1816-truncate-sentence) |
@@ -1153,6 +1154,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1636-number-of-substrings-with-only-1s](https://github.com/jonahlewis4/leetcode/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1678-goal-parser-interpretation](https://github.com/jonahlewis4/leetcode/tree/master/1678-goal-parser-interpretation) |
 | [1700-minimum-time-to-make-rope-colorful](https://github.com/jonahlewis4/leetcode/tree/master/1700-minimum-time-to-make-rope-colorful) |
+| [1773-count-items-matching-a-rule](https://github.com/jonahlewis4/leetcode/tree/master/1773-count-items-matching-a-rule) |
 | [1796-second-largest-digit-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/1796-second-largest-digit-in-a-string) |
 | [1812-determine-color-of-a-chessboard-square](https://github.com/jonahlewis4/leetcode/tree/master/1812-determine-color-of-a-chessboard-square) |
 | [1816-truncate-sentence](https://github.com/jonahlewis4/leetcode/tree/master/1816-truncate-sentence) |
