@@ -27,9 +27,9 @@ public:
     }
 
     void print(int lead, int follow, int x) {
-        cout<<"leading sum is "<<lead<<endl;
-        cout<<"following sum is "<<follow<<endl;
-        cout<<"x is "<<x<<endl;
-        cout<<"_________________"<<endl;
+        // cout<<"leading sum is "<<lead<<endl;
+        // cout<<"following sum is "<<follow<<endl;
+        // cout<<"x is "<<x<<endl;
+        // cout<<"_________________"<<endl;
     }
 };
