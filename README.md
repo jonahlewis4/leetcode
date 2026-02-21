@@ -1169,6 +1169,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1812-determine-color-of-a-chessboard-square](https://github.com/jonahlewis4/leetcode/tree/master/1812-determine-color-of-a-chessboard-square) |
 | [1816-truncate-sentence](https://github.com/jonahlewis4/leetcode/tree/master/1816-truncate-sentence) |
 | [1859-sorting-the-sentence](https://github.com/jonahlewis4/leetcode/tree/master/1859-sorting-the-sentence) |
+| [1880-check-if-word-equals-summation-of-two-words](https://github.com/jonahlewis4/leetcode/tree/master/1880-check-if-word-equals-summation-of-two-words) |
 | [1894-merge-strings-alternately](https://github.com/jonahlewis4/leetcode/tree/master/1894-merge-strings-alternately) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/jonahlewis4/leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1903-largest-odd-number-in-string](https://github.com/jonahlewis4/leetcode/tree/master/1903-largest-odd-number-in-string) |
