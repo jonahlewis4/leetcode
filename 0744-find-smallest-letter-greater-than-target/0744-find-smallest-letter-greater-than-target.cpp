@@ -1,10 +1,16 @@
 class Solution {
 public:
     char nextGreatestLetter(vector<char>& letters, char target) {
-        auto ub = upper_bound(letters.begin(), letters.end(), target);
-        if(ub == letters.end()){
-            return letters.front();
+        char nextGreatest = '.';
+        for(const char c : letters) {
+            if(c > target){
+                if(nextGreatest == '.' || c < nextGreatest) {
+                    nextGreatest = c;
+                }
+            }
         }
-        return *ub;
+
+        nextGreatest = nextGreatest == '.' ? letters.front() : nextGreatest;
+        return nextGreatest;
     }
 };
