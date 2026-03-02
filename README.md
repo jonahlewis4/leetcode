@@ -270,6 +270,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/jonahlewis4/leetcode/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2354-minimum-health-to-beat-game](https://github.com/jonahlewis4/leetcode/tree/master/2354-minimum-health-to-beat-game) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/jonahlewis4/leetcode/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
+| [2399-check-distances-between-same-letters](https://github.com/jonahlewis4/leetcode/tree/master/2399-check-distances-between-same-letters) |
 | [2411-spiral-matrix-iv](https://github.com/jonahlewis4/leetcode/tree/master/2411-spiral-matrix-iv) |
 | [2429-design-a-food-rating-system](https://github.com/jonahlewis4/leetcode/tree/master/2429-design-a-food-rating-system) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
@@ -760,6 +761,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/jonahlewis4/leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/jonahlewis4/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2300-construct-string-with-repeat-limit](https://github.com/jonahlewis4/leetcode/tree/master/2300-construct-string-with-repeat-limit) |
+| [2399-check-distances-between-same-letters](https://github.com/jonahlewis4/leetcode/tree/master/2399-check-distances-between-same-letters) |
 | [2429-design-a-food-rating-system](https://github.com/jonahlewis4/leetcode/tree/master/2429-design-a-food-rating-system) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/jonahlewis4/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jonahlewis4/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
@@ -1198,6 +1200,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2346-largest-3-same-digit-number-in-string](https://github.com/jonahlewis4/leetcode/tree/master/2346-largest-3-same-digit-number-in-string) |
 | [2389-design-a-text-editor](https://github.com/jonahlewis4/leetcode/tree/master/2389-design-a-text-editor) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/jonahlewis4/leetcode/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
+| [2399-check-distances-between-same-letters](https://github.com/jonahlewis4/leetcode/tree/master/2399-check-distances-between-same-letters) |
 | [2414-move-pieces-to-obtain-a-string](https://github.com/jonahlewis4/leetcode/tree/master/2414-move-pieces-to-obtain-a-string) |
 | [2429-design-a-food-rating-system](https://github.com/jonahlewis4/leetcode/tree/master/2429-design-a-food-rating-system) |
 | [2465-shifting-letters-ii](https://github.com/jonahlewis4/leetcode/tree/master/2465-shifting-letters-ii) |
