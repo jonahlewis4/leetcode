@@ -12,9 +12,7 @@ public:
             int trueDist = arr[i].empty() 
                 ? d 
                 : arr[i].back() - arr[i].front() - 1;
-            cout<<trueDist<<endl;
-            cout<<d<<endl;
-            cout<<i<<endl;
+            
             if(trueDist != d) {
                 return false;
             }
