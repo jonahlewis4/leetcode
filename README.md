@@ -199,6 +199,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1200-minimum-absolute-difference](https://github.com/jonahlewis4/leetcode/tree/master/1200-minimum-absolute-difference) |
 | [1207-unique-number-of-occurrences](https://github.com/jonahlewis4/leetcode/tree/master/1207-unique-number-of-occurrences) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/jonahlewis4/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
+| [1266-minimum-time-visiting-all-points](https://github.com/jonahlewis4/leetcode/tree/master/1266-minimum-time-visiting-all-points) |
 | [1272-invalid-transactions](https://github.com/jonahlewis4/leetcode/tree/master/1272-invalid-transactions) |
 | [1293-three-consecutive-odds](https://github.com/jonahlewis4/leetcode/tree/master/1293-three-consecutive-odds) |
 | [1349-check-if-it-is-a-straight-line](https://github.com/jonahlewis4/leetcode/tree/master/1349-check-if-it-is-a-straight-line) |
@@ -846,6 +847,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1015-smallest-integer-divisible-by-k](https://github.com/jonahlewis4/leetcode/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1037-valid-boomerang](https://github.com/jonahlewis4/leetcode/tree/master/1037-valid-boomerang) |
 | [1146-greatest-common-divisor-of-strings](https://github.com/jonahlewis4/leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
+| [1266-minimum-time-visiting-all-points](https://github.com/jonahlewis4/leetcode/tree/master/1266-minimum-time-visiting-all-points) |
 | [1349-check-if-it-is-a-straight-line](https://github.com/jonahlewis4/leetcode/tree/master/1349-check-if-it-is-a-straight-line) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/jonahlewis4/leetcode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/jonahlewis4/leetcode/tree/master/1421-find-numbers-with-even-number-of-digits) |
@@ -1460,6 +1462,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 | [1014-k-closest-points-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1037-valid-boomerang](https://github.com/jonahlewis4/leetcode/tree/master/1037-valid-boomerang) |
+| [1266-minimum-time-visiting-all-points](https://github.com/jonahlewis4/leetcode/tree/master/1266-minimum-time-visiting-all-points) |
 | [1349-check-if-it-is-a-straight-line](https://github.com/jonahlewis4/leetcode/tree/master/1349-check-if-it-is-a-straight-line) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/jonahlewis4/leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3623-count-number-of-trapezoids-i](https://github.com/jonahlewis4/leetcode/tree/master/3623-count-number-of-trapezoids-i) |
