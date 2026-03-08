@@ -869,6 +869,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2324-find-triangular-sum-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
 | [2383-add-two-integers](https://github.com/jonahlewis4/leetcode/tree/master/2383-add-two-integers) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
+| [2469-convert-the-temperature](https://github.com/jonahlewis4/leetcode/tree/master/2469-convert-the-temperature) |
 | [2485-find-the-pivot-integer](https://github.com/jonahlewis4/leetcode/tree/master/2485-find-the-pivot-integer) |
 | [2649-count-total-number-of-colored-cells](https://github.com/jonahlewis4/leetcode/tree/master/2649-count-total-number-of-colored-cells) |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/jonahlewis4/leetcode/tree/master/2704-maximum-difference-by-remapping-a-digit) |
