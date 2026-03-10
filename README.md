@@ -224,6 +224,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/jonahlewis4/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1590-make-sum-divisible-by-p](https://github.com/jonahlewis4/leetcode/tree/master/1590-make-sum-divisible-by-p) |
 | [1603-running-sum-of-1d-array](https://github.com/jonahlewis4/leetcode/tree/master/1603-running-sum-of-1d-array) |
+| [1619-mean-of-array-after-removing-some-elements](https://github.com/jonahlewis4/leetcode/tree/master/1619-mean-of-array-after-removing-some-elements) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/jonahlewis4/leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/jonahlewis4/leetcode/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/jonahlewis4/leetcode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
@@ -394,6 +395,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/jonahlewis4/leetcode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1482-how-many-numbers-are-smaller-than-the-current-number](https://github.com/jonahlewis4/leetcode/tree/master/1482-how-many-numbers-are-smaller-than-the-current-number) |
+| [1619-mean-of-array-after-removing-some-elements](https://github.com/jonahlewis4/leetcode/tree/master/1619-mean-of-array-after-removing-some-elements) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/jonahlewis4/leetcode/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1636-sort-array-by-increasing-frequency](https://github.com/jonahlewis4/leetcode/tree/master/1636-sort-array-by-increasing-frequency) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/jonahlewis4/leetcode/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
