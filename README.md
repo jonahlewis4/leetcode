@@ -771,6 +771,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/jonahlewis4/leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/jonahlewis4/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2300-construct-string-with-repeat-limit](https://github.com/jonahlewis4/leetcode/tree/master/2300-construct-string-with-repeat-limit) |
+| [2351-first-letter-to-appear-twice](https://github.com/jonahlewis4/leetcode/tree/master/2351-first-letter-to-appear-twice) |
 | [2399-check-distances-between-same-letters](https://github.com/jonahlewis4/leetcode/tree/master/2399-check-distances-between-same-letters) |
 | [2429-design-a-food-rating-system](https://github.com/jonahlewis4/leetcode/tree/master/2429-design-a-food-rating-system) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/jonahlewis4/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
@@ -1217,6 +1218,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2260-divide-a-string-into-groups-of-size-k](https://github.com/jonahlewis4/leetcode/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2300-construct-string-with-repeat-limit](https://github.com/jonahlewis4/leetcode/tree/master/2300-construct-string-with-repeat-limit) |
 | [2346-largest-3-same-digit-number-in-string](https://github.com/jonahlewis4/leetcode/tree/master/2346-largest-3-same-digit-number-in-string) |
+| [2351-first-letter-to-appear-twice](https://github.com/jonahlewis4/leetcode/tree/master/2351-first-letter-to-appear-twice) |
 | [2389-design-a-text-editor](https://github.com/jonahlewis4/leetcode/tree/master/2389-design-a-text-editor) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/jonahlewis4/leetcode/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [2399-check-distances-between-same-letters](https://github.com/jonahlewis4/leetcode/tree/master/2399-check-distances-between-same-letters) |
@@ -1272,6 +1274,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/jonahlewis4/leetcode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1684-count-the-number-of-consistent-strings](https://github.com/jonahlewis4/leetcode/tree/master/1684-count-the-number-of-consistent-strings) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/jonahlewis4/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
+| [2351-first-letter-to-appear-twice](https://github.com/jonahlewis4/leetcode/tree/master/2351-first-letter-to-appear-twice) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/jonahlewis4/leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2509-minimize-xor](https://github.com/jonahlewis4/leetcode/tree/master/2509-minimize-xor) |
 | [2710-minimum-operations-to-reduce-an-integer-to-0](https://github.com/jonahlewis4/leetcode/tree/master/2710-minimum-operations-to-reduce-an-integer-to-0) |
@@ -1352,6 +1355,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2140-longest-subsequence-repeated-k-times](https://github.com/jonahlewis4/leetcode/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/jonahlewis4/leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2300-construct-string-with-repeat-limit](https://github.com/jonahlewis4/leetcode/tree/master/2300-construct-string-with-repeat-limit) |
+| [2351-first-letter-to-appear-twice](https://github.com/jonahlewis4/leetcode/tree/master/2351-first-letter-to-appear-twice) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/jonahlewis4/leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3583-count-special-triplets](https://github.com/jonahlewis4/leetcode/tree/master/3583-count-special-triplets) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
