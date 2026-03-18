@@ -11,9 +11,7 @@ public:
             int r = i / n;
             int c = i - (n * r);
 
-            cout<<r<<endl;
-            cout<<c<<endl;
-            cout<<endl;
+
             res[r][c] = original[i];
         }
 
