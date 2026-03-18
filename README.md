@@ -254,6 +254,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1972-rotating-the-box](https://github.com/jonahlewis4/leetcode/tree/master/1972-rotating-the-box) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/jonahlewis4/leetcode/tree/master/1995-finding-pairs-with-a-certain-sum) |
+| [2022-convert-1d-array-into-2d-array](https://github.com/jonahlewis4/leetcode/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/jonahlewis4/leetcode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2036-count-pairs-in-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/2036-count-pairs-in-two-arrays) |
 | [2058-concatenation-of-array](https://github.com/jonahlewis4/leetcode/tree/master/2058-concatenation-of-array) |
@@ -1004,6 +1005,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1572-matrix-diagonal-sum](https://github.com/jonahlewis4/leetcode/tree/master/1572-matrix-diagonal-sum) |
 | [1672-richest-customer-wealth](https://github.com/jonahlewis4/leetcode/tree/master/1672-richest-customer-wealth) |
 | [1972-rotating-the-box](https://github.com/jonahlewis4/leetcode/tree/master/1972-rotating-the-box) |
+| [2022-convert-1d-array-into-2d-array](https://github.com/jonahlewis4/leetcode/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/jonahlewis4/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/jonahlewis4/leetcode/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2411-spiral-matrix-iv](https://github.com/jonahlewis4/leetcode/tree/master/2411-spiral-matrix-iv) |
@@ -1031,6 +1033,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1603-design-parking-system](https://github.com/jonahlewis4/leetcode/tree/master/1603-design-parking-system) |
 | [1769-get-maximum-in-generated-array](https://github.com/jonahlewis4/leetcode/tree/master/1769-get-maximum-in-generated-array) |
 | [1802-number-of-students-unable-to-eat-lunch](https://github.com/jonahlewis4/leetcode/tree/master/1802-number-of-students-unable-to-eat-lunch) |
+| [2022-convert-1d-array-into-2d-array](https://github.com/jonahlewis4/leetcode/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2058-concatenation-of-array](https://github.com/jonahlewis4/leetcode/tree/master/2058-concatenation-of-array) |
 | [2169-simple-bank-system](https://github.com/jonahlewis4/leetcode/tree/master/2169-simple-bank-system) |
 | [2211-count-collisions-on-a-road](https://github.com/jonahlewis4/leetcode/tree/master/2211-count-collisions-on-a-road) |
