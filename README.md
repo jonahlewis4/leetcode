@@ -972,6 +972,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/jonahlewis4/leetcode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [1894-merge-strings-alternately](https://github.com/jonahlewis4/leetcode/tree/master/1894-merge-strings-alternately) |
 | [1972-rotating-the-box](https://github.com/jonahlewis4/leetcode/tree/master/1972-rotating-the-box) |
+| [2000-reverse-prefix-of-word](https://github.com/jonahlewis4/leetcode/tree/master/2000-reverse-prefix-of-word) |
 | [2036-count-pairs-in-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/2036-count-pairs-in-two-arrays) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/jonahlewis4/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2320-find-all-k-distant-indices-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2320-find-all-k-distant-indices-in-an-array) |
@@ -1220,6 +1221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/jonahlewis4/leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1903-largest-odd-number-in-string](https://github.com/jonahlewis4/leetcode/tree/master/1903-largest-odd-number-in-string) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/jonahlewis4/leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
+| [2000-reverse-prefix-of-word](https://github.com/jonahlewis4/leetcode/tree/master/2000-reverse-prefix-of-word) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/jonahlewis4/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/jonahlewis4/leetcode/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2165-plates-between-candles](https://github.com/jonahlewis4/leetcode/tree/master/2165-plates-between-candles) |
@@ -1545,6 +1547,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/jonahlewis4/leetcode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1802-number-of-students-unable-to-eat-lunch](https://github.com/jonahlewis4/leetcode/tree/master/1802-number-of-students-unable-to-eat-lunch) |
 | [1909-buildings-with-an-ocean-view](https://github.com/jonahlewis4/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
+| [2000-reverse-prefix-of-word](https://github.com/jonahlewis4/leetcode/tree/master/2000-reverse-prefix-of-word) |
 | [2211-count-collisions-on-a-road](https://github.com/jonahlewis4/leetcode/tree/master/2211-count-collisions-on-a-road) |
 | [2389-design-a-text-editor](https://github.com/jonahlewis4/leetcode/tree/master/2389-design-a-text-editor) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/jonahlewis4/leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
