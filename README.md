@@ -260,6 +260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2032-two-out-of-three](https://github.com/jonahlewis4/leetcode/tree/master/2032-two-out-of-three) |
 | [2036-count-pairs-in-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/2036-count-pairs-in-two-arrays) |
 | [2037-minimum-number-of-moves-to-seat-everyone](https://github.com/jonahlewis4/leetcode/tree/master/2037-minimum-number-of-moves-to-seat-everyone) |
+| [2053-kth-distinct-string-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2053-kth-distinct-string-in-an-array) |
 | [2058-concatenation-of-array](https://github.com/jonahlewis4/leetcode/tree/master/2058-concatenation-of-array) |
 | [2102-find-the-middle-index-in-array](https://github.com/jonahlewis4/leetcode/tree/master/2102-find-the-middle-index-in-array) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/jonahlewis4/leetcode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
@@ -772,6 +773,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1960-check-if-the-sentence-is-pangram](https://github.com/jonahlewis4/leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/jonahlewis4/leetcode/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2032-two-out-of-three](https://github.com/jonahlewis4/leetcode/tree/master/2032-two-out-of-three) |
+| [2053-kth-distinct-string-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2053-kth-distinct-string-in-an-array) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/jonahlewis4/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2169-simple-bank-system](https://github.com/jonahlewis4/leetcode/tree/master/2169-simple-bank-system) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/jonahlewis4/leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
@@ -1224,6 +1226,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1903-largest-odd-number-in-string](https://github.com/jonahlewis4/leetcode/tree/master/1903-largest-odd-number-in-string) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/jonahlewis4/leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [2000-reverse-prefix-of-word](https://github.com/jonahlewis4/leetcode/tree/master/2000-reverse-prefix-of-word) |
+| [2053-kth-distinct-string-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2053-kth-distinct-string-in-an-array) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/jonahlewis4/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/jonahlewis4/leetcode/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2165-plates-between-candles](https://github.com/jonahlewis4/leetcode/tree/master/2165-plates-between-candles) |
@@ -1369,6 +1372,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1704-determine-if-string-halves-are-alike](https://github.com/jonahlewis4/leetcode/tree/master/1704-determine-if-string-halves-are-alike) |
 | [1748-sum-of-unique-elements](https://github.com/jonahlewis4/leetcode/tree/master/1748-sum-of-unique-elements) |
 | [2037-minimum-number-of-moves-to-seat-everyone](https://github.com/jonahlewis4/leetcode/tree/master/2037-minimum-number-of-moves-to-seat-everyone) |
+| [2053-kth-distinct-string-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2053-kth-distinct-string-in-an-array) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/jonahlewis4/leetcode/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/jonahlewis4/leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2300-construct-string-with-repeat-limit](https://github.com/jonahlewis4/leetcode/tree/master/2300-construct-string-with-repeat-limit) |
