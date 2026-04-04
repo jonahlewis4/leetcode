@@ -262,6 +262,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2036-count-pairs-in-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/2036-count-pairs-in-two-arrays) |
 | [2037-minimum-number-of-moves-to-seat-everyone](https://github.com/jonahlewis4/leetcode/tree/master/2037-minimum-number-of-moves-to-seat-everyone) |
 | [2053-kth-distinct-string-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2053-kth-distinct-string-in-an-array) |
+| [2057-smallest-index-with-equal-value](https://github.com/jonahlewis4/leetcode/tree/master/2057-smallest-index-with-equal-value) |
 | [2058-concatenation-of-array](https://github.com/jonahlewis4/leetcode/tree/master/2058-concatenation-of-array) |
 | [2102-find-the-middle-index-in-array](https://github.com/jonahlewis4/leetcode/tree/master/2102-find-the-middle-index-in-array) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/jonahlewis4/leetcode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
