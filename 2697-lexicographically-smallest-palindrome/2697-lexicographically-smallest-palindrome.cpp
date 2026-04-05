@@ -1,6 +1,6 @@
 class Solution {
 public:
-    string makeSmallestPalindrome(string s) {
+    string makeSmallestPalindrome(string& s) {
         for(int i = 0; i < s.size() / 2; i++) {
             int end = s.size() - i - 1;
             if(s[i] != s[end]) {
