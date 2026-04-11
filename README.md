@@ -292,6 +292,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/jonahlewis4/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/jonahlewis4/leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2574-left-and-right-sum-differences](https://github.com/jonahlewis4/leetcode/tree/master/2574-left-and-right-sum-differences) |
+| [2656-maximum-sum-with-exactly-k-elements](https://github.com/jonahlewis4/leetcode/tree/master/2656-maximum-sum-with-exactly-k-elements) |
 | [2690-house-robber-iv](https://github.com/jonahlewis4/leetcode/tree/master/2690-house-robber-iv) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/jonahlewis4/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/jonahlewis4/leetcode/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
@@ -562,6 +563,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/jonahlewis4/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2509-minimize-xor](https://github.com/jonahlewis4/leetcode/tree/master/2509-minimize-xor) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/jonahlewis4/leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
+| [2656-maximum-sum-with-exactly-k-elements](https://github.com/jonahlewis4/leetcode/tree/master/2656-maximum-sum-with-exactly-k-elements) |
 | [2697-lexicographically-smallest-palindrome](https://github.com/jonahlewis4/leetcode/tree/master/2697-lexicographically-smallest-palindrome) |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/jonahlewis4/leetcode/tree/master/2704-maximum-difference-by-remapping-a-digit) |
 | [2710-minimum-operations-to-reduce-an-integer-to-0](https://github.com/jonahlewis4/leetcode/tree/master/2710-minimum-operations-to-reduce-an-integer-to-0) |
