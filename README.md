@@ -225,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1580-shuffle-the-array](https://github.com/jonahlewis4/leetcode/tree/master/1580-shuffle-the-array) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/jonahlewis4/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1590-make-sum-divisible-by-p](https://github.com/jonahlewis4/leetcode/tree/master/1590-make-sum-divisible-by-p) |
+| [1598-crawler-log-folder](https://github.com/jonahlewis4/leetcode/tree/master/1598-crawler-log-folder) |
 | [1603-running-sum-of-1d-array](https://github.com/jonahlewis4/leetcode/tree/master/1603-running-sum-of-1d-array) |
 | [1619-mean-of-array-after-removing-some-elements](https://github.com/jonahlewis4/leetcode/tree/master/1619-mean-of-array-after-removing-some-elements) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/jonahlewis4/leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
@@ -1228,6 +1229,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1528-shuffle-string](https://github.com/jonahlewis4/leetcode/tree/master/1528-shuffle-string) |
 | [1537-maximum-score-after-splitting-a-string](https://github.com/jonahlewis4/leetcode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1544-make-the-string-great](https://github.com/jonahlewis4/leetcode/tree/master/1544-make-the-string-great) |
+| [1598-crawler-log-folder](https://github.com/jonahlewis4/leetcode/tree/master/1598-crawler-log-folder) |
 | [1624-largest-substring-between-two-equal-characters](https://github.com/jonahlewis4/leetcode/tree/master/1624-largest-substring-between-two-equal-characters) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/jonahlewis4/leetcode/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1678-goal-parser-interpretation](https://github.com/jonahlewis4/leetcode/tree/master/1678-goal-parser-interpretation) |
@@ -1577,6 +1579,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1078-remove-outermost-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/1078-remove-outermost-parentheses) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1544-make-the-string-great](https://github.com/jonahlewis4/leetcode/tree/master/1544-make-the-string-great) |
+| [1598-crawler-log-folder](https://github.com/jonahlewis4/leetcode/tree/master/1598-crawler-log-folder) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/jonahlewis4/leetcode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1802-number-of-students-unable-to-eat-lunch](https://github.com/jonahlewis4/leetcode/tree/master/1802-number-of-students-unable-to-eat-lunch) |
 | [1909-buildings-with-an-ocean-view](https://github.com/jonahlewis4/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
