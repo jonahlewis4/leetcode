@@ -292,6 +292,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2465-shifting-letters-ii](https://github.com/jonahlewis4/leetcode/tree/master/2465-shifting-letters-ii) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/jonahlewis4/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/jonahlewis4/leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
+| [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/jonahlewis4/leetcode/tree/master/2515-shortest-distance-to-target-string-in-a-circular-array) |
 | [2574-left-and-right-sum-differences](https://github.com/jonahlewis4/leetcode/tree/master/2574-left-and-right-sum-differences) |
 | [2656-maximum-sum-with-exactly-k-elements](https://github.com/jonahlewis4/leetcode/tree/master/2656-maximum-sum-with-exactly-k-elements) |
 | [2690-house-robber-iv](https://github.com/jonahlewis4/leetcode/tree/master/2690-house-robber-iv) |
@@ -1270,6 +1271,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2414-move-pieces-to-obtain-a-string](https://github.com/jonahlewis4/leetcode/tree/master/2414-move-pieces-to-obtain-a-string) |
 | [2429-design-a-food-rating-system](https://github.com/jonahlewis4/leetcode/tree/master/2429-design-a-food-rating-system) |
 | [2465-shifting-letters-ii](https://github.com/jonahlewis4/leetcode/tree/master/2465-shifting-letters-ii) |
+| [2515-shortest-distance-to-target-string-in-a-circular-array](https://github.com/jonahlewis4/leetcode/tree/master/2515-shortest-distance-to-target-string-in-a-circular-array) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/jonahlewis4/leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [2697-lexicographically-smallest-palindrome](https://github.com/jonahlewis4/leetcode/tree/master/2697-lexicographically-smallest-palindrome) |
 | [2810-faulty-keyboard](https://github.com/jonahlewis4/leetcode/tree/master/2810-faulty-keyboard) |
