@@ -880,6 +880,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1146-greatest-common-divisor-of-strings](https://github.com/jonahlewis4/leetcode/tree/master/1146-greatest-common-divisor-of-strings) |
 | [1266-minimum-time-visiting-all-points](https://github.com/jonahlewis4/leetcode/tree/master/1266-minimum-time-visiting-all-points) |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/jonahlewis4/leetcode/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
+| [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 | [1349-check-if-it-is-a-straight-line](https://github.com/jonahlewis4/leetcode/tree/master/1349-check-if-it-is-a-straight-line) |
 | [1360-number-of-days-between-two-dates](https://github.com/jonahlewis4/leetcode/tree/master/1360-number-of-days-between-two-dates) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/jonahlewis4/leetcode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
@@ -1321,6 +1322,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0645-set-mismatch](https://github.com/jonahlewis4/leetcode/tree/master/0645-set-mismatch) |
 | [0693-binary-number-with-alternating-bits](https://github.com/jonahlewis4/leetcode/tree/master/0693-binary-number-with-alternating-bits) |
 | [1009-complement-of-base-10-integer](https://github.com/jonahlewis4/leetcode/tree/master/1009-complement-of-base-10-integer) |
+| [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/jonahlewis4/leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/jonahlewis4/leetcode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1684-count-the-number-of-consistent-strings](https://github.com/jonahlewis4/leetcode/tree/master/1684-count-the-number-of-consistent-strings) |
