@@ -193,6 +193,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1028-interval-list-intersections](https://github.com/jonahlewis4/leetcode/tree/master/1028-interval-list-intersections) |
 | [1036-rotting-oranges](https://github.com/jonahlewis4/leetcode/tree/master/1036-rotting-oranges) |
 | [1037-valid-boomerang](https://github.com/jonahlewis4/leetcode/tree/master/1037-valid-boomerang) |
+| [1051-height-checker](https://github.com/jonahlewis4/leetcode/tree/master/1051-height-checker) |
 | [1063-best-sightseeing-pair](https://github.com/jonahlewis4/leetcode/tree/master/1063-best-sightseeing-pair) |
 | [1085-the-earliest-moment-when-everyone-become-friends](https://github.com/jonahlewis4/leetcode/tree/master/1085-the-earliest-moment-when-everyone-become-friends) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/jonahlewis4/leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
@@ -404,6 +405,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1005-maximize-sum-of-array-after-k-negations](https://github.com/jonahlewis4/leetcode/tree/master/1005-maximize-sum-of-array-after-k-negations) |
 | [1014-k-closest-points-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
+| [1051-height-checker](https://github.com/jonahlewis4/leetcode/tree/master/1051-height-checker) |
 | [1085-the-earliest-moment-when-everyone-become-friends](https://github.com/jonahlewis4/leetcode/tree/master/1085-the-earliest-moment-when-everyone-become-friends) |
 | [1108-analyze-user-website-visit-pattern](https://github.com/jonahlewis4/leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1122-relative-sort-array](https://github.com/jonahlewis4/leetcode/tree/master/1122-relative-sort-array) |
@@ -1398,6 +1400,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
 | [0900-reordered-power-of-2](https://github.com/jonahlewis4/leetcode/tree/master/0900-reordered-power-of-2) |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
+| [1051-height-checker](https://github.com/jonahlewis4/leetcode/tree/master/1051-height-checker) |
 | [1122-relative-sort-array](https://github.com/jonahlewis4/leetcode/tree/master/1122-relative-sort-array) |
 | [1160-letter-tile-possibilities](https://github.com/jonahlewis4/leetcode/tree/master/1160-letter-tile-possibilities) |
 | [1221-split-a-string-in-balanced-strings](https://github.com/jonahlewis4/leetcode/tree/master/1221-split-a-string-in-balanced-strings) |
