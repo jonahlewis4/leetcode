@@ -1,7 +1,7 @@
 class Solution {
 public:
     int numIdenticalPairs(vector<int>& nums) {
-        unordered_map<int, int> c;
+        vector<int> c(101, 0);
         int pairs = 0;
         for(const int i : nums) {
             pairs += c[i];
