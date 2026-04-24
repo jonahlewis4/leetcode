@@ -915,6 +915,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2649-count-total-number-of-colored-cells](https://github.com/jonahlewis4/leetcode/tree/master/2649-count-total-number-of-colored-cells) |
 | [2652-sum-multiples](https://github.com/jonahlewis4/leetcode/tree/master/2652-sum-multiples) |
 | [2704-maximum-difference-by-remapping-a-digit](https://github.com/jonahlewis4/leetcode/tree/master/2704-maximum-difference-by-remapping-a-digit) |
+| [2769-find-the-maximum-achievable-number](https://github.com/jonahlewis4/leetcode/tree/master/2769-find-the-maximum-achievable-number) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/jonahlewis4/leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 | [2843-count-symmetric-integers](https://github.com/jonahlewis4/leetcode/tree/master/2843-count-symmetric-integers) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/jonahlewis4/leetcode/tree/master/3172-divisible-and-non-divisible-sums-difference) |
