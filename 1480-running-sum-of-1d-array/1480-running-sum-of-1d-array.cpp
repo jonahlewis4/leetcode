@@ -1,6 +1,6 @@
 class Solution {
 public:
-    vector<int> runningSum(vector<int>& nums) {
+    static vector<int> runningSum(vector<int>& nums) {
         vector<int> res(nums.size());
         res.front() = nums.front();
         for(int i = 1; i < nums.size(); i++) {
