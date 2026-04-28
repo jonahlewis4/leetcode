@@ -1259,6 +1259,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1805-number-of-different-integers-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/1805-number-of-different-integers-in-a-string) |
 | [1812-determine-color-of-a-chessboard-square](https://github.com/jonahlewis4/leetcode/tree/master/1812-determine-color-of-a-chessboard-square) |
 | [1816-truncate-sentence](https://github.com/jonahlewis4/leetcode/tree/master/1816-truncate-sentence) |
+| [1844-replace-all-digits-with-characters](https://github.com/jonahlewis4/leetcode/tree/master/1844-replace-all-digits-with-characters) |
 | [1859-sorting-the-sentence](https://github.com/jonahlewis4/leetcode/tree/master/1859-sorting-the-sentence) |
 | [1880-check-if-word-equals-summation-of-two-words](https://github.com/jonahlewis4/leetcode/tree/master/1880-check-if-word-equals-summation-of-two-words) |
 | [1894-merge-strings-alternately](https://github.com/jonahlewis4/leetcode/tree/master/1894-merge-strings-alternately) |
