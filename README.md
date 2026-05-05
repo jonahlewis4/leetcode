@@ -296,6 +296,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2429-design-a-food-rating-system](https://github.com/jonahlewis4/leetcode/tree/master/2429-design-a-food-rating-system) |
 | [2432-number-of-zero-filled-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/2432-number-of-zero-filled-subarrays) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/jonahlewis4/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
+| [2460-apply-operations-to-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2460-apply-operations-to-an-array) |
 | [2465-shifting-letters-ii](https://github.com/jonahlewis4/leetcode/tree/master/2465-shifting-letters-ii) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/jonahlewis4/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/jonahlewis4/leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
@@ -1021,6 +1022,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2265-partition-array-according-to-given-pivot](https://github.com/jonahlewis4/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2320-find-all-k-distant-indices-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2320-find-all-k-distant-indices-in-an-array) |
 | [2414-move-pieces-to-obtain-a-string](https://github.com/jonahlewis4/leetcode/tree/master/2414-move-pieces-to-obtain-a-string) |
+| [2460-apply-operations-to-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2460-apply-operations-to-an-array) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/jonahlewis4/leetcode/tree/master/2497-maximum-matching-of-players-with-trainers) |
 | [2697-lexicographically-smallest-palindrome](https://github.com/jonahlewis4/leetcode/tree/master/2697-lexicographically-smallest-palindrome) |
 | [3195-separate-black-and-white-balls](https://github.com/jonahlewis4/leetcode/tree/master/3195-separate-black-and-white-balls) |
@@ -1099,6 +1101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2389-design-a-text-editor](https://github.com/jonahlewis4/leetcode/tree/master/2389-design-a-text-editor) |
 | [2411-spiral-matrix-iv](https://github.com/jonahlewis4/leetcode/tree/master/2411-spiral-matrix-iv) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/jonahlewis4/leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
+| [2460-apply-operations-to-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2460-apply-operations-to-an-array) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/jonahlewis4/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2810-faulty-keyboard](https://github.com/jonahlewis4/leetcode/tree/master/2810-faulty-keyboard) |
 | [3433-count-mentions-per-user](https://github.com/jonahlewis4/leetcode/tree/master/3433-count-mentions-per-user) |
