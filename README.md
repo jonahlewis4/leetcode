@@ -432,6 +432,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 | [2036-count-pairs-in-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/2036-count-pairs-in-two-arrays) |
 | [2037-minimum-number-of-moves-to-seat-everyone](https://github.com/jonahlewis4/leetcode/tree/master/2037-minimum-number-of-moves-to-seat-everyone) |
+| [2160-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/jonahlewis4/leetcode/tree/master/2160-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/jonahlewis4/leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2215-finding-3-digit-even-numbers](https://github.com/jonahlewis4/leetcode/tree/master/2215-finding-3-digit-even-numbers) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/jonahlewis4/leetcode/tree/master/2274-keep-multiplying-found-values-by-two) |
@@ -567,6 +568,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/jonahlewis4/leetcode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2037-minimum-number-of-moves-to-seat-everyone](https://github.com/jonahlewis4/leetcode/tree/master/2037-minimum-number-of-moves-to-seat-everyone) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/jonahlewis4/leetcode/tree/master/2140-longest-subsequence-repeated-k-times) |
+| [2160-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/jonahlewis4/leetcode/tree/master/2160-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/jonahlewis4/leetcode/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2300-construct-string-with-repeat-limit](https://github.com/jonahlewis4/leetcode/tree/master/2300-construct-string-with-repeat-limit) |
 | [2354-minimum-health-to-beat-game](https://github.com/jonahlewis4/leetcode/tree/master/2354-minimum-health-to-beat-game) |
@@ -913,6 +915,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1903-largest-odd-number-in-string](https://github.com/jonahlewis4/leetcode/tree/master/1903-largest-odd-number-in-string) |
 | [1925-count-square-sum-triples](https://github.com/jonahlewis4/leetcode/tree/master/1925-count-square-sum-triples) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/jonahlewis4/leetcode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
+| [2160-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/jonahlewis4/leetcode/tree/master/2160-minimum-sum-of-four-digit-number-after-splitting-digits) |
 | [2202-sum-of-k-mirror-numbers](https://github.com/jonahlewis4/leetcode/tree/master/2202-sum-of-k-mirror-numbers) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/jonahlewis4/leetcode/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2288-count-operations-to-obtain-zero](https://github.com/jonahlewis4/leetcode/tree/master/2288-count-operations-to-obtain-zero) |
