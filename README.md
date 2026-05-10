@@ -1265,6 +1265,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1537-maximum-score-after-splitting-a-string](https://github.com/jonahlewis4/leetcode/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1544-make-the-string-great](https://github.com/jonahlewis4/leetcode/tree/master/1544-make-the-string-great) |
 | [1598-crawler-log-folder](https://github.com/jonahlewis4/leetcode/tree/master/1598-crawler-log-folder) |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1624-largest-substring-between-two-equal-characters](https://github.com/jonahlewis4/leetcode/tree/master/1624-largest-substring-between-two-equal-characters) |
 | [1636-number-of-substrings-with-only-1s](https://github.com/jonahlewis4/leetcode/tree/master/1636-number-of-substrings-with-only-1s) |
 | [1662-check-if-two-string-arrays-are-equivalent](https://github.com/jonahlewis4/leetcode/tree/master/1662-check-if-two-string-arrays-are-equivalent) |
@@ -1629,6 +1630,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
 | [1544-make-the-string-great](https://github.com/jonahlewis4/leetcode/tree/master/1544-make-the-string-great) |
 | [1598-crawler-log-folder](https://github.com/jonahlewis4/leetcode/tree/master/1598-crawler-log-folder) |
+| [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/jonahlewis4/leetcode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1802-number-of-students-unable-to-eat-lunch](https://github.com/jonahlewis4/leetcode/tree/master/1802-number-of-students-unable-to-eat-lunch) |
 | [1909-buildings-with-an-ocean-view](https://github.com/jonahlewis4/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
