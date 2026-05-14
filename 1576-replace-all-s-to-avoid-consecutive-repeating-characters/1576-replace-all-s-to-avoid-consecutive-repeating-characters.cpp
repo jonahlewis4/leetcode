@@ -14,7 +14,7 @@ public:
                 s.back() = 'b';
             }
         }
-        for(int i = 1; i < s.size(); i++) {
+        for(int i = 1; i + 1 < s.size(); i++) {
             if(s[i] == '?') {
                 s[i] = 'a';
                 if(s[i - 1] == 'a' || s[i + 1] == 'a') {
