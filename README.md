@@ -219,6 +219,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/jonahlewis4/leetcode/tree/master/1431-kids-with-the-greatest-number-of-candies) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/jonahlewis4/leetcode/tree/master/1468-check-if-n-and-its-double-exist) |
+| [1475-final-prices-with-a-special-discount-in-a-shop](https://github.com/jonahlewis4/leetcode/tree/master/1475-final-prices-with-a-special-discount-in-a-shop) |
 | [1477-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/jonahlewis4/leetcode/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1480-running-sum-of-1d-array](https://github.com/jonahlewis4/leetcode/tree/master/1480-running-sum-of-1d-array) |
@@ -1635,6 +1636,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1002-maximum-width-ramp](https://github.com/jonahlewis4/leetcode/tree/master/1002-maximum-width-ramp) |
 | [1078-remove-outermost-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/1078-remove-outermost-parentheses) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
+| [1475-final-prices-with-a-special-discount-in-a-shop](https://github.com/jonahlewis4/leetcode/tree/master/1475-final-prices-with-a-special-discount-in-a-shop) |
 | [1544-make-the-string-great](https://github.com/jonahlewis4/leetcode/tree/master/1544-make-the-string-great) |
 | [1598-crawler-log-folder](https://github.com/jonahlewis4/leetcode/tree/master/1598-crawler-log-folder) |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/1614-maximum-nesting-depth-of-the-parentheses) |
@@ -1659,6 +1661,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0780-max-chunks-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0883-car-fleet](https://github.com/jonahlewis4/leetcode/tree/master/0883-car-fleet) |
 | [1002-maximum-width-ramp](https://github.com/jonahlewis4/leetcode/tree/master/1002-maximum-width-ramp) |
+| [1475-final-prices-with-a-special-discount-in-a-shop](https://github.com/jonahlewis4/leetcode/tree/master/1475-final-prices-with-a-special-discount-in-a-shop) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/jonahlewis4/leetcode/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1909-buildings-with-an-ocean-view](https://github.com/jonahlewis4/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
 | [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
