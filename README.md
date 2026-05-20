@@ -213,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1364-tuple-with-same-product](https://github.com/jonahlewis4/leetcode/tree/master/1364-tuple-with-same-product) |
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/1385-find-the-distance-value-between-two-arrays) |
+| [1389-create-target-array-in-the-given-order](https://github.com/jonahlewis4/leetcode/tree/master/1389-create-target-array-in-the-given-order) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/jonahlewis4/leetcode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/jonahlewis4/leetcode/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
@@ -1099,6 +1100,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0682-baseball-game](https://github.com/jonahlewis4/leetcode/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/jonahlewis4/leetcode/tree/master/0735-asteroid-collision) |
 | [0844-backspace-string-compare](https://github.com/jonahlewis4/leetcode/tree/master/0844-backspace-string-compare) |
+| [1389-create-target-array-in-the-given-order](https://github.com/jonahlewis4/leetcode/tree/master/1389-create-target-array-in-the-given-order) |
 | [1603-design-parking-system](https://github.com/jonahlewis4/leetcode/tree/master/1603-design-parking-system) |
 | [1688-count-of-matches-in-tournament](https://github.com/jonahlewis4/leetcode/tree/master/1688-count-of-matches-in-tournament) |
 | [1769-get-maximum-in-generated-array](https://github.com/jonahlewis4/leetcode/tree/master/1769-get-maximum-in-generated-array) |
