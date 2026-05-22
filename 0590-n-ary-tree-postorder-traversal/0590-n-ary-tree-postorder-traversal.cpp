@@ -25,13 +25,19 @@ public:
             return {};
         }
         vector<int> res;
-        for(const Node* const node : root->children){
-            vector<int> next = postorder(node);
-            for(const int i : next) {
-                res.push_back(i);
+        stack<const Node*> stk;
+        stk.push(root);
+        while(!stk.empty()) {
+            const Node* const top = stk.top();
+            stk.pop();
+            for(const Node* const node : top->children) {
+                stk.push(node);
             }
+
+            res.push_back(top->val);
+
         }
-        res.push_back(root->val);
+        reverse(res.begin(), res.end());
         return res;
     }
 };
