@@ -1,11 +1,6 @@
 class Solution {
     static int numWords(const string& sentence) {
-        int spacesCount = 0;
-        for(const char c : sentence) {
-            if(c == ' ') {
-                spacesCount++;
-            }
-        }
+        int spacesCount = std::count(sentence.begin(), sentence.end(), ' ');
         return spacesCount + 1;
     }
 public:
