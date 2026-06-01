@@ -51,7 +51,6 @@ public:
         }
         peekKnown = false;
         int next = Iterator::next();
-        cout<<next<<endl;
         return next;
 	}
 	
