@@ -58,9 +58,6 @@ public:
 	}
 	
 	bool hasNext() {
-	    if(peekKnown && !Iterator::hasNext()){
-            return true;
-        }
-        return Iterator::hasNext();
+        return peekKnown || Iterator::hasNext();
 	}
 };
