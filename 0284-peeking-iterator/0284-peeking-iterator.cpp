@@ -38,7 +38,6 @@ public:
 
         peekKnown = true;
         peekedValue = Iterator::next();
-        cout<<peekedValue<<endl;
         return peekedValue;
 	}
 	
