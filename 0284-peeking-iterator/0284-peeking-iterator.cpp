@@ -36,7 +36,6 @@ public:
             return peekedValue;
         }
 
-        cout<<"peeking using next"<<endl;
         peekKnown = true;
         peekedValue = Iterator::next();
         cout<<peekedValue<<endl;
@@ -51,7 +50,6 @@ public:
             return peekedValue;
         }
         peekKnown = false;
-        cout<<"moved next"<<endl;
         int next = Iterator::next();
         cout<<next<<endl;
         return next;
