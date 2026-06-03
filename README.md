@@ -747,6 +747,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0267-palindrome-permutation-ii](https://github.com/jonahlewis4/leetcode/tree/master/0267-palindrome-permutation-ii) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0290-word-pattern](https://github.com/jonahlewis4/leetcode/tree/master/0290-word-pattern) |
+| [0299-bulls-and-cows](https://github.com/jonahlewis4/leetcode/tree/master/0299-bulls-and-cows) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0347-top-k-frequent-elements](https://github.com/jonahlewis4/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/0349-intersection-of-two-arrays) |
@@ -1217,6 +1218,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0290-word-pattern](https://github.com/jonahlewis4/leetcode/tree/master/0290-word-pattern) |
 | [0293-flip-game](https://github.com/jonahlewis4/leetcode/tree/master/0293-flip-game) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0299-bulls-and-cows](https://github.com/jonahlewis4/leetcode/tree/master/0299-bulls-and-cows) |
 | [0344-reverse-string](https://github.com/jonahlewis4/leetcode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/jonahlewis4/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0383-ransom-note](https://github.com/jonahlewis4/leetcode/tree/master/0383-ransom-note) |
@@ -1447,6 +1449,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0229-majority-element-ii](https://github.com/jonahlewis4/leetcode/tree/master/0229-majority-element-ii) |
 | [0274-h-index](https://github.com/jonahlewis4/leetcode/tree/master/0274-h-index) |
+| [0299-bulls-and-cows](https://github.com/jonahlewis4/leetcode/tree/master/0299-bulls-and-cows) |
 | [0347-top-k-frequent-elements](https://github.com/jonahlewis4/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/jonahlewis4/leetcode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/0387-first-unique-character-in-a-string) |
