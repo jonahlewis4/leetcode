@@ -1283,6 +1283,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1356-minimum-number-of-moves-to-make-palindrome](https://github.com/jonahlewis4/leetcode/tree/master/1356-minimum-number-of-moves-to-make-palindrome) |
 | [1360-number-of-days-between-two-dates](https://github.com/jonahlewis4/leetcode/tree/master/1360-number-of-days-between-two-dates) |
 | [1371-minimum-remove-to-make-valid-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/1371-minimum-remove-to-make-valid-parentheses) |
+| [1374-generate-a-string-with-characters-that-have-odd-counts](https://github.com/jonahlewis4/leetcode/tree/master/1374-generate-a-string-with-characters-that-have-odd-counts) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/jonahlewis4/leetcode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1507-reformat-date](https://github.com/jonahlewis4/leetcode/tree/master/1507-reformat-date) |
 | [1528-shuffle-string](https://github.com/jonahlewis4/leetcode/tree/master/1528-shuffle-string) |
