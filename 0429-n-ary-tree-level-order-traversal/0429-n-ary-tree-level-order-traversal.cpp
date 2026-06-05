@@ -20,7 +20,7 @@ public:
 
 class Solution {
 public:
-    vector<vector<int>> levelOrder(Node* root) {
+    static vector<vector<int>> levelOrder(Node* root) {
         if(!root) {
             return {};
         }
