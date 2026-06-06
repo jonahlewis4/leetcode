@@ -9,56 +9,37 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
-struct SizeNode : TreeNode {
-public:
-    int size = 1;
-public:
-    SizeNode(int val) : TreeNode(val){}
-};
 class Solution {
-    vector<SizeNode*> getTrees(unordered_set<int>& values, int min, int max) {
-        vector<SizeNode*> res{nullptr};
+    vector<TreeNode*> getTrees(int min, int max) {
+        
+        if(max - min == 1) {
+            return {nullptr};
+        }
+        vector<TreeNode*> res;
 
         for(int i = min + 1; i < max; i++){
-            if(!values.contains(i)) {
-                continue;
-            }
-            values.erase(i);
             
-            vector<SizeNode*> lefties = getTrees(values, min, i);
-            vector<SizeNode*> righties = getTrees(values, i, max);
+            vector<TreeNode*> lefties = getTrees(min, i);
+            vector<TreeNode*> righties = getTrees(i, max);
 
-            for(SizeNode* lNode : lefties) {
-                for(SizeNode* rNode : righties) {
-                    SizeNode* center = new SizeNode(i);
+            for(TreeNode* lNode : lefties) {
+                for(TreeNode* rNode : righties) {
+                    TreeNode* center = new TreeNode(i);
                     center->left = lNode;
                     center->right = rNode;
-                    int lSize = lNode ? lNode->size : 0;
-                    int rSize = rNode ? rNode->size : 0;
-                    center->size = lSize + rSize + 1;
                     res.push_back(center);
                 }
             }
 
-            values.insert(i);
+
         }
         return res;
 
     }
 public:
     vector<TreeNode*> generateTrees(int n) {
-        unordered_set<int> values;
-        for(int i = 1; i <= n; i++) {
-            values.insert(i);
-        }
-
-        vector<SizeNode*> trees = getTrees(values, 0, n + 1);
-        vector<TreeNode*> res;
-        for(SizeNode* tree : trees) {
-            if(tree && tree->size == n) {
-                res.push_back(tree);
-            }
-        }
-        return res;
+        vector<TreeNode*> trees = getTrees(0, n + 1);
+    
+        return trees;
     }
 };
