@@ -10,30 +10,49 @@
  * };
  */
 class Solution {
-    TreeNode* firstDecrease = nullptr;
-    TreeNode* secondDecrease = nullptr;
+    TreeNode* predecessor(TreeNode* const root) {
+        TreeNode* cur = root->left;
+        while(cur->right != nullptr && cur->right != root) {
+            cur = cur->right;
+        }
+        return cur;
+    }
+
+    TreeNode* l = nullptr;
+    TreeNode* r = nullptr;
     TreeNode* prev = nullptr;
-    void r(TreeNode*const root) {
-        if(!root) {
+    void visit(TreeNode* node) {
+        if(!node) {
             return;
         }
-        r(root->left);
-        if(prev != nullptr && prev->val > root->val){
-            if(!secondDecrease) {
-                firstDecrease = prev;
+        if(prev && prev->val > node->val) {
+            if(!l){
+                l = prev;
             }
-            secondDecrease = root;
-
+            r = node;
         }
-        prev = root;
-        r(root->right);
+        prev = node;
     }
 public:
     void recoverTree(TreeNode* root) {
-        
-
-        r(root);
-        swap(firstDecrease->val, secondDecrease->val);
-
+        TreeNode* cur = root;
+        while(cur != nullptr) {
+            if(!cur->left){
+                visit(cur);
+                cur = cur->right;
+            } else {
+                TreeNode* pred = predecessor(cur);
+                if(pred->right != cur) {
+                    pred->right = cur;
+                    cur = cur->left;
+                } else {
+                    TreeNode* right = cur->right;
+                    pred->right = nullptr;
+                    visit(cur);
+                    cur = right;
+                }
+            }
+        }
+        swap(l->val, r->val);
     }
 };
