@@ -12,7 +12,6 @@
 class Solution {
     TreeNode* firstDecrease = nullptr;
     TreeNode* secondDecrease = nullptr;
-    TreeNode* firstPrev = nullptr;
     TreeNode* prev = nullptr;
     void r(TreeNode*const root) {
         if(!root) {
@@ -20,15 +19,12 @@ class Solution {
         }
         r(root->left);
         if(prev != nullptr && prev->val > root->val){
-            if(firstDecrease) {
-                secondDecrease = root;
-                return;
-            } else {
-                firstDecrease = root;
-                firstPrev = prev;
+            if(!secondDecrease) {
+                firstDecrease = prev;
             }
+            secondDecrease = root;
+
         }
-        cout<<root->val<<endl;
         prev = root;
         r(root->right);
     }
@@ -37,11 +33,7 @@ public:
         
 
         r(root);
-        if(!secondDecrease) {
-            swap(firstDecrease->val, firstPrev->val);
-        } else {
-            swap(firstPrev->val, secondDecrease->val);
-        }
+        swap(firstDecrease->val, secondDecrease->val);
 
     }
 };
