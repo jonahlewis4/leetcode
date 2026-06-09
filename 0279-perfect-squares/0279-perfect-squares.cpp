@@ -1,24 +1,17 @@
 class Solution {
 private:
-    unordered_map<int, int> cache;
 public:
     int numSquares(int n) {
-        if(n == 0) {
-            return 0;
+        vector<int> dp(n + 1, 0);
+        for(int i = 1; i <= n; i++) {
+            int best = i;
+            for(int j = 1; j * j <= i; j++) {
+                int square = j * j;
+                int calculated = dp[i - square];
+                best = min(calculated + 1, best);
+            }
+            dp[i] = best;
         }
-        
-        if(cache[n]) {
-            return cache[n];
-        }
-
-        int best = n;
-        for(int i = 1; i * i <= n; i++) {
-            int square = i * i;
-            int attempt = numSquares(n - square);
-
-            best = min(best, attempt + 1);
-        }
-        cache[n] = best;
-        return best;
+        return dp.back();
     }
 };
