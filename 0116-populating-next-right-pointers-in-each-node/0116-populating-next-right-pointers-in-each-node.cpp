@@ -17,35 +17,35 @@ public:
 */
 
 class Solution {
+private:
+    
 public:
     Node* connect(Node* root) {
-        if(root == nullptr) {
-            return nullptr;
-        }
-
-        queue<Node*> q;
-        q.push(root);
-        while(!q.empty()) {
-            int n = q.size();
+        Node* top = root;
+        while(top != nullptr) {
+            bool onRight = false;
             Node sen;
             Node* prev = &sen;
-            for(int i = 0; i < n; i++) {
-                Node* cur = q.front();
-                q.pop();
-                prev->next = cur;
+            Node* nextTop = nullptr;
+            while(top != nullptr) {
+                Node* node = onRight ? top->right : top->left;
+                
+                if(node) {
+                    prev->next = node;
+                    prev = node;
 
-                if(cur->left != nullptr) {
-                    q.push(cur->left);
+                    if(!nextTop) {
+                        nextTop = node;
+                    }
                 }
-
-                if(cur->right != nullptr) {
-                    q.push(cur->right);
+                
+                if(onRight) {
+                    top = top->next;
                 }
-
-                prev = cur;
+                onRight = !onRight;
             }
+            top = nextTop;
         }
-
         return root;
     }
 };
