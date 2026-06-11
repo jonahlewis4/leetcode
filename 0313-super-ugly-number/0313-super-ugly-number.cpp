@@ -1,30 +1,27 @@
 class Solution {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
-        vector<int> dp(n, 1);
+        vector<pair<long long, int>> dp(n);
         vector<int> primePtrs(primes.size(), 0);
+        priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;
+        dp.front() = {1, -1};
+        for(int i = 0; i < primes.size(); i++) {
+            pq.push({(long long)primes[i], i});
+        }
 
         for(int i = 1; i < n; i++) {
-            int best = INT_MAX;
-            for(int j = 0; j < primes.size(); j++) {
-                int ptr = primePtrs[j];
-                long long prime = primes[j];
-                long long candidate = dp[ptr] * prime;
-                best = min(candidate, (long long)best);
+            auto [uglyNum, primeIdx] = pq.top();
+            pq.pop();
+            dp[i] = {uglyNum, primeIdx};
+            
+            primePtrs[primeIdx]++;
+            while(dp[primePtrs[primeIdx]].second > primeIdx){
+                primePtrs[primeIdx]++;
             }
 
-            dp[i] = best;
-            for(int j = 0; j < primes.size(); j++) {
-                int& ptr = primePtrs[j];
-                long long prime = primes[j];
-                long long candidate = dp[ptr] * prime;
-                if(candidate == best) {
-                    ptr++;
-                }
-            }
-
+            pq.push({dp[primePtrs[primeIdx]].first * primes[primeIdx], primeIdx});
         }
         
-        return dp.back();
+        return dp.back().first;
     }
 };
