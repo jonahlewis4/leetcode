@@ -1839,6 +1839,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0269-alien-dictionary](https://github.com/jonahlewis4/leetcode/tree/master/0269-alien-dictionary) |
 | [0270-closest-binary-search-tree-value](https://github.com/jonahlewis4/leetcode/tree/master/0270-closest-binary-search-tree-value) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0310-minimum-height-trees](https://github.com/jonahlewis4/leetcode/tree/master/0310-minimum-height-trees) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/jonahlewis4/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
@@ -2057,6 +2058,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0279-perfect-squares](https://github.com/jonahlewis4/leetcode/tree/master/0279-perfect-squares) |
 | [0286-walls-and-gates](https://github.com/jonahlewis4/leetcode/tree/master/0286-walls-and-gates) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0310-minimum-height-trees](https://github.com/jonahlewis4/leetcode/tree/master/0310-minimum-height-trees) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
 | [0322-coin-change](https://github.com/jonahlewis4/leetcode/tree/master/0322-coin-change) |
 | [0323-number-of-connected-components-in-an-undirected-graph](https://github.com/jonahlewis4/leetcode/tree/master/0323-number-of-connected-components-in-an-undirected-graph) |
@@ -2203,6 +2205,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/jonahlewis4/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/jonahlewis4/leetcode/tree/master/0210-course-schedule-ii) |
 | [0269-alien-dictionary](https://github.com/jonahlewis4/leetcode/tree/master/0269-alien-dictionary) |
+| [0310-minimum-height-trees](https://github.com/jonahlewis4/leetcode/tree/master/0310-minimum-height-trees) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [1177-tree-diameter](https://github.com/jonahlewis4/leetcode/tree/master/1177-tree-diameter) |
 ## Shortest Path
@@ -2274,6 +2277,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Graph Theory
 |  |
 | ------- |
+| [0310-minimum-height-trees](https://github.com/jonahlewis4/leetcode/tree/master/0310-minimum-height-trees) |
 | [1791-find-center-of-star-graph](https://github.com/jonahlewis4/leetcode/tree/master/1791-find-center-of-star-graph) |
 ## Concurrency
 |  |
