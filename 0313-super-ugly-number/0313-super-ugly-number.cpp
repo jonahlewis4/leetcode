@@ -8,22 +8,18 @@ public:
             int best = INT_MAX;
             for(int j = 0; j < primes.size(); j++) {
                 int ptr = primePtrs[j];
-                int prime = primes[j];
-                if(INT_MAX/prime >= dp[ptr]){
-                    int candidate = dp[ptr] * prime;
-                    best = min(candidate, best);
-                }
+                long long prime = primes[j];
+                long long candidate = dp[ptr] * prime;
+                best = min(candidate, (long long)best);
             }
 
             dp.push_back(best);
             for(int j = 0; j < primes.size(); j++) {
                 int& ptr = primePtrs[j];
-                int prime = primes[j];
-                if(INT_MAX/prime >= dp[ptr]) {
-                    int candidate = dp[ptr] * prime;
-                    if(candidate == best) {
-                        ptr++;
-                    }
+                long long prime = primes[j];
+                long long candidate = dp[ptr] * prime;
+                if(candidate == best) {
+                    ptr++;
                 }
             }
 
