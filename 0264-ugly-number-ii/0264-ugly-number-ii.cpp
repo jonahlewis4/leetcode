@@ -13,13 +13,13 @@ public:
             int best = min({twoCand, threeCand, fiveCand});
 
             dp.push_back(best);
-            if(twoCand == best){
+            if(twoCand <= best){
                 two++;
             } 
-            if(threeCand == best) {
+            if(threeCand <= best) {
                 three++;
             }
-            if(fiveCand == best) {
+            if(fiveCand <= best) {
                 five++;
             }
         }
