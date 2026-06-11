@@ -1,32 +1,34 @@
 class Solution {
 public:
     int nthSuperUglyNumber(int n, vector<int>& primes) {
-        if(n == 1) {
-            return 1;
-        }
-        priority_queue<int, vector<int>, greater<int>> pq;
-        pq.push(1);
-        
-        int last = -1;
-        
-        for(int i = 0; i < n - 1; i++) {
-            int num = pq.top();
-            pq.pop();
-            if(num == last) {
-                i--;
-                continue;
-            }
-            for(int prime : primes) {
-                if(INT_MAX/prime >= num) {
-                    pq.push(num * prime);
+        vector<int> dp{1};
+        vector<int> primePtrs(primes.size(), 0);
+
+        for(int i = 1; i < n; i++) {
+            int best = INT_MAX;
+            for(int j = 0; j < primes.size(); j++) {
+                int ptr = primePtrs[j];
+                int prime = primes[j];
+                if(INT_MAX/prime >= dp[ptr]){
+                    int candidate = dp[ptr] * prime;
+                    best = min(candidate, best);
                 }
             }
-            last = num;
-        }
 
-        while(pq.top() == last) {
-            pq.pop();
+            dp.push_back(best);
+            for(int j = 0; j < primes.size(); j++) {
+                int& ptr = primePtrs[j];
+                int prime = primes[j];
+                if(INT_MAX/prime >= dp[ptr]) {
+                    int candidate = dp[ptr] * prime;
+                    if(candidate == best) {
+                        ptr++;
+                    }
+                }
+            }
+
         }
-        return pq.top();
+        
+        return dp.back();
     }
 };
