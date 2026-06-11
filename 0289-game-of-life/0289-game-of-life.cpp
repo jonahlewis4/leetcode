@@ -7,7 +7,13 @@ class Solution {
 public:
     void gameOfLife(vector<vector<int>>& board) {
         
-        vector<vector<int>> copy = board;
+        for(int r = 0; r < board.size(); r++) {
+            for(int c = 0; c < board.front().size(); c++) {
+                int val = board[r][c];
+                board[r][c] |= val<<1;
+            }
+        }
+
         for(int r = 0; r < board.size(); r++) {
             for(int c = 0; c < board.front().size(); c++) {
                 int alive = 0;
@@ -18,20 +24,28 @@ public:
                         continue;
                     }
 
-                    if(copy[newR][newC]) {
+                    int val = board[newR][newC];
+                    int oldVal = val & 0b10;
+                    if(oldVal) {
                         alive++;
                     }
                 }
 
-                if(copy[r][c] && alive < 2) {
-                    board[r][c] = false;
-                } else if (copy[r][c] && (alive == 2 || alive == 3)){
-                    board[r][c] = true;
-                } else if (copy[r][c] && alive > 3) {
-                    board[r][c] = false;
-                } else if (!copy[r][c] && alive == 3) {
-                    board[r][c] = true;
+                if(board[r][c] && alive < 2) {
+                    board[r][c]&= (~1);
+                } else if (board[r][c] && (alive == 2 || alive == 3)){
+                    board[r][c] |=1 ;
+                } else if (board[r][c] && alive > 3) {
+                    board[r][c] &= ~1;
+                } else if (!board[r][c] && alive == 3) {
+                    board[r][c] |=1;
                 }
+            }
+        }
+
+        for(int r = 0; r < board.size(); r++) {
+            for(int c = 0; c < board.front().size(); c++) {
+                board[r][c] &= 1;
             }
         }
     }
