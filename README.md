@@ -115,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0312-burst-balloons](https://github.com/jonahlewis4/leetcode/tree/master/0312-burst-balloons) |
 | [0313-super-ugly-number](https://github.com/jonahlewis4/leetcode/tree/master/0313-super-ugly-number) |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/jonahlewis4/leetcode/tree/master/0315-count-of-smaller-numbers-after-self) |
+| [0318-maximum-product-of-word-lengths](https://github.com/jonahlewis4/leetcode/tree/master/0318-maximum-product-of-word-lengths) |
 | [0322-coin-change](https://github.com/jonahlewis4/leetcode/tree/master/0322-coin-change) |
 | [0327-count-of-range-sum](https://github.com/jonahlewis4/leetcode/tree/master/0327-count-of-range-sum) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
@@ -1235,6 +1236,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0299-bulls-and-cows](https://github.com/jonahlewis4/leetcode/tree/master/0299-bulls-and-cows) |
 | [0306-additive-number](https://github.com/jonahlewis4/leetcode/tree/master/0306-additive-number) |
+| [0318-maximum-product-of-word-lengths](https://github.com/jonahlewis4/leetcode/tree/master/0318-maximum-product-of-word-lengths) |
 | [0344-reverse-string](https://github.com/jonahlewis4/leetcode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/jonahlewis4/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0383-ransom-note](https://github.com/jonahlewis4/leetcode/tree/master/0383-ransom-note) |
@@ -1388,6 +1390,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0266-palindrome-permutation](https://github.com/jonahlewis4/leetcode/tree/master/0266-palindrome-permutation) |
 | [0268-missing-number](https://github.com/jonahlewis4/leetcode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/jonahlewis4/leetcode/tree/master/0287-find-the-duplicate-number) |
+| [0318-maximum-product-of-word-lengths](https://github.com/jonahlewis4/leetcode/tree/master/0318-maximum-product-of-word-lengths) |
 | [0338-counting-bits](https://github.com/jonahlewis4/leetcode/tree/master/0338-counting-bits) |
 | [0342-power-of-four](https://github.com/jonahlewis4/leetcode/tree/master/0342-power-of-four) |
 | [0371-sum-of-two-integers](https://github.com/jonahlewis4/leetcode/tree/master/0371-sum-of-two-integers) |
