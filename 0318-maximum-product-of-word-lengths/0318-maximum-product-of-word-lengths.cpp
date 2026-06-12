@@ -15,7 +15,7 @@ public:
         int pairs = 0;
         int best = 0;
         for(int i = 0; i < words.size(); i++) {
-            for(int j = 1; j < words.size(); j++){
+            for(int j = i + 1; j < words.size(); j++){
                 unsigned int& letters1 = chars[i];
                 unsigned int& letters2 = chars[j];
                 bool match = (letters1 & letters2) == 0;
