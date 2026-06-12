@@ -1,34 +1,39 @@
 class Solution {
 public:
     int maxProduct(vector<string>& words) {
-        vector<string> chars;
-        chars.reserve(words.size());
-        for(const string& s : words) {
-            unordered_set<char> set;
+        vector<unordered_set<char>> chars(words.size());
+        for(int i = 0; i < words.size(); i++) {
+            string& s = words[i];
+            unordered_set<char>& set = chars[i];
             for(const char c : s) {
                 set.insert(c);
             }
-            string letters(26, '.');
-            for(const char c : set) {
-                letters[c - 'a'] = 'y';
-            }
-            chars.push_back(letters);
         }
 
         int pairs = 0;
         int best = 0;
         for(int i = 0; i < words.size(); i++) {
             for(int j = 1; j < words.size(); j++){
-                string& letters1 = chars[i];
-                string& letters2 = chars[j];
+                unordered_set<char>& letters1 = chars[i];
+                unordered_set<char>& letters2 = chars[j];
                 bool match = true;
-                for(int i = 0; i < 26; i++) {
-                    if(letters1[i] == letters2[i] && letters1[i] == 'y') {
+                
+                for(const char c : letters1) {
+                    if(letters2.contains(c)) {
                         match = false;
                         break;
                     }
                 }
 
+                if(match) {
+                    for(const char c : letters2) {
+                        if(letters1.contains(c)) {
+                            match = false;
+                            break;
+                        }
+                    }
+                }
+                
                 if(match) {
                     int product = words[i].size() * words[j].size();
                     best = max(best, product);
