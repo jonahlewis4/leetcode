@@ -1238,6 +1238,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0299-bulls-and-cows](https://github.com/jonahlewis4/leetcode/tree/master/0299-bulls-and-cows) |
 | [0306-additive-number](https://github.com/jonahlewis4/leetcode/tree/master/0306-additive-number) |
 | [0318-maximum-product-of-word-lengths](https://github.com/jonahlewis4/leetcode/tree/master/0318-maximum-product-of-word-lengths) |
+| [0331-verify-preorder-serialization-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0331-verify-preorder-serialization-of-a-binary-tree) |
 | [0344-reverse-string](https://github.com/jonahlewis4/leetcode/tree/master/0344-reverse-string) |
 | [0345-reverse-vowels-of-a-string](https://github.com/jonahlewis4/leetcode/tree/master/0345-reverse-vowels-of-a-string) |
 | [0383-ransom-note](https://github.com/jonahlewis4/leetcode/tree/master/0383-ransom-note) |
@@ -1665,6 +1666,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0227-basic-calculator-ii](https://github.com/jonahlewis4/leetcode/tree/master/0227-basic-calculator-ii) |
 | [0234-palindrome-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/0234-palindrome-linked-list) |
 | [0255-verify-preorder-sequence-in-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0255-verify-preorder-sequence-in-binary-search-tree) |
+| [0331-verify-preorder-serialization-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0331-verify-preorder-serialization-of-a-binary-tree) |
 | [0364-nested-list-weight-sum-ii](https://github.com/jonahlewis4/leetcode/tree/master/0364-nested-list-weight-sum-ii) |
 | [0394-decode-string](https://github.com/jonahlewis4/leetcode/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/jonahlewis4/leetcode/tree/master/0402-remove-k-digits) |
@@ -1782,6 +1784,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0270-closest-binary-search-tree-value](https://github.com/jonahlewis4/leetcode/tree/master/0270-closest-binary-search-tree-value) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
+| [0331-verify-preorder-serialization-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0331-verify-preorder-serialization-of-a-binary-tree) |
 | [0404-sum-of-left-leaves](https://github.com/jonahlewis4/leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0429-n-ary-tree-level-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0429-n-ary-tree-level-order-traversal) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/jonahlewis4/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
@@ -1927,6 +1930,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0270-closest-binary-search-tree-value](https://github.com/jonahlewis4/leetcode/tree/master/0270-closest-binary-search-tree-value) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0314-binary-tree-vertical-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0314-binary-tree-vertical-order-traversal) |
+| [0331-verify-preorder-serialization-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0331-verify-preorder-serialization-of-a-binary-tree) |
 | [0404-sum-of-left-leaves](https://github.com/jonahlewis4/leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/jonahlewis4/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0543-diameter-of-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0543-diameter-of-binary-tree) |
