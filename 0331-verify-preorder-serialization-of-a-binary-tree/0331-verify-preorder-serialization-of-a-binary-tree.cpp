@@ -4,7 +4,7 @@ class Solution {
     int i = 0;
     public:
         Parser(const string& s) : s(s) {
-
+            
         }
 
         bool fillNextNode(int*& out) {
@@ -50,7 +50,7 @@ class Solution {
         return true;
     }
 public:
-    bool isValidSerialization(const string& preorder) {
+    static bool isValidSerialization(const string& preorder) {
         Parser p(preorder);
         bool valid = r(p);
         if(!valid) {
