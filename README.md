@@ -248,6 +248,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1636-sort-array-by-increasing-frequency](https://github.com/jonahlewis4/leetcode/tree/master/1636-sort-array-by-increasing-frequency) |
 | [1637-widest-vertical-area-between-two-points-containing-no-points](https://github.com/jonahlewis4/leetcode/tree/master/1637-widest-vertical-area-between-two-points-containing-no-points) |
 | [1652-defuse-the-bomb](https://github.com/jonahlewis4/leetcode/tree/master/1652-defuse-the-bomb) |
+| [1656-design-an-ordered-stream](https://github.com/jonahlewis4/leetcode/tree/master/1656-design-an-ordered-stream) |
 | [1662-check-if-two-string-arrays-are-equivalent](https://github.com/jonahlewis4/leetcode/tree/master/1662-check-if-two-string-arrays-are-equivalent) |
 | [1672-richest-customer-wealth](https://github.com/jonahlewis4/leetcode/tree/master/1672-richest-customer-wealth) |
 | [1684-count-the-number-of-consistent-strings](https://github.com/jonahlewis4/leetcode/tree/master/1684-count-the-number-of-consistent-strings) |
@@ -814,6 +815,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/jonahlewis4/leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1624-largest-substring-between-two-equal-characters](https://github.com/jonahlewis4/leetcode/tree/master/1624-largest-substring-between-two-equal-characters) |
 | [1636-sort-array-by-increasing-frequency](https://github.com/jonahlewis4/leetcode/tree/master/1636-sort-array-by-increasing-frequency) |
+| [1656-design-an-ordered-stream](https://github.com/jonahlewis4/leetcode/tree/master/1656-design-an-ordered-stream) |
 | [1684-count-the-number-of-consistent-strings](https://github.com/jonahlewis4/leetcode/tree/master/1684-count-the-number-of-consistent-strings) |
 | [1694-make-sum-divisible-by-p](https://github.com/jonahlewis4/leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/jonahlewis4/leetcode/tree/master/1713-dot-product-of-two-sparse-vectors) |
@@ -1549,6 +1551,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
 | [1477-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1603-design-parking-system](https://github.com/jonahlewis4/leetcode/tree/master/1603-design-parking-system) |
+| [1656-design-an-ordered-stream](https://github.com/jonahlewis4/leetcode/tree/master/1656-design-an-ordered-stream) |
 | [1713-dot-product-of-two-sparse-vectors](https://github.com/jonahlewis4/leetcode/tree/master/1713-dot-product-of-two-sparse-vectors) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/jonahlewis4/leetcode/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2169-simple-bank-system](https://github.com/jonahlewis4/leetcode/tree/master/2169-simple-bank-system) |
@@ -1646,6 +1649,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0933-number-of-recent-calls](https://github.com/jonahlewis4/leetcode/tree/master/0933-number-of-recent-calls) |
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
 | [1477-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
+| [1656-design-an-ordered-stream](https://github.com/jonahlewis4/leetcode/tree/master/1656-design-an-ordered-stream) |
 ## Stack
 |  |
 | ------- |
