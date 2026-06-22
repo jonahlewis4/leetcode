@@ -220,6 +220,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/1385-find-the-distance-value-between-two-arrays) |
 | [1389-create-target-array-in-the-given-order](https://github.com/jonahlewis4/leetcode/tree/master/1389-create-target-array-in-the-given-order) |
+| [1413-minimum-value-to-get-positive-step-by-step-sum](https://github.com/jonahlewis4/leetcode/tree/master/1413-minimum-value-to-get-positive-step-by-step-sum) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/jonahlewis4/leetcode/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/jonahlewis4/leetcode/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
 | [1426-find-n-unique-integers-sum-up-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/1426-find-n-unique-integers-sum-up-to-zero) |
@@ -1574,6 +1575,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0724-find-pivot-index](https://github.com/jonahlewis4/leetcode/tree/master/0724-find-pivot-index) |
 | [0912-random-pick-with-weight](https://github.com/jonahlewis4/leetcode/tree/master/0912-random-pick-with-weight) |
+| [1413-minimum-value-to-get-positive-step-by-step-sum](https://github.com/jonahlewis4/leetcode/tree/master/1413-minimum-value-to-get-positive-step-by-step-sum) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/jonahlewis4/leetcode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1477-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1480-running-sum-of-1d-array](https://github.com/jonahlewis4/leetcode/tree/master/1480-running-sum-of-1d-array) |
