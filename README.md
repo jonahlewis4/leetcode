@@ -292,6 +292,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2057-smallest-index-with-equal-value](https://github.com/jonahlewis4/leetcode/tree/master/2057-smallest-index-with-equal-value) |
 | [2058-concatenation-of-array](https://github.com/jonahlewis4/leetcode/tree/master/2058-concatenation-of-array) |
 | [2102-find-the-middle-index-in-array](https://github.com/jonahlewis4/leetcode/tree/master/2102-find-the-middle-index-in-array) |
+| [2108-find-first-palindromic-string-in-the-array](https://github.com/jonahlewis4/leetcode/tree/master/2108-find-first-palindromic-string-in-the-array) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/jonahlewis4/leetcode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2114-maximum-number-of-words-found-in-sentences](https://github.com/jonahlewis4/leetcode/tree/master/2114-maximum-number-of-words-found-in-sentences) |
 | [2144-maximum-difference-between-increasing-elements](https://github.com/jonahlewis4/leetcode/tree/master/2144-maximum-difference-between-increasing-elements) |
@@ -1066,6 +1067,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2000-reverse-prefix-of-word](https://github.com/jonahlewis4/leetcode/tree/master/2000-reverse-prefix-of-word) |
 | [2036-count-pairs-in-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/2036-count-pairs-in-two-arrays) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/jonahlewis4/leetcode/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
+| [2108-find-first-palindromic-string-in-the-array](https://github.com/jonahlewis4/leetcode/tree/master/2108-find-first-palindromic-string-in-the-array) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/jonahlewis4/leetcode/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2320-find-all-k-distant-indices-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2320-find-all-k-distant-indices-in-an-array) |
 | [2414-move-pieces-to-obtain-a-string](https://github.com/jonahlewis4/leetcode/tree/master/2414-move-pieces-to-obtain-a-string) |
@@ -1344,6 +1346,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2053-kth-distinct-string-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2053-kth-distinct-string-in-an-array) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/jonahlewis4/leetcode/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2103-rings-and-rods](https://github.com/jonahlewis4/leetcode/tree/master/2103-rings-and-rods) |
+| [2108-find-first-palindromic-string-in-the-array](https://github.com/jonahlewis4/leetcode/tree/master/2108-find-first-palindromic-string-in-the-array) |
 | [2114-maximum-number-of-words-found-in-sentences](https://github.com/jonahlewis4/leetcode/tree/master/2114-maximum-number-of-words-found-in-sentences) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/jonahlewis4/leetcode/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2165-plates-between-candles](https://github.com/jonahlewis4/leetcode/tree/master/2165-plates-between-candles) |
