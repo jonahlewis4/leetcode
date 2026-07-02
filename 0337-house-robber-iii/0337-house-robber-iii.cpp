@@ -10,43 +10,25 @@
  * };
  */
 class Solution {
-    unordered_map<TreeNode*, int> cache;
-    int rob(TreeNode* root, bool cooldown) {
+    pair<int, int> r(TreeNode* root) {
         if(!root) {
-            return 0;
+            return {0,0};
         }
         
-        int left;
-        int right;
-        if(cache.contains(root->left)){
-            left = cache[root->left];
-        } else {
-            left = rob(root->left, false);
-            cache[root->left] = left;
-        }
+        pair<int, int> left = r(root->left);
+        pair<int, int> right = r(root->right);
+            
+        int dontUse = max(right.first, right.second) + max(left.first, left.second);
 
-        if(cache.contains(root->right)) {
-            right = cache[root->right];
-        } else {
-            right = rob(root->right, false);
-            cache[root->right] = right;
-        }
-        int dontUse = right + left;
-    
-        if(!cooldown) {
-            //if you rob, descend with cooldown
-            //if you don't rob, descend without cooldown
-            int use = root->val + rob(root->left, true) + rob(root->right, true);
-            return max(use, dontUse);
-        }
+        int use = root->val + right.first + left.first;
         
-        //if cooldown -> don't rob
-        return dontUse;
+        return {dontUse, use};
 
 
     }
 public:
     int rob(TreeNode* root) {
-        return rob(root, false);
+        pair<int, int> res = r(root);
+        return max(res.first, res.second);
     }
 };
