@@ -86,6 +86,12 @@ public:
         calcNext();
         return cached;
     }
+
+    ~NestedIterator() {
+        if(itr) {
+            delete itr;
+        }
+    }
 };
 
 /**
