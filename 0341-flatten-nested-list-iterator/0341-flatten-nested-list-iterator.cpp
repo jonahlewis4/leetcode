@@ -70,9 +70,9 @@ public:
     
     int next() {
         //technically we don't need this if hasNext is always called before next, but just to be safe.
-        if(!cached) {
-            calcNext();
-        }
+        // if(!cached) {
+        //     calcNext();
+        // }
         cached = false;
 
         return cachedNext;
