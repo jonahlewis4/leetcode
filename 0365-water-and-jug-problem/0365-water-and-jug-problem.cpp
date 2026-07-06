@@ -1,6 +1,6 @@
 class Solution {
-    string hash(int x, int y) {
-        return to_string(x) + "|" + to_string(y);
+    long long hash(int x, int y) {
+        return ((long long)x<<32) + y;
     }
 public:
     bool canMeasureWater(int x, int y, int target) {
@@ -9,7 +9,7 @@ public:
         }
 
         stack<pair<int, int>> stack;
-        unordered_set<string> set;
+        unordered_set<long long> set;
         stack.push({0, 0});
         set.insert(hash(0, 0));
         while(!stack.empty()) {
@@ -21,7 +21,7 @@ public:
             }
 
             const auto& update = [&stack, &set, this](int x, int y) {
-                string hashed = hash(x,y);
+                long long hashed = hash(x,y);
                 if(set.contains(hashed)) {
                     return;
                 }
