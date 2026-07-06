@@ -1,45 +1,7 @@
 class Solution {
-    long long hash(int x, int y) {
-        return ((long long)x<<32) + y;
-    }
 public:
     bool canMeasureWater(int x, int y, int target) {
-        if(x + y < target) {
-            return false;
-        }
-
-        stack<pair<int, int>> stack;
-        unordered_set<long long> set;
-        stack.push({0, 0});
-        set.insert(hash(0, 0));
-        while(!stack.empty()) {
-            pair<int, int> p = stack.top();
-            //cout<<p.first<<" "<<p.second<<endl;
-            stack.pop();
-            if(p.first + p.second == target) {
-                return true;
-            }
-
-            const auto& update = [&stack, &set, this](int x, int y) {
-                long long hashed = hash(x,y);
-                if(set.contains(hashed)) {
-                    return;
-                }
-                stack.push({x,y});
-                set.insert(hashed);
-            };
-
-            update(x, p.second);
-            update(p.first, y);
-            update(0, p.second);
-            update(p.first, 0);
-            
-            int gained = min(p.first, y - p.second);
-            update(p.first - gained, p.second + gained);
-
-            int gained2 = min(p.second, x - p.first);
-            update(p.first + gained2, p.second - gained2);
-        }
-        return false;
+        int g = gcd(x,y);
+        return target % g == 0 && x + y >= target;
     }
 };
