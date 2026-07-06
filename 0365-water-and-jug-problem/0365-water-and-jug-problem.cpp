@@ -34,10 +34,10 @@ public:
             update(0, p.second);
             update(p.first, 0);
             
-            int gained = max(0, min(p.first, y - p.second));
+            int gained = min(p.first, y - p.second);
             update(p.first - gained, p.second + gained);
 
-            int gained2 = max(0, min(p.second, x - p.first));
+            int gained2 = min(p.second, x - p.first);
             update(p.first + gained2, p.second - gained2);
         }
         return false;
