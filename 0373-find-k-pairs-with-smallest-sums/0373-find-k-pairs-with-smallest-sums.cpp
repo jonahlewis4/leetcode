@@ -1,16 +1,16 @@
 class Solution {
 public:
     vector<vector<int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k) {
-        const auto & cmp = [](const vector<int>& a, const vector<int>& b) {
-            int sum1 = a.front() + a.back();
-            int sum2 = b.front() + b.back();
+        const auto & cmp = [](const pair<int, int>& a, const pair<int, int>& b) {
+            int sum1 = a.first + a.second;
+            int sum2 = b.first + b.second;
             return sum1 <= sum2;
         };
-        priority_queue<vector<int>, vector<vector<int>>, decltype(cmp)> pq(cmp);
+        priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(cmp)> pq(cmp);
 
         for(int i = 0; i < nums1.size(); i++) {
             for(int j = 0; j < nums2.size(); j++) {
-                vector<int> pair = {nums1[i], nums2[j]};
+                pair<int, int> pair = {nums1[i], nums2[j]};
                 if(pq.size() == k && cmp(pq.top(), pair)){
                     break;
                 }
@@ -26,7 +26,7 @@ public:
 
         vector<vector<int>> res;
         while(!pq.empty()) {
-            res.push_back(pq.top());
+            res.push_back({pq.top().first, pq.top().second});
             pq.pop();
         }
 
