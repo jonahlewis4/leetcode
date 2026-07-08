@@ -26,7 +26,8 @@ public:
 
         vector<vector<int>> res;
         while(!pq.empty()) {
-            res.push_back({pq.top().first, pq.top().second});
+            pair<int, int> top = pq.top();
+            res.push_back({top.first, top.second});
             pq.pop();
         }
 
