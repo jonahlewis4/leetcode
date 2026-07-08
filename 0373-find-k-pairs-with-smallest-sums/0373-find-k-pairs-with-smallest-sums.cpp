@@ -9,6 +9,10 @@ public:
         priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(cmp)> pq(cmp);
 
         for(int i = 0; i < nums1.size(); i++) {
+            pair<int, int> fPair = {nums1[i], nums2[0]};
+            if(pq.size() == k && cmp(pq.top(), fPair)) {
+                break;
+            }
             for(int j = 0; j < nums2.size(); j++) {
                 pair<int, int> pair = {nums1[i], nums2[j]};
                 if(pq.size() == k && cmp(pq.top(), pair)){
