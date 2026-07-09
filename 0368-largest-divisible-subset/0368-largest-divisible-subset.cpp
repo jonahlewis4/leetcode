@@ -5,7 +5,8 @@ public:
         //nums which it can fit in
 
         sort(nums.begin(), nums.end());
-        vector<pair<int, int>> dp(nums.size());
+        vector<int> dp(nums.size());
+        vector<int> backtrack(nums.size());
 
         for(int i = 0; i < nums.size(); i++) {
             int iNum = nums[i];
@@ -15,24 +16,25 @@ public:
                 int jNum = nums[j];
                 
                 if(iNum % jNum == 0){
-                    pair<int, int>  p = dp[j];
-                    if(p.first > best){
-                        best = p.first;
+                    int prev = dp[j];
+                    if(prev > best){
+                        best = prev;
                         bestI = j;
                     }
                 }
             }
-            dp[i] = {best + 1, bestI};
+            dp[i] = best + 1;
+            backtrack[i] = bestI;
         }
 
         const auto & itr = max_element(dp.begin(), dp.end());
 
         int j = itr - dp.begin();
 
-        vector<int> res(dp[j].first);
+        vector<int> res(dp[j]);
         for(int i = res.size() - 1; i >= 0; i--) {
             res[i] = nums[j];
-            j = dp[j].second;
+            j = backtrack[j];
         }
         return res;
     }
