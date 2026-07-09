@@ -1,9 +1,9 @@
 class Solution {
-        vector<int> getDivisors(int num) {
+       void getDivisors(int num, vector<int>& res) {
             if(num == 1) {
-                return {};
+                return;
             }
-            vector<int> res{1};
+            res.push_back(1);
             for(int i = 2; i * i <= num; i++){
                 if(num % i == 0) {
                     res.push_back(i);
@@ -13,11 +13,11 @@ class Solution {
                     }
                 }
             }
-            return res;
         }
 public:
     bool checkPerfectNumber(int num) {
-        vector<int> divisors = getDivisors(num);
+        vector<int> divisors;
+        getDivisors(num, divisors);
         int sum = accumulate(divisors.begin(), divisors.end(), 0);
         return sum == num;
     }
