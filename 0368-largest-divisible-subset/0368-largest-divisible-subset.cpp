@@ -27,7 +27,7 @@ public:
             backtrack[i] = bestI;
         }
 
-        const auto & itr = max_element(dp.begin(), dp.end());
+        vector<int>::iterator itr = max_element(dp.begin(), dp.end());
 
         int j = itr - dp.begin();
 
