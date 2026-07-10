@@ -1,9 +1,8 @@
 class Solution {
 public:
     double myPow(double x, int n2) {
-        long long n = (long long)n2;
-        bool negative = n < 0;
-        n = abs(n);
+        bool negative = n2 < 0;
+        unsigned int n = n2 > 0 ? n2 : -(n2 + 1) + (unsigned int)1;
         double result = 1;
         while(n > 0) {
             if(n & 1) {
