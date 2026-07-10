@@ -923,6 +923,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0367-valid-perfect-square](https://github.com/jonahlewis4/leetcode/tree/master/0367-valid-perfect-square) |
 | [0368-largest-divisible-subset](https://github.com/jonahlewis4/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0371-sum-of-two-integers](https://github.com/jonahlewis4/leetcode/tree/master/0371-sum-of-two-integers) |
+| [0372-super-pow](https://github.com/jonahlewis4/leetcode/tree/master/0372-super-pow) |
 | [0380-insert-delete-getrandom-o1](https://github.com/jonahlewis4/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0382-linked-list-random-node](https://github.com/jonahlewis4/leetcode/tree/master/0382-linked-list-random-node) |
 | [0405-convert-a-number-to-hexadecimal](https://github.com/jonahlewis4/leetcode/tree/master/0405-convert-a-number-to-hexadecimal) |
@@ -1472,6 +1473,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0315-count-of-smaller-numbers-after-self](https://github.com/jonahlewis4/leetcode/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0327-count-of-range-sum](https://github.com/jonahlewis4/leetcode/tree/master/0327-count-of-range-sum) |
 | [0347-top-k-frequent-elements](https://github.com/jonahlewis4/leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0372-super-pow](https://github.com/jonahlewis4/leetcode/tree/master/0372-super-pow) |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
