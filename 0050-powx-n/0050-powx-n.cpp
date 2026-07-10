@@ -1,38 +1,20 @@
 class Solution {
 public:
-    double myPow(double x, int n) {
-        std::unordered_map<int, double> cache;
-        double beforeNegativeResolution = dfs(x, abs(long(n)), cache);
-        if(n < 0){
-            return 1/beforeNegativeResolution;
+    double myPow(double x, int n2) {
+        long long n = (long long)n2;
+        bool negative = n < 0;
+        n = abs(n);
+        double result = 1;
+        while(n > 0) {
+            if(n & 1) {
+                result *= x;
+            }
+            x *= x;
+            n>>=1;
         }
-        return beforeNegativeResolution;
-
-        //call with n as abs.
-    }
-    double dfs(double x, long n, std::unordered_map<int, double> &cache){
-        if(cache.find(n) != cache.end()){
-            return cache[n];
+        if(negative){
+            result = 1/result;
         }
-        if(n == 0){
-            return 1;
-        }
-        if(n == 1){
-            return x;
-        }
-        if(n % 2 == 0){
-            double half = dfs(x, n / 2, cache);
-            double ans = half * half;
-
-            cache[n] = ans;
-            return ans;
-        } else {
-            double halfP1 = dfs(x, (n/2) + 1, cache);
-            double half = dfs(x, n/2, cache);
-            double ans = half * halfP1;
-            cache[n] = ans;
-            return ans;
-        }
-
+        return result;
     }
 };
