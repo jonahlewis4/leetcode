@@ -31,15 +31,15 @@ public:
         if(n == 1) {
             return 0;
         }
-        vector<vector<int>> dp(n + 1, vector<int>(n + 1));
+        vector<vector<int>> dp(n, vector<int>(n));
         
-        dp[n][n] = 0;
-        dp[n-1][n] = n - 1;
+        dp[n-1][n-1] = 0;
+        dp[n-2][n-1] = n - 1;
 
-        for(int l = n - 2; l >= 1; l--) {
+        for(int l = n - 3; l >= 0; l--) {
             dp[l][l] = 0;
-            dp[l][l+1] = l;
-            for(int r = l+2; r <= n; r++) {
+            dp[l][l+1] = l+1;
+            for(int r = l+2; r <= n-1; r++) {
                 // //1 2 3 4
                 //1//0 1 2 ?
                 //2//  0 1 3
@@ -48,21 +48,20 @@ public:
 
                 int smallest = INT_MAX;
                 for(int guess = l + 1; guess <= r - 1; guess++) {
-                    int cost = guess + max(dp[l][guess - 1], dp[guess + 1][r]);
+                    int cost = guess+1 + max(dp[l][guess - 1], dp[guess + 1][r]);
                     smallest = min(smallest, cost);
                 }
                 dp[l][r] = smallest;
             }
         }
 
-        
-        return dp[1].back();
+        return dp.front()[n-1];
 
     }
     void p(vector<vector<int>> dp) {
         int n = dp.size() - 1;
-        for(int i = 1; i <= n; i++) {
-            for(int j = 1; j <= n; j++) {
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j < n; j++) {
                 cout<<dp[i][j]<<" ";
             }
             cout<<endl;
