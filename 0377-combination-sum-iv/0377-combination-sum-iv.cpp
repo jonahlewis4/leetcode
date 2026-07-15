@@ -11,9 +11,6 @@ public:
                     continue;
                 }
                 sum += c[i - num];
-                if(sum > INT_MAX) {
-                    sum = 0;
-                }
             }
             c[i] = sum;
         }
