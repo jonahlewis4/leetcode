@@ -3,7 +3,7 @@ class Solution {
     vector<int> res;
 public:
     Solution(vector<int>& nums)  : nums(nums){
-        res.resize(nums.size());
+        res = nums;
     }
     
     vector<int> reset() {
@@ -12,16 +12,9 @@ public:
     }
     
     vector<int> shuffle() {
-        vector<int> is(nums.size());
-
-        iota(is.begin(), is.end(), 0);
-
-        int i = 0;
-        while(!is.empty()) {
-            int randIndex = rand()%is.size();
-            res[i++] = nums[is[randIndex]];
-            swap(is[randIndex], is.back());
-            is.pop_back();
+        for(int i = 0; i < res.size(); i++) {
+            int idx = i + rand() % (res.size() - i);
+            swap(res[idx], res[i]);
         }
 
         return res;
