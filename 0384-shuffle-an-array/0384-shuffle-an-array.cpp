@@ -12,14 +12,14 @@ public:
     }
     
     vector<int> shuffle() {
-        res.resize(0);
         vector<int> is(nums.size());
 
         iota(is.begin(), is.end(), 0);
 
+        int i = 0;
         while(!is.empty()) {
             int randIndex = rand()%is.size();
-            res.push_back(nums[is[randIndex]]);
+            res[i++] = nums[is[randIndex]];
             swap(is[randIndex], is.back());
             is.pop_back();
         }
