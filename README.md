@@ -1283,6 +1283,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0383-ransom-note](https://github.com/jonahlewis4/leetcode/tree/master/0383-ransom-note) |
 | [0385-mini-parser](https://github.com/jonahlewis4/leetcode/tree/master/0385-mini-parser) |
 | [0387-first-unique-character-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/0387-first-unique-character-in-a-string) |
+| [0388-longest-absolute-file-path](https://github.com/jonahlewis4/leetcode/tree/master/0388-longest-absolute-file-path) |
 | [0389-find-the-difference](https://github.com/jonahlewis4/leetcode/tree/master/0389-find-the-difference) |
 | [0394-decode-string](https://github.com/jonahlewis4/leetcode/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/jonahlewis4/leetcode/tree/master/0402-remove-k-digits) |
@@ -1718,6 +1719,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0341-flatten-nested-list-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0341-flatten-nested-list-iterator) |
 | [0364-nested-list-weight-sum-ii](https://github.com/jonahlewis4/leetcode/tree/master/0364-nested-list-weight-sum-ii) |
 | [0385-mini-parser](https://github.com/jonahlewis4/leetcode/tree/master/0385-mini-parser) |
+| [0388-longest-absolute-file-path](https://github.com/jonahlewis4/leetcode/tree/master/0388-longest-absolute-file-path) |
 | [0394-decode-string](https://github.com/jonahlewis4/leetcode/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/jonahlewis4/leetcode/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/jonahlewis4/leetcode/tree/master/0496-next-greater-element-i) |
@@ -1918,6 +1920,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0365-water-and-jug-problem](https://github.com/jonahlewis4/leetcode/tree/master/0365-water-and-jug-problem) |
 | [0385-mini-parser](https://github.com/jonahlewis4/leetcode/tree/master/0385-mini-parser) |
 | [0386-lexicographical-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0386-lexicographical-numbers) |
+| [0388-longest-absolute-file-path](https://github.com/jonahlewis4/leetcode/tree/master/0388-longest-absolute-file-path) |
 | [0404-sum-of-left-leaves](https://github.com/jonahlewis4/leetcode/tree/master/0404-sum-of-left-leaves) |
 | [0417-pacific-atlantic-water-flow](https://github.com/jonahlewis4/leetcode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0419-battleships-in-a-board](https://github.com/jonahlewis4/leetcode/tree/master/0419-battleships-in-a-board) |
