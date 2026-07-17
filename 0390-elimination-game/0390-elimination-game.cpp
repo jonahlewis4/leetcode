@@ -25,71 +25,26 @@ public:
         //14 -> 6  
 
 
-        int gap = 2;
+        int gap = 1;
         int remaining = n;
-        int leftBoundary = 1;
-        int rightBoundary = n;
-        // cout<<"leftBoundary: "<<leftBoundary<<endl;
-        // cout<<"rightBoundary: "<<rightBoundary<<endl;
-        // cout<<"remaining: "<<remaining<<endl;
-        // cout<<"__________________"<<endl;
-        while(true) {
-            //go left to right
+        int head = 1;
+        int leftToRight = true;
 
-            //if rightBoundary marked for deletion, move that too
-            
-            int deletions = (rightBoundary - leftBoundary)/gap + 1;
-            remaining -= deletions;
-            
-            if((rightBoundary - leftBoundary)%gap == 0){
-                rightBoundary -= gap/2;
+
+        while(remaining > 1) {
+            if(leftToRight || remaining % 2 == 1) {
+                head += gap;
             }
-
-            leftBoundary += gap/2;
 
             gap *= 2;
-            // cout<<"moved right, boundary is "<<endl;
-            // cout<<"leftBoundary: "<<leftBoundary<<endl;
-            // cout<<"rightBoundary: "<<rightBoundary<<endl;
-            // cout<<"remaining: "<<remaining<<endl;
-            // cout<<"__________________"<<endl;
+            remaining /= 2;
 
-            if(remaining <= 2) {
-                if(remaining == 1) {
-                    return rightBoundary;
-                }
-                return leftBoundary;
-            }
-
-            
-
-            //go right to left
-
-            deletions = (rightBoundary - leftBoundary)/gap + 1;
-            remaining -= deletions;
-
-            if((rightBoundary - leftBoundary)%gap == 0) {
-                leftBoundary += gap/2;
-            }
-            rightBoundary -= gap/2;
-            
-            // cout<<"moved left, boundary is "<<endl;
-            // cout<<"leftBoundary: "<<leftBoundary<<endl;
-            // cout<<"rightBoundary: "<<rightBoundary<<endl;
-            // cout<<"remaining: "<<remaining<<endl;
-            // cout<<"__________________"<<endl;
-            gap *= 2;
-
-            if(remaining <= 2) {
-                if (remaining == 1) {
-                    return leftBoundary;//last value
-                }
-                //return right value
-                return rightBoundary;
-            }
-
-            
+            leftToRight = !leftToRight;
         }
+
+        return head;
+
+
 
         return 0;
     }
