@@ -2,21 +2,40 @@ class Solution {
 public:
     vector<int> findSubstring(string s, vector<string>& words) {
         using map = unordered_map<string, int>;
-        map frequency;
+        map word2Id;
         for(const string& s : words) {
-            frequency[s]++;
+            map::iterator itr = word2Id.find(s);
+            if(itr == word2Id.end()) {
+                word2Id[s] = word2Id.size();
+            }
+        }
+        vector<int> frequency(word2Id.size());
+        for(const string& s : words) {
+            int id = word2Id[s];
+            frequency[id]++;
+        }
+
+        vector<int> sIds(s.size(), -1);
+        int wordSize = words.front().size();
+
+        for(int i = 0; i < s.size(); i++) {
+            string s2 = s.substr(i, wordSize);
+            map::iterator itr = word2Id.find(s2);
+            if(itr == word2Id.end()) {
+                continue;
+            }
+            sIds[i] = itr->second;
         }
 
         vector<int> res;
         int targetLength = words.size();
-        int wordSize = words.front().size();
         for(int i = 0; i < words.front().size(); i++) {
             int windowStart = i;
             int j = 0;
             while(true) {
                 if(j == targetLength) {
                     res.push_back(windowStart);
-                    string first = s.substr(windowStart, wordSize);
+                    int first = sIds[windowStart];
                     frequency[first]++;
                     j--;
                     windowStart += wordSize;
@@ -25,26 +44,25 @@ public:
                 if(newWordIndex + wordSize > s.size()){
                     break;
                 }
-                string sub = s.substr(newWordIndex, wordSize);
-                map::iterator itr = frequency.find(sub);
+                int id = sIds[newWordIndex];
                 //cout<<"sub: "<<sub<<endl;
-                if(itr == frequency.end()) {
+                if(id == -1) {
                     //cout<<"clearing list"<<endl;
                     while(j > 0){
-                        const string& s2 = s.substr(windowStart, wordSize);
+                        int s2 = sIds[windowStart];
                         frequency[s2]++;
-                        windowStart += s2.size();
+                        windowStart += wordSize;
                         j--;
                     }
                     windowStart += wordSize;
-                } else if(itr->second > 0){
+                } else if(frequency[id] > 0){
                     //cout<<"growing window"<<endl;
-                    itr->second--;
+                    frequency[id]--;
                     j++;
                 } else {
                     //cout<<"inching window"<<endl;
 
-                    frequency[s.substr(windowStart, wordSize)]++;
+                    frequency[sIds[windowStart]]++;
                     j--;
                     windowStart += wordSize;
                     
@@ -53,9 +71,10 @@ public:
             }
 
             while(j > 0){
-                const string& s2 = s.substr(windowStart, wordSize);
+                int s2 = sIds[windowStart];
                 frequency[s2]++;
                 j--;
+                windowStart += wordSize;
             }
         }
 
