@@ -10,14 +10,14 @@ public:
         vector<int> res;
         int targetLength = words.size();
         int wordSize = words.front().size();
-        list<string> inWindow;
         for(int i = 0; i < words.front().size(); i++) {
             int windowStart = i;
-            for(int j = 0; true;) {
+            int j = 0;
+            while(true) {
                 if(j == targetLength) {
                     res.push_back(windowStart);
-                    frequency[inWindow.front()]++;
-                    inWindow.erase(inWindow.begin());
+                    string first = s.substr(windowStart, wordSize);
+                    frequency[first]++;
                     j--;
                     windowStart += wordSize;
                 }
@@ -30,35 +30,32 @@ public:
                 //cout<<"sub: "<<sub<<endl;
                 if(itr == frequency.end()) {
                     //cout<<"clearing list"<<endl;
-                    for(list<string>::iterator itr = inWindow.begin(); itr != inWindow.end(); itr = inWindow.erase(itr)){
-                        const string& s = *itr;
-                        frequency[s]++;
-                        windowStart += s.size();
+                    while(j > 0){
+                        const string& s2 = s.substr(windowStart, wordSize);
+                        frequency[s2]++;
+                        windowStart += s2.size();
+                        j--;
                     }
-                    j = 0;
                     windowStart += wordSize;
-                }
-                else if(itr->second > 0){
+                } else if(itr->second > 0){
                     //cout<<"growing window"<<endl;
                     itr->second--;
-                    inWindow.push_back(sub);
                     j++;
                 } else {
                     //cout<<"inching window"<<endl;
-                    if(inWindow.size() > 0) {
-                        frequency[inWindow.front()]++;
-                        inWindow.erase(inWindow.begin());
-                        j--;
-                        windowStart += wordSize;
-                    }
+
+                    frequency[s.substr(windowStart, wordSize)]++;
+                    j--;
+                    windowStart += wordSize;
                     
                 }
                 //cout<<"__________"<<endl;
             }
 
-            for(list<string>::iterator itr = inWindow.begin(); itr != inWindow.end(); itr = inWindow.erase(itr)){
-                const string& s = *itr;
-                frequency[s]++;
+            while(j > 0){
+                const string& s2 = s.substr(windowStart, wordSize);
+                frequency[s2]++;
+                j--;
             }
         }
 
