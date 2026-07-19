@@ -13,7 +13,6 @@ public:
                     break;
                 }
                 if(newStart + build.size() == s.size()) {
-                    cout<<build<<" repeats"<<endl;
                     return true;
                 }
 
