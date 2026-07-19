@@ -52,33 +52,46 @@ class Solution {
     // }
 public:
     bool isMatch(string s, string p) {
-        vector<vector<bool>> dp(s.size() + 1, vector<bool>(p.size() + 1));
-        dp.back().back() = true;
-        for(int i = p.size() - 1; i >= 0; i--) {
-            dp.back()[i] = p[i] == '*' && dp.back()[i+1];
+        vector<bool> dp(p.size());
+        if(p.empty()) {
+            return s.empty();
         }
-        for(int sI = dp.size() - 2; sI >= 0; sI--){
-            dp[sI].back() = false;
-            for(int pI = dp.front().size() - 2; pI >= 0; pI--) {
+        bool right = true;
+        for(int i = p.size() - 1; i >= 0; i--) {
+            dp[i] = p[i] == '*' && right;
+            right = dp[i];
+        }
+
+        bool botRight = true;
+        for(int sI = s.size() - 1; sI >= 0; sI--){
+            right = false;
+            
+            for(int pI = p.size() - 1; pI >= 0; pI--) {
+                bool old = dp[pI];
                 char pVal = p[pI];
                 if(pVal == '?') {
-                    dp[sI][pI] = dp[sI+1][pI+1];
+                    dp[pI] = botRight;
                 } else if (pVal == '*'){
-                    bool attempt1 = dp[sI+1][pI];
-                    bool attempt2 = dp[sI][pI+1];
+                    bool attempt1 = dp[pI];
+                    bool attempt2 = right;
 
-                    dp[sI][pI] = attempt1 || attempt2;
+                    dp[pI] = attempt1 || attempt2;
                 } else {
                     if(pVal != s[sI]) {
-                        dp[sI][pI] = false;
+                        dp[pI] = false;
                     } else {
-                        dp[sI][pI] = dp[sI+1][pI+1];
+                        dp[pI] = botRight;
                     }
                 }
+                
+                botRight = old;
+                right = dp[pI];
+            
             }
+            botRight = false;
         }
 
-        return dp.front().front();
+        return dp.front();
         
         
         
