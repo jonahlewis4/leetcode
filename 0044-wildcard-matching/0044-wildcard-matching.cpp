@@ -1,48 +1,33 @@
 class Solution {
 public:
     bool isMatch(string s, string p) {
-        vector<bool> dp(p.size());
-        if(p.empty()) {
-            return s.empty();
-        }
-        bool right = true;
-        for(int i = p.size() - 1; i >= 0; i--) {
-            dp[i] = p[i] == '*' && right;
-            right = dp[i];
-        }
+        int lastStar = -1;
+        int starProgress = -1;
 
-        bool botRight = true;
-        for(int sI = s.size() - 1; sI >= 0; sI--){
-            right = false;
-            
-            for(int pI = p.size() - 1; pI >= 0; pI--) {
-                bool old = dp[pI];
-                char pVal = p[pI];
-                if(pVal == '?') {
-                    dp[pI] = botRight;
-                } else if (pVal == '*'){
-                    bool attempt1 = dp[pI];
-                    bool attempt2 = right;
-
-                    dp[pI] = attempt1 || attempt2;
-                } else {
-                    if(pVal != s[sI]) {
-                        dp[pI] = false;
-                    } else {
-                        dp[pI] = botRight;
-                    }
-                }
-                
-                botRight = old;
-                right = dp[pI];
-            
+        int sI = 0;
+        int pI = 0;
+        while(sI < s.size()) {
+            char pVal = p[pI];
+            if(pVal == s[sI] || pVal == '?') {
+                sI++;
+                pI++;
+            } else if (pVal == '*'){
+                lastStar = pI;
+                starProgress = sI; 
+                pI++;
+            } else if(lastStar != -1) {
+                starProgress++;
+                sI = starProgress;
+                pI = lastStar + 1;
+            } else {
+                return false;
             }
-            botRight = false;
+        }
+        while(pI < p.size() && p[pI] == '*'){
+            pI++;
         }
 
-        return dp.front();
-        
-        
-        
+        return pI == p.size();
     }
+
 };
