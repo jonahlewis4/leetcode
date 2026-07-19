@@ -7,11 +7,10 @@ public:
         int sI = 0;
         int pI = 0;
         while(sI < s.size()) {
-            char pVal = p[pI];
-            if(pVal == s[sI] || pVal == '?') {
+            if(pI < p.size() && (p[pI] == s[sI] || p[pI] == '?')) {
                 sI++;
                 pI++;
-            } else if (pVal == '*'){
+            } else if (pI < p.size() && p[pI] == '*'){
                 lastStar = pI;
                 starProgress = sI; 
                 pI++;
