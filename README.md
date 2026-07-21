@@ -568,6 +568,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/jonahlewis4/leetcode/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [2710-minimum-operations-to-reduce-an-integer-to-0](https://github.com/jonahlewis4/leetcode/tree/master/2710-minimum-operations-to-reduce-an-integer-to-0) |
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/jonahlewis4/leetcode/tree/master/3307-find-the-maximum-sum-of-node-values) |
+| [3333-find-the-original-typed-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/3333-find-the-original-typed-string-ii) |
 | [3490-find-the-maximum-length-of-valid-subsequence-i](https://github.com/jonahlewis4/leetcode/tree/master/3490-find-the-maximum-length-of-valid-subsequence-i) |
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/jonahlewis4/leetcode/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
 | [3618-find-the-original-typed-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/3618-find-the-original-typed-string-ii) |
@@ -1426,6 +1427,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3194-find-words-containing-character](https://github.com/jonahlewis4/leetcode/tree/master/3194-find-words-containing-character) |
 | [3195-separate-black-and-white-balls](https://github.com/jonahlewis4/leetcode/tree/master/3195-separate-black-and-white-balls) |
 | [3280-convert-date-to-binary](https://github.com/jonahlewis4/leetcode/tree/master/3280-convert-date-to-binary) |
+| [3333-find-the-original-typed-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/3333-find-the-original-typed-string-ii) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/jonahlewis4/leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3379-score-of-a-string](https://github.com/jonahlewis4/leetcode/tree/master/3379-score-of-a-string) |
 | [3396-valid-word](https://github.com/jonahlewis4/leetcode/tree/master/3396-valid-word) |
@@ -1653,6 +1655,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2465-shifting-letters-ii](https://github.com/jonahlewis4/leetcode/tree/master/2465-shifting-letters-ii) |
 | [2485-find-the-pivot-integer](https://github.com/jonahlewis4/leetcode/tree/master/2485-find-the-pivot-integer) |
 | [2574-left-and-right-sum-differences](https://github.com/jonahlewis4/leetcode/tree/master/2574-left-and-right-sum-differences) |
+| [3333-find-the-original-typed-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/3333-find-the-original-typed-string-ii) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/jonahlewis4/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3383-taking-maximum-energy-from-the-mystic-dungeon](https://github.com/jonahlewis4/leetcode/tree/master/3383-taking-maximum-energy-from-the-mystic-dungeon) |
 | [3410-find-longest-self-contained-substring](https://github.com/jonahlewis4/leetcode/tree/master/3410-find-longest-self-contained-substring) |
