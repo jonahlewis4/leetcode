@@ -1,25 +1,34 @@
 class Solution {
-private:
-    struct chain{
-        int index;
-        int start;
-    };
 public:
-    int largestRectangleArea(vector<int>& heights) {
-        std::stack<int> stack;
+    int largestRectangleArea(vector<int>& hist) {
+        stack<int> stack;
         stack.push(-1);
-        heights.push_back(0);
-        int maxHeight = 0;
-        for(int i = 0; i < heights.size(); i++){
-            while(stack.top() != -1 && heights[stack.top()] > heights[i]){
-                int height = heights[stack.top()];
+
+        int best = 0;
+        for(int i = 0; i < hist.size(); i++) {
+            int curHeight = hist[i];
+            while(stack.top() != -1 && hist[stack.top()] > curHeight) {
+                int popped = stack.top();
                 stack.pop();
-                int width =  i - (stack.top() + 1);
-                int area = width * height;
-                maxHeight = max(area, maxHeight);
+                int oldHeight = hist[popped];
+                int width = i - stack.top() - 1;
+                int area = oldHeight * width;
+                best = max(best, area);
+
             }
             stack.push(i);
         }
-        return maxHeight;
+
+        while(stack.top() != -1) {
+            int popped = stack.top();
+            stack.pop();
+            int height = hist[popped];
+            int width = hist.size() - stack.top() - 1;
+         
+            int area = height * width;
+            best = max(best, area);
+        }
+
+        return best;
     }
 };
