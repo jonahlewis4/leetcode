@@ -13,6 +13,9 @@ public:
         for(const string& word : words) {
             unordered_map<char, int> map = plate;
             for(const char c : word) {
+                if(word.size() > res.size() && res != ""){
+                    continue;
+                }
                 if(isalpha(c)) {
                     char lower = tolower(c);
 
