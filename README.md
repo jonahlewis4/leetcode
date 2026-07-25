@@ -177,6 +177,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0745-find-smallest-letter-greater-than-target](https://github.com/jonahlewis4/leetcode/tree/master/0745-find-smallest-letter-greater-than-target) |
 | [0747-min-cost-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0747-largest-number-at-least-twice-of-others](https://github.com/jonahlewis4/leetcode/tree/master/0747-largest-number-at-least-twice-of-others) |
+| [0748-shortest-completing-word](https://github.com/jonahlewis4/leetcode/tree/master/0748-shortest-completing-word) |
 | [0762-find-anagram-mappings](https://github.com/jonahlewis4/leetcode/tree/master/0762-find-anagram-mappings) |
 | [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0780-max-chunks-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0780-max-chunks-to-make-sorted) |
@@ -819,6 +820,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/jonahlewis4/leetcode/tree/master/0621-task-scheduler) |
 | [0645-set-mismatch](https://github.com/jonahlewis4/leetcode/tree/master/0645-set-mismatch) |
 | [0697-degree-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0697-degree-of-an-array) |
+| [0748-shortest-completing-word](https://github.com/jonahlewis4/leetcode/tree/master/0748-shortest-completing-word) |
 | [0762-find-anagram-mappings](https://github.com/jonahlewis4/leetcode/tree/master/0762-find-anagram-mappings) |
 | [0768-partition-labels](https://github.com/jonahlewis4/leetcode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
@@ -1340,6 +1342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0680-valid-palindrome-ii](https://github.com/jonahlewis4/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0696-count-binary-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0696-count-binary-substrings) |
 | [0709-to-lower-case](https://github.com/jonahlewis4/leetcode/tree/master/0709-to-lower-case) |
+| [0748-shortest-completing-word](https://github.com/jonahlewis4/leetcode/tree/master/0748-shortest-completing-word) |
 | [0768-partition-labels](https://github.com/jonahlewis4/leetcode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
 | [0782-jewels-and-stones](https://github.com/jonahlewis4/leetcode/tree/master/0782-jewels-and-stones) |
