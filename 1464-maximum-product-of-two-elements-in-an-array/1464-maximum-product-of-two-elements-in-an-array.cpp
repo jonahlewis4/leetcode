@@ -1,20 +1,31 @@
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
-        priority_queue<int, vector<int>, greater<int>> pq;
+        int biggest = INT_MIN;
+        int secondBiggest = INT_MIN;
+        int smallest = INT_MAX;
+        int secondSmallest = INT_MAX;
 
         for(const int num : nums) {
-            if(pq.size() < 2) {
-                pq.push(num);
-            } else if (num > pq.top()) {
-                pq.pop();
-                pq.push(num);
+            if(num > biggest) {
+                secondBiggest = biggest;
+                biggest = num;
+            } else if (num > secondBiggest) {
+                secondBiggest = num;
+            }
+
+            if(num < smallest) {
+                secondSmallest = smallest;
+                smallest = num;
+            } else if (num < secondSmallest) {
+                secondSmallest = num;
             }
         }
 
-        int num1 = pq.top() - 1;
-        pq.pop();
-        int num2 = pq.top() - 1;
-        return num1 * num2;
+        return max(
+            (biggest - 1) * (secondBiggest - 1),
+            (smallest - 1) * (secondSmallest - 1)
+
+        );
     }
 };
