@@ -34,7 +34,7 @@ public:
                     continue;
                 }
 
-                if(image[newR][newC] == ogVal && image[newR][newC] == ogVal) {
+                if(image[newR][newC] == ogVal) {
                     image[newR][newC] = color;
                     stack.push({newR, newC});
                 }
