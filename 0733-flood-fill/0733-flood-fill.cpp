@@ -2,6 +2,9 @@ class Solution {
 public:
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int color) {
         int ogVal = image[sr][sc];
+        if(ogVal == color) {
+            return image;
+        }
         vector<pair<int, int>> dirs = {
             {-1,0},
             {1, 0},
@@ -12,8 +15,6 @@ public:
         queue<pair<int, int>> q;
         q.push({sr, sc});
         
-        vector<vector<bool>> enqueued(image.size(), vector<bool>(image.front().size(), false));
-        enqueued[sr][sc] = true;
         image[sr][sc] = color;
 
         while(!q.empty()) {
@@ -35,8 +36,7 @@ public:
                         continue;
                     }
 
-                    if(image[newR][newC] == ogVal && !enqueued[newR][newC]) {
-                        enqueued[newR][newC] = true;
+                    if(image[newR][newC] == ogVal && image[newR][newC] == ogVal) {
                         image[newR][newC] = color;
                         q.push({newR, newC});
                     }
