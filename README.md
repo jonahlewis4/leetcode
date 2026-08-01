@@ -230,6 +230,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1272-invalid-transactions](https://github.com/jonahlewis4/leetcode/tree/master/1272-invalid-transactions) |
 | [1293-three-consecutive-odds](https://github.com/jonahlewis4/leetcode/tree/master/1293-three-consecutive-odds) |
 | [1313-decompress-run-length-encoded-list](https://github.com/jonahlewis4/leetcode/tree/master/1313-decompress-run-length-encoded-list) |
+| [1331-rank-transform-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/1331-rank-transform-of-an-array) |
 | [1349-check-if-it-is-a-straight-line](https://github.com/jonahlewis4/leetcode/tree/master/1349-check-if-it-is-a-straight-line) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/jonahlewis4/leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/jonahlewis4/leetcode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
@@ -461,6 +462,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1200-minimum-absolute-difference](https://github.com/jonahlewis4/leetcode/tree/master/1200-minimum-absolute-difference) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/jonahlewis4/leetcode/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1272-invalid-transactions](https://github.com/jonahlewis4/leetcode/tree/master/1272-invalid-transactions) |
+| [1331-rank-transform-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/1331-rank-transform-of-an-array) |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/jonahlewis4/leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/jonahlewis4/leetcode/tree/master/1385-find-the-distance-value-between-two-arrays) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
@@ -853,6 +855,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1207-unique-number-of-occurrences](https://github.com/jonahlewis4/leetcode/tree/master/1207-unique-number-of-occurrences) |
 | [1264-maximum-number-of-words-you-can-type](https://github.com/jonahlewis4/leetcode/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [1272-invalid-transactions](https://github.com/jonahlewis4/leetcode/tree/master/1272-invalid-transactions) |
+| [1331-rank-transform-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/1331-rank-transform-of-an-array) |
 | [1364-tuple-with-same-product](https://github.com/jonahlewis4/leetcode/tree/master/1364-tuple-with-same-product) |
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
 | [1399-count-largest-group](https://github.com/jonahlewis4/leetcode/tree/master/1399-count-largest-group) |
