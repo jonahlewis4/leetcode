@@ -348,6 +348,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2690-house-robber-iv](https://github.com/jonahlewis4/leetcode/tree/master/2690-house-robber-iv) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/jonahlewis4/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2720-minimize-the-maximum-difference-of-pairs](https://github.com/jonahlewis4/leetcode/tree/master/2720-minimize-the-maximum-difference-of-pairs) |
+| [2798-number-of-employees-who-met-the-target](https://github.com/jonahlewis4/leetcode/tree/master/2798-number-of-employees-who-met-the-target) |
 | [2868-continuous-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/2868-continuous-subarrays) |
 | [3046-split-the-array](https://github.com/jonahlewis4/leetcode/tree/master/3046-split-the-array) |
 | [3074-apple-redistribution-into-boxes](https://github.com/jonahlewis4/leetcode/tree/master/3074-apple-redistribution-into-boxes) |
