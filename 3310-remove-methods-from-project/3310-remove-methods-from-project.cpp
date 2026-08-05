@@ -3,8 +3,8 @@ public:
     vector<int> remainingMethods(int n, int k, vector<vector<int>>& invocations) {
         vector<bool> suspicious(n, false);
         suspicious[k] = true;
-        queue<int> q;
-        q.push(k);
+        stack<int> stk;
+        stk.push(k);
         
         
         vector<vector<int>> adjList(n);
@@ -12,19 +12,17 @@ public:
             adjList[invo.front()].push_back(invo.back());
         }
         
-        while(!q.empty()) {
-            int m = q.size();
-            for(int i = 0; i < m; i++) {
-                int method = q.front();
-                q.pop();
+        while(!stk.empty()) {
+            int method = stk.top();
+            stk.pop();
 
-                for(const int invoked : adjList[method]) {
-                    if(!suspicious[invoked]) {
-                        q.push(invoked);
-                        suspicious[invoked] = true;
-                    }
+            for(const int invoked : adjList[method]) {
+                if(!suspicious[invoked]) {
+                    stk.push(invoked);
+                    suspicious[invoked] = true;
                 }
             }
+            
         }
 
         bool mustKeep = false;
