@@ -2027,6 +2027,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2438-find-closest-node-to-given-two-nodes](https://github.com/jonahlewis4/leetcode/tree/master/2438-find-closest-node-to-given-two-nodes) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jonahlewis4/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/jonahlewis4/leetcode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
+| [3310-remove-methods-from-project](https://github.com/jonahlewis4/leetcode/tree/main/3310-remove-methods-from-project/) | Medium |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/jonahlewis4/leetcode/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/jonahlewis4/leetcode/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
 | [3863-power-grid-maintenance](https://github.com/jonahlewis4/leetcode/tree/master/3863-power-grid-maintenance) |
@@ -2254,6 +2255,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1554-minimum-time-to-collect-all-apples-in-a-tree](https://github.com/jonahlewis4/leetcode/tree/master/1554-minimum-time-to-collect-all-apples-in-a-tree) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jonahlewis4/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 | [2583-divide-nodes-into-the-maximum-number-of-groups](https://github.com/jonahlewis4/leetcode/tree/master/2583-divide-nodes-into-the-maximum-number-of-groups) |
+| [3310-remove-methods-from-project](https://github.com/jonahlewis4/leetcode/tree/main/3310-remove-methods-from-project/) | Medium |
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/jonahlewis4/leetcode/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/jonahlewis4/leetcode/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
 | [3837-grid-teleportation-traversal](https://github.com/jonahlewis4/leetcode/tree/master/3837-grid-teleportation-traversal) |
@@ -2450,6 +2452,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- | ------- |
 | [0310-minimum-height-trees](https://github.com/jonahlewis4/leetcode/tree/master/0310-minimum-height-trees) |
 | [1791-find-center-of-star-graph](https://github.com/jonahlewis4/leetcode/tree/master/1791-find-center-of-star-graph) |
+| [3310-remove-methods-from-project](https://github.com/jonahlewis4/leetcode/tree/main/3310-remove-methods-from-project/) | Medium |
 ## Concurrency
 | Problem Name | Difficulty |
 | ------- | ------- |
