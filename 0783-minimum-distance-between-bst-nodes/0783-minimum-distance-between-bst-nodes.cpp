@@ -10,23 +10,43 @@
  * };
  */
 class Solution {
-    int diff = INT_MAX;
-    int prev = -1;
-    void r(TreeNode* root) {
-        if(root == nullptr) {
-            return;
+    TreeNode* getPredecessor(const TreeNode const* node) {
+        TreeNode* cur = node->left;
+        while(cur->right != nullptr && cur->right != node) {
+            cur = cur->right;
         }
-        r(root->left);
-        if(prev != -1) {
-            int localDiff = root->val - prev;
-            diff = min(localDiff, diff);
-        }
-        prev = root->val;
-        r(root->right);
+        return cur;
     }
 public:
     int minDiffInBST(TreeNode* root) {
-        r(root);
-        return diff;        
+        TreeNode* cur = root;
+        int diff = INT_MAX;
+        int previous = -1;
+        void (*handleNode)(TreeNode*, int&, int&) = [](TreeNode* node, int& previous, int& diff){
+            if(previous != -1) {
+                int localDiff = node->val - previous;
+                diff = min(localDiff, diff);
+            }
+            previous = node->val;
+        };
+        while(cur != nullptr) {
+            if(cur->left == nullptr) {
+                handleNode(cur, previous, diff);
+                cur = cur->right;
+            } else {
+                TreeNode* predecessor = getPredecessor(cur);
+                if(predecessor->right != nullptr){
+                    handleNode(cur, previous, diff);
+                    cur = cur->right;
+                    predecessor->right = nullptr;
+                } else {
+                    predecessor->right = cur;
+                    cur = cur->left;
+                }
+            }
+        }   
+
+
+        return diff;
     }
 };
