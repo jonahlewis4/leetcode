@@ -1049,6 +1049,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3279-alice-and-bob-playing-flower-game](https://github.com/jonahlewis4/leetcode/tree/master/3279-alice-and-bob-playing-flower-game) |
 | [3280-convert-date-to-binary](https://github.com/jonahlewis4/leetcode/tree/master/3280-convert-date-to-binary) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/jonahlewis4/leetcode/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
+| [3345-smallest-divisible-digit-product-i](https://github.com/jonahlewis4/leetcode/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
 | [3432-count-partitions-with-even-sum-difference](https://github.com/jonahlewis4/leetcode/tree/master/3432-count-partitions-with-even-sum-difference) |
 | [3433-count-mentions-per-user](https://github.com/jonahlewis4/leetcode/tree/master/3433-count-mentions-per-user) |
 | [3512-minimum-operations-to-make-array-sum-divisible-by-k](https://github.com/jonahlewis4/leetcode/tree/master/3512-minimum-operations-to-make-array-sum-divisible-by-k) |
@@ -2193,6 +2194,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2843-count-symmetric-integers](https://github.com/jonahlewis4/leetcode/tree/master/2843-count-symmetric-integers) |
 | [3201-distribute-candies-among-children-ii](https://github.com/jonahlewis4/leetcode/tree/master/3201-distribute-candies-among-children-ii) |
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/jonahlewis4/leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
+| [3345-smallest-divisible-digit-product-i](https://github.com/jonahlewis4/leetcode/tree/main/3345-smallest-divisible-digit-product-i/) | Easy |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/jonahlewis4/leetcode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 | [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/jonahlewis4/leetcode/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
