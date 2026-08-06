@@ -17,13 +17,7 @@ public:
                 return i;
             }
             int lProduct = product / rightDigit * newRightDigit * newSecondDigit / secondDigit ;
-            cout<<rightDigit<<endl;
-            cout<<newRightDigit<<endl;
-            cout<<secondDigit<<endl;
-            cout<<newSecondDigit<<endl;
-            cout<<i<<endl;
-            cout<<lProduct<<endl;
-            cout<<endl;
+
             if(lProduct % t == 0) {
                 return i;
             }
