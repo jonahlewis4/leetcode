@@ -10,7 +10,7 @@
  * };
  */
 class Solution {
-    TreeNode* getPredecessor(const TreeNode const* node) {
+    TreeNode* getPredecessor(const TreeNode *const node) {
         TreeNode* cur = node->left;
         while(cur->right != nullptr && cur->right != node) {
             cur = cur->right;
