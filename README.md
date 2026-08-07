@@ -821,6 +821,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0383-ransom-note](https://github.com/jonahlewis4/leetcode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0389-find-the-difference](https://github.com/jonahlewis4/leetcode/tree/master/0389-find-the-difference) |
+| [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/jonahlewis4/leetcode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0409-longest-palindrome](https://github.com/jonahlewis4/leetcode/tree/master/0409-longest-palindrome) |
 | [0424-longest-repeating-character-replacement](https://github.com/jonahlewis4/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0432-all-oone-data-structure](https://github.com/jonahlewis4/leetcode/tree/master/0432-all-oone-data-structure) |
@@ -1340,6 +1341,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0388-longest-absolute-file-path](https://github.com/jonahlewis4/leetcode/tree/master/0388-longest-absolute-file-path) |
 | [0389-find-the-difference](https://github.com/jonahlewis4/leetcode/tree/master/0389-find-the-difference) |
 | [0394-decode-string](https://github.com/jonahlewis4/leetcode/tree/master/0394-decode-string) |
+| [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/jonahlewis4/leetcode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0402-remove-k-digits](https://github.com/jonahlewis4/leetcode/tree/master/0402-remove-k-digits) |
 | [0405-convert-a-number-to-hexadecimal](https://github.com/jonahlewis4/leetcode/tree/master/0405-convert-a-number-to-hexadecimal) |
 | [0408-valid-word-abbreviation](https://github.com/jonahlewis4/leetcode/tree/master/0408-valid-word-abbreviation) |
@@ -1551,6 +1553,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0327-count-of-range-sum](https://github.com/jonahlewis4/leetcode/tree/master/0327-count-of-range-sum) |
 | [0347-top-k-frequent-elements](https://github.com/jonahlewis4/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0372-super-pow](https://github.com/jonahlewis4/leetcode/tree/master/0372-super-pow) |
+| [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/jonahlewis4/leetcode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
@@ -2142,6 +2145,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0209-minimum-size-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0219-contains-duplicate-ii](https://github.com/jonahlewis4/leetcode/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/jonahlewis4/leetcode/tree/master/0239-sliding-window-maximum) |
+| [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/jonahlewis4/leetcode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0424-longest-repeating-character-replacement](https://github.com/jonahlewis4/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
 | [0594-longest-harmonious-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0594-longest-harmonious-subsequence) |
