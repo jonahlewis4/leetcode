@@ -1,41 +1,46 @@
 class Solution {
-    static bool scan(const string& s, int k, int windowSize) {
+    static int scan(const string& s, int k, int numAllowedChars) {
         unordered_map<char, int> count;
+        int l = 0;
+        int r = 0;
+        int longest = 0;
         int meeting = 0;
-        for(int i = 0; i < s.size(); i++) {
-            char c = s[i];
-            count[c]++;
-            if(count[c] == k) {
+        while(r < s.size()) {
+            char newChar = s[r];
+            count[newChar]++;
+            if(count[newChar] == k) {
                 meeting++;
             }
-
-            if(i + 1 >= windowSize) {
-                if(meeting == count.size()) {
-                    return true;
-                }
-
-                char lC = s[i - windowSize + 1];
-                count[lC]--;
-                if(count[lC] == k - 1) {
+            while(count.size() > numAllowedChars) {
+                char lChar = s[l];
+                count[lChar]--;
+                if(count[lChar] == k - 1) {
                     meeting--;
                 }
-                if(count[lC] == 0) {
-                    count.erase(lC);
+                if(count[lChar] == 0) {
+                    count.erase(lChar);
                 }
+                l++;        
             }
+
+            if(count.size() == meeting) {
+                int length = r - l + 1;
+                longest = max(length, longest);
+            }
+
+            r++;
         }
 
-        return false;
+        return longest;
     }
 public:
     int longestSubstring(string s, int k) {
-        for(int i = s.size(); i >= k; i--) {
-            bool attempt = scan(s, k, i);
-            if(attempt){
-                return i;
-            }
+        int best = 0;
+        for(int i = 26; i >= 1; i--) {
+            int attempt = scan(s, k, i);
+            best = max(best, attempt);
         }
 
-        return 0;
+        return best;
     }
 };
