@@ -824,6 +824,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0387-first-unique-character-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0389-find-the-difference](https://github.com/jonahlewis4/leetcode/tree/master/0389-find-the-difference) |
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/jonahlewis4/leetcode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
+| [0398-random-pick-index](https://github.com/jonahlewis4/leetcode/tree/main/0398-random-pick-index/) | Medium |
 | [0409-longest-palindrome](https://github.com/jonahlewis4/leetcode/tree/master/0409-longest-palindrome) |
 | [0424-longest-repeating-character-replacement](https://github.com/jonahlewis4/leetcode/tree/master/0424-longest-repeating-character-replacement) |
 | [0432-all-oone-data-structure](https://github.com/jonahlewis4/leetcode/tree/master/0432-all-oone-data-structure) |
@@ -977,6 +978,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0384-shuffle-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0384-shuffle-an-array) |
 | [0390-elimination-game](https://github.com/jonahlewis4/leetcode/tree/master/0390-elimination-game) |
 | [0396-rotate-function](https://github.com/jonahlewis4/leetcode/tree/main/0396-rotate-function/) | Medium |
+| [0398-random-pick-index](https://github.com/jonahlewis4/leetcode/tree/main/0398-random-pick-index/) | Medium |
 | [0405-convert-a-number-to-hexadecimal](https://github.com/jonahlewis4/leetcode/tree/master/0405-convert-a-number-to-hexadecimal) |
 | [0412-fizz-buzz](https://github.com/jonahlewis4/leetcode/tree/master/0412-fizz-buzz) |
 | [0415-add-strings](https://github.com/jonahlewis4/leetcode/tree/master/0415-add-strings) |
@@ -2315,6 +2317,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0380-insert-delete-getrandom-o1](https://github.com/jonahlewis4/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0382-linked-list-random-node](https://github.com/jonahlewis4/leetcode/tree/master/0382-linked-list-random-node) |
 | [0384-shuffle-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0384-shuffle-an-array) |
+| [0398-random-pick-index](https://github.com/jonahlewis4/leetcode/tree/main/0398-random-pick-index/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/jonahlewis4/leetcode/tree/master/0912-random-pick-with-weight) |
 ## Number Theory
 | Problem Name | Difficulty |
@@ -2475,4 +2478,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0382-linked-list-random-node](https://github.com/jonahlewis4/leetcode/tree/master/0382-linked-list-random-node) |
+| [0398-random-pick-index](https://github.com/jonahlewis4/leetcode/tree/main/0398-random-pick-index/) | Medium |
 <!---LeetCode Topics End-->
