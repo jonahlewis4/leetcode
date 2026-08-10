@@ -19,10 +19,6 @@ class Solution {
             }
         }
         visited.erase(dividend);
-        if(quotient != -1) {
-            chart[dividend][divisor] = quotient;
-            chart[divisor][dividend] = 1/quotient;
-        } 
         return quotient;
     }
 public:
