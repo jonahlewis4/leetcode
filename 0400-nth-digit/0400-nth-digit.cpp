@@ -9,7 +9,7 @@ public:
         int digitsPer = 2;
         int numsInSection = 90;
 
-        while(numsInSection / 10 * digitsPer < n / 10) {
+        while((long long) numsInSection * digitsPer < n) {
             n -= numsInSection * digitsPer;
             currentNumber *= 10;
             numsInSection *= 10;
