@@ -1,23 +1,25 @@
 class Solution {
 public:
     int findNthDigit(int n) {
-        int numReached = 1;
-        int digitsPerNumber = 1;
-        int num = 1;
-        int mod = 10;
-        while(n > digitsPerNumber) {
-            n -= digitsPerNumber;
-            numReached++;
-            if(numReached % mod == 0) {
-                digitsPerNumber++;
-                mod *= 10;
-            }
-        } 
+        if(n < 10) {
+            return n;
+        }
+        n -= 9;
+        int currentNumber = 10;
+        int digitsPer = 2;
+        int numsInSection = 90;
 
+        while(numsInSection / 10 * digitsPer < n / 10) {
+            n -= numsInSection * digitsPer;
+            currentNumber *= 10;
+            numsInSection *= 10;
+            digitsPer++;
+        }
 
+        n--;
+        currentNumber += n / digitsPer;
+        int remainder = n % digitsPer;
 
-
-        //answer is nth digit after numReached
-        return to_string(numReached)[n-1] - '0';
+        return to_string(currentNumber)[remainder] - '0';
     }   
 };
