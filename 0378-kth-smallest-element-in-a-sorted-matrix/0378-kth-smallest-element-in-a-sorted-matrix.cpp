@@ -1,12 +1,12 @@
 class Solution {
     int ltEq(vector<vector<int>>& matrix, int val) {
         int total = 0;
-        for(const vector<int>& row : matrix) {
-            for(const int x : row) {
-                if(x <= val) {
-                    total++;
-                }
+        int c = matrix.size() - 1;
+        for(int r = 0; r < matrix.size(); r++) {
+            while(c >= 0 && matrix[r][c] > val) {
+                c--;
             }
+            total += c + 1;
         }
         return total;
     }
