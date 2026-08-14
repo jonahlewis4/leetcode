@@ -34,26 +34,45 @@ public:
         for(const vector<int>& v : people) {
             highest = max(v.front(), highest);
         }
-        FenwickTree tree(highest + 1);
-        vector<vector<int>> res;
+        FenwickTree tree(people.size());
+        vector<vector<int>> res(people.size());
         int n = people.size();
+        sort(people.begin(), people.end(), [](
+            vector<int>& v1, vector<int>& v2){
+                if(v1.front() < v2.front()) {
+                    return true;
+                }
+                if(v1.front() > v2.front()) {
+                    return false;
+                }
+                return v1.back() > v2.back();
+            }
+        );
+        int endI = people.size() - 1;
+
+        for(int i = 1; i < people.size(); i++) {
+            tree.update(i, 1);
+        }
+
         for(int i = 0; i < n; i++) {
-            int bestI = -1;
-            for(int j = 0; j < people.size(); j++) {
-                int height = people[j].front();
-                int targetGte = people[j].back();
-                if(res.size() - tree[height - 1] == targetGte) {
-                    if(bestI == -1 || people[bestI].front() > height){
-                        bestI = j;
-                    }
+            int height = people[i].front();
+            int place = people[i].back();
+
+            //place this in the # place empty spot from the front
+            int l = 0;
+            int r = n - 1;
+            while(l <= r) {
+                int m= l + (r - l)/2;
+                int spot = tree[m];
+                if(spot <= place) {
+                    l = m + 1;
+                } else {
+                    r = m - 1;
                 }
             }
-            res.push_back(people[bestI]);
-
-            int bestHeight = people[bestI].front();
             
-            tree.update(bestHeight, 1);
-            people.erase(people.begin() + bestI);
+            res[r] = people[i];
+            tree.update(r+1, -1);
         }
 
         return res;
