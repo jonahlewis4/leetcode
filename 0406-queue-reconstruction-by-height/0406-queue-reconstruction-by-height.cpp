@@ -36,13 +36,11 @@ public:
         }
         FenwickTree tree(highest + 1);
         vector<vector<int>> res;
-        for(int i = 0; i < people.size(); i++) {
+        int n = people.size();
+        for(int i = 0; i < n; i++) {
             int bestI = -1;
             for(int j = 0; j < people.size(); j++) {
                 int height = people[j].front();
-                if(height == -1) {
-                    continue;
-                }
                 int targetGte = people[j].back();
                 if(res.size() - tree[height - 1] == targetGte) {
                     if(bestI == -1 || people[bestI].front() > height){
@@ -55,7 +53,7 @@ public:
             int bestHeight = people[bestI].front();
             
             tree.update(bestHeight, 1);
-            people[bestI].front() = -1;
+            people.erase(people.begin() + bestI);
         }
 
         return res;
