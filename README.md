@@ -187,6 +187,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0747-largest-number-at-least-twice-of-others](https://github.com/jonahlewis4/leetcode/tree/master/0747-largest-number-at-least-twice-of-others) |
 | [0748-shortest-completing-word](https://github.com/jonahlewis4/leetcode/tree/master/0748-shortest-completing-word) |
 | [0762-find-anagram-mappings](https://github.com/jonahlewis4/leetcode/tree/master/0762-find-anagram-mappings) |
+| [0766-toeplitz-matrix](https://github.com/jonahlewis4/leetcode/tree/main/0766-toeplitz-matrix/) | Easy |
 | [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0780-max-chunks-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0792-binary-search](https://github.com/jonahlewis4/leetcode/tree/master/0792-binary-search) |
@@ -1193,6 +1194,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0661-image-smoother](https://github.com/jonahlewis4/leetcode/tree/master/0661-image-smoother) |
 | [0695-max-area-of-island](https://github.com/jonahlewis4/leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/jonahlewis4/leetcode/tree/master/0733-flood-fill) |
+| [0766-toeplitz-matrix](https://github.com/jonahlewis4/leetcode/tree/main/0766-toeplitz-matrix/) | Easy |
 | [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0794-swim-in-rising-water](https://github.com/jonahlewis4/leetcode/tree/master/0794-swim-in-rising-water) |
 | [0854-making-a-large-island](https://github.com/jonahlewis4/leetcode/tree/master/0854-making-a-large-island) |
