@@ -30,7 +30,11 @@ class Solution {
     };
 public:
     vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {
-        FenwickTree tree(max_element(people.begin(), people.end())->front() + 1);
+        int highest = INT_MIN;
+        for(const vector<int>& v : people) {
+            highest = max(v.front(), highest);
+        }
+        FenwickTree tree(highest + 1);
         vector<vector<int>> res;
         for(int i = 0; i < people.size(); i++) {
             int bestI = -1;
