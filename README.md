@@ -138,6 +138,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0393-utf-8-validation](https://github.com/jonahlewis4/leetcode/tree/master/0393-utf-8-validation) |
 | [0396-rotate-function](https://github.com/jonahlewis4/leetcode/tree/main/0396-rotate-function/) | Medium |
 | [0399-evaluate-division](https://github.com/jonahlewis4/leetcode/tree/main/0399-evaluate-division/) | Medium |
+| [0406-queue-reconstruction-by-height](https://github.com/jonahlewis4/leetcode/tree/main/0406-queue-reconstruction-by-height/) | Medium |
 | [0407-trapping-rain-water-ii](https://github.com/jonahlewis4/leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [0414-third-maximum-number](https://github.com/jonahlewis4/leetcode/tree/master/0414-third-maximum-number) |
 | [0416-partition-equal-subset-sum](https://github.com/jonahlewis4/leetcode/tree/master/0416-partition-equal-subset-sum) |
@@ -442,6 +443,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0368-largest-divisible-subset](https://github.com/jonahlewis4/leetcode/tree/master/0368-largest-divisible-subset) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/jonahlewis4/leetcode/tree/main/0378-kth-smallest-element-in-a-sorted-matrix/) | Medium |
 | [0389-find-the-difference](https://github.com/jonahlewis4/leetcode/tree/master/0389-find-the-difference) |
+| [0406-queue-reconstruction-by-height](https://github.com/jonahlewis4/leetcode/tree/main/0406-queue-reconstruction-by-height/) | Medium |
 | [0414-third-maximum-number](https://github.com/jonahlewis4/leetcode/tree/master/0414-third-maximum-number) |
 | [0435-non-overlapping-intervals](https://github.com/jonahlewis4/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/jonahlewis4/leetcode/tree/master/0455-assign-cookies) |
@@ -2348,6 +2350,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0307-range-sum-query-mutable](https://github.com/jonahlewis4/leetcode/tree/master/0307-range-sum-query-mutable) |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/jonahlewis4/leetcode/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0327-count-of-range-sum](https://github.com/jonahlewis4/leetcode/tree/master/0327-count-of-range-sum) |
+| [0406-queue-reconstruction-by-height](https://github.com/jonahlewis4/leetcode/tree/main/0406-queue-reconstruction-by-height/) | Medium |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [1356-minimum-number-of-moves-to-make-palindrome](https://github.com/jonahlewis4/leetcode/tree/master/1356-minimum-number-of-moves-to-make-palindrome) |
 | [3435-block-placement-queries](https://github.com/jonahlewis4/leetcode/tree/master/3435-block-placement-queries) |
@@ -2428,6 +2431,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0307-range-sum-query-mutable](https://github.com/jonahlewis4/leetcode/tree/master/0307-range-sum-query-mutable) |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/jonahlewis4/leetcode/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0327-count-of-range-sum](https://github.com/jonahlewis4/leetcode/tree/master/0327-count-of-range-sum) |
+| [0406-queue-reconstruction-by-height](https://github.com/jonahlewis4/leetcode/tree/main/0406-queue-reconstruction-by-height/) | Medium |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [3435-block-placement-queries](https://github.com/jonahlewis4/leetcode/tree/master/3435-block-placement-queries) |
 | [3790-fruits-into-baskets-ii](https://github.com/jonahlewis4/leetcode/tree/master/3790-fruits-into-baskets-ii) |
