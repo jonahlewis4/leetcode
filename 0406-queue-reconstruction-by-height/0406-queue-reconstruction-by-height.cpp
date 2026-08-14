@@ -1,7 +1,36 @@
 class Solution {
+    class FenwickTree {
+        vector<int> tree;
+
+    public:
+        FenwickTree(int size) {
+            tree.resize(size + 1);
+        }
+
+        int sum(int i) const{
+            i++;
+            int res = 0;
+            for(; i > 0; i -= (i & -i)){
+                res += tree[i];
+            }
+            return res;
+        }
+
+        int operator[](int i) const {
+            return sum(i);
+        }
+
+        void update(int i, int delta) {
+            i++;
+            for(; i < tree.size(); i += (i & -i)) {
+                tree[i] += delta;
+            }
+        }
+        
+    };
 public:
     vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {
-        unordered_map<int, int> gte;
+        FenwickTree tree(max_element(people.begin(), people.end())->front() + 1);
         vector<vector<int>> res;
         for(int i = 0; i < people.size(); i++) {
             vector<int> best = {INT_MAX};
@@ -12,8 +41,7 @@ public:
                     continue;
                 }
                 int targetGte = people[j].back();
-                
-                if(gte[height] == targetGte) {
+                if(res.size() - tree[height - 1] == targetGte) {
                     if(best.front() > height){
                         best = people[j];
                         bestI = j;
@@ -24,11 +52,7 @@ public:
 
             int bestHeight = best.front();
             
-            for(auto& [key, count]: gte) {
-                if(key <= bestHeight){
-                    count++;
-                }
-            }
+            tree.update(bestHeight, 1);
             people[bestI].front() = -1;
         }
 
