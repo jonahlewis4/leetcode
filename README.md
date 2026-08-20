@@ -147,6 +147,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0419-battleships-in-a-board](https://github.com/jonahlewis4/leetcode/tree/master/0419-battleships-in-a-board) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/jonahlewis4/leetcode/tree/main/0421-maximum-xor-of-two-numbers-in-an-array/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/jonahlewis4/leetcode/tree/master/0435-non-overlapping-intervals) |
+| [0436-find-right-interval](https://github.com/jonahlewis4/leetcode/tree/main/0436-find-right-interval/) | Medium |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0455-assign-cookies](https://github.com/jonahlewis4/leetcode/tree/master/0455-assign-cookies) |
 | [0485-max-consecutive-ones](https://github.com/jonahlewis4/leetcode/tree/master/0485-max-consecutive-ones) |
@@ -448,6 +449,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0406-queue-reconstruction-by-height](https://github.com/jonahlewis4/leetcode/tree/main/0406-queue-reconstruction-by-height/) | Medium |
 | [0414-third-maximum-number](https://github.com/jonahlewis4/leetcode/tree/master/0414-third-maximum-number) |
 | [0435-non-overlapping-intervals](https://github.com/jonahlewis4/leetcode/tree/master/0435-non-overlapping-intervals) |
+| [0436-find-right-interval](https://github.com/jonahlewis4/leetcode/tree/main/0436-find-right-interval/) | Medium |
 | [0455-assign-cookies](https://github.com/jonahlewis4/leetcode/tree/master/0455-assign-cookies) |
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0561-array-partition](https://github.com/jonahlewis4/leetcode/tree/master/0561-array-partition) |
@@ -711,6 +713,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0374-guess-number-higher-or-lower](https://github.com/jonahlewis4/leetcode/tree/master/0374-guess-number-higher-or-lower) |
 | [0378-kth-smallest-element-in-a-sorted-matrix](https://github.com/jonahlewis4/leetcode/tree/main/0378-kth-smallest-element-in-a-sorted-matrix/) | Medium |
 | [0400-nth-digit](https://github.com/jonahlewis4/leetcode/tree/main/0400-nth-digit/) | Medium |
+| [0436-find-right-interval](https://github.com/jonahlewis4/leetcode/tree/main/0436-find-right-interval/) | Medium |
 | [0441-arranging-coins](https://github.com/jonahlewis4/leetcode/tree/master/0441-arranging-coins) |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [0540-single-element-in-a-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0540-single-element-in-a-sorted-array) |
