@@ -14,36 +14,23 @@
  * }
  */
 class Solution {
-    private int r(TreeNode root, ArrayList<Long> sums, int targetSum) {
+    public int r(TreeNode root, Map<Long, Integer> sums, long sum, int targetSum) {
         if(root == null) {
             return 0;
         }
 
         int total = 0;
-        if(root.val == targetSum) {
-            total++;
-        }
-
-        for(int i = 0; i < sums.size(); i++) {
-            if(sums.get(i) + root.val == targetSum) {
-                total++;
-            }
-            sums.set(i, sums.get(i) + root.val);
-        }
-
-        sums.add((long)root.val);
-        total += r(root.left, sums, targetSum);
-        total += r(root.right, sums, targetSum);
-        for(int i = 0; i < sums.size(); i++) {
-            sums.set(i, sums.get(i) - root.val);
-        }
-        sums.remove(sums.size() - 1);
+        sum += (long)root.val;
+        total += sums.getOrDefault(sum - targetSum, 0);
+        sums.put(sum, sums.getOrDefault(sum, 0) + 1);
+        total += r(root.left, sums, sum, targetSum);
+        total += r(root.right, sums, sum, targetSum);
+        sums.put(sum, sums.get(sum) - 1);
         return total;
-
     }
     public int pathSum(TreeNode root, int targetSum) {
-        ArrayList<Long> sums = new ArrayList();
-        return r(root, sums, targetSum);
-
+        Map<Long, Integer> sums = new HashMap<>();
+        sums.put(0l, 1);
+        return r(root, sums, 0, targetSum);
     }
 }
