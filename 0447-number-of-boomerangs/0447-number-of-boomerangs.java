@@ -4,6 +4,8 @@ class Solution {
         HashMap<Integer, Integer> pointMap = new HashMap<>();
 
         for(int i = 0; i < points.length; i++) {
+            pointMap.clear();
+
             for(int j = 0; j < points.length; j++) {
                 if(i == j) {
                     continue;
@@ -33,7 +35,6 @@ class Solution {
                 total += l * (l - 1);
             }
 
-            pointMap.clear();
         }
 
         return total;
