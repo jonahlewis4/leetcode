@@ -1,7 +1,8 @@
 class Solution {
     public int numberOfBoomerangs(int[][] points) {
-        HashMap<Integer, HashMap<Integer, Integer>> map = new HashMap<>();
+        int total = 0;
         for(int i = 0; i < points.length; i++) {
+            HashMap<Integer, Integer> pointMap = new HashMap<>();
             for(int j = 0; j < points.length; j++) {
                 if(i == j) {
                     continue;
@@ -19,22 +20,14 @@ class Solution {
                 distance += xDelta * xDelta;
                 distance += yDelta * yDelta;
 
-
-                HashMap<Integer, Integer> pointMap = map.getOrDefault(i, new HashMap<Integer, Integer>());
-
                 int ps = pointMap.getOrDefault(distance, 0);
 
                 ps++;
 
                 pointMap.put(distance, ps);
-                map.put(i, pointMap);
             }
-        }
 
-        int total = 0;
-
-        for(HashMap<Integer, Integer> dists : map.values()) {
-            for(Integer l : dists.values()) {
+            for(Integer l : pointMap.values()) {
                
                 total += l * (l - 1);
             }
