@@ -5,8 +5,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Array
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0001-two-sum](https://github.com/jonahlewis4/leetcode/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/jonahlewis4/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
 | [0011-container-with-most-water](https://github.com/jonahlewis4/leetcode/tree/master/0011-container-with-most-water) |
@@ -417,8 +417,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/jonahlewis4/leetcode/tree/master/3974-xor-after-range-multiplication-queries-i) |
 | [3980-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/jonahlewis4/leetcode/tree/master/3980-best-time-to-buy-and-sell-stock-using-strategy) |
 ## Sorting
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0015-3sum](https://github.com/jonahlewis4/leetcode/tree/master/0015-3sum) |
 | [0016-3sum-closest](https://github.com/jonahlewis4/leetcode/tree/master/0016-3sum-closest) |
 | [0018-4sum](https://github.com/jonahlewis4/leetcode/tree/master/0018-4sum) |
@@ -522,8 +522,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3748-sort-matrix-by-diagonals](https://github.com/jonahlewis4/leetcode/tree/master/3748-sort-matrix-by-diagonals) |
 | [3881-minimize-maximum-component-cost](https://github.com/jonahlewis4/leetcode/tree/master/3881-minimize-maximum-component-cost) |
 ## Dynamic Programming
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0005-longest-palindromic-substring](https://github.com/jonahlewis4/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0010-regular-expression-matching](https://github.com/jonahlewis4/leetcode/tree/master/0010-regular-expression-matching) |
 | [0022-generate-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/0022-generate-parentheses) |
@@ -609,8 +609,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/jonahlewis4/leetcode/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
 | [3618-find-the-original-typed-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/3618-find-the-original-typed-string-ii) |
 ## Greedy
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0011-container-with-most-water](https://github.com/jonahlewis4/leetcode/tree/master/0011-container-with-most-water) |
 | [0044-wildcard-matching](https://github.com/jonahlewis4/leetcode/tree/master/0044-wildcard-matching) |
 | [0045-jump-game-ii](https://github.com/jonahlewis4/leetcode/tree/master/0045-jump-game-ii) |
@@ -655,6 +655,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1834-minimum-number-of-people-to-teach](https://github.com/jonahlewis4/leetcode/tree/master/1834-minimum-number-of-people-to-teach) |
 | [1903-largest-odd-number-in-string](https://github.com/jonahlewis4/leetcode/tree/master/1903-largest-odd-number-in-string) |
 | [1917-maximum-average-pass-ratio](https://github.com/jonahlewis4/leetcode/tree/master/1917-maximum-average-pass-ratio) |
+| [1927-sum-game](https://github.com/jonahlewis4/leetcode/tree/master/1927-sum-game) |
 | [2026-merge-triplets-to-form-target-triplet](https://github.com/jonahlewis4/leetcode/tree/master/2026-merge-triplets-to-form-target-triplet) |
 | [2037-minimum-number-of-moves-to-seat-everyone](https://github.com/jonahlewis4/leetcode/tree/master/2037-minimum-number-of-moves-to-seat-everyone) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/jonahlewis4/leetcode/tree/master/2140-longest-subsequence-repeated-k-times) |
@@ -686,8 +687,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/jonahlewis4/leetcode/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
 | [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Binary Search
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/jonahlewis4/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
 | [0033-search-in-rotated-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
@@ -746,13 +747,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3790-fruits-into-baskets-ii](https://github.com/jonahlewis4/leetcode/tree/master/3790-fruits-into-baskets-ii) |
 | [3881-minimize-maximum-component-cost](https://github.com/jonahlewis4/leetcode/tree/master/3881-minimize-maximum-component-cost) |
 ## Line Sweep
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [1028-interval-list-intersections](https://github.com/jonahlewis4/leetcode/tree/master/1028-interval-list-intersections) |
 | [1977-minimum-interval-to-include-each-query](https://github.com/jonahlewis4/leetcode/tree/master/1977-minimum-interval-to-include-each-query) |
 ## Heap (Priority Queue)
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0023-merge-k-sorted-lists](https://github.com/jonahlewis4/leetcode/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/jonahlewis4/leetcode/tree/master/0239-sliding-window-maximum) |
@@ -792,8 +793,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3678-design-task-manager](https://github.com/jonahlewis4/leetcode/tree/master/3678-design-task-manager) |
 | [3863-power-grid-maintenance](https://github.com/jonahlewis4/leetcode/tree/master/3863-power-grid-maintenance) |
 ## Hash Table
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0001-two-sum](https://github.com/jonahlewis4/leetcode/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jonahlewis4/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0012-integer-to-roman](https://github.com/jonahlewis4/leetcode/tree/master/0012-integer-to-roman) |
@@ -957,8 +958,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3837-grid-teleportation-traversal](https://github.com/jonahlewis4/leetcode/tree/master/3837-grid-teleportation-traversal) |
 | [3863-power-grid-maintenance](https://github.com/jonahlewis4/leetcode/tree/master/3863-power-grid-maintenance) |
 ## Math
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0002-add-two-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0002-add-two-numbers) |
 | [0007-reverse-integer](https://github.com/jonahlewis4/leetcode/tree/master/0007-reverse-integer) |
 | [0009-palindrome-number](https://github.com/jonahlewis4/leetcode/tree/master/0009-palindrome-number) |
@@ -1059,6 +1060,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1889-check-if-number-is-a-sum-of-powers-of-three](https://github.com/jonahlewis4/leetcode/tree/master/1889-check-if-number-is-a-sum-of-powers-of-three) |
 | [1903-largest-odd-number-in-string](https://github.com/jonahlewis4/leetcode/tree/master/1903-largest-odd-number-in-string) |
 | [1925-count-square-sum-triples](https://github.com/jonahlewis4/leetcode/tree/master/1925-count-square-sum-triples) |
+| [1927-sum-game](https://github.com/jonahlewis4/leetcode/tree/master/1927-sum-game) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/jonahlewis4/leetcode/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/jonahlewis4/leetcode/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2160-minimum-sum-of-four-digit-number-after-splitting-digits](https://github.com/jonahlewis4/leetcode/tree/master/2160-minimum-sum-of-four-digit-number-after-splitting-digits) |
@@ -1103,8 +1105,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3830-find-closest-person](https://github.com/jonahlewis4/leetcode/tree/master/3830-find-closest-person) |
 | [3870-count-commas-in-range](https://github.com/jonahlewis4/leetcode/tree/master/3870-count-commas-in-range) |
 ## Two Pointers
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0005-longest-palindromic-substring](https://github.com/jonahlewis4/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0011-container-with-most-water](https://github.com/jonahlewis4/leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/jonahlewis4/leetcode/tree/master/0015-3sum) |
@@ -1185,8 +1187,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3195-separate-black-and-white-balls](https://github.com/jonahlewis4/leetcode/tree/master/3195-separate-black-and-white-balls) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/jonahlewis4/leetcode/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 ## Matrix
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0036-valid-sudoku](https://github.com/jonahlewis4/leetcode/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/jonahlewis4/leetcode/tree/master/0037-sudoku-solver) |
 | [0048-rotate-image](https://github.com/jonahlewis4/leetcode/tree/master/0048-rotate-image) |
@@ -1234,8 +1236,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3748-sort-matrix-by-diagonals](https://github.com/jonahlewis4/leetcode/tree/master/3748-sort-matrix-by-diagonals) |
 | [3837-grid-teleportation-traversal](https://github.com/jonahlewis4/leetcode/tree/master/3837-grid-teleportation-traversal) |
 ## Simulation
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0043-multiply-strings](https://github.com/jonahlewis4/leetcode/tree/master/0043-multiply-strings) |
 | [0054-spiral-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0054-spiral-matrix) |
 | [0059-spiral-matrix-ii](https://github.com/jonahlewis4/leetcode/tree/master/0059-spiral-matrix-ii) |
@@ -1281,8 +1283,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3838-weighted-word-mapping](https://github.com/jonahlewis4/leetcode/tree/master/3838-weighted-word-mapping) |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/jonahlewis4/leetcode/tree/master/3974-xor-after-range-multiplication-queries-i) |
 ## Recursion
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0002-add-two-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0002-add-two-numbers) |
 | [0010-regular-expression-matching](https://github.com/jonahlewis4/leetcode/tree/master/0010-regular-expression-matching) |
 | [0021-merge-two-sorted-lists](https://github.com/jonahlewis4/leetcode/tree/master/0021-merge-two-sorted-lists) |
@@ -1306,8 +1308,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/jonahlewis4/leetcode/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 | [3601-find-the-k-th-character-in-string-game-ii](https://github.com/jonahlewis4/leetcode/tree/master/3601-find-the-k-th-character-in-string-game-ii) |
 ## String
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jonahlewis4/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0005-longest-palindromic-substring](https://github.com/jonahlewis4/leetcode/tree/master/0005-longest-palindromic-substring) |
 | [0006-zigzag-conversion](https://github.com/jonahlewis4/leetcode/tree/master/0006-zigzag-conversion) |
@@ -1477,6 +1479,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1894-merge-strings-alternately](https://github.com/jonahlewis4/leetcode/tree/master/1894-merge-strings-alternately) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/jonahlewis4/leetcode/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1903-largest-odd-number-in-string](https://github.com/jonahlewis4/leetcode/tree/master/1903-largest-odd-number-in-string) |
+| [1927-sum-game](https://github.com/jonahlewis4/leetcode/tree/master/1927-sum-game) |
 | [1960-check-if-the-sentence-is-pangram](https://github.com/jonahlewis4/leetcode/tree/master/1960-check-if-the-sentence-is-pangram) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/jonahlewis4/leetcode/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2000-reverse-prefix-of-word](https://github.com/jonahlewis4/leetcode/tree/master/2000-reverse-prefix-of-word) |
@@ -1526,8 +1529,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/jonahlewis4/leetcode/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 | [3838-weighted-word-mapping](https://github.com/jonahlewis4/leetcode/tree/master/3838-weighted-word-mapping) |
 ## Bit Manipulation
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0029-divide-two-integers](https://github.com/jonahlewis4/leetcode/tree/master/0029-divide-two-integers) |
 | [0067-add-binary](https://github.com/jonahlewis4/leetcode/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/jonahlewis4/leetcode/tree/master/0078-subsets) |
@@ -1580,8 +1583,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/jonahlewis4/leetcode/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 | [3601-find-the-k-th-character-in-string-game-ii](https://github.com/jonahlewis4/leetcode/tree/master/3601-find-the-k-th-character-in-string-game-ii) |
 ## Divide and Conquer
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/jonahlewis4/leetcode/tree/master/0004-median-of-two-sorted-arrays) |
 | [0023-merge-k-sorted-lists](https://github.com/jonahlewis4/leetcode/tree/master/0023-merge-k-sorted-lists) |
 | [0053-maximum-subarray](https://github.com/jonahlewis4/leetcode/tree/master/0053-maximum-subarray) |
@@ -1603,8 +1606,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1014-k-closest-points-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/jonahlewis4/leetcode/tree/master/3974-xor-after-range-multiplication-queries-i) |
 ## Merge Sort
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0023-merge-k-sorted-lists](https://github.com/jonahlewis4/leetcode/tree/master/0023-merge-k-sorted-lists) |
 | [0148-sort-list](https://github.com/jonahlewis4/leetcode/tree/master/0148-sort-list) |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/jonahlewis4/leetcode/tree/master/0315-count-of-smaller-numbers-after-self) |
@@ -1612,17 +1615,17 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
 ## Bucket Sort
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0347-top-k-frequent-elements](https://github.com/jonahlewis4/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
 ## Radix Sort
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
 ## Counting Sort
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0229-majority-element-ii](https://github.com/jonahlewis4/leetcode/tree/master/0229-majority-element-ii) |
 | [0274-h-index](https://github.com/jonahlewis4/leetcode/tree/master/0274-h-index) |
 | [0299-bulls-and-cows](https://github.com/jonahlewis4/leetcode/tree/master/0299-bulls-and-cows) |
@@ -1666,14 +1669,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/jonahlewis4/leetcode/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/jonahlewis4/leetcode/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 ## Quickselect
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/jonahlewis4/leetcode/tree/master/0347-top-k-frequent-elements) |
 | [1014-k-closest-points-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/1014-k-closest-points-to-origin) |
 ## Design
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0146-lru-cache](https://github.com/jonahlewis4/leetcode/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/jonahlewis4/leetcode/tree/master/0155-min-stack) |
 | [0170-two-sum-iii-data-structure-design](https://github.com/jonahlewis4/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
@@ -1714,8 +1717,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2429-design-a-food-rating-system](https://github.com/jonahlewis4/leetcode/tree/master/2429-design-a-food-rating-system) |
 | [3678-design-task-manager](https://github.com/jonahlewis4/leetcode/tree/master/3678-design-task-manager) |
 ## Prefix Sum
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/master/0209-minimum-size-subarray-sum) |
 | [0238-product-of-array-except-self](https://github.com/jonahlewis4/leetcode/tree/master/0238-product-of-array-except-self) |
 | [0253-meeting-rooms-ii](https://github.com/jonahlewis4/leetcode/tree/master/0253-meeting-rooms-ii) |
@@ -1756,8 +1759,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/jonahlewis4/leetcode/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 | [3980-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/jonahlewis4/leetcode/tree/master/3980-best-time-to-buy-and-sell-stock-using-strategy) |
 ## Union Find
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0128-longest-consecutive-sequence](https://github.com/jonahlewis4/leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/jonahlewis4/leetcode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/jonahlewis4/leetcode/tree/master/0200-number-of-islands) |
@@ -1775,8 +1778,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3863-power-grid-maintenance](https://github.com/jonahlewis4/leetcode/tree/master/3863-power-grid-maintenance) |
 | [3881-minimize-maximum-component-cost](https://github.com/jonahlewis4/leetcode/tree/master/3881-minimize-maximum-component-cost) |
 ## Database
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0175-combine-two-tables](https://github.com/jonahlewis4/leetcode/tree/master/0175-combine-two-tables) |
 | [0181-employees-earning-more-than-their-managers](https://github.com/jonahlewis4/leetcode/tree/master/0181-employees-earning-more-than-their-managers) |
 | [0182-duplicate-emails](https://github.com/jonahlewis4/leetcode/tree/master/0182-duplicate-emails) |
@@ -1785,8 +1788,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1908-recyclable-and-low-fat-products](https://github.com/jonahlewis4/leetcode/tree/master/1908-recyclable-and-low-fat-products) |
 | [2127-employees-whose-manager-left-the-company](https://github.com/jonahlewis4/leetcode/tree/master/2127-employees-whose-manager-left-the-company) |
 ## Geometry
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0223-rectangle-area](https://github.com/jonahlewis4/leetcode/tree/master/0223-rectangle-area) |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 | [1014-k-closest-points-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -1796,8 +1799,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3278-find-the-number-of-ways-to-place-people-i](https://github.com/jonahlewis4/leetcode/tree/master/3278-find-the-number-of-ways-to-place-people-i) |
 | [3623-count-number-of-trapezoids-i](https://github.com/jonahlewis4/leetcode/tree/master/3623-count-number-of-trapezoids-i) |
 ## Data Stream
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0170-two-sum-iii-data-structure-design](https://github.com/jonahlewis4/leetcode/tree/master/0170-two-sum-iii-data-structure-design) |
 | [0295-find-median-from-data-stream](https://github.com/jonahlewis4/leetcode/tree/master/0295-find-median-from-data-stream) |
 | [0359-logger-rate-limiter](https://github.com/jonahlewis4/leetcode/tree/master/0359-logger-rate-limiter) |
@@ -1808,8 +1811,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1477-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1656-design-an-ordered-stream](https://github.com/jonahlewis4/leetcode/tree/master/1656-design-an-ordered-stream) |
 ## Stack
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0020-valid-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/0020-valid-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/jonahlewis4/leetcode/tree/master/0042-trapping-rain-water) |
@@ -1867,8 +1870,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/jonahlewis4/leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Monotonic Stack
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0042-trapping-rain-water](https://github.com/jonahlewis4/leetcode/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/jonahlewis4/leetcode/tree/master/0084-largest-rectangle-in-histogram) |
 | [0085-maximal-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0085-maximal-rectangle) |
@@ -1884,8 +1887,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1909-buildings-with-an-ocean-view](https://github.com/jonahlewis4/leetcode/tree/master/1909-buildings-with-an-ocean-view) |
 | [3834-minimum-operations-to-convert-all-elements-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/3834-minimum-operations-to-convert-all-elements-to-zero) |
 ## Backtracking
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/jonahlewis4/leetcode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/jonahlewis4/leetcode/tree/master/0022-generate-parentheses) |
 | [0037-sudoku-solver](https://github.com/jonahlewis4/leetcode/tree/master/0037-sudoku-solver) |
@@ -1919,8 +1922,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2140-longest-subsequence-repeated-k-times](https://github.com/jonahlewis4/leetcode/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/jonahlewis4/leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 ## Tree
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0095-unique-binary-search-trees-ii](https://github.com/jonahlewis4/leetcode/tree/master/0095-unique-binary-search-trees-ii) |
 | [0098-validate-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0098-validate-binary-search-tree) |
@@ -1992,8 +1995,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3633-maximize-the-number-of-target-nodes-after-connecting-trees-i](https://github.com/jonahlewis4/leetcode/tree/master/3633-maximize-the-number-of-target-nodes-after-connecting-trees-i) |
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/jonahlewis4/leetcode/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
 ## Depth-First Search
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0079-word-search](https://github.com/jonahlewis4/leetcode/tree/master/0079-word-search) |
 | [0094-binary-tree-inorder-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0098-validate-binary-search-tree) |
@@ -2086,8 +2089,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii](https://github.com/jonahlewis4/leetcode/tree/master/3645-maximize-the-number-of-target-nodes-after-connecting-trees-ii) |
 | [3863-power-grid-maintenance](https://github.com/jonahlewis4/leetcode/tree/master/3863-power-grid-maintenance) |
 ## Binary Tree
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0095-unique-binary-search-trees-ii](https://github.com/jonahlewis4/leetcode/tree/master/0095-unique-binary-search-trees-ii) |
 | [0098-validate-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0098-validate-binary-search-tree) |
@@ -2148,8 +2151,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1790-lowest-common-ancestor-of-a-binary-tree-iii](https://github.com/jonahlewis4/leetcode/tree/master/1790-lowest-common-ancestor-of-a-binary-tree-iii) |
 | [2461-amount-of-time-for-binary-tree-to-be-infected](https://github.com/jonahlewis4/leetcode/tree/master/2461-amount-of-time-for-binary-tree-to-be-infected) |
 ## Linked List
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0002-add-two-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0002-add-two-numbers) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/jonahlewis4/leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/jonahlewis4/leetcode/tree/master/0021-merge-two-sorted-lists) |
@@ -2188,8 +2191,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2411-spiral-matrix-iv](https://github.com/jonahlewis4/leetcode/tree/master/2411-spiral-matrix-iv) |
 | [3501-delete-nodes-from-linked-list-present-in-array](https://github.com/jonahlewis4/leetcode/tree/master/3501-delete-nodes-from-linked-list-present-in-array) |
 ## Sliding Window
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jonahlewis4/leetcode/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/jonahlewis4/leetcode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0076-minimum-window-substring](https://github.com/jonahlewis4/leetcode/tree/master/0076-minimum-window-substring) |
@@ -2221,8 +2224,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/jonahlewis4/leetcode/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 | [3980-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/jonahlewis4/leetcode/tree/master/3980-best-time-to-buy-and-sell-stock-using-strategy) |
 ## Queue
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0239-sliding-window-maximum](https://github.com/jonahlewis4/leetcode/tree/master/0239-sliding-window-maximum) |
 | [0341-flatten-nested-list-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0341-flatten-nested-list-iterator) |
 | [0362-design-hit-counter](https://github.com/jonahlewis4/leetcode/tree/master/0362-design-hit-counter) |
@@ -2234,14 +2237,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/jonahlewis4/leetcode/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/jonahlewis4/leetcode/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
 ## Monotonic Queue
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0239-sliding-window-maximum](https://github.com/jonahlewis4/leetcode/tree/master/0239-sliding-window-maximum) |
 | [2868-continuous-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/2868-continuous-subarrays) |
 | [3578-count-partitions-with-max-min-difference-at-most-k](https://github.com/jonahlewis4/leetcode/tree/master/3578-count-partitions-with-max-min-difference-at-most-k) |
 ## Enumeration
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0900-reordered-power-of-2](https://github.com/jonahlewis4/leetcode/tree/master/0900-reordered-power-of-2) |
 | [1863-sum-of-all-subset-xor-totals](https://github.com/jonahlewis4/leetcode/tree/master/1863-sum-of-all-subset-xor-totals) |
 | [1925-count-square-sum-triples](https://github.com/jonahlewis4/leetcode/tree/master/1925-count-square-sum-triples) |
@@ -2258,8 +2261,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/jonahlewis4/leetcode/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 | [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/jonahlewis4/leetcode/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 ## Breadth-First Search
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0100-same-tree](https://github.com/jonahlewis4/leetcode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/jonahlewis4/leetcode/tree/master/0101-symmetric-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0102-binary-tree-level-order-traversal) |
@@ -2327,27 +2330,27 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3837-grid-teleportation-traversal](https://github.com/jonahlewis4/leetcode/tree/master/3837-grid-teleportation-traversal) |
 | [3863-power-grid-maintenance](https://github.com/jonahlewis4/leetcode/tree/master/3863-power-grid-maintenance) |
 ## Interactive
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0157-read-n-characters-given-read4](https://github.com/jonahlewis4/leetcode/tree/master/0157-read-n-characters-given-read4) |
 | [0278-first-bad-version](https://github.com/jonahlewis4/leetcode/tree/master/0278-first-bad-version) |
 | [0374-guess-number-higher-or-lower](https://github.com/jonahlewis4/leetcode/tree/master/0374-guess-number-higher-or-lower) |
 | [0865-robot-room-cleaner](https://github.com/jonahlewis4/leetcode/tree/master/0865-robot-room-cleaner) |
 ## String Matching
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0459-repeated-substring-pattern](https://github.com/jonahlewis4/leetcode/tree/master/0459-repeated-substring-pattern) |
 | [0572-subtree-of-another-tree](https://github.com/jonahlewis4/leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0796-rotate-string](https://github.com/jonahlewis4/leetcode/tree/master/0796-rotate-string) |
 ## Hash Function
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0572-subtree-of-another-tree](https://github.com/jonahlewis4/leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0816-design-hashset](https://github.com/jonahlewis4/leetcode/tree/master/0816-design-hashset) |
 | [0817-design-hashmap](https://github.com/jonahlewis4/leetcode/tree/master/0817-design-hashmap) |
 ## Binary Search Tree
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0095-unique-binary-search-trees-ii](https://github.com/jonahlewis4/leetcode/tree/master/0095-unique-binary-search-trees-ii) |
 | [0098-validate-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0098-validate-binary-search-tree) |
 | [0099-recover-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0099-recover-binary-search-tree) |
@@ -2363,23 +2366,23 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0897-increasing-order-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0897-increasing-order-search-tree) |
 | [0975-range-sum-of-bst](https://github.com/jonahlewis4/leetcode/tree/master/0975-range-sum-of-bst) |
 ## Randomized
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/jonahlewis4/leetcode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0382-linked-list-random-node](https://github.com/jonahlewis4/leetcode/tree/master/0382-linked-list-random-node) |
 | [0384-shuffle-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0384-shuffle-an-array) |
 | [0398-random-pick-index](https://github.com/jonahlewis4/leetcode/tree/main/0398-random-pick-index/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/jonahlewis4/leetcode/tree/master/0912-random-pick-with-weight) |
 ## Number Theory
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0258-add-digits](https://github.com/jonahlewis4/leetcode/tree/master/0258-add-digits) |
 | [1585-the-kth-factor-of-n](https://github.com/jonahlewis4/leetcode/tree/master/1585-the-kth-factor-of-n) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/jonahlewis4/leetcode/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2413-smallest-even-multiple](https://github.com/jonahlewis4/leetcode/tree/master/2413-smallest-even-multiple) |
 ## Binary Indexed Tree
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0307-range-sum-query-mutable](https://github.com/jonahlewis4/leetcode/tree/master/0307-range-sum-query-mutable) |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/jonahlewis4/leetcode/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0327-count-of-range-sum](https://github.com/jonahlewis4/leetcode/tree/master/0327-count-of-range-sum) |
@@ -2388,16 +2391,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1356-minimum-number-of-moves-to-make-palindrome](https://github.com/jonahlewis4/leetcode/tree/master/1356-minimum-number-of-moves-to-make-palindrome) |
 | [3435-block-placement-queries](https://github.com/jonahlewis4/leetcode/tree/master/3435-block-placement-queries) |
 ## Doubly-Linked List
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0146-lru-cache](https://github.com/jonahlewis4/leetcode/tree/master/0146-lru-cache) |
 | [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/jonahlewis4/leetcode/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
 | [0432-all-oone-data-structure](https://github.com/jonahlewis4/leetcode/tree/master/0432-all-oone-data-structure) |
 | [0716-max-stack](https://github.com/jonahlewis4/leetcode/tree/master/0716-max-stack) |
 | [2389-design-a-text-editor](https://github.com/jonahlewis4/leetcode/tree/master/2389-design-a-text-editor) |
 ## Memoization
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0070-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0070-climbing-stairs) |
 | [0139-word-break](https://github.com/jonahlewis4/leetcode/tree/master/0139-word-break) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
@@ -2407,8 +2410,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2028-the-earliest-and-latest-rounds-where-players-compete](https://github.com/jonahlewis4/leetcode/tree/master/2028-the-earliest-and-latest-rounds-where-players-compete) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/jonahlewis4/leetcode/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 ## Trie
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0014-longest-common-prefix](https://github.com/jonahlewis4/leetcode/tree/master/0014-longest-common-prefix) |
 | [0139-word-break](https://github.com/jonahlewis4/leetcode/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/jonahlewis4/leetcode/tree/master/0208-implement-trie-prefix-tree) |
@@ -2419,8 +2422,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/jonahlewis4/leetcode/tree/master/0440-k-th-smallest-in-lexicographical-order) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/jonahlewis4/leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 ## Graph
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0133-clone-graph](https://github.com/jonahlewis4/leetcode/tree/master/0133-clone-graph) |
 | [0207-course-schedule](https://github.com/jonahlewis4/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/jonahlewis4/leetcode/tree/master/0210-course-schedule-ii) |
@@ -2442,8 +2445,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3863-power-grid-maintenance](https://github.com/jonahlewis4/leetcode/tree/master/3863-power-grid-maintenance) |
 | [3881-minimize-maximum-component-cost](https://github.com/jonahlewis4/leetcode/tree/master/3881-minimize-maximum-component-cost) |
 ## Topological Sort
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0207-course-schedule](https://github.com/jonahlewis4/leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/jonahlewis4/leetcode/tree/master/0210-course-schedule-ii) |
 | [0269-alien-dictionary](https://github.com/jonahlewis4/leetcode/tree/master/0269-alien-dictionary) |
@@ -2451,18 +2454,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [1177-tree-diameter](https://github.com/jonahlewis4/leetcode/tree/master/1177-tree-diameter) |
 ## Shortest Path
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0399-evaluate-division](https://github.com/jonahlewis4/leetcode/tree/main/0399-evaluate-division/) | Medium |
 | [0744-network-delay-time](https://github.com/jonahlewis4/leetcode/tree/master/0744-network-delay-time) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/jonahlewis4/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 ## Minimum Spanning Tree
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [1706-min-cost-to-connect-all-points](https://github.com/jonahlewis4/leetcode/tree/master/1706-min-cost-to-connect-all-points) |
 ## Segment Tree
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0307-range-sum-query-mutable](https://github.com/jonahlewis4/leetcode/tree/master/0307-range-sum-query-mutable) |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/jonahlewis4/leetcode/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0327-count-of-range-sum](https://github.com/jonahlewis4/leetcode/tree/master/0327-count-of-range-sum) |
@@ -2471,12 +2474,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3435-block-placement-queries](https://github.com/jonahlewis4/leetcode/tree/master/3435-block-placement-queries) |
 | [3790-fruits-into-baskets-ii](https://github.com/jonahlewis4/leetcode/tree/master/3790-fruits-into-baskets-ii) |
 ## Eulerian Circuit
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0332-reconstruct-itinerary](https://github.com/jonahlewis4/leetcode/tree/master/0332-reconstruct-itinerary) |
 ## Ordered Set
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/jonahlewis4/leetcode/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0327-count-of-range-sum](https://github.com/jonahlewis4/leetcode/tree/master/0327-count-of-range-sum) |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
@@ -2487,16 +2490,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3790-fruits-into-baskets-ii](https://github.com/jonahlewis4/leetcode/tree/master/3790-fruits-into-baskets-ii) |
 | [3863-power-grid-maintenance](https://github.com/jonahlewis4/leetcode/tree/master/3863-power-grid-maintenance) |
 ## Iterator
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0173-binary-search-tree-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0173-binary-search-tree-iterator) |
 | [0251-flatten-2d-vector](https://github.com/jonahlewis4/leetcode/tree/master/0251-flatten-2d-vector) |
 | [0284-peeking-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0284-peeking-iterator) |
 | [0341-flatten-nested-list-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0341-flatten-nested-list-iterator) |
 | [0604-design-compressed-string-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0604-design-compressed-string-iterator) |
 ## Combinatorics
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0062-unique-paths](https://github.com/jonahlewis4/leetcode/tree/master/0062-unique-paths) |
 | [1863-sum-of-all-subset-xor-totals](https://github.com/jonahlewis4/leetcode/tree/master/1863-sum-of-all-subset-xor-totals) |
 | [2324-find-triangular-sum-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/2324-find-triangular-sum-of-an-array) |
@@ -2504,56 +2507,57 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/jonahlewis4/leetcode/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
 | [3682-count-the-number-of-arrays-with-k-matching-adjacent-elements](https://github.com/jonahlewis4/leetcode/tree/master/3682-count-the-number-of-arrays-with-k-matching-adjacent-elements) |
 ## Brainteaser
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0292-nim-game](https://github.com/jonahlewis4/leetcode/tree/master/0292-nim-game) |
 | [0319-bulb-switcher](https://github.com/jonahlewis4/leetcode/tree/master/0319-bulb-switcher) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/jonahlewis4/leetcode/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2837-minimum-operations-to-make-the-integer-zero](https://github.com/jonahlewis4/leetcode/tree/master/2837-minimum-operations-to-make-the-integer-zero) |
 | [3577-count-the-number-of-computer-unlocking-permutations](https://github.com/jonahlewis4/leetcode/tree/master/3577-count-the-number-of-computer-unlocking-permutations) |
 ## Probability and Statistics
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0867-new-21-game](https://github.com/jonahlewis4/leetcode/tree/master/0867-new-21-game) |
 ## Game Theory
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0292-nim-game](https://github.com/jonahlewis4/leetcode/tree/master/0292-nim-game) |
 | [0375-guess-number-higher-or-lower-ii](https://github.com/jonahlewis4/leetcode/tree/master/0375-guess-number-higher-or-lower-ii) |
+| [1927-sum-game](https://github.com/jonahlewis4/leetcode/tree/master/1927-sum-game) |
 ## Graph Theory
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0310-minimum-height-trees](https://github.com/jonahlewis4/leetcode/tree/master/0310-minimum-height-trees) |
 | [0399-evaluate-division](https://github.com/jonahlewis4/leetcode/tree/main/0399-evaluate-division/) | Medium |
 | [1791-find-center-of-star-graph](https://github.com/jonahlewis4/leetcode/tree/master/1791-find-center-of-star-graph) |
 | [3310-remove-methods-from-project](https://github.com/jonahlewis4/leetcode/tree/main/3310-remove-methods-from-project/) | Medium |
 ## Concurrency
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [1114-print-in-order](https://github.com/jonahlewis4/leetcode/tree/master/1114-print-in-order) |
 ## Reservoir Sampling
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0382-linked-list-random-node](https://github.com/jonahlewis4/leetcode/tree/master/0382-linked-list-random-node) |
 | [0398-random-pick-index](https://github.com/jonahlewis4/leetcode/tree/main/0398-random-pick-index/) | Medium |
 ## Union-Find
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0399-evaluate-division](https://github.com/jonahlewis4/leetcode/tree/main/0399-evaluate-division/) | Medium |
 ## Bellman–Ford Algorithm
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0399-evaluate-division](https://github.com/jonahlewis4/leetcode/tree/main/0399-evaluate-division/) | Medium |
 ## Floyd–Warshall Algorithm
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0399-evaluate-division](https://github.com/jonahlewis4/leetcode/tree/main/0399-evaluate-division/) | Medium |
 ## Bracket Sequences
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0020-valid-parentheses](https://github.com/jonahlewis4/leetcode/tree/main/0020-valid-parentheses/) | Easy |
 ## Bidirectional Search
-| Problem Name | Difficulty |
-| ------- | ------- |
+|  |
+| ------- |
 | [0433-minimum-genetic-mutation](https://github.com/jonahlewis4/leetcode/tree/main/0433-minimum-genetic-mutation/) | Medium |
 <!---LeetCode Topics End-->
