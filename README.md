@@ -2560,4 +2560,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0433-minimum-genetic-mutation](https://github.com/jonahlewis4/leetcode/tree/main/0433-minimum-genetic-mutation/) | Medium |
+## Floyd's Cycle Finding Algorithm
+|  |
+| ------- |
+| [0141-linked-list-cycle](https://github.com/jonahlewis4/leetcode/tree/master/0141-linked-list-cycle) |
 <!---LeetCode Topics End-->
