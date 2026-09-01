@@ -22,19 +22,11 @@ class Solution {
         }
 
         TreeNode pred = root.left;
-        if(pred.right == null) {
-            root.val = pred.val;
-            root.left = pred.left;
-            return root;
-        }
-
-        TreeNode link = pred;
         while(pred.right != null) {
-            link = pred;
             pred = pred.right;
         }
-        link.right = pred.left;
-        root.val = pred.val;
+        root.val = pred.val;    
+        root.left = deleteNode(root.left, root.val);
         return root;
     }
     public TreeNode deleteNode(TreeNode root, int key) {
