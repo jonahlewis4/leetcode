@@ -14,56 +14,41 @@
  * }
  */
 class Solution {
-    TreeNode merge(TreeNode a, TreeNode b) {
-        if(a == null) {
-            return b;
-        }
-        if(b == null) {
-            return a;
-        }
-
-        TreeNode og = a;
-        
-        while(a.right != null) {
-            a = a.right;
+    TreeNode replace(TreeNode root) {
+        if(root.left == null) {
+            return root.right;
+        } else if (root.right == null) {
+            return root.left;
         }
 
-        a.right = b;
-        return og;
-    }
-    void deleteWithPar(TreeNode root, int key, TreeNode parent) {
-        if(root == null) {
-            return;
-        }
-        
-        if(root.val == key) {
-            if(root == parent.left) {
-                parent.left = merge(root.left, root.right);
-            } else {
-                parent.right = merge(root.left, root.right);
-            }
-            return;
+        TreeNode pred = root.left;
+        if(pred.right == null) {
+            root.val = pred.val;
+            root.left = pred.left;
+            return root;
         }
 
-        if(root.val > key) {
-            deleteWithPar(root.left, key, root);
-        } else {
-            deleteWithPar(root.right, key, root);
+        TreeNode link = pred;
+        while(pred.right != null) {
+            link = pred;
+            pred = pred.right;
         }
+        link.right = pred.left;
+        root.val = pred.val;
+        return root;
     }
     public TreeNode deleteNode(TreeNode root, int key) {
         if(root == null) {
             return null;
         }
-        
-        if(root.val == key) {
-            return merge(root.left, root.right);
-        }
 
+        if(root.val == key) {
+            return replace(root);
+        } 
         if(root.val > key) {
-            deleteWithPar(root.left, key, root);
+            root.left = deleteNode(root.left, key);
         } else {
-            deleteWithPar(root.right, key, root);
+            root.right = deleteNode(root.right, key);
         }
 
         return root;
