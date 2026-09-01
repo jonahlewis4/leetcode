@@ -42,6 +42,7 @@ class Solution {
             } else {
                 parent.right = merge(root.left, root.right);
             }
+            return;
         }
 
         if(root.val > key) {
