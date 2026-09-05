@@ -417,6 +417,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3837-grid-teleportation-traversal](https://github.com/jonahlewis4/leetcode/tree/master/3837-grid-teleportation-traversal) |
 | [3838-weighted-word-mapping](https://github.com/jonahlewis4/leetcode/tree/master/3838-weighted-word-mapping) |
 | [3863-power-grid-maintenance](https://github.com/jonahlewis4/leetcode/tree/master/3863-power-grid-maintenance) |
+| [3903-smallest-stable-index-i](https://github.com/jonahlewis4/leetcode/tree/main/3903-smallest-stable-index-i/) | Easy |
 | [3904-smallest-stable-index-ii](https://github.com/jonahlewis4/leetcode/tree/main/3904-smallest-stable-index-ii/) | Medium |
 | [3974-xor-after-range-multiplication-queries-i](https://github.com/jonahlewis4/leetcode/tree/master/3974-xor-after-range-multiplication-queries-i) |
 | [3980-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/jonahlewis4/leetcode/tree/master/3980-best-time-to-buy-and-sell-stock-using-strategy) |
@@ -1768,6 +1769,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3643-zero-array-transformation-ii](https://github.com/jonahlewis4/leetcode/tree/master/3643-zero-array-transformation-ii) |
 | [3647-zero-array-transformation-iii](https://github.com/jonahlewis4/leetcode/tree/master/3647-zero-array-transformation-iii) |
 | [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/jonahlewis4/leetcode/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
+| [3903-smallest-stable-index-i](https://github.com/jonahlewis4/leetcode/tree/main/3903-smallest-stable-index-i/) | Easy |
 | [3904-smallest-stable-index-ii](https://github.com/jonahlewis4/leetcode/tree/main/3904-smallest-stable-index-ii/) | Medium |
 | [3980-best-time-to-buy-and-sell-stock-using-strategy](https://github.com/jonahlewis4/leetcode/tree/master/3980-best-time-to-buy-and-sell-stock-using-strategy) |
 ## Union Find
