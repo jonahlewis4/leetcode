@@ -155,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/jonahlewis4/leetcode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0454-4sum-ii](https://github.com/jonahlewis4/leetcode/tree/main/0454-4sum-ii/) | Medium |
 | [0455-assign-cookies](https://github.com/jonahlewis4/leetcode/tree/master/0455-assign-cookies) |
+| [0456-132-pattern](https://github.com/jonahlewis4/leetcode/tree/main/0456-132-pattern/) | Medium |
 | [0485-max-consecutive-ones](https://github.com/jonahlewis4/leetcode/tree/master/0485-max-consecutive-ones) |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/jonahlewis4/leetcode/tree/master/0494-target-sum) |
@@ -726,6 +727,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0400-nth-digit](https://github.com/jonahlewis4/leetcode/tree/main/0400-nth-digit/) | Medium |
 | [0436-find-right-interval](https://github.com/jonahlewis4/leetcode/tree/main/0436-find-right-interval/) | Medium |
 | [0441-arranging-coins](https://github.com/jonahlewis4/leetcode/tree/master/0441-arranging-coins) |
+| [0456-132-pattern](https://github.com/jonahlewis4/leetcode/tree/main/0456-132-pattern/) | Medium |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [0540-single-element-in-a-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/jonahlewis4/leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
@@ -1853,6 +1855,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0394-decode-string](https://github.com/jonahlewis4/leetcode/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/jonahlewis4/leetcode/tree/master/0402-remove-k-digits) |
 | [0445-add-two-numbers-ii](https://github.com/jonahlewis4/leetcode/tree/main/0445-add-two-numbers-ii/) | Medium |
+| [0456-132-pattern](https://github.com/jonahlewis4/leetcode/tree/main/0456-132-pattern/) | Medium |
 | [0496-next-greater-element-i](https://github.com/jonahlewis4/leetcode/tree/master/0496-next-greater-element-i) |
 | [0589-n-ary-tree-preorder-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0589-n-ary-tree-preorder-traversal) |
 | [0590-n-ary-tree-postorder-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0590-n-ary-tree-postorder-traversal) |
@@ -1891,6 +1894,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0085-maximal-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0085-maximal-rectangle) |
 | [0255-verify-preorder-sequence-in-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0255-verify-preorder-sequence-in-binary-search-tree) |
 | [0402-remove-k-digits](https://github.com/jonahlewis4/leetcode/tree/master/0402-remove-k-digits) |
+| [0456-132-pattern](https://github.com/jonahlewis4/leetcode/tree/main/0456-132-pattern/) | Medium |
 | [0496-next-greater-element-i](https://github.com/jonahlewis4/leetcode/tree/master/0496-next-greater-element-i) |
 | [0739-daily-temperatures](https://github.com/jonahlewis4/leetcode/tree/master/0739-daily-temperatures) |
 | [0780-max-chunks-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0780-max-chunks-to-make-sorted) |
@@ -2511,6 +2515,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- | ------- |
 | [0315-count-of-smaller-numbers-after-self](https://github.com/jonahlewis4/leetcode/tree/master/0315-count-of-smaller-numbers-after-self) |
 | [0327-count-of-range-sum](https://github.com/jonahlewis4/leetcode/tree/master/0327-count-of-range-sum) |
+| [0456-132-pattern](https://github.com/jonahlewis4/leetcode/tree/main/0456-132-pattern/) | Medium |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [0716-max-stack](https://github.com/jonahlewis4/leetcode/tree/master/0716-max-stack) |
 | [2429-design-a-food-rating-system](https://github.com/jonahlewis4/leetcode/tree/master/2429-design-a-food-rating-system) |
