@@ -11,9 +11,7 @@ public:
                 best = stack.top();
                 stack.pop();
             }
-            if(nums[i] > best) {
-                stack.push(nums[i]);
-            }
+            stack.push(nums[i]);
         }
 
         return false;
