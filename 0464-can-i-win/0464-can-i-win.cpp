@@ -3,7 +3,7 @@ class Solution {
     int total;
     
     //a call to r means: can player 1 win if mask looks like this on their turn.
-    unordered_map<int, int> map;
+    unordered_map<int, bool> map;
     bool r(int mask, int localTotal) {
         if(map.contains(mask)) {
             return map[mask];
