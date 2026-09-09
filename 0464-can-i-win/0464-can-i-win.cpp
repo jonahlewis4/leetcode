@@ -3,9 +3,9 @@ class Solution {
     int total;
     
     //a call to r means: can player 1 win if mask looks like this on their turn.
-    unordered_map<int, bool> map;
+    vector<char> map;
     bool r(int mask, int localTotal) {
-        if(map.contains(mask)) {
+        if(map[mask] != 2) {
             return map[mask];
         }
         int sumAlreadyChosen = 0;
@@ -37,6 +37,7 @@ public:
         }
         topNumber = maxChoosableInteger;
         total = desiredTotal; 
+        map.resize(1 << topNumber, 2);
         return r(0, 0);
     }
 };
