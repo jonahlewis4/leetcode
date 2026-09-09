@@ -586,6 +586,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0413-arithmetic-slices](https://github.com/jonahlewis4/leetcode/tree/main/0413-arithmetic-slices/) | Medium |
 | [0416-partition-equal-subset-sum](https://github.com/jonahlewis4/leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0435-non-overlapping-intervals](https://github.com/jonahlewis4/leetcode/tree/master/0435-non-overlapping-intervals) |
+| [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0494-target-sum](https://github.com/jonahlewis4/leetcode/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/jonahlewis4/leetcode/tree/master/0518-coin-change-ii) |
 | [0647-palindromic-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0647-palindromic-substrings) |
@@ -1030,6 +1031,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0447-number-of-boomerangs](https://github.com/jonahlewis4/leetcode/tree/main/0447-number-of-boomerangs/) | Medium |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/jonahlewis4/leetcode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/jonahlewis4/leetcode/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
+| [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0492-construct-the-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0492-construct-the-rectangle) |
 | [0504-base-7](https://github.com/jonahlewis4/leetcode/tree/master/0504-base-7) |
 | [0507-perfect-number](https://github.com/jonahlewis4/leetcode/tree/master/0507-perfect-number) |
@@ -1573,6 +1575,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0405-convert-a-number-to-hexadecimal](https://github.com/jonahlewis4/leetcode/tree/master/0405-convert-a-number-to-hexadecimal) |
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/jonahlewis4/leetcode/tree/main/0421-maximum-xor-of-two-numbers-in-an-array/) | Medium |
 | [0461-hamming-distance](https://github.com/jonahlewis4/leetcode/tree/master/0461-hamming-distance) |
+| [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0476-number-complement](https://github.com/jonahlewis4/leetcode/tree/master/0476-number-complement) |
 | [0645-set-mismatch](https://github.com/jonahlewis4/leetcode/tree/master/0645-set-mismatch) |
 | [0693-binary-number-with-alternating-bits](https://github.com/jonahlewis4/leetcode/tree/master/0693-binary-number-with-alternating-bits) |
@@ -2443,6 +2446,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0070-climbing-stairs) |
 | [0139-word-break](https://github.com/jonahlewis4/leetcode/tree/master/0139-word-break) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
+| [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [1013-fibonacci-number](https://github.com/jonahlewis4/leetcode/tree/master/1013-fibonacci-number) |
 | [1137-n-th-tribonacci-number](https://github.com/jonahlewis4/leetcode/tree/master/1137-n-th-tribonacci-number) |
 | [1900-the-earliest-and-latest-rounds-where-players-compete](https://github.com/jonahlewis4/leetcode/tree/master/1900-the-earliest-and-latest-rounds-where-players-compete) |
@@ -2563,6 +2567,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- | ------- |
 | [0292-nim-game](https://github.com/jonahlewis4/leetcode/tree/master/0292-nim-game) |
 | [0375-guess-number-higher-or-lower-ii](https://github.com/jonahlewis4/leetcode/tree/master/0375-guess-number-higher-or-lower-ii) |
+| [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [1927-sum-game](https://github.com/jonahlewis4/leetcode/tree/master/1927-sum-game) |
 ## Graph Theory
 | Problem Name | Difficulty |
@@ -2610,4 +2615,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0797-all-paths-from-source-to-target](https://github.com/jonahlewis4/leetcode/tree/main/0797-all-paths-from-source-to-target/) | Medium |
+## Bitmask
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
 <!---LeetCode Topics End-->
