@@ -1,5 +1,5 @@
 class Solution {
-    uint8_t char2Position(char c) {
+    static inline uint8_t char2Position(char c) {
         return (c - 'a')%26;
     }
 public:
