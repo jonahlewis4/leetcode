@@ -5,11 +5,10 @@
 class Solution {
 public:
     static int rand10() {
-        int total = 0;
-        for(int i = 0; i < 5; i++) {
-            int sub = rand7() - 1;
-            total += sub;
+        int num = INT_MAX;
+        while(num >= 40) {
+            num = (rand7() - 1) * 7 + rand7() - 1;
         }
-        return total % 10 + 1;
+        return num % 10 + 1;
     }
 };
