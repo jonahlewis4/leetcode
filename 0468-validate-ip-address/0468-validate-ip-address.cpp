@@ -3,6 +3,7 @@ class Solution {
     public:
         bool virtual parse() = 0;
         string virtual name() const = 0;
+        virtual ~Parser() = default;
     };
     class Parser4 : public Parser{
         const string& s;
