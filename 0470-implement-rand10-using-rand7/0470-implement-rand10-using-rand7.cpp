@@ -4,7 +4,7 @@
 
 class Solution {
 public:
-    int rand10() {
+    static int rand10() {
         int total = 0;
         for(int i = 0; i < 5; i++) {
             int sub = rand7() - 1;
