@@ -1033,6 +1033,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/jonahlewis4/leetcode/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/jonahlewis4/leetcode/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
+| [0470-implement-rand10-using-rand7](https://github.com/jonahlewis4/leetcode/tree/main/0470-implement-rand10-using-rand7/) | Medium |
 | [0492-construct-the-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0492-construct-the-rectangle) |
 | [0504-base-7](https://github.com/jonahlewis4/leetcode/tree/master/0504-base-7) |
 | [0507-perfect-number](https://github.com/jonahlewis4/leetcode/tree/master/0507-perfect-number) |
@@ -2417,6 +2418,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0382-linked-list-random-node](https://github.com/jonahlewis4/leetcode/tree/master/0382-linked-list-random-node) |
 | [0384-shuffle-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0384-shuffle-an-array) |
 | [0398-random-pick-index](https://github.com/jonahlewis4/leetcode/tree/main/0398-random-pick-index/) | Medium |
+| [0470-implement-rand10-using-rand7](https://github.com/jonahlewis4/leetcode/tree/main/0470-implement-rand10-using-rand7/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/jonahlewis4/leetcode/tree/master/0912-random-pick-with-weight) |
 ## Number Theory
 | Problem Name | Difficulty |
@@ -2564,6 +2566,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Probability and Statistics
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0470-implement-rand10-using-rand7](https://github.com/jonahlewis4/leetcode/tree/main/0470-implement-rand10-using-rand7/) | Medium |
 | [0867-new-21-game](https://github.com/jonahlewis4/leetcode/tree/master/0867-new-21-game) |
 ## Game Theory
 | Problem Name | Difficulty |
@@ -2622,4 +2625,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
+## Rejection Sampling
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0470-implement-rand10-using-rand7](https://github.com/jonahlewis4/leetcode/tree/main/0470-implement-rand10-using-rand7/) | Medium |
 <!---LeetCode Topics End-->
