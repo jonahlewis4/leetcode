@@ -42,6 +42,7 @@ public:
         sideLength = perim / 4;
         dp.resize((1<<matchsticks.size())-1, 2);
         int mask = 0;
+        sort(matchsticks.rbegin(), matchsticks.rend());
         return r(matchsticks, 0, mask);
 
     }
