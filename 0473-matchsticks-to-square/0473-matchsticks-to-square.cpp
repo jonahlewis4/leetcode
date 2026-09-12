@@ -43,6 +43,9 @@ public:
         dp.resize((1<<matchsticks.size())-1, 2);
         int mask = 0;
         sort(matchsticks.rbegin(), matchsticks.rend());
+        if(matchsticks.front() > sideLength) {
+            return false;
+        }
         return r(matchsticks, 0, mask);
 
     }
