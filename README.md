@@ -158,6 +158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0456-132-pattern](https://github.com/jonahlewis4/leetcode/tree/main/0456-132-pattern/) | Medium |
 | [0457-circular-array-loop](https://github.com/jonahlewis4/leetcode/tree/main/0457-circular-array-loop/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/jonahlewis4/leetcode/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
+| [0473-matchsticks-to-square](https://github.com/jonahlewis4/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
 | [0485-max-consecutive-ones](https://github.com/jonahlewis4/leetcode/tree/master/0485-max-consecutive-ones) |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/jonahlewis4/leetcode/tree/master/0494-target-sum) |
@@ -588,6 +589,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0435-non-overlapping-intervals](https://github.com/jonahlewis4/leetcode/tree/master/0435-non-overlapping-intervals) |
 | [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0467-unique-substrings-in-wraparound-string](https://github.com/jonahlewis4/leetcode/tree/main/0467-unique-substrings-in-wraparound-string/) | Medium |
+| [0473-matchsticks-to-square](https://github.com/jonahlewis4/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
 | [0494-target-sum](https://github.com/jonahlewis4/leetcode/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/jonahlewis4/leetcode/tree/master/0518-coin-change-ii) |
 | [0647-palindromic-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0647-palindromic-substrings) |
@@ -1580,6 +1582,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0421-maximum-xor-of-two-numbers-in-an-array](https://github.com/jonahlewis4/leetcode/tree/main/0421-maximum-xor-of-two-numbers-in-an-array/) | Medium |
 | [0461-hamming-distance](https://github.com/jonahlewis4/leetcode/tree/master/0461-hamming-distance) |
 | [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
+| [0473-matchsticks-to-square](https://github.com/jonahlewis4/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
 | [0476-number-complement](https://github.com/jonahlewis4/leetcode/tree/master/0476-number-complement) |
 | [0645-set-mismatch](https://github.com/jonahlewis4/leetcode/tree/master/0645-set-mismatch) |
 | [0693-binary-number-with-alternating-bits](https://github.com/jonahlewis4/leetcode/tree/master/0693-binary-number-with-alternating-bits) |
@@ -1945,6 +1948,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0306-additive-number](https://github.com/jonahlewis4/leetcode/tree/master/0306-additive-number) |
 | [0357-count-numbers-with-unique-digits](https://github.com/jonahlewis4/leetcode/tree/master/0357-count-numbers-with-unique-digits) |
 | [0401-binary-watch](https://github.com/jonahlewis4/leetcode/tree/master/0401-binary-watch) |
+| [0473-matchsticks-to-square](https://github.com/jonahlewis4/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
 | [0494-target-sum](https://github.com/jonahlewis4/leetcode/tree/master/0494-target-sum) |
 | [0797-all-paths-from-source-to-target](https://github.com/jonahlewis4/leetcode/tree/main/0797-all-paths-from-source-to-target/) | Medium |
 | [0865-robot-room-cleaner](https://github.com/jonahlewis4/leetcode/tree/master/0865-robot-room-cleaner) |
@@ -2625,6 +2629,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
+| [0473-matchsticks-to-square](https://github.com/jonahlewis4/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
 ## Rejection Sampling
 | Problem Name | Difficulty |
 | ------- | ------- |
