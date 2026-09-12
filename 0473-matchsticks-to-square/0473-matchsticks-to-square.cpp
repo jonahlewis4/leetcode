@@ -7,10 +7,6 @@ class Solution {
         if(dp[mask] != 2) {
             return dp[mask];
         }
-        // if(dp[curLen][curSide][mask] != 2){
-        //     return dp[curLen][curSide][mask];
-        // }
-
         for(int i = 0; i < matchsticks.size(); i++){
             int pos = (1<<i);
             bool used = (mask & pos);
