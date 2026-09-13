@@ -159,6 +159,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0457-circular-array-loop](https://github.com/jonahlewis4/leetcode/tree/main/0457-circular-array-loop/) | Medium |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/jonahlewis4/leetcode/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0473-matchsticks-to-square](https://github.com/jonahlewis4/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
+| [0475-heaters](https://github.com/jonahlewis4/leetcode/tree/main/0475-heaters/) | Medium |
 | [0485-max-consecutive-ones](https://github.com/jonahlewis4/leetcode/tree/master/0485-max-consecutive-ones) |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [0494-target-sum](https://github.com/jonahlewis4/leetcode/tree/master/0494-target-sum) |
@@ -465,6 +466,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0452-minimum-number-of-arrows-to-burst-balloons](https://github.com/jonahlewis4/leetcode/tree/main/0452-minimum-number-of-arrows-to-burst-balloons/) | Medium |
 | [0455-assign-cookies](https://github.com/jonahlewis4/leetcode/tree/master/0455-assign-cookies) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/jonahlewis4/leetcode/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
+| [0475-heaters](https://github.com/jonahlewis4/leetcode/tree/main/0475-heaters/) | Medium |
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0561-array-partition](https://github.com/jonahlewis4/leetcode/tree/master/0561-array-partition) |
 | [0594-longest-harmonious-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0594-longest-harmonious-subsequence) |
@@ -735,6 +737,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0436-find-right-interval](https://github.com/jonahlewis4/leetcode/tree/main/0436-find-right-interval/) | Medium |
 | [0441-arranging-coins](https://github.com/jonahlewis4/leetcode/tree/master/0441-arranging-coins) |
 | [0456-132-pattern](https://github.com/jonahlewis4/leetcode/tree/main/0456-132-pattern/) | Medium |
+| [0475-heaters](https://github.com/jonahlewis4/leetcode/tree/main/0475-heaters/) | Medium |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [0540-single-element-in-a-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/jonahlewis4/leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
@@ -1173,6 +1176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0443-string-compression](https://github.com/jonahlewis4/leetcode/tree/master/0443-string-compression) |
 | [0455-assign-cookies](https://github.com/jonahlewis4/leetcode/tree/master/0455-assign-cookies) |
 | [0457-circular-array-loop](https://github.com/jonahlewis4/leetcode/tree/main/0457-circular-array-loop/) | Medium |
+| [0475-heaters](https://github.com/jonahlewis4/leetcode/tree/main/0475-heaters/) | Medium |
 | [0541-reverse-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/0541-reverse-string-ii) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/jonahlewis4/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
