@@ -1179,6 +1179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/jonahlewis4/leetcode/tree/master/0455-assign-cookies) |
 | [0457-circular-array-loop](https://github.com/jonahlewis4/leetcode/tree/main/0457-circular-array-loop/) | Medium |
 | [0475-heaters](https://github.com/jonahlewis4/leetcode/tree/main/0475-heaters/) | Medium |
+| [0481-magical-string](https://github.com/jonahlewis4/leetcode/tree/main/0481-magical-string/) | Medium |
 | [0541-reverse-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/0541-reverse-string-ii) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/jonahlewis4/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
@@ -1428,6 +1429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0459-repeated-substring-pattern](https://github.com/jonahlewis4/leetcode/tree/master/0459-repeated-substring-pattern) |
 | [0467-unique-substrings-in-wraparound-string](https://github.com/jonahlewis4/leetcode/tree/main/0467-unique-substrings-in-wraparound-string/) | Medium |
 | [0468-validate-ip-address](https://github.com/jonahlewis4/leetcode/tree/main/0468-validate-ip-address/) | Medium |
+| [0481-magical-string](https://github.com/jonahlewis4/leetcode/tree/main/0481-magical-string/) | Medium |
 | [0500-keyboard-row](https://github.com/jonahlewis4/leetcode/tree/master/0500-keyboard-row) |
 | [0504-base-7](https://github.com/jonahlewis4/leetcode/tree/master/0504-base-7) |
 | [0520-detect-capital](https://github.com/jonahlewis4/leetcode/tree/master/0520-detect-capital) |
