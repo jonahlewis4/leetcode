@@ -11,7 +11,7 @@ public:
                 res[stack.top()] = nums[idx];
                 stack.pop();
             }
-            if(res[idx] == INT_MIN) {
+            if(i == idx) {
                 stack.push(idx);
             }
         }
