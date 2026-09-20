@@ -1317,6 +1317,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2692-take-gifts-from-the-richest-pile](https://github.com/jonahlewis4/leetcode/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2810-faulty-keyboard](https://github.com/jonahlewis4/leetcode/tree/master/2810-faulty-keyboard) |
 | [3433-count-mentions-per-user](https://github.com/jonahlewis4/leetcode/tree/master/3433-count-mentions-per-user) |
+| [3498-reverse-degree-of-a-string](https://github.com/jonahlewis4/leetcode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 | [3600-find-the-k-th-character-in-string-game-i](https://github.com/jonahlewis4/leetcode/tree/master/3600-find-the-k-th-character-in-string-game-i) |
 | [3726-remove-zeros-in-decimal-representation](https://github.com/jonahlewis4/leetcode/tree/master/3726-remove-zeros-in-decimal-representation) |
 | [3790-fruits-into-baskets-ii](https://github.com/jonahlewis4/leetcode/tree/master/3790-fruits-into-baskets-ii) |
@@ -1566,6 +1567,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3410-find-longest-self-contained-substring](https://github.com/jonahlewis4/leetcode/tree/master/3410-find-longest-self-contained-substring) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/jonahlewis4/leetcode/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3451-string-compression-iii](https://github.com/jonahlewis4/leetcode/tree/master/3451-string-compression-iii) |
+| [3498-reverse-degree-of-a-string](https://github.com/jonahlewis4/leetcode/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 | [3606-coupon-code-validator](https://github.com/jonahlewis4/leetcode/tree/master/3606-coupon-code-validator) |
 | [3617-find-the-original-typed-string-i](https://github.com/jonahlewis4/leetcode/tree/master/3617-find-the-original-typed-string-i) |
 | [3618-find-the-original-typed-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/3618-find-the-original-typed-string-ii) |
