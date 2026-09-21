@@ -599,6 +599,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0473-matchsticks-to-square](https://github.com/jonahlewis4/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
 | [0486-predict-the-winner](https://github.com/jonahlewis4/leetcode/tree/main/0486-predict-the-winner/) | Medium |
 | [0494-target-sum](https://github.com/jonahlewis4/leetcode/tree/master/0494-target-sum) |
+| [0516-longest-palindromic-subsequence](https://github.com/jonahlewis4/leetcode/tree/main/0516-longest-palindromic-subsequence/) | Medium |
 | [0518-coin-change-ii](https://github.com/jonahlewis4/leetcode/tree/master/0518-coin-change-ii) |
 | [0647-palindromic-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0647-palindromic-substrings) |
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
@@ -1444,6 +1445,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0481-magical-string](https://github.com/jonahlewis4/leetcode/tree/main/0481-magical-string/) | Medium |
 | [0500-keyboard-row](https://github.com/jonahlewis4/leetcode/tree/master/0500-keyboard-row) |
 | [0504-base-7](https://github.com/jonahlewis4/leetcode/tree/master/0504-base-7) |
+| [0516-longest-palindromic-subsequence](https://github.com/jonahlewis4/leetcode/tree/main/0516-longest-palindromic-subsequence/) | Medium |
 | [0520-detect-capital](https://github.com/jonahlewis4/leetcode/tree/master/0520-detect-capital) |
 | [0521-longest-uncommon-subsequence-i](https://github.com/jonahlewis4/leetcode/tree/master/0521-longest-uncommon-subsequence-i) |
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
