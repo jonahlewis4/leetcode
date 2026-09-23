@@ -1,5 +1,5 @@
 class Solution {
-    bool isSub(const string& small, const string& large) {
+    static bool isSub(const string& small, const string& large) {
         int smallI = 0;
         int largeI = 0;
 
