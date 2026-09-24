@@ -2,14 +2,14 @@ class Solution {
 public:
     bool checkSubarraySum(vector<int>& nums, int k) {
         int sum = 0;
-        vector<bool> found(k);
-        found[0] = true;
+        unordered_set<int> found;
+        found.insert(0);
         int prev = -1;
         for(int i = 0; i < nums.size(); i++) {
             int num = nums[i];
             sum += num;
             sum %= k;
-            if(found[sum] && (num % k) > 0) {
+            if(found.contains(sum) && (num % k) > 0) {
                 return true;
             }
             if((num % k) == 0 && prev == 0) {
@@ -17,7 +17,7 @@ public:
             }
 
 
-            found[sum] = true;
+            found.insert(sum);
             prev = num % k;
         }
         return false;
