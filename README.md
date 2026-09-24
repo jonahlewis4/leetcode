@@ -175,6 +175,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0518-coin-change-ii](https://github.com/jonahlewis4/leetcode/tree/master/0518-coin-change-ii) |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/jonahlewis4/leetcode/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [0523-continuous-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/main/0523-continuous-subarray-sum/) | Medium |
+| [0524-longest-word-in-dictionary-through-deleting](https://github.com/jonahlewis4/leetcode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0540-single-element-in-a-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
@@ -475,6 +476,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/jonahlewis4/leetcode/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0475-heaters](https://github.com/jonahlewis4/leetcode/tree/main/0475-heaters/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/jonahlewis4/leetcode/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
+| [0524-longest-word-in-dictionary-through-deleting](https://github.com/jonahlewis4/leetcode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0561-array-partition](https://github.com/jonahlewis4/leetcode/tree/master/0561-array-partition) |
 | [0594-longest-harmonious-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0594-longest-harmonious-subsequence) |
@@ -1198,6 +1200,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0475-heaters](https://github.com/jonahlewis4/leetcode/tree/main/0475-heaters/) | Medium |
 | [0481-magical-string](https://github.com/jonahlewis4/leetcode/tree/main/0481-magical-string/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/jonahlewis4/leetcode/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
+| [0524-longest-word-in-dictionary-through-deleting](https://github.com/jonahlewis4/leetcode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
 | [0541-reverse-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/0541-reverse-string-ii) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/jonahlewis4/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
@@ -1456,6 +1459,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0520-detect-capital](https://github.com/jonahlewis4/leetcode/tree/master/0520-detect-capital) |
 | [0521-longest-uncommon-subsequence-i](https://github.com/jonahlewis4/leetcode/tree/master/0521-longest-uncommon-subsequence-i) |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/jonahlewis4/leetcode/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
+| [0524-longest-word-in-dictionary-through-deleting](https://github.com/jonahlewis4/leetcode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0541-reverse-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/0541-reverse-string-ii) |
 | [0551-student-attendance-record-i](https://github.com/jonahlewis4/leetcode/tree/master/0551-student-attendance-record-i) |
