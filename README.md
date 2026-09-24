@@ -174,6 +174,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0503-next-greater-element-ii](https://github.com/jonahlewis4/leetcode/tree/main/0503-next-greater-element-ii/) | Medium |
 | [0518-coin-change-ii](https://github.com/jonahlewis4/leetcode/tree/master/0518-coin-change-ii) |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/jonahlewis4/leetcode/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
+| [0523-continuous-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/main/0523-continuous-subarray-sum/) | Medium |
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0540-single-element-in-a-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
@@ -891,6 +892,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0500-keyboard-row](https://github.com/jonahlewis4/leetcode/tree/master/0500-keyboard-row) |
 | [0508-most-frequent-subtree-sum](https://github.com/jonahlewis4/leetcode/tree/main/0508-most-frequent-subtree-sum/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/jonahlewis4/leetcode/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
+| [0523-continuous-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/main/0523-continuous-subarray-sum/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
 | [0575-distribute-candies](https://github.com/jonahlewis4/leetcode/tree/master/0575-distribute-candies) |
@@ -1058,6 +1060,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0497-random-point-in-non-overlapping-rectangles](https://github.com/jonahlewis4/leetcode/tree/main/0497-random-point-in-non-overlapping-rectangles/) | Medium |
 | [0504-base-7](https://github.com/jonahlewis4/leetcode/tree/master/0504-base-7) |
 | [0507-perfect-number](https://github.com/jonahlewis4/leetcode/tree/master/0507-perfect-number) |
+| [0523-continuous-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/main/0523-continuous-subarray-sum/) | Medium |
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0628-maximum-product-of-three-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0670-maximum-swap](https://github.com/jonahlewis4/leetcode/tree/master/0670-maximum-swap) |
@@ -1785,6 +1788,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0303-range-sum-query-immutable](https://github.com/jonahlewis4/leetcode/tree/master/0303-range-sum-query-immutable) |
 | [0304-range-sum-query-2d-immutable](https://github.com/jonahlewis4/leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0497-random-point-in-non-overlapping-rectangles](https://github.com/jonahlewis4/leetcode/tree/main/0497-random-point-in-non-overlapping-rectangles/) | Medium |
+| [0523-continuous-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/main/0523-continuous-subarray-sum/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0724-find-pivot-index](https://github.com/jonahlewis4/leetcode/tree/master/0724-find-pivot-index) |
@@ -2691,4 +2695,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0508-most-frequent-subtree-sum](https://github.com/jonahlewis4/leetcode/tree/main/0508-most-frequent-subtree-sum/) | Medium |
+## Pigeonhole Principle
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0523-continuous-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/main/0523-continuous-subarray-sum/) | Medium |
 <!---LeetCode Topics End-->
