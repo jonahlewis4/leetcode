@@ -176,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0522-longest-uncommon-subsequence-ii](https://github.com/jonahlewis4/leetcode/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [0523-continuous-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/main/0523-continuous-subarray-sum/) | Medium |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/jonahlewis4/leetcode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
+| [0526-beautiful-arrangement](https://github.com/jonahlewis4/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0540-single-element-in-a-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0540-single-element-in-a-sorted-array) |
 | [0554-brick-wall](https://github.com/jonahlewis4/leetcode/tree/main/0554-brick-wall/) | Medium |
@@ -607,6 +608,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/jonahlewis4/leetcode/tree/master/0494-target-sum) |
 | [0516-longest-palindromic-subsequence](https://github.com/jonahlewis4/leetcode/tree/main/0516-longest-palindromic-subsequence/) | Medium |
 | [0518-coin-change-ii](https://github.com/jonahlewis4/leetcode/tree/master/0518-coin-change-ii) |
+| [0526-beautiful-arrangement](https://github.com/jonahlewis4/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0647-palindromic-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0647-palindromic-substrings) |
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
@@ -1623,6 +1625,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0476-number-complement](https://github.com/jonahlewis4/leetcode/tree/master/0476-number-complement) |
 | [0477-total-hamming-distance](https://github.com/jonahlewis4/leetcode/tree/main/0477-total-hamming-distance/) | Medium |
 | [0491-non-decreasing-subsequences](https://github.com/jonahlewis4/leetcode/tree/main/0491-non-decreasing-subsequences/) | Medium |
+| [0526-beautiful-arrangement](https://github.com/jonahlewis4/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0645-set-mismatch](https://github.com/jonahlewis4/leetcode/tree/master/0645-set-mismatch) |
 | [0693-binary-number-with-alternating-bits](https://github.com/jonahlewis4/leetcode/tree/master/0693-binary-number-with-alternating-bits) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/jonahlewis4/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
@@ -1994,6 +1997,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0473-matchsticks-to-square](https://github.com/jonahlewis4/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
 | [0491-non-decreasing-subsequences](https://github.com/jonahlewis4/leetcode/tree/main/0491-non-decreasing-subsequences/) | Medium |
 | [0494-target-sum](https://github.com/jonahlewis4/leetcode/tree/master/0494-target-sum) |
+| [0526-beautiful-arrangement](https://github.com/jonahlewis4/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0797-all-paths-from-source-to-target](https://github.com/jonahlewis4/leetcode/tree/main/0797-all-paths-from-source-to-target/) | Medium |
 | [0865-robot-room-cleaner](https://github.com/jonahlewis4/leetcode/tree/master/0865-robot-room-cleaner) |
 | [1160-letter-tile-possibilities](https://github.com/jonahlewis4/leetcode/tree/master/1160-letter-tile-possibilities) |
@@ -2685,6 +2689,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- | ------- |
 | [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0473-matchsticks-to-square](https://github.com/jonahlewis4/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
+| [0526-beautiful-arrangement](https://github.com/jonahlewis4/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 ## Rejection Sampling
 | Problem Name | Difficulty |
 | ------- | ------- |
