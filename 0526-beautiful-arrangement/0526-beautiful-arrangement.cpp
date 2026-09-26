@@ -10,12 +10,12 @@ private:
             return cache[mask];
         }
         int total = 0;
-        for(int j = 1; j <= n; j++) {
+        for(int j = 0; j < n; j++) {
             if((mask&(1<<j))!=0) {
                 continue;
             }
 
-            if(!(i % j == 0 || j%i==0)){
+            if(!(i % (j+1) == 0 || (j+1)%i==0)){
                 continue;
             }
 
@@ -28,7 +28,7 @@ private:
 public:
     vector<int> cache;
     int countArrangement(int n) {
-        cache.resize((1<<n+1)+1,-1);
+        cache.resize((1<<n)+1,-1);
         this->n = n;
         return r(1, 0);
     }
