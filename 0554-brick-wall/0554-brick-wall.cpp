@@ -1,7 +1,7 @@
 class Solution {
 public:
     int leastBricks(vector<vector<int>>& wall) {
-        vector<vector<long long>> sweep;
+        vector<pair<long long, int>> sweep;
         
         bool all1 = true;
         for(const vector<int>& row : wall) {
@@ -24,26 +24,26 @@ public:
         }
         long long sum = 0;
 
-        sort(sweep.begin(), sweep.end(), [](const vector<long long>& a, const vector<long long>& b) {
-            if(a.front() < b.front()) {
+        sort(sweep.begin(), sweep.end(), [](const pair<long long, int>& a, const pair<long long, int>& b) {
+            if(a.first < b.first) {
                 return true;
             }
-            if(a.front() > b.front()) {
+            if(a.first > b.first) {
                 return false;
             }
-            return a.back() > b.back();
+            return a.second > b.second;
         });
 
         long long least = INT_MAX;
-        int prevStamp = sweep.front().front();
-        for(const vector<long long> event : sweep) {
+        int prevStamp = sweep.front().first;
+        for(const pair<long long, int>& event : sweep) {
             //cout<<"event: "<<event.front()<<"|"<<event.back()<<endl;
-            int stamp = event.front();
+            int stamp = event.first;
             if(stamp != prevStamp) {
-                cout<<sum<<endl;
+                //cout<<sum<<endl;
                 least = min(least, sum);
             }
-            int num = event.back();
+            int num = event.second;
             sum += num;
             prevStamp = stamp;
         }
