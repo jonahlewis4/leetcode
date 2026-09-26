@@ -28,7 +28,7 @@ private:
 public:
     vector<int> cache;
     int countArrangement(int n) {
-        cache.resize((1<<n)+1,-1);
+        cache.resize((1<<n),-1);
         this->n = n;
         return r(1, 0);
     }
