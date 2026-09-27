@@ -2,7 +2,7 @@ class Solution {
     static vector<pair<int, int>> dirs;
     static int surrounding(vector<vector<char>>& board, int r, int c) {
         int total = 0;
-        for(const pair<int, int> dir : dirs) {
+        for(const pair<int, int>& dir : dirs) {
             int newR = r + dir.first;
             int newC = c + dir.second;
             if(newR < 0 || newC < 0 || newR >= board.size() || newC >= board.front().size()) {
@@ -23,7 +23,7 @@ class Solution {
         int surround = surrounding(board,r,c);
         if(surround == 0) {
             board[r][c] = 'B';
-            for(const pair<int, int> dir : dirs) {
+            for(const pair<int, int>& dir : dirs) {
                 int newR = r + dir.first;
                 int newC = c + dir.second;
                 if(newR < 0 || newC < 0 || newR >= board.size() || newC >= board.front().size()) {
