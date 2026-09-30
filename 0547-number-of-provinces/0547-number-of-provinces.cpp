@@ -45,7 +45,7 @@ public:
     int findCircleNum(vector<vector<int>>& isConnected) {
         DSU dsu(isConnected.size());
         for(int i = 0; i < isConnected.size(); i++) {
-            for(int j = 0; j < isConnected.front().size(); j++) {
+            for(int j = i + 1; j < isConnected.front().size(); j++) {
                 if(isConnected[i][j]) {
                     dsu.merge(i, j);
                 }
