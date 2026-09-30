@@ -2157,6 +2157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0529-minesweeper](https://github.com/jonahlewis4/leetcode/tree/main/0529-minesweeper/) | Medium |
 | [0538-convert-bst-to-greater-tree](https://github.com/jonahlewis4/leetcode/tree/main/0538-convert-bst-to-greater-tree/) | Medium |
 | [0543-diameter-of-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0543-diameter-of-binary-tree) |
+| [0547-number-of-provinces](https://github.com/jonahlewis4/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0559-maximum-depth-of-n-ary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0559-maximum-depth-of-n-ary-tree) |
 | [0563-binary-tree-tilt](https://github.com/jonahlewis4/leetcode/tree/master/0563-binary-tree-tilt) |
 | [0572-subtree-of-another-tree](https://github.com/jonahlewis4/leetcode/tree/master/0572-subtree-of-another-tree) |
@@ -2418,6 +2419,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0515-find-largest-value-in-each-tree-row](https://github.com/jonahlewis4/leetcode/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0529-minesweeper](https://github.com/jonahlewis4/leetcode/tree/main/0529-minesweeper/) | Medium |
 | [0542-01-matrix](https://github.com/jonahlewis4/leetcode/tree/main/0542-01-matrix/) | Medium |
+| [0547-number-of-provinces](https://github.com/jonahlewis4/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0559-maximum-depth-of-n-ary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0559-maximum-depth-of-n-ary-tree) |
 | [0617-merge-two-binary-trees](https://github.com/jonahlewis4/leetcode/tree/master/0617-merge-two-binary-trees) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
@@ -2659,6 +2661,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- | ------- |
 | [0310-minimum-height-trees](https://github.com/jonahlewis4/leetcode/tree/master/0310-minimum-height-trees) |
 | [0399-evaluate-division](https://github.com/jonahlewis4/leetcode/tree/main/0399-evaluate-division/) | Medium |
+| [0547-number-of-provinces](https://github.com/jonahlewis4/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0797-all-paths-from-source-to-target](https://github.com/jonahlewis4/leetcode/tree/main/0797-all-paths-from-source-to-target/) | Medium |
 | [1791-find-center-of-star-graph](https://github.com/jonahlewis4/leetcode/tree/master/1791-find-center-of-star-graph) |
 | [3310-remove-methods-from-project](https://github.com/jonahlewis4/leetcode/tree/main/3310-remove-methods-from-project/) | Medium |
@@ -2676,6 +2679,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0399-evaluate-division](https://github.com/jonahlewis4/leetcode/tree/main/0399-evaluate-division/) | Medium |
+| [0547-number-of-provinces](https://github.com/jonahlewis4/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 ## Bellman–Ford Algorithm
 | Problem Name | Difficulty |
 | ------- | ------- |
