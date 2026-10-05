@@ -186,6 +186,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0554-brick-wall](https://github.com/jonahlewis4/leetcode/tree/main/0554-brick-wall/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0561-array-partition](https://github.com/jonahlewis4/leetcode/tree/master/0561-array-partition) |
+| [0565-array-nesting](https://github.com/jonahlewis4/leetcode/tree/main/0565-array-nesting/) | Medium |
 | [0566-reshape-the-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0566-reshape-the-matrix) |
 | [0575-distribute-candies](https://github.com/jonahlewis4/leetcode/tree/master/0575-distribute-candies) |
 | [0594-longest-harmonious-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0594-longest-harmonious-subsequence) |
@@ -2170,6 +2171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/jonahlewis4/leetcode/tree/main/0547-number-of-provinces/) | Medium |
 | [0559-maximum-depth-of-n-ary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0559-maximum-depth-of-n-ary-tree) |
 | [0563-binary-tree-tilt](https://github.com/jonahlewis4/leetcode/tree/master/0563-binary-tree-tilt) |
+| [0565-array-nesting](https://github.com/jonahlewis4/leetcode/tree/main/0565-array-nesting/) | Medium |
 | [0572-subtree-of-another-tree](https://github.com/jonahlewis4/leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0589-n-ary-tree-preorder-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0589-n-ary-tree-preorder-traversal) |
 | [0590-n-ary-tree-postorder-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0590-n-ary-tree-postorder-traversal) |
