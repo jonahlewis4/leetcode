@@ -10,7 +10,6 @@ class Solution {
         int next = nums[i];
         nums[i] = -nums[i] - 1;
         int res = 1 + r(next, nums);
-        nums[i] = next;
         s[i] = res;
         return res;
     }
