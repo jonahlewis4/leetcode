@@ -7,7 +7,7 @@ public:
             int next = nums[i];
             while(next >= 0){
                 int newNext = nums[next];
-                nums[next] = -next - 1;
+                nums[next] = -1;
                 next = newNext;
                 cycLen++;
             }
