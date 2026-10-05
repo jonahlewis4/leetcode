@@ -1,24 +1,21 @@
 class Solution {
-    vector<int> s;
-    int r(int i, vector<int>& nums){
-        if(s[i] > 0) {
-            return s[i] + 1;
-        }
-        if(nums[i] < 0) {
-            return 0;
-        }
-        int next = nums[i];
-        nums[i] = -nums[i] - 1;
-        int res = 1 + r(next, nums);
-        s[i] = res;
-        return res;
-    }
 public:
     int arrayNesting(vector<int>& nums) {
-        s.resize(nums.size(), -1);
+        int best = 0;
         for(int i = 0; i < nums.size(); i++) {
-            r(i, nums);
+            int cycLen = 0;
+            int next = nums[i];
+            while(next >= 0){
+                int newNext = nums[next];
+                nums[next] = -next - 1;
+                next = newNext;
+                cycLen++;
+            }
+
+            best = max(cycLen-1, best);
         }
-        return *max_element(s.begin(), s.end());
+
+        return best;
+
     }
 };
