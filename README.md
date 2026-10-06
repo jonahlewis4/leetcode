@@ -618,6 +618,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0526-beautiful-arrangement](https://github.com/jonahlewis4/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0542-01-matrix](https://github.com/jonahlewis4/leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0553-optimal-division](https://github.com/jonahlewis4/leetcode/tree/main/0553-optimal-division/) | Medium |
+| [0576-out-of-boundary-paths](https://github.com/jonahlewis4/leetcode/tree/main/0576-out-of-boundary-paths/) | Medium |
 | [0647-palindromic-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0647-palindromic-substrings) |
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
