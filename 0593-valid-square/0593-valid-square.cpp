@@ -16,8 +16,8 @@ public:
         int s3 = len(pts[1], pts[3]);
         int s4 = len(pts[2], pts[3]);
 
-        int d1 = len(p2,p3);
-        int d2 = len(p1,p4);
+        int d1 = len(pts[1],pts[2]);
+        int d2 = len(pts[0],pts[3]);
 
         return s1 == s2 && s2 == s3 && s3 == s4 && d1 == d2 && s1 > 0;
 
