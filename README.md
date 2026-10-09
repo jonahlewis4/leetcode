@@ -1087,6 +1087,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0553-optimal-division](https://github.com/jonahlewis4/leetcode/tree/main/0553-optimal-division/) | Medium |
 | [0556-next-greater-element-iii](https://github.com/jonahlewis4/leetcode/tree/main/0556-next-greater-element-iii/) | Medium |
+| [0593-valid-square](https://github.com/jonahlewis4/leetcode/tree/main/0593-valid-square/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0670-maximum-swap](https://github.com/jonahlewis4/leetcode/tree/master/0670-maximum-swap) |
 | [0728-self-dividing-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0728-self-dividing-numbers) |
@@ -1894,6 +1895,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0223-rectangle-area](https://github.com/jonahlewis4/leetcode/tree/master/0223-rectangle-area) |
+| [0593-valid-square](https://github.com/jonahlewis4/leetcode/tree/main/0593-valid-square/) | Medium |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 | [1014-k-closest-points-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/1014-k-closest-points-to-origin) |
 | [1037-valid-boomerang](https://github.com/jonahlewis4/leetcode/tree/master/1037-valid-boomerang) |
