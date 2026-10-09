@@ -195,6 +195,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0604-design-compressed-string-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0604-design-compressed-string-iterator) |
 | [0605-can-place-flowers](https://github.com/jonahlewis4/leetcode/tree/master/0605-can-place-flowers) |
 | [0621-task-scheduler](https://github.com/jonahlewis4/leetcode/tree/master/0621-task-scheduler) |
+| [0622-design-circular-queue](https://github.com/jonahlewis4/leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/jonahlewis4/leetcode/tree/main/0624-maximum-distance-in-arrays/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0636-exclusive-time-of-functions](https://github.com/jonahlewis4/leetcode/tree/master/0636-exclusive-time-of-functions) |
@@ -1797,6 +1798,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0432-all-oone-data-structure](https://github.com/jonahlewis4/leetcode/tree/master/0432-all-oone-data-structure) |
 | [0449-serialize-and-deserialize-bst](https://github.com/jonahlewis4/leetcode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
 | [0604-design-compressed-string-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0604-design-compressed-string-iterator) |
+| [0622-design-circular-queue](https://github.com/jonahlewis4/leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0716-max-stack](https://github.com/jonahlewis4/leetcode/tree/master/0716-max-stack) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jonahlewis4/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0816-design-hashset](https://github.com/jonahlewis4/leetcode/tree/master/0816-design-hashset) |
@@ -2315,6 +2317,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/jonahlewis4/leetcode/tree/main/0430-flatten-a-multilevel-doubly-linked-list/) | Medium |
 | [0432-all-oone-data-structure](https://github.com/jonahlewis4/leetcode/tree/master/0432-all-oone-data-structure) |
 | [0445-add-two-numbers-ii](https://github.com/jonahlewis4/leetcode/tree/main/0445-add-two-numbers-ii/) | Medium |
+| [0622-design-circular-queue](https://github.com/jonahlewis4/leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0716-max-stack](https://github.com/jonahlewis4/leetcode/tree/master/0716-max-stack) |
 | [0816-design-hashset](https://github.com/jonahlewis4/leetcode/tree/master/0816-design-hashset) |
 | [0817-design-hashmap](https://github.com/jonahlewis4/leetcode/tree/master/0817-design-hashmap) |
@@ -2364,6 +2367,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0341-flatten-nested-list-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0341-flatten-nested-list-iterator) |
 | [0362-design-hit-counter](https://github.com/jonahlewis4/leetcode/tree/master/0362-design-hit-counter) |
 | [0387-first-unique-character-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/0387-first-unique-character-in-a-string) |
+| [0622-design-circular-queue](https://github.com/jonahlewis4/leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0933-number-of-recent-calls](https://github.com/jonahlewis4/leetcode/tree/master/0933-number-of-recent-calls) |
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
 | [1802-number-of-students-unable-to-eat-lunch](https://github.com/jonahlewis4/leetcode/tree/master/1802-number-of-students-unable-to-eat-lunch) |
