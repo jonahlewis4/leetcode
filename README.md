@@ -392,6 +392,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3046-split-the-array](https://github.com/jonahlewis4/leetcode/tree/master/3046-split-the-array) |
 | [3074-apple-redistribution-into-boxes](https://github.com/jonahlewis4/leetcode/tree/master/3074-apple-redistribution-into-boxes) |
 | [3154-maximum-value-of-an-ordered-triplet-i](https://github.com/jonahlewis4/leetcode/tree/master/3154-maximum-value-of-an-ordered-triplet-i) |
+| [3185-count-pairs-that-form-a-complete-day-ii](https://github.com/jonahlewis4/leetcode/tree/main/3185-count-pairs-that-form-a-complete-day-ii/) | Medium |
 | [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/jonahlewis4/leetcode/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3194-find-words-containing-character](https://github.com/jonahlewis4/leetcode/tree/master/3194-find-words-containing-character) |
 | [3227-find-missing-and-repeated-values](https://github.com/jonahlewis4/leetcode/tree/master/3227-find-missing-and-repeated-values) |
@@ -994,6 +995,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/jonahlewis4/leetcode/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/jonahlewis4/leetcode/tree/main/2958-length-of-longest-subarray-with-at-most-k-frequency/) | Medium |
 | [3046-split-the-array](https://github.com/jonahlewis4/leetcode/tree/master/3046-split-the-array) |
+| [3185-count-pairs-that-form-a-complete-day-ii](https://github.com/jonahlewis4/leetcode/tree/main/3185-count-pairs-that-form-a-complete-day-ii/) | Medium |
 | [3227-find-missing-and-repeated-values](https://github.com/jonahlewis4/leetcode/tree/master/3227-find-missing-and-repeated-values) |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/jonahlewis4/leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3381-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/jonahlewis4/leetcode/tree/master/3381-maximum-subarray-sum-with-length-divisible-by-k) |
@@ -1760,6 +1762,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2300-construct-string-with-repeat-limit](https://github.com/jonahlewis4/leetcode/tree/master/2300-construct-string-with-repeat-limit) |
 | [2351-first-letter-to-appear-twice](https://github.com/jonahlewis4/leetcode/tree/master/2351-first-letter-to-appear-twice) |
 | [3046-split-the-array](https://github.com/jonahlewis4/leetcode/tree/master/3046-split-the-array) |
+| [3185-count-pairs-that-form-a-complete-day-ii](https://github.com/jonahlewis4/leetcode/tree/main/3185-count-pairs-that-form-a-complete-day-ii/) | Medium |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/jonahlewis4/leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3583-count-special-triplets](https://github.com/jonahlewis4/leetcode/tree/master/3583-count-special-triplets) |
 | [3594-identify-the-largest-outlier-in-an-array](https://github.com/jonahlewis4/leetcode/tree/master/3594-identify-the-largest-outlier-in-an-array) |
