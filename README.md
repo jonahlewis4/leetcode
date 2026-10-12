@@ -1081,6 +1081,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0470-implement-rand10-using-rand7](https://github.com/jonahlewis4/leetcode/tree/main/0470-implement-rand10-using-rand7/) | Medium |
 | [0477-total-hamming-distance](https://github.com/jonahlewis4/leetcode/tree/main/0477-total-hamming-distance/) | Medium |
+| [0478-generate-random-point-in-a-circle](https://github.com/jonahlewis4/leetcode/tree/main/0478-generate-random-point-in-a-circle/) | Medium |
 | [0486-predict-the-winner](https://github.com/jonahlewis4/leetcode/tree/main/0486-predict-the-winner/) | Medium |
 | [0492-construct-the-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0492-construct-the-rectangle) |
 | [0497-random-point-in-non-overlapping-rectangles](https://github.com/jonahlewis4/leetcode/tree/main/0497-random-point-in-non-overlapping-rectangles/) | Medium |
@@ -1900,6 +1901,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0223-rectangle-area](https://github.com/jonahlewis4/leetcode/tree/master/0223-rectangle-area) |
+| [0478-generate-random-point-in-a-circle](https://github.com/jonahlewis4/leetcode/tree/main/0478-generate-random-point-in-a-circle/) | Medium |
 | [0593-valid-square](https://github.com/jonahlewis4/leetcode/tree/main/0593-valid-square/) | Medium |
 | [0976-minimum-area-rectangle](https://github.com/jonahlewis4/leetcode/tree/master/0976-minimum-area-rectangle) |
 | [1014-k-closest-points-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -2527,6 +2529,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0384-shuffle-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0384-shuffle-an-array) |
 | [0398-random-pick-index](https://github.com/jonahlewis4/leetcode/tree/main/0398-random-pick-index/) | Medium |
 | [0470-implement-rand10-using-rand7](https://github.com/jonahlewis4/leetcode/tree/main/0470-implement-rand10-using-rand7/) | Medium |
+| [0478-generate-random-point-in-a-circle](https://github.com/jonahlewis4/leetcode/tree/main/0478-generate-random-point-in-a-circle/) | Medium |
 | [0497-random-point-in-non-overlapping-rectangles](https://github.com/jonahlewis4/leetcode/tree/main/0497-random-point-in-non-overlapping-rectangles/) | Medium |
 | [0912-random-pick-with-weight](https://github.com/jonahlewis4/leetcode/tree/master/0912-random-pick-with-weight) |
 ## Number Theory
@@ -2745,6 +2748,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0470-implement-rand10-using-rand7](https://github.com/jonahlewis4/leetcode/tree/main/0470-implement-rand10-using-rand7/) | Medium |
+| [0478-generate-random-point-in-a-circle](https://github.com/jonahlewis4/leetcode/tree/main/0478-generate-random-point-in-a-circle/) | Medium |
 ## Minimax
 | Problem Name | Difficulty |
 | ------- | ------- |
