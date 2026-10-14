@@ -22,7 +22,7 @@ public:
 
     }
 
-    int get(int i) {
+    inline int get(int i) {
         if(map.contains(i)) {
             return map[i];
         }
