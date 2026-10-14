@@ -176,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0522-longest-uncommon-subsequence-ii](https://github.com/jonahlewis4/leetcode/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [0523-continuous-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/main/0523-continuous-subarray-sum/) | Medium |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/jonahlewis4/leetcode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
+| [0525-contiguous-array](https://github.com/jonahlewis4/leetcode/tree/main/0525-contiguous-array/) | Medium |
 | [0526-beautiful-arrangement](https://github.com/jonahlewis4/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0529-minesweeper](https://github.com/jonahlewis4/leetcode/tree/main/0529-minesweeper/) | Medium |
 | [0532-k-diff-pairs-in-an-array](https://github.com/jonahlewis4/leetcode/tree/main/0532-k-diff-pairs-in-an-array/) | Medium |
@@ -917,6 +918,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0519-random-flip-matrix](https://github.com/jonahlewis4/leetcode/tree/main/0519-random-flip-matrix/) | Medium |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/jonahlewis4/leetcode/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [0523-continuous-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/main/0523-continuous-subarray-sum/) | Medium |
+| [0525-contiguous-array](https://github.com/jonahlewis4/leetcode/tree/main/0525-contiguous-array/) | Medium |
 | [0532-k-diff-pairs-in-an-array](https://github.com/jonahlewis4/leetcode/tree/main/0532-k-diff-pairs-in-an-array/) | Medium |
 | [0554-brick-wall](https://github.com/jonahlewis4/leetcode/tree/main/0554-brick-wall/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
@@ -1833,6 +1835,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0304-range-sum-query-2d-immutable](https://github.com/jonahlewis4/leetcode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0497-random-point-in-non-overlapping-rectangles](https://github.com/jonahlewis4/leetcode/tree/main/0497-random-point-in-non-overlapping-rectangles/) | Medium |
 | [0523-continuous-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/main/0523-continuous-subarray-sum/) | Medium |
+| [0525-contiguous-array](https://github.com/jonahlewis4/leetcode/tree/main/0525-contiguous-array/) | Medium |
 | [0560-subarray-sum-equals-k](https://github.com/jonahlewis4/leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0724-find-pivot-index](https://github.com/jonahlewis4/leetcode/tree/master/0724-find-pivot-index) |
