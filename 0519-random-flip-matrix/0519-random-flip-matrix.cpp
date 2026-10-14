@@ -16,7 +16,7 @@ public:
         int swapI = total - 1;
         total--;
         map[i] = get(swapI);
-        map.erase(total);
+        //map.erase(total);
 
         return {resolvedI/n, resolvedI%n};
 
