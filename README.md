@@ -625,6 +625,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0542-01-matrix](https://github.com/jonahlewis4/leetcode/tree/main/0542-01-matrix/) | Medium |
 | [0553-optimal-division](https://github.com/jonahlewis4/leetcode/tree/main/0553-optimal-division/) | Medium |
 | [0576-out-of-boundary-paths](https://github.com/jonahlewis4/leetcode/tree/main/0576-out-of-boundary-paths/) | Medium |
+| [0583-delete-operation-for-two-strings](https://github.com/jonahlewis4/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [0647-palindromic-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0647-palindromic-substrings) |
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
@@ -1503,6 +1504,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0556-next-greater-element-iii](https://github.com/jonahlewis4/leetcode/tree/main/0556-next-greater-element-iii/) | Medium |
 | [0557-reverse-words-in-a-string-iii](https://github.com/jonahlewis4/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
+| [0583-delete-operation-for-two-strings](https://github.com/jonahlewis4/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/jonahlewis4/leetcode/tree/master/0599-minimum-index-sum-of-two-lists) |
 | [0604-design-compressed-string-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0604-design-compressed-string-iterator) |
 | [0606-construct-string-from-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0606-construct-string-from-binary-tree) |
@@ -2772,4 +2774,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0523-continuous-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/main/0523-continuous-subarray-sum/) | Medium |
+## Longest Common Subsequence
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0583-delete-operation-for-two-strings](https://github.com/jonahlewis4/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
 <!---LeetCode Topics End-->
