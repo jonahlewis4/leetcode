@@ -1,8 +1,11 @@
 class Solution {
    
 public:
-    int minDistance(const string& word1, const string& word2) {
-        
+    int minDistance(string& word1, string& word2) {
+        if(word1.size() > word2.size()) {
+            swap(word1, word2);
+        }
+
         vector<int> dp(word1.size(), 0);
         for(int i = 0; i < word1.size(); i++) {
             dp[i] = word1.size() - i;
