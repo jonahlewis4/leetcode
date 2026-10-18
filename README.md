@@ -1097,6 +1097,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0553-optimal-division](https://github.com/jonahlewis4/leetcode/tree/main/0553-optimal-division/) | Medium |
 | [0556-next-greater-element-iii](https://github.com/jonahlewis4/leetcode/tree/main/0556-next-greater-element-iii/) | Medium |
+| [0592-fraction-addition-and-subtraction](https://github.com/jonahlewis4/leetcode/tree/main/0592-fraction-addition-and-subtraction/) | Medium |
 | [0593-valid-square](https://github.com/jonahlewis4/leetcode/tree/main/0593-valid-square/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0670-maximum-swap](https://github.com/jonahlewis4/leetcode/tree/master/0670-maximum-swap) |
@@ -1342,6 +1343,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0498-diagonal-traverse](https://github.com/jonahlewis4/leetcode/tree/master/0498-diagonal-traverse) |
 | [0537-complex-number-multiplication](https://github.com/jonahlewis4/leetcode/tree/main/0537-complex-number-multiplication/) | Medium |
 | [0566-reshape-the-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0566-reshape-the-matrix) |
+| [0592-fraction-addition-and-subtraction](https://github.com/jonahlewis4/leetcode/tree/main/0592-fraction-addition-and-subtraction/) | Medium |
 | [0657-robot-return-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/0657-robot-return-to-origin) |
 | [0682-baseball-game](https://github.com/jonahlewis4/leetcode/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/jonahlewis4/leetcode/tree/master/0735-asteroid-collision) |
@@ -1508,6 +1510,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0557-reverse-words-in-a-string-iii](https://github.com/jonahlewis4/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
 | [0583-delete-operation-for-two-strings](https://github.com/jonahlewis4/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
+| [0592-fraction-addition-and-subtraction](https://github.com/jonahlewis4/leetcode/tree/main/0592-fraction-addition-and-subtraction/) | Medium |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/jonahlewis4/leetcode/tree/master/0599-minimum-index-sum-of-two-lists) |
 | [0604-design-compressed-string-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0604-design-compressed-string-iterator) |
 | [0606-construct-string-from-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0606-construct-string-from-binary-tree) |
@@ -2781,4 +2784,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0583-delete-operation-for-two-strings](https://github.com/jonahlewis4/leetcode/tree/main/0583-delete-operation-for-two-strings/) | Medium |
+## Euclidean Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0592-fraction-addition-and-subtraction](https://github.com/jonahlewis4/leetcode/tree/main/0592-fraction-addition-and-subtraction/) | Medium |
+## Greatest Common Divisor
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0592-fraction-addition-and-subtraction](https://github.com/jonahlewis4/leetcode/tree/main/0592-fraction-addition-and-subtraction/) | Medium |
 <!---LeetCode Topics End-->
