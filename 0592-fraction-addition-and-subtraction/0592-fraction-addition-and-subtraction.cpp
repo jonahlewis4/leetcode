@@ -72,7 +72,6 @@ public:
         Fraction total(0,1);
         while(p.hasNext()) {
             Fraction f = p.getNext();
-            cout<<f<<endl;
             total += f;
         }
 
