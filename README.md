@@ -1093,6 +1093,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0507-perfect-number](https://github.com/jonahlewis4/leetcode/tree/master/0507-perfect-number) |
 | [0519-random-flip-matrix](https://github.com/jonahlewis4/leetcode/tree/main/0519-random-flip-matrix/) | Medium |
 | [0523-continuous-subarray-sum](https://github.com/jonahlewis4/leetcode/tree/main/0523-continuous-subarray-sum/) | Medium |
+| [0537-complex-number-multiplication](https://github.com/jonahlewis4/leetcode/tree/main/0537-complex-number-multiplication/) | Medium |
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0553-optimal-division](https://github.com/jonahlewis4/leetcode/tree/main/0553-optimal-division/) | Medium |
 | [0556-next-greater-element-iii](https://github.com/jonahlewis4/leetcode/tree/main/0556-next-greater-element-iii/) | Medium |
@@ -1339,6 +1340,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0415-add-strings](https://github.com/jonahlewis4/leetcode/tree/master/0415-add-strings) |
 | [0495-teemo-attacking](https://github.com/jonahlewis4/leetcode/tree/master/0495-teemo-attacking) |
 | [0498-diagonal-traverse](https://github.com/jonahlewis4/leetcode/tree/master/0498-diagonal-traverse) |
+| [0537-complex-number-multiplication](https://github.com/jonahlewis4/leetcode/tree/main/0537-complex-number-multiplication/) | Medium |
 | [0566-reshape-the-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0566-reshape-the-matrix) |
 | [0657-robot-return-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/0657-robot-return-to-origin) |
 | [0682-baseball-game](https://github.com/jonahlewis4/leetcode/tree/master/0682-baseball-game) |
@@ -1498,6 +1500,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0521-longest-uncommon-subsequence-i](https://github.com/jonahlewis4/leetcode/tree/master/0521-longest-uncommon-subsequence-i) |
 | [0522-longest-uncommon-subsequence-ii](https://github.com/jonahlewis4/leetcode/tree/main/0522-longest-uncommon-subsequence-ii/) | Medium |
 | [0524-longest-word-in-dictionary-through-deleting](https://github.com/jonahlewis4/leetcode/tree/main/0524-longest-word-in-dictionary-through-deleting/) | Medium |
+| [0537-complex-number-multiplication](https://github.com/jonahlewis4/leetcode/tree/main/0537-complex-number-multiplication/) | Medium |
 | [0539-minimum-time-difference](https://github.com/jonahlewis4/leetcode/tree/master/0539-minimum-time-difference) |
 | [0541-reverse-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/0541-reverse-string-ii) |
 | [0551-student-attendance-record-i](https://github.com/jonahlewis4/leetcode/tree/master/0551-student-attendance-record-i) |
