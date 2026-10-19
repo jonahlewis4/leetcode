@@ -195,6 +195,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0599-minimum-index-sum-of-two-lists](https://github.com/jonahlewis4/leetcode/tree/master/0599-minimum-index-sum-of-two-lists) |
 | [0604-design-compressed-string-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0604-design-compressed-string-iterator) |
 | [0605-can-place-flowers](https://github.com/jonahlewis4/leetcode/tree/master/0605-can-place-flowers) |
+| [0609-find-duplicate-file-in-system](https://github.com/jonahlewis4/leetcode/tree/main/0609-find-duplicate-file-in-system/) | Medium |
 | [0621-task-scheduler](https://github.com/jonahlewis4/leetcode/tree/master/0621-task-scheduler) |
 | [0622-design-circular-queue](https://github.com/jonahlewis4/leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0624-maximum-distance-in-arrays](https://github.com/jonahlewis4/leetcode/tree/main/0624-maximum-distance-in-arrays/) | Medium |
@@ -927,6 +928,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0575-distribute-candies](https://github.com/jonahlewis4/leetcode/tree/master/0575-distribute-candies) |
 | [0594-longest-harmonious-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0594-longest-harmonious-subsequence) |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/jonahlewis4/leetcode/tree/master/0599-minimum-index-sum-of-two-lists) |
+| [0609-find-duplicate-file-in-system](https://github.com/jonahlewis4/leetcode/tree/main/0609-find-duplicate-file-in-system/) | Medium |
 | [0621-task-scheduler](https://github.com/jonahlewis4/leetcode/tree/master/0621-task-scheduler) |
 | [0645-set-mismatch](https://github.com/jonahlewis4/leetcode/tree/master/0645-set-mismatch) |
 | [0697-degree-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0697-degree-of-an-array) |
@@ -1514,6 +1516,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0599-minimum-index-sum-of-two-lists](https://github.com/jonahlewis4/leetcode/tree/master/0599-minimum-index-sum-of-two-lists) |
 | [0604-design-compressed-string-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0604-design-compressed-string-iterator) |
 | [0606-construct-string-from-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0606-construct-string-from-binary-tree) |
+| [0609-find-duplicate-file-in-system](https://github.com/jonahlewis4/leetcode/tree/main/0609-find-duplicate-file-in-system/) | Medium |
 | [0647-palindromic-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0647-palindromic-substrings) |
 | [0657-robot-return-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/0657-robot-return-to-origin) |
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
