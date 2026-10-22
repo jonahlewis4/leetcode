@@ -777,6 +777,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0497-random-point-in-non-overlapping-rectangles](https://github.com/jonahlewis4/leetcode/tree/main/0497-random-point-in-non-overlapping-rectangles/) | Medium |
 | [0532-k-diff-pairs-in-an-array](https://github.com/jonahlewis4/leetcode/tree/main/0532-k-diff-pairs-in-an-array/) | Medium |
 | [0540-single-element-in-a-sorted-array](https://github.com/jonahlewis4/leetcode/tree/master/0540-single-element-in-a-sorted-array) |
+| [0633-sum-of-square-numbers](https://github.com/jonahlewis4/leetcode/tree/main/0633-sum-of-square-numbers/) | Medium |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/jonahlewis4/leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0744-find-smallest-letter-greater-than-target](https://github.com/jonahlewis4/leetcode/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0745-find-smallest-letter-greater-than-target](https://github.com/jonahlewis4/leetcode/tree/master/0745-find-smallest-letter-greater-than-target) |
@@ -1102,6 +1103,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0592-fraction-addition-and-subtraction](https://github.com/jonahlewis4/leetcode/tree/main/0592-fraction-addition-and-subtraction/) | Medium |
 | [0593-valid-square](https://github.com/jonahlewis4/leetcode/tree/main/0593-valid-square/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
+| [0633-sum-of-square-numbers](https://github.com/jonahlewis4/leetcode/tree/main/0633-sum-of-square-numbers/) | Medium |
 | [0670-maximum-swap](https://github.com/jonahlewis4/leetcode/tree/master/0670-maximum-swap) |
 | [0728-self-dividing-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0728-self-dividing-numbers) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/jonahlewis4/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
@@ -1244,6 +1246,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0557-reverse-words-in-a-string-iii](https://github.com/jonahlewis4/leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0567-permutation-in-string](https://github.com/jonahlewis4/leetcode/tree/master/0567-permutation-in-string) |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/jonahlewis4/leetcode/tree/main/0581-shortest-unsorted-continuous-subarray/) | Medium |
+| [0633-sum-of-square-numbers](https://github.com/jonahlewis4/leetcode/tree/main/0633-sum-of-square-numbers/) | Medium |
 | [0647-palindromic-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/jonahlewis4/leetcode/tree/master/0680-valid-palindrome-ii) |
 | [0696-count-binary-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0696-count-binary-substrings) |
