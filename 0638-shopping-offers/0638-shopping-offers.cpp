@@ -19,7 +19,7 @@ class Solution {
     int r(vector<vector<int>>& special, int needs) {
         
         int hashNeeds = needs;
-        if(dp[hashNeeds] >= 0) {
+        if(dp.contains(hashNeeds)) {
             return dp[hashNeeds];
         }
 
@@ -86,7 +86,8 @@ class Solution {
 
         return res;
     }
-    vector<int> dp;
+    //vector<int> dp;
+    unordered_map<int, int> dp;
     vector<int> cachedPrice;
 public:
     int shoppingOffers(vector<int>& price, vector<vector<int>>& special, vector<int>& needs) {
@@ -97,7 +98,7 @@ public:
             return 0;
         }
         maskLen = 32 - __builtin_clz(highestNeed);
-        dp.resize(1 << (n * maskLen), -1);
+        //dp.resize(1 << (n * maskLen), -1);
 
         special = prune(price, special, needs);
         int needMask = 0;
