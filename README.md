@@ -1106,6 +1106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0593-valid-square](https://github.com/jonahlewis4/leetcode/tree/main/0593-valid-square/) | Medium |
 | [0628-maximum-product-of-three-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0633-sum-of-square-numbers](https://github.com/jonahlewis4/leetcode/tree/main/0633-sum-of-square-numbers/) | Medium |
+| [0640-solve-the-equation](https://github.com/jonahlewis4/leetcode/tree/main/0640-solve-the-equation/) | Medium |
 | [0670-maximum-swap](https://github.com/jonahlewis4/leetcode/tree/master/0670-maximum-swap) |
 | [0728-self-dividing-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0728-self-dividing-numbers) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/jonahlewis4/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
@@ -1351,6 +1352,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0537-complex-number-multiplication](https://github.com/jonahlewis4/leetcode/tree/main/0537-complex-number-multiplication/) | Medium |
 | [0566-reshape-the-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0566-reshape-the-matrix) |
 | [0592-fraction-addition-and-subtraction](https://github.com/jonahlewis4/leetcode/tree/main/0592-fraction-addition-and-subtraction/) | Medium |
+| [0640-solve-the-equation](https://github.com/jonahlewis4/leetcode/tree/main/0640-solve-the-equation/) | Medium |
 | [0657-robot-return-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/0657-robot-return-to-origin) |
 | [0682-baseball-game](https://github.com/jonahlewis4/leetcode/tree/master/0682-baseball-game) |
 | [0735-asteroid-collision](https://github.com/jonahlewis4/leetcode/tree/master/0735-asteroid-collision) |
@@ -1522,6 +1524,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0604-design-compressed-string-iterator](https://github.com/jonahlewis4/leetcode/tree/master/0604-design-compressed-string-iterator) |
 | [0606-construct-string-from-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0606-construct-string-from-binary-tree) |
 | [0609-find-duplicate-file-in-system](https://github.com/jonahlewis4/leetcode/tree/main/0609-find-duplicate-file-in-system/) | Medium |
+| [0640-solve-the-equation](https://github.com/jonahlewis4/leetcode/tree/main/0640-solve-the-equation/) | Medium |
 | [0647-palindromic-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0647-palindromic-substrings) |
 | [0657-robot-return-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/0657-robot-return-to-origin) |
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
@@ -2816,4 +2819,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0638-shopping-offers](https://github.com/jonahlewis4/leetcode/tree/main/0638-shopping-offers/) | Medium |
+## Linear Algebra
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0640-solve-the-equation](https://github.com/jonahlewis4/leetcode/tree/main/0640-solve-the-equation/) | Medium |
 <!---LeetCode Topics End-->
