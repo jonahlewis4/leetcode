@@ -23,19 +23,11 @@ class Solution {
             return dp[hashNeeds];
         }
 
-        bool remaining = false;
+        int best = 0;
         for(int i = 0; i < n; i++) {
-            int curVal = extract(needs, i);
-            if(curVal != 0) {
-                remaining = true;
-            }
+            best += extract(needs, i) * cachedPrice[i];
         }
-       
-        if(!remaining) {
-            return 0;
-        }
-
-        int best = INT_MAX;
+        
         for(const vector<int>& offer : special) {
             int newNeeds = needs;
 
@@ -92,19 +84,14 @@ class Solution {
             res.push_back(offer);
         }
 
-        for(int i = 0; i < price.size(); i++) {
-            vector<int> offer(price.size() + 1, 0);
-            offer.back() = price[i];
-            offer[i] = 1;
-            res.push_back(offer);
-        }
         return res;
     }
     vector<int> dp;
-    
+    vector<int> cachedPrice;
 public:
     int shoppingOffers(vector<int>& price, vector<vector<int>>& special, vector<int>& needs) {
         n = price.size();
+        cachedPrice = price;
         int highestNeed = *max_element(needs.begin(), needs.end());
         if(highestNeed == 0) {
             return 0;
