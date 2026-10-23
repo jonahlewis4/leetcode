@@ -17,18 +17,18 @@ class Solution {
         return needs;
     }
     int r(vector<vector<int>>& special, int needs) {
+        
+        int hashNeeds = needs;
+        if(dp[hashNeeds] >= 0) {
+            return dp[hashNeeds];
+        }
+
         bool remaining = false;
         for(int i = 0; i < n; i++) {
             int curVal = extract(needs, i);
             if(curVal != 0) {
                 remaining = true;
             }
-        }
-
-        
-        int hashNeeds = needs;
-        if(dp.contains(hashNeeds)) {
-            return dp[hashNeeds];
         }
        
         if(!remaining) {
@@ -100,11 +100,18 @@ class Solution {
         }
         return res;
     }
-    unordered_map<int, int> dp;
+    vector<int> dp;
+    
 public:
     int shoppingOffers(vector<int>& price, vector<vector<int>>& special, vector<int>& needs) {
         n = price.size();
-        
+        int highestNeed = *max_element(needs.begin(), needs.end());
+        if(highestNeed == 0) {
+            return 0;
+        }
+        maskLen = 32 - __builtin_clz(highestNeed);
+        dp.resize(1 << (n * maskLen), -1);
+
         special = prune(price, special, needs);
         int needMask = 0;
         for(int i = 0; i < needs.size(); i++) {
