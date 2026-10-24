@@ -49,7 +49,7 @@ class Solution {
             children[idx]->firstPrefix(s, res, i + 1);
         }   
         ~Trie() {
-            for(Trie* const child : children) {
+            for(const Trie* const child : children) {
                 delete child;
             }
         }
