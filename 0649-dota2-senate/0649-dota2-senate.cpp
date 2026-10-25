@@ -1,15 +1,15 @@
 class Solution {
     class Senate;
     class Party{
+    protected:
         Party* op;
-        string name;
         queue<int> q;
         friend class Senate;
         int n;
-        Party(Party* op, string name, const string& s):op(op), name(name){
+        Party(Party* op, const string& s, char c):op(op){
             n = s.size();
             for(int i = 0; i < s.size(); i++){
-                if(name.front() == s[i]){
+                if(c == s[i]){
                     q.push(i);
                 }
             }
@@ -20,17 +20,30 @@ class Solution {
             q.push(q.front() + n);
             q.pop();
         }
-        string announce(){
-            return name;
+        string virtual announce() = 0;
+    };
+    class Radiant : public Party{
+    public:
+        Radiant(Party* op, const string& s) : Party(op, s, 'R') {}
+        string announce() override {
+            return "Radiant";
+        }
+
+    };
+    class Dire : public Party{
+    public:
+        Dire(Party* op, const string& s) : Party(op, s, 'D') {}
+        string announce() override {
+            return "Dire";
         }
     };
     class Senate{
-        Party radiant;
-        Party dire;
+        Radiant radiant;
+        Dire dire;
         const string& s;
 
         string handle() {
-            Party* curParty = min(&dire, &radiant, [](const Party* const a, const Party* const b){
+            Party* curParty = min(static_cast<Party*>(&dire), static_cast<Party*>(&radiant), [](const Party* const a, const Party* const b){
                 if(a->q.empty()){
                     return false;
                 }
@@ -48,7 +61,7 @@ class Solution {
             return "";
         }
     public:
-        Senate(const string& s): s(s),  dire(&radiant, "Dire", s), radiant(&dire, "Radiant", s){}
+        Senate(const string& s): s(s),  dire(&radiant, s), radiant(&dire, s){}
         string getWinner(){
             while(true) {
                 string x = handle();
