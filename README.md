@@ -690,6 +690,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/jonahlewis4/leetcode/tree/master/0621-task-scheduler) |
 | [0624-maximum-distance-in-arrays](https://github.com/jonahlewis4/leetcode/tree/main/0624-maximum-distance-in-arrays/) | Medium |
 | [0646-maximum-length-of-pair-chain](https://github.com/jonahlewis4/leetcode/tree/main/0646-maximum-length-of-pair-chain/) | Medium |
+| [0649-dota2-senate](https://github.com/jonahlewis4/leetcode/tree/main/0649-dota2-senate/) | Medium |
 | [0670-maximum-swap](https://github.com/jonahlewis4/leetcode/tree/master/0670-maximum-swap) |
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0680-valid-palindrome-ii](https://github.com/jonahlewis4/leetcode/tree/master/0680-valid-palindrome-ii) |
@@ -1534,6 +1535,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0640-solve-the-equation](https://github.com/jonahlewis4/leetcode/tree/main/0640-solve-the-equation/) | Medium |
 | [0647-palindromic-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0647-palindromic-substrings) |
 | [0648-replace-words](https://github.com/jonahlewis4/leetcode/tree/main/0648-replace-words/) | Medium |
+| [0649-dota2-senate](https://github.com/jonahlewis4/leetcode/tree/main/0649-dota2-senate/) | Medium |
 | [0657-robot-return-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/0657-robot-return-to-origin) |
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0680-valid-palindrome-ii](https://github.com/jonahlewis4/leetcode/tree/master/0680-valid-palindrome-ii) |
@@ -2417,6 +2419,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0387-first-unique-character-in-a-string](https://github.com/jonahlewis4/leetcode/tree/master/0387-first-unique-character-in-a-string) |
 | [0622-design-circular-queue](https://github.com/jonahlewis4/leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0641-design-circular-deque](https://github.com/jonahlewis4/leetcode/tree/main/0641-design-circular-deque/) | Medium |
+| [0649-dota2-senate](https://github.com/jonahlewis4/leetcode/tree/main/0649-dota2-senate/) | Medium |
 | [0933-number-of-recent-calls](https://github.com/jonahlewis4/leetcode/tree/master/0933-number-of-recent-calls) |
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
 | [1802-number-of-students-unable-to-eat-lunch](https://github.com/jonahlewis4/leetcode/tree/master/1802-number-of-students-unable-to-eat-lunch) |
