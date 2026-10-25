@@ -25,8 +25,8 @@ class Solution {
         }
     };
     class Senate{
-        Party dire;
         Party radiant;
+        Party dire;
         const string& s;
 
         string handle() {
