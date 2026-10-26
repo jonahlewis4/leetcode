@@ -1,21 +1,17 @@
 class Solution {
 public:
     int minSteps(int n) {
-        int onScreen = 1;
-        int clipBoard = 0;
-
-        int total = 0;
-        while(onScreen != n){
-            if(n % onScreen == 0) {
-                total+=2;
-                clipBoard = onScreen;
-                onScreen *= 2;
+        int factor = 2;
+        int res = 0;
+        while(n > 1) {
+            if(n%factor == 0){
+                n/=factor;
+                res+=factor;
             } else {
-                total++;
-                onScreen += clipBoard;
+                factor++;
             }
         }
 
-        return total;
+        return res;
     }
 };
