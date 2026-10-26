@@ -6,7 +6,6 @@ public:
 
         int total = 0;
         while(onScreen != n){
-            int remaining = n - onScreen;
             if(n % onScreen == 0) {
                 total+=2;
                 clipBoard = onScreen;
