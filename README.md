@@ -943,6 +943,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0621-task-scheduler](https://github.com/jonahlewis4/leetcode/tree/master/0621-task-scheduler) |
 | [0645-set-mismatch](https://github.com/jonahlewis4/leetcode/tree/master/0645-set-mismatch) |
 | [0648-replace-words](https://github.com/jonahlewis4/leetcode/tree/main/0648-replace-words/) | Medium |
+| [0652-find-duplicate-subtrees](https://github.com/jonahlewis4/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
 | [0697-degree-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0697-degree-of-an-array) |
 | [0748-shortest-completing-word](https://github.com/jonahlewis4/leetcode/tree/master/0748-shortest-completing-word) |
 | [0762-find-anagram-mappings](https://github.com/jonahlewis4/leetcode/tree/master/0762-find-anagram-mappings) |
@@ -2142,6 +2143,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0617-merge-two-binary-trees](https://github.com/jonahlewis4/leetcode/tree/master/0617-merge-two-binary-trees) |
 | [0623-add-one-row-to-tree](https://github.com/jonahlewis4/leetcode/tree/main/0623-add-one-row-to-tree/) | Medium |
 | [0637-average-of-levels-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [0652-find-duplicate-subtrees](https://github.com/jonahlewis4/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/jonahlewis4/leetcode/tree/main/0783-minimum-distance-between-bst-nodes/) | Easy |
@@ -2237,6 +2239,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0617-merge-two-binary-trees](https://github.com/jonahlewis4/leetcode/tree/master/0617-merge-two-binary-trees) |
 | [0623-add-one-row-to-tree](https://github.com/jonahlewis4/leetcode/tree/main/0623-add-one-row-to-tree/) | Medium |
 | [0637-average-of-levels-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [0652-find-duplicate-subtrees](https://github.com/jonahlewis4/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0684-redundant-connection](https://github.com/jonahlewis4/leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/jonahlewis4/leetcode/tree/master/0695-max-area-of-island) |
@@ -2321,6 +2324,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0617-merge-two-binary-trees](https://github.com/jonahlewis4/leetcode/tree/master/0617-merge-two-binary-trees) |
 | [0623-add-one-row-to-tree](https://github.com/jonahlewis4/leetcode/tree/main/0623-add-one-row-to-tree/) | Medium |
 | [0637-average-of-levels-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
+| [0652-find-duplicate-subtrees](https://github.com/jonahlewis4/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/jonahlewis4/leetcode/tree/main/0783-minimum-distance-between-bst-nodes/) | Easy |
 | [0784-insert-into-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
