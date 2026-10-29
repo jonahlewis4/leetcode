@@ -207,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0645-set-mismatch](https://github.com/jonahlewis4/leetcode/tree/master/0645-set-mismatch) |
 | [0646-maximum-length-of-pair-chain](https://github.com/jonahlewis4/leetcode/tree/main/0646-maximum-length-of-pair-chain/) | Medium |
 | [0648-replace-words](https://github.com/jonahlewis4/leetcode/tree/main/0648-replace-words/) | Medium |
+| [0654-maximum-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0654-maximum-binary-tree/) | Medium |
 | [0661-image-smoother](https://github.com/jonahlewis4/leetcode/tree/master/0661-image-smoother) |
 | [0674-longest-continuous-increasing-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0674-longest-continuous-increasing-subsequence) |
 | [0682-baseball-game](https://github.com/jonahlewis4/leetcode/tree/master/0682-baseball-game) |
@@ -1740,6 +1741,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0395-longest-substring-with-at-least-k-repeating-characters](https://github.com/jonahlewis4/leetcode/tree/main/0395-longest-substring-with-at-least-k-repeating-characters/) | Medium |
 | [0493-reverse-pairs](https://github.com/jonahlewis4/leetcode/tree/master/0493-reverse-pairs) |
 | [0558-logical-or-of-two-binary-grids-represented-as-quad-trees](https://github.com/jonahlewis4/leetcode/tree/main/0558-logical-or-of-two-binary-grids-represented-as-quad-trees/) | Medium |
+| [0654-maximum-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0654-maximum-binary-tree/) | Medium |
 | [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0948-sort-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0948-sort-an-array) |
 | [1014-k-closest-points-to-origin](https://github.com/jonahlewis4/leetcode/tree/master/1014-k-closest-points-to-origin) |
@@ -1997,6 +1999,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0589-n-ary-tree-preorder-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0589-n-ary-tree-preorder-traversal) |
 | [0590-n-ary-tree-postorder-traversal](https://github.com/jonahlewis4/leetcode/tree/master/0590-n-ary-tree-postorder-traversal) |
 | [0636-exclusive-time-of-functions](https://github.com/jonahlewis4/leetcode/tree/master/0636-exclusive-time-of-functions) |
+| [0654-maximum-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0654-maximum-binary-tree/) | Medium |
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0682-baseball-game](https://github.com/jonahlewis4/leetcode/tree/master/0682-baseball-game) |
 | [0716-max-stack](https://github.com/jonahlewis4/leetcode/tree/master/0716-max-stack) |
@@ -2035,6 +2038,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/jonahlewis4/leetcode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/jonahlewis4/leetcode/tree/main/0503-next-greater-element-ii/) | Medium |
 | [0581-shortest-unsorted-continuous-subarray](https://github.com/jonahlewis4/leetcode/tree/main/0581-shortest-unsorted-continuous-subarray/) | Medium |
+| [0654-maximum-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0654-maximum-binary-tree/) | Medium |
 | [0739-daily-temperatures](https://github.com/jonahlewis4/leetcode/tree/master/0739-daily-temperatures) |
 | [0780-max-chunks-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0780-max-chunks-to-make-sorted) |
 | [0883-car-fleet](https://github.com/jonahlewis4/leetcode/tree/master/0883-car-fleet) |
@@ -2144,6 +2148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0623-add-one-row-to-tree](https://github.com/jonahlewis4/leetcode/tree/main/0623-add-one-row-to-tree/) | Medium |
 | [0637-average-of-levels-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0652-find-duplicate-subtrees](https://github.com/jonahlewis4/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
+| [0654-maximum-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0654-maximum-binary-tree/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/jonahlewis4/leetcode/tree/main/0783-minimum-distance-between-bst-nodes/) | Easy |
@@ -2325,6 +2330,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0623-add-one-row-to-tree](https://github.com/jonahlewis4/leetcode/tree/main/0623-add-one-row-to-tree/) | Medium |
 | [0637-average-of-levels-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0652-find-duplicate-subtrees](https://github.com/jonahlewis4/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
+| [0654-maximum-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0654-maximum-binary-tree/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/jonahlewis4/leetcode/tree/main/0783-minimum-distance-between-bst-nodes/) | Easy |
 | [0784-insert-into-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
@@ -2848,4 +2854,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0646-maximum-length-of-pair-chain](https://github.com/jonahlewis4/leetcode/tree/main/0646-maximum-length-of-pair-chain/) | Medium |
+## Cartesian Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0654-maximum-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0654-maximum-binary-tree/) | Medium |
 <!---LeetCode Topics End-->
