@@ -10,21 +10,30 @@
  * };
  */
 class Solution {
-    static TreeNode* build(const vector<int>& nums, int l, int r) {
-        if(l > r){
-            return nullptr;
-        }
-
-        vector<int>::const_iterator itr = max_element(nums.begin() + l, nums.begin() + r + 1);
-        int maxI = itr - nums.begin();
-
-        TreeNode* newNode = new TreeNode(*itr);
-        newNode->left = build(nums, l, maxI-1);
-        newNode->right = build(nums, maxI+1, r);
-        return newNode;
-    }
+    
 public:
     TreeNode* constructMaximumBinaryTree(vector<int>& nums) {
-        return build(nums, 0, nums.size() - 1);
+        stack<TreeNode*> stk;
+        for(const int i : nums) {
+            TreeNode* node = new TreeNode(i);
+            TreeNode* chain = nullptr;
+            while(!stk.empty() && stk.top()->val < node->val){
+                stk.top()->right = chain;
+                chain = stk.top();
+                stk.pop();
+            }
+            node->left = chain;
+            stk.push(node);
+            
+            
+        }
+        TreeNode* chain = nullptr;
+        while(stk.size() > 1) {
+            stk.top()->right = chain;
+            chain = stk.top();
+            stk.pop();
+        }
+        stk.top()->right = chain;
+        return stk.top();
     }
 };
