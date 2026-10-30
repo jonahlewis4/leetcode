@@ -20,7 +20,6 @@ class Solution {
         if(!root){
             return;
         }
-        cout<<root->val<<endl;
         res[r][c] = to_string(root->val);
         
         int shift = res.size() - r - 2;
