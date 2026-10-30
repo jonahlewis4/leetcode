@@ -16,25 +16,27 @@ class Solution {
         }
         return 1 + max(height(root->left), height(root->right));
     }
-    void print(TreeNode const *const root, int row, vector<vector<string>>& res, int l, int r) {
+    void print(TreeNode const *const root, int r, int c, vector<vector<string>>& res) {
         if(!root){
             return;
         }
-        int col = (l + r)/2;
-        res[row][col] = to_string(root->val);
+        cout<<root->val<<endl;
+        res[r][c] = to_string(root->val);
         
-
-       
-
-        print(root->left, row+1, res, l, col - 1);
-        print(root->right, row+1, res, col + 1, r);
+        int shift = res.size() - r - 2;
+        if(shift < 0){
+            return;
+        }
+        int offset = 1<<(res.size() - r - 2);
+        print(root->left, r+1, c - offset, res);
+        print(root->right, r+1, c + offset, res);
     }
 public:
     vector<vector<string>> printTree(TreeNode* root) {
         int m = height(root);
         int n = (1 << m) - 1;
         vector<vector<string>> res(m, vector<string>(n));
-        print(root, 0, res, 0, n - 1);
+        print(root, 0, n/2, res);
         return res;
     }
 };
