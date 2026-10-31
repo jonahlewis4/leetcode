@@ -1,27 +1,20 @@
 class Solution {
 public:
     vector<int> findClosestElements(vector<int>& arr, int k, int x) {
-        vector<int> res(k);
-        int dist = INT_MAX;
-        int bestL = 0;
-        int sum = 0;
-        for(int i = 0; i < k - 1; i++){
-            sum += abs(arr[i] - x);
-        }
-        for(int i = k-1; i < arr.size(); i++){
-            int r = i;
-            int l = i - k + 1;  
-            sum += abs(arr[i]-x);
-            if(sum < dist){
-                dist = sum;
-                bestL = l;
+        int l = 0;
+        int r = arr.size() - k;
+        while(l < r) {
+            int m = l + (r-l)/2;
+            int nextEnd = arr[m + k];
+
+            bool xOnRight = (x - arr[m]) > (arr[m+k] - x);
+            if(xOnRight){
+                l = m + 1;
+            } else {
+                r = m;
             }
-            sum -= abs(arr[l]-x);
         }
 
-        for(int i = bestL; i < bestL + k; i++){
-            res[i - bestL] = arr[i];
-        }
-        return res;
+        return vector<int>(arr.begin() + l, arr.begin() + l + k);
     }
 };
