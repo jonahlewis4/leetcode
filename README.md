@@ -209,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0648-replace-words](https://github.com/jonahlewis4/leetcode/tree/main/0648-replace-words/) | Medium |
 | [0654-maximum-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0654-maximum-binary-tree/) | Medium |
 | [0658-find-k-closest-elements](https://github.com/jonahlewis4/leetcode/tree/main/0658-find-k-closest-elements/) | Medium |
+| [0659-split-array-into-consecutive-subsequences](https://github.com/jonahlewis4/leetcode/tree/main/0659-split-array-into-consecutive-subsequences/) | Medium |
 | [0661-image-smoother](https://github.com/jonahlewis4/leetcode/tree/master/0661-image-smoother) |
 | [0674-longest-continuous-increasing-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0674-longest-continuous-increasing-subsequence) |
 | [0682-baseball-game](https://github.com/jonahlewis4/leetcode/tree/master/0682-baseball-game) |
@@ -695,6 +696,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0624-maximum-distance-in-arrays](https://github.com/jonahlewis4/leetcode/tree/main/0624-maximum-distance-in-arrays/) | Medium |
 | [0646-maximum-length-of-pair-chain](https://github.com/jonahlewis4/leetcode/tree/main/0646-maximum-length-of-pair-chain/) | Medium |
 | [0649-dota2-senate](https://github.com/jonahlewis4/leetcode/tree/main/0649-dota2-senate/) | Medium |
+| [0659-split-array-into-consecutive-subsequences](https://github.com/jonahlewis4/leetcode/tree/main/0659-split-array-into-consecutive-subsequences/) | Medium |
 | [0670-maximum-swap](https://github.com/jonahlewis4/leetcode/tree/master/0670-maximum-swap) |
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0680-valid-palindrome-ii](https://github.com/jonahlewis4/leetcode/tree/master/0680-valid-palindrome-ii) |
@@ -838,6 +840,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0407-trapping-rain-water-ii](https://github.com/jonahlewis4/leetcode/tree/master/0407-trapping-rain-water-ii) |
 | [0621-task-scheduler](https://github.com/jonahlewis4/leetcode/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/jonahlewis4/leetcode/tree/main/0658-find-k-closest-elements/) | Medium |
+| [0659-split-array-into-consecutive-subsequences](https://github.com/jonahlewis4/leetcode/tree/main/0659-split-array-into-consecutive-subsequences/) | Medium |
 | [0744-network-delay-time](https://github.com/jonahlewis4/leetcode/tree/master/0744-network-delay-time) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jonahlewis4/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -949,6 +952,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0645-set-mismatch](https://github.com/jonahlewis4/leetcode/tree/master/0645-set-mismatch) |
 | [0648-replace-words](https://github.com/jonahlewis4/leetcode/tree/main/0648-replace-words/) | Medium |
 | [0652-find-duplicate-subtrees](https://github.com/jonahlewis4/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
+| [0659-split-array-into-consecutive-subsequences](https://github.com/jonahlewis4/leetcode/tree/main/0659-split-array-into-consecutive-subsequences/) | Medium |
 | [0697-degree-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0697-degree-of-an-array) |
 | [0748-shortest-completing-word](https://github.com/jonahlewis4/leetcode/tree/master/0748-shortest-completing-word) |
 | [0762-find-anagram-mappings](https://github.com/jonahlewis4/leetcode/tree/master/0762-find-anagram-mappings) |
