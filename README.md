@@ -211,6 +211,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/jonahlewis4/leetcode/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0659-split-array-into-consecutive-subsequences](https://github.com/jonahlewis4/leetcode/tree/main/0659-split-array-into-consecutive-subsequences/) | Medium |
 | [0661-image-smoother](https://github.com/jonahlewis4/leetcode/tree/master/0661-image-smoother) |
+| [0665-non-decreasing-array](https://github.com/jonahlewis4/leetcode/tree/main/0665-non-decreasing-array/) | Medium |
 | [0674-longest-continuous-increasing-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0674-longest-continuous-increasing-subsequence) |
 | [0682-baseball-game](https://github.com/jonahlewis4/leetcode/tree/master/0682-baseball-game) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
