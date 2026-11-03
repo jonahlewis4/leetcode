@@ -212,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0659-split-array-into-consecutive-subsequences](https://github.com/jonahlewis4/leetcode/tree/main/0659-split-array-into-consecutive-subsequences/) | Medium |
 | [0661-image-smoother](https://github.com/jonahlewis4/leetcode/tree/master/0661-image-smoother) |
 | [0665-non-decreasing-array](https://github.com/jonahlewis4/leetcode/tree/main/0665-non-decreasing-array/) | Medium |
+| [0667-beautiful-arrangement-ii](https://github.com/jonahlewis4/leetcode/tree/main/0667-beautiful-arrangement-ii/) | Medium |
 | [0674-longest-continuous-increasing-subsequence](https://github.com/jonahlewis4/leetcode/tree/master/0674-longest-continuous-increasing-subsequence) |
 | [0682-baseball-game](https://github.com/jonahlewis4/leetcode/tree/master/0682-baseball-game) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
@@ -1128,6 +1129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0633-sum-of-square-numbers](https://github.com/jonahlewis4/leetcode/tree/main/0633-sum-of-square-numbers/) | Medium |
 | [0640-solve-the-equation](https://github.com/jonahlewis4/leetcode/tree/main/0640-solve-the-equation/) | Medium |
 | [0650-2-keys-keyboard](https://github.com/jonahlewis4/leetcode/tree/main/0650-2-keys-keyboard/) | Medium |
+| [0667-beautiful-arrangement-ii](https://github.com/jonahlewis4/leetcode/tree/main/0667-beautiful-arrangement-ii/) | Medium |
 | [0670-maximum-swap](https://github.com/jonahlewis4/leetcode/tree/master/0670-maximum-swap) |
 | [0728-self-dividing-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0728-self-dividing-numbers) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/jonahlewis4/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
