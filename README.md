@@ -2163,6 +2163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0654-maximum-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0654-maximum-binary-tree/) | Medium |
 | [0655-print-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0655-print-binary-tree/) | Medium |
 | [0662-maximum-width-of-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
+| [0669-trim-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/main/0669-trim-a-binary-search-tree/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/jonahlewis4/leetcode/tree/main/0783-minimum-distance-between-bst-nodes/) | Easy |
@@ -2261,6 +2262,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0652-find-duplicate-subtrees](https://github.com/jonahlewis4/leetcode/tree/main/0652-find-duplicate-subtrees/) | Medium |
 | [0655-print-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0655-print-binary-tree/) | Medium |
 | [0662-maximum-width-of-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
+| [0669-trim-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/main/0669-trim-a-binary-search-tree/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0684-redundant-connection](https://github.com/jonahlewis4/leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/jonahlewis4/leetcode/tree/master/0695-max-area-of-island) |
@@ -2349,6 +2351,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0654-maximum-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0654-maximum-binary-tree/) | Medium |
 | [0655-print-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0655-print-binary-tree/) | Medium |
 | [0662-maximum-width-of-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
+| [0669-trim-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/main/0669-trim-a-binary-search-tree/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/jonahlewis4/leetcode/tree/main/0783-minimum-distance-between-bst-nodes/) | Easy |
 | [0784-insert-into-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
@@ -2593,6 +2596,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0449-serialize-and-deserialize-bst](https://github.com/jonahlewis4/leetcode/tree/main/0449-serialize-and-deserialize-bst/) | Medium |
 | [0450-delete-node-in-a-bst](https://github.com/jonahlewis4/leetcode/tree/main/0450-delete-node-in-a-bst/) | Medium |
 | [0538-convert-bst-to-greater-tree](https://github.com/jonahlewis4/leetcode/tree/main/0538-convert-bst-to-greater-tree/) | Medium |
+| [0669-trim-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/main/0669-trim-a-binary-search-tree/) | Medium |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/jonahlewis4/leetcode/tree/main/0783-minimum-distance-between-bst-nodes/) | Easy |
 | [0784-insert-into-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jonahlewis4/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
