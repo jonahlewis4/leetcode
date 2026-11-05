@@ -1131,6 +1131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0650-2-keys-keyboard](https://github.com/jonahlewis4/leetcode/tree/main/0650-2-keys-keyboard/) | Medium |
 | [0667-beautiful-arrangement-ii](https://github.com/jonahlewis4/leetcode/tree/main/0667-beautiful-arrangement-ii/) | Medium |
 | [0670-maximum-swap](https://github.com/jonahlewis4/leetcode/tree/master/0670-maximum-swap) |
+| [0672-bulb-switcher-ii](https://github.com/jonahlewis4/leetcode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0728-self-dividing-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0728-self-dividing-numbers) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/jonahlewis4/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0867-new-21-game](https://github.com/jonahlewis4/leetcode/tree/master/0867-new-21-game) |
@@ -1707,6 +1708,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0526-beautiful-arrangement](https://github.com/jonahlewis4/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0638-shopping-offers](https://github.com/jonahlewis4/leetcode/tree/main/0638-shopping-offers/) | Medium |
 | [0645-set-mismatch](https://github.com/jonahlewis4/leetcode/tree/master/0645-set-mismatch) |
+| [0672-bulb-switcher-ii](https://github.com/jonahlewis4/leetcode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0693-binary-number-with-alternating-bits](https://github.com/jonahlewis4/leetcode/tree/master/0693-binary-number-with-alternating-bits) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/jonahlewis4/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0868-binary-gap](https://github.com/jonahlewis4/leetcode/tree/master/0868-binary-gap) |
@@ -2264,6 +2266,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0669-trim-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/main/0669-trim-a-binary-search-tree/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
+| [0672-bulb-switcher-ii](https://github.com/jonahlewis4/leetcode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0684-redundant-connection](https://github.com/jonahlewis4/leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/jonahlewis4/leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/jonahlewis4/leetcode/tree/master/0733-flood-fill) |
@@ -2535,6 +2538,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0637-average-of-levels-in-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0655-print-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0655-print-binary-tree/) | Medium |
 | [0662-maximum-width-of-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
+| [0672-bulb-switcher-ii](https://github.com/jonahlewis4/leetcode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0684-redundant-connection](https://github.com/jonahlewis4/leetcode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/jonahlewis4/leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/jonahlewis4/leetcode/tree/master/0733-flood-fill) |
