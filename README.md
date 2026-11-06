@@ -1659,6 +1659,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3195-separate-black-and-white-balls](https://github.com/jonahlewis4/leetcode/tree/master/3195-separate-black-and-white-balls) |
 | [3280-convert-date-to-binary](https://github.com/jonahlewis4/leetcode/tree/master/3280-convert-date-to-binary) |
 | [3333-find-the-original-typed-string-ii](https://github.com/jonahlewis4/leetcode/tree/master/3333-find-the-original-typed-string-ii) |
+| [3340-check-balanced-string](https://github.com/jonahlewis4/leetcode/tree/main/3340-check-balanced-string/) | Easy |
 | [3360-minimum-deletions-to-make-string-k-special](https://github.com/jonahlewis4/leetcode/tree/master/3360-minimum-deletions-to-make-string-k-special) |
 | [3379-score-of-a-string](https://github.com/jonahlewis4/leetcode/tree/master/3379-score-of-a-string) |
 | [3396-valid-word](https://github.com/jonahlewis4/leetcode/tree/master/3396-valid-word) |
