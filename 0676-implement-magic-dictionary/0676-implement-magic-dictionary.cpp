@@ -1,73 +1,76 @@
 class MagicDictionary {
-    struct Trie{
+    struct Trie {
         bool end = false;
         array<Trie*, 26> children{};
-        Trie(){}
-        Trie(vector<string>& dict){
-            for(const string& s : dict) {
-                insert(s, 0);
+
+        Trie() {}
+        
+        Trie(const vector<string>& dict) {
+            for (const string& s : dict) {
+                insert(s);
             }
         }
 
-        void insert(const string& s, int i) {
-            if(i >= s.size()) {
-                end = true;
-                return;
+        void insert(const string& s) {
+            Trie* t = this;
+            for(int i = 0; i < s.size(); i++) {
+                char c = s[i];
+                int cI = c - 'a';
+                if (!t->children[cI]) {
+                    t->children[cI] = new Trie();
+                }
+                t = t->children[cI];
             }
-
-            char c = s[i];
-            int cI = c - 'a';
-            if(!children[cI]){
-                children[cI] = new Trie();
-            }
-            children[cI]->insert(s, i + 1);
+            t->end = true;
         }
 
-        bool hasWithWildCard(const string& s, int i, bool wildCardUsed) const {
-            if(i == s.size()) {
-                return end && wildCardUsed;
+        bool exactMatch(const string& s, int startI) const {
+            const Trie* curr = this;
+            for (int i = startI; i < s.size(); ++i) {
+                int cI = s[i] - 'a';
+                if (!curr->children[cI]) {
+                    return false;
+                }
+                curr = curr->children[cI];
             }
+            return curr->end;
+        }
 
-            char c = s[i];
-            int cI = c - 'a';
-            
-            if(!wildCardUsed){
-                for(int idx = 0; idx < children.size(); idx++) {
-                    if(cI == idx) {
-                        continue;
-                    }
-                    Trie const *const child = children[idx];
-                    if(child && child->hasWithWildCard(s, i+1, true)){
-                        return true;
+        bool searchWithWildCard(const string& s) const {
+            const Trie* curr = this;
+            int n = s.size();
+
+            for (int i = 0; i < n; ++i) {
+                if (!curr) break;
+
+                char c = s[i];
+                int cI = c - 'a';
+
+                for (int idx = 0; idx < 26; ++idx) {
+                    if (idx == cI) continue;
+                    if (curr->children[idx]) {
+                        if (curr->children[idx]->exactMatch(s, i + 1)) {
+                            return true;
+                        }
                     }
                 }
+
+                curr = curr->children[cI];
             }
-            if(children[cI]){
-                return children[cI]->hasWithWildCard(s, i+1, wildCardUsed);
-            }
-            
+
             return false;
         }
     };
+
 public:
     Trie t;
-    MagicDictionary() {
-        
-    }
+    MagicDictionary() {}
     
     void buildDict(vector<string> dictionary) {
         t = Trie(dictionary);
     }
     
     bool search(string searchWord) {
-        return t.hasWithWildCard(searchWord, 0, false);
-
+        return t.searchWithWildCard(searchWord);
     }
 };
-
-/**
- * Your MagicDictionary object will be instantiated and called as such:
- * MagicDictionary* obj = new MagicDictionary();
- * obj->buildDict(dictionary);
- * bool param_2 = obj->search(searchWord);
- */
