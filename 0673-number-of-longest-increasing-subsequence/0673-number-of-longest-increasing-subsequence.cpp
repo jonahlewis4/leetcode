@@ -17,7 +17,8 @@ public:
 
         vector<unsigned int> count(nums.size(), 0);
         count.front() = 1;
-        for(int i = 1; i < nums.size(); i++) {
+        int res = 0;
+        for(int i = 0; i < nums.size(); i++) {
             for(int j = 0; j < i; j++){
                
                 if(lis[j] == lis[i] - 1 && nums[j] < nums[i]){
@@ -27,12 +28,8 @@ public:
             if(lis[i] == 1) {
                 count[i] = 1;
             }
-        }
 
-        int res = 0;
-        for(int i = 0; i < nums.size(); i++) {
-            int len = lis[i];
-            if(len == best) {
+            if(lis[i] == best) {
                 res += count[i];
             }
         }
