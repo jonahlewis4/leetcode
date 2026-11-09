@@ -6,6 +6,7 @@ public:
         vector<int> lis(nums.size(), 1);
         vector<unsigned int> count(nums.size(), 1);
         int best = 1;
+        int res = 0;
         for(int i = 0; i < nums.size(); i++) {
             for(int j = 0; j < i; j++) {
                 if(nums[j] < nums[i]){
@@ -17,13 +18,10 @@ public:
                     }
                 }
             }
-            best = max(best, lis[i]);
-        }
-
-        
-        int res = 0;
-        for(int i = 0; i < nums.size(); i++) {
-            if(lis[i] == best) {
+            if(lis[i] > best) {
+                res = count[i];
+                best = lis[i];
+            } else if (lis[i] == best) {
                 res += count[i];
             }
         }
