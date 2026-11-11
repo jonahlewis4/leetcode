@@ -1563,6 +1563,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0677-map-sum-pairs](https://github.com/jonahlewis4/leetcode/tree/main/0677-map-sum-pairs/) | Medium |
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0680-valid-palindrome-ii](https://github.com/jonahlewis4/leetcode/tree/master/0680-valid-palindrome-ii) |
+| [0686-repeated-string-match](https://github.com/jonahlewis4/leetcode/tree/main/0686-repeated-string-match/) | Medium |
 | [0696-count-binary-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0696-count-binary-substrings) |
 | [0709-to-lower-case](https://github.com/jonahlewis4/leetcode/tree/master/0709-to-lower-case) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/jonahlewis4/leetcode/tree/main/0712-minimum-ascii-delete-sum-for-two-strings/) | Medium |
@@ -2590,6 +2591,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- | ------- |
 | [0459-repeated-substring-pattern](https://github.com/jonahlewis4/leetcode/tree/master/0459-repeated-substring-pattern) |
 | [0572-subtree-of-another-tree](https://github.com/jonahlewis4/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [0686-repeated-string-match](https://github.com/jonahlewis4/leetcode/tree/main/0686-repeated-string-match/) | Medium |
 | [0796-rotate-string](https://github.com/jonahlewis4/leetcode/tree/master/0796-rotate-string) |
 ## Hash Function
 | Problem Name | Difficulty |
@@ -2905,4 +2907,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0654-maximum-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0654-maximum-binary-tree/) | Medium |
+## Z Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0686-repeated-string-match](https://github.com/jonahlewis4/leetcode/tree/main/0686-repeated-string-match/) | Medium |
+## Knuth–Morris–Pratt Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0686-repeated-string-match](https://github.com/jonahlewis4/leetcode/tree/main/0686-repeated-string-match/) | Medium |
+## Boyer–Moore String-Search Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0686-repeated-string-match](https://github.com/jonahlewis4/leetcode/tree/main/0686-repeated-string-match/) | Medium |
 <!---LeetCode Topics End-->
