@@ -2179,6 +2179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0669-trim-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/main/0669-trim-a-binary-search-tree/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
+| [0687-longest-univalue-path](https://github.com/jonahlewis4/leetcode/tree/main/0687-longest-univalue-path/) | Medium |
 | [0772-construct-quad-tree](https://github.com/jonahlewis4/leetcode/tree/master/0772-construct-quad-tree) |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/jonahlewis4/leetcode/tree/main/0783-minimum-distance-between-bst-nodes/) | Easy |
 | [0784-insert-into-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
@@ -2281,6 +2282,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0672-bulb-switcher-ii](https://github.com/jonahlewis4/leetcode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0676-implement-magic-dictionary](https://github.com/jonahlewis4/leetcode/tree/main/0676-implement-magic-dictionary/) | Medium |
 | [0684-redundant-connection](https://github.com/jonahlewis4/leetcode/tree/master/0684-redundant-connection) |
+| [0687-longest-univalue-path](https://github.com/jonahlewis4/leetcode/tree/main/0687-longest-univalue-path/) | Medium |
 | [0695-max-area-of-island](https://github.com/jonahlewis4/leetcode/tree/master/0695-max-area-of-island) |
 | [0733-flood-fill](https://github.com/jonahlewis4/leetcode/tree/master/0733-flood-fill) |
 | [0744-network-delay-time](https://github.com/jonahlewis4/leetcode/tree/master/0744-network-delay-time) |
@@ -2369,6 +2371,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0662-maximum-width-of-binary-tree/) | Medium |
 | [0669-trim-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/main/0669-trim-a-binary-search-tree/) | Medium |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/main/0671-second-minimum-node-in-a-binary-tree/) | Easy |
+| [0687-longest-univalue-path](https://github.com/jonahlewis4/leetcode/tree/main/0687-longest-univalue-path/) | Medium |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/jonahlewis4/leetcode/tree/main/0783-minimum-distance-between-bst-nodes/) | Easy |
 | [0784-insert-into-a-binary-search-tree](https://github.com/jonahlewis4/leetcode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jonahlewis4/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -2869,6 +2872,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0508-most-frequent-subtree-sum](https://github.com/jonahlewis4/leetcode/tree/main/0508-most-frequent-subtree-sum/) | Medium |
+| [0687-longest-univalue-path](https://github.com/jonahlewis4/leetcode/tree/main/0687-longest-univalue-path/) | Medium |
 ## Pigeonhole Principle
 | Problem Name | Difficulty |
 | ------- | ------- |
