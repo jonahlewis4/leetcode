@@ -221,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0692-top-k-frequent-words](https://github.com/jonahlewis4/leetcode/tree/main/0692-top-k-frequent-words/) | Medium |
 | [0695-max-area-of-island](https://github.com/jonahlewis4/leetcode/tree/master/0695-max-area-of-island) |
 | [0697-degree-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0697-degree-of-an-array) |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/jonahlewis4/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0717-1-bit-and-2-bit-characters](https://github.com/jonahlewis4/leetcode/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/jonahlewis4/leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0724-find-pivot-index](https://github.com/jonahlewis4/leetcode/tree/master/0724-find-pivot-index) |
@@ -651,6 +652,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0678-valid-parenthesis-string](https://github.com/jonahlewis4/leetcode/tree/master/0678-valid-parenthesis-string) |
 | [0688-knight-probability-in-chessboard](https://github.com/jonahlewis4/leetcode/tree/main/0688-knight-probability-in-chessboard/) | Medium |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/jonahlewis4/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/jonahlewis4/leetcode/tree/main/0712-minimum-ascii-delete-sum-for-two-strings/) | Medium |
 | [0747-min-cost-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/jonahlewis4/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
@@ -1729,6 +1731,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0645-set-mismatch](https://github.com/jonahlewis4/leetcode/tree/master/0645-set-mismatch) |
 | [0672-bulb-switcher-ii](https://github.com/jonahlewis4/leetcode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0693-binary-number-with-alternating-bits](https://github.com/jonahlewis4/leetcode/tree/master/0693-binary-number-with-alternating-bits) |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/jonahlewis4/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/jonahlewis4/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
 | [0868-binary-gap](https://github.com/jonahlewis4/leetcode/tree/master/0868-binary-gap) |
 | [1009-complement-of-base-10-integer](https://github.com/jonahlewis4/leetcode/tree/master/1009-complement-of-base-10-integer) |
@@ -2117,6 +2120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/jonahlewis4/leetcode/tree/master/0494-target-sum) |
 | [0526-beautiful-arrangement](https://github.com/jonahlewis4/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0638-shopping-offers](https://github.com/jonahlewis4/leetcode/tree/main/0638-shopping-offers/) | Medium |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/jonahlewis4/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0797-all-paths-from-source-to-target](https://github.com/jonahlewis4/leetcode/tree/main/0797-all-paths-from-source-to-target/) | Medium |
 | [0865-robot-room-cleaner](https://github.com/jonahlewis4/leetcode/tree/master/0865-robot-room-cleaner) |
 | [1160-letter-tile-possibilities](https://github.com/jonahlewis4/leetcode/tree/master/1160-letter-tile-possibilities) |
@@ -2683,6 +2687,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/jonahlewis4/leetcode/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0464-can-i-win](https://github.com/jonahlewis4/leetcode/tree/main/0464-can-i-win/) | Medium |
 | [0638-shopping-offers](https://github.com/jonahlewis4/leetcode/tree/main/0638-shopping-offers/) | Medium |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/jonahlewis4/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [1013-fibonacci-number](https://github.com/jonahlewis4/leetcode/tree/master/1013-fibonacci-number) |
 | [1137-n-th-tribonacci-number](https://github.com/jonahlewis4/leetcode/tree/master/1137-n-th-tribonacci-number) |
 | [1900-the-earliest-and-latest-rounds-where-players-compete](https://github.com/jonahlewis4/leetcode/tree/master/1900-the-earliest-and-latest-rounds-where-players-compete) |
@@ -2870,6 +2875,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0473-matchsticks-to-square](https://github.com/jonahlewis4/leetcode/tree/main/0473-matchsticks-to-square/) | Medium |
 | [0526-beautiful-arrangement](https://github.com/jonahlewis4/leetcode/tree/main/0526-beautiful-arrangement/) | Medium |
 | [0638-shopping-offers](https://github.com/jonahlewis4/leetcode/tree/main/0638-shopping-offers/) | Medium |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/jonahlewis4/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 ## Rejection Sampling
 | Problem Name | Difficulty |
 | ------- | ------- |
