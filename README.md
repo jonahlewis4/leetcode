@@ -1885,6 +1885,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0641-design-circular-deque](https://github.com/jonahlewis4/leetcode/tree/main/0641-design-circular-deque/) | Medium |
 | [0676-implement-magic-dictionary](https://github.com/jonahlewis4/leetcode/tree/main/0676-implement-magic-dictionary/) | Medium |
 | [0677-map-sum-pairs](https://github.com/jonahlewis4/leetcode/tree/main/0677-map-sum-pairs/) | Medium |
+| [0707-design-linked-list](https://github.com/jonahlewis4/leetcode/tree/main/0707-design-linked-list/) | Medium |
 | [0716-max-stack](https://github.com/jonahlewis4/leetcode/tree/master/0716-max-stack) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jonahlewis4/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0816-design-hashset](https://github.com/jonahlewis4/leetcode/tree/master/0816-design-hashset) |
@@ -2437,6 +2438,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0445-add-two-numbers-ii](https://github.com/jonahlewis4/leetcode/tree/main/0445-add-two-numbers-ii/) | Medium |
 | [0622-design-circular-queue](https://github.com/jonahlewis4/leetcode/tree/main/0622-design-circular-queue/) | Medium |
 | [0641-design-circular-deque](https://github.com/jonahlewis4/leetcode/tree/main/0641-design-circular-deque/) | Medium |
+| [0707-design-linked-list](https://github.com/jonahlewis4/leetcode/tree/main/0707-design-linked-list/) | Medium |
 | [0716-max-stack](https://github.com/jonahlewis4/leetcode/tree/master/0716-max-stack) |
 | [0816-design-hashset](https://github.com/jonahlewis4/leetcode/tree/master/0816-design-hashset) |
 | [0817-design-hashmap](https://github.com/jonahlewis4/leetcode/tree/master/0817-design-hashmap) |
