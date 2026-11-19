@@ -225,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0713-subarray-product-less-than-k](https://github.com/jonahlewis4/leetcode/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/jonahlewis4/leetcode/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [0717-1-bit-and-2-bit-characters](https://github.com/jonahlewis4/leetcode/tree/master/0717-1-bit-and-2-bit-characters) |
+| [0718-maximum-length-of-repeated-subarray](https://github.com/jonahlewis4/leetcode/tree/main/0718-maximum-length-of-repeated-subarray/) | Medium |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/jonahlewis4/leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0724-find-pivot-index](https://github.com/jonahlewis4/leetcode/tree/master/0724-find-pivot-index) |
 | [0733-flood-fill](https://github.com/jonahlewis4/leetcode/tree/master/0733-flood-fill) |
@@ -657,6 +658,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0698-partition-to-k-equal-sum-subsets](https://github.com/jonahlewis4/leetcode/tree/main/0698-partition-to-k-equal-sum-subsets/) | Medium |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/jonahlewis4/leetcode/tree/main/0712-minimum-ascii-delete-sum-for-two-strings/) | Medium |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/jonahlewis4/leetcode/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
+| [0718-maximum-length-of-repeated-subarray](https://github.com/jonahlewis4/leetcode/tree/main/0718-maximum-length-of-repeated-subarray/) | Medium |
 | [0747-min-cost-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/jonahlewis4/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0867-new-21-game](https://github.com/jonahlewis4/leetcode/tree/master/0867-new-21-game) |
@@ -811,6 +813,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0633-sum-of-square-numbers](https://github.com/jonahlewis4/leetcode/tree/main/0633-sum-of-square-numbers/) | Medium |
 | [0658-find-k-closest-elements](https://github.com/jonahlewis4/leetcode/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0713-subarray-product-less-than-k](https://github.com/jonahlewis4/leetcode/tree/main/0713-subarray-product-less-than-k/) | Medium |
+| [0718-maximum-length-of-repeated-subarray](https://github.com/jonahlewis4/leetcode/tree/main/0718-maximum-length-of-repeated-subarray/) | Medium |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/jonahlewis4/leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
 | [0744-find-smallest-letter-greater-than-target](https://github.com/jonahlewis4/leetcode/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0745-find-smallest-letter-greater-than-target](https://github.com/jonahlewis4/leetcode/tree/master/0745-find-smallest-letter-greater-than-target) |
@@ -2473,6 +2476,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/jonahlewis4/leetcode/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/jonahlewis4/leetcode/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0713-subarray-product-less-than-k](https://github.com/jonahlewis4/leetcode/tree/main/0713-subarray-product-less-than-k/) | Medium |
+| [0718-maximum-length-of-repeated-subarray](https://github.com/jonahlewis4/leetcode/tree/main/0718-maximum-length-of-repeated-subarray/) | Medium |
 | [0867-new-21-game](https://github.com/jonahlewis4/leetcode/tree/master/0867-new-21-game) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/jonahlewis4/leetcode/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1652-defuse-the-bomb](https://github.com/jonahlewis4/leetcode/tree/master/1652-defuse-the-bomb) |
@@ -2627,6 +2631,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0572-subtree-of-another-tree](https://github.com/jonahlewis4/leetcode/tree/master/0572-subtree-of-another-tree) |
+| [0718-maximum-length-of-repeated-subarray](https://github.com/jonahlewis4/leetcode/tree/main/0718-maximum-length-of-repeated-subarray/) | Medium |
 | [0816-design-hashset](https://github.com/jonahlewis4/leetcode/tree/master/0816-design-hashset) |
 | [0817-design-hashmap](https://github.com/jonahlewis4/leetcode/tree/master/0817-design-hashmap) |
 ## Binary Search Tree
@@ -2953,4 +2958,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0686-repeated-string-match](https://github.com/jonahlewis4/leetcode/tree/main/0686-repeated-string-match/) | Medium |
+## Rolling Hash
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0718-maximum-length-of-repeated-subarray](https://github.com/jonahlewis4/leetcode/tree/main/0718-maximum-length-of-repeated-subarray/) | Medium |
 <!---LeetCode Topics End-->
