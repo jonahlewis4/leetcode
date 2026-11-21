@@ -227,6 +227,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0717-1-bit-and-2-bit-characters](https://github.com/jonahlewis4/leetcode/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/jonahlewis4/leetcode/tree/main/0718-maximum-length-of-repeated-subarray/) | Medium |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/jonahlewis4/leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
+| [0720-longest-word-in-dictionary](https://github.com/jonahlewis4/leetcode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [0724-find-pivot-index](https://github.com/jonahlewis4/leetcode/tree/master/0724-find-pivot-index) |
 | [0733-flood-fill](https://github.com/jonahlewis4/leetcode/tree/master/0733-flood-fill) |
 | [0735-asteroid-collision](https://github.com/jonahlewis4/leetcode/tree/master/0735-asteroid-collision) |
@@ -520,6 +521,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/jonahlewis4/leetcode/tree/main/0658-find-k-closest-elements/) | Medium |
 | [0692-top-k-frequent-words](https://github.com/jonahlewis4/leetcode/tree/main/0692-top-k-frequent-words/) | Medium |
 | [0719-find-k-th-smallest-pair-distance](https://github.com/jonahlewis4/leetcode/tree/master/0719-find-k-th-smallest-pair-distance) |
+| [0720-longest-word-in-dictionary](https://github.com/jonahlewis4/leetcode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [0747-largest-number-at-least-twice-of-others](https://github.com/jonahlewis4/leetcode/tree/master/0747-largest-number-at-least-twice-of-others) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
 | [0780-max-chunks-to-make-sorted](https://github.com/jonahlewis4/leetcode/tree/master/0780-max-chunks-to-make-sorted) |
@@ -979,6 +981,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0690-employee-importance](https://github.com/jonahlewis4/leetcode/tree/main/0690-employee-importance/) | Medium |
 | [0692-top-k-frequent-words](https://github.com/jonahlewis4/leetcode/tree/main/0692-top-k-frequent-words/) | Medium |
 | [0697-degree-of-an-array](https://github.com/jonahlewis4/leetcode/tree/master/0697-degree-of-an-array) |
+| [0720-longest-word-in-dictionary](https://github.com/jonahlewis4/leetcode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [0748-shortest-completing-word](https://github.com/jonahlewis4/leetcode/tree/master/0748-shortest-completing-word) |
 | [0762-find-anagram-mappings](https://github.com/jonahlewis4/leetcode/tree/master/0762-find-anagram-mappings) |
 | [0768-partition-labels](https://github.com/jonahlewis4/leetcode/tree/master/0768-partition-labels) |
@@ -1586,6 +1589,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0696-count-binary-substrings](https://github.com/jonahlewis4/leetcode/tree/master/0696-count-binary-substrings) |
 | [0709-to-lower-case](https://github.com/jonahlewis4/leetcode/tree/master/0709-to-lower-case) |
 | [0712-minimum-ascii-delete-sum-for-two-strings](https://github.com/jonahlewis4/leetcode/tree/main/0712-minimum-ascii-delete-sum-for-two-strings/) | Medium |
+| [0720-longest-word-in-dictionary](https://github.com/jonahlewis4/leetcode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [0748-shortest-completing-word](https://github.com/jonahlewis4/leetcode/tree/master/0748-shortest-completing-word) |
 | [0768-partition-labels](https://github.com/jonahlewis4/leetcode/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/jonahlewis4/leetcode/tree/master/0778-reorganize-string) |
@@ -2722,6 +2726,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0676-implement-magic-dictionary](https://github.com/jonahlewis4/leetcode/tree/main/0676-implement-magic-dictionary/) | Medium |
 | [0677-map-sum-pairs](https://github.com/jonahlewis4/leetcode/tree/main/0677-map-sum-pairs/) | Medium |
 | [0692-top-k-frequent-words](https://github.com/jonahlewis4/leetcode/tree/main/0692-top-k-frequent-words/) | Medium |
+| [0720-longest-word-in-dictionary](https://github.com/jonahlewis4/leetcode/tree/main/0720-longest-word-in-dictionary/) | Medium |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/jonahlewis4/leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 ## Graph
 | Problem Name | Difficulty |
