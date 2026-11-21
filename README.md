@@ -276,6 +276,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1051-height-checker](https://github.com/jonahlewis4/leetcode/tree/master/1051-height-checker) |
 | [1063-best-sightseeing-pair](https://github.com/jonahlewis4/leetcode/tree/master/1063-best-sightseeing-pair) |
 | [1085-the-earliest-moment-when-everyone-become-friends](https://github.com/jonahlewis4/leetcode/tree/master/1085-the-earliest-moment-when-everyone-become-friends) |
+| [1091-shortest-path-in-binary-matrix](https://github.com/jonahlewis4/leetcode/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
 | [1108-analyze-user-website-visit-pattern](https://github.com/jonahlewis4/leetcode/tree/master/1108-analyze-user-website-visit-pattern) |
 | [1122-relative-sort-array](https://github.com/jonahlewis4/leetcode/tree/master/1122-relative-sort-array) |
 | [1127-last-stone-weight](https://github.com/jonahlewis4/leetcode/tree/master/1127-last-stone-weight) |
@@ -1373,6 +1374,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0854-making-a-large-island](https://github.com/jonahlewis4/leetcode/tree/master/0854-making-a-large-island) |
 | [0945-snakes-and-ladders](https://github.com/jonahlewis4/leetcode/tree/master/0945-snakes-and-ladders) |
 | [1036-rotting-oranges](https://github.com/jonahlewis4/leetcode/tree/master/1036-rotting-oranges) |
+| [1091-shortest-path-in-binary-matrix](https://github.com/jonahlewis4/leetcode/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/jonahlewis4/leetcode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1572-matrix-diagonal-sum](https://github.com/jonahlewis4/leetcode/tree/master/1572-matrix-diagonal-sum) |
 | [1672-richest-customer-wealth](https://github.com/jonahlewis4/leetcode/tree/master/1672-richest-customer-wealth) |
@@ -2604,6 +2606,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1005-univalued-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1005-univalued-binary-tree) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/jonahlewis4/leetcode/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1036-rotting-oranges](https://github.com/jonahlewis4/leetcode/tree/master/1036-rotting-oranges) |
+| [1091-shortest-path-in-binary-matrix](https://github.com/jonahlewis4/leetcode/tree/main/1091-shortest-path-in-binary-matrix/) | Medium |
 | [1177-tree-diameter](https://github.com/jonahlewis4/leetcode/tree/master/1177-tree-diameter) |
 | [1302-deepest-leaves-sum](https://github.com/jonahlewis4/leetcode/tree/master/1302-deepest-leaves-sum) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/jonahlewis4/leetcode/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
