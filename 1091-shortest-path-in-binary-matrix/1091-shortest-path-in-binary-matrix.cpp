@@ -14,6 +14,9 @@ public:
         if(grid.front().front() == 1) {
             return -1;
         }
+        if(grid.size() == 1 && grid.front().size() == 1) {
+            return 1;
+        }
         queue<pair<int, int>> q;
         q.push({0,0});
         grid[0][0] = 2;
@@ -24,10 +27,7 @@ public:
                 q.pop();
                 int r = coords.first;
                 int c = coords.second;
-                if(r == grid.size() - 1 && c == grid.front().size() - 1) {
-                    return j;
-                }
-
+    
                 for(const pair<int, int> dir : dirs) {
                     int rChange = dir.first;
                     int cChange = dir.second;
@@ -44,8 +44,10 @@ public:
                     if(grid[newR][newC] == 1){
                         continue;
                     }
-                    
 
+                    if(newR == grid.size() - 1 && newC == grid.front().size() - 1) {
+                        return j + 1;
+                    }   
                     grid[newR][newC] = 2;
                     q.push({newR, newC});
                 }
