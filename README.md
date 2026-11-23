@@ -293,6 +293,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1349-check-if-it-is-a-straight-line](https://github.com/jonahlewis4/leetcode/tree/master/1349-check-if-it-is-a-straight-line) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/jonahlewis4/leetcode/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/jonahlewis4/leetcode/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
+| [1352-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
 | [1356-sort-integers-by-the-number-of-1-bits](https://github.com/jonahlewis4/leetcode/tree/master/1356-sort-integers-by-the-number-of-1-bits) |
 | [1364-tuple-with-same-product](https://github.com/jonahlewis4/leetcode/tree/master/1364-tuple-with-same-product) |
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
@@ -1179,6 +1180,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/jonahlewis4/leetcode/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/jonahlewis4/leetcode/tree/master/1344-angle-between-hands-of-a-clock) |
 | [1349-check-if-it-is-a-straight-line](https://github.com/jonahlewis4/leetcode/tree/master/1349-check-if-it-is-a-straight-line) |
+| [1352-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
 | [1360-number-of-days-between-two-dates](https://github.com/jonahlewis4/leetcode/tree/master/1360-number-of-days-between-two-dates) |
 | [1399-count-largest-group](https://github.com/jonahlewis4/leetcode/tree/master/1399-count-largest-group) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/jonahlewis4/leetcode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
@@ -1908,6 +1910,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0817-design-hashmap](https://github.com/jonahlewis4/leetcode/tree/master/0817-design-hashmap) |
 | [0933-number-of-recent-calls](https://github.com/jonahlewis4/leetcode/tree/master/0933-number-of-recent-calls) |
 | [1023-time-based-key-value-store](https://github.com/jonahlewis4/leetcode/tree/master/1023-time-based-key-value-store) |
+| [1352-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
 | [1477-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1603-design-parking-system](https://github.com/jonahlewis4/leetcode/tree/master/1603-design-parking-system) |
@@ -1934,6 +1937,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0713-subarray-product-less-than-k](https://github.com/jonahlewis4/leetcode/tree/main/0713-subarray-product-less-than-k/) | Medium |
 | [0724-find-pivot-index](https://github.com/jonahlewis4/leetcode/tree/master/0724-find-pivot-index) |
 | [0912-random-pick-with-weight](https://github.com/jonahlewis4/leetcode/tree/master/0912-random-pick-with-weight) |
+| [1352-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
 | [1413-minimum-value-to-get-positive-step-by-step-sum](https://github.com/jonahlewis4/leetcode/tree/master/1413-minimum-value-to-get-positive-step-by-step-sum) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/jonahlewis4/leetcode/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1477-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
@@ -2018,6 +2022,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0362-design-hit-counter](https://github.com/jonahlewis4/leetcode/tree/master/0362-design-hit-counter) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/jonahlewis4/leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0933-number-of-recent-calls](https://github.com/jonahlewis4/leetcode/tree/master/0933-number-of-recent-calls) |
+| [1352-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
 | [1366-first-unique-number](https://github.com/jonahlewis4/leetcode/tree/master/1366-first-unique-number) |
 | [1477-product-of-the-last-k-numbers](https://github.com/jonahlewis4/leetcode/tree/master/1477-product-of-the-last-k-numbers) |
 | [1656-design-an-ordered-stream](https://github.com/jonahlewis4/leetcode/tree/master/1656-design-an-ordered-stream) |
