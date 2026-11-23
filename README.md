@@ -2462,6 +2462,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0641-design-circular-deque](https://github.com/jonahlewis4/leetcode/tree/main/0641-design-circular-deque/) | Medium |
 | [0707-design-linked-list](https://github.com/jonahlewis4/leetcode/tree/main/0707-design-linked-list/) | Medium |
 | [0716-max-stack](https://github.com/jonahlewis4/leetcode/tree/master/0716-max-stack) |
+| [0725-split-linked-list-in-parts](https://github.com/jonahlewis4/leetcode/tree/main/0725-split-linked-list-in-parts/) | Medium |
 | [0816-design-hashset](https://github.com/jonahlewis4/leetcode/tree/master/0816-design-hashset) |
 | [0817-design-hashmap](https://github.com/jonahlewis4/leetcode/tree/master/0817-design-hashmap) |
 | [1411-convert-binary-number-in-a-linked-list-to-integer](https://github.com/jonahlewis4/leetcode/tree/master/1411-convert-binary-number-in-a-linked-list-to-integer) |
