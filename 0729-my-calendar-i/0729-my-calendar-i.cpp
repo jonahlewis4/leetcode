@@ -8,35 +8,19 @@ public:
     bool book(int startTime, int endTime) {
         pair<int, int> time = {startTime, endTime};
 
-        auto nextItr = set.upper_bound(time);           
+        auto nextItr = set.upper_bound(time);
 
-        if(nextItr == set.begin()) {
-            if(set.empty()) {
-                set.insert(time);
-                return true;
-            }
-            if(time.second > nextItr->first) {
-                return false;
-            }
+        //first check that it fits in with the one after.            
+        bool afterOk = nextItr == set.end() || time.second <= nextItr->first;
+
+        //next check that if fits in with the one before
+        bool beforeOk = nextItr == set.begin() || time.first >= prev(nextItr)->second;
+        
+        bool noOverlap = afterOk && beforeOk;
+        if(noOverlap) {
             set.insert(time);
-            return true;
         }
-
-        auto prevItr = prev(nextItr);
-        if(prevItr->second > time.first) {
-            return false;
-        }
-
-        if(nextItr == set.end()) {
-            set.insert(time);
-            return true;
-        }
-        if(time.second > nextItr->first) {
-            return false;
-        }
-
-        set.insert(time);
-        return true;
+        return noOverlap;
     }
 };
 
