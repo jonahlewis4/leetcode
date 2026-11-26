@@ -4,12 +4,11 @@ public:
 
         unordered_set<int> visited;
         for(const string& end : deadends) {
-            visited.insert(stoi(end));
-        }
-
-
-        if(visited.contains(0)){
-            return -1;
+            int endI = stoi(end);
+            if(endI == 0) {
+                return -1;
+            }
+            visited.insert(endI);
         }
 
 
