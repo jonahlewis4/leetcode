@@ -667,6 +667,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/jonahlewis4/leetcode/tree/main/0714-best-time-to-buy-and-sell-stock-with-transaction-fee/) | Medium |
 | [0718-maximum-length-of-repeated-subarray](https://github.com/jonahlewis4/leetcode/tree/main/0718-maximum-length-of-repeated-subarray/) | Medium |
 | [0747-min-cost-climbing-stairs](https://github.com/jonahlewis4/leetcode/tree/master/0747-min-cost-climbing-stairs) |
+| [0788-rotated-digits](https://github.com/jonahlewis4/leetcode/tree/master/0788-rotated-digits) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/jonahlewis4/leetcode/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0867-new-21-game](https://github.com/jonahlewis4/leetcode/tree/master/0867-new-21-game) |
 | [0868-push-dominoes](https://github.com/jonahlewis4/leetcode/tree/master/0868-push-dominoes) |
@@ -1167,6 +1168,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0672-bulb-switcher-ii](https://github.com/jonahlewis4/leetcode/tree/main/0672-bulb-switcher-ii/) | Medium |
 | [0728-self-dividing-numbers](https://github.com/jonahlewis4/leetcode/tree/master/0728-self-dividing-numbers) |
 | [0762-prime-number-of-set-bits-in-binary-representation](https://github.com/jonahlewis4/leetcode/tree/master/0762-prime-number-of-set-bits-in-binary-representation) |
+| [0788-rotated-digits](https://github.com/jonahlewis4/leetcode/tree/master/0788-rotated-digits) |
 | [0867-new-21-game](https://github.com/jonahlewis4/leetcode/tree/master/0867-new-21-game) |
 | [0900-reordered-power-of-2](https://github.com/jonahlewis4/leetcode/tree/master/0900-reordered-power-of-2) |
 | [0908-smallest-range-i](https://github.com/jonahlewis4/leetcode/tree/master/0908-smallest-range-i) |
