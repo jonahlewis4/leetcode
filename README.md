@@ -1611,6 +1611,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0806-number-of-lines-to-write-string](https://github.com/jonahlewis4/leetcode/tree/master/0806-number-of-lines-to-write-string) |
 | [0819-most-common-word](https://github.com/jonahlewis4/leetcode/tree/main/0819-most-common-word/) | Easy |
 | [0822-unique-morse-code-words](https://github.com/jonahlewis4/leetcode/tree/master/0822-unique-morse-code-words) |
+| [0831-masking-personal-information](https://github.com/jonahlewis4/leetcode/tree/master/0831-masking-personal-information) |
 | [0844-backspace-string-compare](https://github.com/jonahlewis4/leetcode/tree/master/0844-backspace-string-compare) |
 | [0868-push-dominoes](https://github.com/jonahlewis4/leetcode/tree/master/0868-push-dominoes) |
 | [0917-reverse-only-letters](https://github.com/jonahlewis4/leetcode/tree/master/0917-reverse-only-letters) |
